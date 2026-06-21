@@ -1,0 +1,108 @@
+session_start,id,player,name,AI_OR_MANUAL,SaaS,last_state,session_id,GUOT,surprises,learnedToday
+03/06/2026 09:29,9296,lucy.mccormack,Too Good To Be True,AI,0,retro,,,,
+13/04/2026 13:30,8406,jack.walsh,Too Good To Be True,AI,1,aborted,,,,
+10/04/2026 10:13,8387,ruairi.corrigan,Too Good To Be True,AI,1,retro,8387,10,The volume of details. Took a while to understand flow,Adjust communications depending on who you are talking to. Tech/Business
+02/03/2026 11:12,7859,patrick.collins,Too Good To Be True,AI,1,retro,7859,10,The interactions with the bots. It was very realistic and human like.,I glossed over a question from shay to confirm the fix instead to ask for a root cause analysis. I would have completed the drill quicker if I had have prioritised the ask from shay. So i'll pay more attention to that going forward.
+27/04/2026 14:03,8598,jessica.mcdonald,Roblox Workshop,Manual,1,retro,8598,9,2 issues coinciding together was interesting,good to re confirm with the teams on the scope of the issues to identify that its not just 1
+27/03/2026 16:05,8234,james.sheppy,Roblox Workshop,Manual,1,retro,8234,10,"Two incidents for the price of one! one not as severe as the other. engaging 3rd parties, remote hands","Prioritising the issues when faced with more than one, kind of related but not really directly"
+26/03/2026 09:04,8202,donnchadh.tierney,Roblox Workshop,Manual,1,retro,8202,10,Having 2 issues at once.,Be sure to understand which issue is a priority.
+05/03/2026 09:39,7887,mark.mcgarry,Roblox Workshop,Manual,1,retro,7887,9,Panick from uninformed stakeholders. Lack of complaints / any drop in traffic. Given ad services were down expected to see a bigger drop in order totals,"Good to stop. Summarise and then ask where issues could be stemming from.
+Don't assume all issues are related"
+12/02/2026 10:10,7698,amelia.horwood,Roblox Workshop,Manual,1,retro,7698,9,multiple issues at once,need to clearly report to business comms if there are multiple issues at once
+06/01/2026 10:07,7270,ellie.walsh,Roblox Workshop,Manual,1,retro,7270,9,There were two separate issues happening,To involve Infra team earlier as needed to reach out to third party
+10/06/2026 09:05,9404,lucy.mccormack,Bezs Beatles Day!,AI,0,retro,,,,
+24/04/2026 10:06,8569,ruairi.corrigan,Bezs Beatles Day!,AI,1,retro,8569,10,Senior members of team dismissive of junior,That its not always the junior team members change that causes issues
+01/04/2026 07:37,8278,ciaran.hurley,Bezs Beatles Day!,AI,1,retro,8278,8,none,"was quite realistic, dan trying to downplay the chance it was his change and then reluctantly rolling back"
+30/03/2026 10:12,8243,patrick.collins,Bezs Beatles Day!,AI,1,retro,8243,10,the engineer stating the change wouldnt have impacted anything when it did.,check what region was out.
+14/01/2026 15:03,7408,jessica.mcdonald,Bezs Beatles Day!,AI,1,retro,7408,8,"Nothing unexpected - it was a helpful drill, high pressure.","I think I should be more assertive with the engineers to get services restored rather than being passive.
+I think I improved with the comms from the last drill and kept the business updated."
+11/06/2026 03:17,9416,lucy.mccormack,The Big Investor,AI,1,retro,,,,
+12/06/2026 03:37,9439,lucy.mccormack,Rumours,AI,1,retro,,,,
+12/06/2026 03:06,9438,lucy.mccormack,Rumours,AI,1,retro,,,,
+18/05/2026 10:03,8973,patrick.collins,Rumours,AI,1,retro,8973,10,it was simple to me as its one of the first things i check when i see an issue that no one else is experiencing.,DTA.
+08/05/2026 10:08,8784,ruairi.corrigan,Rumours,AI,1,retro,8784,8,Good to have an incident which isnt customer impacting but serious,Not over complicate
+15/04/2026 07:33,8429,ciaran.hurley,Rumours,AI,1,retro,8429,8,none have seen many of these local isseus for high level employees,always check impact and start with local issues
+30/03/2026 14:02,8253,jessica.mcdonald,Rumours,AI,1,retro,8253,7,nothing really unexpected. good to see an isolated incident rather than specific to a change thats impacting an entire region/the whole customer set.,"checking with the wider team around other reports, checking local settings/issues."
+08/01/2026 09:07,7314,donnchadh.tierney,Rumours,AI,1,retro,7314,10,Local issue was new.,Less severe issues should still be escalated. Need to remember this.
+15/04/2026 08:37,8430,mark.mcgarry,The Chain Workshop,Manual,1,retro,8430,8,"Team members jumping in later than normal. Usually hands on sooner, but more realistic. Multi-change impact was a good touch","Can be isolated to multiple changes
+Should have put a banner on the website while troubleshooting"
+26/03/2026 10:06,8204,amelia.horwood,The Chain Workshop,Manual,1,retro,8204,9,That there were 3 changes needing rolled back. And issue wasnt immediatly fixed following rollbacl,To not give up :)
+24/02/2026 15:06,7811,leah.murphy,The Chain Workshop,Manual,1,retro,7811,10,Change fixed it temporarily not permanently,Wait before confirming with users
+20/01/2026 15:11,7473,elsa.savage,The Chain Workshop,Manual,1,retro,7473,8,timing on when changes were made differing to when issue occured,"The practice of restoration over root cause analysis helped to eliminate possible causes of the incident and led to faster restoration time.
+
+Using grounding when communicating with the team to establish a common ground, in doing this the team became more organized as they had a mutual understanding of the current state of the drill."
+19/01/2026 12:05,7460,zach.davis,The Chain Workshop,Manual,1,retro,7460,10,Having to react to what was initially perceived to be root cause not actually being the complete case - having to push further to identify root cause and resolve,"Effective communication between stakeholders and Bez
+Not to assume the first 'obvious' smoking gun is the complete root cause"
+15/01/2026 15:06,7433,ritchie.mcgrath,The Chain Workshop,Manual,1,retro,7433,7,Changes rolled back but could not see the issue resolved - perhaps a cache issue with the website or part of the drill that issues dont resolve instantly,Always verify the incident is fully resolved
+14/01/2026 10:15,7399,caoimhe.kelly,The Chain Workshop,Manual,1,retro,7399,8,multiple changes having a knock on effect,communicating efficiently the issue to each party
+11/05/2026 15:15,8834,leah.murphy,Cart-astrophe,Manual,1,retro,8834,10,That changes were pushed by Shay with no crosscheck,Not sure
+10/03/2026 10:02,7943,jamie.dow,Cart-astrophe,Manual,1,retro,7943,10,"The fact that Tanya has pushed two recent PROD changes, but was AWOL meant that we had limited information on her changes and validation steps. We needed to roll back all related changes in the past day to restore.",It's important to make sure that people prioritize the major incident instead of customer calls.
+23/02/2026 11:34,7794,jack.walsh,Cart-astrophe,Manual,1,retro,7794,9,"Tanya not being available, this happens in the real world so a good test.","Cross check all changes within the same period, I checked and linked 2/3 but missed one. Additionally, important to escalate early in the event of an issue if a team member is not responding."
+16/01/2026 11:03,7448,ciara.scullion,Cart-astrophe,Manual,1,retro,7448,10,"Use grounding to communicate the current working theory. During the incident, it's important to ensure the incident response team has the same mutual understanding of the current state of play.",Dont relay on one person to fix a change
+12/06/2026 04:12,9441,lucy.mccormack,Missing Delivery,Manual,1,retro,,,,
+12/06/2026 04:10,9440,lucy.mccormack,Missing Delivery,Manual,1,retro,,,,
+29/04/2026 07:34,8626,ciaran.hurley,Missing Delivery,Manual,1,retro,8626,10,the third party element was very good,always assess the whole supply chain
+23/02/2026 15:02,7800,jessica.mcdonald,Missing Delivery,Manual,1,retro,7800,9,interesting to do a drill that was an issue with the 3rd party vendor,"escalating with vendors when the incident is outside of the organisations control, looping in the right people to escalate"
+15/01/2026 09:05,7417,donnchadh.tierney,Missing Delivery,Manual,1,retro,7417,10,More questions and expectations from Bez.,Be more aware of the business implications and relay these to Bez earlier.
+09/01/2026 16:04,7358,james.sheppy,Missing Delivery,Manual,1,retro,,,,
+16/03/2026 15:03,8037,jessica.mcdonald,Radio Silence,Manual,1,retro,8037,8,Having to chase up when people are being unresponsive,Reprioritising tasks appropriately for the rest of the team (Tanya being DND as on other deliverables)
+29/01/2026 09:05,7551,donnchadh.tierney,Radio Silence,Manual,1,retro,7551,10,Engineers being off or not available.,Learn the website better.
+22/01/2026 10:04,7496,amelia.horwood,Radio Silence,Manual,1,retro,7496,9,Couldn't get to the bottom of it,Still learning
+13/01/2026 09:37,7381,mark.mcgarry,Radio Silence,Manual,1,retro,7381,7,"Issue with the website that went unnoticed
+Team members unavailable","Verifying the issues with different metrics. Generic of ""drop in sales"" , what has dropped etc.
+Checking each service that may have been effected in a change"
+05/05/2026 14:02,8710,elsa.savage,Version confusion,Manual,1,retro,,,,
+28/04/2026 09:04,8610,ellie.walsh,Version confusion,Manual,1,retro,8610,8,The severity wasn't high to start but more users started reporting the issue as the drill went on,Take control even when team members are cooperating
+21/04/2026 15:03,8533,leah.murphy,Version confusion,Manual,1,retro,8533,9,"Lower impact issue, engineering using wrong data",Fact check with the lead of that area
+25/02/2026 13:11,7819,emma.allsopp,Version confusion,Manual,1,retro,7819,8,#NAME?,#NAME?
+25/02/2026 11:04,7816,aoife.breen,Version confusion,Manual,1,retro,7816,10,Team wasn't sure if the issues reported were significant enough to form an incident.,Staying calm & not jumping the gun while asking valid questions to quantify the problem is key in p1 scenarios.
+03/02/2026 10:01,7595,jamie.dow,Version confusion,Manual,1,retro,7595,8,"I think the evolving change in the impact of users from 0.09% to 5-8% changed the priority of the incident, it went from being low impact issue that allowed us time to assess and review the impact, to suddenly being a bigger issue that became more urgent.","I think getting a clear view of all the recent changes, the details, and what it would take to resolve a bug on our platform is really important to understand."
+09/04/2026 09:07,8357,amelia.horwood,The Switch,Manual,1,retro,8357,9,new member of the team,check that nothing has been compromised after issue resolved
+25/03/2026 11:04,8170,caoimhe.kelly,The Switch,Manual,1,retro,8170,7,The world building in terms of network infrastructure,to utilise the full team
+24/03/2026 15:04,8134,leah.murphy,The Switch,Manual,1,retro,8134,9,"A cyber security engineer wouldn't be included so early on in an event like this within my organisation, it would be heavily relied on by the networks team","To utilise the full team, and to use teamwork to help fill those knowledge gaps"
+06/02/2026 16:02,7661,james.sheppy,The Switch,Manual,1,retro,7661,10,Network and Security vulnerabilities being the prime focus was new and surprising,"Failing over is a good route to avoid restarts, make sure vulns are patched in timely manor"
+04/02/2026 09:37,7611,mark.mcgarry,The Switch,Manual,1,retro,7611,8,Amount of time for some responses.,"Continue to chase bots for updates and ideas
+Quantify the impact before updating the business. Get % differences etc."
+03/02/2026 15:03,7607,elsa.savage,The Switch,Manual,1,retro,7607,6,"The team worked together well. 
+The network was only slow for certain members - not across the board",Make sure to check on the switch side if there are issues with the network
+03/02/2026 10:05,7596,ellie.walsh,The Switch,Manual,1,retro,7596,9,The issue wasnt affecting all users,Involve the security team sooner as it was network related
+21/01/2026 13:06,7485,emma.allsopp,The Switch,Manual,1,retro,,,,
+14/01/2026 11:04,7400,aoife.breen,The Switch,Manual,1,retro,7400,8,Security Analyst also acted as part of what I would normally consider the networks team .,Not everything is application related.
+14/04/2026 09:03,8417,jamie.dow,Details Matter,Manual,1,retro,8417,10,"The issue was hard to recreate at first as the issue was specific to certain regions and currency, so important to try and scope out the true impact and not waste time at the start.",Keeping on top of all the different message streams coming through was difficult; need to pause and take time to think about it clearly.
+16/03/2026 11:36,8027,jack.walsh,Details Matter,Manual,1,retro,8027,9,Unclear how we could have got to the root cause before rolling back the change.,Okay to not fully understand the issue but to know the team / roles well in order to manage an incident effectively.
+01/05/2026 10:03,8685,aoife.breen,Breaking Bez,Manual,1,retro,8685,8,Decision making and high pressure from CEO. No clear 'right answer',Prioritise restoration and stay calm
+31/03/2026 14:03,8272,ritchie.mcgrath,Breaking Bez,Manual,1,retro,8272,9,"Unlike other drills, i wasn't able to decipher what was going to happen, AC fix or Failover",I might not have all the answers but I can get help from the team in diagnosing
+31/03/2026 09:07,8256,ellie.walsh,Breaking Bez,Manual,1,retro,8256,10,That the final decision was up to just me to make,To be decisive and to call out individual team members to look at different things
+25/03/2026 13:04,8176,emma.allsopp,Breaking Bez,Manual,1,retro,8176,9,"Issue was not internal, therefore we had less control over how to fix it.","This incident required me to make an executive decision under pressure, with the information that I had. It was important for me to be clear in my intentions and back the choice 100%."
+24/03/2026 15:09,8135,elsa.savage,Breaking Bez,Manual,1,retro,8135,8,delegating the tasks to the team,how to perform under pressure and to go off your own judgement
+19/01/2026 12:05,7459,jack.walsh,Breaking Bez,Manual,1,retro,7459,10,"Use grounding to communicate current working theory. During the incident, it's important to ensure the incident response team has the same mutual understanding of the current state of play.","DR service should always be clearly documented, makes it far easier to manage. Resiliency is there for a reason, it should be used."
+06/01/2026 10:02,7269,jamie.dow,Breaking Bez,Manual,1,retro,7269,10,"Despite some engineers providing their own opinion, their thinking was based on unknown conditions, such as a DC fixing their cooling system which is out of our control. Being confident in your BCP testing and processes is important to ensure stability.",Always be confident in your company processes
+12/05/2026 09:02,8845,jamie.dow,Discount Disaster Workshop,Manual,1,retro,8845,10,"The nature of the problem was an interesting one, needed to think outside the box",It taught me about the difference between a DOS and DDOS attack!
+06/05/2026 08:38,8721,mark.mcgarry,Discount Disaster Workshop,Manual,1,retro,8721,9,"more grounding required, understandable with the more advanced drills. Guilty of assuming the bots have read the whole chat","Where are we seeing the errors? Is it isolated to one system, country, subset"
+13/04/2026 10:36,8398,jack.walsh,Memory Lane Workshop,Manual,1,retro,8398,10,Calls for immediate reboots to a production live system.,"Important to not react to quickly into rash decisions, people will call for drastic action but to remain calm, pull all information in and go from there."
+25/03/2026 08:42,8163,ciaran.hurley,Too Good To Be True Workshop,Manual,1,retro,8163,10,much much more relaistic than i had imagined,importance of busniess comms to seniors
+22/05/2026 10:05,9100,ruairi.corrigan,The Big Investor Workshop,Manual,1,retro,9100,9,No change control,n
+20/04/2026 10:10,8505,patrick.collins,The Big Investor Workshop,Manual,1,retro,8505,10,the technical depth.,always question when someone says they just pushed it to UAT....
+08/04/2026 07:35,8343,ciaran.hurley,The Big Investor Workshop,Manual,1,retro,8343,6,i found it difficult to get a response on flipping to DR and then it was going to take too long - i guess this is part of the game,always check live operations as well as past changes
+03/03/2026 10:07,7866,ellie.walsh,The Big Investor Workshop,Manual,1,retro,7866,9,The issue was related to a test being ran,Daniel said he ran the tests in UAT so it shouldnt affect it but that wasnt the case and it was the issue in the end
+09/02/2026 15:02,7668,jessica.mcdonald,The Big Investor Workshop,Manual,1,retro,7668,10,I enjoyed this drill! Nothing really surprising/unexpected.,Shows human errors (lack of change control and documentation of changes) - good to note in future that cant always trust the changes listed.
+17/06/2026 00:44,9492,lucy.mccormack,Discount Disaster,AI,1,retro,,,,
+03/06/2026 09:08,9292,lucy.mccormack,Onboarding,AI,1,aborted,,,,
+11/06/2026 10:06,9425,aoife.breen,Memory Lane,AI,0,retro,9425,9,Incident resolved then broke again,Don't confirm completionor proper resolution until 100% sure
+11/06/2026 09:09,9422,amelia.horwood,Memory Lane,AI,0,retro,9422,9,That business were asking for more innfo,not to always go first option to resolve
+17/06/2026 09:16,9496,lucy.mccormack,Snipe Hunt,AI,0,retro,9496,8,Hamed & Tonus not being OOO,Logs never lie!!!
+12/06/2026 15:11,9458,james.sheppy,Snipe Hunt,AI,0,retro,9458,8,The pushback from bots,"It was too similar to real life difficulties with getting the right people together in order to progress findings, reach resolution"
+12/06/2026 15:06,9455,ritchie.mcgrath,Snipe Hunt,AI,0,retro,9455,10,The requirement for approval,Dont be afraid to escalate higher for approval when needed
+11/06/2026 12:05,9427,emma.allsopp,Snipe Hunt,AI,0,retro,9427,8,"The approval process surprised me, the fact that Bez could not sign off on a technical change, I feel as though if he was the only one available and with such high authority he would have the right to sign off on this.","It was good that people were out of office, the drill showed me how to utilise the team on hand."
+10/06/2026 07:39,9401,ciaran.hurley,Snipe Hunt,AI,0,retro,9401,10,the out of office!,escalation and resource management
+09/06/2026 09:02,9390,jamie.dow,Snipe Hunt,AI,0,retro,9390,10,"Having Tinus and Hamed OOO made it quite stressful, and i didn't think i had the ability to approve changes on their behalf... Chaotic incident overall!","I think taking the time to really think hard about the steps to run through, it felt there was a lot of information coming in , and was difficult to get a clear understanding of the issue."
+08/06/2026 10:09,9378,patrick.collins,Snipe Hunt,AI,0,retro,9378,10,the difficulty. This felt the most real world scenario yet.,we restored service but i didnt check to see or notice when that actually happened. i just presumed we were still down due to the conversations we were having.
+28/05/2026 15:06,9190,leah.murphy,Snipe Hunt,AI,1,retro,9190,10,Having to repeatedly asked Tanya to step away,Not to listen to others and use the facts / data to start investigation
+28/05/2026 10:04,9177,aoife.breen,Snipe Hunt,AI,1,retro,9177,8,"Not straightforward, required several restarts and high impact decisions.",Get everyone on board when a p1 incident is on
+28/05/2026 09:11,9173,amelia.horwood,Snipe Hunt,AI,1,retro,9173,9,That took multiple steps to resolve,To make decisions fast
+28/05/2026 08:08,9171,donnchadh.tierney,Snipe Hunt,AI,1,retro,9171,10,"Even though it was a certs issue, it was a more intricate fix that was not immediately obvious.",Dig deeper when changes are made.
+26/05/2026 09:07,9121,ellie.walsh,Snipe Hunt,AI,1,retro,9121,9,More decision making required,Deciding what option will be best overall in order to resolve incident
+20/05/2026 10:10,9050,caoimhe.kelly,Snipe Hunt,AI,1,retro,9050,8,the escalation contacts being ooo and the need for a maintenance banner,sometimes temporary maintenance is essential for critical issues
+20/05/2026 08:39,9046,mark.mcgarry,Snipe Hunt,AI,1,retro,9046,9,Unexpected to have characters out of office.,"Need to work on getting characters to elaborate on what they're seeing. Even if something is ""okay""- why is it okay? / Can we XC details"
+15/05/2026 10:05,8936,peter.graham,Snipe Hunt,AI,1,retro,8936,10,"Engineers being extremely uncooperative, made it challenging when no escalation was available","don't get hung up on others trying to speculate (email maintenance)
+maybe dont schedule involved maintenance when every other member of the team is unavailable.... :)"
