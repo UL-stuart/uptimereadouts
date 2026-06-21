@@ -1,0 +1,98 @@
+"datetime","player","message"
+"30/09/2025 10:55:06","Maya","@KSHITIJ KANTH let's build the core response team here. I've already added myself. Who else should we pull in to keep it tight and efficient?"
+"30/09/2025 10:55:10","Maya","I'd say one senior person each from security, platform, and engineering. Also add Tanya, tasks could be platform intensive"
+"30/09/2025 10:56:03","KSHITIJ KANTH","lets add, daniel, tanya and hameed as well."
+"30/09/2025 10:56:15","Maya","I'll call them up here"
+"30/09/2025 10:56:20","KSHITIJ KANTH","sure"
+"30/09/2025 10:56:24","Daniel","Hi"
+"30/09/2025 10:56:31","Hamed","I'm in"
+"30/09/2025 10:56:36","Tanya","Me as well"
+"30/09/2025 10:56:53","KSHITIJ KANTH","<@U06CA3MRAJF> We've got Cyvantics Security on retainer - just in case this gets out of hand you can reach out to them"
+"30/09/2025 10:57:06","Maya","Yes, we've got an IR(incident response) retainer with Cyvantics Security"
+"30/09/2025 10:57:21","Maya","Looped in Cyvantics Security - they're on their way now to take snapshots of the infected server and storage, followed by forensics on it"
+"30/09/2025 10:57:31","Maya","Meanwhile, I've got this from Cyvantics. @KSHITIJ KANTH, can you help track the steps and coordinate?"
+"30/09/2025 10:57:33","KSHITIJ KANTH","sure"
+"30/09/2025 10:57:33","Maya","<https://uptime-labs.atlassian.net/wiki/external/MThjMTk4ZDU5ODU0NGZmMWE1NzhmNGY0MDQwNWI1NTA>"
+"30/09/2025 10:57:38","Maya","We've got isolation steps in the playbook, but before we dive in, can you paste that list here? I'll help team run through it"
+"30/09/2025 10:58:38","KSHITIJ KANTH","Steps for Isolation:
+
+
+Steps to be done, mentioned along with the *owning* team
+1. Disconnect the infected server -&gt; Platforms 
+2. Cut off infrastructure traffic -&gt; Platforms
+3. Disconnect DB &amp; freeze backup -&gt; Application
+4. Detach from Shared Resource -&gt; Platforms
+5. Take snapshots (Disk &amp; Memory) -&gt; Ask team
+6. Kill suspicious process or activity -&gt; Platforms
+"
+"30/09/2025 10:58:58","Maya","I've given write access to Tanya, Hamed, Daniel, and myself"
+"30/09/2025 10:59:02","KSHITIJ KANTH","we have representative from each team. please proceed with your action item"
+"30/09/2025 10:59:02","Tanya","Disconnecting the checkout servers from the infra now"
+"30/09/2025 10:59:04","Daniel","I'm on it. Disconnecting DB access for checkout and checking if scheduled backups exist"
+"30/09/2025 10:59:06","Hamed","I'll verify if any shared storage is still attached to the checkout DB"
+"30/09/2025 10:59:18","Daniel","Step 3 done, DB connection to checkout is now cut"
+"30/09/2025 10:59:20","Tanya","Step 1 done, Checkout servers are now fully disconnected. Moving to isolate the infra from all external traffic"
+"30/09/2025 10:59:22","Hamed","Step 4 confirmed, No shared storage attached to checkout, which makes sense since checkout has its standalone storage"
+"30/09/2025 10:59:28","Tanya","Step 2 completed, Infra is now fully cut off from the outside world. That means the website will remain completely down until we recover"
+"30/09/2025 10:59:33","Maya","Step 5 done, Cyvantics has completed taking snapshots of the checkout servers and database. They've now moved on to forensics. @Hamed, we're good to kill the script now"
+"30/09/2025 10:59:43","Hamed","Step 6 done, The Script has been killed. @KSHITIJ KANTH let us know and double-check if anything else is pending on our side"
+"30/09/2025 11:00:53","KSHITIJ KANTH","all 6 steps of isolation is completed <@U06CA3MRAJF>"
+"30/09/2025 11:01:10","KSHITIJ KANTH","<@U06CA3MRAJF> should we move restoration?"
+"30/09/2025 11:01:34","KSHITIJ KANTH","Are we seeing any data exfiltration ?"
+"30/09/2025 11:02:00","Maya","Let me check with this Cyvantics once"
+"30/09/2025 11:02:11","Tanya","Checking..."
+"30/09/2025 11:02:20","Tanya","From what I'm seeing, the impact seems limited to the checkout servers. We haven't spotted similar symptoms on the others so far"
+"30/09/2025 11:02:26","Maya","Also, I checked. All other servers have security agents running and reporting normally. The only ones missing agents were the checkout servers - which feels a bit off"
+"30/09/2025 11:02:52","Maya","They are almost up to the speed of forensics. So far they are saying there is no trace of data transfer , only lockout"
+"30/09/2025 11:03:24","KSHITIJ KANTH","sure <@U06CA3MRAJF>"
+"30/09/2025 11:03:47","Maya","We do have the backups"
+"30/09/2025 11:04:16","Maya","But there is a financial loss of $180k with this. It was not a point to point backup :("
+"30/09/2025 11:04:53","Bob","Yes after 2AM today, the orders are of worth $180k"
+"30/09/2025 11:04:55","KSHITIJ KANTH","<@U06CA3MRAJF> what are our next action?"
+"30/09/2025 11:05:47","Maya","If we are good with the loss, then failover using backup and execute restoration"
+"30/09/2025 11:05:49","KSHITIJ KANTH","We're insured for up to $1M for such losses. Once we're back up, we'll take it forward with the insurer"
+"30/09/2025 11:06:17","Maya","Thanks for the go-ahead. @KSHITIJ KANTH, please track all restoration steps"
+"30/09/2025 11:06:26","Maya","I'm now validating the backup storage to ensure it's safe"
+"30/09/2025 11:06:29","Hamed","I'm provisioning new checkout servers, will update once ready"
+"30/09/2025 11:06:35","Maya","Backup is clean and safe. @Hamed, you can start rebuilding checkout from backup storage"
+"30/09/2025 11:06:39","Hamed","Thanks, Maya. New servers are ready. I'll start rebuilding now using backup storage"
+"30/09/2025 11:06:45","KSHITIJ KANTH","Steps for Restoration:
+
+
+Steps to be done, mentioned along with the *owning* team
+1. Validate backups → Security
+2. Wipe infected systems → Platforms
+3. Rebuild from clean backup → Platforms
+4. Re-enable security agent on the servers → Security
+5. Reconnect traffic to services and monitor → Platforms
+"
+"30/09/2025 11:06:47","Hamed","Rebuild completed"
+"30/09/2025 11:06:51","Maya","I've enabled the security agents (EDR) on checkout servers"
+"30/09/2025 11:06:54","Daniel","I'll monitor application health once services are restored"
+"30/09/2025 11:06:57","Maya"," @KSHITIJ KANTH , can you confirm all tasks are wrapped up and we are good to bring the traffic back? Just want to be sure, as this is the final restoration step before we move"
+"30/09/2025 11:07:34","KSHITIJ KANTH","we need to complete step 5
+1. Reconnect traffic to services and monitor → Platforms
+"
+"30/09/2025 11:07:41","Maya","@Tanya could you please proceed now"
+"30/09/2025 11:07:51","Tanya","Thanks for the go ahead. Bringing up network traffic in progress..."
+"30/09/2025 11:08:04","KSHITIJ KANTH","<@U047N6LHU0K> please monitor logs and website"
+"30/09/2025 11:08:10","Tanya","Restoration completed"
+"30/09/2025 11:08:24","Daniel","Yeah, I'm keeping my eyes on it"
+"30/09/2025 11:08:35","Bob","Wait!! getting a bunch of new complaints now. Users are neither able to see their return requests nor able to place new returns on the site"
+"30/09/2025 11:08:42","Maya","Yeah, that's probably the missing today's checkout data. Anyone who ordered or returned something during that time won't see it - makes sense since we restored from the yesterday's backup"
+"30/09/2025 11:08:44","Tanya","Tough, but expected :)"
+"30/09/2025 11:08:45","Bob","What should I tell them? They are asking for refunds"
+"30/09/2025 11:09:00","KSHITIJ KANTH","let me check with business on this"
+"30/09/2025 11:09:06","KSHITIJ KANTH","now the website is up and running"
+"30/09/2025 11:10:13","KSHITIJ KANTH","<@U047N91SRH8> let bez, tinus and board make a decision on refund"
+"30/09/2025 11:10:20","KSHITIJ KANTH","<@U047N91SRH8> how is report looking now"
+"30/09/2025 11:10:35","Daniel","Logs are good so far. Neither similar error logs nor alerts"
+"30/09/2025 11:10:55","Maya","@KSHITIJ KANTH I've received the forensics report from Cyvantics Security"
+"30/09/2025 11:10:58","Maya","forensics"
+"30/09/2025 11:11:08","KSHITIJ KANTH","BOB
+Keeping it high-level, just say website restored, but there's an issue with few orders. We'll refund them, and customers will get a $10 gift voucher as an apology"
+"30/09/2025 11:11:15","Maya","Also, I just finished combing through Shay's mailbox. There's something important here, I found two emails from what looks like our monitoring vendor - ClearTech"
+"30/09/2025 11:11:17","Maya","phished_email"
+"30/09/2025 11:11:30","Bob","New orders are coming in and user reports have stopped coming up except for the ones asking for refunds"
+"30/09/2025 11:11:35","Maya","We will take this forward in PIR , for now website is restored"
+"30/09/2025 11:11:45","Maya","Alright, since everything's back up and stable, we can now move back to the main #online-boutique channel. No further actions left here"

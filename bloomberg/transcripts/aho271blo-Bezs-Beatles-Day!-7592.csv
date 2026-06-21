@@ -1,0 +1,50 @@
+datetime,player,channel,message
+2026-02-03 07:51:39,tinus,online-boutique-7592,Hey everyone. I'm pumped today about our flash sale
+2026-02-03 07:51:45,tinus,online-boutique-7592,You know it's been 56 years since the Beatles released Abbey Road right? My favourite album
+2026-02-03 07:51:50,tanya,online-boutique-7592,56 years already?? Wow that makes me feel old...
+2026-02-03 07:51:55,tinus,online-boutique-7592,Indeed! We're celebrating today by promoting a flash sale on retro items from 1969
+2026-02-03 07:52:03,uptimelabs,online-boutique-7592,"Welcome to Bezs Beatles Day, remember communication is key to diagnose the problem.
+
+ *Access game links by pressing the Uptime Labs Logo in the top right of the screen*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin"
+2026-02-03 07:53:03,tinus,online-boutique-7592,We're a step closer to allowing folks to pay for items from the 1960s with Bitcoin thanks to Daniel!
+2026-02-03 07:53:09,daniel,online-boutique-7592,Think of it like time travelling!
+2026-02-03 07:53:14,hamed,online-boutique-7592,Wow good work Daniel! Looking forward to seeing it in action in prod
+2026-02-03 07:53:20,hamed,online-boutique-7592,How's the test-driven development going?
+2026-02-03 07:53:25,daniel,online-boutique-7592,TDDs going well. We are as solid as a rock! Though don't ask me what the Liskov Substitution Principle is...
+2026-02-03 07:53:32,shay,online-boutique-7592,"erm - funny you should say that Daniel, I'm just testing my checkout service change in prod and I can't complete the payment - something's up"
+2026-02-03 07:53:39,shay,online-boutique-7592,"I hope my checkout service change is all good. Can someone check its not just me? And before you ask, yes I've cleared my cookies"
+2026-02-03 07:53:45,tanya,online-boutique-7592,Sorry Daniel it's not looking good on my end either
+2026-02-03 07:53:48,tinus,online-boutique-7592,Uh oh...here we go again
+2026-02-03 07:53:52,tinus,online-boutique-7592,"@aho271-bloomberg.net can you ""Size up the Issue"" please and keep us informed"
+2026-02-03 07:53:54,bob,online-boutique-7592,From what I can see it looks like we are still getting orders through
+2026-02-03 07:53:59,tinus,online-boutique-7592,Get this sorted ASAP!!!
+2026-02-03 07:55:01,PLAYER,online-boutique-7592,"Daniel, what is the situation?"
+2026-02-03 07:55:05,uptimelabs,online-boutique-7592,:star: Manage actions and timings
+2026-02-03 07:55:11,daniel,online-boutique-7592,"I just tried to make a payment myself and it didn't go through, so I'm seeing the same issue as customers."
+2026-02-03 07:55:45,PLAYER,online-boutique-7592,Can you investigate why that is?
+2026-02-03 07:55:54,daniel,online-boutique-7592,"I'm looking into it now, but so far every payment attempt I've made has failed just like the customer reports."
+2026-02-03 07:56:04,PLAYER,online-boutique-7592,Can you look at the code?
+2026-02-03 07:56:11,tinus,online-boutique-7592,Let's focus on understanding the impact and scope first before diving into the code.
+2026-02-03 07:56:42,PLAYER,online-boutique-7592,I see from the dashboards that the orders are at a low level
+2026-02-03 07:56:44,uptimelabs,online-boutique-7592,:star: Use metrics as evidence
+2026-02-03 07:56:49,bob,online-boutique-7592,"That's right—I'm seeing about 40% of customer payment attempts failing in the last few minutes, which is much higher than normal."
+2026-02-03 07:57:21,PLAYER,online-boutique-7592,are any customer payment attempts going through?
+2026-02-03 07:57:27,bob,online-boutique-7592,"Yes, some payments are still succeeding, but a significant portion—about 40%—are failing right now."
+2026-02-03 07:57:31,uptimelabs,online-boutique-7592,:star: Asking questions to validate impact of the problem
+2026-02-03 07:58:15,PLAYER,online-boutique-7592,We will escalate this as a Sev2 incident
+2026-02-03 07:58:23,tinus,online-boutique-7592,Thanks for escalating—let's get a clear picture of the impact as quickly as possible.
+2026-02-03 07:58:45,PLAYER,online-boutique-7592,other than payments is there any other impact?
+2026-02-03 07:58:51,bob,online-boutique-7592,"At this time, the only impact I'm seeing is with payment failures—other parts of the site appear to be working normally."
+2026-02-03 07:59:17,PLAYER,online-boutique-7592,Current known impact is 40% of customer payment attempts are failing
+2026-02-03 07:59:19,uptimelabs,online-boutique-7592,:star: Qualify the problem
+2026-02-03 07:59:23,tinus,online-boutique-7592,Thanks for the update—let's keep digging to see if there's any pattern to these failures.
+2026-02-03 08:13:10,uptimelabs,online-boutique-7592,"Drill Wrap-Up
+
+Thanks for playing! This session is now closed.
+
+Please return to your Uptime Labs tab to review your performance and complete the Retrospective & Feedback form.
+
+If you've already closed the tab, you can reopen the form using the button below."

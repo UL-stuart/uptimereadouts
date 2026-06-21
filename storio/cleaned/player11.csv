@@ -1,0 +1,211 @@
+index,datetime,player,channel,message
+0,05/11/2025 14:09,Bez,online-boutique-6615,What a day! Our Grand Summer Sale kicked off this morning at 10 and the response has been insane. Can't believe we're already 5 hours in
+1,05/11/2025 14:09,Bob,online-boutique-6615,Totally! Just checked the dashboard we've already crossed $160k+ in revenue :money_mouth_face: . The sale energy is next level!
+2,05/11/2025 14:09,Tinus,online-boutique-6615,That's fantastic but hey this is just the beginning. Three days to go... I'm keeping my fingers crossed :crossed_fingers:
+3,05/11/2025 14:09,Bez,online-boutique-6615,Seeing so many people shopping on a holiday it feels satisfying. Exactly the momentum we were hoping for
+5,05/11/2025 14:10,player11,online-boutique-6615,Clicked undefined button
+6,05/11/2025 14:10,player11,online-boutique-6615,Clicked org button
+7,05/11/2025 14:11,player11,online-boutique-6615,Clicked Start button
+9,05/11/2025 14:11,Shay,online-boutique-6615,Not this time! I just got a few alerts mentioning severe errors popping up in PROD
+10,05/11/2025 14:11,Bob,online-boutique-6615,Weird... a few users just complained they are unable to complete their orders. Feels... off..
+11,05/11/2025 14:11,player11,online-boutique-6615,Bob Can You give us more details about the customers and their complains?
+12,05/11/2025 14:12,Bob,online-boutique-6615,Sure let me look at my reports
+13,05/11/2025 14:12,Bob,online-boutique-6615,Here are some of the complaints we've received in the last few minutes. It's coming all across the globe
+14,05/11/2025 14:12,Bob,online-boutique-6615,"Germany - ""I added items to my cart clicked checkout and it just kept spinning. Then it dumped me back to an empty cart"
+15,05/11/2025 14:12,Bob,online-boutique-6615,"USA - ""Order failed twice and now the cart is empty. I refreshed but now the site is laggy"
+16,05/11/2025 14:12,Bob,online-boutique-6615,"Japan - ""Got to checkout then error 502. Tried again - cart gone"
+17,05/11/2025 14:12,Bob,online-boutique-6615,To sum it all we have got 240+ reports globally
+18,05/11/2025 14:12,Bob,online-boutique-6615,Metrics
+19,05/11/2025 14:13,Daniel,online-boutique-6615,That is strange
+20,05/11/2025 14:14,player11,online-boutique-6615,Daniel Shay Could you reproduce the issue?
+21,05/11/2025 14:14,Bob,online-boutique-6615,Yeah looks like some people are still able to place orders
+22,05/11/2025 14:14,Daniel,online-boutique-6615,Checking now...
+23,05/11/2025 14:14,player11,online-boutique-6615,SEV-1 The customers could not place orders
+24,05/11/2025 14:14,player11,business-comms-6615,*Incident Number INC100044:* SEV-1 The customers could not place orders
+27,05/11/2025 14:15,Bez,business-comms-6615,I'm seeing some posts on social media about issues with our platform is this a regional issue or hitting customers globally?
+28,05/11/2025 14:15,player11,online-boutique-6615,Tanya We have an inssue related to the orders Can you check the infrastructure to make sure if there is any issue
+29,05/11/2025 14:15,Shay,online-boutique-6615,Looks like my cart is empty when i place an order
+30,05/11/2025 14:16,Tanya,online-boutique-6615,Checking infra...
+31,05/11/2025 14:16,Tanya,online-boutique-6615,All four checkout servers are maxed out - CPU memory and disk I/O all spiking. No changes or deployments were done from platform side
+32,05/11/2025 14:16,Tanya,online-boutique-6615,ServerMetrics
+33,05/11/2025 14:16,player11,business-comms-6615,Some customers complain about placing an order. We are trying to find the issue Next update in 5 mintues
+34,05/11/2025 14:16,Tanya,online-boutique-6615,It doesn't looks like a load issue either. CPU and Memory spike is not matching with incoming traffic
+35,05/11/2025 14:16,Tanya,online-boutique-6615,I'm seeing a running process called init_locker.sh eating up most of the CPU on the checkout server. That's not something we usually run. Something's suspicious here
+36,05/11/2025 14:16,Tanya,online-boutique-6615,ProcessRunning
+37,05/11/2025 14:17,player11,online-boutique-6615,Maya Meanwhile could you check the metrics to make sure there is no attack or any other security issue?
+38,05/11/2025 14:18,player11,online-boutique-6615,Tanya Daniel Please check the logs and make sure there is nothing important
+39,05/11/2025 14:18,Daniel,online-boutique-6615,Every time i refresh my cart empties
+40,05/11/2025 14:18,Maya,online-boutique-6615,Let me check if there's anything suspicious
+41,05/11/2025 14:18,player11,online-boutique-6615,Shay Can you give me the change log of the applications
+42,05/11/2025 14:18,Shay,online-boutique-6615,Looking into logs now
+43,05/11/2025 14:18,Bez,business-comms-6615,"Got an email claiming responsibility by ""BlackCrow Group"" and demanding payment of $5M in crypto. Honestly I get these hoax emails all the time so I'm not buying it"
+44,05/11/2025 14:18,Maya,online-boutique-6615,Weird!! Security agent known as EDR(Endpoint Detection and Response) is missing from all 4 checkout servers. That's? concerning
+45,05/11/2025 14:18,Maya,online-boutique-6615,```EDR is basically our endpoint defense tool it tracks unusual activity at the servers```
+46,05/11/2025 14:18,Maya,online-boutique-6615,AlsoI found an init_locker.sh script encrypting DB app and log files which is renaming the filename like below
+47,05/11/2025 14:18,Bez,business-comms-6615,Customers have gone outrageous. #OBFail and #OBStealsSale are trending with frustrated posts. We're getting hammered online! Where are we @player11?
+48,05/11/2025 14:18,Maya,online-boutique-6615,```\norder_log_2025-06-01.locked\nsession_state.tmp.locked```
+49,05/11/2025 14:18,Shay,online-boutique-6615,Found these below error logs
+50,05/11/2025 14:18,Shay,online-boutique-6615,```\napp[checkout-service] [ERROR] - write() failed Read-only filesystem\napp[checkout-service] Order submission failed for session_id=ae43f9 due to I/O error\napp[checkout-service] [ERROR] - Transaction commit failed Read-only file system\n[ERROR] nginx[3245] - 502 Bad Gateway while accessing upstream checkout service\n[ERROR] nginx
+51,05/11/2025 14:18,Daniel,online-boutique-6615,this explains why there were errors in checkout logs saying write failed  read-only filesystem
+52,05/11/2025 14:18,Shay,online-boutique-6615,The server is too slow and give up while responding back. I'm not sure why read-only errors are there
+53,05/11/2025 14:18,Shay,online-boutique-6615,Here is the changes:\n<https://uptime-labs.atlassian.net/wiki/external/YzYwYTAxNWQzOTI0NDYzOWI1MjkxNTI2YmVmMjUyZDE>
+54,05/11/2025 14:18,Tanya,online-boutique-6615,Wait... there's a file here named HELP_ME_DECRYPT.txt. I opened it appears a ransom note. This doesn't look good
+55,05/11/2025 14:18,Tanya,online-boutique-6615,help_me_decrypt
+56,05/11/2025 14:19,Maya,online-boutique-6615,Confirmed. This is a ransomware breach. @player11 inform business about this
+57,05/11/2025 14:19,Daniel,online-boutique-6615,Looking at the above logs app looks fine. But system can't write new data. Errors suggests to be an infra component failure
+58,05/11/2025 14:19,Tanya,online-boutique-6615,Shall i try killing this script ?
+59,05/11/2025 14:19,Bob,online-boutique-6615,Guys!!! User complaints are sky rocketing its turning catastrophic!
+60,05/11/2025 14:19,Daniel,online-boutique-6615,Also checkout servers show CPU and memory limits exceeded alerts this definitely looks bigger than just an app issue
+61,05/11/2025 14:19,Daniel,online-boutique-6615,```app[checkout-service]: systemd[1]
+62,05/11/2025 14:19,Shay,online-boutique-6615,Could this be due to load or any changes ?
+63,05/11/2025 14:19,Bez,business-comms-6615,Wait! you're telling me this is an actual ransomware hit?
+64,05/11/2025 14:19,player11,business-comms-6615,Seems we have a security issue We are checking all the happenings next update in 5 mins
+65,05/11/2025 14:19,Tinus,online-boutique-6615,There is a lot of messages right now
+66,05/11/2025 14:20,Bez,business-comms-6615,Alright tell everyone no one says a single thing outside online-boutique! I don't care who's asking not a word until we know exactly what's going on!
+67,05/11/2025 14:21,player11,online-boutique-6615,Maya  Is there any solution for it?
+68,05/11/2025 14:21,Maya,online-boutique-6615,Killing the script could make things worse higher ransom or losing data forever
+69,05/11/2025 14:21,Bez,business-comms-6615,This is nightmare! @player11 where are we right now?
+70,05/11/2025 14:21,Maya,online-boutique-6615,@player11 before we do anything I'd request everyone to please change their passwords
+71,05/11/2025 14:21,player11,online-boutique-6615,Tanya Which script you mean?
+72,05/11/2025 14:21,Maya,online-boutique-6615,Also I'm removing everyone's access to servers - only I'll have control for now. Later we will reassess to do any activity further
+73,05/11/2025 14:21,Daniel,online-boutique-6615,Done on my end
+74,05/11/2025 14:21,Hamed,online-boutique-6615,Updated. @Maya smart move by limiting server's access
+75,05/11/2025 14:21,Shay,online-boutique-6615,Password updated
+76,05/11/2025 14:21,Bob,online-boutique-6615,Changed mine too. Better safe than sorry
+77,05/11/2025 14:21,Tanya,online-boutique-6615,init_locker.sh script
+78,05/11/2025 14:21,Tanya,online-boutique-6615,All set
+79,05/11/2025 14:21,Tanya,online-boutique-6615,It's much worse now. Every file I check is encrypted nothing can be opened or recovered.
+80,05/11/2025 14:21,Shay,online-boutique-6615,I'm seeing new errors on frontend now. How's it for you @player11 ?
+81,05/11/2025 14:22,Maya,online-boutique-6615,Attention! when it comes to potential security breaches it's important we don't discuss sensitive details here
+82,05/11/2025 14:22,player11,business-comms-6615,Seems there is an security breach we nedd to change all the user paasword first.
+83,05/11/2025 14:22,Maya,online-boutique-6615,I'm setting up private channel...
+84,05/11/2025 14:22,Maya,online-boutique-6615,@player11 before we move to private channel can you check with business what's the plan - are we paying the ransom or moving with response?
+85,05/11/2025 14:23,Bez,business-comms-6615,Thanks ive just updated mine
+86,05/11/2025 14:23,player11,business-comms-6615,The attackers asked this from us Maya wants to know what is the business decision. Do we wanna pay?
+87,05/11/2025 14:23,Bez,business-comms-6615,Not in favor of paying. Ethically it sets the wrong example and there's no real guarantee we'll get anything back
+88,05/11/2025 14:23,Tinus,business-comms-6615,Agree. Also just to be clear - we don't need to alert the ICO(Information Commissioner's Office) right this second. We've got up to 72 hours but that depends on how serious this really is
+89,05/11/2025 14:24,Maya,private-comms-6615,@player11 let's build the core response team here. I've already added myself. Who else should we pull in to keep it tight and efficient?
+90,05/11/2025 14:24,Maya,private-comms-6615,I'd say one senior person each from security platform and engineering. Also add Tanya tasks could be platform intensive
+91,05/11/2025 14:24,Bez,business-comms-6615,@Tinus do you think this is something we should loop in any cyber security agency for?
+92,05/11/2025 14:24,Tinus,business-comms-6615,If it looks like a complete lock-out I'd say yes
+93,05/11/2025 14:24,player11,online-boutique-6615,Hamed Who should do the limitation?
+94,05/11/2025 14:24,Tinus,business-comms-6615,We've got Cyvantics Security on retainer - just in case this gets out of hand. @player11 ask Maya to reach out if needed
+95,05/11/2025 14:24,player11,online-boutique-6615,Maya Do you confirm Hamed S
+96,05/11/2025 14:25,Maya,online-boutique-6615,What is Hamed's suggestion?
+97,05/11/2025 14:25,player11,business-comms-6615,ok I will follow it up
+98,05/11/2025 14:26,player11,private-comms-6615,this is the business decision\n\n*Bez*  [3:23 PM]\nNot in favor of paying. Ethically it sets the wrong example and there's no real guarantee we'll get anything back\n\n*Tinus*  [3:23 PM]\nAgree. Also just to be clear - we don't need to alert the ICO(Information Commissioner's Office) right this second. We've got up to 72 hours but that depends on how serious this really is\n\n*Bez*  [3:24 PM]\nTinus do you think this is something we should loop in any cyber security agency for?\n\n*Tinus*  [3:24 PM]\nIf it looks like a complete lock-out I'd say yes
+99,05/11/2025 14:26,Maya,online-boutique-6615,Also ive created a new channel lets move conversation over there
+100,05/11/2025 14:26,Maya,private-comms-6615,Yes we've got an IR(incident response) retainer with Cyvantics Security
+101,05/11/2025 14:26,Bez,business-comms-6615,@player11 I need a clear answer from the team. What exactly is affected right now?
+102,05/11/2025 14:26,Maya,private-comms-6615,Looped in Cyvantics Security - they're on their way now to take snapshots of the infected server and storage followed by forensics on it
+103,05/11/2025 14:26,Tinus,business-comms-6615,You're right. We need clear facts - which systems are locked which are safe
+104,05/11/2025 14:27,player11,private-comms-6615,Daniel Tanya Hamed Please join us for this issue
+105,05/11/2025 14:27,Maya,private-comms-6615,Meanwhile I've got this from Cyvantics. @player11 can you help track the steps and coordinate?
+106,05/11/2025 14:27,Maya,private-comms-6615,<https://uptime-labs.atlassian.net/wiki/external/MThjMTk4ZDU5ODU0NGZmMWE1NzhmNGY0MDQwNWI1NTA>
+107,05/11/2025 14:27,Maya,private-comms-6615,We've got isolation steps in the playbook but before we dive in can you paste that list here? I'll help team run through it
+108,05/11/2025 14:28,player11,private-comms-6615,Hamed We should go for the isolation\n\nAlways go for _Isolation_ first followed by _Restoration_ of services\n\n\n\n*Isolation comes first* to stop the ransomware from spreading to backups and other systems. It prevents the spread of threats and creates a safe environment for analysis and recovery.
+109,05/11/2025 14:28,player11,business-comms-6615,I will come back to you in few minutes with the answer
+110,05/11/2025 14:28,Maya,online-boutique-6615,Can you copy in the steps for isolation?
+111,05/11/2025 14:29,Maya,private-comms-6615,Can you copy steps for isolation? All should be in that document
+112,05/11/2025 14:29,player11,online-boutique-6615,Hamed Tanya Please go for the blocking users to access to the servers
+113,05/11/2025 14:29,player11,private-comms-6615,Steps for Isolation:\n\n\nSteps to be done mentioned along with the *owning* team\n1. Disconnect the infected server -> Platforms \n2. Cut off infrastructure traffic -> Platforms\n3. Disconnect DB & freeze backup -> Application\n4. Detach from Shared Resource -> Platforms\n5. Take snapshots (Disk & Memory) -> Ask team\n6. Kill suspicious process or activity -> Platform
+114,05/11/2025 14:30,player11,online-boutique-6615,There are the steps\n\nSteps for Isolation:\n\n\nSteps to be done mentioned along with the *owning* team\n1. Disconnect the infected server -> Platforms \n2. Cut off infrastructure traffic -> Platforms\n3. Disconnect DB & freeze backup -> Application\n4. Detach from Shared Resource -> Platforms\n5. Take snapshots (Disk & Memory) -> Ask team\n6. Kill suspicious process or activity -> Platform
+115,05/11/2025 14:30,Maya,private-comms-6615,I've given write access to Tanya Hamed Daniel and myself
+116,05/11/2025 14:30,Bob,online-boutique-6615,@player11 user complaints are spiking. They're reporting the site is down earlier it wasn't the case. What should I tell them now?
+117,05/11/2025 14:30,Tanya,private-comms-6615,Disconnecting the checkout servers from the infra now
+118,05/11/2025 14:30,Daniel,private-comms-6615,I'm on it. Disconnecting DB access for checkout and checking if scheduled backups exist
+119,05/11/2025 14:30,Hamed,private-comms-6615,I'll verify if any shared storage is still attached to the checkout DB
+120,05/11/2025 14:30,Daniel,private-comms-6615,Step 3 done DB connection to checkout is now cut
+121,05/11/2025 14:30,Tanya,private-comms-6615,Step 1 done Checkout servers are now fully disconnected. Moving to isolate the infra from all external traffic
+122,05/11/2025 14:30,Hamed,private-comms-6615,Step 4 confirmed No shared storage attached to checkout which makes sense since checkout has its standalone storage
+123,05/11/2025 14:30,Tanya,private-comms-6615,Step 2 completed Infra is now fully cut off from the outside world. That means the website will remain completely down until we recover
+124,05/11/2025 14:30,player11,private-comms-6615,Maya We wanna have a report to give the business about the effect.
+125,05/11/2025 14:30,Maya,private-comms-6615,Step 5 done Cyvantics has completed taking snapshots of the checkout servers and database. They've now moved on to forensics. @Hamed we're good to kill the script now
+126,05/11/2025 14:30,Bez,business-comms-6615,Do we have any backup storage? Maybe we can try restoring from that
+127,05/11/2025 14:30,Tanya,private-comms-6615,Checking...
+128,05/11/2025 14:30,Hamed,private-comms-6615,Step 6 done The Script has been killed. @player11 let us know and double-check if anything else is pending on our side
+129,05/11/2025 14:30,Tanya,private-comms-6615,From what I'm seeing the impact seems limited to the checkout servers. We haven't spotted similar symptoms on the others so far
+130,05/11/2025 14:31,Maya,private-comms-6615,Also I checked. All other servers have security agents running and reporting normally. The only ones missing agents were the checkout servers - which feels a bit off
+131,05/11/2025 14:31,player11,private-comms-6615,We should recover it with this instruction\n\nSteps for Restoration:\n\n\nSteps to be done mentioned along with the *owning* team\n1. Validate backups → Security\n2. Wipe infected systems → Platforms\n3. Rebuild from clean backup → Platforms\n4. Re-enable security agent on the servers → Security\n5. Reconnect traffic to services and monitor → Platforms\n6. \n@here
+132,05/11/2025 14:32,player11,business-comms-6615,This is Maya message\n\nAlso I checked. All other servers have security agents running and reporting normally. The only ones missing agents were the checkout servers - which feels a bit off
+133,05/11/2025 14:32,Maya,private-comms-6615,I'll need to check if we have backups
+134,05/11/2025 14:32,Maya,private-comms-6615,Yes we must have a backup. Platform team can confirm us
+135,05/11/2025 14:32,player11,online-boutique-6615,Bob We are working on the solution. We currently restrict the access then wanna restore the access
+136,05/11/2025 14:32,Hamed,private-comms-6615,Correct we do have backup which only runs at 2AM. Latest is yesterday's. We'll lose today's orders
+137,05/11/2025 14:32,Maya,private-comms-6615,Isolation is complete. We're good to move toward restoration using the backup storage now
+138,05/11/2025 14:32,Maya,private-comms-6615,@player11 could you please confirm with business before moving forward on this
+139,05/11/2025 14:32,Maya,private-comms-6615,I've called in @Bob to the channel
+140,05/11/2025 14:32,player11,business-comms-6615,We isolate the affected server and working on the restoration
+141,05/11/2025 14:33,Bob,private-comms-6615,@player11 I hear you need my help what exactly should I look into?
+142,05/11/2025 14:33,Bob,private-comms-6615,With the sale starting today the potential loss is significant - around $180k
+143,05/11/2025 14:33,player11,private-comms-6615,Hamed Let me check with the business
+144,05/11/2025 14:33,player11,business-comms-6615,Bez Tinus The latest backup is for yesterday What should we do?
+145,05/11/2025 14:34,Bez,business-comms-6615,Let me get back to you on that
+146,05/11/2025 14:34,Bez,business-comms-6615,What is the loss amount?
+147,05/11/2025 14:35,player11,private-comms-6615,Hamed Maya When we have a confiration how long does it take to be restored?
+148,05/11/2025 14:35,Maya,private-comms-6615,Around 2 minutes
+149,05/11/2025 14:35,player11,business-comms-6615,This is Bob message\n\nWith the sale starting today the potential loss is significant - around $180k
+150,05/11/2025 14:35,Bez,business-comms-6615,Losing this much worth of data isn't good. However we do have insurance let me check
+151,05/11/2025 14:36,player11,business-comms-6615,After your confirmation we need 2 minutes to restore
+152,05/11/2025 14:36,Bez,business-comms-6615,We're insured for up to $1M for such losses. Once we're back up we'll take it forward with the insurer
+153,05/11/2025 14:36,Tinus,business-comms-6615,In that case we can proceed with the restoration from backup - it's our best option right now
+154,05/11/2025 14:36,Bez,business-comms-6615,Agreed. @player11 let's move forward
+155,05/11/2025 14:36,Bez,business-comms-6615,Update me as soon as it'll be recovered. Board members are getting impatient
+156,05/11/2025 14:36,player11,private-comms-6615,Maya Hamed Daniel We have the confirmation go for the restoration
+157,05/11/2025 14:36,Maya,private-comms-6615,Thanks for the go-ahead. @player11 please track all restoration steps
+158,05/11/2025 14:37,Maya,private-comms-6615,I'm now validating the backup storage to ensure it's safe
+159,05/11/2025 14:37,player11,business-comms-6615,They are working on it. Next update in 5 mintues
+160,05/11/2025 14:37,Hamed,private-comms-6615,I'm provisioning new checkout servers will update once ready
+161,05/11/2025 14:37,Maya,private-comms-6615,Backup is clean and safe. @Hamed you can start rebuilding checkout from backup storage
+162,05/11/2025 14:37,Hamed,private-comms-6615,Thanks Maya. New servers are ready. I'll start rebuilding now using backup storage
+163,05/11/2025 14:37,Hamed,private-comms-6615,Rebuild completed
+164,05/11/2025 14:37,Maya,private-comms-6615,I've enabled the security agents (EDR) on checkout servers
+165,05/11/2025 14:37,Daniel,private-comms-6615,I'll monitor application health once services are restored
+166,05/11/2025 14:37,Maya,private-comms-6615,@player11  can you confirm all tasks are wrapped up and we are good to bring the traffic back? Just want to be sure as this is the final restoration step before we move
+167,05/11/2025 14:38,player11,private-comms-6615,Bob Please give us update about the reports
+168,05/11/2025 14:38,player11,private-comms-6615,check these steps again\n\n*RESTORATION:*  \n1. *Validate backups* – Check all saved copies of your data to make sure they’re not infected by the attack. Only use backups from before the attack started.\n2. *Wipe infected systems* – Completely erase (format) any computers or servers that were hit by the attack so no harmful files remain.\n3. *Rebuild from clean backup* – Use the safe backup you found earlier to put the system back the way it was before the attack.\n4. *Re-enable security tools on servers* – Before putting the systems back on the network reinstall antivirus firewalls and other security software so they’re protected.\n5. *Reconnect traffic to services and monitor* – Turn the systems back on let users connect again and keep a close eye for anything suspicious.\n6. \nGive me feedback you did it completely
+169,05/11/2025 14:38,Bob,private-comms-6615,Reports are still rising
+170,05/11/2025 14:38,Hamed,private-comms-6615,1 and 2 is complete
+171,05/11/2025 14:38,Tanya,private-comms-6615,3 is also complete
+172,05/11/2025 14:39,Maya,private-comms-6615,So is 4
+173,05/11/2025 14:39,Maya,private-comms-6615,Great lets proceed
+174,05/11/2025 14:39,Tanya,private-comms-6615,Thanks for the go ahead. Bringing up network traffic in progress...
+175,05/11/2025 14:39,Tanya,private-comms-6615,Restoration completed
+176,05/11/2025 14:39,player11,private-comms-6615,Are we sure we blocked access for the attackers?
+177,05/11/2025 14:40,Bob,private-comms-6615,Wait!! getting a bunch of new complaints now. Users are neither able to see their return requests nor able to place new returns on the site
+178,05/11/2025 14:40,Maya,private-comms-6615,Yeah that's probably the missing today's checkout data. Anyone who ordered or returned something during that time won't see it - makes sense since we restored from the yesterday's backup
+179,05/11/2025 14:40,Tanya,private-comms-6615,Tough but expected :)
+180,05/11/2025 14:40,Bob,private-comms-6615,What should I tell them? They are asking for refunds
+181,05/11/2025 14:40,Maya,private-comms-6615,Yes we have
+182,05/11/2025 14:40,Maya,private-comms-6615,But thanks for checking to make sure
+183,05/11/2025 14:40,player11,private-comms-6615,Bob What is the effect do we have any report?
+184,05/11/2025 14:41,Bob,private-comms-6615,Customers want refunds
+185,05/11/2025 14:41,player11,online-boutique-6615,Shay Daniel Can you check to make sure if the checkout is normal now
+186,05/11/2025 14:41,Bob,private-comms-6615,All there data is missing
+187,05/11/2025 14:41,Bob,private-comms-6615,Please ask Bez what we should do
+188,05/11/2025 14:41,player11,business-comms-6615,We have a restoration we are checking to make sure if everything is normal.
+189,05/11/2025 14:42,Shay,online-boutique-6615,Logs are looking better
+190,05/11/2025 14:42,player11,business-comms-6615,There is some complains about the return and refund I followup from bob. Update you in few munies
+191,05/11/2025 14:42,Bez,business-comms-6615,Keeping it high-level just say website restored but there's an issue with few orders. We'll refund them and customers will get a $10 gift voucher as an apology
+192,05/11/2025 14:42,player11,online-boutique-6615,Keep an eye on it please
+193,05/11/2025 14:42,Maya,private-comms-6615,@player11 I've received the forensics report from Cyvantics Security
+194,05/11/2025 14:42,Maya,private-comms-6615,forensics
+195,05/11/2025 14:42,Shay,online-boutique-6615,Checkout seems to be operational again
+196,05/11/2025 14:42,Maya,private-comms-6615,Also I just finished combing through Shay's mailbox. There's something important here I found two emails from what looks like our monitoring vendor - ClearTech
+197,05/11/2025 14:42,player11,private-comms-6615,Bob It's bez message\nKeeping it high-level just say website restored but there's an issue with few orders. We'll refund them and customers will get a $10 gift voucher as an apology
+198,05/11/2025 14:42,Maya,private-comms-6615,phished_email
+199,05/11/2025 14:43,Bob,private-comms-6615,Thanks
+200,05/11/2025 14:43,Maya,private-comms-6615,We will take this forward in PIR  for now website is restored
+201,05/11/2025 14:43,Maya,private-comms-6615,Alright since everything's back up and stable we can now move back to the main #online-boutique channel. No further actions left here
+202,05/11/2025 14:43,Maya,online-boutique-6615,Do we go ahead and mark this incident as closed?
+203,05/11/2025 14:43,Maya,private-comms-6615,Are we good to close this incident?
+204,05/11/2025 14:44,player11,private-comms-6615,Yeah let's move back
+205,05/11/2025 14:44,Bez,business-comms-6615,Since services are restored I'm heading to speak with compliance and the regulators. Thankfully no data was leaked that helps
+206,05/11/2025 14:44,Tanya,online-boutique-6615,That was intense. We've never been this close to total loss before. We got lucky
+207,05/11/2025 14:44,Tinus,business-comms-6615,I'm on my way to the ICO (Information Commissioner's Office - UK) office now. I'll get the formal report rolling - that's required for the insurance claim. Keep monitoring in the meantime
+208,05/11/2025 14:44,Daniel,online-boutique-6615,Systems are calm now but that feeling earlier... not something I want to go through again
+209,05/11/2025 14:44,Bob,online-boutique-6615,One small slip caused a major breach. We need better awareness to prevent this in future
+210,05/11/2025 14:44,Tinus,online-boutique-6615,This could've gone way worse. Appreciate how quickly and cleanly you handled it
+211,05/11/2025 14:44,Bez,online-boutique-6615,Not every day we survive an attack like this. You made the right calls fast. Great job @player11 - that's how we bounce back
+213,05/11/2025 14:44,player11,online-boutique-6615,Great!
+214,05/11/2025 14:44,player11,online-boutique-6615,Clicked Start_feedback button\n

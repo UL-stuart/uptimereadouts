@@ -1,0 +1,98 @@
+datetime,player,channel,message
+2025-10-15 14:22:03,UptimeLabs,online-boutique-6313,"Welcome to Too Good To Be True, the responsibility is on you to size up the problem.
+
+ *Use `/help` at any time for a list of useful links and commands*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin Start button"
+2025-10-15 14:24:26,PLAYER,online-boutique-6313,Test
+2025-10-15 14:24:26,PLAYER,business-comms-6313,*Incident Number INC100048:* Test
+2025-10-15 14:26:30,PLAYER,online-boutique-6313,Clicked undefined button
+2025-10-15 14:26:40,PLAYER,online-boutique-6313,Clicked org button
+2025-10-15 14:26:43,PLAYER,online-boutique-6313,Clicked undefined button
+2025-10-15 14:30:51,PLAYER,online-boutique-6313,Clicked Start button
+2025-10-15 14:30:51,Tinus,online-boutique-6313,"Welcome our new IM @Meera Nadigadda, Happy to have you in the team. Hope you get comfortable with everyone"
+2025-10-15 14:30:51,UptimeLabs,online-boutique-6313,":alarm_clock: - You have 25 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-10-15 14:30:56,Shay,online-boutique-6313,Welcome @Meera Nadigadda
+2025-10-15 14:31:01,Daniel,online-boutique-6313,Nice to meet you @Meera Nadigadda
+2025-10-15 14:31:10,PLAYER,online-boutique-6313,":wave: Hello, team!"
+2025-10-15 14:31:11,Bob,online-boutique-6313,There are a few strange customer reports with the helpdesk
+2025-10-15 14:31:15,Bob,online-boutique-6313,"Apparently, the site is loading slowly"
+2025-10-15 14:31:19,Bob,online-boutique-6313,People are reporting that they can't make payments either
+2025-10-15 14:31:22,Bob,online-boutique-6313,customer_reports
+2025-10-15 14:31:26,Bob,online-boutique-6313,@Meera Nadigadda Can you check this?
+2025-10-15 14:31:38,PLAYER,online-boutique-6313,Looking into it
+2025-10-15 14:32:57,Shay,online-boutique-6313,Same for me!
+2025-10-15 14:35:41,Bez,online-boutique-6313,What's happening?
+2025-10-15 14:37:25,Bob,online-boutique-6313,"Customers are losing their minds online, this is NOT good"
+2025-10-15 14:37:31,PLAYER,online-boutique-6313,Website is unavailable for customers
+2025-10-15 14:37:31,PLAYER,business-comms-6313,*Incident Number INC100094:* Website is unavailable for customers
+2025-10-15 14:37:31,UptimeLabs,online-boutique-6313,:star: Incident record created
+2025-10-15 14:37:33,UptimeLabs,online-boutique-6313,:star: Send first comms in first 5 minutes
+2025-10-15 14:37:37,Bez,business-comms-6313,How many customers are affected? Are the reports coming in from all regions?
+2025-10-15 14:37:38,UptimeLabs,online-boutique-6313,:star: Qualify the problem
+2025-10-15 14:37:54,Bob,online-boutique-6313,Do you need any more details from me?
+2025-10-15 14:38:20,PLAYER,online-boutique-6313,"I'm having a look at it Bob , i see couple of issues in the Grafana dashboard not sure why it caused
+
+2025/10/15 14:31:48 [error] 21#21: *174 connect() failed (111: Connection refused) while connecting to upstream, client: 100.64.50.204, server: , request: ""GET /favicon.ico HTTP/1.0"", upstream: ""<http://172.20.233.152:80/favicon.ico>"", host: ""nginx-x-default-x-vilsvusp5xpdsjybvmwfvqp.vcluster-vilsvusp5xpdsjybvmwfvqp.svc.cluster.local"", referrer: ""<https://hipster.prod.uptimelabs.io/>"""
+2025-10-15 14:38:25,Daniel,online-boutique-6313,How can I help? I see we have a problem
+2025-10-15 14:38:29,UptimeLabs,online-boutique-6313,:star: Facts over opinion
+2025-10-15 14:38:36,Bob,online-boutique-6313,That error is above my pay grade
+2025-10-15 14:38:50,Bob,online-boutique-6313,I can help you with customer centric info though
+2025-10-15 14:39:17,UptimeLabs,online-boutique-6313,:bulb: Hint: keep the business informed regularly
+2025-10-15 14:39:56,PLAYER,business-comms-6313,looks like all the customers are impacted at the moment
+2025-10-15 14:40:50,Daniel,online-boutique-6313,Do you want the deployment list?
+2025-10-15 14:42:38,PLAYER,online-boutique-6313,yes Daniel
+2025-10-15 14:42:40,Daniel,online-boutique-6313,Below are the changes implemented this morning
+2025-10-15 14:42:45,Daniel,online-boutique-6313,deployments
+2025-10-15 14:42:48,Daniel,online-boutique-6313,"If you want more information, check out Incident Manager dashboard for more details: <https://grafana.prod.uptimelabs.io/d/aOf5yan4z/incident-management>"
+2025-10-15 14:43:14,Daniel,online-boutique-6313,I can do a deep dive on the logs also to see what's going on
+2025-10-15 14:43:22,PLAYER,online-boutique-6313,yes please
+2025-10-15 14:43:26,Daniel,online-boutique-6313,Yes Boss
+2025-10-15 14:44:59,Shay,online-boutique-6313,Looking into this and trying to replicate the issue
+2025-10-15 14:45:01,Daniel,online-boutique-6313,I am able to replicate the issue. Checking the logs now
+2025-10-15 14:45:04,Daniel,online-boutique-6313,"I see a lot of errors, most of them are context initialisation errors "
+2025-10-15 14:45:08,Daniel,online-boutique-6313,Logs
+2025-10-15 14:45:10,Shay,online-boutique-6313,Yes replicated the issue and even i'm seeing similar errors in frontend logs
+2025-10-15 14:45:14,Bez,business-comms-6313,"I have a stake holders meet in next 10 minutes, @Meera Nadigadda do you think this can be resolved by then? "
+2025-10-15 14:45:47,PLAYER,business-comms-6313,"there were couple of changes implemented this morning, we are thinking that could cause the issue, the team is a having a look at the logs, will let you know with all the details shortly"
+2025-10-15 14:45:49,Tanya,online-boutique-6313,There are no alerts on the Infrastructure. I did see a few errors on the frontend apps
+2025-10-15 14:45:54,UptimeLabs,online-boutique-6313,:star: Check changes done to the platform
+2025-10-15 14:45:54,UptimeLabs,online-boutique-6313,:star: Reviewed changes
+2025-10-15 14:45:55,Tanya,online-boutique-6313,This looks to me like an issue in the frontend pod
+2025-10-15 14:46:20,PLAYER,online-boutique-6313,"yeah, by the looks of it"
+2025-10-15 14:47:49,PLAYER,online-boutique-6313,"Could you please revert the changes that are causing the issue, since the business team has the meeting in the next 10 mins?"
+2025-10-15 14:47:57,UptimeLabs,online-boutique-6313,:star: Restoration over root cause analysis
+2025-10-15 14:47:58,PLAYER,online-boutique-6313,will see if that works
+2025-10-15 14:48:01,Daniel,online-boutique-6313,I'll need a few minutes to review the deployments first to figure out the affecting change
+2025-10-15 14:48:16,Daniel,online-boutique-6313,Or do you have a hunch as to which change is causing the problems?
+2025-10-15 14:49:04,PLAYER,online-boutique-6313,looks like the environmental variables are missed while deploying and also it is unable to find the configuration file
+2025-10-15 14:49:13,PLAYER,online-boutique-6313,i think that was the issue
+2025-10-15 14:49:37,Daniel,online-boutique-6313,We had 3 deployments today.. what's the change number?
+2025-10-15 14:49:52,Daniel,online-boutique-6313,otherwise I'll just investigate now if you don't know what change it is
+2025-10-15 14:51:53,UptimeLabs,online-boutique-6313,:alarm_clock: - You have less than 4 minutes. You can type `/help` if you need any reminders.
+2025-10-15 14:52:15,PLAYER,online-boutique-6313,CHG89349
+2025-10-15 14:52:20,Daniel,online-boutique-6313,Ooh Shay's change got it
+2025-10-15 14:52:30,PLAYER,online-boutique-6313,i believe so
+2025-10-15 14:52:31,Shay,online-boutique-6313,"Sorry, I've never done a rollback in PROD before, can someone help me with the steps?"
+2025-10-15 14:53:01,Daniel,online-boutique-6313,"I will help you, @Shay. Rolling back now"
+2025-10-15 14:53:05,PLAYER,online-boutique-6313,Daniel could you please help Shay with the rollback steps?
+2025-10-15 14:53:16,Daniel,online-boutique-6313,I have rollbacked Frontend:version to 10.1.0 to more stable version. Can somebody verify?
+2025-10-15 14:53:19,UptimeLabs,online-boutique-6313,"To 'verify' that the resolution has worked and to close the incident you must: 
+--Validate the fix yourself or with the team:white_check_mark: 
+--Cross check resolution with Customer Support:white_check_mark: 
+--Confirm resolution in the 'Business-comms' channel:white_check_mark: "
+2025-10-15 14:53:31,Bob,online-boutique-6313,"Customers are able to place the orders, complaint calls have reduced as well."
+2025-10-15 14:53:53,UptimeLabs,online-boutique-6313,:alarm_clock: - You have less than 2 minutes. You can type `/help` if you need any reminders.
+2025-10-15 14:54:03,Daniel,online-boutique-6313,It's definitely working again!
+2025-10-15 14:54:08,Shay,online-boutique-6313,Wow that was intense!
+2025-10-15 14:54:10,Bez,business-comms-6313,Thanks! for resolving it quickly
+2025-10-15 14:54:11,PLAYER,business-comms-6313,"The Issues hass been identified and fixed, the Website is now available to use, sorry for any inconvienece"
+2025-10-15 14:54:13,Hamed,online-boutique-6313,Good job guys
+2025-10-15 14:54:17,Tinus,online-boutique-6313,Yes well done! that could have gone much worse so props to everyone
+2025-10-15 14:54:19,UptimeLabs,online-boutique-6313,:star: Confirm resolution with the business
+2025-10-15 14:54:21,Tinus,online-boutique-6313,We will have a Post-Incident Review (PIR) to understand what happened
+2025-10-15 14:54:32,UptimeLabs,online-boutique-6313,"Thank you for playing, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit I am ready when you want to start. I am ready button"
+2025-10-15 14:55:08,PLAYER,online-boutique-6313,Clicked Start_feedback button
+2025-10-15 14:56:36,UptimeLabs,online-boutique-6313,Submission successful

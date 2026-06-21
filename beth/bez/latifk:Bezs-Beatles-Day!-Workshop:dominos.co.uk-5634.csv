@@ -1,0 +1,89 @@
+datetime,player,channel,message
+2025-09-04 09:07:20,Bez,online-boutique-5634,Hey everyone. I'm pumped today about our flash sale
+2025-09-04 09:07:25,Bez,online-boutique-5634,You know it's been 53 years since the Beatles released Abbey Road right? My favourite album
+2025-09-04 09:07:28,Tanya,online-boutique-5634,53 years already?? Wow that makes me feel old...
+2025-09-04 09:07:31,Bez,online-boutique-5634,Indeed! We're celebrating today by promoting a flash sale on retro items from 1969
+2025-09-04 09:07:34,UptimeLabs,online-boutique-5634,Start lvl 31
+2025-09-04 09:09:33,PLAYER,business-comms-5634,test
+2025-09-04 09:09:33,PLAYER,business-comms-5634,*Incident Number INC100042:* test
+2025-09-04 09:11:18,PLAYER,online-boutique-5634,command /help
+2025-09-04 09:11:27,PLAYER,online-boutique-5634,/ help
+2025-09-04 09:12:22,PLAYER,online-boutique-5634,Clicked org button
+2025-09-04 09:12:28,PLAYER,online-boutique-5634,Clicked undefined button
+2025-09-04 09:12:34,PLAYER,online-boutique-5634,Clicked undefined button
+2025-09-04 09:16:54,PLAYER,online-boutique-5634,Clicked Start button
+2025-09-04 09:16:58,PLAYER,online-boutique-5634,Clicked Start button
+2025-09-04 09:17:01,Tinus,online-boutique-5634,We're a step closer to allowing folks to pay for items from the 1960s with Bitcoin thanks to Daniel!
+2025-09-04 09:17:04,Daniel,online-boutique-5634,Think of it like time travelling!
+2025-09-04 09:17:08,Bez,online-boutique-5634,Wow good work Daniel! Looking forward to seeing it in action in prod
+2025-09-04 09:17:16,Shay,online-boutique-5634,"erm - funny you should say that Daniel, I'm just testing my checkout service change in prod and I can't complete the payment - something's up"
+2025-09-04 09:17:22,Tanya,online-boutique-5634,Sorry Daniel it's not looking good on my end either
+2025-09-04 09:17:27,Tinus,online-boutique-5634,Uh oh...here we go again
+2025-09-04 09:17:29,PLAYER,online-boutique-5634,let me test
+2025-09-04 09:17:34,Tinus,online-boutique-5634,"@Latif Khan can you ""Size up the Issue"" please and keep us informed"
+2025-09-04 09:17:39,Shay,online-boutique-5634,@Latif Khan it's worth having a look at the changes made earlier today first
+2025-09-04 09:17:48,Bez,online-boutique-5634,Get this sorted ASAP!!!
+2025-09-04 09:18:14,PLAYER,online-boutique-5634,We seems to have at issue with paymeny
+2025-09-04 09:18:24,PLAYER,online-boutique-5634,@damiel please investigate
+2025-09-04 09:18:55,PLAYER,online-boutique-5634,Daniel the bitcoin change that was implemented do we have a roll back plan
+2025-09-04 09:18:55,Daniel,online-boutique-5634,Where should we begin?
+2025-09-04 09:19:05,Daniel,online-boutique-5634,Oh it couldn't be my change
+2025-09-04 09:19:14,Daniel,online-boutique-5634,Also have we got any customer reports
+2025-09-04 09:19:26,PLAYER,online-boutique-5634,Daniel what changes we made before issue occured?
+2025-09-04 09:19:33,UptimeLabs,online-boutique-5634,:star: Check changes done to the platform
+2025-09-04 09:19:37,Shay,online-boutique-5634,I can get the deployment list for you
+2025-09-04 09:19:52,Shay,online-boutique-5634,Here's the detailed info on each of the changes made today
+2025-09-04 09:19:55,Shay,online-boutique-5634,Hope this helps:<https://uptime-labs.atlassian.net/wiki/spaces/ULPUBLIC/pages/1049559041/Bez+s+Beatles+day+Change+Request+logs>
+2025-09-04 09:20:00,PLAYER,online-boutique-5634,@boz we seem have a P1 Issue website not accepting payments
+2025-09-04 09:20:09,UptimeLabs,online-boutique-5634,:star: Qualify the problem
+2025-09-04 09:20:22,Bez,online-boutique-5634,I'm not seeing a ticket!
+2025-09-04 09:20:27,PLAYER,online-boutique-5634,Bob can you post a message website is currently down issue under investigation
+2025-09-04 09:20:38,PLAYER,online-boutique-5634,incident P1
+2025-09-04 09:20:40,Bob,online-boutique-5634,"I can, I'll send those comms now"
+2025-09-04 09:21:00,PLAYER,business-comms-5634,p1
+2025-09-04 09:21:00,PLAYER,business-comms-5634,*Incident Number INC10002:* p1
+2025-09-04 09:21:01,UptimeLabs,online-boutique-5634,:star: Incident record created
+2025-09-04 09:21:02,Bob,online-boutique-5634,Do you want any more info about customer reports?
+2025-09-04 09:21:03,UptimeLabs,online-boutique-5634,:star: Send first comms in first 5 minutes
+2025-09-04 09:21:06,Bez,business-comms-5634,"Just saw the incident ticket come through, can someone tell me what's going on? This sale is huge for us"
+2025-09-04 09:21:08,UptimeLabs,online-boutique-5634,:star: Formally assign criticality level to the incident
+2025-09-04 09:21:15,PLAYER,online-boutique-5634,P1
+2025-09-04 09:21:57,PLAYER,business-comms-5634,"Webiste not accepting payments, bob and daniel both made aware"
+2025-09-04 09:22:14,Bez,business-comms-5634,What's the impact?
+2025-09-04 09:22:20,Bez,business-comms-5634,"Regional, Global?"
+2025-09-04 09:23:11,PLAYER,online-boutique-5634,Daniel seems all payments impacted
+2025-09-04 09:23:30,Daniel,online-boutique-5634,Has this been verified with customer reports?
+2025-09-04 09:23:41,PLAYER,online-boutique-5634,Daniel what changes were made today
+2025-09-04 09:23:55,Daniel,online-boutique-5634,Shay sent a list to the deployments
+2025-09-04 09:24:13,Daniel,online-boutique-5634,<https://uptime-labs.atlassian.net/wiki/spaces/ULPUBLIC/pages/1049559041/Bez+s+Beatles+day+Change+Request+logs>
+2025-09-04 09:24:36,PLAYER,online-boutique-5634,"@hamad please investigate P1 website not accepting payments, what changes have beem made today"
+2025-09-04 09:24:49,Hamed,online-boutique-5634,Hi I'm online now
+2025-09-04 09:25:09,Hamed,online-boutique-5634,What have we learned from the investigation so far?
+2025-09-04 09:25:29,Hamed,online-boutique-5634,"Have we established impact, Global regional, Has the development team reviewed deployments yet?"
+2025-09-04 09:25:39,PLAYER,online-boutique-5634,Daniel @hamad can we reback *Change ID:* CHG89362
+2025-09-04 09:25:48,UptimeLabs,online-boutique-5634,:star: Restoration over root cause analysis
+2025-09-04 09:25:50,PLAYER,online-boutique-5634,Daniel @hamad can we reback *Change ID:* CHG89362 now
+2025-09-04 09:26:15,Daniel,online-boutique-5634,It could be Shay's checkout change - we haven't even investigated it
+2025-09-04 09:26:28,Daniel,online-boutique-5634,"Honestly, I don't think this is coming from my change. The Bitcoin feature isn't even active yet, and the frontend hasn't been updated"
+2025-09-04 09:26:32,Daniel,online-boutique-5634,Could this be load-related? It's a flash sale after all
+2025-09-04 09:26:35,Bez,business-comms-5634,Have we figured out the root cause yet?
+2025-09-04 09:26:49,PLAYER,business-comms-5634,global issue occurred when *Change ID:* CHG89362 (bitxcoin) was implemented we are doing a rollback now
+2025-09-04 09:27:59,PLAYER,online-boutique-5634,"Daniel the priority is to get website back up, can we rollback to when the website was working, then we can identify RCA"
+2025-09-04 09:28:14,Daniel,online-boutique-5634,"I'm 100% confident on my change, still not happy with the rollback"
+2025-09-04 09:28:43,Daniel,online-boutique-5634,Rolling back CHG89358 now....
+2025-09-04 09:28:53,Daniel,online-boutique-5634,The payment change has been successfully rolled back
+2025-09-04 09:29:01,Daniel,online-boutique-5634,"Sorry, I missed some common library dependencies that probably caused the issue"
+2025-09-04 09:29:33,PLAYER,online-boutique-5634,OK issue resolved
+2025-09-04 09:29:43,PLAYER,business-comms-5634,Bez issue resolved
+2025-09-04 09:29:45,Shay,online-boutique-5634,Looks like everything's working from the frontend and checkout side again
+2025-09-04 09:29:51,Shay,online-boutique-5634,Happy to confirm it's resolved on our end
+2025-09-04 09:29:51,UptimeLabs,online-boutique-5634,:star: Confirm resolution with the business
+2025-09-04 09:29:59,UptimeLabs,online-boutique-5634,Start retro and feedback
+2025-09-04 09:30:02,PLAYER,online-boutique-5634,Bob website back up
+2025-09-04 09:30:10,UptimeLabs,online-boutique-5634,:star: Cross check resolution with stakeholders
+2025-09-04 09:30:11,Bob,online-boutique-5634,I'll send those comms out
+2025-09-04 09:30:37,PLAYER,online-boutique-5634,"Daniel @hamad can we close MI and change status to monitoring,"
+2025-09-04 09:30:45,Daniel,online-boutique-5634,Yes
+2025-09-04 09:30:46,PLAYER,online-boutique-5634,thanks all
+2025-09-04 09:31:29,PLAYER,online-boutique-5634,Clicked Start_feedback button
+2025-09-04 09:32:25,UptimeLabs,online-boutique-5634,Submission successful

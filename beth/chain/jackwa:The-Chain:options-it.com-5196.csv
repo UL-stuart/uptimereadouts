@@ -1,0 +1,210 @@
+datetime,player,channel,message
+2025-07-30 09:05:42,Bez,online-boutique-5196,"Morning, team! Anyone else need a triple espresso today? [n/a - 0]"
+2025-07-30 09:05:51,Tinus,online-boutique-5196,"You're not the only one, Bez! The reports from last week are still giving me nightmares. [n/a - 0]"
+2025-07-30 09:06:01,Bob,online-boutique-5196,"Tell me about it, Tinus. [n/a - 0]"
+2025-07-30 09:06:04,Bob,online-boutique-5196,"But hey, at least it's sunny outside today. :sunrise: [n/a - 0]"
+2025-07-30 09:06:06,Bez,online-boutique-5196,"True, a little sunshine makes everything better. [n/a - 0]"
+2025-07-30 09:06:08,Bez,online-boutique-5196,"Also, I'm having my usual green smoothie. That's my secret energy booster. [n/a - 0]"
+2025-07-30 09:06:10,Daniel,online-boutique-5196,"Nice, Bez! I'll stick with my coffee though. [n/a - 0]"
+2025-07-30 09:06:11,Daniel,online-boutique-5196,Anyone else excited for the launch of the new BitCoin :coin: payment feature this week? [n/a - 0]
+2025-07-30 09:06:13,Tinus,online-boutique-5196,"Absolutely, Daniel! Been looking forward to it. [n/a - 0]"
+2025-07-30 09:06:16,Tinus,online-boutique-5196,"By the way, no spoilers, but did anyone catch the football game? Epic comeback! [n/a - 0]"
+2025-07-30 09:06:18,Shay,online-boutique-5196,I missed it! I was knee deep in a sci-fi novel. Anyone else into that? [n/a - 0]
+2025-07-30 09:06:26,Tanya,online-boutique-5196,"Oh, I love sci-fi! Can you share the name of the book, Shay? [n/a - 0]"
+2025-07-30 09:06:34,Daniel,online-boutique-5196,I've been reading a bit of sci-fi myself. [n/a - 0]
+2025-07-30 09:06:36,Daniel,online-boutique-5196,"Looking forward to sharing recommendations, Shay! [n/a - 0]"
+2025-07-30 09:06:40,Bez,online-boutique-5196,"There's always so much happening outside of work! Keep the energy :battery: going, team. [n/a - 0]"
+2025-07-30 09:06:43,Bez,online-boutique-5196,It's going to be another productive day. :raised_hands: [n/a - 0]
+2025-07-30 09:06:46,UptimeLabs,online-boutique-5196,Start lvl 8 [n/a - 0]
+2025-07-30 09:08:14,PLAYER,online-boutique-5196,Clicked Start button
+2025-07-30 09:08:14,UptimeLabs,online-boutique-5196,":alarm_clock: - You have 25 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders. [n/a - 0]"
+2025-07-30 09:08:16,Bob,online-boutique-5196,"Hey, we're getting reports of customers struggling to make purchases [n/a - 0]"
+2025-07-30 09:08:18,Bob,online-boutique-5196,@here Anyone else seeing this? [n/a - 0]
+2025-07-30 09:08:21,Tinus,online-boutique-5196,"Yes, I've noticed the same, @Bob . It seems like an error in the system [n/a - 0]"
+2025-07-30 09:08:24,Bez,online-boutique-5196,"Whatever it is, we need to sort it out quickly. [n/a - 0]"
+2025-07-30 09:08:26,Bez,online-boutique-5196,we need to step on it! before the social media backlash is turning into a storm. [n/a - 0]
+2025-07-30 09:08:30,Tinus,online-boutique-5196,"Who is handling incidents today? Please size up the issue, this is urgent [n/a - 0]"
+2025-07-30 09:08:38,PLAYER,online-boutique-5196,"Acknowledged, looking at this now. [n/a - 0]"
+2025-07-30 09:08:54,PLAYER,online-boutique-5196,Bob can you confirm the scope of customers reporting issues? Is it all customers? [n/a - 0]
+2025-07-30 09:09:00,UptimeLabs,online-boutique-5196,:star: Asking questions to validate impact of the problem [n/a - 0]
+2025-07-30 09:09:04,Bob,online-boutique-5196,Checking reports now! [n/a - 0]
+2025-07-30 09:09:19,PLAYER,online-boutique-5196,Tanya are you aware of any issues with the Platform/ [n/a - 0]
+2025-07-30 09:09:41,Bob,online-boutique-5196,As far as i can see from reports:  Customers are reporting issues with checkout and payments. All reports are coming from EU [n/a - 0]
+2025-07-30 09:09:52,Tanya,online-boutique-5196,Checking the platform now! [n/a - 0]
+2025-07-30 09:10:18,Shay,online-boutique-5196,I can see an error as I try to place an order [n/a - 0]
+2025-07-30 09:10:22,PLAYER,online-boutique-5196,What payment method are they using? [n/a - 0]
+2025-07-30 09:10:41,PLAYER,online-boutique-5196,Order confirmations seem to drop significantly from around 10.08 BST [n/a - 0]
+2025-07-30 09:10:47,UptimeLabs,online-boutique-5196,:star: Qualify the problem [n/a - 0]
+2025-07-30 09:10:52,Bob,online-boutique-5196,It appears to be with Bitcoin [n/a - 0]
+2025-07-30 09:11:15,Tanya,online-boutique-5196,I have checked the infra health. Metrics look good [n/a - 0]
+2025-07-30 09:11:24,Daniel,online-boutique-5196,I can see the cart service is down [n/a - 0]
+2025-07-30 09:11:39,Daniel,online-boutique-5196,I can try to restart it to see if that helps [n/a - 0]
+2025-07-30 09:12:01,PLAYER,online-boutique-5196,Is anyone having issues with accessing the website or is that a local issue? [n/a - 0]
+2025-07-30 09:12:34,Daniel,online-boutique-5196,Oh. i can see the same issue [n/a - 0]
+2025-07-30 09:12:48,PLAYER,online-boutique-5196,Daniel is the cart service down for all customers or just EU? Are customers able to submit orders by normal payment? [n/a - 0]
+2025-07-30 09:12:50,UptimeLabs,online-boutique-5196,:bulb: Hint: Understand the problem by reproducing it [n/a - 0]
+2025-07-30 09:12:55,Daniel,online-boutique-5196,It looks like only for EU [n/a - 0]
+2025-07-30 09:13:00,PLAYER,online-boutique-5196,I can't access the website. [n/a - 0]
+2025-07-30 09:13:04,UptimeLabs,online-boutique-5196,:star: Reproduces the incident [n/a - 0]
+2025-07-30 09:13:17,PLAYER,online-boutique-5196,Cart Error: [n/a - 0]
+2025-07-30 09:13:19,PLAYER,online-boutique-5196,"```rpc error: code = Unavailable desc = connection error: desc = ""transport: Error while dialing: dial tcp 172.20.155.164:7070: connect: connection refused""
+could not retrieve cart```
+ [n/a - 0]"
+2025-07-30 09:13:27,UptimeLabs,online-boutique-5196,:bulb: Hint: Declare an incident. [n/a - 0]
+2025-07-30 09:13:35,Daniel,online-boutique-5196,So cart service being down means none can order in EU with any payment method [n/a - 0]
+2025-07-30 09:13:38,PLAYER,business-comms-5196,*Incident Number INC100076:* Sev 1 - Cart Errors [n/a - 0]
+2025-07-30 09:13:38,UptimeLabs,online-boutique-5196,:star: Incident record created [n/a - 0]
+2025-07-30 09:13:40,UptimeLabs,online-boutique-5196,:star: Send first comms in first 5 minutes [n/a - 0]
+2025-07-30 09:13:59,Daniel,online-boutique-5196,Happy if I restart the service? [n/a - 0]
+2025-07-30 09:14:03,PLAYER,online-boutique-5196,Bob can you confirm customers outside of the EU are working succesfully? [n/a - 0]
+2025-07-30 09:14:13,Bez,business-comms-5196,cart errors?? What does this mean? How many users are impacted? [n/a - 0]
+2025-07-30 09:14:14,PLAYER,online-boutique-5196,What is the impact of restarting the service Daniel? [n/a - 0]
+2025-07-30 09:14:16,Shay,online-boutique-5196,There are a few changes that we pushed this morning [n/a - 0]
+2025-07-30 09:14:36,PLAYER,online-boutique-5196,Bob let's also get external COMMS out letting clients we are aware of an issue and working to resolve. [n/a - 0]
+2025-07-30 09:14:44,Daniel,online-boutique-5196,It will not make things worse but perhaps it will restore the service [n/a - 0]
+2025-07-30 09:14:44,UptimeLabs,online-boutique-5196,:star: Formally assign criticality level to the incident [n/a - 0]
+2025-07-30 09:15:07,Bob,online-boutique-5196,"Correct, customers outside of EU can still purchase and access site, we can see that in metrics [n/a - 0]"
+2025-07-30 09:15:23,PLAYER,online-boutique-5196,Shay please review changes - I can see Cart Service - CHG89777 and Payment Services changes were made - CHG89778:. [n/a - 0]
+2025-07-30 09:15:28,UptimeLabs,online-boutique-5196,:star: Reviewed changes [n/a - 0]
+2025-07-30 09:15:31,Shay,online-boutique-5196,On it [n/a - 0]
+2025-07-30 09:15:46,PLAYER,online-boutique-5196,They were pushed earlier this morning though so I don't see how they could impact from 10.08 which seems to be our start time. [n/a - 0]
+2025-07-30 09:15:55,UptimeLabs,online-boutique-5196,:star: Check changes done to the platform [n/a - 0]
+2025-07-30 09:16:08,PLAYER,business-comms-5196,"EU Customers are not able to complete payments, other regions are unimpacted. [n/a - 0]"
+2025-07-30 09:16:16,PLAYER,business-comms-5196,"Investigation on-going, updates to follow. [n/a - 0]"
+2025-07-30 09:17:05,Shay,online-boutique-5196,"I can see errors in the payments service, I think the payments change has broken the flow and taken down the cart service with it [n/a - 0]"
+2025-07-30 09:17:25,PLAYER,online-boutique-5196,Daniel please restart the service. [n/a - 0]
+2025-07-30 09:17:33,PLAYER,online-boutique-5196,Shay what errors are you seeing? [n/a - 0]
+2025-07-30 09:17:38,Daniel,online-boutique-5196,"sure @Jack Walsh, restarting the cart service [n/a - 0]"
+2025-07-30 09:17:41,Daniel,online-boutique-5196,I will have to restart frontend to pick up new service endpoints. [n/a - 0]
+2025-07-30 09:18:06,Daniel,online-boutique-5196,the service restart is completed [n/a - 0]
+2025-07-30 09:18:18,Shay,online-boutique-5196,ERROR- Bitcoin unacceptable payment method- [n/a - 0]
+2025-07-30 09:18:20,PLAYER,online-boutique-5196,Seeing the same issue [n/a - 0]
+2025-07-30 09:18:27,UptimeLabs,online-boutique-5196,:star: Reproduces the incident [n/a - 0]
+2025-07-30 09:18:27,UptimeLabs,online-boutique-5196,:star: Take command [n/a - 0]
+2025-07-30 09:18:47,Shay,online-boutique-5196,It looks like the change affects the EU payment flow [n/a - 0]
+2025-07-30 09:18:51,Bob,online-boutique-5196,"I can make payments now, is the incident resolved? [n/a - 0]"
+2025-07-30 09:18:55,Bez,business-comms-5196,Have we identified the root cause yet? [n/a - 0]
+2025-07-30 09:18:55,Bob,online-boutique-5196,should I inform the customers? [n/a - 0]
+2025-07-30 09:19:02,Daniel,online-boutique-5196,Bitcoin was introduced only to EU [n/a - 0]
+2025-07-30 09:19:26,PLAYER,online-boutique-5196,No [n/a - 0]
+2025-07-30 09:19:37,Shay,online-boutique-5196,Hey @Jack Walsh the cart service is crashing again. [n/a - 0]
+2025-07-30 09:19:39,Shay,online-boutique-5196,I'm not sure what the problem is. [n/a - 0]
+2025-07-30 09:19:42,PLAYER,online-boutique-5196,"I can access the front end but still seeing the same issues with payment:
+
+Uh, oh!
+Something has failed. Below are some details for debugging.
+*HTTP Status:* 500 Internal Server Error
+```rpc error: code = Internal desc = cart failure: failed to get user cart during checkout: rpc error: code = Unavailable desc = connection error: desc = ""transport: Error while dialing: dial tcp 172.20.155.164:7070: connect: connection refused""```
+ [n/a - 0]"
+2025-07-30 09:20:01,PLAYER,online-boutique-5196,Let''s focus in on removing Bitcoin payments - what change was this under Daniel? [n/a - 0]
+2025-07-30 09:20:11,Daniel,online-boutique-5196,"Shall we rollback the payments, since we saw errors inthe  payments service [n/a - 0]"
+2025-07-30 09:20:20,Daniel,online-boutique-5196,It's my payments change [n/a - 0]
+2025-07-30 09:20:26,PLAYER,online-boutique-5196,"It's a connectivity error also, can we get someone from Networks to check this? [n/a - 0]"
+2025-07-30 09:20:31,UptimeLabs,online-boutique-5196,:star: Form an effective investigation team [n/a - 0]
+2025-07-30 09:20:45,PLAYER,online-boutique-5196,Tanya / Hamed S can you please flag with Network Team? [n/a - 0]
+2025-07-30 09:20:47,UptimeLabs,online-boutique-5196,:bulb: Hint: keep the business informed regularly [n/a - 0]
+2025-07-30 09:20:47,Tanya,online-boutique-5196,"Sure, let me investigate [n/a - 0]"
+2025-07-30 09:21:01,PLAYER,online-boutique-5196,Yes Daniel roll back your change [n/a - 0]
+2025-07-30 09:21:06,UptimeLabs,online-boutique-5196,:star: Restoration over root cause analysis [n/a - 0]
+2025-07-30 09:21:19,Daniel,online-boutique-5196,"Understood, I'll proceed with rolling back the payment service [n/a - 0]"
+2025-07-30 09:21:30,PLAYER,business-comms-5196,"No, we restarted the service but still no issues. It's linked with the Bitcoin introduction - contining to investigate. [n/a - 0]"
+2025-07-30 09:21:37,UptimeLabs,online-boutique-5196,:star: Use metrics as evidence [n/a - 0]
+2025-07-30 09:21:39,Daniel,online-boutique-5196,payment service rollback is complete [n/a - 0]
+2025-07-30 09:21:45,PLAYER,online-boutique-5196,Testing [n/a - 0]
+2025-07-30 09:21:54,Hamed,online-boutique-5196,This is not good. Something is broken after the payment rollback [n/a - 0]
+2025-07-30 09:22:00,UptimeLabs,online-boutique-5196,:star: Communicating clearly and frequently [n/a - 0]
+2025-07-30 09:22:11,Hamed,online-boutique-5196,I will start the investigation. Can someone bring me up the speed [n/a - 0]
+2025-07-30 09:22:13,PLAYER,online-boutique-5196,Front end is killed again [n/a - 0]
+2025-07-30 09:22:21,PLAYER,online-boutique-5196,Daniel please restart the service again [n/a - 0]
+2025-07-30 09:22:29,Daniel,online-boutique-5196,Restarting service [n/a - 0]
+2025-07-30 09:22:57,Bob,online-boutique-5196,"Reports are rising, and it looks like it is now a global issue [n/a - 0]"
+2025-07-30 09:23:00,PLAYER,online-boutique-5196,"Hamed S looks like EU Region customers are unable to complete payments, error is linked to Bitcoin introduction which is killing the service from 10.08 this morning. [n/a - 0]"
+2025-07-30 09:23:09,Daniel,online-boutique-5196,Restart complete [n/a - 0]
+2025-07-30 09:23:20,PLAYER,business-comms-5196,"Starting to receive wider reports, may not be EU only - update to follow. [n/a - 0]"
+2025-07-30 09:23:47,PLAYER,online-boutique-5196,"Same issues:
+
+```rpc error: code = Unavailable desc = connection error: desc = ""transport: Error while dialing: dial tcp 172.20.155.164:7070: connect: connection refused""
+could not retrieve cart
+main.(*frontendServer).homeHandler
+	/src/handlers.go:74
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2220
+<http://github.com/gorilla/mux.(*Router).ServeHTTP|github.com/gorilla/mux.(*Router).ServeHTTP>
+	/go/pkg/mod/github.com/gorilla/mux@v1.8.1/mux.go:212```
+ [n/a - 0]"
+2025-07-30 09:23:54,Tanya,online-boutique-5196,It appears that payment change had some dependencies that Daniel was not aware of [n/a - 0]
+2025-07-30 09:23:55,UptimeLabs,online-boutique-5196,:star: Send regular business comms [n/a - 0]
+2025-07-30 09:24:17,PLAYER,online-boutique-5196,Tanya / Hamed S what is the 172.20.155.164 IP? Can we raise with Networks ASAP? [n/a - 0]
+2025-07-30 09:24:25,Hamed,online-boutique-5196,"Agree with Tanya, it looks like there was something payment change was linked to [n/a - 0]"
+2025-07-30 09:24:32,Hamed,online-boutique-5196,lets figure this out [n/a - 0]
+2025-07-30 09:24:45,Tanya,online-boutique-5196,I'm checking this ip [n/a - 0]
+2025-07-30 09:25:12,Tanya,online-boutique-5196,That's our payment service ip call [n/a - 0]
+2025-07-30 09:25:21,PLAYER,online-boutique-5196,Why is it blocked? [n/a - 0]
+2025-07-30 09:25:38,Bez,business-comms-5196,have we got confirmation yet on the new impacted regions? [n/a - 0]
+2025-07-30 09:25:46,Tanya,online-boutique-5196,"Good question, checking now [n/a - 0]"
+2025-07-30 09:25:57,PLAYER,business-comms-5196,"Not yet, Bob is confirming. [n/a - 0]"
+2025-07-30 09:26:08,PLAYER,online-boutique-5196,Bob is this definitely a Global Issue? [n/a - 0]
+2025-07-30 09:26:10,Hamed,online-boutique-5196,It appears that payments were dependent on cart service and cart redis [n/a - 0]
+2025-07-30 09:26:37,PLAYER,online-boutique-5196,How do we resolve Hamed S? Do we reapply Daniel's change? [n/a - 0]
+2025-07-30 09:26:41,Hamed,online-boutique-5196,"All 3 changes were interconnected, not that payments are not synced it took down service for all regions [n/a - 0]"
+2025-07-30 09:26:50,PLAYER,online-boutique-5196,Understood [n/a - 0]
+2025-07-30 09:26:56,PLAYER,online-boutique-5196,Daniel reapply the change ASAP. [n/a - 0]
+2025-07-30 09:27:00,Bob,online-boutique-5196,I got reports from all regions now guys [n/a - 0]
+2025-07-30 09:27:05,PLAYER,online-boutique-5196,We need to get the other regions up ASAP. [n/a - 0]
+2025-07-30 09:27:09,Hamed,online-boutique-5196,We should revert all 3 changes above [n/a - 0]
+2025-07-30 09:27:36,PLAYER,business-comms-5196,All regions impacted after a attempted roll back of a change to resolve. [n/a - 0]
+2025-07-30 09:27:43,Daniel,online-boutique-5196,I agree with Hamed [n/a - 0]
+2025-07-30 09:27:57,Daniel,online-boutique-5196,We should start with cart redis and follow up with cart service [n/a - 0]
+2025-07-30 09:28:00,PLAYER,business-comms-5196,We're looking to reapply to get regions outside of EU online ASAP. [n/a - 0]
+2025-07-30 09:28:07,PLAYER,online-boutique-5196,Let's do it [n/a - 0]
+2025-07-30 09:28:21,PLAYER,online-boutique-5196,Tanya - any word from Networks? You haven't provided an update here [n/a - 0]
+2025-07-30 09:28:28,UptimeLabs,online-boutique-5196,:star: Manage actions and timings [n/a - 0]
+2025-07-30 09:28:30,Tanya,online-boutique-5196,still investigating [n/a - 0]
+2025-07-30 09:28:33,UptimeLabs,online-boutique-5196,:star: Manage actions and timings [n/a - 0]
+2025-07-30 09:28:39,PLAYER,online-boutique-5196,We need an update in two minutes [n/a - 0]
+2025-07-30 09:28:43,UptimeLabs,online-boutique-5196,:star: Track actions and time box them [n/a - 0]
+2025-07-30 09:28:43,Daniel,online-boutique-5196,I will start with cart redis [n/a - 0]
+2025-07-30 09:28:56,PLAYER,online-boutique-5196,Daniel let's get that done also in the next two minutes. [n/a - 0]
+2025-07-30 09:29:16,UptimeLabs,online-boutique-5196,:alarm_clock: - You have less than 4 minutes. You can type `/help` if you need any reminders. [n/a - 0]
+2025-07-30 09:29:22,Daniel,online-boutique-5196,I have rollbacked the cart redis now with cart service [n/a - 0]
+2025-07-30 09:29:41,PLAYER,online-boutique-5196,Please proceed. [n/a - 0]
+2025-07-30 09:29:47,Daniel,online-boutique-5196,Once I rollback the cartservice i will need a minute to restart the frontend [n/a - 0]
+2025-07-30 09:30:01,PLAYER,online-boutique-5196,Understood. [n/a - 0]
+2025-07-30 09:30:11,Bez,business-comms-5196,"Keep me in the loop, shareholders are getting antsy [n/a - 0]"
+2025-07-30 09:30:21,Daniel,online-boutique-5196,I have rollbacked the all changes and restarting the frontend now [n/a - 0]
+2025-07-30 09:30:25,PLAYER,business-comms-5196,"Rolling back changes, will have an update in the next 2 minutes. [n/a - 0]"
+2025-07-30 09:30:30,Tanya,online-boutique-5196,Still nothing from network team [n/a - 0]
+2025-07-30 09:30:42,Tanya,online-boutique-5196,Rollbacks are completed [n/a - 0]
+2025-07-30 09:30:46,Daniel,online-boutique-5196,"Great, i've also restarted the frontend so the website should be working now [n/a - 0]"
+2025-07-30 09:30:50,PLAYER,online-boutique-5196,Hamed S can you please escalate? [n/a - 0]
+2025-07-30 09:30:55,UptimeLabs,online-boutique-5196,:star: Escalating when required [n/a - 0]
+2025-07-30 09:31:04,Hamed,online-boutique-5196,I will see waht i can do from my end [n/a - 0]
+2025-07-30 09:31:16,UptimeLabs,online-boutique-5196,:alarm_clock: - You have less than 2 minutes. You can type `/help` if you need any reminders. [n/a - 0]
+2025-07-30 09:31:18,Tinus,online-boutique-5196,@Jack Walsh can you confirm? [n/a - 0]
+2025-07-30 09:31:20,PLAYER,online-boutique-5196,"I can't access the website still, down on my end. [n/a - 0]"
+2025-07-30 09:31:30,Daniel,online-boutique-5196,Checking now [n/a - 0]
+2025-07-30 09:31:38,PLAYER,online-boutique-5196,"Same Network Error:
+
+```rpc error: code = Unavailable desc = connection error: desc = ""transport: Error while dialing: dial tcp 172.20.155.164:7070: connect: connection refused""
+could not retrieve cart```
+ [n/a - 0]"
+2025-07-30 09:31:51,PLAYER,online-boutique-5196,Please escalate Hamed S / Tinus with Networks Team. [n/a - 0]
+2025-07-30 09:31:57,PLAYER,online-boutique-5196,Connection refused [n/a - 0]
+2025-07-30 09:32:00,Daniel,online-boutique-5196,"I can see services scaling up now, should be working in 20-30 sec [n/a - 0]"
+2025-07-30 09:32:08,PLAYER,online-boutique-5196,Looks like traffic is getting there but the server is blocking [n/a - 0]
+2025-07-30 09:32:17,PLAYER,online-boutique-5196,Can you check Tanya? [n/a - 0]
+2025-07-30 09:32:23,UptimeLabs,online-boutique-5196,:star: Form a working theory [n/a - 0]
+2025-07-30 09:32:30,Hamed,online-boutique-5196,"I have escalated this issue, they should be able to resolve it in a few [n/a - 0]"
+2025-07-30 09:32:37,Tanya,online-boutique-5196,on it boss [n/a - 0]
+2025-07-30 09:32:54,PLAYER,business-comms-5196,"Still on-going, escalating with Networks Team. [n/a - 0]"
+2025-07-30 09:33:08,Daniel,online-boutique-5196,and we are back online [n/a - 0]
+2025-07-30 09:33:44,PLAYER,online-boutique-5196,Looks good on my end [n/a - 0]
+2025-07-30 09:33:49,UptimeLabs,online-boutique-5196,:star: Attempt to replicate the issue [n/a - 0]
+2025-07-30 09:33:51,UptimeLabs,online-boutique-5196,Start level 8 retro and feedback [n/a - 0]
+2025-07-30 09:33:54,PLAYER,online-boutique-5196,Bob can you confirm customers see the same? [n/a - 0]
+2025-07-30 09:33:55,Bob,online-boutique-5196,Checking [n/a - 0]
+2025-07-30 09:34:05,PLAYER,online-boutique-5196,Clicked Start_feedback button
+2025-07-30 09:34:11,Bob,online-boutique-5196,Customers are able to place an order and reports are going down [n/a - 0]
+2025-07-30 09:34:31,UptimeLabs,online-boutique-5196,:star: Cross check resolution with stakeholders [n/a - 0]
+2025-07-30 09:34:48,UptimeLabs,online-boutique-5196,:star: Cross checking resolution with team [n/a - 0]
+2025-07-30 09:35:33,UptimeLabs,online-boutique-5196,Submission successful [n/a - 0]

@@ -1,0 +1,110 @@
+datetime,player,channel,message
+2026-04-09 07:33:54,uptimelabs,online-boutique-8356,"Welcome to Too Good To Be True, the responsibility is on you to size up the problem.
+
+ *Access game links by pressing the Uptime Labs Logo in the top right of the screen*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin"
+2026-04-09 07:40:14,PLAYER,online-boutique-8356,
+2026-04-09 07:40:14,uptimelabs,business-comms-8356,*Incident Number INC1071:* P1 test
+2026-04-09 07:41:22,tinus,online-boutique-8356,"Welcome our new IM @lew.radam-withersworldwide.com, Happy to have you in the team. Hope you get comfortable with everyone"
+2026-04-09 07:41:27,shay,online-boutique-8356,Welcome @lew.radam-withersworldwide.com
+2026-04-09 07:41:32,daniel,online-boutique-8356,Nice to meet you @lew.radam-withersworldwide.com
+2026-04-09 07:41:42,bob,online-boutique-8356,There are a few strange customer reports with the helpdesk
+2026-04-09 07:41:46,bob,online-boutique-8356,"Apparently, the site is loading slowly"
+2026-04-09 07:41:50,bob,online-boutique-8356,People are reporting that they can't make payments either
+2026-04-09 07:41:53,bob,online-boutique-8356,
+2026-04-09 07:41:57,bob,online-boutique-8356,@lew.radam-withersworldwide.com Can you check this?
+2026-04-09 07:42:17,PLAYER,online-boutique-8356,"Hi @bob , on it"
+2026-04-09 07:43:33,uptimelabs,online-boutique-8356,:star: Attempt to replicate the issue
+2026-04-09 07:44:35,bob,online-boutique-8356,Let me gather the information for you
+2026-04-09 07:44:35,PLAYER,online-boutique-8356,@bob Can we determine the business impact? how many users are affected?
+2026-04-09 07:44:38,uptimelabs,online-boutique-8356,:star: Asking questions to validate impact of the problem
+2026-04-09 07:44:40,bob,online-boutique-8356,There are more than 300 customer reports till now
+2026-04-09 07:44:44,uptimelabs,online-boutique-8356,:bulb: Declare an incident.
+2026-04-09 07:44:47,bob,online-boutique-8356,"Calls are from every region, likely to be Global"
+2026-04-09 07:44:53,bob,online-boutique-8356,There's a bunch of messages coming in. A few people saying they can't do anything on the site
+2026-04-09 07:44:58,bob,online-boutique-8356,Let me know if you need more information
+2026-04-09 07:45:44,PLAYER,online-boutique-8356,"@hamed i am getting an error  that says ""502 gateway"" when accessing the site. Are you able to assess the situation?"
+2026-04-09 07:45:45,hamed,online-boutique-8356,"Sure, let me take a look - Did we involve developers ?"
+2026-04-09 07:45:46,uptimelabs,online-boutique-8356,:star: Escalating when required
+2026-04-09 07:46:24,PLAYER,online-boutique-8356,
+2026-04-09 07:46:24,uptimelabs,online-boutique-8356,:star: Incident record created
+2026-04-09 07:46:24,uptimelabs,business-comms-8356,"*Incident Number INC1041:* P1 ""Online store website is down"""
+2026-04-09 07:46:26,uptimelabs,online-boutique-8356,:star: Send first comms in first 5 minutes
+2026-04-09 07:46:29,bez,business-comms-8356,How many customers are affected? Are the reports coming in from all regions?
+2026-04-09 07:46:57,bez,business-comms-8356,Hi Lew- Is this impacting all regions ?
+2026-04-09 07:47:38,uptimelabs,online-boutique-8356,":bulb: Form strategy for troubleshooting, use whole team to execute"
+2026-04-09 07:48:34,PLAYER,business-comms-8356,300 users are affected and reports are coming in from all regions. Currrently liaising with the developers to try to restore the service as quickly as possible. I will update every 20 minutes
+2026-04-09 07:48:35,bez,business-comms-8356,"Okay- I have a stake holders meet in 10 minutes, keep me posted"
+2026-04-09 07:48:36,uptimelabs,online-boutique-8356,:star: Qualify the problem
+2026-04-09 07:48:36,uptimelabs,online-boutique-8356,:star: Track actions and time box them
+2026-04-09 07:49:44,PLAYER,online-boutique-8356,@daniel @shay could you please identify the cause of the issue with the website problem and let me know if the service can be restored asap?
+2026-04-09 07:49:47,uptimelabs,online-boutique-8356,:star: Manage actions and timings
+2026-04-09 07:49:49,shay,online-boutique-8356,Looking into this and trying to replicate the issue
+2026-04-09 07:49:51,daniel,online-boutique-8356,I am able to replicate the issue. Checking the logs now
+2026-04-09 07:49:54,daniel,online-boutique-8356,"I see a lot of errors, most of them are context initialisation errors "
+2026-04-09 07:49:58,daniel,online-boutique-8356,
+2026-04-09 07:50:00,shay,online-boutique-8356,Yes replicated the issue and even i'm seeing similar errors in frontend logs
+2026-04-09 07:50:04,bez,business-comms-8356,"I have a stake holders meet in next 10 minutes, @lew.radam-withersworldwide.com do you think this can be resolved by then? "
+2026-04-09 07:50:44,uptimelabs,online-boutique-8356,:bulb: Check the changes done in the platform
+2026-04-09 07:51:05,PLAYER,online-boutique-8356,@shay @daniel  can the service be restored within 8 minutes?
+2026-04-09 07:51:19,daniel,online-boutique-8356,"Not sure, we are still investigating"
+2026-04-09 07:52:14,PLAYER,business-comms-8356,I am working with Daniel and Shay to check if we can restore service in 8 minutes. They are stil currently investigating
+2026-04-09 07:52:15,bez,business-comms-8356,"Move things faster, thanks"
+2026-04-09 07:53:22,hamed,online-boutique-8356,Can we take a look at changes ?
+2026-04-09 07:53:53,PLAYER,online-boutique-8356,@shay @daniel could you list the changes?
+2026-04-09 07:53:56,uptimelabs,online-boutique-8356,:star: Check changes done to the platform
+2026-04-09 07:53:57,daniel,online-boutique-8356,Below are the changes implemented this morning
+2026-04-09 07:54:02,daniel,online-boutique-8356,
+2026-04-09 07:54:05,daniel,online-boutique-8356,"If you want more information, checkout the change details : https://uptime-labs.atlassian.net/wiki/external/ZmRkZTQ1ODg2M2U1NGM3NDk1ZjZhM2I3MWY0MTM5ODA "
+2026-04-09 07:54:27,daniel,online-boutique-8356,"I have verified Payments change (CHG89347), there are no errors and the service is up and healthy"
+2026-04-09 07:54:33,daniel,online-boutique-8356,"Checkout service change(CHG89350) is in UAT, so not affecting PROD. But I see a few errors from Frontend pods"
+2026-04-09 07:54:39,daniel,online-boutique-8356,All the errors started right after the change (CHG89349) on the Frontend
+2026-04-09 07:54:42,bob,online-boutique-8356,The customer complaints are rising. @lew.radam-withersworldwide.com Do we have an ETA for resolution?
+2026-04-09 07:54:44,bez,business-comms-8356,What is the latest on this?
+2026-04-09 07:55:30,PLAYER,online-boutique-8356,"@daniel @shay can you solve the issue permanently? If so, how soon? If we are unable to provide permanent solution, can workaround be provided?"
+2026-04-09 07:56:11,daniel,online-boutique-8356,A Frontend change caused by change CHG89349 has brought down the Frontend pods
+2026-04-09 07:56:17,shay,online-boutique-8356,But this functionally worked when I tested
+2026-04-09 07:56:22,daniel,online-boutique-8356,"Even if it worked in your test environment, something's behaving differently in prod, maybe a config mismatch or unhandled edge case"
+2026-04-09 07:56:25,PLAYER,online-boutique-8356,"@daniel can you revert the change asap? if yes, how soon?"
+2026-04-09 07:56:25,bez,business-comms-8356,Can you give a quick update on the status?
+2026-04-09 07:56:28,uptimelabs,online-boutique-8356,:star: Restoration over root cause analysis
+2026-04-09 07:56:42,daniel,online-boutique-8356,Its Shay's change
+2026-04-09 07:56:46,daniel,online-boutique-8356,may be he can check that
+2026-04-09 07:57:33,PLAYER,online-boutique-8356,"@shay this change may have caused the issue with the website - CHG89349. Can you revert this to restore the service? If yes, how soon?"
+2026-04-09 07:57:40,shay,online-boutique-8356,"Sorry, I've never done a rollback in PROD before, can someone help me with the steps?"
+2026-04-09 07:58:10,daniel,online-boutique-8356,"I will help you, @Shay. Rolling back now"
+2026-04-09 07:58:15,PLAYER,online-boutique-8356,@bob could you workout a communications to inform users an estimate downtime of 30 minutes while we investigate?
+2026-04-09 07:58:25,daniel,online-boutique-8356,I have rollbacked Frontend:version to 10.1.0 to more stable version. Can somebody verify?
+2026-04-09 07:58:28,uptimelabs,online-boutique-8356,"To verify resolution and close incident:
+--Validate fix with team:white_check_mark:
+--Check with Customer Support:white_check_mark:
+--Confirm in 'Business-comms':white_check_mark:"
+2026-04-09 07:58:40,bob,online-boutique-8356,"Customers are able to place the orders, complaint calls have reduced as well."
+2026-04-09 07:58:54,PLAYER,business-comms-8356,A recent change have caused the website downtime. reverting the change now to restore service
+2026-04-09 07:58:56,uptimelabs,online-boutique-8356,:star: Confirm resolution with the business
+2026-04-09 07:59:01,bez,business-comms-8356,Thanks
+2026-04-09 08:00:34,PLAYER,online-boutique-8356,@bob Could you check how things are doing now? It should be up and running now
+2026-04-09 08:00:35,bob,online-boutique-8356,It's positive - The customers can now login to system
+2026-04-09 08:00:36,uptimelabs,online-boutique-8356,:star: Cross check resolution with stakeholders
+2026-04-09 08:01:40,PLAYER,business-comms-8356,@bez confirmed that all are up and running now after applying a workaround. will raise a problem ticket to identify root cause and how we can improve moving forward
+2026-04-09 08:01:41,bez,business-comms-8356,"Great work @lew- That's much quicker, Appreciate your help"
+2026-04-09 08:02:14,PLAYER,online-boutique-8356,@daniel @shay are all apps fully functional now ?
+2026-04-09 08:02:15,daniel,online-boutique-8356,The apps look healthy now - The are giving 200's now
+2026-04-09 08:02:16,uptimelabs,online-boutique-8356,:star: Cross checking resolution with team
+2026-04-09 08:02:21,daniel,online-boutique-8356,It's definitely working again!
+2026-04-09 08:02:26,shay,online-boutique-8356,Wow that was intense!
+2026-04-09 08:02:28,bez,business-comms-8356,Thanks! for resolving it quickly
+2026-04-09 08:02:31,hamed,online-boutique-8356,Good job guys
+2026-04-09 08:02:35,tinus,online-boutique-8356,Yes well done! that could have gone much worse so props to everyone
+2026-04-09 08:02:39,tinus,online-boutique-8356,We will have a Post-Incident Review (PIR) to understand what happened
+2026-04-09 08:02:49,uptimelabs,online-boutique-8356,"Drill Wrap-Up
+
+Thanks for playing! This session is now closed.
+
+Please return to your Uptime Labs tab to review your performance and complete the Retrospective & Feedback form.
+
+If you've already closed the tab, you can reopen the form using the button below."
+2026-04-09 08:03:07,uptimelabs,online-boutique-8356,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/29/8356/feedback"

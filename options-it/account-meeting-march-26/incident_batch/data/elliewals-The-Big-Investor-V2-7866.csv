@@ -1,0 +1,175 @@
+datetime,player,channel,message
+2026-03-03 10:07:16,uptimelabs,online-boutique-7866,"Welcome to The Big Investor, it is time to meet the team.
+
+ *Access game links by pressing the Uptime Labs Logo in the top right of the screen*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin"
+2026-03-03 10:08:24,bez,online-boutique-7866,"Everyone, listen up, I just got off the phone with our biggest investor, Melon Tusk. He told me he was just trying to buy a Candle Holder for his grandma but the website wouldn't let him buy it."
+2026-03-03 10:08:33,bez,online-boutique-7866,Melon is really nervous because he heard about our outage earlier in the week.
+2026-03-03 10:08:37,bez,online-boutique-7866,Please tell me it's a problem with his computer and not a problem with our website.
+2026-03-03 10:08:41,tinus,online-boutique-7866,"Ok everyone, you know what to do. @ellie.walsh-options-it.com let's size up the issue."
+2026-03-03 10:08:47,tinus,online-boutique-7866,I hope it's not payments again. I fear it is.
+2026-03-03 10:08:51,bez,online-boutique-7866,Oh my knees! Not again. Get this back up fast or we are toast!
+2026-03-03 10:08:56,bez,online-boutique-7866,keep me updated in the Business Comms channel
+2026-03-03 10:09:02,tinus,online-boutique-7866,Is Melon the only one with this issue?
+2026-03-03 10:09:07,PLAYER,online-boutique-7866,"I tested and got the following error:
+"
+2026-03-03 10:09:09,uptimelabs,online-boutique-7866,:star: Reproduces the incident
+2026-03-03 10:09:14,bez,business-comms-7866,Melon's on the phone asking to join the incident bridge.
+2026-03-03 10:09:17,bez,business-comms-7866,I told him it's not worth it and you have it under control under control. Don't let me down!
+2026-03-03 10:09:19,PLAYER,online-boutique-7866,can you all test and see if you see the same 
+2026-03-03 10:09:24,bez,business-comms-7866,@ellie.walsh-options-it.com Tusk is very invested in this issue since he was involved in the incident so he's going to want constant updates
+2026-03-03 10:09:43,shay,online-boutique-7866,Sure thing
+2026-03-03 10:09:47,PLAYER,online-boutique-7866,issue seems to be with all items when adding the the cart 
+2026-03-03 10:09:50,uptimelabs,online-boutique-7866,:star: Qualify the problem
+2026-03-03 10:10:21,shay,online-boutique-7866,I was able to reproduce following your instructions
+2026-03-03 10:10:24,PLAYER,online-boutique-7866,hi @shay have any changes been made to the cart service 
+2026-03-03 10:10:25,uptimelabs,online-boutique-7866,:star: Check changes done to the platform
+2026-03-03 10:10:37,shay,online-boutique-7866,Here's the detailed info on each of the changes made today
+2026-03-03 10:10:38,PLAYER,online-boutique-7866,can you send me all the changes made 
+2026-03-03 10:10:40,shay,online-boutique-7866,Hope this helps:https://uptime-labs.atlassian.net/wiki/external/MGRkNTY2NDk3Yjg2NGI0MGJiMjI3ZmU3MTkzMWE5ZmQ
+2026-03-03 10:10:44,PLAYER,online-boutique-7866,thank you!
+2026-03-03 10:11:31,PLAYER,online-boutique-7866,@bob have any other customers reported this issue and if so when did they report it?
+2026-03-03 10:11:34,uptimelabs,online-boutique-7866,:star: Asking questions to validate impact of the problem
+2026-03-03 10:11:40,bob,online-boutique-7866,Give me a moment and i will check the reports....
+2026-03-03 10:11:50,PLAYER,online-boutique-7866,no orders been placed 
+2026-03-03 10:11:59,bob,online-boutique-7866,Phones are blowing up over here. I'm seeing tons of complaints that customers can't check out.
+2026-03-03 10:12:07,PLAYER,online-boutique-7866,
+2026-03-03 10:12:07,uptimelabs,business-comms-7866,*Incident Number INC10008:* unable to add items to cart sev-1
+2026-03-03 10:12:07,uptimelabs,online-boutique-7866,:star: Incident record created
+2026-03-03 10:12:08,bez,business-comms-7866,"Tusk says he might not invest in the next round, depending on how we handle this outage."
+2026-03-03 10:12:08,bob,online-boutique-7866,"It's weird people can browse, even add stuff to their cart, but when they click 'Add to Cart' it crashes with a 500 Internal Error."
+2026-03-03 10:12:11,bez,business-comms-7866,I will need constant updates on the progress of the incident so he can see how well we handle these high-severity incidents
+2026-03-03 10:12:15,bob,online-boutique-7866,Some customers are saying they tried three times and gave up.
+2026-03-03 10:12:21,bob,online-boutique-7866,
+2026-03-03 10:12:34,PLAYER,business-comms-7866,investigating with the team now and reviewing any changes that were made 
+2026-03-03 10:12:37,uptimelabs,online-boutique-7866,:star: Reviewed changes
+2026-03-03 10:13:35,PLAYER,online-boutique-7866,@shay are you able to rollback Change ID: CHG89359 to test if that is the issue 
+2026-03-03 10:13:38,uptimelabs,online-boutique-7866,:star: Restoration over root cause analysis
+2026-03-03 10:13:38,uptimelabs,online-boutique-7866,:bulb: Be clear about what the issue is when communicating with stakeholders
+2026-03-03 10:13:54,PLAYER,online-boutique-7866,@tanya would you have any insight into what the issue could be?
+2026-03-03 10:14:10,shay,online-boutique-7866,"I feel like jumping to a rollback is a bit hasty, we don't even know what service is being impacted"
+2026-03-03 10:14:35,tanya,online-boutique-7866,"Just online now, I'll need to investigate and see what services might be down to possibly form a theory"
+2026-03-03 10:14:46,tanya,online-boutique-7866,As of right now it doesn't look like we've started investigating yet
+2026-03-03 10:14:58,PLAYER,online-boutique-7866,it appears to be checkout service 
+2026-03-03 10:15:14,PLAYER,online-boutique-7866,but when i click the cart it doesnt show me the cart 
+2026-03-03 10:15:33,PLAYER,online-boutique-7866,can I get everyones input into possible causes of this issue 
+2026-03-03 10:15:45,PLAYER,online-boutique-7866,users are unable to use the website 
+2026-03-03 10:15:51,daniel,online-boutique-7866,Shay and I will both take a look at the logs for you.
+2026-03-03 10:15:54,shay,online-boutique-7866,Checking now
+2026-03-03 10:15:58,PLAYER,online-boutique-7866,thank you 
+2026-03-03 10:16:11,PLAYER,online-boutique-7866,do we have any third parties that manage anything related to this?
+2026-03-03 10:16:14,shay,online-boutique-7866,I'm seeing errors here
+2026-03-03 10:16:17,shay,online-boutique-7866,"```
+WARN  [shipping-service] High memory usage detected: 85%
+
+ERROR [shipping-service] Failed to process shipment request shipmentId=SH12345
+
+java.lang.OutOfMemoryError: Java heap space at com.shipping.service.ShipmentProcessor.process(ShipmentProcessor.java:78) at com.shipping.service.api.ShipmentController.createShipment(ShipmentController.java:34)
+
+ERROR [shipping-service] Error sending message to queue: shipping-events
+
+ERROR [shipping-service] Server responded with 503 Service Unavailable for API call /inventory/check
+```"
+2026-03-03 10:16:19,shay,online-boutique-7866,@Daniel are you seeing this? 
+2026-03-03 10:16:25,PLAYER,business-comms-7866,the team are checking the logs 
+2026-03-03 10:16:26,daniel,online-boutique-7866,"I'm seeing them errors in those services as well, not sure whats going on"
+2026-03-03 10:16:27,bez,business-comms-7866,What are we looking at now with this investigation 
+2026-03-03 10:16:53,tanya,online-boutique-7866,I've read the chat and reproduced the issue.
+2026-03-03 10:16:56,tanya,online-boutique-7866,I'm currently looking into it from the platform side to gather more details.
+2026-03-03 10:17:01,PLAYER,online-boutique-7866,i can see high memory is there a way we can free up space 
+2026-03-03 10:17:15,tanya,online-boutique-7866,"Shipping pods seem to be crashing multiple times, and any time they bring themselves back up, they crash again."
+2026-03-03 10:17:17,tanya,online-boutique-7866,What could be causing this???
+2026-03-03 10:17:22,tanya,online-boutique-7866,"```
+WARN  [shipping-service] CPU load spiked to 106% for more than 2 minutes
+
+ERROR [shipping-service] Unhandled exception in request handler
+
+java.net.SocketTimeoutException: Read timed out
+
+ERROR [shipping-service] Disk write failed: /var/log/shipping-service.log
+
+java.io.IOException: No space left on device
+
+INFO  [shipping-service] Service degraded
+```"
+2026-03-03 10:17:27,tanya,online-boutique-7866,Hm I could try that
+2026-03-03 10:17:36,PLAYER,online-boutique-7866,we need to lower cpu 
+2026-03-03 10:17:51,PLAYER,online-boutique-7866,"can we can everyone taking a look at this, please provide any ideas you may have "
+2026-03-03 10:18:12,shay,online-boutique-7866,Do you want me still rollback my change to payments?
+2026-03-03 10:18:28,PLAYER,online-boutique-7866,can you please roll back just to rule it out please
+2026-03-03 10:18:40,PLAYER,business-comms-7866,CPU loads seemed to have spiked 
+2026-03-03 10:18:43,uptimelabs,online-boutique-7866,:star: Use metrics as evidence
+2026-03-03 10:18:50,shay,online-boutique-7866,I will get started on the rollback for the Payment service now
+2026-03-03 10:18:53,PLAYER,business-comms-7866,will provide further updates in 5 mins
+2026-03-03 10:18:56,uptimelabs,online-boutique-7866,:star: Track actions and time box them
+2026-03-03 10:18:58,PLAYER,online-boutique-7866,thank you 
+2026-03-03 10:19:19,PLAYER,online-boutique-7866,@tanya can you take 5 mins to take a look at anything you could test to reduce the load
+2026-03-03 10:19:19,shay,online-boutique-7866,Payment Service rollback is complete. How does the site look now?
+2026-03-03 10:19:36,PLAYER,online-boutique-7866,@shay error still showing 
+2026-03-03 10:20:06,uptimelabs,online-boutique-7866,"Ensure all parties involved are on the same page in the investigation, use grounding techniques to achieve this"
+2026-03-03 10:20:08,PLAYER,online-boutique-7866,We need to get the site up and running please can we work as a time 
+2026-03-03 10:20:09,PLAYER,online-boutique-7866,team
+2026-03-03 10:20:18,PLAYER,online-boutique-7866,@hamed have you any ideas
+2026-03-03 10:20:42,hamed,online-boutique-7866,I see the issue on the site. Let me check the platform logs
+2026-03-03 10:20:46,hamed,online-boutique-7866,"What Tanya said about the pods crashing multiple times seems important, give me a minute."
+2026-03-03 10:20:50,PLAYER,online-boutique-7866,thank you 
+2026-03-03 10:21:06,hamed,online-boutique-7866,I took a look at the logs and saw '500-SHIPPING-INTERNAL-ERROR'
+2026-03-03 10:21:06,PLAYER,online-boutique-7866,if you are able to try and free up space 
+2026-03-03 10:21:09,hamed,online-boutique-7866,"The servers stats are peaking with cpu, memory. Are we running any scripts that may cause this issue?"
+2026-03-03 10:21:11,hamed,online-boutique-7866,@ellie.walsh-options-it.com have you checked for this
+2026-03-03 10:21:23,PLAYER,online-boutique-7866,Can we please check for any scripts running 
+2026-03-03 10:21:38,PLAYER,business-comms-7866,checking to see if any scripts are running that are causing this issue
+2026-03-03 10:21:42,tanya,online-boutique-7866,I have checked the pod's activity history and see that Logrotate automatically cleared cache 2 hours ago.
+2026-03-03 10:21:46,tanya,online-boutique-7866,There were no other tests that I can see on the pod's activity history file. 
+2026-03-03 10:21:49,daniel,online-boutique-7866,"I ran some Chaos tests in UAT 20 mins ago, this should have no impact on the Prod environment. I didn't track this as it has no impact on the Prod environment."
+2026-03-03 10:21:50,bez,business-comms-7866,Have we identified the cause of this issue yet?
+2026-03-03 10:21:52,PLAYER,online-boutique-7866,@tanya can you check for any scripts running 
+2026-03-03 10:22:14,PLAYER,online-boutique-7866,@daniel the tests may have caused this can you please check 
+2026-03-03 10:22:32,daniel,online-boutique-7866,I will check the Chaos tests
+2026-03-03 10:22:36,PLAYER,online-boutique-7866,thank you!
+2026-03-03 10:22:51,daniel,online-boutique-7866,This is not good @ellie.walsh-options-it.com
+2026-03-03 10:22:55,daniel,online-boutique-7866,"Looks like the chaos tests hit Prod because the UAT server names were hardcoded, and these servers got flipped to Prod"
+2026-03-03 10:23:03,tanya,online-boutique-7866,"Yes due to upgradation of servers we have flipped them yesterday, apologies i didnt inform everyone about it"
+2026-03-03 10:23:04,PLAYER,online-boutique-7866,can we please stop the tests 
+2026-03-03 10:23:07,shay,online-boutique-7866,What does this script do?
+2026-03-03 10:23:13,hamed,online-boutique-7866,"Chaos test creates problems to push systems to their limits, helping find weaknesses and see how they handle stress"
+2026-03-03 10:23:26,PLAYER,business-comms-7866,"Looks like the chaos tests running hit Prod because the UAT server names were hardcoded, and these servers got flipped to Prod"
+2026-03-03 10:23:36,daniel,online-boutique-7866,Stopping Chaos tests now...
+2026-03-03 10:23:40,PLAYER,online-boutique-7866,can we please stop the tests 
+2026-03-03 10:23:45,PLAYER,online-boutique-7866,thanks daniel 
+2026-03-03 10:23:54,PLAYER,business-comms-7866,Stopping the tests now
+2026-03-03 10:23:55,daniel,online-boutique-7866,"Thats the Chaos test stopped, hopefully we shouldn't see any more issues with the platform now"
+2026-03-03 10:24:01,tinus,online-boutique-7866,@ellie.walsh-options-it.com can we confirm this please I dont want this wrapped up until we know it is resolved
+2026-03-03 10:24:18,PLAYER,online-boutique-7866,i tested and still getting the erros 
+2026-03-03 10:24:23,PLAYER,online-boutique-7866,can everyone else test 
+2026-03-03 10:24:36,uptimelabs,online-boutique-7866,:star: Cross checking resolution with team
+2026-03-03 10:24:38,PLAYER,online-boutique-7866,tested again and seems to be up
+2026-03-03 10:24:41,uptimelabs,online-boutique-7866,:star: Validate the fix
+2026-03-03 10:24:42,shay,online-boutique-7866,checking now...
+2026-03-03 10:25:00,daniel,online-boutique-7866,I'm not getting any errors
+2026-03-03 10:25:00,shay,online-boutique-7866,Same here!
+2026-03-03 10:25:00,PLAYER,online-boutique-7866,there is still errors for certain items 
+2026-03-03 10:25:15,PLAYER,online-boutique-7866,appears to be good 
+2026-03-03 10:25:25,shay,online-boutique-7866,"I refreshed a few times and it did the trick, it's probably taking a few moments for the infra to revcover"
+2026-03-03 10:25:31,PLAYER,business-comms-7866,Stopping the tests has fixed the issue 
+2026-03-03 10:25:33,uptimelabs,online-boutique-7866,:star: Confirm resolution with the business
+2026-03-03 10:25:37,PLAYER,business-comms-7866,website is back up and running 
+2026-03-03 10:25:51,PLAYER,online-boutique-7866,Orders been placed again 
+2026-03-03 10:25:56,tinus,online-boutique-7866,"Phew! That was a wild one, @Daniel in the future make sure you are sure the tests are running only in UAT, and you make it known they are running."
+2026-03-03 10:25:59,hamed,online-boutique-7866,I will Sync with Daniel on how to configure the tests to run as intended and go over how to track them.
+2026-03-03 10:25:59,PLAYER,online-boutique-7866,thanks team for aoll the good work 
+2026-03-03 10:26:04,daniel,online-boutique-7866,I'll be making the fix and not hardcoding the servers in the scripts
+2026-03-03 10:26:09,daniel,online-boutique-7866,"Sounds good, I will be more careful in the future, sorry guys."
+2026-03-03 10:26:16,PLAYER,online-boutique-7866,thanks daniel!
+2026-03-03 10:26:21,uptimelabs,online-boutique-7866,"Drill Wrap-Up
+
+Thanks for playing! This session is now closed.
+
+Please return to your Uptime Labs tab to review your performance and complete the Retrospective & Feedback form.
+
+If you've already closed the tab, you can reopen the form using the button below."
+2026-03-03 10:26:27,PLAYER,business-comms-7866,Orders being placed again 
+2026-03-03 10:26:34,uptimelabs,online-boutique-7866,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/32/7866/feedback"

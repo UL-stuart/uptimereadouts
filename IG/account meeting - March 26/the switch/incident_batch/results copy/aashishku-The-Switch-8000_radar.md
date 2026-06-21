@@ -1,0 +1,9 @@
+# aashishku-The-Switch-8000.csv
+
+| Expertise | Score | Evidence | Notes |
+|-----------|-------|----------|-------|
+| Incident Mechanics | 5 | "HI team, we are having a huge traffice, created a SEV-2 incident"; "this is sevior issue , increasing the seviority of incident to SEV-1"; "We have resolved the issue, network is good now"; [uptimelabs] "Incident Number INC100072: SEV-2 huge traffic" | Record auto-created by uptimelabs; PLAYER raised/updated severity; closure declared after restoration signals. |
+| External Comms | 3 | "HI team, we are having a huge traffice, created a SEV-2 incident"; "Looks to be 50% of users have slow load times... another 7%... global"; "We have an attack on our network, we are trying to use backup system" | Mostly reactive; no cadence/ETAs; unstructured; no customer comms strategy noted. |
+| Internal Comms | 5 | "Hi @tanya, @hamed , @daniel... analyse and come back in 2mins"; "@shay could you please check the recent deployment change and discuss this with @daniel"; "@maya , @hamed , can we switch back to backup now, then please do it immediately" | Recruited by name, timeboxed, delegated, sought advice, and coordinated cross-checks calmly. |
+| Identify Scope | 4 | "@bob have you observe any effect from business side ?"; "@hamed , @shay , @tanya what do you think at which service, website is failing"; "Looks to be 50%... 7%... the reports for all isues are global" | Determined global impact and affected experience; leveraged logs/changes via team; limited self-replication. |
+| Commanding the Incident | 5 | "Hi @tanya, @hamed , @daniel... come back in 2mins"; "this is sevior issue , increasing the seviority of incident to SEV-1"; "@maya , @hamed , can we switch back to backup now, then please do it immediately" | Clear leadership and decisions; prioritized restoration over RCA; confident, directive, evidence-seeking. |

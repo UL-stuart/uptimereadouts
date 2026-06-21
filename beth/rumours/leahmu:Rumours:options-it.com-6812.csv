@@ -1,0 +1,87 @@
+datetime,player,channel,message
+2025-11-18 14:34:35,tinus,online-boutique-6812,"Hi team, let's have a mood check send an emoji to describe your mood"
+2025-11-18 14:34:39,tinus,online-boutique-6812,"I'll go first, :thumbsup:"
+2025-11-18 14:34:45,tanya,online-boutique-6812,:thumbsup:
+2025-11-18 14:34:47,tinus,online-boutique-6812,I'm excited about showing off all your hard work at todays stakeholder meeting
+2025-11-18 14:34:50,daniel,online-boutique-6812,":skull: knackered, had a few too many late nights this week"
+2025-11-18 14:34:53,shay,online-boutique-6812,:rainbow:
+2025-11-18 14:34:56,hamed,online-boutique-6812,living the dream :smile:
+2025-11-18 14:35:00,bez,online-boutique-6812,:smirk: im excited to see the show too
+2025-11-18 14:35:02,tinus,online-boutique-6812,shouldn't you be prepping for the meeting 
+2025-11-18 14:35:05,bez,online-boutique-6812,:sweat_smile: i am indeed I'll leave you lot to it
+2025-11-18 14:35:07,shay,online-boutique-6812,hang in there @daniel its gonne be the weekend sooner or later :joy:
+2025-11-18 14:35:10,tinus,online-boutique-6812,I should get on with my prep too have a good day team
+2025-11-18 14:35:11,daniel,online-boutique-6812,@shay strict diet of energy drink for me today lol
+2025-11-18 14:35:14,daniel,online-boutique-6812,hope the presentation goes well @tinus
+2025-11-18 14:35:16,tanya,online-boutique-6812,:raised_hands:
+2025-11-18 14:35:32,UptimeLabs,online-boutique-6812,"Welcome to Rumours, remember communication is key to diagnose the problem.
+
+ *Use `/help` at any time for a list of useful links and commands*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin Start button"
+2025-11-18 14:35:41,PLAYER,online-boutique-6812,Clicked org button
+2025-11-18 14:35:43,PLAYER,online-boutique-6812,Clicked undefined button
+2025-11-18 14:37:08,PLAYER,online-boutique-6812,Clicked Start button
+2025-11-18 14:37:09,UptimeLabs,online-boutique-6812,":alarm_clock: - You have 20 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-11-18 14:37:12,tinus,online-boutique-6812,"Hey team, I'm texting from the board room - kinda embarrassing but in my demo to the board, I tried to add a pair of Aviator sunglasses to the shopping cart and I got a ?http 500?"
+2025-11-18 14:37:14,tinus,online-boutique-6812,"I've bought some time but need this be able to do this demo if we can lets get this sorted in the next 20 minutes.
+"
+2025-11-18 14:37:16,tinus,online-boutique-6812,Metrics
+2025-11-18 14:37:19,tanya,online-boutique-6812,"uh oh, those Aviators are top sellers due to the new Top Gun movie...It's size up the issue time Leah Murphy"
+2025-11-18 14:37:22,shay,online-boutique-6812,Come on this can't be happening!
+2025-11-18 14:37:24,tinus,online-boutique-6812,"I'm in this meeting so, wont be able to help but I trust that you all can get this fixed asap, just @ me if you need anything"
+2025-11-18 14:37:27,shay,online-boutique-6812,ok looking into this now
+2025-11-18 14:37:46,Tinus,online-boutique-6812,Its a very critical demo presentation in front of potential investors
+2025-11-18 14:37:55,PLAYER,online-boutique-6812,It has let me add the sunglasses to the cart
+2025-11-18 14:37:57,Tinus,online-boutique-6812,Its will be starting in next 15 mins
+2025-11-18 14:38:02,UptimeLabs,online-boutique-6812,:star: Reproduces the incident
+2025-11-18 14:38:02,PLAYER,online-boutique-6812,Can someone else check their end?
+2025-11-18 14:38:06,UptimeLabs,online-boutique-6812,:star: Attempt to replicate the issue
+2025-11-18 14:38:14,Shay,online-boutique-6812,Even for me i was able to place an order
+2025-11-18 14:38:41,Bez,business-comms-6812,I heard Tinus is not able to load the website
+2025-11-18 14:38:57,PLAYER,online-boutique-6812,Is anyone experiencing the same issues as Tinus? Bob any reports from clients?
+2025-11-18 14:38:57,Bez,business-comms-6812,Is this something you're working on priority ?
+2025-11-18 14:39:04,UptimeLabs,online-boutique-6812,:star: Asking questions to validate impact of the problem
+2025-11-18 14:39:11,Bob,online-boutique-6812,Let me check at my end
+2025-11-18 14:39:14,PLAYER,business-comms-6812,"Hi Bez, we're unable to recreate the issue on our end but looking into it with the team"
+2025-11-18 14:39:29,Bob,online-boutique-6812,I was able to buy just now
+2025-11-18 14:39:30,PLAYER,online-boutique-6812,HTTP 500 error P2
+2025-11-18 14:39:30,PLAYER,business-comms-6812,*Incident Number INC100040:* HTTP 500 error P2
+2025-11-18 14:39:30,UptimeLabs,online-boutique-6812,:star: Incident record created
+2025-11-18 14:39:32,UptimeLabs,online-boutique-6812,:star: Send first comms in first 5 minutes
+2025-11-18 14:39:35,UptimeLabs,online-boutique-6812,:star: Qualify the problem
+2025-11-18 14:39:38,UptimeLabs,online-boutique-6812,:star: Formally assign criticality level to the incident
+2025-11-18 14:39:46,Bob,online-boutique-6812,None of the users have complained similar to Tinus's complaint
+2025-11-18 14:40:08,PLAYER,online-boutique-6812,Looks like traffic looks normal too
+2025-11-18 14:40:21,Tinus,online-boutique-6812,Could it be due to any changes ?
+2025-11-18 14:40:25,PLAYER,online-boutique-6812,Tinus does it let you add anything else to the basket?
+2025-11-18 14:40:39,PLAYER,business-comms-6812,Tinus is the only person affected by this
+2025-11-18 14:40:54,Tinus,online-boutique-6812,I'm able to add to cart but its failing the moment i'm trying to do checkout
+2025-11-18 14:41:05,Tinus,online-boutique-6812,* I’m going to dip in and out of this channel for im speaking to some clients
+2025-11-18 14:41:25,PLAYER,online-boutique-6812,Tinus is it the same if you use an incognito tab in your browser?
+2025-11-18 14:41:54,Bez,business-comms-6812,Considering he's due to do a presentation. Make to sure to get it sorted asap
+2025-11-18 14:42:03,Tinus,online-boutique-6812,Let me try
+2025-11-18 14:42:08,PLAYER,business-comms-6812,"Will do thanks Bez, i'll update you in 3 minutes"
+2025-11-18 14:42:14,UptimeLabs,online-boutique-6812,:star: Track actions and time box them
+2025-11-18 14:42:27,Tanya,online-boutique-6812,Yeah it seems like a browser specific issue and only local to Tinus
+2025-11-18 14:42:42,Tinus,online-boutique-6812,"Awesome, it worked there"
+2025-11-18 14:42:53,PLAYER,online-boutique-6812,"Perfect, bad cache then!"
+2025-11-18 14:42:59,Daniel,online-boutique-6812,I get where exactly is the issue
+2025-11-18 14:43:04,PLAYER,business-comms-6812,Tinus has been able to get this working through an incognito tab
+2025-11-18 14:43:17,Daniel,online-boutique-6812,"Yeah you're right, its the cache"
+2025-11-18 14:43:45,PLAYER,online-boutique-6812,Let us know if you experience any other issues Tinus
+2025-11-18 14:43:46,Daniel,online-boutique-6812,The product ID in Tinus's screenshot isn't matching with what he have in DB
+2025-11-18 14:43:55,PLAYER,business-comms-6812,All good to go for the presentation
+2025-11-18 14:44:01,tinus,online-boutique-6812,Damn! thats it
+2025-11-18 14:44:03,tinus,online-boutique-6812,"Great Ive got to do my presentation now, thanks for figuring this out so quickly. @daniel @shay can you look in to a cache busting solution?"
+2025-11-18 14:44:06,shay,online-boutique-6812,it was the cache! sure we can do that
+2025-11-18 14:44:07,daniel,online-boutique-6812,"no worries boss, at least its not a significat issue"
+2025-11-18 14:44:08,daniel,online-boutique-6812,good luck with the presentation!
+2025-11-18 14:44:09,tanya,online-boutique-6812,yes good luck @tinus
+2025-11-18 14:44:11,shay,online-boutique-6812,good luck @tinus!
+2025-11-18 14:44:21,Bez,business-comms-6812,Thanks @Leah Murphy
+2025-11-18 14:44:23,UptimeLabs,online-boutique-6812,"Thank you for playing, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit I am ready when you want to start. I am ready button"
+2025-11-18 14:44:29,PLAYER,online-boutique-6812,Clicked Start_feedback button
+2025-11-18 14:45:04,UptimeLabs,online-boutique-6812,Submission successful

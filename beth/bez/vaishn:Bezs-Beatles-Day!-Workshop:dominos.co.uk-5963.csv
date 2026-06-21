@@ -1,0 +1,118 @@
+datetime,player,channel,message
+2025-09-26 11:03:09,Tinus,online-boutique-5963,Hey everyone. I'm pumped today about our flash sale
+2025-09-26 11:03:13,Tinus,online-boutique-5963,You know it's been 53 years since the Beatles released Abbey Road right? My favourite album
+2025-09-26 11:03:17,Tanya,online-boutique-5963,53 years already?? Wow that makes me feel old...
+2025-09-26 11:03:20,Tinus,online-boutique-5963,Indeed! We're celebrating today by promoting a flash sale on retro items from 1969
+2025-09-26 11:03:23,UptimeLabs,online-boutique-5963,"Welcome to Bez's Beatles day, the responsibility is on you to size up the problem.
+
+ *Use `/help` at any time for a list of useful links and commands*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin Start button"
+2025-09-26 11:05:19,PLAYER,online-boutique-5963,Clicked org button
+2025-09-26 11:06:56,PLAYER,online-boutique-5963,Clicked undefined button
+2025-09-26 11:07:38,PLAYER,online-boutique-5963,Clicked undefined button
+2025-09-26 11:08:43,PLAYER,business-comms-5963,SEV2 Test
+2025-09-26 11:08:43,PLAYER,business-comms-5963,*Incident Number INC10008:* SEV2 Test
+2025-09-26 11:14:58,PLAYER,online-boutique-5963,Clicked Start button
+2025-09-26 11:15:04,Tinus,online-boutique-5963,We're a step closer to allowing folks to pay for items from the 1960s with Bitcoin thanks to Daniel!
+2025-09-26 11:15:07,Daniel,online-boutique-5963,Think of it like time travelling!
+2025-09-26 11:15:11,Tinus,online-boutique-5963,Wow good work Daniel! Looking forward to seeing it in action in prod
+2025-09-26 11:15:19,Shay,online-boutique-5963,"erm - funny you should say that Daniel, I'm just testing my checkout service change in prod and I can't complete the payment - something's up"
+2025-09-26 11:15:25,Tanya,online-boutique-5963,Sorry Daniel it's not looking good on my end either
+2025-09-26 11:15:30,Tinus,online-boutique-5963,Uh oh...here we go again
+2025-09-26 11:15:37,Tinus,online-boutique-5963,"@Vaishnavi  B can you ""Size up the Issue"" please and keep us informed"
+2025-09-26 11:15:42,Shay,online-boutique-5963,@Vaishnavi  B it's worth having a look at the changes made earlier today first
+2025-09-26 11:15:51,Tinus,online-boutique-5963,Get this sorted ASAP!!!
+2025-09-26 11:16:10,PLAYER,online-boutique-5963,Shay When you noticed this issue?
+2025-09-26 11:16:16,UptimeLabs,online-boutique-5963,:star: Asking questions to validate impact of the problem
+2025-09-26 11:16:27,Shay,online-boutique-5963,I noticed the problem just right now
+2025-09-26 11:16:55,Shay,online-boutique-5963,I was just making sure my checkout service deployment was alright but I can't make place an order (which is payments)
+2025-09-26 11:16:57,PLAYER,online-boutique-5963,Let me try guys from my side Hamed S please check if you make the checkout
+2025-09-26 11:17:06,UptimeLabs,online-boutique-5963,:star: Form an effective investigation team
+2025-09-26 11:17:28,Tanya,online-boutique-5963,We should start an investigation first before we escalate to Hamed
+2025-09-26 11:17:41,PLAYER,online-boutique-5963,Observed Payment Unavailable
+2025-09-26 11:17:48,UptimeLabs,online-boutique-5963,:star: Qualify the problem
+2025-09-26 11:18:03,Tanya,online-boutique-5963,I would suggest we check with Bob to see if users are experiencing the same issue and get a ticket create ASAP
+2025-09-26 11:18:09,PLAYER,online-boutique-5963,Bob Please check if are also facing the same
+2025-09-26 11:18:32,Bob,online-boutique-5963,Checking reports now...
+2025-09-26 11:18:42,Shay,online-boutique-5963,Have you seen the error also?
+2025-09-26 11:18:50,Shay,online-boutique-5963,If so please share
+2025-09-26 11:18:51,PLAYER,business-comms-5963,SEV1 Payment Unavailble
+2025-09-26 11:18:51,PLAYER,business-comms-5963,*Incident Number INC100048:* SEV1 Payment Unavailble
+2025-09-26 11:18:51,UptimeLabs,online-boutique-5963,:star: Incident record created
+2025-09-26 11:18:53,UptimeLabs,online-boutique-5963,:star: Send first comms in first 5 minutes
+2025-09-26 11:18:56,Bez,business-comms-5963,"Just saw the incident ticket come through, can someone tell me what's going on? This sale is huge for us"
+2025-09-26 11:18:59,UptimeLabs,online-boutique-5963,:star: Formally assign criticality level to the incident
+2025-09-26 11:19:06,Bob,online-boutique-5963,i can confirm - i have 200 + reports of users unable to make payments
+2025-09-26 11:19:12,Bob,online-boutique-5963,They are not happy out there
+2025-09-26 11:19:43,Shay,online-boutique-5963,Here's the detailed info on each of the changes made today
+2025-09-26 11:19:46,Shay,online-boutique-5963,Hope this helps:<https://uptime-labs.atlassian.net/wiki/spaces/ULPUBLIC/pages/1049559041/Bez+s+Beatles+day+Change+Request+logs>
+2025-09-26 11:19:56,Shay,online-boutique-5963,That's the same error I got
+2025-09-26 11:20:06,PLAYER,business-comms-5963,Bez Tinus Yes. 200+ issue where observed becuase of Payment unavailable
+2025-09-26 11:20:08,Bob,online-boutique-5963,This looks like the screenshot users are sharing online also
+2025-09-26 11:20:22,PLAYER,business-comms-5963,Looking along with team. Keep you posted
+2025-09-26 11:20:58,PLAYER,online-boutique-5963,Shay Any deployment happen today on Payment side ?
+2025-09-26 11:21:05,UptimeLabs,online-boutique-5963,:star: Check changes done to the platform
+2025-09-26 11:21:37,PLAYER,online-boutique-5963,"Shay will this have any imapct ?
+Enhance logging for the payment logs."
+2025-09-26 11:21:39,Shay,online-boutique-5963,"I think there was, should I check the logs to find out if that service is causing problems?"
+2025-09-26 11:22:15,Shay,online-boutique-5963,"I see 504 HTTP errors in the payment service, which means the application is failing to serve the requests"
+2025-09-26 11:22:25,Shay,online-boutique-5963,"Daniel, haven't you made a change to payments recently, right?"
+2025-09-26 11:22:28,Daniel,online-boutique-5963,"My change couldn't be an issue, it was to support crypto payment, although the code hasn't been invoked yet, so I doubt that's to do with it"
+2025-09-26 11:22:31,Daniel,online-boutique-5963,Could Shay's change in Checkout be skipping some validation maybe?
+2025-09-26 11:23:09,PLAYER,online-boutique-5963,Tanya CHG89350 will this have any impact on Payment service going down?
+2025-09-26 11:23:16,UptimeLabs,online-boutique-5963,:star: Reviewed changes
+2025-09-26 11:23:52,PLAYER,online-boutique-5963,Bob could you confirm if this issue observed in any specific region?
+2025-09-26 11:24:08,Tanya,online-boutique-5963,Are you referring to Daniel's change?
+2025-09-26 11:24:27,Bob,online-boutique-5963,It appears this issue is global - i have complaints coming in from all over!
+2025-09-26 11:25:13,PLAYER,online-boutique-5963,"Refering this Tanya
+PaymentDatabase version 5.9 deployed in PROD to improve database indexing and enhance transaction processing efficiency."
+2025-09-26 11:25:35,PLAYER,online-boutique-5963,Daniel Shay Did you got anything from logs?
+2025-09-26 11:25:43,UptimeLabs,online-boutique-5963,:star: Facts over opinion
+2025-09-26 11:25:52,Tanya,online-boutique-5963,Whoops my bad - no this change has no customer impact
+2025-09-26 11:26:01,Shay,online-boutique-5963,The checkout service logs are healthy and the service is working as intended
+2025-09-26 11:26:04,PLAYER,business-comms-5963,Looks like its a global issue. Not specific to region
+2025-09-26 11:26:38,Shay,online-boutique-5963,But I was seeing 504 HTTP errors in the payment service
+2025-09-26 11:26:56,Tanya,online-boutique-5963,I can investigate from my end and see if I find anything
+2025-09-26 11:27:54,Tanya,online-boutique-5963,"Traffic is high due to the flash sale, but nothing abnormal in CPU/memory usage"
+2025-09-26 11:27:57,Tanya,online-boutique-5963,"The Payments service health check is returning HTTP 504, and latency has spiked"
+2025-09-26 11:28:02,Tanya,online-boutique-5963,"Requests to the payments service are increasing, but the success rate dropped significantly around the time of Daniel's change"
+2025-09-26 11:28:05,PLAYER,online-boutique-5963,only 3 CR got pushed from Payment side today. Daniel Hamed S please check if any one CR created this imapct
+2025-09-26 11:28:12,Daniel,online-boutique-5963,"My change only introduced the crypto, which is not live yet. It shouldn't cause any problems with payments"
+2025-09-26 11:28:28,Hamed,online-boutique-5963,Online now but i've been following with the conversation. I can take a look now and let you know what i find
+2025-09-26 11:29:03,Hamed,online-boutique-5963,"I can see from user experience that it's failing at the payments stage, and I can also see HTTP 504 in payments"
+2025-09-26 11:29:06,Hamed,online-boutique-5963,"This is a clear indication that the checkout service is working, but not the payments"
+2025-09-26 11:29:37,Bez,business-comms-5963,"Not good, have we identified what service has failed?"
+2025-09-26 11:30:00,UptimeLabs,online-boutique-5963,:alarm_clock: - You have less than 5 minutes. You can type `/help` if you need any reminders.
+2025-09-26 11:30:21,PLAYER,online-boutique-5963,Right checkout is not a problem. Daniel Tanya said after you changes only significant impact on payment service
+2025-09-26 11:30:28,Daniel,online-boutique-5963,"Honestly, I don't think this is coming from my change. The Bitcoin feature isn't even active yet, and the frontend hasn't been updated"
+2025-09-26 11:30:29,PLAYER,online-boutique-5963,please check one more guys
+2025-09-26 11:30:32,Daniel,online-boutique-5963,Could this be load-related? It's a flash sale after all
+2025-09-26 11:30:35,Bez,business-comms-5963,Have we figured out the root cause yet?
+2025-09-26 11:31:02,Tanya,online-boutique-5963,"@Daniel, you mentioned your change shouldn't be active. Can you confirm 100% that no shared code or libraries were modified?"
+2025-09-26 11:31:08,Tanya,online-boutique-5963,I think we should rollback the payment change just to rule it out!
+2025-09-26 11:31:13,PLAYER,online-boutique-5963,Hamed S Our platform can hadle this much load?
+2025-09-26 11:31:34,Hamed,online-boutique-5963,All or investigations are pointing at this being a payments issue
+2025-09-26 11:31:52,PLAYER,online-boutique-5963,Daniel Is this is imapcted after your changes. Please rollback for now to rule it out
+2025-09-26 11:31:56,Hamed,online-boutique-5963,If it were a load issue I believe users wouldn't even have site access
+2025-09-26 11:31:59,UptimeLabs,online-boutique-5963,:star: Restoration over root cause analysis
+2025-09-26 11:32:22,Daniel,online-boutique-5963,"I'm 100% confident on my change, still not happy with the rollback"
+2025-09-26 11:32:48,PLAYER,online-boutique-5963,Thanks Daniel
+2025-09-26 11:32:51,Daniel,online-boutique-5963,Rolling back CHG89362 now....
+2025-09-26 11:33:00,UptimeLabs,online-boutique-5963,:alarm_clock: - You have less than 2 minutes. You can type `/help` if you need any reminders.
+2025-09-26 11:33:01,Daniel,online-boutique-5963,The payment change has been successfully rolled back
+2025-09-26 11:33:09,Daniel,online-boutique-5963,"Sorry, I missed some common library dependencies that probably caused the issue"
+2025-09-26 11:33:51,PLAYER,business-comms-5963,We suspect this CHG89362 might cause the imapct - Deploying Bitcoin as a payment option for the UK region.
+2025-09-26 11:33:53,Shay,online-boutique-5963,Looks like everything's working from the frontend and checkout side again
+2025-09-26 11:33:58,Shay,online-boutique-5963,Happy to confirm it's resolved on our end
+2025-09-26 11:34:03,PLAYER,business-comms-5963,Asked team to Rollback now
+2025-09-26 11:34:06,UptimeLabs,online-boutique-5963,"Thank you for playing, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit I am ready when you want to start. I am ready button"
+2025-09-26 11:34:54,PLAYER,online-boutique-5963,Yes. I'm able to place the order now
+2025-09-26 11:35:02,UptimeLabs,online-boutique-5963,:star: Validate the fix
+2025-09-26 11:35:23,Bob,online-boutique-5963,I can confirm users are also able to place orders
+2025-09-26 11:35:37,PLAYER,business-comms-5963,Bez Issue is sorted now. Looks like some common library dependencies that probably caused the issue
+2025-09-26 11:35:47,UptimeLabs,online-boutique-5963,:star: Confirm resolution with the business
+2025-09-26 11:35:48,PLAYER,online-boutique-5963,Thanks Bob
+2025-09-26 11:36:23,PLAYER,online-boutique-5963,Clicked Start_feedback button

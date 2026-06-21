@@ -1,0 +1,102 @@
+datetime,player,channel,message
+2026-04-24 13:05:11,tinus,online-boutique-8574,Hey everyone. I'm pumped today about our flash sale
+2026-04-24 13:05:17,tinus,online-boutique-8574,You know it's been 56 years since the Beatles released Abbey Road right? My favourite album
+2026-04-24 13:05:22,tanya,online-boutique-8574,56 years already?? Wow that makes me feel old...
+2026-04-24 13:05:27,tinus,online-boutique-8574,Indeed! We're celebrating today by promoting a flash sale on retro items from 1969
+2026-04-24 13:05:35,uptimelabs,online-boutique-8574,"Welcome to Bezs Beatles Day, remember communication is key to diagnose the problem.
+
+ *Access game links by pressing the Uptime Labs Logo in the top right of the screen*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin"
+2026-04-24 13:06:49,tinus,online-boutique-8574,We're a step closer to allowing folks to pay for items from the 1960s with Bitcoin thanks to Daniel!
+2026-04-24 13:06:55,daniel,online-boutique-8574,Think of it like time travelling!
+2026-04-24 13:07:00,hamed,online-boutique-8574,Wow good work Daniel! Looking forward to seeing it in action in prod
+2026-04-24 13:07:06,hamed,online-boutique-8574,How's the test-driven development going?
+2026-04-24 13:07:11,daniel,online-boutique-8574,TDDs going well. We are as solid as a rock! Though don't ask me what the Liskov Substitution Principle is...
+2026-04-24 13:07:18,shay,online-boutique-8574,"erm - funny you should say that Daniel, I'm just testing my checkout service change in prod and I can't complete the payment - something's up"
+2026-04-24 13:07:25,shay,online-boutique-8574,"I hope my checkout service change is all good. Can someone check its not just me? And before you ask, yes I've cleared my cookies"
+2026-04-24 13:07:31,tanya,online-boutique-8574,Sorry Daniel it's not looking good on my end either
+2026-04-24 13:07:34,tinus,online-boutique-8574,Uh oh...here we go again
+2026-04-24 13:07:38,tinus,online-boutique-8574,"@raunak.shamnani-zomato.com can you ""Size up the Issue"" please and keep us informed"
+2026-04-24 13:07:40,PLAYER,online-boutique-8574,
+2026-04-24 13:07:40,uptimelabs,business-comms-8574,*Incident Number INC1009:* [Checkout Issue]
+2026-04-24 13:07:40,bob,online-boutique-8574,From what I can see it looks like we are still getting orders through
+2026-04-24 13:07:42,bez,business-comms-8574,"I need specifics. Which regions are affected, and how many customers or orders are impacted? Are we currently losing revenue?"
+2026-04-24 13:07:45,tinus,online-boutique-8574,Get this sorted ASAP!!!
+2026-04-24 13:07:49,bob,online-boutique-8574,I'm seeing a spike in failed transactions—about 40% of payment attempts are currently failing during checkout.
+2026-04-24 13:08:43,PLAYER,online-boutique-8574,@daniel Have we made any changes in card payment flow ?
+2026-04-24 13:08:45,uptimelabs,online-boutique-8574,:star: Check changes done to the platform
+2026-04-24 13:08:46,tanya,online-boutique-8574,"Just got a message from my cousin in London, she can't buy any of the new Beatles merch either. Says her payment failed."
+2026-04-24 13:08:54,bob,online-boutique-8574,I'm noticing the failures seem concentrated in Europe. Looks like the UK is particularly affected.
+2026-04-24 13:09:00,shay,online-boutique-8574,"Give me a second, I'll get the detailed info on each of the changes made today"
+2026-04-24 13:09:05,shay,online-boutique-8574,Hope this helps: https://uptime-labs.atlassian.net/wiki/external/OGU1YjE2MmE4ZmI4NGFkMjgzNzEwZGVkYjlmNzgwNWY
+2026-04-24 13:09:10,tinus,online-boutique-8574,Any updates on the investigation?
+2026-04-24 13:09:36,PLAYER,online-boutique-8574,@shay can you check any changes in GBP Payment
+2026-04-24 13:09:39,uptimelabs,online-boutique-8574,:star: Reviewed changes
+2026-04-24 13:09:44,shay,online-boutique-8574,Checking for any changes in GBP Payment now...
+2026-04-24 13:10:02,shay,online-boutique-8574,I see that GBP payments are consistently failing at the checkout step since the last deployment.
+2026-04-24 13:10:19,PLAYER,business-comms-8574,"@bez only GBP Payment with Card is getting affected .
+ABout 40% order down"
+2026-04-24 13:10:22,bez,business-comms-8574,"Understood. Confirm this is only impacting UK customers? Also, what is the estimated time to resolution? Keep me posted on any changes to order volume or revenue impact."
+2026-04-24 13:10:23,uptimelabs,online-boutique-8574,:star: Qualify the problem
+2026-04-24 13:10:28,PLAYER,business-comms-8574,"Team is checking, will update once we figure this out"
+2026-04-24 13:10:47,PLAYER,online-boutique-8574,@shay can you revert the last config changes
+2026-04-24 13:10:50,shay,online-boutique-8574,I will rollback my checkout change right away
+2026-04-24 13:10:50,uptimelabs,online-boutique-8574,:star: Restoration over root cause analysis
+2026-04-24 13:11:05,shay,online-boutique-8574,Rollback complete!
+2026-04-24 13:11:10,bob,online-boutique-8574,"Hmm, customer reports are still coming in at the same rate"
+2026-04-24 13:11:15,bob,online-boutique-8574,The failure pattern hasn't changed - still 100% failure in the UK
+2026-04-24 13:11:20,tanya,online-boutique-8574,Something else must be causing this
+2026-04-24 13:11:23,tinus,online-boutique-8574,We need this fixed!
+2026-04-24 13:11:30,PLAYER,online-boutique-8574,@tanya
+2026-04-24 13:11:37,tanya,online-boutique-8574,I've been digging into the recent changes and noticed that Daniel modified some shared libraries used specifically in the UK (GBP) payment flows.
+2026-04-24 13:11:41,PLAYER,online-boutique-8574,@tanya what was the DB upgrade we did ?
+2026-04-24 13:11:46,tanya,online-boutique-8574,"The PaymentDatabase was upgraded to v5.9 to improve indexing and transaction processing, but it's not region-specific."
+2026-04-24 13:12:14,PLAYER,online-boutique-8574,@daniel What changes are those ?
+2026-04-24 13:12:21,daniel,online-boutique-8574,"I updated some shared libraries to support new Bitcoin payment features, but all my unit tests passed and the changes shouldn't affect GBP flows directly."
+2026-04-24 13:12:23,bez,business-comms-8574,Understood. I expect a status update as soon as you have more details. This is a significant impact—keep me informed on progress and any changes to the situation.
+2026-04-24 13:12:27,PLAYER,business-comms-8574,"@bez Team is checking, will update in 5 minutes"
+2026-04-24 13:12:33,uptimelabs,online-boutique-8574,:star: Track actions and time box them
+2026-04-24 13:12:44,PLAYER,online-boutique-8574,@daniel can we revert those changes too please
+2026-04-24 13:12:48,daniel,online-boutique-8574,"The new code isn't being invoked yet, can I investigate a bit more."
+2026-04-24 13:13:00,PLAYER,online-boutique-8574,Please do
+2026-04-24 13:13:03,daniel,online-boutique-8574,"Fine if you insist, I'll rollback"
+2026-04-24 13:13:06,daniel,online-boutique-8574,Rolling back my Bitcoin payment service change now
+2026-04-24 13:13:26,daniel,online-boutique-8574,Rollback complete. Might take a few minutes to stabilise
+2026-04-24 13:13:31,shay,online-boutique-8574,Did that fix it?
+2026-04-24 13:13:31,PLAYER,online-boutique-8574,Sure thanks 
+2026-04-24 13:13:34,uptimelabs,online-boutique-8574,":bulb: To complete this drill, ask the engineering team to verify the payment service is working, and check with Bob if UK customer payments have recovered."
+2026-04-24 13:13:39,PLAYER,online-boutique-8574,@shay Let me check once 
+2026-04-24 13:13:48,tanya,online-boutique-8574,Would you like me to try placing a test order to confirm if payments are working again?
+2026-04-24 13:13:55,shay,online-boutique-8574,Do you want me to run a verification transaction to double-check the payment flow?
+2026-04-24 13:13:57,PLAYER,online-boutique-8574,@shay Yeah working now Tested GBP
+2026-04-24 13:13:59,uptimelabs,online-boutique-8574,:star: Validate the fix
+2026-04-24 13:14:00,daniel,online-boutique-8574,I'll check the payment service logs now.
+2026-04-24 13:14:02,PLAYER,online-boutique-8574,let me test out other payments
+2026-04-24 13:14:03,shay,online-boutique-8574,I'll try a test transaction from my side.
+2026-04-24 13:14:08,daniel,online-boutique-8574,"Logs are looking clean, no more 504 errors."
+2026-04-24 13:14:11,shay,online-boutique-8574,My test payment went through successfully! Looks like we're back in business.
+2026-04-24 13:14:18,shay,online-boutique-8574,Testing other payment methods now...
+2026-04-24 13:14:22,bez,business-comms-8574,"Acknowledged. I expect a detailed update in 5 minutes, including any changes to customer impact or revenue loss."
+2026-04-24 13:14:35,PLAYER,online-boutique-8574,@shay all payments are working now 
+2026-04-24 13:14:40,daniel,online-boutique-8574,Awesome news! Let's ask Bob if customer metrics look good on his end as well.
+2026-04-24 13:14:40,shay,online-boutique-8574,All my test transactions with different payment methods are completing successfully on my end.
+2026-04-24 13:14:44,PLAYER,business-comms-8574,@bez All payments are working now 
+2026-04-24 13:14:47,uptimelabs,online-boutique-8574,:star: Confirm resolution with the business
+2026-04-24 13:15:04,PLAYER,online-boutique-8574,@bob How many orders did we loose ?
+2026-04-24 13:15:06,bob,online-boutique-8574,Looking into it now... Metrics seem to be improving!
+2026-04-24 13:15:07,uptimelabs,online-boutique-8574,:star: Cross check resolution with stakeholders
+2026-04-24 13:15:11,bob,online-boutique-8574,Customer payments appear to be back up and processing normally
+2026-04-24 13:15:13,tinus,online-boutique-8574,I don't think the Beatles would've anticipated cryptocurrency so let's keep it that way for now
+2026-04-24 13:15:16,tinus,online-boutique-8574,Excellent! Get me a full incident report by end of day
+2026-04-24 13:15:19,tanya,online-boutique-8574,Great work everyone - crisis averted!
+2026-04-24 13:15:26,uptimelabs,online-boutique-8574,"Drill Wrap-Up
+
+Thanks for playing! This session is now closed.
+
+Please return to your Uptime Labs tab to review your performance and complete the Retrospective & Feedback form.
+
+If you've already closed the tab, you can reopen the form using the button below."
+2026-04-24 13:15:39,PLAYER,online-boutique-8574,@daniel What was the new code about ?
+2026-04-24 13:16:22,bez,business-comms-8574,Confirm that UK card payments are processing successfully and revenue levels are back to normal. I need verification that all impacted orders are now going through.

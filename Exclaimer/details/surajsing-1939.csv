@@ -1,0 +1,162 @@
+datetime,player,channel,message
+2024-05-02 11:43:22,Shay,incident-1939,Morning team! Feeling pumped for the big ?Hipster Haul? event this week? [n/a - 0]
+2024-05-02 11:43:25,Bez,incident-1939,Absolutely! Can't wait to see all our hard work pay off.  [n/a - 0]
+2024-05-02 11:43:29,Tanya,incident-1939,"Agreed, it's going to be a game-changer for us [n/a - 0]"
+2024-05-02 11:43:35,Bob,incident-1939,Customer support team standing by to handle any queries. Let's do this! [n/a - 0]
+2024-05-02 11:43:40,Bez,incident-1939,"Team, the excitement is palpable! I have full confidence in each of you to make this event a roaring success. [n/a - 0]"
+2024-05-02 11:43:44,Bez,incident-1939,"Let's showcase our best and leave our customers thrilled with what we have to offer. Together, we'll make it happen! [n/a - 0]"
+2024-05-02 11:43:47,Tinus,incident-1939,"Absolutely, Bez! And let's not forget the potential revenue boost this event could bring. Our projections are looking promising. [n/a - 0]"
+2024-05-02 11:43:50,Tanya,incident-1939,:moneybag: :moneybag: :moneybag: [n/a - 0]
+2024-05-02 11:43:53,Daniel,incident-1939,Fingers crossed everything goes smoothly this time! :crossed_fingers: :joy: [n/a - 0]
+2024-05-02 11:44:00,UptimeLabs,incident-1939,Start lvl [n/a - 0]
+2024-05-02 11:45:06,PLAYER,incident-1939,Clicked Start button
+2024-05-02 11:45:07,UptimeLabs,incident-1939,":alarm_clock: - You have 25 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders. [n/a - 0]"
+2024-05-02 11:45:14,Tinus,incident-1939,"Speaking of celebrations, any recommendations for a post-event holiday destination? I could use some time off after this! [n/a - 0]"
+2024-05-02 11:45:19,Maya,incident-1939,How about a tropical paradise with no Wi-Fi? :desert_island:  [n/a - 0]
+2024-05-02 11:45:23,Bob,incident-1939,"Hey folks, hate to rain on the parade, but I've got some new reports coming in about customers encountering issues with the products on the website. [n/a - 0]"
+2024-05-02 11:45:28,Daniel,incident-1939,"Yeah, Bob, anything specific you're noticing? Error messages, affected payment methods? [n/a - 0]"
+2024-05-02 11:45:32,Bob,incident-1939,Customers are not able to place orders [n/a - 0]
+2024-05-02 11:45:36,Tanya,incident-1939,"Alright team, let's get to work. Tinus, you can start planning that holiday once we've got this sorted!. [n/a - 0]"
+2024-05-02 11:45:40,Tinus,incident-1939,"Deal! But first, let's get to the bottom of this issue [n/a - 0]"
+2024-05-02 11:45:43,Bez,incident-1939,"Hey team, just dropping in to emphasise the urgency of resolving this issue swiftly. We've got a major event on the horizon - the launch of our exclusive ""Hipster Haul Weekend"" next week. [n/a - 0]"
+2024-05-02 11:45:43,PLAYER,incident-1939,Hello Bob How many reports? [n/a - 0]
+2024-05-02 11:45:48,PLAYER,incident-1939,Are you able to replicate it? [n/a - 0]
+2024-05-02 11:45:48,Bez,incident-1939,"It's poised to be our biggest sale yet, and any delays caused by this payment glitch could seriously impact our preparations. [n/a - 0]"
+2024-05-02 11:45:51,Bez,incident-1939,Let's prioritise frequent updates and keep the communication channels wide open. [n/a - 0]
+2024-05-02 11:45:55,Shay,incident-1939,We have a lot of recent changes made to the platform so im going to compile a list with the changes and the descriptions. [n/a - 0]
+2024-05-02 11:46:00,Shay,incident-1939,Will send it over soon [n/a - 0]
+2024-05-02 11:46:07,Bob,incident-1939,"My team is currently gathering the reports, will update you soon [n/a - 0]"
+2024-05-02 11:46:23,Bob,incident-1939,"im not able to replicate, is anyone else? [n/a - 0]"
+2024-05-02 11:46:34,Shay,incident-1939,ill try to replicate now [n/a - 0]
+2024-05-02 11:46:48,PLAYER,incident-1939,Thanks Shay Please keep us posted [n/a - 0]
+2024-05-02 11:46:51,Daniel,incident-1939,Im able to place an order [n/a - 0]
+2024-05-02 11:46:55,Shay,incident-1939,same for me [n/a - 0]
+2024-05-02 11:47:08,Shay,incident-1939,not getting any issues [n/a - 0]
+2024-05-02 11:47:13,PLAYER,business-comms-1939,*Incident Number INC100097:* Few clients reporting issues while trying to place a trade [n/a - 0]
+2024-05-02 11:47:50,Bob,incident-1939,from what i can tell most of the reports seems to be coming from the two regions [n/a - 0]
+2024-05-02 11:47:52,PLAYER,incident-1939,Bob Any pattern? [n/a - 0]
+2024-05-02 11:47:53,Bob,incident-1939,My team has gathered the customer reports as of the last 3 hours to make it easier to understand [n/a - 0]
+2024-05-02 11:47:57,Bob,incident-1939,[n/a - 0]
+2024-05-02 11:48:09,Bob,incident-1939,Perhaps its similar to our incident in Frankfurt with the network being down for that region? [n/a - 0]
+2024-05-02 11:48:33,PLAYER,business-comms-1939,"Incident Notification
+In-progress
+
+Incident#1939
+Description of the issue: Few users are unable to place trades on our platform.
+Impact Summary:  Some users are unable to place trade
+Status : We are investigating the issue with concerned teams and reviewing all recent changes. We are unable to replicate the issue
+Next update:
+12:50 PM BST [n/a - 0]"
+2024-05-02 11:49:09,PLAYER,incident-1939,Did we release any region specific changes? [n/a - 0]
+2024-05-02 11:49:12,Bob,incident-1939,both regions contribute to about 9% of our last months income sales [n/a - 0]
+2024-05-02 11:49:34,PLAYER,incident-1939,Bob Can you confirm whether they are using same ISPs? [n/a - 0]
+2024-05-02 11:49:37,Shay,incident-1939,we have had quite a lot of recent changes ill send the list over soon [n/a - 0]
+2024-05-02 11:50:06,Bob,incident-1939,No different ISP's [n/a - 0]
+2024-05-02 11:50:15,Bez,business-comms-1939,Do we have a clear timeline for when we expect to have the problem fixed? [n/a - 0]
+2024-05-02 11:50:28,PLAYER,incident-1939,Maya Any region specific or BAU activity on security side which can cause this? Chaos testing etc [n/a - 0]
+2024-05-02 11:50:46,Shay,incident-1939,"Here is the list of recent changes and their descriptions
+<https://uptime-labs.atlassian.net/wiki/spaces/ULPUBLIC/pages/323485700/Detail+s+Matter+Change+Request+logs> [n/a - 0]"
+2024-05-02 11:51:02,PLAYER,incident-1939,Tanya Any changes on your side? [n/a - 0]
+2024-05-02 11:51:19,Maya,incident-1939,Ill check now and get back to you [n/a - 0]
+2024-05-02 11:51:21,PLAYER,incident-1939,Daniel Hamed Please assist in reviewing BAU activities and changes in your areas [n/a - 0]
+2024-05-02 11:51:53,Tanya,incident-1939,"i made a couple of changes, currency service and product catalogue [n/a - 0]"
+2024-05-02 11:52:16,Maya,incident-1939,no signs of any choas testing [n/a - 0]
+2024-05-02 11:52:45,PLAYER,business-comms-1939,"Incident Notification
+In-progress
+
+Current Status: We are reviewing recent changes along with any BAU activity which might cause this issue.
+Next Update: 01:00 PM BST [n/a - 0]"
+2024-05-02 11:52:55,Hamed,incident-1939,"sorry guys im online now, what's the issue [n/a - 0]"
+2024-05-02 11:52:57,Hamed,incident-1939,? [n/a - 0]
+2024-05-02 11:54:02,Hamed,incident-1939,i made changes to the currency service but my change was working after i tested it [n/a - 0]
+2024-05-02 11:54:28,Shay,incident-1939,Everyone i managed to replicate this issue. Whenever i swap my currency over to Try ₺ or JPY ¥ I'm now getting errors on the home page. [n/a - 0]
+2024-05-02 11:54:29,PLAYER,incident-1939,Maya Tanya Hamed Daniel I see you released couple of changes recently. Can you confirm these are safe to rollback? [n/a - 0]
+2024-05-02 11:54:55,Maya,incident-1939,My change is most recent and its safe to rollback first [n/a - 0]
+2024-05-02 11:54:56,PLAYER,incident-1939,Maya Tanya Hamed I see you release changes for currency [n/a - 0]
+2024-05-02 11:55:06,PLAYER,incident-1939,Maya Please rollback the change [n/a - 0]
+2024-05-02 11:55:21,PLAYER,incident-1939,Tanya Hamed Are your changes safe to rollback? [n/a - 0]
+2024-05-02 11:55:35,Hamed,incident-1939,my change cannot be rolledback as i updated some of the api keys in the currency service as they were about to expire [n/a - 0]
+2024-05-02 11:55:49,Hamed,incident-1939,they previous keys have expired before my change [n/a - 0]
+2024-05-02 11:56:05,Daniel,incident-1939,Ill rollback your change for you @Maya [n/a - 0]
+2024-05-02 11:56:16,PLAYER,incident-1939,Bob can you confirm whether client is seeing the issue while trying to change the currency? [n/a - 0]
+2024-05-02 11:56:24,PLAYER,incident-1939,Daniel Thank you [n/a - 0]
+2024-05-02 11:56:32,Bez,business-comms-1939,Have we updated the customers on how long it will take to get this issue solved? [n/a - 0]
+2024-05-02 11:56:36,PLAYER,incident-1939,Tanya What about your change? [n/a - 0]
+2024-05-02 11:56:42,Tanya,incident-1939,My change was older than Hamed's so the old api keys which have expired will not work [n/a - 0]
+2024-05-02 11:57:04,Daniel,incident-1939,Change CHG89873 has been sucessfully rolledback [n/a - 0]
+2024-05-02 11:57:13,Shay,incident-1939,Hopefully that solved the issue [n/a - 0]
+2024-05-02 11:57:16,Maya,incident-1939,"I made the most recent change to the currency service which is basically a security patch, I don't see how it would be causing this issue. [n/a - 0]"
+2024-05-02 11:57:19,Daniel,incident-1939,ill check the platform just incase it hasn't made anything worse [n/a - 0]
+2024-05-02 11:57:21,Shay,incident-1939,"Im seeing this error in the logs
+ERROR: Authentication failed for currency exchange rate service. ERROR CODE: 401 Unauthorized. [n/a - 0]"
+2024-05-02 11:57:22,Tinus,incident-1939,Can we confirm if everythings back working? [n/a - 0]
+2024-05-02 11:57:38,UptimeLabs,incident-1939,":alarm_clock: - Half your time is up, stay focused. You can type `/help` if you need any reminders. [n/a - 0]"
+2024-05-02 11:58:08,PLAYER,incident-1939,Daniel Hamed Can you check the error shay mentioned?&gt; [n/a - 0]
+2024-05-02 11:58:26,Daniel,incident-1939,Yeah i can do [n/a - 0]
+2024-05-02 11:58:27,PLAYER,incident-1939,Tinus We are still working on it [n/a - 0]
+2024-05-02 11:58:31,Hamed,incident-1939,on it [n/a - 0]
+2024-05-02 11:59:02,Shay,incident-1939,Suraj are you able to replicate it now? [n/a - 0]
+2024-05-02 11:59:23,Shay,incident-1939,Let me know if you need the steps [n/a - 0]
+2024-05-02 11:59:46,Daniel,incident-1939,Looks like this error is to with Invalid API keys [n/a - 0]
+2024-05-02 11:59:57,PLAYER,incident-1939,I am able to place the order using JPY [n/a - 0]
+2024-05-02 12:00:10,Hamed,incident-1939,"He's right, i updated some keys yesterday let me check my change again [n/a - 0]"
+2024-05-02 12:00:25,Shay,incident-1939,change the currency in the home page [n/a - 0]
+2024-05-02 12:00:33,Shay,incident-1939,thats where im getting the error [n/a - 0]
+2024-05-02 12:00:34,PLAYER,incident-1939,Hamed Please check and update the keys if required [n/a - 0]
+2024-05-02 12:00:51,PLAYER,incident-1939,I can see the error now [n/a - 0]
+2024-05-02 12:00:55,Hamed,incident-1939,Yes i misconfigured the keys' [n/a - 0]
+2024-05-02 12:01:02,Bez,business-comms-1939,Just whant to double check what severity have we assigned to this incident? [n/a - 0]
+2024-05-02 12:01:03,Hamed,incident-1939,we are going to need a new set [n/a - 0]
+2024-05-02 12:01:23,Shay,incident-1939,we're gonna need a plan in order to do this Fix for the API keys [n/a - 0]
+2024-05-02 12:01:32,PLAYER,incident-1939,Hamed How soon can we update the new set? [n/a - 0]
+2024-05-02 12:01:34,Tanya,incident-1939,We need to contact the third-party currency exchange rate service provider to request a new API key. [n/a - 0]
+2024-05-02 12:01:42,Hamed,incident-1939,"Also will need to secure the secrets manager to store the new API key, just to make sure its not hard-coded into source code and prevent unauthorised access. [n/a - 0]"
+2024-05-02 12:01:48,Daniel,incident-1939,someone needs to update the configuration of the currency service to use the new API key for accessing the third-party service [n/a - 0]
+2024-05-02 12:01:51,Daniel,incident-1939,What do you think @Sueaj DADWAL? [n/a - 0]
+2024-05-02 12:02:19,PLAYER,incident-1939,Tanya Hamed can we fix the existing keys? [n/a - 0]
+2024-05-02 12:02:38,Hamed,incident-1939,we cannot [n/a - 0]
+2024-05-02 12:02:52,Hamed,incident-1939,i used the wrong keys for the PROD environment [n/a - 0]
+2024-05-02 12:03:10,PLAYER,incident-1939,Hamed Tanya How soon can we get the keys from the vendor? [n/a - 0]
+2024-05-02 12:03:15,Tanya,incident-1939,i can contact the 3rd party service now and get new keys [n/a - 0]
+2024-05-02 12:03:23,Tanya,incident-1939,2 minutes at most [n/a - 0]
+2024-05-02 12:03:30,PLAYER,incident-1939,Tanya Please contact them ASAP [n/a - 0]
+2024-05-02 12:03:39,Hamed,incident-1939,ill get the code ready to store the key in the secrets manager @tanya [n/a - 0]
+2024-05-02 12:04:04,Daniel,incident-1939,i will update the config file [n/a - 0]
+2024-05-02 12:04:33,Tanya,incident-1939,"alright just received the keys, sending them over now @hamed @daniel [n/a - 0]"
+2024-05-02 12:04:36,Daniel,incident-1939,great [n/a - 0]
+2024-05-02 12:04:59,PLAYER,incident-1939,1. Daniel will update the config file [n/a - 0]
+2024-05-02 12:05:15,PLAYER,incident-1939,2. Hamed will prepare the code to store them [n/a - 0]
+2024-05-02 12:05:30,PLAYER,incident-1939,Daniel Hamed Please keep us posted [n/a - 0]
+2024-05-02 12:05:48,Hamed,incident-1939,Fix is now Implemented [n/a - 0]
+2024-05-02 12:05:51,Hamed,incident-1939,API keys have now been sucessfully updated  [n/a - 0]
+2024-05-02 12:05:55,Tinus,incident-1939,"Good job, can we confirm @Sueaj DADWAL? [n/a - 0]"
+2024-05-02 12:05:59,Shay,incident-1939,ill check the platform [n/a - 0]
+2024-05-02 12:06:04,PLAYER,business-comms-1939,"Incident Notification
+In-progress
+
+Current Status: The issue is caused by a recent change related to API keys where they were misconfigured. We have received the fresh keys and updating them now.
+Next Update: 01:10 PM BST [n/a - 0]"
+2024-05-02 12:06:36,PLAYER,incident-1939,Not seeing the error anymore [n/a - 0]
+2024-05-02 12:06:47,PLAYER,incident-1939,Bob Please check whether we still getting an reports [n/a - 0]
+2024-05-02 12:06:50,Shay,incident-1939,looks good to me [n/a - 0]
+2024-05-02 12:06:52,Bob,incident-1939,Customer are now able to see products again!! [n/a - 0]
+2024-05-02 12:06:57,Tanya,incident-1939,"Great work. FYI team, I'll be looking into the licences for our other API keys later to make sure everything's shipshape. [n/a - 0]"
+2024-05-02 12:07:00,Shay,incident-1939,What a ride! Massive thanks to each of you for your quick thinking and teamwork.  [n/a - 0]
+2024-05-02 12:07:03,Daniel,incident-1939,"Absolutely, Shay! Getting more confident with any incidents that come our way. Good Job everyone!! [n/a - 0]"
+2024-05-02 12:07:08,Hamed,incident-1939,"Phew, what a rollercoaster! Glad we managed to fix it before things got out of hand. [n/a - 0]"
+2024-05-02 12:07:13,Tinus,incident-1939,"Good job everyone, but im confused how did those currencies fail recently if the change was made hours ago? [n/a - 0]"
+2024-05-02 12:07:16,Bob,incident-1939,no getting any more reports [n/a - 0]
+2024-05-02 12:07:18,Hamed,incident-1939,Good question @Tinus. The currency_service was using 'cache data' instead of getting the data from 3rd party service as i messed up the configuration of the APIs. [n/a - 0]
+2024-05-02 12:07:23,PLAYER,business-comms-1939,"Incident Notification
+Resolved
+
+Current Status: We updated the API keys and issue is fixed now
+Next Update: This is the final communication [n/a - 0]"
+2024-05-02 12:07:23,Tanya,incident-1939,The cache data expires every 12 hours as well which must have been around the time Bob was getting the new reports. [n/a - 0]
+2024-05-02 12:07:26,Tinus,incident-1939,"Understood, thanks for clearing that up for me @Hamed. [n/a - 0]"
+2024-05-02 12:07:29,Maya,incident-1939,"Anyways with the fix in place, we've ensured that the system operates smoothly, and we're now ready once again for the big event next week. [n/a - 0]"
+2024-05-02 12:07:33,Bez,incident-1939,"Fantastic work, everyone! Your quick and effective response has saved the day. Now, let's channel this momentum into making our Hipster Haul Weekend a smashing success.  [n/a - 0]"
+2024-05-02 12:07:36,Bez,incident-1939,Thank you all for your dedication and hard work. [n/a - 0]
+2024-05-02 12:07:37,PLAYER,incident-1939,Thank you all [n/a - 0]
+2024-05-02 12:07:52,UptimeLabs,incident-1939,Start drill retro and feedback [n/a - 0]
+2024-05-02 12:22:19,PLAYER,incident-1939,Clicked Start_feedback button

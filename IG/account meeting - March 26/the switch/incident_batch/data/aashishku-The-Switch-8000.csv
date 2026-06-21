@@ -1,0 +1,145 @@
+datetime,player,channel,message
+2026-03-13 11:03:58,bez,online-boutique-8000,Hey team!:rocket: Can you believe it's been 8 fantastic years for Online Boutique?
+2026-03-13 11:04:02,bez,online-boutique-8000,"Before we dive into anniversary celebrations, let's give a warm welcome to Maya, our new Security Analyst. She's got 5 years of cybersecurity expertise under her belt! :clap: "
+2026-03-13 11:04:07,maya,online-boutique-8000,"Hi everyone! :raised_hand_with_fingers_splayed: Thrilled to be here, especially on such a special occasion. Let's make Online Boutique even successful and secure together!"
+2026-03-13 11:04:10,tinus,online-boutique-8000,"Welcome, Maya! Your experience will elevate our cybersecurity efforts."
+2026-03-13 11:04:14,tanya,online-boutique-8000,"Excited to have you, Maya! Bez has been very excited to have you on the team."
+2026-03-13 11:04:17,daniel,online-boutique-8000,"Impressive! Eager to learn from you, Maya."
+2026-03-13 11:04:21,shay,online-boutique-8000,":+1: Welcome Maya, pleasure meeting you."
+2026-03-13 11:04:24,bob,online-boutique-8000,Hi Maya! Your experience is top-notch. Cheers to you and to Online Boutique's 8-year anniversary! :partying_face: :tada:
+2026-03-13 11:04:27,maya,online-boutique-8000,Thanks for the warm welcome! Excited for the celebration and our anniversary party.
+2026-03-13 11:04:37,uptimelabs,online-boutique-8000,"Welcome to The Switch, the responsibility is on you to size up the problem.
+
+ *Access game links by pressing the Uptime Labs Logo in the top right of the screen*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin"
+2026-03-13 11:05:32,bez,online-boutique-8000,We are all so glad you have joined us Maya
+2026-03-13 11:05:34,tinus,online-boutique-8000,"Hold on, team. Quick check-in. Is anyone else experiencing internet problems or slow connectivity?"
+2026-03-13 11:05:37,shay,online-boutique-8000,"Internet's definitely sluggish, was loading up github and it took ages to load"
+2026-03-13 11:05:40,bez,online-boutique-8000,Perhaps it could be due to the increase of sales we have been having with this anniversary sale?
+2026-03-13 11:05:42,hamed,online-boutique-8000,"Hey team, we've seen some weird traffic from our data centre network in the last couple of days, it's been mostly minor but never as bad compared to now although"
+2026-03-13 11:05:46,tanya,online-boutique-8000,Hamed and I will have been monitoring outbound traffic. Checking for anomalies again.
+2026-03-13 11:05:48,PLAYER,online-boutique-8000,"Hi Team, let me check"
+2026-03-13 11:05:53,daniel,online-boutique-8000,I will try to place an order and check the platform.
+2026-03-13 11:06:03,shay,online-boutique-8000,Just ran a test on my internet speed.
+2026-03-13 11:06:06,shay,online-boutique-8000,
+2026-03-13 11:08:11,PLAYER,online-boutique-8000,
+2026-03-13 11:08:11,uptimelabs,business-comms-8000,*Incident Number INC100072:* SEV-2 huge traffic
+2026-03-13 11:08:28,bez,business-comms-8000,whats happend to the platform?
+2026-03-13 11:08:39,PLAYER,business-comms-8000,"HI team, we are having a huge traffice, created a SEV-2 incident"
+2026-03-13 11:08:41,uptimelabs,online-boutique-8000,:star: Formally assign criticality level to the incident
+2026-03-13 11:09:08,bez,business-comms-8000,how many customers are impacted
+2026-03-13 11:09:38,shay,online-boutique-8000,what should we do?
+2026-03-13 11:09:57,PLAYER,online-boutique-8000,"Hi @tanya, @hamed , @daniel we have a incident, could you pelase analyse and come back in 2mins"
+2026-03-13 11:09:59,uptimelabs,online-boutique-8000,:star: Track actions and time box them
+2026-03-13 11:10:24,daniel,online-boutique-8000,i will take a look into the logs now
+2026-03-13 11:10:41,PLAYER,online-boutique-8000,could anyone let us know the recent deployment?
+2026-03-13 11:10:42,tanya,online-boutique-8000,i will look at our services and see if there is something going on
+2026-03-13 11:10:44,uptimelabs,online-boutique-8000,:star: Check changes done to the platform
+2026-03-13 11:10:51,shay,online-boutique-8000,i will get them for you now
+2026-03-13 11:10:59,shay,online-boutique-8000,https://uptime-labs.atlassian.net/wiki/external/NGRkNTNhZDVjZDUyNDU5NDk2Yjg3NzcxMTE1YjkxOTA
+2026-03-13 11:11:06,PLAYER,online-boutique-8000,@bob have you observe any effect from business side ?
+2026-03-13 11:11:09,uptimelabs,online-boutique-8000,:star: Asking questions to validate impact of the problem
+2026-03-13 11:11:14,bob,online-boutique-8000,sure i will take a look now
+2026-03-13 11:11:39,bob,online-boutique-8000,"Seems that some users are having connection issues, gathering metrics on them now"
+2026-03-13 11:12:32,bob,online-boutique-8000,"Looks to be 50% of users have slow load times but are able to make purchases with no issues.
+There is another 7% of users who cannot access the site at all, the reports for all isues are global"
+2026-03-13 11:12:41,PLAYER,online-boutique-8000,"@hamed , @shay , @tanya what do you think at which service, website is failing"
+2026-03-13 11:12:43,daniel,online-boutique-8000,There is a spike in outbound connections in the edge router and the origin IP block 10.50.0.0/24. That IP range is the same as the IP block the frontend and payments are hosted on
+2026-03-13 11:12:47,daniel,online-boutique-8000,is this change related?
+2026-03-13 11:13:05,tanya,online-boutique-8000,none of our services are down at the moment
+2026-03-13 11:13:27,PLAYER,business-comms-8000,"Looks to be 50% of users have slow load times but are able to make purchases with no issues. There is another 7% of users who cannot access the site at all, the reports for all isues are global"
+2026-03-13 11:13:34,uptimelabs,online-boutique-8000,:star: Qualify the problem
+2026-03-13 11:13:34,hamed,online-boutique-8000,i took a look and i can confirm all the services are running fine right now
+2026-03-13 11:15:00,PLAYER,online-boutique-8000,@shay could you please check the recent deployment change and discuss this with @daniel 
+2026-03-13 11:15:03,uptimelabs,online-boutique-8000,:star: Reviewed changes
+2026-03-13 11:15:20,shay,online-boutique-8000,sure we will hop in a call together and look through all of them now
+2026-03-13 11:15:24,daniel,online-boutique-8000,on it
+2026-03-13 11:15:25,PLAYER,online-boutique-8000,@maya  could you please check any thing from the security side
+2026-03-13 11:15:42,maya,online-boutique-8000,"hey, whats going on?"
+2026-03-13 11:15:56,maya,online-boutique-8000,"i havent been keeping up, can you catch me up on the issue"
+2026-03-13 11:16:18,PLAYER,online-boutique-8000,"@maya we have lot of huge traffice, could you please check any issue form network side"
+2026-03-13 11:16:20,uptimelabs,online-boutique-8000,:star: Form an effective investigation team
+2026-03-13 11:16:41,maya,online-boutique-8000,"ok thanks for that, i will run a network security scan first and see what comes up"
+2026-03-13 11:16:47,PLAYER,online-boutique-8000,"@daniel have mentioned this ---There is a spike in outbound connections in the edge router and the origin IP block 10.50.0.0/24. That IP range is the same as the IP block the frontend and payments are hosted on
+
+@Maya, could you pelase check it"
+2026-03-13 11:17:09,PLAYER,online-boutique-8000,"@daniel , @shay any updated from the recent deployment?"
+2026-03-13 11:17:11,uptimelabs,online-boutique-8000,:star: Manage actions and timings
+2026-03-13 11:17:14,bez,business-comms-8000,"this is a big problem, how are soo many impacted"
+2026-03-13 11:17:21,bez,online-boutique-8000,what are we looking into
+2026-03-13 11:17:26,PLAYER,online-boutique-8000,@hamed what your suggestion on it
+2026-03-13 11:17:39,shay,online-boutique-8000,half way through and so far no change looks to be the issue
+2026-03-13 11:17:55,hamed,online-boutique-8000,"i can assist maya, the activity does seem suspicious"
+2026-03-13 11:17:59,PLAYER,business-comms-8000,@bez we are looking into the issue
+2026-03-13 11:18:31,maya,online-boutique-8000,Just ran a network security scan and our issues all seem to be related to our network switch trying to figure out what exactly.
+2026-03-13 11:19:07,hamed,online-boutique-8000,Our investigation uncovered a critical issue: the network switch was compromised due to unpatched vulnerabilities. We have identified a BotNet in the switch and it's creating outbound connections to the outside. It creates a DDOS (Distributed Denial of Service) to attack an external party
+2026-03-13 11:19:08,PLAYER,online-boutique-8000,"@maya @hamed , @daniel , @shay , @tanya could you please analyse from the logs whats going on here"
+2026-03-13 11:19:18,maya,online-boutique-8000,"network switch had unpatched vulnerabilities, leaving it susceptible to known exploits. Attackers had exploited these vulnerabilities, leading to the compromise of the switch's integrity"
+2026-03-13 11:19:33,maya,online-boutique-8000,we could try restarting the switch
+2026-03-13 11:19:39,PLAYER,online-boutique-8000,"@hamed , so how to resolve it? any ETA for resolution?"
+2026-03-13 11:20:06,hamed,online-boutique-8000,"maya is lead in security team, its best to ask her these questions"
+2026-03-13 11:20:11,PLAYER,online-boutique-8000,@maya will restart affect other issue?
+2026-03-13 11:20:20,maya,online-boutique-8000,let me check that
+2026-03-13 11:20:21,PLAYER,online-boutique-8000,if not then please restart it @Maya
+2026-03-13 11:20:44,maya,online-boutique-8000,Your right restarting the switch isnt the best option as it might intruduce some more issues
+2026-03-13 11:20:49,maya,online-boutique-8000,Trying to think of another solution but i'm not too familiar with the network infrastructure here at OB
+2026-03-13 11:20:54,hamed,online-boutique-8000,No worries Maya I can send over the graph of the network infra if you wanna look at it
+2026-03-13 11:20:59,maya,online-boutique-8000,That would be perfect @hamed
+2026-03-13 11:21:02,hamed,online-boutique-8000,
+2026-03-13 11:21:06,maya,online-boutique-8000,"Looking at the diagram now, will need a moment to figure out what to do next"
+2026-03-13 11:21:09,maya,online-boutique-8000,Let me know if you have any suggestions in the mean time
+2026-03-13 11:21:33,PLAYER,online-boutique-8000,"this is sevior issue , increasing the seviority of incident to SEV-1"
+2026-03-13 11:21:43,hamed,online-boutique-8000,good idea
+2026-03-13 11:22:24,PLAYER,online-boutique-8000,@maya could you please find the solution and come back in 2mins
+2026-03-13 11:22:43,bez,business-comms-8000,whats going on now
+2026-03-13 11:22:50,bez,business-comms-8000,i need updates
+2026-03-13 11:22:56,maya,online-boutique-8000,i can see we have a backup switch
+2026-03-13 11:23:08,maya,online-boutique-8000,i need to make sure its safe to swap over to
+2026-03-13 11:23:24,PLAYER,online-boutique-8000,"@maya , @hamed , can we switch back to backup now, then please do it immediately"
+2026-03-13 11:23:27,uptimelabs,online-boutique-8000,:star: Restoration over root cause analysis
+2026-03-13 11:23:27,uptimelabs,online-boutique-8000,:star: Take command
+2026-03-13 11:23:32,hamed,online-boutique-8000,once we know it is safe and wont have the same issue then we can
+2026-03-13 11:23:50,maya,online-boutique-8000,"ok the backup switch is the best option, it is asafe to do so"
+2026-03-13 11:23:56,maya,online-boutique-8000,i will work on that now
+2026-03-13 11:24:01,PLAYER,business-comms-8000,"We have an attack on our network, we are trying to use backup system"
+2026-03-13 11:24:14,PLAYER,business-comms-8000,have increased the seviority to SEV-1
+2026-03-13 11:24:27,bez,business-comms-8000,an attack??? what kind of one? is this a ransom?!
+2026-03-13 11:24:45,bez,business-comms-8000,"we need to get everyone on this, what do i tell the board?"
+2026-03-13 11:25:03,maya,online-boutique-8000,the infected switch has been successfully changed over
+2026-03-13 11:25:04,PLAYER,online-boutique-8000,@maya please go ahead and @daniel @shay @tanya @hamed please help maya in doing so
+2026-03-13 11:25:06,hamed,online-boutique-8000,The Catalyst 9300 Series which is our infected switch has been swapped over to old but reliable (Cisco Catalyst 2960 Series)
+2026-03-13 11:25:13,tinus,online-boutique-8000,"Good job, can we confirm @aashish.kumar-ig.com?"
+2026-03-13 11:25:47,PLAYER,online-boutique-8000,"@Bob, could you confirm the current situation"
+2026-03-13 11:25:49,uptimelabs,online-boutique-8000,:star: Cross check resolution with stakeholders
+2026-03-13 11:25:51,bob,online-boutique-8000,checking with customers now
+2026-03-13 11:26:11,PLAYER,online-boutique-8000,@maya is the issue resolved?
+2026-03-13 11:26:13,bob,online-boutique-8000,no more customer reports and users are saying there is now slowness now
+2026-03-13 11:26:14,uptimelabs,online-boutique-8000,:star: Cross checking resolution with team
+2026-03-13 11:26:24,maya,online-boutique-8000,yes i ran another scan and we are good
+2026-03-13 11:26:52,PLAYER,online-boutique-8000,"@shay , @tanya , @hamed , @daniel could you pelase check the network ping and logs if everythibg is correct?"
+2026-03-13 11:27:05,shay,online-boutique-8000,"speeds are back to normal now, this looks good to me"
+2026-03-13 11:27:06,daniel,online-boutique-8000,no issues on my end
+2026-03-13 11:27:09,hamed,online-boutique-8000,same here
+2026-03-13 11:27:35,PLAYER,business-comms-8000,"We have resolved the issue, network is good now"
+2026-03-13 11:27:39,uptimelabs,online-boutique-8000,:star: Confirm resolution with the business
+2026-03-13 11:27:40,tanya,online-boutique-8000,"Cheers, everyone! Resolving these network issues added a bit of spice to our celebration"
+2026-03-13 11:27:42,tinus,online-boutique-8000,Good job team! We managed to keep the anniversary vibe alive despite the detour.
+2026-03-13 11:27:45,hamed,online-boutique-8000,High-fives all around!  I will take out that faulty switch as soon as possible.
+2026-03-13 11:27:50,shay,online-boutique-8000,The website's performance is looking solid again 
+2026-03-13 11:27:54,daniel,online-boutique-8000,The anniversary orders are flowing smoothly now. No hiccups on the code side.
+2026-03-13 11:27:57,bob,online-boutique-8000,"Our customers are back to enjoying the celebration. Happy customers, happy anniversary!"
+2026-03-13 11:27:57,PLAYER,online-boutique-8000,@maya  could you pelase draft the issue 
+2026-03-13 11:28:00,maya,online-boutique-8000,Really great job @aashish.kumar-ig.com.
+2026-03-13 11:28:03,bez,online-boutique-8000,Special congratulations to our Incident Manager for steering the ship with finesse and to Maya for your help identifying the faulty switch. Cheers to a remarkable team! :tada:
+2026-03-13 11:28:13,PLAYER,online-boutique-8000,The inicident is resolved 
+2026-03-13 11:28:24,uptimelabs,online-boutique-8000,"Drill Wrap-Up
+
+Thanks for playing! This session is now closed.
+
+Please return to your Uptime Labs tab to review your performance and complete the Retrospective & Feedback form.
+
+If you've already closed the tab, you can reopen the form using the button below."
+2026-03-13 11:28:46,uptimelabs,online-boutique-8000,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/18/8000/feedback"

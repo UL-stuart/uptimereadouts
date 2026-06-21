@@ -1,0 +1,216 @@
+datetime,player,channel,message
+2026-02-17 15:06:13,bez,online-boutique-7757,Hey team!:rocket: Can you believe it's been 8 fantastic years for Online Boutique?
+2026-02-17 15:06:17,bez,online-boutique-7757,"Before we dive into anniversary celebrations, let's give a warm welcome to Maya, our new Security Analyst. She's got 5 years of cybersecurity expertise under her belt! :clap: "
+2026-02-17 15:06:22,maya,online-boutique-7757,"Hi everyone! :raised_hand_with_fingers_splayed: Thrilled to be here, especially on such a special occasion. Let's make Online Boutique even successful and secure together!"
+2026-02-17 15:06:25,tinus,online-boutique-7757,"Welcome, Maya! Your experience will elevate our cybersecurity efforts."
+2026-02-17 15:06:29,tanya,online-boutique-7757,"Excited to have you, Maya! Bez has been very excited to have you on the team."
+2026-02-17 15:06:32,daniel,online-boutique-7757,"Impressive! Eager to learn from you, Maya."
+2026-02-17 15:06:36,shay,online-boutique-7757,":+1: Welcome Maya, pleasure meeting you."
+2026-02-17 15:06:39,bob,online-boutique-7757,Hi Maya! Your experience is top-notch. Cheers to you and to Online Boutique's 8-year anniversary! :partying_face: :tada:
+2026-02-17 15:06:42,maya,online-boutique-7757,Thanks for the warm welcome! Excited for the celebration and our anniversary party.
+2026-02-17 15:06:52,uptimelabs,online-boutique-7757,"Welcome to The Switch, the responsibility is on you to size up the problem.
+
+ *Access game links by pressing the Uptime Labs Logo in the top right of the screen*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin"
+2026-02-17 15:09:04,bez,online-boutique-7757,We are all so glad you have joined us Maya
+2026-02-17 15:09:06,tinus,online-boutique-7757,"Hold on, team. Quick check-in. Is anyone else experiencing internet problems or slow connectivity?"
+2026-02-17 15:09:09,shay,online-boutique-7757,"Internet's definitely sluggish, was loading up github and it took ages to load"
+2026-02-17 15:09:12,bez,online-boutique-7757,Perhaps it could be due to the increase of sales we have been having with this anniversary sale?
+2026-02-17 15:09:14,hamed,online-boutique-7757,"Hey team, we've seen some weird traffic from our data centre network in the last couple of days, it's been mostly minor but never as bad compared to now although"
+2026-02-17 15:09:18,tanya,online-boutique-7757,Hamed and I will have been monitoring outbound traffic. Checking for anomalies again.
+2026-02-17 15:09:25,daniel,online-boutique-7757,I will try to place an order and check the platform.
+2026-02-17 15:09:35,shay,online-boutique-7757,Just ran a test on my internet speed.
+2026-02-17 15:09:38,shay,online-boutique-7757,
+2026-02-17 15:09:54,PLAYER,online-boutique-7757,"I also tried to place an order, worked for me:"
+2026-02-17 15:09:57,uptimelabs,online-boutique-7757,:star: Attempt to replicate the issue
+2026-02-17 15:10:22,PLAYER,online-boutique-7757,@bob have we received any player complaints? 
+2026-02-17 15:10:26,uptimelabs,online-boutique-7757,:star: Asking questions to validate impact of the problem
+2026-02-17 15:10:29,daniel,online-boutique-7757,I was able to place an order but for some reason it took ages to get an order
+2026-02-17 15:10:48,bob,online-boutique-7757,Sure let me check the reports
+2026-02-17 15:10:49,PLAYER,online-boutique-7757,For me it worked like a charm
+2026-02-17 15:11:01,shay,online-boutique-7757,I'm not even able to open up internal sites
+2026-02-17 15:11:15,bob,online-boutique-7757,"Seems that the users are experiencing a few issues, some say they have slow lad times"
+2026-02-17 15:11:16,PLAYER,online-boutique-7757,Lets see if we have any pleyer complaints. @bob anything?
+2026-02-17 15:11:20,bob,online-boutique-7757,others say they cant access the site
+2026-02-17 15:11:26,bob,online-boutique-7757,and others are timing out due to the long load times
+2026-02-17 15:11:36,bob,online-boutique-7757,seems to be global
+2026-02-17 15:11:37,PLAYER,online-boutique-7757,is there any specifics? steps to reproduce?
+2026-02-17 15:11:41,uptimelabs,online-boutique-7757,:star: Reproduces the incident
+2026-02-17 15:11:47,bob,online-boutique-7757,"not all users are reporting this issue, we have about 150 reports on this so far"
+2026-02-17 15:12:01,PLAYER,online-boutique-7757,"Everything still working for me, no lags, all wwork as expected"
+2026-02-17 15:12:03,bob,online-boutique-7757,This is an intermittent issue but impacting users
+2026-02-17 15:12:21,PLAYER,online-boutique-7757,
+2026-02-17 15:12:21,uptimelabs,business-comms-7757,*Incident Number INC100090:* create P4 Intermittent issues with bet placement
+2026-02-17 15:13:19,PLAYER,online-boutique-7757,@shay has there been and changes done lately?
+2026-02-17 15:13:23,uptimelabs,online-boutique-7757,:star: Check changes done to the platform
+2026-02-17 15:13:25,bob,online-boutique-7757,@PLAYER Reports are increasing. Get on top of it fast before it comes down to a full failure
+2026-02-17 15:13:41,shay,online-boutique-7757,Latest changes : https://uptime-labs.atlassian.net/wiki/external/NGRkNTNhZDVjZDUyNDU5NDk2Yjg3NzcxMTE1YjkxOTA
+2026-02-17 15:14:08,PLAYER,online-boutique-7757,We can see that the user activity is higher than usual and HTTP response time is high as well? can anyone comment on that?
+2026-02-17 15:14:12,uptimelabs,online-boutique-7757,:star: Use metrics as evidence
+2026-02-17 15:14:17,daniel,online-boutique-7757,Shall i check the logs to find any potential issues ?
+2026-02-17 15:14:37,PLAYER,business-comms-7757,incident created and we are currently investigatiog
+2026-02-17 15:15:00,PLAYER,business-comms-7757,"Incident summary: Intermittent global platform slowness and connectivity issues reported during anniversary sale with some users unable to access site or experiencing timeouts while others unaffected.
+ Impact: Approximately 150 user reports of slow load times, timeouts and inability to access site, issue appears global and intermittent while internal users also report slow or inaccessible internal sites. 
+Start date/time: 17/02/2026, 15:09 UTC. 
+Next steps: - Validate scope and affected regions - Review outbound traffic anomalies from data centre - Check infrastructure load related to anniversary sale traffic - Continue monitoring player complaints and error rates "
+2026-02-17 15:15:02,bez,business-comms-7757,Is it a global issue ?
+2026-02-17 15:15:12,PLAYER,online-boutique-7757,yes @daniel please check
+2026-02-17 15:15:42,daniel,online-boutique-7757,I'm seeing lot of network timeouts. Probably platform team could help us here more
+2026-02-17 15:15:53,PLAYER,online-boutique-7757,Issue currently seems to be on high load. Are our servers able to handle that load?
+2026-02-17 15:16:12,PLAYER,online-boutique-7757,@hamed Could you please check into it asap
+2026-02-17 15:16:25,bez,business-comms-7757,Do we have a working theory to fix this issue ?
+2026-02-17 15:16:31,PLAYER,online-boutique-7757,we are currently receiving intermittent issues on placing orders and players complaint slowness
+2026-02-17 15:16:35,uptimelabs,online-boutique-7757,:star: Qualify the problem
+2026-02-17 15:16:37,hamed,online-boutique-7757,Sure let me test the network infra
+2026-02-17 15:17:01,hamed,online-boutique-7757,"Checking the chats so far , i've got a theory"
+2026-02-17 15:17:05,PLAYER,business-comms-7757,"This is currently global, issues come from network timeouts. Hamed already investigating"
+2026-02-17 15:17:18,PLAYER,business-comms-7757,Working on findting the fix
+2026-02-17 15:17:20,hamed,online-boutique-7757,This is a network issue
+2026-02-17 15:17:30,hamed,online-boutique-7757,There is a spike in outbound connections in the edge router and the origin IP block 10.50.0.0/24. That IP range is the same as the IP block the frontend and payments are hosted on. Could this be related to a change made?
+2026-02-17 15:18:05,PLAYER,online-boutique-7757,@shay could you confirm if any changes are related to @hamed theory?
+2026-02-17 15:18:10,uptimelabs,online-boutique-7757,:star: Facts over opinion
+2026-02-17 15:18:10,uptimelabs,online-boutique-7757,:star: Reviewed changes
+2026-02-17 15:18:21,shay,online-boutique-7757,@PLAYER let me know if you would like to me to rollback any change
+2026-02-17 15:18:49,PLAYER,online-boutique-7757,@daniel @tanya could you also please check 
+2026-02-17 15:18:53,shay,online-boutique-7757,There is a change made into payments app around 24 hrs ago
+2026-02-17 15:19:04,shay,online-boutique-7757,Not sure if this might be causing network issue here
+2026-02-17 15:19:15,tanya,online-boutique-7757,Checking
+2026-02-17 15:19:26,daniel,online-boutique-7757,I dont think this looks like a change issue
+2026-02-17 15:19:40,daniel,online-boutique-7757,After my change there are successful payments
+2026-02-17 15:19:45,PLAYER,online-boutique-7757,@daniel could you please advise further?
+2026-02-17 15:19:51,PLAYER,online-boutique-7757,why you think that
+2026-02-17 15:20:13,PLAYER,online-boutique-7757,issue is intermittent so there are succesfull payments aswell
+2026-02-17 15:20:22,PLAYER,online-boutique-7757,"mentioned change:
+Change ID: CHG89675
+
+Owner: Daniel
+
+Service: PaymentService
+
+Environment: PROD
+
+Version: 1.7
+
+Description: Deployed version update to add support for new card issuer integration and improve payment logging.
+
+Time Of Change: 24 hours ago"
+2026-02-17 15:20:35,daniel,online-boutique-7757,Yeah right . If change would be cause then all payments would've failed
+2026-02-17 15:20:53,daniel,online-boutique-7757,Intermittent issue is pointing towards issue into network infra only
+2026-02-17 15:21:00,PLAYER,online-boutique-7757,I agree
+2026-02-17 15:21:05,tanya,online-boutique-7757,Spike in outbound connections are very abnormal. I'd suggest we bring in SecOps into this
+2026-02-17 15:22:38,PLAYER,online-boutique-7757,"@maya Could you please look into it? we are suspecting network (infra) issues here. We have couple of changes done today, but as confirmed with Daniel, his change applied to Payments would couse overall unavailablily, we are currently havbing intermittent issues. "
+2026-02-17 15:22:42,maya,online-boutique-7757,i will take a look into this now
+2026-02-17 15:22:44,uptimelabs,online-boutique-7757,:star: Manage actions and timings
+2026-02-17 15:22:48,maya,online-boutique-7757,Give me a moment
+2026-02-17 15:22:56,PLAYER,online-boutique-7757,Also currently we have high load on network 
+2026-02-17 15:23:16,bez,business-comms-7757,Whats the current update ?
+2026-02-17 15:23:20,maya,online-boutique-7757,Just ran a network security scan and our issues all seem to be related to our network switch trying to figure out what exactly
+2026-02-17 15:23:41,hamed,online-boutique-7757,I'm helping Maya to check more into networks
+2026-02-17 15:23:52,PLAYER,online-boutique-7757,"From log severity, i can see highedrload on Frontend_debug and Currencyservixe_Info"
+2026-02-17 15:24:06,daniel,online-boutique-7757,Its suspicious
+2026-02-17 15:24:09,maya,online-boutique-7757,Our investigation uncovered a critical issue: the network switch was compromised due to unpatched vulnerabilities. We have identified a BotNet in the switch and it's creating outbound connections to the outside. It creates a DDOS (Distributed Denial of Service) to attack an external party
+2026-02-17 15:24:15,hamed,online-boutique-7757,"network switch had unpatched vulnerabilities, leaving it susceptible to known exploits. Attackers had exploited these vulnerabilities, leading to the compromise of the switch's integrity"
+2026-02-17 15:24:18,PLAYER,business-comms-7757,"We have included secops to the investigation, we suspect sth on  network isssue"
+2026-02-17 15:24:21,uptimelabs,online-boutique-7757,:star: Form an effective investigation team
+2026-02-17 15:24:26,tanya,online-boutique-7757,This means that The disruptions in outbound connections are affecting our internal company's users and the external global customer base.
+2026-02-17 15:24:38,PLAYER,online-boutique-7757,Are thgese attack still ongoing?
+2026-02-17 15:24:40,maya,online-boutique-7757,We could restart the switch to fix it faster ?
+2026-02-17 15:24:47,PLAYER,online-boutique-7757,@maya
+2026-02-17 15:24:54,maya,online-boutique-7757,Yes there is a botnet in the switch causing this
+2026-02-17 15:25:08,PLAYER,online-boutique-7757,restart it and please ensure there are no vulnerabilities for attackers
+2026-02-17 15:25:22,maya,online-boutique-7757,switch has been restarted
+2026-02-17 15:25:25,maya,online-boutique-7757,Ok doing it now
+2026-02-17 15:25:31,shay,online-boutique-7757,Ill try to place an order and check we're still getting these issues
+2026-02-17 15:25:34,tanya,online-boutique-7757,Hopefully restarting was the correct solution
+2026-02-17 15:25:52,shay,online-boutique-7757,"Ummm Guys, tried to place an order and now im getting errors on the product selection page"
+2026-02-17 15:25:52,PLAYER,online-boutique-7757,@bob kindly let us know if any player complaints are coming in
+2026-02-17 15:25:55,shay,online-boutique-7757,Is anyone else getting the same?
+2026-02-17 15:25:57,bob,online-boutique-7757,"Getting a lot of new reports, people are no longer able to access the products page at all"
+2026-02-17 15:26:03,maya,online-boutique-7757,"Sorry guys was hoping the restart would work, trying to think of another solution but i'm not too familiar with the network infrastructure here at OB"
+2026-02-17 15:26:05,hamed,online-boutique-7757,No worries Maya I can send over the graph of the network infra if you wanna look at it
+2026-02-17 15:26:07,maya,online-boutique-7757,That would be perfect @hamed
+2026-02-17 15:26:10,hamed,online-boutique-7757,
+2026-02-17 15:26:15,maya,online-boutique-7757,"Looking at the diagram now, will need a moment to figure out what to do next"
+2026-02-17 15:26:19,maya,online-boutique-7757,Let me know if you have any suggestions in the mean time
+2026-02-17 15:26:22,shay,online-boutique-7757,If i remember correctly we do have recent changes involving the products page
+2026-02-17 15:26:22,PLAYER,online-boutique-7757,error revceived from placing order:
+2026-02-17 15:26:49,PLAYER,online-boutique-7757,@maya and @hamed kindlyt check into the issue and advise ASAP
+2026-02-17 15:27:48,hamed,online-boutique-7757,We should failover to redundant switch
+2026-02-17 15:27:48,PLAYER,online-boutique-7757,We are now increasing the seveiry to P2 due to severity of the issue and players are unable to place bets
+2026-02-17 15:27:54,PLAYER,business-comms-7757,"We are now increasing the seveiry to P2 due to severity of the issue and players are unable to place bets
+
+"
+2026-02-17 15:28:00,PLAYER,business-comms-7757,we are investigating the new error
+2026-02-17 15:28:01,uptimelabs,online-boutique-7757,:star: Formally assign criticality level to the incident
+2026-02-17 15:28:06,hamed,online-boutique-7757,I have patched it
+2026-02-17 15:28:23,maya,online-boutique-7757,the infected switch has been successfully changed over
+2026-02-17 15:28:26,hamed,online-boutique-7757,The Catalyst 9300 Series which is our infected switch has been swapped over to old but reliable (Cisco Catalyst 2960 Series)
+2026-02-17 15:28:33,PLAYER,online-boutique-7757,@hamed i can still see the error
+2026-02-17 15:28:34,tinus,online-boutique-7757,"Good job, can we confirm @PLAYER?"
+2026-02-17 15:28:37,uptimelabs,online-boutique-7757,:star: Cross checking resolution with team
+2026-02-17 15:28:47,hamed,online-boutique-7757,Give it a moment
+2026-02-17 15:28:56,PLAYER,online-boutique-7757,Issue still ongoing!
+2026-02-17 15:29:19,bez,business-comms-7757,OMG its an attack. Where are we right now ?
+2026-02-17 15:29:24,PLAYER,online-boutique-7757,"HTTP Status: 500 Internal Server Error
+
+rpc error: code = Unavailable desc = connection error: desc = ""transport: Error while dialing: dial tcp 172.20.142.165:3550: connect: connection refused""
+could not retrieve product
+main.(*frontendServer).productHandler
+	/src/handlers.go:156
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2220
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/go/pkg/mod/github.com/gorilla/mux@v1.8.1/mux.go:212
+main.(*logHandler).ServeHTTP
+	/src/middleware.go:82
+main.main.ensureSessionID.func4
+	/src/middleware.go:109
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2220
+go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*middleware).serveHTTP
+	/go/pkg/mod/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.60.0/handler.go:179
+go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.NewMiddleware.func1.1
+	/go/pkg/mod/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.60.0/handler.go:67
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2220
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:3210
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:2092
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700 "
+2026-02-17 15:29:43,hamed,online-boutique-7757,Try it now
+2026-02-17 15:30:51,PLAYER,online-boutique-7757,perfect its working! 
+2026-02-17 15:30:54,uptimelabs,online-boutique-7757,:star: Validate the fix
+2026-02-17 15:31:11,PLAYER,business-comms-7757,"Hemed confirmed that Infected Cisco Catalyst 9300 core switch was identified, patched and traffic failed over to a redundant Cisco Catalyst 2960 switch to restore network stability"
+2026-02-17 15:31:15,uptimelabs,online-boutique-7757,:star: Confirm resolution with the business
+2026-02-17 15:31:17,bez,business-comms-7757,How about the customers ?
+2026-02-17 15:31:24,PLAYER,online-boutique-7757,are we receiving any player complaints? @bob
+2026-02-17 15:31:27,uptimelabs,online-boutique-7757,:star: Cross check resolution with stakeholders
+2026-02-17 15:31:28,bob,online-boutique-7757,"customers have stopped reporting the issue, we are looking good"
+2026-02-17 15:31:59,PLAYER,online-boutique-7757,@maya are we safe now from the attacks?
+2026-02-17 15:32:02,maya,online-boutique-7757,All good now
+2026-02-17 15:32:07,tanya,online-boutique-7757,"Cheers, everyone! Resolving these network issues added a bit of spice to our celebration"
+2026-02-17 15:32:09,tinus,online-boutique-7757,Good job team! We managed to keep the anniversary vibe alive despite the detour.
+2026-02-17 15:32:12,hamed,online-boutique-7757,High-fives all around!  I will take out that faulty switch as soon as possible.
+2026-02-17 15:32:17,shay,online-boutique-7757,The website's performance is looking solid again 
+2026-02-17 15:32:18,PLAYER,business-comms-7757,"We are safe from the attacks, no customer complaints,. all working"
+2026-02-17 15:32:20,bez,business-comms-7757,"Great , thanks @Armin"
+2026-02-17 15:32:21,daniel,online-boutique-7757,The anniversary orders are flowing smoothly now. No hiccups on the code side.
+2026-02-17 15:32:22,PLAYER,business-comms-7757,incident resolved
+2026-02-17 15:32:24,bob,online-boutique-7757,"Our customers are back to enjoying the celebration. Happy customers, happy anniversary!"
+2026-02-17 15:32:27,maya,online-boutique-7757,Really great job @PLAYER.
+2026-02-17 15:32:30,bez,online-boutique-7757,Special congratulations to our Incident Manager for steering the ship with finesse and to Maya for your help identifying the faulty switch. Cheers to a remarkable team! :tada:
+2026-02-17 15:32:37,PLAYER,online-boutique-7757,Thank you!
+2026-02-17 15:32:41,PLAYER,online-boutique-7757,great job!
+2026-02-17 15:32:51,uptimelabs,online-boutique-7757,"Drill Wrap-Up
+
+Thanks for playing! This session is now closed.
+
+Please return to your Uptime Labs tab to review your performance and complete the Retrospective & Feedback form.
+
+If you've already closed the tab, you can reopen the form using the button below."
+2026-02-17 15:32:56,uptimelabs,online-boutique-7757,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/18/7757/feedback"

@@ -1,0 +1,35 @@
+{
+  "output": {
+    "learning_outcomes_achieved": [
+      [
+        "Size Up",
+        "Fluent",
+        "You quickly identified that the issue was customer impacting ('online botique system is down 503 service unavailable\" sev-1'), actively investigated to determine whether it was regional or global, and communicated this both internally and to business stakeholders. You gathered input from multiple sources (customer calls, team feedback, customer reports) to confirm the scope and severity before moving forward."
+      ],
+      [
+        "Differentiate Legitimate Load vs Security Threat",
+        "Fluent",
+        "You explicitly raised the possibility that high load could be due to an issue in the front end or possibly a load test, then suspected an attack based on traffic patterns, asked for expected traffic levels, and linked error patterns to a potential security threat, communicating this to the team."
+      ],
+      [
+        "Diagnose",
+        "Fluent",
+        "You asked for backend logs, checked changes and tests that could cause abnormal load, connected the findings (high request rates, error codes) with the suspicious traffic, and explicitly concluded this was a security issue. You also requested next steps such as checking for cloud outages and involving Sec Ops, and followed up with action items."
+      ],
+      [
+        "Mitigation",
+        "Fluent",
+        "You participated in security mitigation by suggesting actions to block a suspicious IP, asked for confirmation on system recovery after the action, and checked the recovery status with other team members, acknowledging when the service returned."
+      ],
+      [
+        "Security Protocol and Stakeholder Constraints",
+        "Fluent",
+        "You communicated with both the business and technical teams about the evolving security nature of the incident, engaged the compliance and security teams, and coordinated internal discussion on incident communication to customers, following guidance to manage information sensitivity."
+      ]
+    ],
+    "session_id": "1111",
+    "feedback": "Correctness: Your spelling, punctuation, and grammar were generally clear and appropriate for rapid incident communications, and you used concise language suitable to the urgency of the situation.\nClarity: The steps you initiated and your requests to other team members were direct and actionable, making it easy for others to understand and follow up. Your updates for business stakeholders were prompt and avoided ambiguity.\nEngagement: You maintained steady engagement across both technical and business channels, asking questions, delegating actions, and encouraging updates from others in a way that helped sustain momentum and focus during the incident.\nDelivery: Your communication was measured and adaptive to the context, especially in managing sensitive aspects like the potential customer communication about an attack. Maintaining this direct but considered approach helped enable common understanding and mutual support throughout the drill.",
+    "did_well": "You actively facilitated collaboration, ensured ongoing information flow, and included the right people in both problem-solving and communications. Your efforts in cross-checking information, quickly involving specialist teams, and cycling between technical investigation and business impact updates were notable strengths. The way you provided clear handoffs and closure for actions contributed positively to the group’s ability to recover and learn.",
+    "room_for_improvement": "When investigating the source and scope of the problem, reinforcing points of uncertainty with a request for even more targeted evidence (for example, directly referencing data sources, types of customer segments reporting issues, or timelines for mitigation actions) might give you an even sharper picture and could speed up convergence around root causes. Occasionally summarising what the team currently knows and what remains unknown can help keep everyone synchronised, especially in fast-moving or ambiguous situations. Finally, after technical service restoration, explicitly laying out action items for follow-up or retrospective analyses—such as reviewing logs for residual malicious traffic or confirming with relevant stakeholders that communication strategies are updated—can reinforce learning and strengthen future readiness."
+  }
+}

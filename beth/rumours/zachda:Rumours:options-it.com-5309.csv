@@ -1,0 +1,94 @@
+datetime,player,channel,message
+2025-08-08 09:04:46,tinus,online-boutique-5309,"Hi team, let's have a mood check send an emoji to describe your mood"
+2025-08-08 09:04:50,tinus,online-boutique-5309,"I'll go first, :thumbsup:"
+2025-08-08 09:04:56,tanya,online-boutique-5309,:thumbsup:
+2025-08-08 09:04:58,tinus,online-boutique-5309,I'm excited about showing off all your hard work at todays stakeholder meeting
+2025-08-08 09:05:01,daniel,online-boutique-5309,":skull: knackered, had a few too many late nights this week"
+2025-08-08 09:05:04,shay,online-boutique-5309,:rainbow:
+2025-08-08 09:05:07,hamed,online-boutique-5309,living the dream :smile:
+2025-08-08 09:05:11,bez,online-boutique-5309,:smirk: im excited to see the show too
+2025-08-08 09:05:13,tinus,online-boutique-5309,shouldn't you be prepping for the meeting 
+2025-08-08 09:05:16,bez,online-boutique-5309,:sweat_smile: i am indeed I'll leave you lot to it
+2025-08-08 09:05:18,shay,online-boutique-5309,hang in there @daniel its gonne be the weekend sooner or later :joy:
+2025-08-08 09:05:21,tinus,online-boutique-5309,I should get on with my prep too have a good day team
+2025-08-08 09:05:22,daniel,online-boutique-5309,@shay strict diet of energy drink for me today lol
+2025-08-08 09:05:25,daniel,online-boutique-5309,hope the presentation goes well @tinus
+2025-08-08 09:05:27,tanya,online-boutique-5309,:raised_hands:
+2025-08-08 09:05:43,UptimeLabs,online-boutique-5309,Level 7 start button
+2025-08-08 09:08:04,PLAYER,online-boutique-5309,Clicked Start button
+2025-08-08 09:08:05,UptimeLabs,online-boutique-5309,":alarm_clock: - You have 20 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-08-08 09:08:08,tinus,online-boutique-5309,"Hey team, I'm texting from the board room - kinda embarrassing but in my demo to the board, I tried to add a pair of Aviator sunglasses to the shopping cart and I got a ?http 500?"
+2025-08-08 09:08:10,tinus,online-boutique-5309,"I've bought some time but need this be able to do this demo if we can lets get this sorted in the next 20 minutes.
+"
+2025-08-08 09:08:13,tinus,online-boutique-5309,500 screenshot
+2025-08-08 09:08:15,tanya,online-boutique-5309,"uh oh, those Aviators are top sellers due to the new Top Gun movie...It's size up the issue time Zach Davis"
+2025-08-08 09:08:18,shay,online-boutique-5309,Come on this can't be happening!
+2025-08-08 09:08:20,tinus,online-boutique-5309,"I'm in this meeting so, wont be able to help but I trust that you all can get this fixed asap, just @ me if you need anything"
+2025-08-08 09:08:23,shay,online-boutique-5309,ok looking into this now
+2025-08-08 09:08:40,PLAYER,online-boutique-5309,Acknowledged Tinus - checking if I get the same error
+2025-08-08 09:08:43,UptimeLabs,online-boutique-5309,:star: Reproduces the incident
+2025-08-08 09:09:23,Shay,online-boutique-5309,I couldn't reproduce. Anyone else?
+2025-08-08 09:09:57,PLAYER,online-boutique-5309,Confirming I can successfully purchase the glasses
+2025-08-08 09:10:02,UptimeLabs,online-boutique-5309,:star: Attempt to replicate the issue
+2025-08-08 09:10:24,Shay,online-boutique-5309,"Could it be the change issue, perhaps?"
+2025-08-08 09:10:27,PLAYER,online-boutique-5309,Are there any reports from customers or around the business?
+2025-08-08 09:10:32,Bob,online-boutique-5309,Checking reports
+2025-08-08 09:10:34,UptimeLabs,online-boutique-5309,:star: Asking questions to validate impact of the problem
+2025-08-08 09:10:38,PLAYER,online-boutique-5309,I'll check recent changes Shay
+2025-08-08 09:10:43,UptimeLabs,online-boutique-5309,:star: Check changes done to the platform
+2025-08-08 09:11:05,Bob,online-boutique-5309,No reports regarding the platform or service issues. I will keep an eye in case i get any
+2025-08-08 09:11:39,UptimeLabs,online-boutique-5309,:bulb: Hint: Declare an incident.
+2025-08-08 09:12:31,PLAYER,online-boutique-5309,"On the recent deployed changes, I can see Daniel deployed CheckoutService:version 5.0 whilst Shayshortly after deployed CheckoutService:version 4.6. Is there a reason why you deployed an older version Shay?"
+2025-08-08 09:12:43,Shay,online-boutique-5309,I will check to make sure it didn't break anything
+2025-08-08 09:12:51,PLAYER,online-boutique-5309,Declaring a minor /incident
+2025-08-08 09:12:53,Daniel,online-boutique-5309,Let me check
+2025-08-08 09:13:12,PLAYER,business-comms-5309,- Severity - Low
+2025-08-08 09:13:12,PLAYER,business-comms-5309,*Incident Number INC100045:* - Severity - Low
+2025-08-08 09:13:13,UptimeLabs,online-boutique-5309,:star: Incident record created
+2025-08-08 09:13:15,UptimeLabs,online-boutique-5309,:star: Send first comms in first 5 minutes
+2025-08-08 09:13:17,UptimeLabs,online-boutique-5309,:star: Formally assign criticality level to the incident
+2025-08-08 09:13:25,Shay,online-boutique-5309,I must have been a typo that was supposed to be 5.6 version. My bad
+2025-08-08 09:13:41,PLAYER,online-boutique-5309,Please revert your change
+2025-08-08 09:13:47,UptimeLabs,online-boutique-5309,:star: Restoration over root cause analysis
+2025-08-08 09:13:49,Bez,business-comms-5309,Can we have more information on this? What's the business and customer impact?
+2025-08-08 09:14:01,Shay,online-boutique-5309,"Sure, reverting"
+2025-08-08 09:14:18,Daniel,online-boutique-5309,I can't see any issues with my change and service looks healthy
+2025-08-08 09:14:40,Bob,online-boutique-5309,Still no reports!
+2025-08-08 09:14:41,Shay,online-boutique-5309,Rollback complete. Is it any better?
+2025-08-08 09:14:53,UptimeLabs,online-boutique-5309,:bulb: Use metrics as evidence
+2025-08-08 09:15:03,PLAYER,online-boutique-5309,Tinus - can you test again please
+2025-08-08 09:15:30,Tinus,online-boutique-5309,Sorry guys but I'm getting the same error. I need this to be fixed ASAP! I'm stalling as much as i can
+2025-08-08 09:15:46,UptimeLabs,online-boutique-5309,:bulb: Hint: keep the business informed regularly
+2025-08-08 09:15:57,Daniel,online-boutique-5309,So what do we know so far?
+2025-08-08 09:16:34,PLAYER,online-boutique-5309,OK. Tanya- can see your change was deployed to PROD - could you revert please
+2025-08-08 09:17:02,Tanya,online-boutique-5309,It's safe to do so but ad service wouldn't impact the cart or catalog service
+2025-08-08 09:17:06,PLAYER,business-comms-5309,Currently just Tinus impacted. No reports from elsewhere and none of us can replicate
+2025-08-08 09:17:41,PLAYER,online-boutique-5309,What other team / expert do we recommend checking in with on this?
+2025-08-08 09:17:43,Bez,business-comms-5309,We need to get this sorted as soon as possible as this meeting is very important for our company
+2025-08-08 09:18:05,Tanya,online-boutique-5309,We might ask tinus for more information
+2025-08-08 09:18:22,Daniel,online-boutique-5309,"So as far as we know this is only affecting 1 user, right?"
+2025-08-08 09:18:30,Shay,online-boutique-5309,i think so
+2025-08-08 09:18:41,PLAYER,online-boutique-5309,Tinus - as this appears just isolated to yourself - can you either refresh your cache or re-launch the page please?
+2025-08-08 09:19:15,Tinus,online-boutique-5309,I will try to refresh my session but I'm open to more suggestions
+2025-08-08 09:19:29,Daniel,online-boutique-5309,"It could be a local issues with his session, machine or browser"
+2025-08-08 09:19:53,Bez,business-comms-5309,Any news on this?
+2025-08-08 09:20:02,PLAYER,online-boutique-5309,Yep agreed Daniel
+2025-08-08 09:20:26,Tinus,online-boutique-5309,refreshing didn't help. Any other suggestions @Team ?
+2025-08-08 09:20:56,PLAYER,online-boutique-5309,can you try another browser?
+2025-08-08 09:21:05,PLAYER,online-boutique-5309,Tinus - try another browser
+2025-08-08 09:21:15,Tinus,online-boutique-5309,Only have one on my work laptop. Not an option
+2025-08-08 09:21:20,Tanya,online-boutique-5309,Try clearing the cache or incognito
+2025-08-08 09:21:37,Tinus,online-boutique-5309,I will try that
+2025-08-08 09:21:59,tinus,online-boutique-5309,Damn! thats it
+2025-08-08 09:22:02,tinus,online-boutique-5309,"Great Ive got to do my presentation now, thanks for figuring this out so quickly. @daniel @shay can you look in to a cache busting solution?"
+2025-08-08 09:22:04,shay,online-boutique-5309,it was the cache! sure we can do that
+2025-08-08 09:22:06,daniel,online-boutique-5309,"no worries boss, at least its not a significat issue"
+2025-08-08 09:22:07,daniel,online-boutique-5309,good luck with the presentation!
+2025-08-08 09:22:08,tanya,online-boutique-5309,yes good luck @tinus
+2025-08-08 09:22:10,shay,online-boutique-5309,good luck @tinus!
+2025-08-08 09:22:21,UptimeLabs,online-boutique-5309,Start retro and feedback
+2025-08-08 09:22:27,PLAYER,business-comms-5309,Confirming this is now resolved. Tinus needed to clear his cache
+2025-08-08 09:22:37,PLAYER,online-boutique-5309,Clicked Start_feedback button
+2025-08-08 09:23:25,UptimeLabs,online-boutique-5309,:star: Validate the fix
+2025-08-08 09:23:28,UptimeLabs,online-boutique-5309,:star: Confirm resolution with the business
+2025-08-08 09:23:39,UptimeLabs,online-boutique-5309,Submission successful

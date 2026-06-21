@@ -1,0 +1,131 @@
+index,datetime,player,channel,message
+0,01/12/2025 10:04,Bez,online-boutique-6971,Can you believe it? That influencer photoshoot is blowing up! We're making waves all over social media.
+1,01/12/2025 10:04,Bob,online-boutique-6971,Infleuncer photoshoot
+2,01/12/2025 10:04,Bez,online-boutique-6971,Our watches and loafers are all over everyone's feeds
+3,01/12/2025 10:04,Bob,online-boutique-6971,You're telling me? My inbox is packed with customer queries
+5,01/12/2025 10:05,PLAYER,online-boutique-6971,Clicked Start button
+7,01/12/2025 10:05,Daniel,online-boutique-6971,Yeah I'm seeing it traffic's surging. But nothing we didn't anticipate for
+8,01/12/2025 10:05,Hamed,online-boutique-6971,Good. We've optimised the backend for this kind of spike
+9,01/12/2025 10:05,Maya,online-boutique-6971,Let's just make sure that's all it is - legit traffic. Influencer campaigns can attract more than just customers
+10,01/12/2025 10:05,Shay,online-boutique-6971,I'll keep eyes on the dashboard. We're running at nearly 80% capacity right now for all the user actvity our platform can handle
+11,01/12/2025 10:06,Bez,online-boutique-6971,It's all good. People are scrambling to get their hands on our products. That viral post is gold
+12,01/12/2025 10:06,Daniel,online-boutique-6971,We're inching closer to max capacity. We're at 95% load now
+13,01/12/2025 10:06,Shay,online-boutique-6971,I just refreshed the website and it's now taking ages to load
+14,01/12/2025 10:06,Shay,online-boutique-6971,Is the website down? Or maybe it's just my machine
+15,01/12/2025 10:06,PLAYER,online-boutique-6971,The website is down
+17,01/12/2025 10:07,PLAYER,online-boutique-6971,website down P1
+18,01/12/2025 10:07,PLAYER,business-comms-6971,*Incident Number INC100019:* website down P1
+20,01/12/2025 10:07,PLAYER,online-boutique-6971,Bob Is it regional? what's the impact?
+22,01/12/2025 10:07,Bob,online-boutique-6971,Checking
+23,01/12/2025 10:07,Bob,online-boutique-6971,We are getting a lot of calls from customers that they are unable to access the website
+24,01/12/2025 10:07,Bob,online-boutique-6971,Few are reporting long loading times
+25,01/12/2025 10:07,Bob,online-boutique-6971,and few are able to load platforms but unable to order
+26,01/12/2025 10:07,Bob,online-boutique-6971,Here are the latest reports
+27,01/12/2025 10:07,Bob,online-boutique-6971,Customer Reports Graph
+28,01/12/2025 10:07,Bob,online-boutique-6971,Looks like a global issue
+29,01/12/2025 10:08,PLAYER,business-comms-6971,We are getting a lot of calls from customers that they are unable to access the website\n Few are reporting long loading times\nand few are able to load platforms but unable to order
+31,01/12/2025 10:08,Bez,business-comms-6971,Oh ho- not good
+32,01/12/2025 10:08,PLAYER,online-boutique-6971,Tanya can you check how the infra is doing?
+33,01/12/2025 10:08,Bez,business-comms-6971,what the customer impact - is it across globe
+34,01/12/2025 10:08,PLAYER,online-boutique-6971,Daniel Shay check the service logs
+35,01/12/2025 10:08,Tanya,online-boutique-6971,Sure checking
+36,01/12/2025 10:09,Tanya,online-boutique-6971,I see our front end app is struggling
+37,01/12/2025 10:09,PLAYER,business-comms-6971,yes it's global
+38,01/12/2025 10:09,Tanya,online-boutique-6971,i see a lot of 429 and 503's in the logs
+39,01/12/2025 10:09,PLAYER,business-comms-6971,customers are unable to load the site others to place orders
+40,01/12/2025 10:09,Shay,online-boutique-6971,Im seeing a lot of errors in the logs
+41,01/12/2025 10:09,Shay,online-boutique-6971,Not sure what the root cause is but we are seeing high load on our Frontend Pods - this may be due to the ongoing discount or if it could be related to any tests we were running.
+42,01/12/2025 10:09,Shay,online-boutique-6971,I see high number of rest-call errors like  http429 http503 and 504s
+44,01/12/2025 10:09,Shay,online-boutique-6971,```\nERROR: GET /api/GetInfo HTTP/1.1 429 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/91.0.4472.124 Safari/537.36 FrontEndApp\n``` ```\nERROR: GET /api/GetInfo HTTP/1.1 429 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/91.0.4472.124 Safari/537.36 FrontEndApp\n```
+45,01/12/2025 10:09,Shay,online-boutique-6971,Im also seeing this
+46,01/12/2025 10:09,Shay,online-boutique-6971,```\n[error]: Service unavailable cannot process request for /api/GetInfo (503).\n``` ```
+48,01/12/2025 10:09,Daniel,online-boutique-6971,Seeing frontend errors as well
+49,01/12/2025 10:09,PLAYER,online-boutique-6971,can you check the dependencies for frontend service? if those services behave?
+50,01/12/2025 10:10,Daniel,online-boutique-6971,```\n[error] 12345#12345: *98765 limiting requests exceeded 10 requests per second for client 149.34.52.176 request: GET /api/GetInfo HTTP/1.1 FrontEndApp\n``` \n```[error] 12345#12345: *98766 limiting requests exceeded 10 requests per second for client 149.34.52.176 request: GET /api/GetInfo HTTP/1.1 FrontEndApp\n``` ```
+52,01/12/2025 10:10,Daniel,online-boutique-6971,```\n[ERROR] 12345#12345: *98765 gateway timed out (504) while receiving response from upstream client: 149.34.52.176 request: GET /api/GetInfo HTTP/1.1 host: FrontEndApp\n``` ```\n[ERROR] 12345#12345: *98766 gateway timed out (504) while receiving response from upstream client: 149.34.52.176 request: GET /api/GetInfo HTTP/1.1 host: FrontEndApp\n``` ```
+53,01/12/2025 10:10,Daniel,online-boutique-6971,Do we know what the expected amount of traffic should be due to the on-going discount?
+54,01/12/2025 10:10,Tanya,online-boutique-6971,Looks like Front end is unable to handle all requests
+55,01/12/2025 10:10,PLAYER,online-boutique-6971,Is this request limitting issue?
+57,01/12/2025 10:11,PLAYER,online-boutique-6971,can we look at the logs to estimate requests rate hitting us and up the limit accordingly? do we need to scale? Daniel Tanya
+58,01/12/2025 10:11,Tanya,online-boutique-6971,Looking at dashboard we have done more than 6k login requests now -
+60,01/12/2025 10:11,Tanya,online-boutique-6971,Dan was runnign load test on Front end- we should know what's our capacity from the test
+61,01/12/2025 10:11,PLAYER,online-boutique-6971,Daniel could you please reply?
+62,01/12/2025 10:11,Daniel,online-boutique-6971,Do we know if this is due to sale
+63,01/12/2025 10:12,Bez,business-comms-6971,The sale is supposed to bring huge revenue- get this sorted at priority
+64,01/12/2025 10:12,PLAYER,online-boutique-6971,Can we see if the increase in traffic is not abnormal? Are there any suspicious patterns? Daniel Tanya Shay
+65,01/12/2025 10:12,PLAYER,business-comms-6971,on it
+66,01/12/2025 10:12,Tanya,online-boutique-6971,I hope Dan and Shay has not misconfigured load test on prod ?
+67,01/12/2025 10:13,Daniel,online-boutique-6971,Sure We shoul dget answer from Bob if  we expected high traffic due to sale
+68,01/12/2025 10:13,Shay,online-boutique-6971,<https://uptime-labs.atlassian.net/wiki/spaces/ULPUBLIC/pages/1118961668/Discount+Disaster+-+Change+Request+Logs>
+69,01/12/2025 10:13,Shay,online-boutique-6971,Changes this morning
+70,01/12/2025 10:14,Bob,online-boutique-6971,Hi Dan we were expected just 10 to 15% more user login due to sales- But ^000 request were definately not expected
+71,01/12/2025 10:14,Bob,online-boutique-6971,6000*
+72,01/12/2025 10:14,PLAYER,online-boutique-6971,How can we route out malicious traffic? Daniel Shay
+73,01/12/2025 10:14,Daniel,online-boutique-6971,@PLAYER i need Network traffic distribution data
+74,01/12/2025 10:14,Daniel,online-boutique-6971,we can check from that
+75,01/12/2025 10:14,Daniel,online-boutique-6971,Can Tanya give me those details
+76,01/12/2025 10:15,Tanya,online-boutique-6971,My dashboard isn't loading
+77,01/12/2025 10:15,Tanya,online-boutique-6971,May be hamed?
+78,01/12/2025 10:15,Hamed,online-boutique-6971,I was looking at Network traffic - But the dashboard took ages to load.
+79,01/12/2025 10:15,Hamed,online-boutique-6971,Here's a screenshot of Network traffic across each region.
+80,01/12/2025 10:15,Bez,business-comms-6971,What's causing thi s?
+81,01/12/2025 10:15,Hamed,online-boutique-6971,Customer Reports Graph
+82,01/12/2025 10:15,Shay,online-boutique-6971,Wow Spain must really like our products
+83,01/12/2025 10:15,Bez,business-comms-6971,Dowe know when can we mitigate this- There are so many stake holders calling me now
+84,01/12/2025 10:16,Hamed,online-boutique-6971,We should involve Security operations team
+85,01/12/2025 10:16,PLAYER,online-boutique-6971,Tanya Hamed S Daniel do we have more data about origin of these reuests? they looks abnormal
+86,01/12/2025 10:16,Hamed,online-boutique-6971,Agreed
+87,01/12/2025 10:17,PLAYER,online-boutique-6971,Maya could you please assist us here? we suspect malicious traffic increase to our website
+89,01/12/2025 10:17,Maya,online-boutique-6971,Hey @PLAYER Batieva after reviewing the logs I strongly suspect that this is a security-related issue.
+90,01/12/2025 10:17,Maya,online-boutique-6971,The abnormally high traffic with http 429 503 and 504 errors may be due to a possible DDoS/DoS attack
+91,01/12/2025 10:17,Maya,online-boutique-6971,I'll need to continue investigating further but it definitely looks like something is targeting our system
+92,01/12/2025 10:17,Tinus,business-comms-6971,Looks like we have a security threat - We should be extra careful with this incident
+93,01/12/2025 10:17,Bez,business-comms-6971,Do we know what's the financial impact of the issue? How much are we losing every minute?
+95,01/12/2025 10:17,PLAYER,online-boutique-6971,How can we help Maya ?
+96,01/12/2025 10:17,Bez,business-comms-6971,@PLAYER Batieva Should we inform the 'Compliance Team' about this issue?
+97,01/12/2025 10:18,Bez,business-comms-6971,The Compliance Team makes sure we follow laws and rules like reporting the incident to the right people and keeping proper records. It helps us avoid legal trouble and protects our reputation.
+98,01/12/2025 10:18,PLAYER,business-comms-6971,We strongly suspect that this is a security-related issue. The abnormally high traffic with http 429 503 and 504 errors may be due to a possible DDoS/DoS attack. Security has been involved
+99,01/12/2025 10:18,Maya,online-boutique-6971,Can i get the Ip address details from logs - if any one has it handy
+100,01/12/2025 10:18,Bez,business-comms-6971,Whatt- I am worried now
+101,01/12/2025 10:18,PLAYER,online-boutique-6971,Daniel?
+102,01/12/2025 10:18,Daniel,online-boutique-6971,client 149.34.52.176\n<https://uptimelabs-metaverse.slack.com/archives/C0A0MT0HVJR/p1764583803039779>
+103,01/12/2025 10:19,Daniel,online-boutique-6971,Looks like all requests are from Single IP
+104,01/12/2025 10:19,PLAYER,business-comms-6971,Bez yes I think worth letting compliance team know. Who can I reach to?
+105,01/12/2025 10:20,PLAYER,online-boutique-6971,Maya what do you suggest to stop the bleeding? block them?
+106,01/12/2025 10:20,Maya,online-boutique-6971,Thanks - Yes All requests are from single IP
+107,01/12/2025 10:20,Tinus,business-comms-6971,Leave Compliance with me - I will talk to them
+109,01/12/2025 10:20,PLAYER,business-comms-6971,Thanks
+110,01/12/2025 10:20,Maya,online-boutique-6971,yes lets block them
+111,01/12/2025 10:20,Maya,online-boutique-6971,The IP address has now been blocked
+112,01/12/2025 10:20,Tinus,online-boutique-6971,Can you confirm @PLAYER Batieva?
+113,01/12/2025 10:20,Hamed,online-boutique-6971,Lucky this was DoS (Denial of Service ) from a single IP - What if this attack happens from multiple IP addresses (DDoS)?
+114,01/12/2025 10:20,Hamed,online-boutique-6971,We should start working on the pending WAF rule updates for the frontend
+115,01/12/2025 10:20,PLAYER,online-boutique-6971,Let's look at the system logs.
+116,01/12/2025 10:20,Bob,online-boutique-6971,@PLAYER Batieva Should we let the customers know about the attack?
+117,01/12/2025 10:21,PLAYER,online-boutique-6971,Bob follow our internal procedure for this case. Or rather let's ask Maya
+118,01/12/2025 10:21,Maya,online-boutique-6971,Good call @PLAYER- Lets complaince team handle the comms
+119,01/12/2025 10:21,Maya,online-boutique-6971,we might bring unnecessary panic among customers
+120,01/12/2025 10:21,Bob,online-boutique-6971,NOted
+121,01/12/2025 10:21,PLAYER,online-boutique-6971,I confirm i am able to place an order
+123,01/12/2025 10:21,PLAYER,online-boutique-6971,also the number of orders places metric is growing so looks good
+124,01/12/2025 10:22,PLAYER,online-boutique-6971,> We should start working on the pending WAF rule updates for the frontend
+126,01/12/2025 10:22,PLAYER,online-boutique-6971,Hamed S are you suggesting it as an action item post incident?
+127,01/12/2025 10:22,Bez,business-comms-6971,What's the latest
+128,01/12/2025 10:22,Hamed,online-boutique-6971,I will work on implementing pending WAF should be done by this weekdn ealease
+129,01/12/2025 10:23,PLAYER,online-boutique-6971,Daniel Maya Bob could you folks please confirm that the issue has been resolved and we can call the incident resolved?
+130,01/12/2025 10:23,Daniel,online-boutique-6971,The logs look fine - i see 200's
+132,01/12/2025 10:23,Bob,online-boutique-6971,Customers are able to login and place orders
+133,01/12/2025 10:23,PLAYER,business-comms-6971,Customers are able to login and place orders
+135,01/12/2025 10:23,Maya,online-boutique-6971,Yes we have mitigated issue now  thanks PLAYER
+136,01/12/2025 10:23,Tanya,online-boutique-6971,Great work we managed to save the sale
+137,01/12/2025 10:23,Tinus,online-boutique-6971,I knew we had it in us
+138,01/12/2025 10:23,PLAYER,online-boutique-6971,Calling the incident done. Thanks.
+139,01/12/2025 10:23,Shay,online-boutique-6971,Now i can continue shopping and get some nice discounts
+140,01/12/2025 10:23,PLAYER,business-comms-6971,The incident has been resolved.
+141,01/12/2025 10:23,Daniel,online-boutique-6971,Absolutely Shay! But i hope not during work hours
+142,01/12/2025 10:23,Shay,online-boutique-6971,Of course Daniel...... Sorry team i got to go close a unrelated tab now
+143,01/12/2025 10:23,Bez,business-comms-6971,Much appreciate quick turn around
+144,01/12/2025 10:23,Bez,online-boutique-6971,Anyways well done team
+145,01/12/2025 10:24,Bez,business-comms-6971,Great work PLAYER
+146,01/12/2025 10:24,Bez,online-boutique-6971,You all did an amazing job
+148,01/12/2025 10:24,PLAYER,online-boutique-6971,Clicked Start_feedback button\n

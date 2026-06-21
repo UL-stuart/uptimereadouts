@@ -1,0 +1,134 @@
+datetime,player,channel,message
+2025-08-12 15:02:55,Bez,online-boutique-5348,"Morning, team! Anyone else need a triple espresso today?"
+2025-08-12 15:03:04,Tinus,online-boutique-5348,"You're not the only one, Bez! The reports from last week are still giving me nightmares."
+2025-08-12 15:03:14,Bob,online-boutique-5348,"Tell me about it, Tinus."
+2025-08-12 15:03:17,Bob,online-boutique-5348,"But hey, at least it's sunny outside today. :sunrise:"
+2025-08-12 15:03:20,Bez,online-boutique-5348,"True, a little sunshine makes everything better."
+2025-08-12 15:03:21,Bez,online-boutique-5348,"Also, I'm having my usual green smoothie. That's my secret energy booster."
+2025-08-12 15:03:23,Daniel,online-boutique-5348,"Nice, Bez! I'll stick with my coffee though."
+2025-08-12 15:03:24,Daniel,online-boutique-5348,Anyone else excited for the launch of the new BitCoin :coin: payment feature this week?
+2025-08-12 15:03:26,Tinus,online-boutique-5348,"Absolutely, Daniel! Been looking forward to it."
+2025-08-12 15:03:28,Tinus,online-boutique-5348,"By the way, no spoilers, but did anyone catch the football game? Epic comeback!"
+2025-08-12 15:03:31,Shay,online-boutique-5348,I missed it! I was knee deep in a sci-fi novel. Anyone else into that?
+2025-08-12 15:03:39,Tanya,online-boutique-5348,"Oh, I love sci-fi! Can you share the name of the book, Shay?"
+2025-08-12 15:03:47,Daniel,online-boutique-5348,I've been reading a bit of sci-fi myself.
+2025-08-12 15:03:49,Daniel,online-boutique-5348,"Looking forward to sharing recommendations, Shay!"
+2025-08-12 15:03:53,Bez,online-boutique-5348,"There's always so much happening outside of work! Keep the energy :battery: going, team."
+2025-08-12 15:03:56,Bez,online-boutique-5348,It's going to be another productive day. :raised_hands:
+2025-08-12 15:03:59,UptimeLabs,online-boutique-5348,Start lvl 8
+2025-08-12 15:04:13,PLAYER,online-boutique-5348,Clicked Start button
+2025-08-12 15:04:14,UptimeLabs,online-boutique-5348,":alarm_clock: - You have 25 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-08-12 15:04:16,Bob,online-boutique-5348,"Hey, we're getting reports of customers struggling to make purchases"
+2025-08-12 15:04:18,Bob,online-boutique-5348,@here Anyone else seeing this?
+2025-08-12 15:04:21,Tinus,online-boutique-5348,"Yes, I've noticed the same, @Bob . It seems like an error in the system"
+2025-08-12 15:04:24,Bez,online-boutique-5348,"Whatever it is, we need to sort it out quickly."
+2025-08-12 15:04:26,Bez,online-boutique-5348,we need to step on it! before the social media backlash is turning into a storm.
+2025-08-12 15:04:30,Tinus,online-boutique-5348,"Who is handling incidents today? Please size up the issue, this is urgent"
+2025-08-12 15:04:31,PLAYER,online-boutique-5348,Having a look myself now
+2025-08-12 15:04:38,UptimeLabs,online-boutique-5348,:star: Reproduces the incident
+2025-08-12 15:05:26,PLAYER,online-boutique-5348,I'm getting a 500 error when loading any page on the website
+2025-08-12 15:05:34,Shay,online-boutique-5348,im seeing the same issue on my end
+2025-08-12 15:05:48,PLAYER,online-boutique-5348,Bob Is this affecting all customers or just a subset&gt;
+2025-08-12 15:05:58,UptimeLabs,online-boutique-5348,:star: Asking questions to validate impact of the problem
+2025-08-12 15:06:00,Bob,online-boutique-5348,checking reports now
+2025-08-12 15:06:17,PLAYER,online-boutique-5348,Order confirmations have dropped to zero on the dashboard
+2025-08-12 15:06:24,UptimeLabs,online-boutique-5348,:star: Qualify the problem
+2025-08-12 15:06:24,UptimeLabs,online-boutique-5348,:star: Use metrics as evidence
+2025-08-12 15:06:29,Bob,online-boutique-5348,"Seems like all the reports are coming from the EU, all with the same issue you reproduced"
+2025-08-12 15:06:44,PLAYER,online-boutique-5348,Clicked undefined button
+2025-08-12 15:06:48,Bob,online-boutique-5348,this makes up for 85% of our customer base
+2025-08-12 15:07:08,PLAYER,business-comms-5348,Sev-1 EU customers unable to make purchases
+2025-08-12 15:07:08,PLAYER,business-comms-5348,*Incident Number INC100023:* Sev-1 EU customers unable to make purchases
+2025-08-12 15:07:08,UptimeLabs,online-boutique-5348,:star: Incident record created
+2025-08-12 15:07:10,UptimeLabs,online-boutique-5348,:star: Send first comms in first 5 minutes
+2025-08-12 15:07:21,UptimeLabs,online-boutique-5348,:star: Formally assign criticality level to the incident
+2025-08-12 15:07:55,PLAYER,online-boutique-5348,Daniel could you have a look into your change 89778 to the payment service?
+2025-08-12 15:08:02,UptimeLabs,online-boutique-5348,:star: Reviewed changes
+2025-08-12 15:08:06,Daniel,online-boutique-5348,Yes im looking into the change now
+2025-08-12 15:08:07,Bez,business-comms-5348,Is this affecting sales?
+2025-08-12 15:08:14,Daniel,online-boutique-5348,1 min before an update
+2025-08-12 15:08:54,PLAYER,business-comms-5348,"Yes we're seeing this affecting all Customers in EU, they're not able to make any purchases which will affect around 85% of the customer base."
+2025-08-12 15:09:05,PLAYER,business-comms-5348,We're currently investigating what could be the cause.
+2025-08-12 15:09:22,PLAYER,online-boutique-5348,Tanya Could you have a look at 89777 on your end?
+2025-08-12 15:09:42,Daniel,online-boutique-5348,"seems like there is errors in the payment service logs, not sure if the change is the cause for the issue yet"
+2025-08-12 15:09:50,Tanya,online-boutique-5348,sure i will take a look into this change now
+2025-08-12 15:11:12,Tanya,online-boutique-5348,"these cart service changes were released together; there seems to be no errors in the cart logs, doesn't look like they are causing the issue"
+2025-08-12 15:11:31,Tanya,online-boutique-5348,could this be related to the payment change?
+2025-08-12 15:11:46,Daniel,online-boutique-5348,coud be the errors point to this change causing it
+2025-08-12 15:11:58,Daniel,online-boutique-5348,i can see by the timeleine of the changes and errors they line up
+2025-08-12 15:12:15,PLAYER,online-boutique-5348,"Daniel was investigating the payment change, did you find anything specific in there?"
+2025-08-12 15:12:21,Bez,business-comms-5348,Have we found the cause of this issue?
+2025-08-12 15:12:46,Daniel,online-boutique-5348,yes when the change was deployed the errors started
+2025-08-12 15:12:57,PLAYER,business-comms-5348,"We have a theory that this could have been caused by a change made to the payments service, we're currently investigating."
+2025-08-12 15:12:57,Daniel,online-boutique-5348,that makes me think this is the cause
+2025-08-12 15:13:13,PLAYER,online-boutique-5348,Okay can we try rolling this back?
+2025-08-12 15:13:19,UptimeLabs,online-boutique-5348,:star: Restoration over root cause analysis
+2025-08-12 15:13:27,Bez,business-comms-5348,What's the ETA?
+2025-08-12 15:13:41,PLAYER,online-boutique-5348,Bob have there been any changes in customer reports? or is it still just affecting EU?
+2025-08-12 15:13:47,Daniel,online-boutique-5348,"yes i can roll back payment service, is that the change you want? CHG89778"
+2025-08-12 15:14:06,Bob,online-boutique-5348,yes only issues are found in the EU at the moment
+2025-08-12 15:15:07,PLAYER,online-boutique-5348,Yes please go ahead and roll that change back.
+2025-08-12 15:15:22,Daniel,online-boutique-5348,"Understood, I'll proceed with rolling back the payment service"
+2025-08-12 15:15:36,PLAYER,online-boutique-5348,Tanya Could you continue to investigate CHG89777 while daniel carries out the rollback?
+2025-08-12 15:15:41,UptimeLabs,online-boutique-5348,:star: Form an effective investigation team
+2025-08-12 15:15:42,Daniel,online-boutique-5348,payment service rollback is complete
+2025-08-12 15:15:46,Tanya,online-boutique-5348,sure i will look now
+2025-08-12 15:15:57,Hamed,online-boutique-5348,This is not good. Something is broken after the payment rollback
+2025-08-12 15:16:15,Hamed,online-boutique-5348,can someone catch me up on the incident? i didn't have a chance to keep up
+2025-08-12 15:16:36,Bob,online-boutique-5348,what happend!!! the reprots are global now
+2025-08-12 15:16:36,PLAYER,online-boutique-5348,Bob Are we seeing any further reports of other issues beyond the original problem?
+2025-08-12 15:17:04,Tanya,online-boutique-5348,this inst good im seeing the cart services throw up errors now
+2025-08-12 15:17:14,PLAYER,online-boutique-5348,Daniel What could have gone wrong with the rollback? are you able to roll it forward to it's last working state?
+2025-08-12 15:17:22,UptimeLabs,online-boutique-5348,:star: Manage actions and timings
+2025-08-12 15:17:25,Hamed,online-boutique-5348,@Dylan can you catch me up on what has happened?
+2025-08-12 15:17:36,UptimeLabs,online-boutique-5348,:bulb: Hint: Grounding 
+2025-08-12 15:18:12,UptimeLabs,online-boutique-5348,:bulb: keep the business informed regularly
+2025-08-12 15:18:15,Daniel,online-boutique-5348,that will just reintroduce the last bug
+2025-08-12 15:18:38,Tanya,online-boutique-5348,"seems the rollback has made this worse, do we know why?"
+2025-08-12 15:19:26,PLAYER,online-boutique-5348,Daniel and Tanya can you work together to figure out what the problem is since you were collaborating on the cart change that was made just before?
+2025-08-12 15:19:42,Hamed,online-boutique-5348,im lost here can i get caught up please
+2025-08-12 15:19:55,Daniel,online-boutique-5348,"we will take a look, but may need hamed"
+2025-08-12 15:20:02,Tanya,online-boutique-5348,i agree
+2025-08-12 15:20:06,PLAYER,online-boutique-5348,"Hamed S So  inital reports were received around EU customers being unable to make purchases. We investigated 2 changes and decided to rolll back one that correlated with when we first started receiving reports, which caused further problems globally"
+2025-08-12 15:20:15,Hamed,online-boutique-5348,"I see, when rolling back @daniel did you do proper checks that there were no dependencies on the change?"
+2025-08-12 15:20:26,Daniel,online-boutique-5348,no it didnt cross my mind to do that
+2025-08-12 15:20:37,Hamed,online-boutique-5348,let me look into this
+2025-08-12 15:21:11,PLAYER,business-comms-5348,"We've attempted a fix b but this has resulted in further global issues,"
+2025-08-12 15:21:39,PLAYER,business-comms-5348,The team are currently working on finding out how this has happened and mitigating it.
+2025-08-12 15:22:11,Hamed,online-boutique-5348,"Seems that the cart service and the cart redis were both dependent on the payment change, this is why the issue is global now, we will need to rollback the both the cart changes to restore the platform"
+2025-08-12 15:22:34,PLAYER,online-boutique-5348,Okay Tanya and Daniel Can you rollback those changes?
+2025-08-12 15:22:43,Daniel,online-boutique-5348,yes we will work on that now
+2025-08-12 15:22:57,PLAYER,online-boutique-5348,When do you think we're likely to have that done by?
+2025-08-12 15:23:11,Daniel,online-boutique-5348,1 min
+2025-08-12 15:23:16,Bez,business-comms-5348,How close are we to a resolution?
+2025-08-12 15:23:32,Tanya,online-boutique-5348,Rollbacks are completed
+2025-08-12 15:23:37,Daniel,online-boutique-5348,"Great, i've also restarted the frontend so the website should be working now"
+2025-08-12 15:23:47,PLAYER,business-comms-5348,We're currently rolling back some additional changes to the cart service that had a dependency.
+2025-08-12 15:24:09,Tinus,online-boutique-5348,@Dylan Coombes can you confirm?
+2025-08-12 15:24:17,Daniel,online-boutique-5348,waiting for pods to recover may take a second
+2025-08-12 15:24:47,PLAYER,online-boutique-5348,Still not working on my end.
+2025-08-12 15:24:54,UptimeLabs,online-boutique-5348,:star: Cross checking resolution with team
+2025-08-12 15:25:11,PLAYER,business-comms-5348,We're just waiting for the rollback to take effect
+2025-08-12 15:25:12,Daniel,online-boutique-5348,not seeing any errors in logs
+2025-08-12 15:25:15,UptimeLabs,online-boutique-5348,:alarm_clock: - You have less than 4 minutes. You can type `/help` if you need any reminders.
+2025-08-12 15:25:32,PLAYER,online-boutique-5348,Was just able to place an order myself
+2025-08-12 15:25:39,Daniel,online-boutique-5348,same here
+2025-08-12 15:25:42,PLAYER,online-boutique-5348,Bob Are we seeing customers reporting this as resolved&gt;
+2025-08-12 15:25:52,UptimeLabs,online-boutique-5348,:star: Cross check resolution with stakeholders
+2025-08-12 15:25:56,Bob,online-boutique-5348,no more customer reports
+2025-08-12 15:26:02,Bob,online-boutique-5348,they are happy now
+2025-08-12 15:26:08,UptimeLabs,online-boutique-5348,:star: Validate the fix
+2025-08-12 15:26:12,PLAYER,business-comms-5348,"The issue has been resolved, customers are no longer reporting issues."
+2025-08-12 15:26:13,Daniel,online-boutique-5348,It appears that everything has returned to its normal state
+2025-08-12 15:26:15,Shay,online-boutique-5348,I was worried for a bit but everything looks good now.
+2025-08-12 15:26:18,UptimeLabs,online-boutique-5348,:star: Confirm resolution with the business
+2025-08-12 15:26:18,Bob,online-boutique-5348,"Great work, everyone! The payments issue has been resolved and customers can now check out smoothly"
+2025-08-12 15:26:23,Tanya,online-boutique-5348,Phew! Glad we got that sorted. Fantastic teamwork!
+2025-08-12 15:26:24,Tinus,online-boutique-5348,Absolutely! Proud to be a part of this team
+2025-08-12 15:26:25,Tinus,online-boutique-5348,Thank you @Dylan Coombes for coordinating the rollback effectively
+2025-08-12 15:26:29,Bez,online-boutique-5348,"Brilliant job, team and @Dylan Coombes!"
+2025-08-12 15:26:30,Bez,online-boutique-5348,"I've been monitoring the financial metrics, and they're already improving"
+2025-08-12 15:26:56,Bez,business-comms-5348,Great work
+2025-08-12 15:27:09,UptimeLabs,online-boutique-5348,Start level 8 retro and feedback
+2025-08-12 15:27:11,PLAYER,online-boutique-5348,Clicked Start_feedback button
+2025-08-12 15:29:22,UptimeLabs,online-boutique-5348,Submission successful

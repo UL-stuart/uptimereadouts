@@ -1,0 +1,85 @@
+datetime,player,channel,message
+2025-10-01 14:21:05,UptimeLabs,online-boutique-6034,"Welcome to Too Good To Be True, the responsibility is on you to size up the problem.
+
+ *Use `/help` at any time for a list of useful links and commands*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin Start button"
+2025-10-01 14:23:03,PLAYER,online-boutique-6034,Clicked Start button
+2025-10-01 14:23:04,Tinus,online-boutique-6034,"Welcome our new IM @Lee Jones, Happy to have you in the team. Hope you get comfortable with everyone"
+2025-10-01 14:23:04,UptimeLabs,online-boutique-6034,":alarm_clock: - You have 25 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-10-01 14:23:09,Shay,online-boutique-6034,Welcome @Lee Jones
+2025-10-01 14:23:14,Daniel,online-boutique-6034,Nice to meet you @Lee Jones
+2025-10-01 14:23:24,Bob,online-boutique-6034,There are a few strange customer reports with the helpdesk
+2025-10-01 14:23:28,Bob,online-boutique-6034,"Apparently, the site is loading slowly"
+2025-10-01 14:23:32,Bob,online-boutique-6034,People are reporting that they can't make payments either
+2025-10-01 14:23:35,Bob,online-boutique-6034,customer_reports
+2025-10-01 14:23:39,Bob,online-boutique-6034,@Lee Jones Can you check this?
+2025-10-01 14:23:59,PLAYER,online-boutique-6034,Looking now!
+2025-10-01 14:24:02,PLAYER,online-boutique-6034,Seeing 502's on: <https://hipster.prod.uptimelabs.io/>
+2025-10-01 14:24:09,UptimeLabs,online-boutique-6034,:star: Qualify the problem
+2025-10-01 14:25:41,PLAYER,online-boutique-6034,"Have we released anything recently? Daniel Hamed S?
+Any new versions or feature flag changes in the last few mins?"
+2025-10-01 14:25:50,UptimeLabs,online-boutique-6034,:star: Check changes done to the platform
+2025-10-01 14:25:55,Daniel,online-boutique-6034,Below are the changes implemented this morning
+2025-10-01 14:26:00,Daniel,online-boutique-6034,deployments
+2025-10-01 14:26:03,Daniel,online-boutique-6034,"If you want more information, check out Incident Manager dashboard for more details: <https://grafana.prod.uptimelabs.io/d/aOf5yan4z/incident-management>"
+2025-10-01 14:26:57,PLAYER,online-boutique-6034,Where would I see timestamps for those deployments or could you confirm when they were?
+2025-10-01 14:27:21,Shay,online-boutique-6034,Looking into this and trying to replicate the issue
+2025-10-01 14:27:23,Daniel,online-boutique-6034,I am able to replicate the issue. Checking the logs now
+2025-10-01 14:27:26,Daniel,online-boutique-6034,"I see a lot of errors, most of them are context initialisation errors "
+2025-10-01 14:27:30,Daniel,online-boutique-6034,Logs
+2025-10-01 14:27:32,Shay,online-boutique-6034,Yes replicated the issue and even i'm seeing similar errors in frontend logs
+2025-10-01 14:27:36,PLAYER,online-boutique-6034,Tanya Shay for visibility ^ outage in prod as of the last few mins.
+2025-10-01 14:27:36,Bez,business-comms-6034,"I have a stake holders meet in next 10 minutes, @Lee Jones do you think this can be resolved by then? "
+2025-10-01 14:27:59,PLAYER,online-boutique-6034,Can we roll back to pre 15:24 state to rule that out?
+2025-10-01 14:28:09,UptimeLabs,online-boutique-6034,:star: Restoration over root cause analysis
+2025-10-01 14:28:15,Hamed,online-boutique-6034,checking timestamps to secs
+2025-10-01 14:28:48,PLAYER,online-boutique-6034,Being the FE that's likely to be CHG89349.
+2025-10-01 14:29:06,Hamed,online-boutique-6034,CHG89349:Frontend:version 10.1.2 deployed:PROD: Shay N was the most recent change - 15mins agp
+2025-10-01 14:29:18,PLAYER,online-boutique-6034,Aye can we roll that one back?
+2025-10-01 14:29:32,Daniel,online-boutique-6034,A Frontend change caused by change CHG89349 has brought down the Frontend pods
+2025-10-01 14:29:35,PLAYER,online-boutique-6034,TODO for after: how did the deployment get passed whatever validation we have in place.
+2025-10-01 14:29:38,Shay,online-boutique-6034,But this functionally worked when I tested
+2025-10-01 14:29:43,Daniel,online-boutique-6034,"Even if it worked in your test environment, something's behaving differently in prod, maybe a config mismatch or unhandled edge case"
+2025-10-01 14:29:46,Bez,business-comms-6034,Can you give a quick update on the status?
+2025-10-01 14:29:48,PLAYER,online-boutique-6034,We can review why later
+2025-10-01 14:29:55,PLAYER,online-boutique-6034,Let's just get to stable first.
+2025-10-01 14:30:02,Daniel,online-boutique-6034,can we investigate the root cause?
+2025-10-01 14:30:32,PLAYER,online-boutique-6034,Who has the power to roll-back? We need to get it to stable first as this is impacting customers.
+2025-10-01 14:30:36,Bob,online-boutique-6034,Let me gather the information for you
+2025-10-01 14:30:41,PLAYER,online-boutique-6034,<https://hipster.prod.uptimelabs.io/> is still down for me.
+2025-10-01 14:30:41,Bob,online-boutique-6034,There are more than 300 customer reports till now
+2025-10-01 14:30:48,Bob,online-boutique-6034,"Calls are from every region, likely to be Global"
+2025-10-01 14:30:49,UptimeLabs,online-boutique-6034,:star: Reproduces the incident
+2025-10-01 14:30:51,Daniel,online-boutique-6034,"We should revert the frontend change as early as possible, I have verified that other changes are good"
+2025-10-01 14:30:54,Bob,online-boutique-6034,There's a bunch of messages coming in. A few people saying they can't do anything on the site
+2025-10-01 14:30:57,Daniel,online-boutique-6034,"@Lee Jones It's your call, Shall we revert it?"
+2025-10-01 14:30:59,Bob,online-boutique-6034,Let me know if you need more information
+2025-10-01 14:31:03,PLAYER,online-boutique-6034,Yes.
+2025-10-01 14:31:31,Shay,online-boutique-6034,"Sorry, I've never done a rollback in PROD before, can someone help me with the steps?"
+2025-10-01 14:31:55,PLAYER,online-boutique-6034,Daniel can you assist with this?
+2025-10-01 14:32:01,Daniel,online-boutique-6034,"I will help you, @Shay. Rolling back now"
+2025-10-01 14:32:16,Daniel,online-boutique-6034,I have rollbacked Frontend:version to 10.1.0 to more stable version. Can somebody verify?
+2025-10-01 14:32:18,PLAYER,online-boutique-6034,TODO: Make sure the rollback process is documented.
+2025-10-01 14:32:19,UptimeLabs,online-boutique-6034,"To 'verify' that the resolution has worked and to close the incident you must: 
+--Validate the fix yourself or with the team:white_check_mark: 
+--Cross check resolution with Customer Support:white_check_mark: 
+--Confirm resolution in the 'Business-comms' channel:white_check_mark: "
+2025-10-01 14:32:26,PLAYER,online-boutique-6034,test
+2025-10-01 14:32:31,Bob,online-boutique-6034,"Customers are able to place the orders, complaint calls have reduced as well."
+2025-10-01 14:32:50,PLAYER,online-boutique-6034,Confimring recovewred at 15:32
+2025-10-01 14:33:46,PLAYER,online-boutique-6034,Clicked undefined button
+2025-10-01 14:35:06,PLAYER,business-comms-6034,yes resolved now. Was caused by a faulty deployment that we have rolled back to recover.
+2025-10-01 14:35:14,UptimeLabs,online-boutique-6034,:star: Confirm resolution with the business
+2025-10-01 14:35:16,Daniel,online-boutique-6034,It's definitely working again!
+2025-10-01 14:35:21,Shay,online-boutique-6034,Wow that was intense!
+2025-10-01 14:35:23,Bez,business-comms-6034,Thanks! for resolving it quickly
+2025-10-01 14:35:26,Hamed,online-boutique-6034,Good job guys
+2025-10-01 14:35:30,Tinus,online-boutique-6034,Yes well done! that could have gone much worse so props to everyone
+2025-10-01 14:35:35,Tinus,online-boutique-6034,We will have a Post-Incident Review (PIR) to understand what happened
+2025-10-01 14:35:41,PLAYER,business-comms-6034,Will follow up with takeaways separately if you're interested and let you know.
+2025-10-01 14:35:45,UptimeLabs,online-boutique-6034,"Thank you for playing, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit I am ready when you want to start. I am ready button"
+2025-10-01 14:36:13,PLAYER,online-boutique-6034,Clicked Start_feedback button
+2025-10-01 14:37:59,UptimeLabs,online-boutique-6034,Submission successful

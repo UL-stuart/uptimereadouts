@@ -1,0 +1,94 @@
+"datetime","player","message"
+"01/10/2025 13:28:38","Maya","@Tim Redding let's build the core response team here. I've already added myself. Who else should we pull in to keep it tight and efficient?"
+"01/10/2025 13:28:42","Maya","I'd say one senior person each from security, platform, and engineering. Also add Tanya, tasks could be platform intensive"
+"01/10/2025 13:29:02","Maya","I've got a plan"
+"01/10/2025 13:29:20","Tim Redding","Lets pull in <@U047N6LHU0K> <@U03BY6AJZMM>"
+"01/10/2025 13:29:31","Tim Redding","and <@U03BY6AJZMM>"
+"01/10/2025 13:29:36","Maya","I've called them"
+"01/10/2025 13:29:53","Maya","Yes, we've got an IR(incident response) retainer with Cyvantics Security"
+"01/10/2025 13:29:54","Hamed","I'm up"
+"01/10/2025 13:30:00","Daniel","In the chat"
+"01/10/2025 13:30:08","Tim Redding","What do we need to do to recover from this"
+"01/10/2025 13:30:08","Maya","Looped in Cyvantics Security - they're on their way now to take snapshots of the infected server and storage, followed by forensics on it"
+"01/10/2025 13:30:12","Tanya","Yes"
+"01/10/2025 13:30:18","Maya","Meanwhile, I've got this from Cyvantics. @Tim Redding, can you help track the steps and coordinate?"
+"01/10/2025 13:30:20","Maya","<https://uptime-labs.atlassian.net/wiki/external/MThjMTk4ZDU5ODU0NGZmMWE1NzhmNGY0MDQwNWI1NTA>"
+"01/10/2025 13:30:25","Maya","We've got isolation steps in the playbook, but before we dive in, can you paste that list here? I'll help team run through it"
+"01/10/2025 13:30:52","Tim Redding","Steps for Isolation:
+
+Steps to be done, mentioned along with the *owning* team
+1. Disconnect the infected server -&gt; Platforms 
+2. Cut off infrastructure traffic -&gt; Platforms
+3. Disconnect DB &amp; freeze backup -&gt; Application
+4. Detach from Shared Resource -&gt; Platforms
+5. Take snapshots (Disk &amp; Memory) -&gt; Ask team
+6. Kill suspicious process or activity -&gt; Platforms
+"
+"01/10/2025 13:31:00","Maya","@Tim Redding coordinate the steps with me and handle business comms. I'll execute the steps for isolation and restoration"
+"01/10/2025 13:31:11","Maya","I've given write access to Tanya, Hamed, Daniel, and myself"
+"01/10/2025 13:31:13","Tim Redding","<@U03BY6AJZMM> Can you start isolating."
+"01/10/2025 13:31:15","Tanya","Disconnecting the checkout servers from the infra now"
+"01/10/2025 13:31:17","Daniel","I'm on it. Disconnecting DB access for checkout and checking if scheduled backups exist"
+"01/10/2025 13:31:19","Hamed","I'll verify if any shared storage is still attached to the checkout DB"
+"01/10/2025 13:31:32","Daniel","Step 3 done, DB connection to checkout is now cut"
+"01/10/2025 13:31:34","Tanya","Step 1 done, Checkout servers are now fully disconnected. Moving to isolate the infra from all external traffic"
+"01/10/2025 13:31:36","Hamed","Step 4 confirmed, No shared storage attached to checkout, which makes sense since checkout has its standalone storage"
+"01/10/2025 13:31:37","Tim Redding","Let me know once all tasks are completed."
+"01/10/2025 13:31:42","Tanya","Step 2 completed, Infra is now fully cut off from the outside world. That means the website will remain completely down until we recover"
+"01/10/2025 13:31:47","Maya","Step 5 done, Cyvantics has completed taking snapshots of the checkout servers and database. They've now moved on to forensics. @Hamed, we're good to kill the script now"
+"01/10/2025 13:31:57","Hamed","Step 6 done, The Script has been killed. @Tim Redding let us know and double-check if anything else is pending on our side"
+"01/10/2025 13:32:51","Tim Redding","<@U03BY6AJZMM> Do we have a backup?"
+"01/10/2025 13:33:01","Maya","I think we are good for isolation"
+"01/10/2025 13:33:08","Maya","Yes, we must have a backup. Platform team can confirm us"
+"01/10/2025 13:33:17","Tim Redding","Please start the Steps for Restoration:
+
+
+Steps to be done, mentioned along with the *owning* team
+1. Validate backups → Security
+2. Wipe infected systems → Platforms
+3. Rebuild from clean backup → Platforms
+4. Re-enable security agent on the servers → Security
+5. Reconnect traffic to services and monitor → Platforms
+ Let me know once yo complete each step"
+"01/10/2025 13:33:17","Hamed","Correct, we do have backup which only runs at 2AM. Latest is yesterday's. We'll lose today's orders"
+"01/10/2025 13:33:20","Maya","Isolation is complete. We're good to move toward restoration using the backup storage now"
+"01/10/2025 13:33:23","Maya","@Tim Redding could you please confirm with business before moving forward on this"
+"01/10/2025 13:33:33","Maya","I've called in @Bob to the channel"
+"01/10/2025 13:33:41","Bob","@Tim Redding, I hear you need my help, what exactly should I look into?"
+"01/10/2025 13:33:56","Bob","With the sale starting today, the potential loss is significant - around $180k"
+"01/10/2025 13:36:04","Maya","Have we got the go-ahead from business?"
+"01/10/2025 13:36:10","Tim Redding","<@U06CA3MRAJF> Can you see how we were compromised?"
+"01/10/2025 13:36:32","Maya","Cyvantics is doing forensics at the moment"
+"01/10/2025 13:36:38","Tim Redding","Lets continue recovery."
+"01/10/2025 13:36:48","Maya","But what I've heard till now is that only checkout is impacted"
+"01/10/2025 13:36:51","Maya","Thanks for the go-ahead. @Tim Redding, please track all restoration steps"
+"01/10/2025 13:37:00","Maya","I'm now validating the backup storage to ensure it's safe"
+"01/10/2025 13:37:03","Hamed","I'm provisioning new checkout servers, will update once ready"
+"01/10/2025 13:37:09","Maya","Backup is clean and safe. @Hamed, you can start rebuilding checkout from backup storage"
+"01/10/2025 13:37:13","Hamed","Thanks, Maya. New servers are ready. I'll start rebuilding now using backup storage"
+"01/10/2025 13:37:20","Hamed","Rebuild completed"
+"01/10/2025 13:37:24","Maya","I've enabled the security agents (EDR) on checkout servers"
+"01/10/2025 13:37:27","Daniel","I'll monitor application health once services are restored"
+"01/10/2025 13:37:30","Maya"," @Tim Redding , can you confirm all tasks are wrapped up and we are good to bring the traffic back? Just want to be sure, as this is the final restoration step before we move"
+"01/10/2025 13:38:30","Maya","I think we are good before we connect the network"
+"01/10/2025 13:38:47","Tim Redding","<@U03BY6AJZMM> <@U047N6LHU0K> Are the servers ready to serve production tarffic again?"
+"01/10/2025 13:38:51","Hamed","Yes we are set to reconnect"
+"01/10/2025 13:38:56","Tanya","Thanks for the go ahead. Bringing up network traffic in progress..."
+"01/10/2025 13:39:02","Tim Redding","<@U06CA3MRAJF> Lets go ahead"
+"01/10/2025 13:39:15","Tanya","Restoration completed"
+"01/10/2025 13:39:21","Tim Redding","I can confirm i'm seeing traffic."
+"01/10/2025 13:39:40","Bob","Wait!! getting a bunch of new complaints now. Users are neither able to see their return requests nor able to place new returns on the site"
+"01/10/2025 13:39:41","Tim Redding","I can confirm I can checkout.,"
+"01/10/2025 13:39:47","Maya","Yeah, that's probably the missing today's checkout data. Anyone who ordered or returned something during that time won't see it - makes sense since we restored from the yesterday's backup"
+"01/10/2025 13:39:49","Tanya","Tough, but expected :)"
+"01/10/2025 13:39:50","Bob","What should I tell them? They are asking for refunds"
+"01/10/2025 13:40:12","Tim Redding","<@U047N91SRH8> Can you collate the customers who might have lost their orders."
+"01/10/2025 13:40:18","Bob","They are continuously asking for refunds. What shall I do? Can we check this with Bez once"
+"01/10/2025 13:41:30","Maya","@Tim Redding I've received the forensics report from Cyvantics Security"
+"01/10/2025 13:41:34","Maya","forensics"
+"01/10/2025 13:41:38","Tim Redding","<@U047N91SRH8> Please refund them, and customers will get a $10 gift voucher as an apology."
+"01/10/2025 13:41:43","Bob","Thanks @Tim Redding"
+"01/10/2025 13:41:50","Maya","Also, I just finished combing through Shay's mailbox. There's something important here, I found two emails from what looks like our monitoring vendor - ClearTech"
+"01/10/2025 13:41:53","Maya","phished_email"
+"01/10/2025 13:42:11","Maya","We will take this forward in PIR , for now website is restored"
+"01/10/2025 13:42:21","Maya","Alright, since everything's back up and stable, we can now move back to the main #online-boutique channel. No further actions left here"

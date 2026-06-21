@@ -1,0 +1,120 @@
+datetime,player,channel,message
+2025-10-29 15:05:52,tinus,online-boutique-6497,"Hi team, let's have a mood check send an emoji to describe your mood"
+2025-10-29 15:05:56,tinus,online-boutique-6497,"I'll go first, :thumbsup:"
+2025-10-29 15:06:02,tanya,online-boutique-6497,:thumbsup:
+2025-10-29 15:06:04,tinus,online-boutique-6497,I'm excited about showing off all your hard work at todays stakeholder meeting
+2025-10-29 15:06:07,daniel,online-boutique-6497,":skull: knackered, had a few too many late nights this week"
+2025-10-29 15:06:10,shay,online-boutique-6497,:rainbow:
+2025-10-29 15:06:13,hamed,online-boutique-6497,living the dream :smile:
+2025-10-29 15:06:17,bez,online-boutique-6497,:smirk: im excited to see the show too
+2025-10-29 15:06:19,tinus,online-boutique-6497,shouldn't you be prepping for the meeting 
+2025-10-29 15:06:22,bez,online-boutique-6497,:sweat_smile: i am indeed I'll leave you lot to it
+2025-10-29 15:06:24,shay,online-boutique-6497,hang in there @daniel its gonne be the weekend sooner or later :joy:
+2025-10-29 15:06:27,tinus,online-boutique-6497,I should get on with my prep too have a good day team
+2025-10-29 15:06:28,daniel,online-boutique-6497,@shay strict diet of energy drink for me today lol
+2025-10-29 15:06:31,daniel,online-boutique-6497,hope the presentation goes well @tinus
+2025-10-29 15:06:33,tanya,online-boutique-6497,:raised_hands:
+2025-10-29 15:06:49,UptimeLabs,online-boutique-6497,"Welcome to Rumours, remember communication is key to diagnose the problem.
+
+ *Use `/help` at any time for a list of useful links and commands*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin Start button"
+2025-10-29 15:07:23,PLAYER,online-boutique-6497,Clicked undefined button
+2025-10-29 15:07:25,PLAYER,online-boutique-6497,Clicked org button
+2025-10-29 15:07:27,PLAYER,online-boutique-6497,Clicked undefined button
+2025-10-29 15:08:38,PLAYER,online-boutique-6497,Clicked Start button
+2025-10-29 15:08:39,UptimeLabs,online-boutique-6497,":alarm_clock: - You have 20 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-10-29 15:08:42,tinus,online-boutique-6497,"Hey team, I'm texting from the board room - kinda embarrassing but in my demo to the board, I tried to add a pair of Aviator sunglasses to the shopping cart and I got a ?http 500?"
+2025-10-29 15:08:44,tinus,online-boutique-6497,"I've bought some time but need this be able to do this demo if we can lets get this sorted in the next 20 minutes.
+"
+2025-10-29 15:08:46,tinus,online-boutique-6497,Metrics
+2025-10-29 15:08:49,tanya,online-boutique-6497,"uh oh, those Aviators are top sellers due to the new Top Gun movie...It's size up the issue time Storm Chambers"
+2025-10-29 15:08:52,shay,online-boutique-6497,Come on this can't be happening!
+2025-10-29 15:08:54,tinus,online-boutique-6497,"I'm in this meeting so, wont be able to help but I trust that you all can get this fixed asap, just @ me if you need anything"
+2025-10-29 15:08:57,shay,online-boutique-6497,ok looking into this now
+2025-10-29 15:09:28,PLAYER,online-boutique-6497,can you confirm this is happening to more then just tinus?
+2025-10-29 15:09:33,UptimeLabs,online-boutique-6497,:star: Asking questions to validate impact of the problem
+2025-10-29 15:09:38,Bob,online-boutique-6497,Let me look into that for you now
+2025-10-29 15:10:11,Bob,online-boutique-6497,"Seems like he may be the only one with this issue, i see no customer complaints on the website, let me check the sales to see if they have been impacted"
+2025-10-29 15:10:21,Shay,online-boutique-6497,i cant reproduce the issue
+2025-10-29 15:10:32,PLAYER,online-boutique-6497,can someone test this on the website themselves?
+2025-10-29 15:10:38,UptimeLabs,online-boutique-6497,:star: Reproduces the incident
+2025-10-29 15:10:44,Shay,online-boutique-6497,"i just did, not seeing it"
+2025-10-29 15:10:47,Shay,online-boutique-6497,works fine for me
+2025-10-29 15:10:56,Bob,online-boutique-6497,no impact on the sales
+2025-10-29 15:11:15,Daniel,online-boutique-6497,"looks to be Tinus is the only one with this issue, i also cannot reproduce"
+2025-10-29 15:11:21,PLAYER,online-boutique-6497,i have tested and cannot reproduce
+2025-10-29 15:11:32,UptimeLabs,online-boutique-6497,:star: Attempt to replicate the issue
+2025-10-29 15:11:41,PLAYER,online-boutique-6497,Tinus where are you accessing the website from?
+2025-10-29 15:11:45,Tinus,online-boutique-6497,Why just me? this is an important sales meeting and i cant delay it for long
+2025-10-29 15:12:14,Tinus,online-boutique-6497,im accessing it using the regular production link that all users see
+2025-10-29 15:12:34,Tinus,online-boutique-6497,I searched it up using google like i usualy do
+2025-10-29 15:12:50,Daniel,online-boutique-6497,let me take a look into the logs
+2025-10-29 15:13:12,Shay,online-boutique-6497,Could it be a security issue with his account? His permissions could be restricted?
+2025-10-29 15:13:25,Bez,online-boutique-6497,"i see the incident channel going off, whats goin on?"
+2025-10-29 15:13:41,Bez,online-boutique-6497,"i see the incident channel going off, whats happening"
+2025-10-29 15:13:42,PLAYER,online-boutique-6497,Clicked org button
+2025-10-29 15:13:58,PLAYER,online-boutique-6497,in your screenshot your logo is blue rather then red.
+2025-10-29 15:14:04,PLAYER,online-boutique-6497,Shay is this ok?
+2025-10-29 15:15:10,PLAYER,online-boutique-6497,Shaycan you check internal servers if there are any issues?
+2025-10-29 15:15:15,Bez,online-boutique-6497,"we need to resolve this, Tinus's sales meeting has been in the works for a month now"
+2025-10-29 15:15:20,PLAYER,online-boutique-6497,have any changes been make in the past hour?
+2025-10-29 15:15:21,Shay,online-boutique-6497,sure let me check
+2025-10-29 15:15:28,UptimeLabs,online-boutique-6497,:star: Check changes done to the platform
+2025-10-29 15:15:44,Daniel,online-boutique-6497,i been sifting through the logs and for the life of me cannot find anything
+2025-10-29 15:15:58,Shay,online-boutique-6497,took a quick check and i cant see anything either
+2025-10-29 15:16:33,Daniel,online-boutique-6497,what do you think of shays suggestion about it being a security issue on tinus's account?
+2025-10-29 15:17:03,Tinus,online-boutique-6497,do we have any fixes for this? they are talking about calling the meeting early
+2025-10-29 15:17:09,Tinus,online-boutique-6497,not looking good
+2025-10-29 15:17:13,PLAYER,online-boutique-6497,Maya could you check if any security issues are flagging on the account?
+2025-10-29 15:17:21,UptimeLabs,online-boutique-6497,:star: Escalating when required
+2025-10-29 15:17:28,Maya,online-boutique-6497,let me check this
+2025-10-29 15:17:48,PLAYER,online-boutique-6497,please make sure Tinus has full permissions to access this
+2025-10-29 15:18:17,PLAYER,online-boutique-6497,Tinusworking though as quickly as possible
+2025-10-29 15:18:19,Maya,online-boutique-6497,took a look through his account and he has nothing is out of the ordinary; it seems to be an issue on his end
+2025-10-29 15:18:27,Daniel,online-boutique-6497,"i agree, tinus's device seems to be the issue"
+2025-10-29 15:18:35,Shay,online-boutique-6497,"has to be, we cant see anything on our end"
+2025-10-29 15:18:47,Tinus,online-boutique-6497,what should i do?
+2025-10-29 15:18:47,PLAYER,online-boutique-6497,Tinus can you access with this link <https://hipster.prod.uptimelabs.io/product/OLJCESPC7Z>
+2025-10-29 15:18:56,Tinus,online-boutique-6497,let me try that link
+2025-10-29 15:19:12,Tinus,online-boutique-6497,That is showing the same issue. i beleve it was the same link i was on before
+2025-10-29 15:19:17,PLAYER,online-boutique-6497,what device are you accessing this with?
+2025-10-29 15:19:26,Tinus,online-boutique-6497,my work laptop
+2025-10-29 15:19:41,Tinus,online-boutique-6497,using Chrome browser
+2025-10-29 15:20:20,PLAYER,online-boutique-6497,Daniel is could this be local to the work laptop?
+2025-10-29 15:20:32,PLAYER,online-boutique-6497,Hamed is could this be local to the work laptop?
+2025-10-29 15:20:32,Tinus,online-boutique-6497,it seems to be
+2025-10-29 15:20:40,Daniel,online-boutique-6497,"I think we should escalate this to hamed, his perspective would be useful"
+2025-10-29 15:20:56,PLAYER,online-boutique-6497,Hamed is could this be local to the work laptop?
+2025-10-29 15:20:59,Hamed,online-boutique-6497,Whats going on? i can help
+2025-10-29 15:21:37,PLAYER,online-boutique-6497,Hamed could you check if Tinus laptop has no issues? he is getting an error when accessing the website and is isolated to only him
+2025-10-29 15:21:50,Hamed,online-boutique-6497,"From your checks, it doesnt seem to be on our end, and tinus is the only one with this issue, we can try basic troubleshooting on his device,"
+2025-10-29 15:21:56,Hamed,online-boutique-6497,its his work laptoip yes?
+2025-10-29 15:22:20,PLAYER,online-boutique-6497,"yes, his laptop"
+2025-10-29 15:22:30,Hamed,online-boutique-6497,i can remote into it and check from here
+2025-10-29 15:22:31,PLAYER,online-boutique-6497,Tinus can you restart your laptop?
+2025-10-29 15:22:38,Hamed,online-boutique-6497,yes restart first
+2025-10-29 15:22:41,Tinus,online-boutique-6497,on it
+2025-10-29 15:23:07,PLAYER,online-boutique-6497,once restarted please try the website again Tinus
+2025-10-29 15:23:21,PLAYER,online-boutique-6497,SEV1 500 error we are investigating
+2025-10-29 15:23:21,PLAYER,business-comms-6497,*Incident Number INC100052:* SEV1 500 error we are investigating
+2025-10-29 15:23:21,UptimeLabs,online-boutique-6497,:star: Incident record created
+2025-10-29 15:23:23,UptimeLabs,online-boutique-6497,:star: Send first comms in first 5 minutes
+2025-10-29 15:23:28,Tinus,online-boutique-6497,"Issue persists, even after a restart"
+2025-10-29 15:23:29,UptimeLabs,online-boutique-6497,:star: Qualify the problem
+2025-10-29 15:23:34,Hamed,online-boutique-6497,"let me remote in and i will do basic troubleshooting, like clearing cache and using different browsers"
+2025-10-29 15:24:18,PLAYER,online-boutique-6497,"Tinus mentioned he uses chrome, another browser work?"
+2025-10-29 15:24:24,Hamed,online-boutique-6497,"Ok that should be it, i cleared the cache on his device and closed tasks running in the background, lets hope this works. Im also using chrome and its working fine"
+2025-10-29 15:24:36,tinus,online-boutique-6497,Damn! thats it
+2025-10-29 15:24:38,tinus,online-boutique-6497,"Great Ive got to do my presentation now, thanks for figuring this out so quickly. @daniel @shay can you look in to a cache busting solution?"
+2025-10-29 15:24:40,shay,online-boutique-6497,it was the cache! sure we can do that
+2025-10-29 15:24:42,daniel,online-boutique-6497,"no worries boss, at least its not a significat issue"
+2025-10-29 15:24:43,daniel,online-boutique-6497,good luck with the presentation!
+2025-10-29 15:24:44,tanya,online-boutique-6497,yes good luck @tinus
+2025-10-29 15:24:46,shay,online-boutique-6497,good luck @tinus!
+2025-10-29 15:24:57,UptimeLabs,online-boutique-6497,"Thank you for playing, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit I am ready when you want to start. I am ready button"
+2025-10-29 15:25:10,PLAYER,online-boutique-6497,Clicked Start_feedback button
+2025-10-29 15:25:11,Bez,online-boutique-6497,well doen team
+2025-10-29 15:25:57,UptimeLabs,online-boutique-6497,Submission successful

@@ -1,0 +1,100 @@
+datetime,player,channel,message
+2025-08-21 13:11:05,UptimeLabs,online-boutique-5491,Start lvl 29
+2025-08-21 13:15:48,PLAYER,online-boutique-5491,Clicked undefined button
+2025-08-21 13:15:50,PLAYER,online-boutique-5491,Clicked org button
+2025-08-21 13:17:53,PLAYER,business-comms-5491,test p2
+2025-08-21 13:17:53,PLAYER,business-comms-5491,*Incident Number INC100029:* test p2
+2025-08-21 13:20:51,PLAYER,online-boutique-5491,Clicked Start button
+2025-08-21 13:20:52,UptimeLabs,online-boutique-5491,":alarm_clock: - You have 25 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-08-21 13:20:52,Tinus,online-boutique-5491,"Welcome our new IM @Praveen Sadul, Happy to have you in the team. Hope you get comfortable with everyone"
+2025-08-21 13:20:57,Shay,online-boutique-5491,Welcome @Praveen Sadul
+2025-08-21 13:21:02,Daniel,online-boutique-5491,Nice to meet you @Praveen Sadul
+2025-08-21 13:21:13,Bob,online-boutique-5491,There are a few strange customer reports with the helpdesk
+2025-08-21 13:21:16,Bob,online-boutique-5491,"Apparently, the site is loading slowly"
+2025-08-21 13:21:20,Bob,online-boutique-5491,People are reporting that they can't make payments either
+2025-08-21 13:21:23,Bob,online-boutique-5491,customer_reports
+2025-08-21 13:21:27,Bob,online-boutique-5491,@Praveen Sadul Can you check this?
+2025-08-21 13:21:33,PLAYER,online-boutique-5491,Thanks you .. Nice to meet you
+2025-08-21 13:22:06,PLAYER,online-boutique-5491,Hi Bob let me check
+2025-08-21 13:23:47,PLAYER,online-boutique-5491,hi Bob let me know some info... its that only particular region ? form what time its getting issue ?
+2025-08-21 13:23:48,Bob,online-boutique-5491,Let me gather the information for you
+2025-08-21 13:23:53,Bob,online-boutique-5491,There are more than 300 customer reports till now
+2025-08-21 13:23:56,UptimeLabs,online-boutique-5491,:star: Asking questions to validate impact of the problem
+2025-08-21 13:24:00,Bob,online-boutique-5491,"Calls are from every region, likely to be Global"
+2025-08-21 13:24:06,Bob,online-boutique-5491,There's a bunch of messages coming in. A few people saying they can't do anything on the site
+2025-08-21 13:24:11,Bob,online-boutique-5491,Let me know if you need more information
+2025-08-21 13:24:41,UptimeLabs,online-boutique-5491,:bulb: Hint: Declare an incident.
+2025-08-21 13:25:30,PLAYER,business-comms-5491,Website is down p1
+2025-08-21 13:25:31,PLAYER,business-comms-5491,*Incident Number INC100059:* Website is down p1
+2025-08-21 13:25:31,UptimeLabs,online-boutique-5491,:star: Incident record created
+2025-08-21 13:25:33,UptimeLabs,online-boutique-5491,":bulb: Hint: Form strategy for troubleshooting, use whole team to execute"
+2025-08-21 13:25:33,UptimeLabs,online-boutique-5491,:star: Send first comms in first 5 minutes
+2025-08-21 13:25:36,Bez,business-comms-5491,How many customers are affected? Are the reports coming in from all regions?
+2025-08-21 13:25:40,UptimeLabs,online-boutique-5491,:star: Formally assign criticality level to the incident
+2025-08-21 13:26:57,PLAYER,business-comms-5491,"Hi Bez its global issue, all user facing issue"
+2025-08-21 13:26:58,Bez,business-comms-5491,"okay , thanks"
+2025-08-21 13:27:11,Bez,business-comms-5491,keep me posted
+2025-08-21 13:27:24,UptimeLabs,online-boutique-5491,:bulb: Form a working theory and try to validate or invalidate it
+2025-08-21 13:27:29,UptimeLabs,online-boutique-5491,:bulb: Hint: Check the changes done in the platform
+2025-08-21 13:27:32,PLAYER,business-comms-5491,will checking with platform team ..will keep you posted. thanks
+2025-08-21 13:28:33,PLAYER,online-boutique-5491,Hi Shay and Daniel i can see complete site is down can you quickly help me with logs
+2025-08-21 13:28:35,Shay,online-boutique-5491,Looking into this and trying to replicate the issue
+2025-08-21 13:28:37,Daniel,online-boutique-5491,I am able to replicate the issue. Checking the logs now
+2025-08-21 13:28:40,Daniel,online-boutique-5491,"I see a lot of errors, most of them are context initialisation errors "
+2025-08-21 13:28:43,UptimeLabs,online-boutique-5491,:star: Facts over opinion
+2025-08-21 13:28:44,Daniel,online-boutique-5491,Logs
+2025-08-21 13:28:46,Shay,online-boutique-5491,Yes replicated the issue and even i'm seeing similar errors in frontend logs
+2025-08-21 13:28:50,Bez,business-comms-5491,"I have a stake holders meet in next 10 minutes, @Praveen Sadul do you think this can be resolved by then? "
+2025-08-21 13:30:38,UptimeLabs,online-boutique-5491,:star: Reproduces the incident
+2025-08-21 13:30:42,PLAYER,online-boutique-5491,Hi Shay i can see one deployment
+2025-08-21 13:30:56,Daniel,online-boutique-5491,Below are the changes implemented this morning
+2025-08-21 13:31:01,Daniel,online-boutique-5491,deployments
+2025-08-21 13:31:04,PLAYER,online-boutique-5491,can you please check the logs
+2025-08-21 13:31:04,Daniel,online-boutique-5491,"If you want more information, check out Incident Manager dashboard for more details: <https://grafana.prod.uptimelabs.io/d/aOf5yan4z/incident-management>"
+2025-08-21 13:31:16,Daniel,online-boutique-5491,"I have verified Payments change (CHG89347), there are no errors and the service is up and healthy"
+2025-08-21 13:31:21,Daniel,online-boutique-5491,"Checkout service change(CHG89350) is in UAT, so not affecting PROD. But I see a few errors from Frontend pods"
+2025-08-21 13:31:27,Daniel,online-boutique-5491,All the errors started right after the change (CHG89349) on the Frontend
+2025-08-21 13:31:30,Bob,online-boutique-5491,The customer complaints are rising. @Praveen Sadul Do we have an ETA for resolution?
+2025-08-21 13:31:32,Bez,business-comms-5491,What is the latest on this?
+2025-08-21 13:32:11,PLAYER,online-boutique-5491,HI Bob we are working on top priority . will keep you posted
+2025-08-21 13:32:12,Bob,online-boutique-5491,okay
+2025-08-21 13:33:42,PLAYER,online-boutique-5491,HI Shay its seems to some issue with PRODCHG89349:Frontend:version . can you please seem more logs and let me know
+2025-08-21 13:33:44,Daniel,online-boutique-5491,A Frontend change caused by change CHG89349 has brought down the Frontend pods
+2025-08-21 13:33:50,Shay,online-boutique-5491,But this functionally worked when I tested
+2025-08-21 13:33:50,UptimeLabs,online-boutique-5491,:star: Reviewed changes
+2025-08-21 13:33:55,Daniel,online-boutique-5491,"Even if it worked in your test environment, something's behaving differently in prod, maybe a config mismatch or unhandled edge case"
+2025-08-21 13:33:58,Bez,business-comms-5491,Can you give a quick update on the status?
+2025-08-21 13:34:05,UptimeLabs,online-boutique-5491,:star: Check changes done to the platform
+2025-08-21 13:35:40,PLAYER,business-comms-5491,HI Bez we are looking in to in on priority .. looks like there is some issue with PRODCHG89349:Frontend:version.. we are checking .
+2025-08-21 13:37:11,PLAYER,online-boutique-5491,Hi Shay can you revert the changes as its complete production is  down .
+2025-08-21 13:37:14,Shay,online-boutique-5491,"Sorry, I've never done a rollback in PROD before, can someone help me with the steps?"
+2025-08-21 13:37:18,UptimeLabs,online-boutique-5491,:star: Restoration over root cause analysis
+2025-08-21 13:37:44,Daniel,online-boutique-5491,"I will help you, @Shay. Rolling back now"
+2025-08-21 13:37:56,PLAYER,online-boutique-5491,Hi Daniel can revert the changes
+2025-08-21 13:37:59,Daniel,online-boutique-5491,I have rollbacked Frontend:version to 10.1.0 to more stable version. Can somebody verify?
+2025-08-21 13:38:02,UptimeLabs,online-boutique-5491,"To 'verify' that the resolution has worked and to close the incident you must: 
+--Validate the fix yourself or with the team:white_check_mark: 
+--Cross check resolution with Customer Support:white_check_mark: 
+--Confirm resolution in the 'Business-comms' channel:white_check_mark: "
+2025-08-21 13:38:14,Bob,online-boutique-5491,"Customers are able to place the orders, complaint calls have reduced as well."
+2025-08-21 13:38:45,PLAYER,online-boutique-5491,Hi team its working well now.
+2025-08-21 13:39:03,UptimeLabs,online-boutique-5491,:star: Validate the fix
+2025-08-21 13:39:58,PLAYER,online-boutique-5491,HI Shay can you keep monitor the some more time. also Bob can you please let me know still customers are raising any concern now ?
+2025-08-21 13:40:02,UptimeLabs,online-boutique-5491,:star: Cross checking resolution with team
+2025-08-21 13:40:06,UptimeLabs,online-boutique-5491,:star: Cross check resolution with stakeholders
+2025-08-21 13:40:07,UptimeLabs,online-boutique-5491,:star: Manage actions and timings
+2025-08-21 13:40:07,UptimeLabs,online-boutique-5491,:star: Cross check resolution with stakeholders
+2025-08-21 13:40:17,Bob,online-boutique-5491,All good now
+2025-08-21 13:40:22,Shay,online-boutique-5491,"Sure, errors have gone down"
+2025-08-21 13:41:03,Daniel,online-boutique-5491,It's definitely working again!
+2025-08-21 13:41:06,PLAYER,business-comms-5491,Hi Bez we have reverted the changes ..  ow issue got resolve and no customers raising nay issue now.. we will keep on monitoring . thanks
+2025-08-21 13:41:07,Bez,business-comms-5491,Thanks Praveen - much appreciate quick turn around
+2025-08-21 13:41:08,Shay,online-boutique-5491,Wow that was intense!
+2025-08-21 13:41:10,Bez,business-comms-5491,Thanks! for resolving it quickly
+2025-08-21 13:41:13,UptimeLabs,online-boutique-5491,:star: Confirm resolution with the business
+2025-08-21 13:41:13,Hamed,online-boutique-5491,Good job guys
+2025-08-21 13:41:17,Tinus,online-boutique-5491,Yes well done! that could have gone much worse so props to everyone
+2025-08-21 13:41:21,Tinus,online-boutique-5491,We will have a Post-Incident Review (PIR) to understand what happened
+2025-08-21 13:41:31,UptimeLabs,online-boutique-5491,Start retro and feedback
+2025-08-21 13:42:14,PLAYER,online-boutique-5491,Clicked Start_feedback button
+2025-08-21 13:44:28,UptimeLabs,online-boutique-5491,Submission successful

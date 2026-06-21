@@ -1,0 +1,98 @@
+datetime,player,channel,message
+2025-07-01 15:03:01,tinus,online-boutique-4784,"Hi team, let's have a mood check send an emoji to describe your mood [n/a - 0]"
+2025-07-01 15:03:05,tinus,online-boutique-4784,"I'll go first, :thumbsup: [n/a - 0]"
+2025-07-01 15:03:11,tanya,online-boutique-4784,:thumbsup: [n/a - 0]
+2025-07-01 15:03:13,tinus,online-boutique-4784,I'm excited about showing off all your hard work at todays stakeholder meeting [n/a - 0]
+2025-07-01 15:03:16,daniel,online-boutique-4784,":skull: knackered, had a few too many late nights this week [n/a - 0]"
+2025-07-01 15:03:19,shay,online-boutique-4784,:rainbow: [n/a - 0]
+2025-07-01 15:03:22,hamed,online-boutique-4784,living the dream :smile: [n/a - 0]
+2025-07-01 15:03:26,bez,online-boutique-4784,:smirk: im excited to see the show too [n/a - 0]
+2025-07-01 15:03:28,tinus,online-boutique-4784,shouldn't you be prepping for the meeting  [n/a - 0]
+2025-07-01 15:03:31,bez,online-boutique-4784,:sweat_smile: i am indeed I'll leave you lot to it [n/a - 0]
+2025-07-01 15:03:33,shay,online-boutique-4784,hang in there @daniel its gonne be the weekend sooner or later :joy: [n/a - 0]
+2025-07-01 15:03:36,tinus,online-boutique-4784,I should get on with my prep too have a good day team [n/a - 0]
+2025-07-01 15:03:37,daniel,online-boutique-4784,@shay strict diet of energy drink for me today lol [n/a - 0]
+2025-07-01 15:03:40,daniel,online-boutique-4784,hope the presentation goes well @tinus [n/a - 0]
+2025-07-01 15:03:42,tanya,online-boutique-4784,:raised_hands: [n/a - 0]
+2025-07-01 15:03:57,UptimeLabs,online-boutique-4784,Level 7 start button [n/a - 0]
+2025-07-01 15:04:07,PLAYER,online-boutique-4784,Clicked Start button
+2025-07-01 15:04:08,UptimeLabs,online-boutique-4784,":alarm_clock: - You have 20 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders. [n/a - 0]"
+2025-07-01 15:04:11,tinus,online-boutique-4784,"Hey team, I'm texting from the board room - kinda embarrassing but in my demo to the board, I tried to add a pair of Aviator sunglasses to the shopping cart and I got a ?http 500? [n/a - 0]"
+2025-07-01 15:04:13,tinus,online-boutique-4784,"I've bought some time but need this be able to do this demo if we can lets get this sorted in the next 20 minutes.
+ [n/a - 0]"
+2025-07-01 15:04:15,tinus,online-boutique-4784,500 screenshot [n/a - 0]
+2025-07-01 15:04:18,tanya,online-boutique-4784,"uh oh, those Aviators are top sellers due to the new Top Gun movie...It's size up the issue time Dylan Coombes [n/a - 0]"
+2025-07-01 15:04:21,shay,online-boutique-4784,Come on this can't be happening! [n/a - 0]
+2025-07-01 15:04:23,tinus,online-boutique-4784,"I'm in this meeting so, wont be able to help but I trust that you all can get this fixed asap, just @ me if you need anything [n/a - 0]"
+2025-07-01 15:04:26,shay,online-boutique-4784,ok looking into this now [n/a - 0]
+2025-07-01 15:04:34,PLAYER,online-boutique-4784,Having a look myself now [L7_incident_scope - 0.51]
+2025-07-01 15:05:01,PLAYER,online-boutique-4784,"Hmm - i can't replicate this from my end, is anyone else able to? [L7_incident_scope - 0.48]"
+2025-07-01 15:05:06,Shay,online-boutique-4784,"I wasn't able to replicate, anyone else? [n/a - 0]"
+2025-07-01 15:05:14,PLAYER,online-boutique-4784,Bob do we have any customer reports of issues like the above? [n/a - 0]
+2025-07-01 15:05:58,Bob,online-boutique-4784,checking reports now [n/a - 0]
+2025-07-01 15:06:05,UptimeLabs,online-boutique-4784,:star: Asking questions to validate impact of the problem [n/a - 0]
+2025-07-01 15:06:08,PLAYER,online-boutique-4784,Daniel are you able to see if there's anything you can see on your side that might be causing this? [L7_incident_scope - 0.48]
+2025-07-01 15:06:12,UptimeLabs,online-boutique-4784,:star: Attempt to replicate the issue [n/a - 0]
+2025-07-01 15:06:28,Daniel,online-boutique-4784,"checking services, will report in a few [n/a - 0]"
+2025-07-01 15:06:41,Shay,online-boutique-4784,there were a few changes made this morning [n/a - 0]
+2025-07-01 15:06:50,Bob,online-boutique-4784,No reports regarding platform [n/a - 0]
+2025-07-01 15:06:55,Bob,online-boutique-4784,reports look good [n/a - 0]
+2025-07-01 15:07:07,Daniel,online-boutique-4784,All services look healthy [n/a - 0]
+2025-07-01 15:07:42,Daniel,online-boutique-4784,Any particular symptoms that we are looking for [n/a - 0]
+2025-07-01 15:07:52,PLAYER,online-boutique-4784,Shay could you look into CHG89358 just in case - this is the last change that was made recently [L7_incident_scope - 0.49]
+2025-07-01 15:07:58,Shay,online-boutique-4784,perhaps steps are different to replicate [n/a - 0]
+2025-07-01 15:08:01,UptimeLabs,online-boutique-4784,:star: Check changes done to the platform [n/a - 0]
+2025-07-01 15:08:05,Shay,online-boutique-4784,sure [n/a - 0]
+2025-07-01 15:08:40,PLAYER,online-boutique-4784,We need to be having a look in the logs for either any 500 errors or log messages relating to product IDs. [L7_incident_severity - 0.44]
+2025-07-01 15:08:44,Daniel,online-boutique-4784,Checking logs now [n/a - 0]
+2025-07-01 15:09:04,PLAYER,online-boutique-4784,Tanya Could you check the logs on your end as well? [L7_incident_scope - 0.46]
+2025-07-01 15:09:11,Shay,online-boutique-4784,"I have double check that deployment, it looks clean. no errors in tests [n/a - 0]"
+2025-07-01 15:09:11,UptimeLabs,online-boutique-4784,:star: Form a working theory [n/a - 0]
+2025-07-01 15:09:17,Tanya,online-boutique-4784,Already on it [n/a - 0]
+2025-07-01 15:09:18,UptimeLabs,online-boutique-4784,:star: Reviewed changes [n/a - 0]
+2025-07-01 15:09:23,UptimeLabs,online-boutique-4784,:bulb: Hint: Declare an incident. [n/a - 0]
+2025-07-01 15:09:24,Daniel,online-boutique-4784,Logs are clean [n/a - 0]
+2025-07-01 15:09:38,Daniel,online-boutique-4784,"So, is this only affecting 1 user? [n/a - 0]"
+2025-07-01 15:09:56,Tanya,online-boutique-4784,Network and platform logs are clean [n/a - 0]
+2025-07-01 15:09:58,PLAYER,online-boutique-4784,Since we've had no further reports I would think this is just the one user [L7_incident_scope - 0.54]
+2025-07-01 15:10:05,Bez,business-comms-4784,I've just gotten a concerning message from Tinus - he is experiencing an issue in his board presentation. Is this an incident we're aware of? [n/a - 0]
+2025-07-01 15:10:09,PLAYER,online-boutique-4784,Clicked undefined button
+2025-07-01 15:10:24,UptimeLabs,online-boutique-4784,:star: Qualify the problem [n/a - 0]
+2025-07-01 15:10:31,PLAYER,business-comms-4784,*Incident Number INC100031:* sev-3 unable to add item to basket [n/a - 0]
+2025-07-01 15:10:31,UptimeLabs,online-boutique-4784,:star: Incident record created [n/a - 0]
+2025-07-01 15:10:33,UptimeLabs,online-boutique-4784,:star: Send first comms in first 5 minutes [n/a - 0]
+2025-07-01 15:10:36,Daniel,online-boutique-4784,@tinus what steps did you take to place an order [n/a - 0]
+2025-07-01 15:10:52,UptimeLabs,online-boutique-4784,:star: Formally assign criticality level to the incident [n/a - 0]
+2025-07-01 15:11:03,PLAYER,business-comms-4784,We've got an incident but at the moment it seems to only be affecting the one user - no further customer reports of issues [L7_incident_scope - 0.49]
+2025-07-01 15:11:17,Tinus,online-boutique-4784,"I'm attempting to runa  demo on PROD, using my laptop just as usual. Can't talk much! [n/a - 0]"
+2025-07-01 15:11:42,Bez,business-comms-4784,"Okay, this is still a big deal though. It's really not a good look in front of the board... [n/a - 0]"
+2025-07-01 15:11:53,Daniel,online-boutique-4784,So guessing this must be his local machine or browser [n/a - 0]
+2025-07-01 15:12:51,PLAYER,online-boutique-4784,Tinus are you at all able to provide some details on how to replicate this? we've not yet found anything in the platform that points us towards this issue [FALLBACKINTENT - 0.77]
+2025-07-01 15:13:11,Tinus,online-boutique-4784,"I just tried to place an order, and an error appears for each product [n/a - 0]"
+2025-07-01 15:14:10,Daniel,online-boutique-4784,"@tinus, try different browser or restart your laptom [n/a - 0]"
+2025-07-01 15:14:19,PLAYER,online-boutique-4784,I can see in the error screenshot you sent - it's trying to use the product ID OLJCESPC7D [L7_incident_scope - 0.49]
+2025-07-01 15:14:25,Bez,business-comms-4784,Are we making any progress on this? [n/a - 0]
+2025-07-01 15:14:30,PLAYER,online-boutique-4784,this doesn't match any products that I can see available on our website [L7_incident_scope - 0.45]
+2025-07-01 15:14:38,UptimeLabs,online-boutique-4784,:star: Use metrics as evidence [n/a - 0]
+2025-07-01 15:14:47,PLAYER,online-boutique-4784,"the sunglasses are OLJCESPC7Z, one letter different [L7_incident_scope - 0.58]"
+2025-07-01 15:15:04,Tinus,online-boutique-4784,"I did some dev work earlier, perhaps this is the reason [n/a - 0]"
+2025-07-01 15:15:23,PLAYER,business-comms-4784,"It seems as though an incorrect product ID was being used, just seeing how this was ran into [L7_incident_scope - 0.5]"
+2025-07-01 15:15:44,Daniel,online-boutique-4784,This could be a cache issue [n/a - 0]
+2025-07-01 15:16:09,Daniel,online-boutique-4784,"Try clearing cache or use incognito , that should help [n/a - 0]"
+2025-07-01 15:16:21,PLAYER,online-boutique-4784,Tinus are you able to try clearing your cache as suggested by daniel? [L7_incident_scope - 0.84]
+2025-07-01 15:16:27,Tinus,online-boutique-4784,Will do [n/a - 0]
+2025-07-01 15:16:57,tinus,online-boutique-4784,Damn! thats it [n/a - 0]
+2025-07-01 15:16:59,tinus,online-boutique-4784,"Great Ive got to do my presentation now, thanks for figuring this out so quickly. @daniel @shay can you look in to a cache busting solution? [n/a - 0]"
+2025-07-01 15:17:01,shay,online-boutique-4784,it was the cache! sure we can do that [n/a - 0]
+2025-07-01 15:17:03,daniel,online-boutique-4784,"no worries boss, at least its not a significat issue [n/a - 0]"
+2025-07-01 15:17:04,daniel,online-boutique-4784,good luck with the presentation! [n/a - 0]
+2025-07-01 15:17:05,tanya,online-boutique-4784,yes good luck @tinus [n/a - 0]
+2025-07-01 15:17:07,shay,online-boutique-4784,good luck @tinus! [n/a - 0]
+2025-07-01 15:17:18,UptimeLabs,online-boutique-4784,Start retro and feedback [n/a - 0]
+2025-07-01 15:17:32,PLAYER,business-comms-4784,This was a caching issue - the issue has been resolved. [FALLBACKINTENT - 0.74]
+2025-07-01 15:17:41,PLAYER,online-boutique-4784,Clicked Start_feedback button
+2025-07-01 15:17:53,UptimeLabs,online-boutique-4784,:star: Confirm resolution with the business [n/a - 0]
+2025-07-01 15:17:53,UptimeLabs,online-boutique-4784,:star: Confirm resolution with the business [n/a - 0]
+2025-07-01 15:18:15,Bez,business-comms-4784,"Nice investigation skills, we owe you one! [n/a - 0]"
+2025-07-01 15:19:05,UptimeLabs,online-boutique-4784,:star: Escalating when required [n/a - 0]
+2025-07-01 15:20:25,UptimeLabs,online-boutique-4784,Submission successful [n/a - 0]

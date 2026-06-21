@@ -1,0 +1,88 @@
+datetime,player,channel,message
+2025-07-22 13:25:49,UptimeLabs,online-boutique-5102,Start lvl 29 [n/a - 0]
+2025-07-22 13:29:00,PLAYER,online-boutique-5102,Clicked undefined button
+2025-07-22 13:29:05,PLAYER,online-boutique-5102,Clicked org button
+2025-07-22 13:29:08,PLAYER,online-boutique-5102,Clicked undefined button
+2025-07-22 13:32:12,PLAYER,business-comms-5102,*Incident Number INC100030:* Test Sev1 [n/a - 0]
+2025-07-22 13:36:44,PLAYER,online-boutique-5102,Clicked Start button
+2025-07-22 13:36:45,UptimeLabs,online-boutique-5102,":alarm_clock: - You have 25 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders. [n/a - 0]"
+2025-07-22 13:36:45,Tinus,online-boutique-5102,"Welcome our new IM @Chandan Nagaraja, Happy to have you in the team. Hope you get comfortable with everyone [n/a - 0]"
+2025-07-22 13:36:50,Shay,online-boutique-5102,Welcome @Chandan Nagaraja [n/a - 0]
+2025-07-22 13:36:55,Daniel,online-boutique-5102,Nice to meet you @Chandan Nagaraja [n/a - 0]
+2025-07-22 13:36:59,PLAYER,online-boutique-5102,Thank you [n/a - 0]
+2025-07-22 13:37:05,Bob,online-boutique-5102,There are a few strange customer reports with the helpdesk [n/a - 0]
+2025-07-22 13:37:06,PLAYER,online-boutique-5102,Happy to meet you all [n/a - 0]
+2025-07-22 13:37:09,Bob,online-boutique-5102,"Apparently, the site is loading slowly [n/a - 0]"
+2025-07-22 13:37:13,Bob,online-boutique-5102,People are reporting that they can't make payments either [n/a - 0]
+2025-07-22 13:37:16,Bob,online-boutique-5102,customer_reports [n/a - 0]
+2025-07-22 13:37:20,Bob,online-boutique-5102,@Chandan Nagaraja Can you check this? [n/a - 0]
+2025-07-22 13:37:33,PLAYER,online-boutique-5102,"Sure, I am checking. [n/a - 0]"
+2025-07-22 13:38:10,PLAYER,online-boutique-5102,Is there any error message for the payment failure ? [n/a - 0]
+2025-07-22 13:38:17,UptimeLabs,online-boutique-5102,:star: Ask team members to provide evidence of their assertions [n/a - 0]
+2025-07-22 13:38:26,Shay,online-boutique-5102,Let’s check if this is affecting users directly — maybe Bob from Support has more context? [n/a - 0]
+2025-07-22 13:39:48,PLAYER,online-boutique-5102,Bob - Are all customers seeing a 502 gateway? I am not able to load the website at all [n/a - 0]
+2025-07-22 13:39:56,UptimeLabs,online-boutique-5102,:star: Asking questions to validate impact of the problem [n/a - 0]
+2025-07-22 13:39:58,Bob,online-boutique-5102,Let me gather the information for you [n/a - 0]
+2025-07-22 13:40:03,Bob,online-boutique-5102,There are more than 300 customer reports till now [n/a - 0]
+2025-07-22 13:40:10,Bob,online-boutique-5102,"Calls are from every region, likely to be Global [n/a - 0]"
+2025-07-22 13:40:16,Bob,online-boutique-5102,The majority of reports say the frontend isn't loading for them [n/a - 0]
+2025-07-22 13:40:19,Bob,online-boutique-5102,Let me know if you need more information [n/a - 0]
+2025-07-22 13:40:20,PLAYER,online-boutique-5102,Daniel - What is the change - CHG89347 about? Has it completed successfully? [n/a - 0]
+2025-07-22 13:40:28,UptimeLabs,online-boutique-5102,:star: Check changes done to the platform [n/a - 0]
+2025-07-22 13:40:32,Daniel,online-boutique-5102,Let me look into this deeper — I’ll try to replicate and check the logs [n/a - 0]
+2025-07-22 13:41:00,Daniel,online-boutique-5102,I am able to replicate the issue. Checking the logs now [n/a - 0]
+2025-07-22 13:41:05,Daniel,online-boutique-5102,"I see a lot of errors, most of them are context initialisation errors  [n/a - 0]"
+2025-07-22 13:41:09,Daniel,online-boutique-5102,Logs [n/a - 0]
+2025-07-22 13:41:12,PLAYER,online-boutique-5102,Shay - I see that yo deployed CHG89349 recently. Was it successful? [n/a - 0]
+2025-07-22 13:41:15,Bez,business-comms-5102,"I have a stake holders meet in next 10 minutes, @Chandan Nagaraja do you think this can be resolved by then?  [n/a - 0]"
+2025-07-22 13:41:22,UptimeLabs,online-boutique-5102,:star: Check changes done to the platform [n/a - 0]
+2025-07-22 13:41:43,PLAYER,business-comms-5102,*Incident Number INC100075:* Sev1 - Website Front End down for Customers [n/a - 0]
+2025-07-22 13:41:43,UptimeLabs,online-boutique-5102,:star: Incident record created [n/a - 0]
+2025-07-22 13:41:43,Shay,online-boutique-5102,"Yes, the deployment was successful [n/a - 0]"
+2025-07-22 13:41:45,UptimeLabs,online-boutique-5102,:star: Send first comms in first 5 minutes [n/a - 0]
+2025-07-22 13:41:48,Bez,business-comms-5102,How many customers are affected? Are the reports coming in from all regions? [n/a - 0]
+2025-07-22 13:41:59,UptimeLabs,online-boutique-5102,:bulb: Hint: Declare an incident. [n/a - 0]
+2025-07-22 13:42:34,PLAYER,online-boutique-5102,Shay can you revert the change please? seems like your change has brought down the front end for the customers [n/a - 0]
+2025-07-22 13:42:39,Daniel,online-boutique-5102,"I have verified Payments change (CHG89347) , there are no errors and the service is up and healthy [n/a - 0]"
+2025-07-22 13:42:41,UptimeLabs,online-boutique-5102,:star: Restoration over root cause analysis [n/a - 0]
+2025-07-22 13:42:45,Daniel,online-boutique-5102,"Check out service change(CHG89350) is in UAT, so not affecting PROD. But I see a few errors from Frontend pods [n/a - 0]"
+2025-07-22 13:42:50,Daniel,online-boutique-5102,All the errors started right after the change (CHG89349) on the Frontend [n/a - 0]
+2025-07-22 13:42:55,Bob,online-boutique-5102,The customer complaints are rising. @Chandan Nagaraja Do we have an ETA for resolution? [n/a - 0]
+2025-07-22 13:42:58,Bez,business-comms-5102,What is the latest on this? [n/a - 0]
+2025-07-22 13:43:10,PLAYER,business-comms-5102,Hi Bez The issue is global and we have 300 customer reports as of now. [n/a - 0]
+2025-07-22 13:43:19,PLAYER,business-comms-5102,I am working with the support engineers to fix it asap [n/a - 0]
+2025-07-22 13:43:46,Daniel,online-boutique-5102,"You're right @Chandan. Everything else looks fine, but CHG89349 seems suspicious — let me take a closer look at that frontend change [n/a - 0]"
+2025-07-22 13:44:21,PLAYER,online-boutique-5102,Shay are you working on reverting the change like asked you earlier? [n/a - 0]
+2025-07-22 13:44:26,UptimeLabs,online-boutique-5102,:star: Manage actions and timings [n/a - 0]
+2025-07-22 13:44:48,Shay,online-boutique-5102,"Sorry, I've never done a rollback in PROD before, can someone help me with the steps? [n/a - 0]"
+2025-07-22 13:44:53,Daniel,online-boutique-5102,"I will help you, @Shay. Rolling back now [n/a - 0]"
+2025-07-22 13:45:06,PLAYER,online-boutique-5102,THanks Daniel [n/a - 0]
+2025-07-22 13:45:11,Daniel,online-boutique-5102,Rollback completed. Can somebody verify? [n/a - 0]
+2025-07-22 13:45:13,UptimeLabs,online-boutique-5102,:bulb: Hint: Cross check resolution with stakeholders [n/a - 0]
+2025-07-22 13:45:15,UptimeLabs,online-boutique-5102,:bulb: Hint: Confirm resolution with the business [n/a - 0]
+2025-07-22 13:45:17,PLAYER,online-boutique-5102,Checking [n/a - 0]
+2025-07-22 13:45:21,Daniel,online-boutique-5102,Change CHG89349 has caused a memory leak on Front end pods [n/a - 0]
+2025-07-22 13:45:31,Shay,online-boutique-5102,But this functionally worked when I tested [n/a - 0]
+2025-07-22 13:45:39,Daniel,online-boutique-5102,Memory leak might have crept up when the traffic increased. [n/a - 0]
+2025-07-22 13:45:40,PLAYER,business-comms-5102,Hi Bez The application is back up now [n/a - 0]
+2025-07-22 13:45:51,PLAYER,business-comms-5102,Performing validations from the customers [n/a - 0]
+2025-07-22 13:46:36,PLAYER,online-boutique-5102,Bob can you chceck with the customers if the application is working now? and if they're able to place orders successfully? [n/a - 0]
+2025-07-22 13:46:46,Bob,online-boutique-5102,Customer reports have gone down. Orders metrics look going up in IM dashboard [n/a - 0]
+2025-07-22 13:47:18,PLAYER,online-boutique-5102,I can see the orders per minute is increasing since last 1 minutes [n/a - 0]
+2025-07-22 13:47:23,UptimeLabs,online-boutique-5102,:star: Use metrics as evidence [n/a - 0]
+2025-07-22 13:47:31,Bob,online-boutique-5102,"Yes, they are able to place without any issues [n/a - 0]"
+2025-07-22 13:47:49,PLAYER,online-boutique-5102,That's good to here. Any further validations that anyone wants to perform before we declare this issue to be mitigated ? [n/a - 0]
+2025-07-22 13:47:52,Daniel,online-boutique-5102,It's definitely working again! [n/a - 0]
+2025-07-22 13:47:57,Shay,online-boutique-5102,Wow that was intense! [n/a - 0]
+2025-07-22 13:47:59,Bez,business-comms-5102,Thanks! for resolving it quickly [n/a - 0]
+2025-07-22 13:48:02,Hamed,online-boutique-5102,Good job guys [n/a - 0]
+2025-07-22 13:48:05,Tinus,online-boutique-5102,Yes well done! that could have gone much worse so props to everyone [n/a - 0]
+2025-07-22 13:48:13,UptimeLabs,online-boutique-5102,Start retro and feedback [n/a - 0]
+2025-07-22 13:48:14,UptimeLabs,online-boutique-5102,:star: Validate the fix [n/a - 0]
+2025-07-22 13:48:15,UptimeLabs,online-boutique-5102,:star: Confirm resolution with the business [n/a - 0]
+2025-07-22 13:48:18,UptimeLabs,online-boutique-5102,:star: Cross check resolution with stakeholders [n/a - 0]
+2025-07-22 13:48:18,PLAYER,business-comms-5102,Bez Validations successful. Customers are able to place orders successfully. [n/a - 0]
+2025-07-22 13:48:26,UptimeLabs,online-boutique-5102,:star: Confirm resolution with the business [n/a - 0]
+2025-07-22 13:48:30,PLAYER,business-comms-5102,It was due to a Change. Will share details shortly. [n/a - 0]
+2025-07-22 13:48:40,PLAYER,online-boutique-5102,Clicked Start_feedback button
+2025-07-22 13:51:08,UptimeLabs,online-boutique-5102,Submission successful [n/a - 0]

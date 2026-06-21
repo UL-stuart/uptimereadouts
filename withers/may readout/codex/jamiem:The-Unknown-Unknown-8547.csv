@@ -1,0 +1,268 @@
+datetime,player,channel,message
+2026-04-22 14:06:00,uptimelabs,online-boutique-8547,"Welcome to The Unknown Unknown, are you prepared for the challenge?
+
+ *Use `/help` at any time for a list of useful links and commands* 
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin"
+2026-04-22 14:07:27,PLAYER,online-boutique-8547,
+2026-04-22 14:07:27,uptimelabs,business-comms-8547,*Incident Number INC1021:* P1 test
+2026-04-22 14:08:03,bob,online-boutique-8547,"Hey team, getting a few reports now, looks like confusion from the customers on what they ordering?"
+2026-04-22 14:08:10,bob,online-boutique-8547,This is strange
+2026-04-22 14:08:13,PLAYER,online-boutique-8547,Hi Bob
+2026-04-22 14:08:16,bob,online-boutique-8547,Just seen a couple of reports of customers not receiving the right item on delivery
+2026-04-22 14:08:21,tinus,online-boutique-8547,Hmm? that sounds strange. @PLAYER can you take point and start sizing this up?
+2026-04-22 14:08:22,PLAYER,online-boutique-8547,Have you had the option to try to replicate this
+2026-04-22 14:08:33,bob,online-boutique-8547,"Yes, i tried to place orders"
+2026-04-22 14:08:35,bob,online-boutique-8547,it went thru
+2026-04-22 14:08:50,PLAYER,online-boutique-8547,"Can we have a look at orders, checking delivery addresses associated"
+2026-04-22 14:08:55,shay,online-boutique-8547,I tried placing orders
+2026-04-22 14:09:01,shay,online-boutique-8547,we can place orders without any issue
+2026-04-22 14:09:08,PLAYER,online-boutique-8547,"Bob, where is this happening - is it a specific country or global"
+2026-04-22 14:09:09,bob,online-boutique-8547,Checking reports...
+2026-04-22 14:09:11,uptimelabs,online-boutique-8547,:star: Asking questions to validate impact of the problem
+2026-04-22 14:09:33,bob,online-boutique-8547,One report said the user wanted to buy 'Sunglasses' but he got 'Tank-top' in confirmation
+2026-04-22 14:09:36,PLAYER,online-boutique-8547,Can we have someone look at any changes we have made to our shipping services?
+2026-04-22 14:09:38,uptimelabs,online-boutique-8547,:star: Reviewed changes
+2026-04-22 14:09:40,shay,online-boutique-8547,Here's the detailed info on each of the changes made today
+2026-04-22 14:09:42,shay,online-boutique-8547,Hope this helps:https://uptime-labs.atlassian.net/wiki/external/MDI1YjRiNzUxMGEwNGVmMjkwNmU2Y2ZkNzRjZjBjMWE
+2026-04-22 14:09:44,bob,online-boutique-8547,Just double checked with shipping looks like the items that has been ordered are correct and we're sending the right item
+2026-04-22 14:09:49,bob,online-boutique-8547,We have currently got more than 17 complaints so far
+2026-04-22 14:10:07,shay,online-boutique-8547,Nothign on shipping service
+2026-04-22 14:10:11,PLAYER,online-boutique-8547,We also need to make sure we have checked the catalog service
+2026-04-22 14:10:19,PLAYER,online-boutique-8547,"Bob, how many calls have we had on this?"
+2026-04-22 14:10:22,uptimelabs,online-boutique-8547,:bulb: Understand the problem by reproducing it
+2026-04-22 14:10:30,bob,online-boutique-8547,Gathering more information....
+2026-04-22 14:10:52,bob,online-boutique-8547,The customers are complaining that the image is not matching up with the product name
+2026-04-22 14:10:52,PLAYER,online-boutique-8547,
+2026-04-22 14:10:52,uptimelabs,online-boutique-8547,:star: Incident record created
+2026-04-22 14:10:52,uptimelabs,business-comms-8547,*Incident Number INC1003:* P2 Wrong orders being deliver to customers
+2026-04-22 14:11:01,bez,business-comms-8547,How big is this problem?
+2026-04-22 14:11:02,bob,online-boutique-8547,Seems to be that users don't know whether the product they're purchasing matches the image or the description. 
+2026-04-22 14:11:03,PLAYER,online-boutique-8547,I have logged the MI
+2026-04-22 14:11:06,bez,business-comms-8547,"@PLAYER what's the customer experience like ?"
+2026-04-22 14:11:19,bez,business-comms-8547,Are they able to place orders?
+2026-04-22 14:11:31,PLAYER,business-comms-8547,We have had less than 20 users receive goods they have not ordered - we are investigating.
+2026-04-22 14:11:34,uptimelabs,online-boutique-8547,:star: Qualify the problem
+2026-04-22 14:11:40,PLAYER,business-comms-8547,Orders can be placed. 
+2026-04-22 14:11:53,bob,online-boutique-8547,"We'll likely see high return rates from customers, that's going to mean a lot of financial loss from shipping and refund costs."
+2026-04-22 14:11:57,PLAYER,business-comms-8547,I will get back to you in 10 minutes once I know more and have greater clarity on the situation
+2026-04-22 14:11:59,bez,business-comms-8547,Okay
+2026-04-22 14:12:00,uptimelabs,online-boutique-8547,:star: Track actions and time box them
+2026-04-22 14:12:13,bob,online-boutique-8547,I'm receiving more cancellation/refund requests than new orders. @PLAYER What shall we do now? 
+2026-04-22 14:12:40,PLAYER,online-boutique-8547,"Orders are going through, and not all orders have issues, so we need to pinpoint the issue"
+2026-04-22 14:12:43,bez,business-comms-8547,I'm concerned we might be doing more harm than good by letting the new orders continue... 
+2026-04-22 14:12:50,bob,online-boutique-8547,Can you try if you see the issue at your end?
+2026-04-22 14:13:09,PLAYER,online-boutique-8547,Can you make sure that we go back to these customers and apologise and correct their orders please Bob
+2026-04-22 14:13:13,bob,online-boutique-8547,"Orders are still coming in high volume, and we now have 130+ customers asking to cancel their orders"
+2026-04-22 14:13:19,bob,online-boutique-8547,"Sure, will do , but i think we see the problem"
+2026-04-22 14:13:33,bob,online-boutique-8547,The product image and Label arent matching
+2026-04-22 14:13:49,PLAYER,online-boutique-8547,"daniel and shay - have you made any changes to the system today, or within the test environment - this is the same for hamed and tanya"
+2026-04-22 14:13:51,uptimelabs,online-boutique-8547,:star: Check changes done to the platform
+2026-04-22 14:14:20,daniel,online-boutique-8547,Sure me and Shay can take a look now.
+2026-04-22 14:14:28,PLAYER,online-boutique-8547,"Yes, there is a mismatch on the front end"
+2026-04-22 14:14:44,PLAYER,online-boutique-8547,Who is responsible for the front end of the boutique
+2026-04-22 14:14:45,uptimelabs,online-boutique-8547,:star: Know your team and their roles
+2026-04-22 14:14:48,bob,online-boutique-8547,Do we know if we are taking orders based on Image or Label ?
+2026-04-22 14:14:49,daniel,online-boutique-8547,CHG89415: Checked the mobile Add to Cart button is working perfectly for me
+2026-04-22 14:14:55,shay,online-boutique-8547,"For CHG89418 the CartService 3.9.3 deployed successfully, no functional issues detected."
+2026-04-22 14:14:56,bob,online-boutique-8547,"if not, the whole orders are messed up"
+2026-04-22 14:15:01,daniel,online-boutique-8547,And lastly CHG89412: product names in Redis match UAT DB
+2026-04-22 14:15:17,PLAYER,online-boutique-8547,"Can we have an inventory of the orders today, and see when this started to change?"
+2026-04-22 14:15:19,uptimelabs,online-boutique-8547,:star: Facts over opinion
+2026-04-22 14:15:19,uptimelabs,online-boutique-8547,:star: Use metrics as evidence
+2026-04-22 14:16:01,daniel,online-boutique-8547,We could try to halt all incoming orders but not sure on the scale of impact
+2026-04-22 14:16:01,PLAYER,online-boutique-8547,"We need to look at CHG 89415 please Shay, is there an option to role this back?"
+2026-04-22 14:16:05,uptimelabs,online-boutique-8547,:star: Restoration over root cause analysis
+2026-04-22 14:16:06,bob,online-boutique-8547,@PLAYER Could you please discuss this with Bez?
+2026-04-22 14:16:15,hamed,online-boutique-8547,@PLAYER do you think we have to pause all orders - else we might be taking more harm than doing good
+2026-04-22 14:16:39,bez,business-comms-8547,Go ahead
+2026-04-22 14:16:39,PLAYER,business-comms-8547,"Bez, we may need to halt new orders temporarily to fix this issue - are you ok with that, otherwise we risk spending more to rectify the issue"
+2026-04-22 14:16:46,bez,business-comms-8547,"If we're taking the wrong orders, then let's pause all incoming orders right away. We can't afford huge returns or refunds"
+2026-04-22 14:16:46,PLAYER,online-boutique-8547,I am speaking to Bez now
+2026-04-22 14:16:52,bob,online-boutique-8547,Thanks
+2026-04-22 14:16:55,PLAYER,business-comms-8547,OK
+2026-04-22 14:17:05,PLAYER,online-boutique-8547,Lets pause taking any new orders now
+2026-04-22 14:17:06,daniel,online-boutique-8547,"Whenever needed, we can switch the site to maintenance mode via a feature-flag update in the config repo. It cleanly pauses new orders once business gives the go-ahead"
+2026-04-22 14:17:24,PLAYER,online-boutique-8547,"Bob, please put a message out to say we are working on our website and temporarily paused"
+2026-04-22 14:17:25,bob,online-boutique-8547,"Sure, Dan can do that on front end"
+2026-04-22 14:17:26,bez,business-comms-8547,What's the impact? 
+2026-04-22 14:17:36,PLAYER,online-boutique-8547,Yes please Dan
+2026-04-22 14:17:44,bob,online-boutique-8547,On it
+2026-04-22 14:17:50,PLAYER,business-comms-8547,Just investigating now Bez - please give me 5 minutes
+2026-04-22 14:17:56,daniel,online-boutique-8547,Getting up maintenance banner on the website...
+2026-04-22 14:18:04,PLAYER,online-boutique-8547,Thanks both
+2026-04-22 14:18:20,hamed,online-boutique-8547,@PLAYER Did we look at errors ?are there any obvious ?
+2026-04-22 14:18:26,PLAYER,online-boutique-8547,"Shay, Daniel, can we roll back that change"
+2026-04-22 14:18:36,daniel,online-boutique-8547,Ok the website now displays a maintenance banner
+2026-04-22 14:18:41,daniel,online-boutique-8547,@PLAYER How does it look now?
+2026-04-22 14:18:54,PLAYER,online-boutique-8547,User activity is dropping
+2026-04-22 14:19:03,PLAYER,online-boutique-8547,We have a debug error 3.22
+2026-04-22 14:19:07,bez,business-comms-8547,@PLAYER Now that we are under maintenance. Let's prioritize resolution
+2026-04-22 14:19:16,daniel,online-boutique-8547,"Yes, have put an ETA of 60 minutes"
+2026-04-22 14:19:18,PLAYER,business-comms-8547,We are on that now Bez
+2026-04-22 14:19:38,shay,online-boutique-8547,"@PLAYER which change do you  want to rollback ?"
+2026-04-22 14:19:40,PLAYER,online-boutique-8547,We need to move quicker than 60 minutes please 
+2026-04-22 14:19:53,daniel,online-boutique-8547,I will take a quick look at errors
+2026-04-22 14:19:56,PLAYER,online-boutique-8547,89415 - what is the impact of rolling that back?
+2026-04-22 14:19:58,daniel,online-boutique-8547,I can take a look into our services now
+2026-04-22 14:20:10,PLAYER,online-boutique-8547,"Tanya, your change 89418 - could this have caused an issue"
+2026-04-22 14:20:13,shay,online-boutique-8547,No impact - i can roll back
+2026-04-22 14:20:17,daniel,online-boutique-8547,We don't have any alerts in the system
+2026-04-22 14:20:23,daniel,online-boutique-8547,"All apps looks healthy, no errors at all"
+2026-04-22 14:20:31,shay,online-boutique-8547,Even i don't see any issue
+2026-04-22 14:20:34,tanya,online-boutique-8547,"Sure, cart service shouldnt have an impact"
+2026-04-22 14:20:37,tanya,online-boutique-8547,but i can roll back
+2026-04-22 14:20:40,daniel,online-boutique-8547,Must be network or platform issue.
+2026-04-22 14:20:41,PLAYER,online-boutique-8547,"And Daniel, Change 89412 - could that have gone from UAT into prod?"
+2026-04-22 14:21:04,daniel,online-boutique-8547,Thats highly unlikely and mor eover it was done 24 hours back
+2026-04-22 14:21:22,tanya,online-boutique-8547,Checking now...
+2026-04-22 14:21:41,tanya,online-boutique-8547,no memory or cpu spikes all looks good from Infra nothing to highlight
+2026-04-22 14:21:43,tanya,online-boutique-8547,
+2026-04-22 14:21:44,PLAYER,online-boutique-8547,"Do we have a time and date where the boutique was matching the deliveries - Bob, what time was the first complaint"
+2026-04-22 14:21:49,tanya,online-boutique-8547,"Although I don't have any data, I strongly believe this issue originates from the application rather than the platform."
+2026-04-22 14:21:51,bob,online-boutique-8547,First report was 2 hours ago
+2026-04-22 14:21:57,tanya,online-boutique-8547,"No spikes or response time deviations, app owners must check configuration."
+2026-04-22 14:22:06,hamed,online-boutique-8547,"The issue could be anywhere, we should look at the configuration mapping between product images and names."
+2026-04-22 14:22:06,tanya,online-boutique-8547,"This is not an infra problem. If users are seeing mismatched products, someone could be messing with our system otherwise its an application/service-level bug"
+2026-04-22 14:22:12,tanya,online-boutique-8547,But it's not a platform issue.
+2026-04-22 14:22:17,hamed,online-boutique-8547,Daniel do you know which application holds this data?
+2026-04-22 14:22:22,bez,business-comms-8547,"@PLAYER what's the latest ?"
+2026-04-22 14:22:25,hamed,online-boutique-8547,"Tanya you check if this is stored in a database or Redis cache?"
+2026-04-22 14:22:29,PLAYER,online-boutique-8547,Tanyas change was after that time
+2026-04-22 14:22:35,hamed,online-boutique-8547,"@PLAYER if there are no visible errors, this might be a configuration issue; the above details may help narrow it down."
+2026-04-22 14:22:44,PLAYER,online-boutique-8547,"Shay, your change was just prior to that - if there is no impact can we roll that one back please"
+2026-04-22 14:22:57,tanya,online-boutique-8547,I am rolling back my change
+2026-04-22 14:23:05,daniel,online-boutique-8547,The configuration is stored in the Product Catalogue Service. I pushed a change in UAT yesterday that updates the Redis cache with the latest product names.
+2026-04-22 14:23:06,shay,online-boutique-8547,"Sure,"
+2026-04-22 14:23:12,tanya,online-boutique-8547,"Hamed yes, this information is stored in Redis cache and the cache was refreshed earlier today."
+2026-04-22 14:23:20,bez,business-comms-8547,Can you send me a photo of what you are seeing wrong with the platform @PLAYER
+2026-04-22 14:23:35,PLAYER,online-boutique-8547,"Daniel, can you make sure that has not hit production please "
+2026-04-22 14:23:37,daniel,online-boutique-8547,I can check the database and provide a Redis key dump for product:<id>:name keys 
+2026-04-22 14:23:41,uptimelabs,online-boutique-8547,'Redis key dump' means extracting the stored data for specific Redis keys like 'product:<id>:name' so you can see what values are currently saved in the Redis database.
+2026-04-22 14:23:53,daniel,online-boutique-8547,Ok here is what i found 
+2026-04-22 14:23:55,daniel,online-boutique-8547,
+2026-04-22 14:24:02,tanya,online-boutique-8547,But product_id: 3 is actually 'mug' 
+2026-04-22 14:24:04,tanya,online-boutique-8547,
+2026-04-22 14:24:06,bez,business-comms-8547,Where are we in the investigation? I just want to know the current working theories
+2026-04-22 14:24:10,daniel,online-boutique-8547,"It is, looks like my script has run in PROD and updated the wrong names for each product in DB"
+2026-04-22 14:24:15,shay,online-boutique-8547,"Oh no, that not good! Shall we go with a rollback? "
+2026-04-22 14:24:24,PLAYER,business-comms-8547,We are under maintenance so we can not get to the boutique - the label and picture mismatch on all items
+2026-04-22 14:24:43,bez,business-comms-8547,"Okay , Got you"
+2026-04-22 14:24:53,bez,business-comms-8547,Lets move forward quickly
+2026-04-22 14:24:57,PLAYER,business-comms-8547,"We are looking at changes made in UAT and on the Cart, and Catalog"
+2026-04-22 14:25:16,PLAYER,online-boutique-8547,We need to look to roll that back please Daniel.
+2026-04-22 14:25:25,hamed,online-boutique-8547,Rolling back a DB change isn't a viable solution i think
+2026-04-22 14:25:47,PLAYER,online-boutique-8547,Do we have the correct data that can be re-inputted on the DB?
+2026-04-22 14:25:58,hamed,online-boutique-8547,Tanya @PLAYER you are the SME in respective areas - Any inputs?
+2026-04-22 14:26:05,PLAYER,online-boutique-8547,Have we got a back up Daniel
+2026-04-22 14:26:07,daniel,online-boutique-8547,"I think this is cache issue we should clear the cache and restart Product catalogue Service, that will make fresh calls to DB and the cache will be refreshed "
+2026-04-22 14:26:11,tanya,online-boutique-8547,"No, Dan's query has updated the wrong names in DB. The data is wrong in DB therfore we will have to rehydrate the canonical database with the correct product Id names ."
+2026-04-22 14:26:16,bez,business-comms-8547,Do we have an ETA for the fix?
+2026-04-22 14:26:21,daniel,online-boutique-8547,"Tanya i think you are complicating an easy solution. A restart should fix this"
+2026-04-22 14:26:28,tanya,online-boutique-8547,It your call @PLAYER
+2026-04-22 14:26:37,PLAYER,online-boutique-8547,Lets work through one thing at a time. All ideas are good
+2026-04-22 14:26:56,PLAYER,online-boutique-8547,We need to make sure the names match throughout
+2026-04-22 14:26:57,tanya,online-boutique-8547,Agreed
+2026-04-22 14:27:10,PLAYER,online-boutique-8547,"Daniel, how do we get to that point as soon as possible"
+2026-04-22 14:27:21,daniel,online-boutique-8547,"As i said, A restart of PCS should work"
+2026-04-22 14:27:23,PLAYER,online-boutique-8547,This is the only thing we need to be concentrating on at the moment
+2026-04-22 14:27:27,uptimelabs,online-boutique-8547,:star: Take command
+2026-04-22 14:27:38,tanya,online-boutique-8547,What i see from DB is Dan's change has been applied on PROD
+2026-04-22 14:27:40,PLAYER,online-boutique-8547,Who is going to restart PCS/
+2026-04-22 14:27:45,daniel,online-boutique-8547,i can
+2026-04-22 14:27:54,PLAYER,online-boutique-8547,Please do this asap and report back
+2026-04-22 14:27:56,uptimelabs,online-boutique-8547,:star: Manage actions and timings
+2026-04-22 14:27:56,tanya,online-boutique-8547,There is a Data mismatch
+2026-04-22 14:28:06,tanya,online-boutique-8547,e will have to Repopulate data from golder source
+2026-04-22 14:28:13,PLAYER,online-boutique-8547,We will address that next Tanya - hold on to that thought
+2026-04-22 14:28:19,daniel,online-boutique-8547,"Thank you, i will clear cache and bounce the servers"
+2026-04-22 14:28:19,tanya,online-boutique-8547,Sure
+2026-04-22 14:28:29,PLAYER,online-boutique-8547,How long will this take Daniel
+2026-04-22 14:28:38,PLAYER,business-comms-8547,Just finding out
+2026-04-22 14:28:48,daniel,online-boutique-8547,"Oh no, the data still appears to be wrong. I believe Tanya might be right"
+2026-04-22 14:29:07,PLAYER,online-boutique-8547,"OK. We can rule that out - Tanya, you are up - what do you need to do"
+2026-04-22 14:29:09,tanya,online-boutique-8547,We will have to follow below steps to Rehydrate the db.
+2026-04-22 14:29:14,uptimelabs,online-boutique-8547,'Rehydrate the db' means restoring or repopulating the main database with accurate data from a reliable source or backup.
+2026-04-22 14:29:20,tanya,online-boutique-8547,1. **Flush** corrupted product-name keys
+2026-04-22 14:29:20,PLAYER,online-boutique-8547,Lets do that then
+2026-04-22 14:29:22,tanya,online-boutique-8547,"```bash
+redis-cli --scan --pattern 'product:*:name'| xargs redis-cli del```"
+2026-04-22 14:29:28,tanya,online-boutique-8547,2. **Rehydrate** product name cache from canonical DB
+2026-04-22 14:29:33,tanya,online-boutique-8547,3. **Restart** frontend/product-catalog-service** to refresh in memory cache
+2026-04-22 14:29:38,tanya,online-boutique-8547,4. **Verify** product listings display correct names
+2026-04-22 14:29:44,PLAYER,online-boutique-8547,How long will this take Tanya?
+2026-04-22 14:29:45,tanya,online-boutique-8547,I can perform Step 1 and 2. Dan or Shay has to perform step 3
+2026-04-22 14:29:50,tanya,online-boutique-8547,@PLAYER please verify that all steps have been completed 
+2026-04-22 14:29:52,tanya,online-boutique-8547,May take 4 to 5 minutes
+2026-04-22 14:29:55,tanya,online-boutique-8547,Are we good to proceed @PLAYER
+2026-04-22 14:29:59,PLAYER,online-boutique-8547,Please start
+2026-04-22 14:30:06,tanya,online-boutique-8547,"Thanks for go ahead, implementing step 1 now "
+2026-04-22 14:30:14,PLAYER,business-comms-8547,We are just refreshing the catalog and servers - this will take about 5 minutes
+2026-04-22 14:30:15,tanya,online-boutique-8547,Step 1 is now complete 
+2026-04-22 14:30:18,bez,business-comms-8547,Okay
+2026-04-22 14:30:22,tanya,online-boutique-8547,Moving on to step 2
+2026-04-22 14:30:29,PLAYER,online-boutique-8547,"Daniel, Shay, are you ready for step 3"
+2026-04-22 14:30:32,tanya,online-boutique-8547,Step 2 complete
+2026-04-22 14:30:33,shay,online-boutique-8547,Yes
+2026-04-22 14:30:39,PLAYER,online-boutique-8547,You are good to go
+2026-04-22 14:30:40,tanya,online-boutique-8547,lets proceed with the next 2 steps
+2026-04-22 14:30:46,daniel,online-boutique-8547,Starting step 3.....
+2026-04-22 14:31:05,daniel,online-boutique-8547,Step 3 is complete
+2026-04-22 14:31:09,tanya,online-boutique-8547,All the recovery steps are completed
+2026-04-22 14:31:09,PLAYER,online-boutique-8547,Who can verify the product listings
+2026-04-22 14:31:36,PLAYER,online-boutique-8547,"Daniel, can you verify the product listings"
+2026-04-22 14:31:37,hamed,online-boutique-8547,We should make a DB call and check the product and image config
+2026-04-22 14:31:38,uptimelabs,online-boutique-8547,:star: Cross checking resolution with team
+2026-04-22 14:31:45,hamed,online-boutique-8547,Tanya can do
+2026-04-22 14:31:55,PLAYER,online-boutique-8547,"Tanya, can you also check please"
+2026-04-22 14:32:13,tanya,online-boutique-8547,@PLAYER Checked the mapping again. And this how it looks now 
+2026-04-22 14:32:18,tanya,online-boutique-8547,
+2026-04-22 14:32:28,uptimelabs,online-boutique-8547,"Always confirm service health, errors, and data testing before removing a maintenance page - it avoids surprises when traffic returns"
+2026-04-22 14:32:52,PLAYER,online-boutique-8547,Can anyone else verify - and then we can come out of maintenance mode
+2026-04-22 14:32:53,hamed,online-boutique-8547,"I have validated other product, its matching"
+2026-04-22 14:33:06,PLAYER,online-boutique-8547,"Great, lets come out of maintenance mode please"
+2026-04-22 14:33:08,daniel,online-boutique-8547,Maintenance page removal in progress...
+2026-04-22 14:33:18,PLAYER,business-comms-8547,Just looking to come out of maintenance mode
+2026-04-22 14:33:20,uptimelabs,online-boutique-8547,:star: Confirm resolution with the business
+2026-04-22 14:33:30,daniel,online-boutique-8547,We are LIVE for orders back again!
+2026-04-22 14:33:43,bob,online-boutique-8547,"We've recovered, but a few orders are in dispute. Should we cancel them or contact customers first?"
+2026-04-22 14:33:46,bob,online-boutique-8547,Please confirm this with Bez before we proceed 
+2026-04-22 14:33:51,PLAYER,online-boutique-8547,I can not see the online boutique
+2026-04-22 14:33:51,daniel,online-boutique-8547,Should take a minute to make DB calls
+2026-04-22 14:34:04,daniel,online-boutique-8547,Its populating cache
+2026-04-22 14:34:13,PLAYER,online-boutique-8547,
+2026-04-22 14:34:20,daniel,online-boutique-8547,Just 30 seconds
+2026-04-22 14:34:23,daniel,online-boutique-8547,we should be back now
+2026-04-22 14:34:29,PLAYER,online-boutique-8547,I am good and can see it as well - great work
+2026-04-22 14:34:43,PLAYER,online-boutique-8547,"Bob, how are the orders looking again - I can see activity is massively up"
+2026-04-22 14:34:45,uptimelabs,online-boutique-8547,:star: Cross check resolution with stakeholders
+2026-04-22 14:34:46,bob,online-boutique-8547,@PLAYER : https://comms.prod.uptimelabs.io/withersworldwide-com/pl/j1nf1ncuq3y1zyfcfj7owpgchr
+2026-04-22 14:35:00,bob,online-boutique-8547,Customers are able to place order without any issue now
+2026-04-22 14:35:01,PLAYER,business-comms-8547,Things are back up and running Bez
+2026-04-22 14:35:10,bez,business-comms-8547,Brilliant
+2026-04-22 14:35:33,PLAYER,online-boutique-8547,Contact the customers first and give them the customer service they deserve - lets not lose them as repeat customers
+2026-04-22 14:35:38,bob,online-boutique-8547,Great
+2026-04-22 14:35:40,bob,online-boutique-8547,thanks
+2026-04-22 14:35:47,bez,business-comms-8547,"If a customer really wants to cancel, go ahead - otherwise leave the order as is. For anything not delivered yet, have support double-check with the customer before taking action"
+2026-04-22 14:35:50,bob,online-boutique-8547,Looks like we are back to business
+2026-04-22 14:35:59,PLAYER,online-boutique-8547,Can we double check the orders are matching as per this MI
+2026-04-22 14:36:05,daniel,online-boutique-8547,I did check all orders comign now
+2026-04-22 14:36:10,daniel,online-boutique-8547,we are looking better
+2026-04-22 14:36:27,PLAYER,online-boutique-8547,"If a customer really wants to cancel, go ahead - otherwise leave the order as is. For anything not delivered yet, have support double-check with the customer before taking action"
+2026-04-22 14:36:30,bob,online-boutique-8547,"Great , thanks @PLAYER
+2026-04-22 14:36:36,daniel,online-boutique-8547,Well done everyone
+2026-04-22 14:36:41,hamed,online-boutique-8547,"Root cause - UAT data refresh script was accidentally run against prod, overwriting product names in DB and Redis cache with test data. Monitoring missed it as health metrics stayed normal."
+2026-04-22 14:36:44,daniel,online-boutique-8547,Thank you
+2026-04-22 14:36:45,PLAYER,online-boutique-8547,"Great work everyone, appreciate your honest input and hardwork on this one"
+2026-04-22 14:36:46,bez,business-comms-8547,Thanks @PLAYER and team. You kept the Online Boutique on track - great work under pressure
+2026-04-22 14:36:53,hamed,online-boutique-8547,Good one @PLAYER
+2026-04-22 14:36:57,uptimelabs,online-boutique-8547,"Drill Wrap-Up
+
+Thanks for playing! This session is now closed.
+
+Please return to your Uptime Labs tab to review your performance and complete the Retrospective & Feedback form.
+
+If you've already closed the tab, you can reopen the form using the button below."
+2026-04-22 14:37:14,uptimelabs,online-boutique-8547,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/33/8547/feedback"

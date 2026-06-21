@@ -1,0 +1,81 @@
+datetime,player,channel,message
+2025-09-04 13:05:15,Bez,online-boutique-5644,Hey everyone. I'm pumped today about our flash sale
+2025-09-04 13:05:20,Bez,online-boutique-5644,You know it's been 53 years since the Beatles released Abbey Road right? My favourite album
+2025-09-04 13:05:24,Tanya,online-boutique-5644,53 years already?? Wow that makes me feel old...
+2025-09-04 13:05:27,Bez,online-boutique-5644,Indeed! We're celebrating today by promoting a flash sale on retro items from 1969
+2025-09-04 13:05:30,UptimeLabs,online-boutique-5644,Start lvl 31
+2025-09-04 13:05:41,PLAYER,online-boutique-5644,Clicked Start button
+2025-09-04 13:05:47,Tinus,online-boutique-5644,We're a step closer to allowing folks to pay for items from the 1960s with Bitcoin thanks to Daniel!
+2025-09-04 13:05:50,Daniel,online-boutique-5644,Think of it like time travelling!
+2025-09-04 13:05:54,Bez,online-boutique-5644,Wow good work Daniel! Looking forward to seeing it in action in prod
+2025-09-04 13:06:02,Shay,online-boutique-5644,"erm - funny you should say that Daniel, I'm just testing my checkout service change in prod and I can't complete the payment - something's up"
+2025-09-04 13:06:08,Tanya,online-boutique-5644,Sorry Daniel it's not looking good on my end either
+2025-09-04 13:06:13,Tinus,online-boutique-5644,Uh oh...here we go again
+2025-09-04 13:06:20,Tinus,online-boutique-5644,"@Amy Jeanes can you ""Size up the Issue"" please and keep us informed"
+2025-09-04 13:06:25,Shay,online-boutique-5644,@Amy Jeanes it's worth having a look at the changes made earlier today first
+2025-09-04 13:06:34,Bez,online-boutique-5644,Get this sorted ASAP!!!
+2025-09-04 13:06:53,PLAYER,online-boutique-5644,"Yep i've just seen the issue ""Payment Unavailable"""
+2025-09-04 13:07:01,UptimeLabs,online-boutique-5644,:star: Reproduces the incident
+2025-09-04 13:07:06,PLAYER,business-comms-5644,Payment unavailable error in prod
+2025-09-04 13:07:06,PLAYER,business-comms-5644,*Incident Number INC100013:* Payment unavailable error in prod
+2025-09-04 13:07:07,UptimeLabs,online-boutique-5644,:star: Incident record created
+2025-09-04 13:07:09,UptimeLabs,online-boutique-5644,:star: Send first comms in first 5 minutes
+2025-09-04 13:07:12,Bez,business-comms-5644,"Just saw the incident ticket come through, can someone tell me what's going on? This sale is huge for us"
+2025-09-04 13:07:13,UptimeLabs,online-boutique-5644,:star: Formally assign criticality level to the incident
+2025-09-04 13:07:35,PLAYER,business-comms-5644,We're investigating it now - will let you know
+2025-09-04 13:07:52,PLAYER,online-boutique-5644,Daniel was this caused by a deployment? what changes have been made recently?
+2025-09-04 13:07:59,UptimeLabs,online-boutique-5644,:star: Check changes done to the platform
+2025-09-04 13:08:09,Shay,online-boutique-5644,Here's the detailed info on each of the changes made today
+2025-09-04 13:08:13,Shay,online-boutique-5644,Hope this helps:<https://uptime-labs.atlassian.net/wiki/spaces/ULPUBLIC/pages/1049559041/Bez+s+Beatles+day+Change+Request+logs>
+2025-09-04 13:08:31,Bez,business-comms-5644,keep me updated through the investigation
+2025-09-04 13:09:11,Daniel,online-boutique-5644,from shays document the most recent change was shays checkout change
+2025-09-04 13:09:21,PLAYER,online-boutique-5644,okay it looks like it might either be CHG89358 or CHG89350. Can we try rolling back CHG89362 first?
+2025-09-04 13:09:28,UptimeLabs,online-boutique-5644,:star: Restoration over root cause analysis
+2025-09-04 13:09:38,UptimeLabs,online-boutique-5644,:bulb: Asking questions to validate impact of the problem
+2025-09-04 13:10:06,PLAYER,online-boutique-5644,Daniel can you please roll back CHG89362
+2025-09-04 13:10:09,Daniel,online-boutique-5644,"i think we should investigate the logs first to understand the cause for this issue, do you agree?"
+2025-09-04 13:10:22,PLAYER,online-boutique-5644,"Daniel we can look at them afterwards, we need to restore service first"
+2025-09-04 13:10:43,Daniel,online-boutique-5644,"i don think my change is the issue here, i tested it before deployment and it worked fine un uat"
+2025-09-04 13:11:03,PLAYER,online-boutique-5644,"Daniel maybe not, but we need to try it - please roll back the change users are unable to make payments"
+2025-09-04 13:11:13,UptimeLabs,online-boutique-5644,:star: Take command
+2025-09-04 13:11:31,Daniel,online-boutique-5644,"im really not sure my change is the issue here, the Code not being called by the frontend"
+2025-09-04 13:11:39,Daniel,online-boutique-5644,it cant be causing the issue here
+2025-09-04 13:11:59,Daniel,online-boutique-5644,"shays change is also related to the payment service, and is the most recent change"
+2025-09-04 13:11:59,PLAYER,online-boutique-5644,"Daniel your change was the most recent change before the service went down, roll it back now"
+2025-09-04 13:12:30,Daniel,online-boutique-5644,i read the timeline wrong my bad
+2025-09-04 13:12:38,Daniel,online-boutique-5644,but is still confident it s not my change
+2025-09-04 13:12:55,Daniel,online-boutique-5644,and even if it is we need to do proper investigations before rolling abck
+2025-09-04 13:13:19,PLAYER,online-boutique-5644,Tinus can you please get this change rolled back immediately
+2025-09-04 13:13:37,Tinus,online-boutique-5644,hi there whats going on?
+2025-09-04 13:13:40,PLAYER,business-comms-5644,we are attempting to roll back some recent changes at the moment
+2025-09-04 13:13:57,PLAYER,online-boutique-5644,Daniel is refusing to roll back his changes to production while there is an outage ongoing
+2025-09-04 13:14:22,Daniel,online-boutique-5644,we have no evidence suggesting its my change
+2025-09-04 13:14:50,Tinus,online-boutique-5644,"i see, but daniel if amy thinks this is the best course of action they are in charge of this incident"
+2025-09-04 13:15:14,Tinus,online-boutique-5644,The final say is in the IM's hands so you will so what they think is best
+2025-09-04 13:15:33,Tinus,online-boutique-5644,worst case we roll forward your change if its not he issue
+2025-09-04 13:15:56,PLAYER,online-boutique-5644,"The logs are showing the error ""{""error"":""gateway timeout: server error due to high load"",""message"":""request error"",""severity"":""error"",""timestamp"":""2025-09-04T13:14:43.74020159Z""}"" from the frontend, which suggests an issue in the backend"
+2025-09-04 13:15:57,Daniel,online-boutique-5644,"ok youre right i will look at the rollback now, i will need to make sure it is safe to rollback incase there is any new issues"
+2025-09-04 13:16:04,UptimeLabs,online-boutique-5644,:star: Facts over opinion
+2025-09-04 13:16:43,Daniel,online-boutique-5644,there are no dependencies on the change
+2025-09-04 13:17:02,Daniel,online-boutique-5644,"I'm 100% confident on my change, still not happy with the rollback"
+2025-09-04 13:17:31,Daniel,online-boutique-5644,Rolling back CHG89358 now....
+2025-09-04 13:17:38,PLAYER,online-boutique-5644,"Daniel please proceed with the rollback, we can put it back in if it wasn't the problem"
+2025-09-04 13:17:41,Daniel,online-boutique-5644,The payment change has been successfully rolled back
+2025-09-04 13:17:49,Daniel,online-boutique-5644,"Sorry, I missed some common library dependencies that probably caused the issue"
+2025-09-04 13:17:56,Bez,business-comms-5644,whats the customer impact on this?
+2025-09-04 13:18:08,Bez,business-comms-5644,what regions were impacted and did we lose much sales?
+2025-09-04 13:18:10,PLAYER,business-comms-5644,the change has been rolled back can anyone confirm if the issue is fixed?
+2025-09-04 13:18:26,PLAYER,business-comms-5644,all regions were impacted and noone was able to complete payments
+2025-09-04 13:18:33,UptimeLabs,online-boutique-5644,:star: Confirm resolution with the business
+2025-09-04 13:18:41,PLAYER,online-boutique-5644,Can we confirm if the issue is fixed or not now?
+2025-09-04 13:18:50,Shay,online-boutique-5644,yes site seem to be working for me now
+2025-09-04 13:18:51,UptimeLabs,online-boutique-5644,:star: Cross checking resolution with team
+2025-09-04 13:18:54,Shay,online-boutique-5644,all looks good here
+2025-09-04 13:18:54,PLAYER,online-boutique-5644,I've just tried it myself and it works now
+2025-09-04 13:19:02,UptimeLabs,online-boutique-5644,:star: Validate the fix
+2025-09-04 13:19:14,PLAYER,business-comms-5644,Okay we have confirmed that the issue is fixed now.
+2025-09-04 13:19:16,Shay,online-boutique-5644,Looks like everything's working from the frontend and checkout side again
+2025-09-04 13:19:21,Shay,online-boutique-5644,Happy to confirm it's resolved on our end
+2025-09-04 13:19:29,UptimeLabs,online-boutique-5644,Start retro and feedback
+2025-09-04 13:19:43,PLAYER,online-boutique-5644,Clicked Start_feedback button
+2025-09-04 13:20:42,UptimeLabs,online-boutique-5644,Submission successful

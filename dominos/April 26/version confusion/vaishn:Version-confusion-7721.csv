@@ -1,0 +1,105 @@
+datetime,player,channel,message
+2026-02-13 12:06:45,uptimelabs,online-boutique-7721,"Welcome to Version Confusion, the responsibility is on you to size up the problem.
+
+? *Use `/help` at any time for a list of useful links and commands*
+ ? *Use `/incident` to create an incident record*
+
+Once youre ready just click start to begin"
+2026-02-13 12:08:54,tanya,online-boutique-7721,Hey guys im seeing an issue with the website loading slowly
+2026-02-13 12:08:55,tanya,online-boutique-7721,Anyone else experaning this?
+2026-02-13 12:08:57,shay,online-boutique-7721,No all ok for me
+2026-02-13 12:08:58,daniel,online-boutique-7721,No issue for me
+2026-02-13 12:08:59,daniel,online-boutique-7721,What browser and version of it are you using Tanya?
+2026-02-13 12:09:01,tanya,online-boutique-7721,Im using chrome and let me check the version
+2026-02-13 12:09:03,daniel,online-boutique-7721,Ok if it is V105.0 this is a recorded bug with a ticket in the backlog
+2026-02-13 12:09:04,tanya,online-boutique-7721,Yeah it is V105.0
+2026-02-13 12:09:05,tanya,online-boutique-7721,Should we not raise an incident for this? I know I can update the version and it will stop effecting me.
+2026-02-13 12:09:07,tanya,online-boutique-7721,But could this not be effecting customers?
+2026-02-13 12:09:09,daniel,online-boutique-7721,Had a look at the market share of people using this version it is only at 0.09%
+2026-02-13 12:09:13,tanya,online-boutique-7721,Still not sure if it should not be an incidnt. @vaishnavi.b-dominos.co.uk What do you think? 
+2026-02-13 12:10:20,PLAYER,online-boutique-7721,@tanya I'm not seeing the slowness. Let me check on the customer impact
+2026-02-13 12:10:26,uptimelabs,online-boutique-7721,:star: Attempt to replicate the issue
+2026-02-13 12:10:26,uptimelabs,online-boutique-7721,:star: Asking questions to validate impact of the problem
+2026-02-13 12:10:42,bob,online-boutique-7721,Let me check the reports to see if there are more reports like tanyas!
+2026-02-13 12:10:44,PLAYER,online-boutique-7721,@bob Are we seeing any customer impact ?
+2026-02-13 12:11:13,bob,online-boutique-7721,Oh—reports actually show ~20% of customers impacted
+2026-02-13 12:11:16,bob,online-boutique-7721,"They’re seeing 3× longer load times, and there are some timeouts"
+2026-02-13 12:11:45,bob,online-boutique-7721,It’s happening globally. The trend has been building for two weeks. We’re down ~10% sales vs two-week average
+2026-02-13 12:12:07,daniel,online-boutique-7721,This will drag half the org into a non-issue
+2026-02-13 12:12:15,daniel,online-boutique-7721,We’ve got this on the backlog
+2026-02-13 12:12:16,PLAYER,online-boutique-7721,
+2026-02-13 12:12:16,uptimelabs,business-comms-7721,*Incident Number INC100032:* sev2 Version impact for 20% of customer
+2026-02-13 12:12:16,uptimelabs,online-boutique-7721,:star: Incident record created
+2026-02-13 12:12:21,daniel,online-boutique-7721,Really dont think we need an incident. As I said we have a bug already and really need to focus on delivery of new features.
+2026-02-13 12:13:16,shay,online-boutique-7721,"We made a few changes recently
+https://uptime-labs.atlassian.net/wiki/external/ZDQ1MTE3NWU5ZDYxNDA4MTkxZmM3ZGJmMGJhNmE1OTE
+This might be helpful"
+2026-02-13 12:13:58,PLAYER,online-boutique-7721,@daniel We need to resolve this since its affecting 20% of customer
+2026-02-13 12:14:26,tinus,business-comms-7721,Is this affecting users globally?
+2026-02-13 12:14:51,PLAYER,business-comms-7721,Affecting 20% customer globally @tinus 
+2026-02-13 12:14:53,daniel,online-boutique-7721,"Sure, I will start checking things now!"
+2026-02-13 12:14:57,uptimelabs,online-boutique-7721,:star: Qualify the problem
+2026-02-13 12:14:57,uptimelabs,online-boutique-7721,:star: Escalating when required
+2026-02-13 12:15:22,PLAYER,business-comms-7721,For certain version we are seeing this issue. But team said that they already have a ticket in backlogs
+2026-02-13 12:15:58,shay,online-boutique-7721,"If it’s slow loads + form delays, could be CheckoutService latency or payment authorisation retries?"
+2026-02-13 12:16:16,daniel,online-boutique-7721,Could be AdService blocking render threads. Ads can cause slow load and timeouts!
+2026-02-13 12:16:31,tanya,online-boutique-7721,I’ll confirm whether it’s browser-specific and whether it correlates with any edge/handshake differences
+2026-02-13 12:16:42,PLAYER,online-boutique-7721,@shay could you please check on this CHG89356
+2026-02-13 12:16:43,bez,business-comms-7721,What do we know so far?
+2026-02-13 12:16:45,uptimelabs,online-boutique-7721,:star: Reviewed changes
+2026-02-13 12:16:58,shay,online-boutique-7721,Certainly!
+2026-02-13 12:17:48,PLAYER,online-boutique-7721,@tanya Also confirm on the Adservice CHG89374 as Daniel mentioned
+2026-02-13 12:18:12,shay,online-boutique-7721,"I have checked checkout, seems fine. No errors in logs and deployment also looks healthy"
+2026-02-13 12:18:20,tanya,online-boutique-7721,"If it’s still ‘Chrome only’ but high %, that suggests version-range not just 105"
+2026-02-13 12:18:28,daniel,online-boutique-7721,20%? That can’t be just Chrome 105… unless detection is off
+2026-02-13 12:18:36,daniel,online-boutique-7721,Okay—what’s the fastest way to isolate?
+2026-02-13 12:18:47,PLAYER,business-comms-7721,Team is looking into it Bez. Suspecting on the Ad service and the new changes on checkouside
+2026-02-13 12:18:55,tanya,online-boutique-7721,I will check the ad service
+2026-02-13 12:20:19,tanya,online-boutique-7721,"Doesn't seem that the latest changes would be affecting this issue, as bob mentione earlier. This was happening for the past 2 weeks!"
+2026-02-13 12:20:41,daniel,online-boutique-7721,Those are too recent. Bob says trend is two weeks. What changed two weeks ago?
+2026-02-13 12:21:25,PLAYER,online-boutique-7721,@shay could you please check the deployment CR for last 2 week
+2026-02-13 12:21:28,uptimelabs,online-boutique-7721,:star: Check changes done to the platform
+2026-02-13 12:21:53,shay,online-boutique-7721,"Sure, there were a few. This might take a while!"
+2026-02-13 12:22:16,shay,online-boutique-7721,Mainly the two that we wer working on were for Frontend and ad service
+2026-02-13 12:22:28,daniel,online-boutique-7721,"If you want a rollback, it’s messy. Two weeks means dependencies have shifted. Might reintroduce old bugs."
+2026-02-13 12:22:42,PLAYER,online-boutique-7721,@daniel So looks like its not the version issue in chrome 105?
+2026-02-13 12:23:16,PLAYER,online-boutique-7721,Agreed. Do you have any suggestions?
+2026-02-13 12:23:23,daniel,online-boutique-7721,Not entirely sure
+2026-02-13 12:23:31,uptimelabs,online-boutique-7721,:bulb: You have support from other more experienced colleagues when needed
+2026-02-13 12:24:16,daniel,online-boutique-7721,I think Hamed would know more about that field!
+2026-02-13 12:24:50,bez,business-comms-7721,Where are we with the investigation?
+2026-02-13 12:25:43,PLAYER,online-boutique-7721,"@hamed Side seems to be slower and we could see 20% customer got impacted in last 2 week of time is what Bob mentioned. But Team suggesting to check last 2 week releases, But we cant revert the changes it will be more messy. Any thoughts on this"
+2026-02-13 12:25:50,hamed,online-boutique-7721,Understood! I have a few ideas already on where to start looking!
+2026-02-13 12:25:56,hamed,online-boutique-7721,"I’ll check: TLS/HTTP negotiation, headers, caching behavior, NGINX config/version changes, and any edge errors segmented by UA"
+2026-02-13 12:26:04,tanya,online-boutique-7721,Chrome 105 shows longer TTFB than Chrome latest. That hints at server-side negotiation or proxy behavior
+2026-02-13 12:26:38,hamed,online-boutique-7721,Found it: NGINX version update introduced a compatibility issue with Chrome 105 and older
+2026-02-13 12:26:45,tanya,online-boutique-7721,Requests from those user agents are delayed/dropped due to unsupported behavior (header/feature handling)
+2026-02-13 12:26:58,tanya,online-boutique-7721,"This explains: slow loads, intermittent timeouts, and why frontend looks ‘fine’"
+2026-02-13 12:27:20,PLAYER,online-boutique-7721,Is there any fix available for this?
+2026-02-13 12:27:21,hamed,online-boutique-7721,We have two options here:
+2026-02-13 12:27:31,PLAYER,online-boutique-7721,gohead
+2026-02-13 12:27:37,hamed,online-boutique-7721,"Rollback NGINX to prior stable version
+or 
+Apply patch/config adjustment to restore compatibility"
+2026-02-13 12:28:10,bob,online-boutique-7721,Do i need to inform the customers about anything?
+2026-02-13 12:28:36,PLAYER,online-boutique-7721,"What you thing @hamed , will applying patches fix the issue take time?"
+2026-02-13 12:28:43,hamed,online-boutique-7721,"Rollback will be much quicker, and we can work on the permanent fix later on"
+2026-02-13 12:29:04,PLAYER,business-comms-7721,Nginx version got upgraded recently that leads to slowness @bez 
+2026-02-13 12:29:05,uptimelabs,online-boutique-7721,"Thank you for playing Version Confusion, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit start when you are ready."
+2026-02-13 12:29:16,PLAYER,business-comms-7721,Discussion is going on with Platform Team
+2026-02-13 12:29:42,PLAYER,online-boutique-7721,Okay. We can rollback to previous Nginx version
+2026-02-13 12:29:44,uptimelabs,online-boutique-7721,:star: Restoration over root cause analysis
+2026-02-13 12:29:49,hamed,online-boutique-7721,Understood!
+2026-02-13 12:30:08,PLAYER,online-boutique-7721,@bob Hopefully issue will fix once the nginx version got rolled back
+2026-02-13 12:30:16,bob,online-boutique-7721,:thumbsup:
+2026-02-13 12:30:19,hamed,online-boutique-7721,NGINX rollback complete. Error rate and latency returning to baseline for affected UAs
+2026-02-13 12:30:44,PLAYER,online-boutique-7721,@bob please check once
+2026-02-13 12:31:06,PLAYER,online-boutique-7721,@shay @tanya could you confirm still facing slowness 
+2026-02-13 12:31:17,tanya,online-boutique-7721,It seems that rollback has resolved the issue for me
+2026-02-13 12:31:25,PLAYER,online-boutique-7721,Great
+2026-02-13 12:31:40,PLAYER,business-comms-7721,Version got reverted and Issue is resolved now
+2026-02-13 12:31:40,bob,online-boutique-7721,"Reports are going down, it seems that the user experience has been restored!"
+2026-02-13 12:31:56,PLAYER,online-boutique-7721,Nice. Thanks Bob
+2026-02-13 12:32:10,uptimelabs,online-boutique-7721,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/17/7721/feedback"

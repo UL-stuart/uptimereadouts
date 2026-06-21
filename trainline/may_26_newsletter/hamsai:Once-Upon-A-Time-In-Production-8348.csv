@@ -1,0 +1,225 @@
+datetime,player,channel,message
+2026-04-08 10:02:34,uptimelabs,online-boutique-8348,"Welcome to Once Upon a Time in Production, the responsibility is on you to size up the problem.
+
+*Access game links by pressing the Uptime Labs Logo in the top right of the screen*
+*Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin"
+2026-04-08 10:04:45,bob,online-boutique-8348,"Hey Everyone just in, customers are reporting the site images are not appearing, is this true?."
+2026-04-08 10:05:11,PLAYER,online-boutique-8348,Just checked and all looks good for me 
+2026-04-08 10:05:13,uptimelabs,online-boutique-8348,:star: Attempt to replicate the issue
+2026-04-08 10:05:15,daniel,online-boutique-8348,"I'm still seeing some product images missing, like the mug and sunglasses, so it might be intermittent."
+2026-04-08 10:05:17,PLAYER,online-boutique-8348,i'm also able to purchase
+2026-04-08 10:05:21,bob,online-boutique-8348,"Customers can technically check out, but we're seeing a 15-20% drop in conversions since the image issue started."
+2026-04-08 10:05:38,PLAYER,online-boutique-8348,yep i can't see some items now too
+2026-04-08 10:05:40,bob,online-boutique-8348,"checking reports, let me get back to you on what customers are saying"
+2026-04-08 10:05:41,uptimelabs,online-boutique-8348,:star: Reproduces the incident
+2026-04-08 10:05:47,PLAYER,online-boutique-8348,creating an incident
+2026-04-08 10:06:01,PLAYER,online-boutique-8348,
+2026-04-08 10:06:01,uptimelabs,business-comms-8348,*Incident Number INC1018:* P2 15-20% drop in conversions
+2026-04-08 10:06:10,bob,online-boutique-8348,"From what we can tell, the site isn't fully down. Customers can load pages and navigate categories, but something feels off visually"
+2026-04-08 10:06:17,PLAYER,online-boutique-8348,When did this start?
+2026-04-08 10:06:27,bob,online-boutique-8348,A few people mentioned pages look “incomplete” or “not finished loading”
+2026-04-08 10:06:29,PLAYER,online-boutique-8348,any releases that could have caused this? shay 
+2026-04-08 10:06:43,bob,online-boutique-8348,"We're getting multiple reports of missing product images, broken icons, and some customers say the site looks unprofessional or untrustworthy."
+2026-04-08 10:06:45,bob,online-boutique-8348,Some customers are confused and think products are out of stock because images aren't loading.
+2026-04-08 10:06:46,bez,business-comms-8348,Which regions are affected and how many customers/orders does this impact in real terms?
+2026-04-08 10:06:47,uptimelabs,online-boutique-8348,:star: Asking questions to validate impact of the problem
+2026-04-08 10:06:48,PLAYER,online-boutique-8348,tanya can you also have a look too
+2026-04-08 10:06:48,uptimelabs,online-boutique-8348,:star: Check changes done to the platform
+2026-04-08 10:06:49,daniel,online-boutique-8348,Checking recent changes...
+2026-04-08 10:07:28,PLAYER,online-boutique-8348,Which regions are affected and how many customers/orders does this impact in real terms?
+2026-04-08 10:07:29,daniel,online-boutique-8348,I did deploy a chaos test for ProductCatalogueService earlier.
+2026-04-08 10:07:36,daniel,online-boutique-8348,But that's UAT only — nothing in prod.
+2026-04-08 10:07:41,daniel,online-boutique-8348,Also added some extra logging in checkout.
+2026-04-08 10:07:46,daniel,online-boutique-8348,"Just log fields, shouldn't affect performance."
+2026-04-08 10:07:53,shay,online-boutique-8348,I pushed a small frontend UI tweak earlier.
+2026-04-08 10:08:00,shay,online-boutique-8348,Loading animation + accessibility stuff.
+2026-04-08 10:08:06,shay,online-boutique-8348,No backend or infra changes.
+2026-04-08 10:08:12,daniel,online-boutique-8348,Checking application logs now…
+2026-04-08 10:08:20,PLAYER,online-boutique-8348,What is the downside of rolling back those 2 changes to rule out?
+2026-04-08 10:08:48,PLAYER,online-boutique-8348,bob Which regions are affected and how many customers/orders does this impact in real terms?
+2026-04-08 10:08:52,daniel,online-boutique-8348,Seeing a huge spike in requests hitting ProductCatalogueService.
+2026-04-08 10:08:55,PLAYER,business-comms-8348,getting that info now
+2026-04-08 10:09:00,daniel,online-boutique-8348,WARN [ProductCatalogueService] Request timed out after 3000ms path=/productCatalogue method=GET
+2026-04-08 10:09:11,shay,online-boutique-8348,Seeing slow dependency calls too.
+2026-04-08 10:09:15,shay,online-boutique-8348,WARN [ProductCatalogueService] Slow response from downstream dependency latency=1800ms
+2026-04-08 10:09:18,PLAYER,online-boutique-8348,Customers must be spamming the products
+2026-04-08 10:09:26,PLAYER,online-boutique-8348,can we scale anything up ?
+2026-04-08 10:09:27,daniel,online-boutique-8348,PCS pod CPU is extremely high right now.
+2026-04-08 10:09:33,daniel,online-boutique-8348,"Service isn't crashing, but it's clearly struggling to keep up."
+2026-04-08 10:09:36,bob,online-boutique-8348,Looks to be a global issue
+2026-04-08 10:09:43,tanya,online-boutique-8348,"Checking infra now, give me a moment."
+2026-04-08 10:10:01,PLAYER,online-boutique-8348,How many customers or orders does this impact? bob 
+2026-04-08 10:10:10,PLAYER,business-comms-8348,Looks like it's a global issue
+2026-04-08 10:10:23,tanya,online-boutique-8348,Seeing a lot more traffic reaching backend services than usual.
+2026-04-08 10:10:31,tanya,online-boutique-8348,PCS request rate is way above baseline.
+2026-04-08 10:10:37,tanya,online-boutique-8348,Been doing a comparison with Checkout and Frontend.
+2026-04-08 10:10:42,tanya,online-boutique-8348,"And they seem fine, let me show you"
+2026-04-08 10:10:43,PLAYER,online-boutique-8348,maya anything odd you can see?
+2026-04-08 10:10:47,tanya,online-boutique-8348,https://i.ibb.co/fVY8zWQj/Checkout.png
+2026-04-08 10:10:52,tanya,online-boutique-8348,https://i.ibb.co/Kk5gHqt/Frontend.png
+2026-04-08 10:10:57,tanya,online-boutique-8348,https://i.ibb.co/chz2PJSH/PCS.png
+2026-04-08 10:11:01,tanya,online-boutique-8348,PCS is the clear outlier.
+2026-04-08 10:11:02,bob,online-boutique-8348,I think all users can see this impact
+2026-04-08 10:11:05,tanya,online-boutique-8348,Might be worth looping in Security to rule out something external.
+2026-04-08 10:11:15,PLAYER,online-boutique-8348,already tagged maya 
+2026-04-08 10:11:17,bob,online-boutique-8348,"We're seeing reports from all regions, but the majority are coming from US and EU customers."
+2026-04-08 10:11:25,PLAYER,online-boutique-8348,Thanks bob
+2026-04-08 10:11:27,bob,online-boutique-8348,"Based on support tickets and analytics, about 30% of active users are affected, and order volume is down by roughly 15% since the issue began."
+2026-04-08 10:11:31,daniel,online-boutique-8348,"Rolling back my changes would remove the new checkout logging, but shouldn't impact core functionality or image delivery."
+2026-04-08 10:11:50,shay,online-boutique-8348,Rolling back my frontend tweaks would just revert the loading animation and accessibility improvements—no risk to backend or image paths.
+2026-04-08 10:11:56,bob,online-boutique-8348,"We're seeing missing images and broken icons reported by customers in all regions, but most complaints are from the US and EU."
+2026-04-08 10:11:56,PLAYER,online-boutique-8348,Upgrading severity to P1
+2026-04-08 10:12:03,PLAYER,online-boutique-8348,
+2026-04-08 10:12:03,uptimelabs,business-comms-8348,*Incident Number INC1006:* P1
+2026-04-08 10:12:13,bob,online-boutique-8348,"About 30% of active users are affected, and order volume has dropped by around 15% since the issue started."
+2026-04-08 10:12:15,bez,business-comms-8348,Understood—please update me as soon as you have concrete numbers and regional scope.
+2026-04-08 10:12:19,tanya,online-boutique-8348,"We can scale PCS pods up, but the traffic spike is so extreme that it might just shift the bottleneck or increase costs without solving the root cause."
+2026-04-08 10:12:21,bob,online-boutique-8348,"We're definitely seeing a lot of confused customers refreshing the page or trying to reload products, which could be amplifying the traffic spike."
+2026-04-08 10:12:23,bob,online-boutique-8348,double checking reports....
+2026-04-08 10:12:23,uptimelabs,online-boutique-8348,:star: Qualify the problem
+2026-04-08 10:12:48,PLAYER,business-comms-8348,"About 30% of active users are affected, and order volume has dropped by around 15% since the issue started."
+2026-04-08 10:12:53,bob,online-boutique-8348,Getting over 100 reports so far on this
+2026-04-08 10:12:58,bob,online-boutique-8348,"Looks like the common thread is that product images are not loading, and customers are seeing broken image icons instead. This is consistent across browsers"
+2026-04-08 10:13:09,PLAYER,online-boutique-8348,hamed Anything you recommend to do?
+2026-04-08 10:13:19,bob,online-boutique-8348,Definitely a global issue
+2026-04-08 10:13:25,maya,online-boutique-8348,Looking at the alerts now.
+2026-04-08 10:13:35,PLAYER,online-boutique-8348,maya still waiting to hear back from you 
+2026-04-08 10:13:43,PLAYER,online-boutique-8348,Thank you maya 
+2026-04-08 10:13:45,maya,online-boutique-8348,Seeing a big spike hitting image-related endpoints.
+2026-04-08 10:13:52,maya,online-boutique-8348,WAF rate-limit rules are firing.
+2026-04-08 10:13:55,maya,online-boutique-8348,"ALERT: image-endpoint-rate-limit threshold=4,000/5min observed=15,000 action=BLOCK"
+2026-04-08 10:13:57,PLAYER,online-boutique-8348,Does the traffic look genuine?
+2026-04-08 10:14:05,maya,online-boutique-8348,ALERT: anomalous-request-rate endpoint=/productCatalogue status=triggered
+2026-04-08 10:14:10,PLAYER,online-boutique-8348,don't want to block out genuine custoemrs
+2026-04-08 10:14:15,maya,online-boutique-8348,I'm calling this for now — looks like we're under a DDoS attack.
+2026-04-08 10:14:24,maya,online-boutique-8348,Before we start mitigation please update the business
+2026-04-08 10:14:35,maya,online-boutique-8348,"WAF is blocking a lot of traffic, but the product catalogue service is still getting hammered—this is definitely a DDoS attack."
+2026-04-08 10:14:37,PLAYER,online-boutique-8348,hamed do you reccomend scaling PCS?
+2026-04-08 10:14:40,maya,online-boutique-8348,Please update the business that we're under a DDoS attack and I'll prepare mitigation steps.
+2026-04-08 10:14:41,bez,online-boutique-8348,What can we do to stop the attack?
+2026-04-08 10:14:46,maya,online-boutique-8348,Let me send over some information to you.
+2026-04-08 10:14:48,bez,business-comms-8348,How many customers and orders are currently impacted by this global P1 incident?
+2026-04-08 10:14:49,uptimelabs,online-boutique-8348,:star: Use metrics as evidence
+2026-04-08 10:14:51,uptimelabs,online-boutique-8348,:star: Manage actions and timings
+2026-04-08 10:14:53,shay,online-boutique-8348,I've been in contact with Hamed—he's currently out of office but should be available very shortly.
+2026-04-08 10:14:57,maya,online-boutique-8348,"This document outlines the difference between DoS and DDoS attacks, as well as the mitigation strategies for each."
+2026-04-08 10:15:12,maya,online-boutique-8348,https://uptime-labs.atlassian.net/wiki/spaces/ULPUBLIC/pages/769163265/DoS+V+DDoS+Attack+Understanding+the+Difference
+2026-04-08 10:15:18,maya,online-boutique-8348,I've shared the document with mitigation strategies—let me know if you want me to start blocking the most aggressive IPs first.
+2026-04-08 10:15:23,maya,online-boutique-8348,Checking if the traffic is legit...
+2026-04-08 10:15:28,maya,online-boutique-8348,So the IPs don't show typical attack patterns
+2026-04-08 10:15:34,maya,online-boutique-8348,"What I see is legitimate user traffic behaving badly probably because something upstream isn't working as expected. The WAF is reacting to the volume, not intent."
+2026-04-08 10:15:56,maya,online-boutique-8348,The traffic seems legit
+2026-04-08 10:15:59,maya,online-boutique-8348,Im now confident that this is not a DDOS attack
+2026-04-08 10:16:07,hamed,online-boutique-8348,"Sorry for the delay, i just got in can you fill me in on whats going on?"
+2026-04-08 10:16:19,hamed,online-boutique-8348,"Can you tell me what is causing the PCS to struggle, what is it getting requests for?"
+2026-04-08 10:16:22,hamed,online-boutique-8348,"Before scaling, can you clarify what kind of requests PCS is struggling with?"
+2026-04-08 10:16:25,PLAYER,online-boutique-8348,"Okay so we need to fix the image issue, customers are panicaking and simulating a DDoS"
+2026-04-08 10:16:27,hamed,online-boutique-8348,Wait images are served from S3 through CloudFront. PCS was the old path for images
+2026-04-08 10:16:36,tanya,online-boutique-8348,Oh thats right i forgot PCS just returns the image URLs.
+2026-04-08 10:16:43,daniel,online-boutique-8348,Yes thats right :cold_face: we moved images out of PCS a while back.
+2026-04-08 10:16:46,bez,business-comms-8348,What is the estimated time to resolution and are we currently losing revenue every minute this continues?
+2026-04-08 10:16:53,hamed,online-boutique-8348,"If images aren't coming from S3, that could explain the load on PCS."
+2026-04-08 10:16:55,PLAYER,online-boutique-8348,Okay what are the steps to resolve this
+2026-04-08 10:17:03,hamed,online-boutique-8348,Worth checking S3 / CloudFront access.
+2026-04-08 10:17:10,PLAYER,online-boutique-8348,and can someone give me an ETA for a fix?
+2026-04-08 10:17:11,hamed,online-boutique-8348,"First, check if S3 and CloudFront are accessible and serving images as expected."
+2026-04-08 10:17:13,tanya,online-boutique-8348,"Once we confirm S3 and CloudFront are working, images should recover quickly—maybe 10-15 minutes if it's just a config issue."
+2026-04-08 10:17:23,PLAYER,business-comms-8348,maybe 10-15 minutes if it's just a config issue.
+2026-04-08 10:17:29,PLAYER,business-comms-8348,i'll keep you updated
+2026-04-08 10:17:35,PLAYER,online-boutique-8348,Thank you
+2026-04-08 10:17:37,hamed,online-boutique-8348,Let us know if you need a status update or want us to escalate further.
+2026-04-08 10:17:50,PLAYER,online-boutique-8348,status update please
+2026-04-08 10:17:52,hamed,online-boutique-8348,We're investigating S3 and CloudFront access for image delivery; will update as soon as we confirm the root cause.
+2026-04-08 10:18:13,PLAYER,online-boutique-8348,Okay who's taking the action on confirming S3 and CloudFront are working 
+2026-04-08 10:18:15,tanya,online-boutique-8348,Checking S3 / CloudFront access now.
+2026-04-08 10:18:45,bez,business-comms-8348,Thank you—keep me posted with any changes or if the ETA shifts.
+2026-04-08 10:18:55,tanya,online-boutique-8348,I think I found something.
+2026-04-08 10:19:10,tanya,online-boutique-8348,Image requests at the edge are failing.
+2026-04-08 10:19:15,tanya,online-boutique-8348,ERROR Static asset request failed / status=403 / reason=ExpiredPolicy
+2026-04-08 10:19:25,tanya,online-boutique-8348,CloudFront is rejecting the image requests.
+2026-04-08 10:19:30,tanya,online-boutique-8348,Looks like some kind of access policy or signing configuration has expired.
+2026-04-08 10:19:35,PLAYER,online-boutique-8348,What's the fix for that 
+2026-04-08 10:19:39,tanya,online-boutique-8348,I'm not sure yet which part of the CloudFront setup is causing it.
+2026-04-08 10:19:48,tanya,online-boutique-8348,"When the edge can't serve images, the frontend falls back through ProductCatalogueService."
+2026-04-08 10:20:01,tanya,online-boutique-8348,PCS was never scaled to handle that much traffic.
+2026-04-08 10:20:07,maya,online-boutique-8348,That explains the traffic spike and the WAF alerts.
+2026-04-08 10:20:15,hamed,online-boutique-8348,"Alright, thinking through fixes… give me a second."
+2026-04-08 10:20:33,PLAYER,online-boutique-8348,Can you also include ETAs please
+2026-04-08 10:20:35,hamed,online-boutique-8348,I see two paths we could take.
+2026-04-08 10:20:40,hamed,online-boutique-8348,Option 1: scale up ProductCatalogueService so it can absorb the fallback image traffic.
+2026-04-08 10:20:51,hamed,online-boutique-8348,That would stabilise the platform while images are still failing through CloudFront.
+2026-04-08 10:21:00,hamed,online-boutique-8348,Option 2: restore the CloudFront access policy so images start loading from S3 again.
+2026-04-08 10:21:10,hamed,online-boutique-8348,That fixes the root cause and removes the load from PCS.
+2026-04-08 10:21:12,PLAYER,online-boutique-8348,"Okay let's priorities the mitagation please, "
+2026-04-08 10:21:18,hamed,online-boutique-8348,Worth discussing before we commit.
+2026-04-08 10:21:26,uptimelabs,online-boutique-8348,:star: Take command
+2026-04-08 10:21:30,tanya,online-boutique-8348,"If we scale PCS, it could take 20-30 minutes to provision and test extra capacity."
+2026-04-08 10:21:32,hamed,online-boutique-8348,"Alright, if we go the scale route, here's the plan."
+2026-04-08 10:21:33,PLAYER,online-boutique-8348,What are the downsides
+2026-04-08 10:21:37,hamed,online-boutique-8348,First increase PCS replica count.
+2026-04-08 10:21:42,hamed,online-boutique-8348,Then raise CPU and memory limits so autoscaling has headroom.
+2026-04-08 10:21:49,hamed,online-boutique-8348,We'll monitor latency and error rates as traffic shifts.
+2026-04-08 10:21:55,maya,online-boutique-8348,I'll also adjust the WAF so legitimate traffic isn't blocked.
+2026-04-08 10:22:02,hamed,online-boutique-8348,Scaling up ProductCatalogueService replicas now to handle the increased image traffic.
+2026-04-08 10:22:02,hamed,online-boutique-8348,"Alright, let's scale PCS for now. Post updates here."
+2026-04-08 10:22:07,tanya,online-boutique-8348,Scaling PCS replicas now.
+2026-04-08 10:22:09,PLAYER,online-boutique-8348,"Before you give me the steps, i need to know which option get's us back up quicket"
+2026-04-08 10:22:11,uptimelabs,online-boutique-8348,:star: Restoration over root cause analysis
+2026-04-08 10:22:37,PLAYER,online-boutique-8348,???
+2026-04-08 10:22:37,tanya,online-boutique-8348,Replica rollout complete.
+2026-04-08 10:22:57,daniel,online-boutique-8348,Increasing CPU and memory limits.
+2026-04-08 10:23:05,PLAYER,online-boutique-8348,PLEASE READ MY PREVIOUS MESSAGE
+2026-04-08 10:23:19,maya,online-boutique-8348,Easing WAF rate limits so legitimate traffic can pass.
+2026-04-08 10:23:20,daniel,online-boutique-8348,Limits updated.
+2026-04-08 10:23:39,maya,online-boutique-8348,Done.
+2026-04-08 10:23:40,tanya,online-boutique-8348,PCS latency is starting to improve.
+2026-04-08 10:23:45,hamed,online-boutique-8348,Good sign. Let's keep monitoring.
+2026-04-08 10:23:53,hamed,online-boutique-8348,"Restoring the CloudFront access policy would get us back up fastest, likely within 5-10 minutes if there are no propagation issues."
+2026-04-08 10:23:56,tanya,online-boutique-8348,"Scaling PCS is safer if we're unsure about the CloudFront policy fix, but it takes longer—about 20-30 minutes to fully stabilise."
+2026-04-08 10:23:59,hamed,online-boutique-8348,"Restoring the CloudFront access policy is the fastest way to recover, with an estimated 5-10 minute turnaround if there are no propagation delays."
+2026-04-08 10:24:02,PLAYER,online-boutique-8348,Can i get an ETA please
+2026-04-08 10:24:05,hamed,online-boutique-8348,Scaling PCS is underway; we expect improved stability within 20-30 minutes.
+2026-04-08 10:24:16,PLAYER,business-comms-8348,"Fixes are underway, getting you an ETA"
+2026-04-08 10:24:17,bez,business-comms-8348,I need confirmation as soon as revenue is restored and order flow returns to normal levels.
+2026-04-08 10:24:34,PLAYER,business-comms-8348,Scaling PCS is underway; we expect improved stability within 20-30 minutes.
+2026-04-08 10:24:45,PLAYER,online-boutique-8348,I did not sign off on this option 
+2026-04-08 10:24:47,hamed,online-boutique-8348,"Understood, pausing further scaling actions until we get explicit approval from Incident Manager."
+2026-04-08 10:25:05,PLAYER,online-boutique-8348,i have asked for information 
+2026-04-08 10:25:09,hamed,online-boutique-8348,"Apologies for moving ahead; to clarify, restoring the CloudFront access policy is the quickest fix (5-10 minutes), while scaling PCS internally is safer but slower (20-30 minutes)."
+2026-04-08 10:25:35,PLAYER,business-comms-8348,"which do you recommend, restoring the CloudFront access policy is the quickest fix (5-10 minutes), while scaling PCS internally is safer but slower (20-30 minutes)."
+2026-04-08 10:26:02,PLAYER,business-comms-8348,The team are already underway with the safer option 
+2026-04-08 10:26:16,bez,business-comms-8348,Understood—keep me informed if the situation changes or if a faster fix becomes necessary.
+2026-04-08 10:26:19,PLAYER,online-boutique-8348,What would be the downside of the quicker fix?
+2026-04-08 10:26:23,maya,online-boutique-8348,"Restoring the CloudFront access policy could re-expose us to the original vulnerability, risking another wave of malicious traffic or abuse."
+2026-04-08 10:26:28,bez,business-comms-8348,Will the faster option work?
+2026-04-08 10:26:44,PLAYER,online-boutique-8348,"Okay thank you, please go ahead with the scaling PCS"
+2026-04-08 10:26:46,daniel,online-boutique-8348,I'll check the platform
+2026-04-08 10:26:49,daniel,online-boutique-8348,The images are appearing again for me
+2026-04-08 10:26:54,shay,online-boutique-8348,Images are visible for me!!
+2026-04-08 10:27:08,PLAYER,online-boutique-8348,Not yet for me
+2026-04-08 10:27:11,tanya,online-boutique-8348,"PCS metrics show error rates are still a bit elevated, but trending down."
+2026-04-08 10:27:16,PLAYER,online-boutique-8348,bob anything?
+2026-04-08 10:27:18,bob,online-boutique-8348,Customer reports are easing and the images are loading again across the site.
+2026-04-08 10:27:18,uptimelabs,online-boutique-8348,:star: Cross check resolution with stakeholders
+2026-04-08 10:27:39,PLAYER,business-comms-8348,Customer reports are easing and the images are loading again across the site.
+2026-04-08 10:27:42,uptimelabs,online-boutique-8348,:star: Confirm resolution with the business
+2026-04-08 10:27:56,PLAYER,online-boutique-8348,Okay let's continue monitoring
+2026-04-08 10:27:56,tinus,online-boutique-8348,"Great work everyone, well handled."
+2026-04-08 10:27:57,tinus,online-boutique-8348,Great work everyone
+2026-04-08 10:28:04,maya,online-boutique-8348,"Indeed, for a while I was worried it was a security issue"
+2026-04-08 10:28:12,maya,online-boutique-8348,"Turns out it was a false alarm, not something you see every day"
+2026-04-08 10:28:16,bez,business-comms-8348,Can you confirm that order volume and revenue have fully recovered to pre-incident levels?
+2026-04-08 10:28:19,shay,online-boutique-8348,I remember Jamie had a similar issue not too long ago
+2026-04-08 10:28:23,PLAYER,online-boutique-8348,Just done a test order and it went through fine
+2026-04-08 10:28:25,uptimelabs,online-boutique-8348,:star: Validate the fix
+2026-04-08 10:28:29,uptimelabs,online-boutique-8348,"Drill Wrap-Up
+
+Thanks for playing! This session is now closed.
+
+Please return to your Uptime Labs tab to review your performance and complete the Retrospective & Feedback form.
+
+If you've already closed the tab, you can reopen the form using the button below."
+2026-04-08 10:28:32,uptimelabs,online-boutique-8348,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/38/8348/feedback"

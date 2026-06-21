@@ -1,0 +1,84 @@
+datetime,player,channel,message
+2025-09-17 12:12:59,UptimeLabs,online-boutique-5817,"Welcome to Too Good To Be True, the responsibility is on you to size up the problem.
+
+ *Use `/help` at any time for a list of useful links and commands*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin Start button"
+2025-09-17 12:16:47,PLAYER,online-boutique-5817,Clicked org button
+2025-09-17 12:18:44,PLAYER,business-comms-5817,slow internet
+2025-09-17 12:18:44,PLAYER,business-comms-5817,*Incident Number INC100062:* slow internet
+2025-09-17 12:19:41,PLAYER,business-comms-5817,This is incident is severity 2
+2025-09-17 12:19:51,PLAYER,online-boutique-5817,Clicked Start button
+2025-09-17 12:19:52,Tinus,online-boutique-5817,"Welcome our new IM @Emma Allsopp, Happy to have you in the team. Hope you get comfortable with everyone"
+2025-09-17 12:19:52,UptimeLabs,online-boutique-5817,":alarm_clock: - You have 25 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-09-17 12:19:57,Shay,online-boutique-5817,Welcome @Emma Allsopp
+2025-09-17 12:20:02,Daniel,online-boutique-5817,Nice to meet you @Emma Allsopp
+2025-09-17 12:20:12,Bob,online-boutique-5817,There are a few strange customer reports with the helpdesk
+2025-09-17 12:20:16,Bob,online-boutique-5817,"Apparently, the site is loading slowly"
+2025-09-17 12:20:17,PLAYER,online-boutique-5817,Nice to meet you all too
+2025-09-17 12:20:20,Bob,online-boutique-5817,People are reporting that they can't make payments either
+2025-09-17 12:20:23,Bob,online-boutique-5817,customer_reports
+2025-09-17 12:20:27,Bob,online-boutique-5817,@Emma Allsopp Can you check this?
+2025-09-17 12:21:25,UptimeLabs,online-boutique-5817,:bulb: Form an effective investigation team
+2025-09-17 12:21:53,PLAYER,online-boutique-5817,Bob what are the customers reporting?
+2025-09-17 12:22:00,Bob,online-boutique-5817,Let me gather the information for you
+2025-09-17 12:22:00,UptimeLabs,online-boutique-5817,:star: Asking questions to validate impact of the problem
+2025-09-17 12:22:05,Bob,online-boutique-5817,There are more than 300 customer reports till now
+2025-09-17 12:22:12,Bob,online-boutique-5817,"Calls are from every region, likely to be Global"
+2025-09-17 12:22:18,Bob,online-boutique-5817,There's a bunch of messages coming in. A few people saying they can't do anything on the site
+2025-09-17 12:22:23,Bob,online-boutique-5817,Let me know if you need more information
+2025-09-17 12:22:55,UptimeLabs,online-boutique-5817,:bulb: Declare an incident.
+2025-09-17 12:24:21,PLAYER,business-comms-5817,Customers unable to complete purchases P1
+2025-09-17 12:24:21,PLAYER,business-comms-5817,*Incident Number INC100019:* Customers unable to complete purchases P1
+2025-09-17 12:24:21,UptimeLabs,online-boutique-5817,:star: Incident record created
+2025-09-17 12:24:23,UptimeLabs,online-boutique-5817,:star: Send first comms in first 5 minutes
+2025-09-17 12:24:26,Bez,business-comms-5817,How many customers are affected? Are the reports coming in from all regions?
+2025-09-17 12:24:27,UptimeLabs,online-boutique-5817,:star: Formally assign criticality level to the incident
+2025-09-17 12:25:04,PLAYER,online-boutique-5817,Clicked org button
+2025-09-17 12:25:41,Daniel,online-boutique-5817,Below are the changes implemented this morning
+2025-09-17 12:25:47,Daniel,online-boutique-5817,deployments
+2025-09-17 12:25:49,Daniel,online-boutique-5817,"If you want more information, check out Incident Manager dashboard for more details: <https://grafana.prod.uptimelabs.io/d/aOf5yan4z/incident-management>"
+2025-09-17 12:25:58,PLAYER,online-boutique-5817,Tanya Shay Daniel are we seeing any issues on the infrastructure/software side of the site?
+2025-09-17 12:26:14,Shay,online-boutique-5817,Looking into this and trying to replicate the issue
+2025-09-17 12:26:16,Daniel,online-boutique-5817,I am able to replicate the issue. Checking the logs now
+2025-09-17 12:26:19,Daniel,online-boutique-5817,"I see a lot of errors, most of them are context initialisation errors "
+2025-09-17 12:26:23,Daniel,online-boutique-5817,Logs
+2025-09-17 12:26:25,Shay,online-boutique-5817,Yes replicated the issue and even i'm seeing similar errors in frontend logs
+2025-09-17 12:26:29,Bez,business-comms-5817,"I have a stake holders meet in next 10 minutes, @Emma Allsopp do you think this can be resolved by then? "
+2025-09-17 12:27:02,PLAYER,business-comms-5817,This is a global issue as no customers are able to complete orders. We are working on the solution now
+2025-09-17 12:27:08,Tanya,online-boutique-5817,There are no alerts on the Infrastructure. I did see a few errors on the frontend apps
+2025-09-17 12:27:14,Tanya,online-boutique-5817,This looks to me like an issue in the frontend pod
+2025-09-17 12:27:18,PLAYER,online-boutique-5817,Clicked undefined button
+2025-09-17 12:29:03,PLAYER,online-boutique-5817,Can you please review the front end changes as this is where we are seeing the errors Shay
+2025-09-17 12:29:06,Daniel,online-boutique-5817,A Frontend change caused by change CHG89349 has brought down the Frontend pods
+2025-09-17 12:29:12,Shay,online-boutique-5817,But this functionally worked when I tested
+2025-09-17 12:29:14,UptimeLabs,online-boutique-5817,:star: Reviewed changes
+2025-09-17 12:29:17,Daniel,online-boutique-5817,"Even if it worked in your test environment, something's behaving differently in prod, maybe a config mismatch or unhandled edge case"
+2025-09-17 12:29:20,Bez,business-comms-5817,Can you give a quick update on the status?
+2025-09-17 12:30:10,PLAYER,business-comms-5817,The root cause was a front end change that went ahead today CHG89349.
+2025-09-17 12:31:17,PLAYER,online-boutique-5817,Shay could you please revert this change that you made to allow the website to function again
+2025-09-17 12:31:19,Shay,online-boutique-5817,"Sorry, I've never done a rollback in PROD before, can someone help me with the steps?"
+2025-09-17 12:31:24,PLAYER,online-boutique-5817,We can address the root cause after
+2025-09-17 12:31:25,UptimeLabs,online-boutique-5817,:star: Restoration over root cause analysis
+2025-09-17 12:31:49,Daniel,online-boutique-5817,"I will help you, @Shay. Rolling back now"
+2025-09-17 12:32:00,PLAYER,online-boutique-5817,Daniel could you please assist Shay with this rollback?
+2025-09-17 12:32:04,Daniel,online-boutique-5817,I have rollbacked Frontend:version to 10.1.0 to more stable version. Can somebody verify?
+2025-09-17 12:32:07,UptimeLabs,online-boutique-5817,"To 'verify' that the resolution has worked and to close the incident you must: 
+--Validate the fix yourself or with the team:white_check_mark: 
+--Cross check resolution with Customer Support:white_check_mark: 
+--Confirm resolution in the 'Business-comms' channel:white_check_mark: "
+2025-09-17 12:32:19,Bob,online-boutique-5817,"Customers are able to place the orders, complaint calls have reduced as well."
+2025-09-17 12:32:35,PLAYER,online-boutique-5817,All seems to be working thanks team
+2025-09-17 12:33:05,PLAYER,business-comms-5817,Issue has now been resolved as the change was rolled back. Customers now able to complete orders and website working as normal.
+2025-09-17 12:33:08,Daniel,online-boutique-5817,It's definitely working again!
+2025-09-17 12:33:13,UptimeLabs,online-boutique-5817,:star: Confirm resolution with the business
+2025-09-17 12:33:13,Shay,online-boutique-5817,Wow that was intense!
+2025-09-17 12:33:15,Bez,business-comms-5817,Thanks! for resolving it quickly
+2025-09-17 12:33:18,Hamed,online-boutique-5817,Good job guys
+2025-09-17 12:33:22,Tinus,online-boutique-5817,Yes well done! that could have gone much worse so props to everyone
+2025-09-17 12:33:26,Tinus,online-boutique-5817,We will have a Post-Incident Review (PIR) to understand what happened
+2025-09-17 12:33:36,UptimeLabs,online-boutique-5817,"Thank you for playing, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit I am ready when you want to start. I am ready button"
+2025-09-17 12:34:00,PLAYER,online-boutique-5817,Clicked Start_feedback button
+2025-09-17 12:36:42,UptimeLabs,online-boutique-5817,Submission successful

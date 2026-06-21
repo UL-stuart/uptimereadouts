@@ -1,0 +1,711 @@
+Pradeep
+Online Boutique 
+3:07
+  - You have 40 minutes to resolve the outage, good luck! You can type /help if you need any reminders.
+ 
+ShayAPP  3:07 PM
+
+Not this time!, I just got a few alerts mentioning severe errors popping up in PROD
+ 
+BobAPP  3:07 PM
+
+Weird... a few users just complained they are unable to complete their orders. Feels... off..
+ 
+Player1  3:08 PM
+
+Hi @Bob which region is affected, could you please confirm ?
+ 
+BobAPP  3:08 PM
+
+Sure, let me look at my reports
+3:08
+Here are some of the complaints we've received in the last few minutes. It's coming all across the globe
+3:08
+Germany - "I added items to my cart, clicked checkout, and it just kept spinning. Then it dumped me back to an empty cart"
+3:08
+USA - "Order failed twice, and now the cart is empty. I refreshed, but now the site is laggy"
+3:08
+Japan - "Got to checkout, then error 502. Tried again - cart gone"
+3:08
+To sum it all, we have got 240+ reports globally
+3:08
+(12 kB)
+https://i.ibb.co/7csQGjg/Lvl-26-reports-2.webp
+ 
+Player1  3:10 PM
+
+@Shay and @Daniel was there any deployments today in prod ?
+ 
+ShayAPP  3:10 PM
+
+Ok reviewing the change
+ 
+Player1  3:11 PM
+
+While clicking on Place order the cart is getting empty @Daniel @Shay
+ 
+DanielAPP  3:11 PM
+
+https://uptime-labs.atlassian.net/wiki/external/YzYwYTAxNWQzOTI0NDYzOWI1MjkxNTI2YmVmMjUyZDE
+3:11
+I don't think this is due to any changes because nothing matches the issue start time, and no PROD deployments have happened in a while around checkout service
+ 
+TanyaAPP  3:11 PM
+
+Same from the platform side. Strangely, both apps and infrastructure are struggling without any changes
+ 
+ShayAPP  3:11 PM
+
+You're right, that makes sense. On top of that, only checkout is having issues and it hasn't been touched in a while
+ 
+DanielAPP  3:12 PM
+
+Im getting an empty cart as well
+ 
+UptimeLabsAPP  3:12 PM
+
+  Incident record created
+3:12
+  Send first comms in first 5 minutes
+ 
+DanielAPP  3:12 PM
+
+Shall i check the logs?
+ 
+UptimeLabsAPP  3:12 PM
+
+  Hint: Declare an incident.
+ 
+Player1  3:13 PM
+
+Please check the logs
+ 
+ShayAPP  3:13 PM
+
+Looking into logs now
+3:13
+Found these below error logs
+3:13
+app[checkout-service] [ERROR] - write() failed, Read-only filesystem
+app[checkout-service] Order submission failed for session_id=ae43f9 due to I/O error
+app[checkout-service] [ERROR] - Transaction commit failed, Read-only file system
+[ERROR] nginx[3245] - 502 Bad Gateway while accessing upstream checkout service
+[ERROR] nginx[3245] - 504 Gateway Timeout while accessing upstream checkout service
+3:13
+The server is too slow and give up while responding back. I'm not sure why read-only errors are there
+ 
+DanielAPP  3:14 PM
+
+Looking at the above logs, app looks fine. But system can't write new data. Errors suggests to be an infra component failure
+3:14
+Also checkout servers show CPU and memory limits exceeded alerts, this definitely looks bigger than just an app issue
+3:14
+app[checkout-service]: systemd[1][WARN] Resource usage threshold exceeded - CPU: 96%, Memory: 92%
+ 
+ShayAPP  3:14 PM
+
+Could this be due to load or any changes ?
+ 
+Player1  3:14 PM
+
+It could be due to resource issue, please restart the pods
+ 
+DanielAPP  3:15 PM
+
+Sure i can restart the pods now
+3:15
+But this looks unusual to me
+ 
+Player1  3:15 PM
+
+Check from infra side @Tanya does anything consuming high resources
+ 
+DanielAPP  3:15 PM
+
+I dont think restarting the pods will fix it
+ 
+TanyaAPP  3:15 PM
+
+Checking infra...
+3:15
+All four checkout servers are maxed out - CPU, memory, and disk I/O all spiking. No changes or deployments were done from platform side
+3:15
+(92 kB)
+https://i.ibb.co/SwdqW9vX/checkout-servers-spike-simultaneous.webp
+3:16
+It doesn't looks like a load issue either. CPU and Memory spike is not matching with incoming traffic
+3:16
+I'm seeing a running process called init_locker.sh eating up most of the CPU on the checkout server. That's not something we usually run. Something's suspicious here
+3:16
+(12 kB)
+https://i.ibb.co/RtWsqrY/process-Running.webp
+3:16
+This does look suspicious @Daniel
+ 
+Player1  3:18 PM
+
+@Shay @Daniel please check is it due to high load ?
+ 
+DanielAPP  3:19 PM
+
+I dont see the reason for having high load in the servers
+3:19
+We may need to bring in SecurityOps
+ 
+Player1  3:19 PM
+
+@Tanya what does the init.locker.sh do?
+3:20
+Anyone here from SECOPS ??
+ 
+TanyaAPP  3:20 PM
+
+Im really not sure, for its definitely not our script
+3:20
+Maya is available
+ 
+Player1  3:21 PM
+
+@Daniel do you have any idea on that script ?
+ 
+TanyaAPP  3:21 PM
+
+I recommend getting her in to take a look
+ 
+DanielAPP  3:21 PM
+
+No idea
+ 
+Player1  3:21 PM
+
+Hi @Maya we have incident here, could you please look at it
+ 
+MayaAPP  3:21 PM
+
+Let me check if there's anything suspicious
+3:21
+Weird!! Security agent known as EDR(Endpoint Detection and Response) is missing from all 4 checkout servers. That's? concerning
+3:21
+EDR is basically our endpoint defense tool, it tracks unusual activity at the servers
+3:21
+Also,I found an init_locker.sh script encrypting DB, app, and log files which is renaming the filename like below
+3:21
+order_log_2025-06-01.locked
+session_state.tmp.locked
+ 
+DanielAPP  3:22 PM
+
+this explains why there were errors in checkout logs saying write failed , read-only filesystem
+ 
+TanyaAPP  3:22 PM
+
+Wait... there's a file here named HELP_ME_DECRYPT.txt. I opened it, appears a ransom note. This doesn't look good
+3:22
+(27 kB)
+https://i.ibb.co/HDcr1Rzb/ransomnote.webp
+ 
+MayaAPP  3:22 PM
+
+Confirmed. This is a ransomware breach. @Player1 inform business about this
+ 
+TanyaAPP  3:22 PM
+
+Shall i try killing this script ?
+ 
+BobAPP  3:22 PM
+
+Guys!!! User complaints are sky rocketing, its turning catastrophic!
+ 
+Player1  3:23 PM
+
+@Tanya yes please
+ 
+TanyaAPP  3:23 PM
+
+Ok , killing the script now...
+3:24
+Tried killing the script, all checkout servers just rebooted with a ransom banner. New ransom note say: "Interruption detected. Price doubled. Pay $10M in Bitcoin"
+ 
+Player1  3:24 PM
+
+@Maya please involve your team here and ask them to work on it
+ 
+MayaAPP  3:24 PM
+
+Killing the script could make things worse, higher ransom or losing data forever
+3:25
+@Player1 before we do anything, I'd request everyone to please change their passwords
+3:25
+Also I'm removing everyone's access to servers - only I'll have control for now. Later we will reassess to do any activity further
+ 
+DanielAPP  3:25 PM
+
+Done on my end
+ 
+HamedAPP  3:25 PM
+
+Updated. @Maya smart move by limiting server's access
+ 
+ShayAPP  3:25 PM
+
+Password updated
+ 
+BobAPP  3:25 PM
+
+Changed mine too. Better safe than sorry
+ 
+TanyaAPP  3:25 PM
+
+All set
+3:25
+It's much worse now. Every file I check is encrypted, nothing can be opened or recovered.
+ 
+MayaAPP  3:25 PM
+
+Oh wait i see that we did kill the script
+ 
+ShayAPP  3:25 PM
+
+I'm seeing new errors on frontend now. How's it for you @Player1 ?
+ 
+MayaAPP  3:25 PM
+
+Attention! when it comes to potential security breaches, it's important we don't discuss sensitive details here
+3:25
+I'm setting up private channel...
+3:25
+@Player1 before we move to private channel, can you check with business what's the plan - are we paying the ransom or moving with response?
+ 
+Player1  3:26 PM
+
+We are not paying anything. Dont discuss this outside the business line.
+3:27
+@Maya Cant we write a script or anything to reverse this issue and get it resolved
+ 
+MayaAPP  3:28 PM
+
+No we will have to follow a specific protocol
+3:28
+We will need to move to a private channel
+3:28
+I can create one now
+ 
+Player1  3:28 PM
+
+Ok please add me
+ 
+MayaAPP  3:29 PM
+
+Channel has been created
+3:31
+Ok will do
+ 
+BobAPP  3:36 PM
+
+@Player1 user complaints are spiking. They're reporting the site is down, earlier it wasn't the case. What should I tell them now?
+ 
+Player1  3:37 PM
+
+Bob we are rebooting the systems now, It will be Online soon
+ 
+UptimeLabsAPP  3:42 PM
+
+  - You have less than 5 minutes. You can type /help if you need any reminders.
+3:45
+  - You have less than 2 minutes. You can type /help if you need any reminders.
+ 
+BobAPP  3:47 PM
+
+Getting a bunch of new complaints now. Users are neither able to see their return requests nor able to place new returns on the site
+3:47
+please inform bez
+ 
+UptimeLabsAPP  3:47 PM
+
+Thank you for playing, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit I am ready when you want to start.
+ 
+UptimeLabsAPP  3:48 PM
+
+Stars will no longer be awarded
+ 
+UptimeLabsAPP  3:51 PM
+
+Submission successful
+ 
+UptimeLabsAPP  3:51 PM
+archived #online-boutique-5988. The contents will still be browsable and available in search.
+
+
+Private comms 
+ 
+UptimeLabsAPP  3:05 PM
+joined private-comms-5988. Also, Hamed S and 20 others joined via invite.
+ 
+MayaAPP  3:28 PM
+
+@Player1 let's build the core response team here. I've already added myself. Who else should we pull in to keep it tight and efficient?
+3:29
+I'd say one senior person each from security, platform, and engineering. Also add Tanya, tasks could be platform intensive
+ 
+Player1  3:30 PM
+
+Pull bez and Tinus here
+ 
+MayaAPP  3:30 PM
+
+They can stay on the business coms
+3:30
+That channel is secure for them two
+ 
+Player1  3:30 PM
+
+@Maya Reachout to Cyvantics Security, if they can help us
+ 
+MayaAPP  3:31 PM
+
+Yes, we've got an IR(incident response) retainer with Cyvantics Security
+3:31
+Sure
+3:31
+Looped in Cyvantics Security - they're on their way now to take snapshots of the infected server and storage, followed by forensics on it
+3:31
+Meanwhile, I've got this from Cyvantics. @Player1, can you help track the steps and coordinate?
+3:31
+https://uptime-labs.atlassian.net/wiki/external/MThjMTk4ZDU5ODU0NGZmMWE1NzhmNGY0MDQwNWI1NTA
+3:31
+We've got isolation steps in the playbook, but before we dive in, can you paste that list here? I'll help team run through it
+3:32
+I recommend getting Tanya, and Daniel in here
+ 
+Player1  3:33 PM
+
+Steps for Isolation:Steps to be done, mentioned along with the owning team
+
+1.	Disconnect the infected server -> Platforms
+2.	Cut off infrastructure traffic -> Platforms
+3.	Disconnect DB & freeze backup -> Application
+4.	Detach from Shared Resource -> Platforms
+5.	Take snapshots (Disk & Memory) -> Ask team
+6.	Kill suspicious process or activity -> Platforms
+Steps for Restoration:Steps to be done, mentioned along with the owning team
+
+1.	Validate backups → Security
+2.	Wipe infected systems → Platforms
+3.	Rebuild from clean backup → Platforms
+4.	Re-enable security agent on the servers → Security
+5.	Reconnect traffic to services and monitor → Platforms
+3:33
+@Maya pull them
+ 
+MayaAPP  3:35 PM
+
+Bez messaged me, he wants an update
+ 1
+ 
+Player1  3:35 PM
+
+@Maya are we running through these steps ?
+ 
+MayaAPP  3:36 PM
+
+Just checkout is teh application which is impacted
+ 
+Player1  3:36 PM
+
+Okay
+ 
+MayaAPP  3:36 PM
+
+I've given write access to Tanya, Hamed, Daniel, and myself
+ 
+TanyaAPP  3:36 PM
+
+Disconnecting the checkout servers from the infra now
+ 
+DanielAPP  3:36 PM
+
+I'm on it. Disconnecting DB access for checkout and checking if scheduled backups exist
+ 
+HamedAPP  3:37 PM
+
+I'll verify if any shared storage is still attached to the checkout DB
+ 
+DanielAPP  3:37 PM
+
+Step 3 done, DB connection to checkout is now cut
+ 
+TanyaAPP  3:37 PM
+
+Step 1 done, Checkout servers are now fully disconnected. Moving to isolate the infra from all external traffic
+ 
+HamedAPP  3:37 PM
+
+Step 4 confirmed, No shared storage attached to checkout, which makes sense since checkout has its standalone storage
+ 
+TanyaAPP  3:37 PM
+
+Step 2 completed, Infra is now fully cut off from the outside world. That means the website will remain completely down until we recover
+ 
+MayaAPP  3:37 PM
+
+Step 5 done, Cyvantics has completed taking snapshots of the checkout servers and database. They've now moved on to forensics. @Hamed, we're good to kill the script now
+ 
+HamedAPP  3:37 PM
+
+Step 6 done, The Script has been killed. @Player1 let us know and double-check if anything else is pending on our side
+ 
+Player1  3:39 PM
+
+It is clear, Please re-enable the servers
+ 
+MayaAPP  3:40 PM
+
+Yes, we must have a backup. Platform team can confirm us
+ 
+HamedAPP  3:40 PM
+
+Correct, we do have backup which only runs at 2AM. Latest is yesterday's. We'll lose today's orders
+ 
+MayaAPP  3:40 PM
+
+Isolation is complete. We're good to move toward restoration using the backup storage now
+3:40
+@Player1 could you please confirm with business before moving forward on this
+3:41
+I've called in @Bob to the channel
+ 
+BobAPP  3:41 PM
+
+@Player1, I hear you need my help, what exactly should I look into?
+3:41
+With the sale starting today, the potential loss is significant - around $180k
+ 
+Player1  3:41 PM
+
+Still Im seeing 502 bad gateway @Maya
+3:42
+@Daniel @Tanya please have a look into it
+ 
+MayaAPP  3:42 PM
+
+We haven't restored the platform yet
+ 
+DanielAPP  3:42 PM
+was added to private-comms-5988 by Player1. Also, Tanya joined via invite.
+ 
+MayaAPP  3:43 PM
+
+about the 180k loss
+3:43
+Have you confirmed with the business?
+3:43
+Can you confirm from business
+ 
+Player1  3:43 PM
+
+I informed Bez
+ 
+MayaAPP  3:44 PM
+
+Thanks for the go-ahead. @Player1, please track all restoration steps
+3:44
+I'm now validating the backup storage to ensure it's safe
+ 
+HamedAPP  3:44 PM
+
+I'm provisioning new checkout servers, will update once ready
+ 
+MayaAPP  3:44 PM
+
+Backup is clean and safe. @Hamed, you can start rebuilding checkout from backup storage
+ 
+HamedAPP  3:44 PM
+
+Thanks, Maya. New servers are ready. I'll start rebuilding now using backup storage
+3:44
+Rebuild completed
+ 
+MayaAPP  3:44 PM
+
+I've enabled the security agents (EDR) on checkout servers
+ 
+DanielAPP  3:44 PM
+
+I'll monitor application health once services are restored
+ 
+MayaAPP  3:44 PM
+
+@Player1 , can you confirm all tasks are wrapped up and we are good to bring the traffic back? Just want to be sure, as this is the final restoration step before we move
+ 
+Player1  3:45 PM
+
+Please restore the servers we have insurance for 1M
+ 
+TanyaAPP  3:45 PM
+
+Thanks for the go ahead. Bringing up network traffic in progress...
+3:45
+Restoration completed
+ 
+BobAPP  3:46 PM
+
+Wait!! getting a bunch of new complaints now. Users are neither able to see their return requests nor able to place new returns on the site
+ 
+MayaAPP  3:46 PM
+
+Yeah, that's probably the missing today's checkout data. Anyone who ordered or returned something during that time won't see it - makes sense since we restored from the yesterday's backup
+ 
+TanyaAPP  3:46 PM
+
+Tough, but expected :)
+ 
+Player1  3:46 PM
+
+Thanks everyone
+ 
+BobAPP  3:46 PM
+
+What should I tell them? They are asking for refunds
+ 
+Player1  3:47 PM
+
+@Bob Servers are working as expected now, Issues have been resolved
+ 
+UptimeLabsAPP  3:51 PM
+archived #private-comms-5988. The contents will still be browsable and available in search.
+
+
+
+Business comms
+ 
+UptimeLabsAPP  3:05 PM
+joined business-comms-5988. Also, Player1 and 28 others joined via invite.
+ 
+Player1  3:11 PM
+
+Hi Team
+We have a issue in place order. Customers are unable to place orders
+ 
+Player1  3:12 PM
+
+Incident Number INC100038: Place order is not working SEV1
+ 
+BezAPP  3:12 PM
+
+I'm seeing some posts on social media about issues with our platform, is this a regional issue or hitting customers globally?
+3:13
+Customers have gone outrageous. #OBFail and #OBStealsSale are trending with frustrated posts. We're getting hammered online! Where are we @Player1?
+ 
+Player1  3:13 PM
+
+Issue caused in Multiple regions we are working on it
+ 
+BezAPP  3:21 PM
+
+Got an email claiming responsibility by "BlackCrow Group" and demanding payment of $5M in crypto. Honestly, I get these hoax emails all the time, so I'm not buying it
+3:23
+Wait! you're telling me this is an actual ransomware hit?
+ 
+Player1  3:23 PM
+
+@Bez This is a ransomware breach our systems have been compromised
+ 
+BezAPP  3:23 PM
+
+Alright, tell everyone, no one says a single thing outside online-boutique! I don't care who's asking, not a word until we know exactly what's going on!
+3:24
+Just got another ransom email, says we tried to interfere and now the price doubled. Was something stupid done on our side?
+3:25
+This is nightmare! @Player1 where are we right now?
+ 
+Player1  3:25 PM
+
+Sure @Bez and SecOps team is on it.
+ 
+BezAPP  3:28 PM
+
+Not in favor of paying. Ethically, it sets the wrong example and there's no real guarantee we'll get anything back
+ 
+TinusAPP  3:28 PM
+
+Agree. Also, just to be clear - we don't need to alert the ICO(Information Commissioner's Office) right this second. We've got up to 72 hours, but that depends on how serious this really is
+ 
+BezAPP  3:29 PM
+
+@Tinus do you think this is something we should loop in any cyber security agency for?
+ 
+TinusAPP  3:29 PM
+
+If it looks like a complete lock-out, I'd say yes
+3:29
+We've got Cyvantics Security on retainer - just in case this gets out of hand. @Player1, ask Maya to reach out if needed
+ 
+BezAPP  3:31 PM
+
+@Player1 I need a clear answer from the team. What exactly is affected right now?
+ 
+TinusAPP  3:31 PM
+
+You're right. We need clear facts - which systems are locked, which are safe
+ 
+Player1  3:32 PM
+
+I asked Maya to reachout to Cyvantics Security, we are working on it. I could see drop in orders
+ 
+BezAPP  3:33 PM
+
+I need a clear answer from the team. What exactly is affected right now?
+3:34
+I need to know right now
+ 
+Player1  3:35 PM
+
+@Bez we are following https://uptime-labs.atlassian.net/wiki/external/MThjMTk4ZDU5ODU0NGZmMWE1NzhmNGY0MDQwNWI1NTA these steps to resolve this ASAP. Maya is on it with her team
+ 
+BezAPP  3:35 PM
+
+Which particular app is executed
+ 
+Player1  3:36 PM
+
+Checkout is the App
+ 
+BezAPP  3:37 PM
+
+Do we have any backup storage? Maybe we can try restoring from that
+ 
+Player1  3:40 PM
+
+We have the SnapShots of DB and server Bez
+3:43
+@Bez With the sale starting today, the potential loss is significant - around $180k
+ 
+BezAPP  3:44 PM
+
+Losing this much worth of data isn't good. However we do have insurance, let me check
+3:44
+We're insured for up to $1M for such losses. Once we're back up, we'll take it forward with the insurer
+ 
+TinusAPP  3:44 PM
+
+In that case, we can proceed with the restoration from backup - it's our best option right now
+ 
+BezAPP  3:44 PM
+
+Agreed. @Player1 let's move forward
+3:44
+Update me as soon as it'll be recovered. Board members are getting impatient
+ 
+Player1  3:45 PM
+
+Restoration is in progress
+3:46
+Restoration is completed and servers are up
+3:48
+@Bez customers are asking for Refund,
+ 
+UptimeLabsAPP  3:51 PM
+archived #business-comms-5988. The contents will still be browsable and available in search.
+
+

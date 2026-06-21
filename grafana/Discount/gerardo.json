@@ -1,0 +1,35 @@
+{
+  "output": {
+    "learning_outcomes_achieved": [
+      [
+        "Size Up",
+        "Fluent",
+        "You promptly recognised that the issue impacted customers on a global scale, sought confirmation from customer-facing roles, and communicated the scope and severity clearly and early in the incident process. You relayed customer impact to relevant teams and shared updates as new information became available."
+      ],
+      [
+        "Differentiate Legitimate Load vs Security Threat",
+        "Fluent",
+        "You explicitly raised the possibility of non-legitimate traffic, suggested comparing with expected traffic patterns (such as discount-driven spikes vs abnormal traffic), requested capacity context, and interpreted error codes and logs to support your suspicion of malicious activity. You communicated findings clearly to the team throughout."
+      ],
+      [
+        "Diagnose",
+        "Fluent",
+        "You requested diagnostic evidence from others (including logs, regional breakdowns, and pod statuses), reviewed findings (such as single-source requests, error patterns, and customer impact), concluded the incident was security-related, and requested targeted actions (like blocking suspicious IPs) to validate and act on your conclusion."
+      ],
+      [
+        "Mitigation",
+        "Fluent",
+        "You coordinated recommended mitigation with security input, requested confirmation before blocking, directly instructed action once evidence was sufficient, and explicitly sought confirmation that service behaviour improved after mitigation. You provided acknowledgements as the system recovered."
+      ],
+      [
+        "Security Protocol and Stakeholder Constraints",
+        "Fluent",
+        "You engaged compliance roles early, responsibly handled customer communications by involving appropriate teams, and communicated a plan for both incident resolution and post-incident actions (like further investigation and security tool improvements). You documented internal updates for stakeholders and involved others as needed."
+      ]
+    ],
+    "session_id": "1111",
+    "feedback": "Correctness: Your contributions were clear and used appropriate technical language to describe the incident, findings, and steps taken. Spelling and grammar were generally accurate, though occasional typing errors did not impact understanding.\n\nClarity: Your messages were concise and structured effectively, making it easy for team members to follow your reasoning and requests. You specified actions clearly and used questions to prompt targeted responses.\n\nEngagement: You effectively sustained engagement with various roles in the chat, prompting action and requesting follow-up at multiple points. This continuous interaction encouraged timely contributions from others, which helped progress the investigation and mitigation.\n\nDelivery: Your communication maintained a measured, purposeful tone, showing care for both the technical and coordination side of the incident. Messages were tailored for the team context and prioritised the exchange of actionable information. Further attention to minor errors in word choice or typing might foster even stronger mutual understanding.",
+    "did_well": "You demonstrated situational awareness early, collecting information and validating the scope of the issue with both technical and customer-facing perspectives. You maintained momentum through regular updates and clear, actionable requests to the right people, which helped speed up investigation and resolution. You fostered collaboration by clearly involving security and compliance at the right moments, and you documented your investigation and mitigation process for all stakeholders. This approach helped the team work towards stabilising services while ensuring that longer-term security improvements would be considered.",
+    "room_for_improvement": "In future drills, continuing to provide a concise summary of the situation and maintaining clearly structured communications will support strong team alignment. Additionally, refining the pace at which you check back with each function or stakeholder—for instance, confirming in more detail the effect of mitigation steps or ensuring closure on each investigative thread—can help prevent any uncertainties from persisting after key actions. Paying attention to occasional typos or ambiguous wordings can further increase clarity, and creating a brief, summarised timeline of the main findings and responses can support both stakeholder communication and post-incident review."
+  }
+}

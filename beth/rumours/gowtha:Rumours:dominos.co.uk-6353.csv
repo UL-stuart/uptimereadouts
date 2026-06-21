@@ -1,0 +1,159 @@
+datetime,player,channel,message
+2025-10-17 13:03:08,tinus,online-boutique-6353,"Hi team, let's have a mood check send an emoji to describe your mood"
+2025-10-17 13:03:12,tinus,online-boutique-6353,"I'll go first, :thumbsup:"
+2025-10-17 13:03:18,tanya,online-boutique-6353,:thumbsup:
+2025-10-17 13:03:20,tinus,online-boutique-6353,I'm excited about showing off all your hard work at todays stakeholder meeting
+2025-10-17 13:03:23,daniel,online-boutique-6353,":skull: knackered, had a few too many late nights this week"
+2025-10-17 13:03:26,shay,online-boutique-6353,:rainbow:
+2025-10-17 13:03:30,hamed,online-boutique-6353,living the dream :smile:
+2025-10-17 13:03:34,bez,online-boutique-6353,:smirk: im excited to see the show too
+2025-10-17 13:03:36,tinus,online-boutique-6353,shouldn't you be prepping for the meeting 
+2025-10-17 13:03:39,bez,online-boutique-6353,:sweat_smile: i am indeed I'll leave you lot to it
+2025-10-17 13:03:41,shay,online-boutique-6353,hang in there @daniel its gonne be the weekend sooner or later :joy:
+2025-10-17 13:03:44,tinus,online-boutique-6353,I should get on with my prep too have a good day team
+2025-10-17 13:03:45,daniel,online-boutique-6353,@shay strict diet of energy drink for me today lol
+2025-10-17 13:03:48,daniel,online-boutique-6353,hope the presentation goes well @tinus
+2025-10-17 13:03:50,tanya,online-boutique-6353,:raised_hands:
+2025-10-17 13:04:05,UptimeLabs,online-boutique-6353,"Welcome to Rumours, remember communication is key to diagnose the problem.
+
+ *Use `/help` at any time for a list of useful links and commands*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin Start button"
+2025-10-17 13:05:03,PLAYER,online-boutique-6353,Clicked Start button
+2025-10-17 13:05:04,UptimeLabs,online-boutique-6353,":alarm_clock: - You have 20 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-10-17 13:05:07,tinus,online-boutique-6353,"Hey team, I'm texting from the board room - kinda embarrassing but in my demo to the board, I tried to add a pair of Aviator sunglasses to the shopping cart and I got a ?http 500?"
+2025-10-17 13:05:09,tinus,online-boutique-6353,"I've bought some time but need this be able to do this demo if we can lets get this sorted in the next 20 minutes.
+"
+2025-10-17 13:05:12,tinus,online-boutique-6353,Metrics
+2025-10-17 13:05:14,tanya,online-boutique-6353,"uh oh, those Aviators are top sellers due to the new Top Gun movie...It's size up the issue time Gowtham Kumar Reddy B"
+2025-10-17 13:05:17,shay,online-boutique-6353,Come on this can't be happening!
+2025-10-17 13:05:19,tinus,online-boutique-6353,"I'm in this meeting so, wont be able to help but I trust that you all can get this fixed asap, just @ me if you need anything"
+2025-10-17 13:05:22,shay,online-boutique-6353,ok looking into this now
+2025-10-17 13:06:02,PLAYER,online-boutique-6353,"Hi Tanya,"
+2025-10-17 13:06:32,PLAYER,online-boutique-6353,sev 1
+2025-10-17 13:06:32,PLAYER,business-comms-6353,*Incident Number INC100024:* sev 1
+2025-10-17 13:06:32,UptimeLabs,online-boutique-6353,:star: Incident record created
+2025-10-17 13:06:34,UptimeLabs,online-boutique-6353,:star: Send first comms in first 5 minutes
+2025-10-17 13:06:47,Bez,business-comms-6353,what is the issue?
+2025-10-17 13:06:55,PLAYER,online-boutique-6353,Tanya i just created incident
+2025-10-17 13:07:13,PLAYER,business-comms-6353,Hi Bez
+2025-10-17 13:07:17,Bez,business-comms-6353,what sev 1 do we have going on? can i get a description on the incident please
+2025-10-17 13:07:23,PLAYER,business-comms-6353,we are looking into issue
+2025-10-17 13:07:34,Bez,business-comms-6353,What is the issue?
+2025-10-17 13:07:45,PLAYER,business-comms-6353,one of the product is not available
+2025-10-17 13:07:53,Bez,business-comms-6353,"thats not good, whats the customer impact on this?"
+2025-10-17 13:07:53,UptimeLabs,online-boutique-6353,:star: Qualify the problem
+2025-10-17 13:07:57,PLAYER,business-comms-6353,we are fixing the issue
+2025-10-17 13:08:02,Bez,business-comms-6353,as a sev 1 is this global?
+2025-10-17 13:08:11,Bez,business-comms-6353,whats the impact on sales
+2025-10-17 13:08:35,Tinus,online-boutique-6353,we need to look into this asap
+2025-10-17 13:08:40,PLAYER,online-boutique-6353,Shay pls we have logs
+2025-10-17 13:08:49,Tinus,online-boutique-6353,this isnt looking good for us in this sales meeting
+2025-10-17 13:08:58,Shay,online-boutique-6353,yes i will take a look into the logs now
+2025-10-17 13:09:40,PLAYER,online-boutique-6353,But i am to add this product
+2025-10-17 13:09:40,Shay,online-boutique-6353,"Not seeing any errors in logs atm, i will take a closer look into each service to double check"
+2025-10-17 13:09:55,Tinus,online-boutique-6353,i cant seem to add any products now
+2025-10-17 13:10:07,Bez,business-comms-6353,update please?
+2025-10-17 13:10:28,UptimeLabs,online-boutique-6353,:bulb: Asking questions to validate impact of the problem
+2025-10-17 13:10:49,Shay,online-boutique-6353,I see no errors in any of the logs
+2025-10-17 13:10:50,PLAYER,online-boutique-6353,Any one reconstruct the issue
+2025-10-17 13:10:54,Shay,online-boutique-6353,let me replicate
+2025-10-17 13:10:55,UptimeLabs,online-boutique-6353,:star: Reproduces the incident
+2025-10-17 13:11:02,Shay,online-boutique-6353,The site is operating fine for me
+2025-10-17 13:11:19,Tinus,online-boutique-6353,what are the customers saying Gowtham
+2025-10-17 13:11:20,PLAYER,online-boutique-6353,can you please check for geo-location
+2025-10-17 13:11:54,PLAYER,online-boutique-6353,Bob can you pls lets know customers facing issue
+2025-10-17 13:11:57,Bob,online-boutique-6353,I will take a look into the reports for you now
+2025-10-17 13:11:58,UptimeLabs,online-boutique-6353,:star: Asking questions to validate impact of the problem
+2025-10-17 13:12:15,Bob,online-boutique-6353,"Seems there is no reports on this issue at all, sales are normal and customers see no issues"
+2025-10-17 13:12:26,UptimeLabs,online-boutique-6353,:bulb: keep the business informed regularly
+2025-10-17 13:12:29,PLAYER,online-boutique-6353,Tinus no issue from the customers
+2025-10-17 13:12:34,UptimeLabs,online-boutique-6353,:star: Attempt to replicate the issue
+2025-10-17 13:12:38,Bez,business-comms-6353,I need updates in this channel
+2025-10-17 13:12:48,Tinus,online-boutique-6353,Im still getting this issue
+2025-10-17 13:12:53,Tinus,online-boutique-6353,we need a fix for this asap
+2025-10-17 13:13:02,Tinus,online-boutique-6353,this sales call is important and we can delay it anymore
+2025-10-17 13:13:20,PLAYER,online-boutique-6353,Tinus which env are you using for demo
+2025-10-17 13:13:48,Tinus,online-boutique-6353,"Im using the production environment, i accessed it through the same link all customers use"
+2025-10-17 13:13:54,Tinus,online-boutique-6353,i will double check
+2025-10-17 13:13:55,PLAYER,online-boutique-6353,Bob can you come with sales impact
+2025-10-17 13:14:11,Bob,online-boutique-6353,As i said no customer is reporting this issue and sales are healthy
+2025-10-17 13:14:21,PLAYER,online-boutique-6353,Daniel Hamed S can you pls look into issue
+2025-10-17 13:14:22,Bob,online-boutique-6353,i dont think this is impacting anyone but tinus
+2025-10-17 13:14:33,Tinus,online-boutique-6353,yes its the same link that customers use
+2025-10-17 13:14:39,Tinus,online-boutique-6353,its working on my phone but not my laptop
+2025-10-17 13:14:48,Tinus,online-boutique-6353,i cant do the presentation on my phone
+2025-10-17 13:14:55,Daniel,online-boutique-6353,checking now
+2025-10-17 13:15:01,Hamed,online-boutique-6353,i will take a look at the infra
+2025-10-17 13:15:14,PLAYER,online-boutique-6353,any code changes today
+2025-10-17 13:15:18,UptimeLabs,online-boutique-6353,:star: Check changes done to the platform
+2025-10-17 13:15:23,Daniel,online-boutique-6353,"nothing on my end, could this be a access thing to do with tinus's account?"
+2025-10-17 13:15:45,Shay,online-boutique-6353,"here are the chanegs made today:
+<https://uptime-labs.atlassian.net/wiki/spaces/ULPUBLIC/pages/1113292847>"
+2025-10-17 13:15:51,Hamed,online-boutique-6353,infra is healthy
+2025-10-17 13:16:04,Hamed,online-boutique-6353,"not seeing any issues on our end, it seems to be tinus's device with the issue"
+2025-10-17 13:16:27,Bez,business-comms-6353,I need an update to inform investors now!
+2025-10-17 13:16:32,PLAYER,online-boutique-6353,Tanya you have made CHG89360
+2025-10-17 13:16:39,PLAYER,online-boutique-6353,can you roll back this
+2025-10-17 13:16:47,UptimeLabs,online-boutique-6353,:star: Restoration over root cause analysis
+2025-10-17 13:16:53,Bez,business-comms-6353,"This is not acceptable, we have no information on this sev 1 in business comms"
+2025-10-17 13:17:01,UptimeLabs,online-boutique-6353,:bulb: Be clear about what the issue is when communicating with stakeholders
+2025-10-17 13:17:04,PLAYER,online-boutique-6353,might be the issue
+2025-10-17 13:17:12,Tanya,online-boutique-6353,rolling back now
+2025-10-17 13:17:16,PLAYER,online-boutique-6353,yes
+2025-10-17 13:17:22,Hamed,online-boutique-6353,this issue doesnt seem to be change related
+2025-10-17 13:17:36,Hamed,online-boutique-6353,we have established its related to tinus's device
+2025-10-17 13:17:43,Daniel,online-boutique-6353,i agree
+2025-10-17 13:17:48,Tanya,online-boutique-6353,rollback complere
+2025-10-17 13:17:48,PLAYER,online-boutique-6353,Tinus i think we have issue with resolution done we are fixing it
+2025-10-17 13:18:11,PLAYER,online-boutique-6353,Tinus can you pls confirm is it working
+2025-10-17 13:18:15,Bez,online-boutique-6353,"Move to business comms and give me updates now, this is a joke. as a sev 1 incident we need updates frequently!!"
+2025-10-17 13:18:22,PLAYER,online-boutique-6353,Tanya thank you
+2025-10-17 13:18:42,Bez,online-boutique-6353,i have investors asking tonnes of questions and i look like a fool who cant answer any
+2025-10-17 13:18:49,Tinus,online-boutique-6353,still not working
+2025-10-17 13:19:06,PLAYER,business-comms-6353,Bez we identified the issuefor the fix we have rollback the changes
+2025-10-17 13:19:07,Tinus,online-boutique-6353,issue is still the same and isnt working
+2025-10-17 13:19:20,Bez,business-comms-6353,what was the cause?
+2025-10-17 13:19:46,Hamed,online-boutique-6353,"this really isnt a change related issue, there would be some indication on the platform if there was"
+2025-10-17 13:19:57,PLAYER,online-boutique-6353,Shay CHG89358 can you roll back it
+2025-10-17 13:20:01,Shay,online-boutique-6353,rolling back now
+2025-10-17 13:20:13,Shay,online-boutique-6353,"rollback complete, how is it @tinus ?"
+2025-10-17 13:20:19,Tinus,online-boutique-6353,testing now
+2025-10-17 13:20:28,Tinus,online-boutique-6353,"Nope, issue persists"
+2025-10-17 13:20:36,PLAYER,business-comms-6353,there is ux deploymnent causing issue
+2025-10-17 13:20:40,UptimeLabs,online-boutique-6353,:star: Formally assign criticality level to the incident
+2025-10-17 13:21:02,Bez,business-comms-6353,what deployment caused it? is this resolved?
+2025-10-17 13:21:05,UptimeLabs,online-boutique-6353,:alarm_clock: - You have less than 4 minutes. You can type `/help` if you need any reminders.
+2025-10-17 13:21:06,PLAYER,online-boutique-6353,critical
+2025-10-17 13:21:07,PLAYER,business-comms-6353,*Incident Number INC100047:* critical
+2025-10-17 13:21:25,PLAYER,online-boutique-6353,Daniel can you roll back your chages
+2025-10-17 13:21:29,Daniel,online-boutique-6353,rolling back change now
+2025-10-17 13:21:40,Daniel,online-boutique-6353,i have rolled back all of my changes now
+2025-10-17 13:21:51,Tinus,online-boutique-6353,checking
+2025-10-17 13:22:08,Tinus,online-boutique-6353,"ok this is still not working, hamed is correct its not the changes"
+2025-10-17 13:22:31,Tinus,online-boutique-6353,can we come up with working theory's that will actually help
+2025-10-17 13:22:49,PLAYER,online-boutique-6353,Tinus can you pls delete the cash memory
+2025-10-17 13:22:54,PLAYER,online-boutique-6353,and try once
+2025-10-17 13:22:55,Tinus,online-boutique-6353,sure i will give that a try
+2025-10-17 13:23:05,UptimeLabs,online-boutique-6353,:alarm_clock: - You have less than 2 minutes. You can type `/help` if you need any reminders.
+2025-10-17 13:23:38,PLAYER,business-comms-6353,Bez we have roll back all the deployments but still issue persist
+2025-10-17 13:23:45,tinus,online-boutique-6353,Damn! thats it
+2025-10-17 13:23:47,tinus,online-boutique-6353,"Great Ive got to do my presentation now, thanks for figuring this out so quickly. @daniel @shay can you look in to a cache busting solution?"
+2025-10-17 13:23:49,shay,online-boutique-6353,it was the cache! sure we can do that
+2025-10-17 13:23:51,daniel,online-boutique-6353,"no worries boss, at least its not a significat issue"
+2025-10-17 13:23:52,daniel,online-boutique-6353,good luck with the presentation!
+2025-10-17 13:23:53,tanya,online-boutique-6353,yes good luck @tinus
+2025-10-17 13:23:55,PLAYER,business-comms-6353,our team is working on it
+2025-10-17 13:23:56,shay,online-boutique-6353,good luck @tinus!
+2025-10-17 13:24:07,UptimeLabs,online-boutique-6353,"Thank you for playing, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit I am ready when you want to start. I am ready button"
+2025-10-17 13:24:30,PLAYER,business-comms-6353,Bez issue with tany local issue
+2025-10-17 13:24:38,PLAYER,business-comms-6353,issue is resolved
+2025-10-17 13:24:54,PLAYER,online-boutique-6353,that's great
+2025-10-17 13:24:56,UptimeLabs,online-boutique-6353,:star: Confirm resolution with the business
+2025-10-17 13:24:56,PLAYER,online-boutique-6353,Clicked Start_feedback button
+2025-10-17 13:25:12,UptimeLabs,online-boutique-6353,:star: Escalating when required
+2025-10-17 13:25:47,UptimeLabs,online-boutique-6353,:star: Reviewed changes
+2025-10-17 13:25:48,UptimeLabs,online-boutique-6353,:star: Check changes done to the platform
+2025-10-17 13:27:22,UptimeLabs,online-boutique-6353,Submission successful

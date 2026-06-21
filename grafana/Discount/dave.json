@@ -1,0 +1,35 @@
+{
+  "output": {
+    "learning_outcomes_achieved": [
+      [
+        "Size Up",
+        "Fluent",
+        "You identified the issue as customer-impacting and referenced both direct customer reports and business communication, confirming the issue was global and impacting customers’ ability to access the site. You communicated scope, severity, and status transparently and promptly to both technical and business teams."
+      ],
+      [
+        "Differentiate Legitimate Load vs Security Threat",
+        "Fluent",
+        "You explicitly questioned if the traffic might be suspicious rather than legitimate, asked for expected traffic/capacity context, and used reported traffic and error patterns (503s, 504s, and 429s) as evidence of potentially malicious activity. You communicated this possibility and brought the team into the investigation."
+      ],
+      [
+        "Diagnose",
+        "Fluent",
+        "You repeatedly requested and discussed relevant diagnostic evidence, interpreted log details with the team, concluded the incident was security-related based on error patterns and IP behaviour, and explicitly requested mitigation (blocking the source) to validate your conclusion."
+      ],
+      [
+        "Mitigation",
+        "Fluent",
+        "You directed and reviewed the mitigation actions (blocking the suspicious IP), requested confirmation of service improvement after mitigation, and acknowledged system recovery as the incident stabilised."
+      ],
+      [
+        "Security Protocol and Stakeholder Constraints",
+        "Fluent",
+        "You involved compliance and security roles once a security threat was identified, managed internal and external communication constraints appropriately, and clearly communicated a plan to handle disclosure and restoration, delegating specific communication to compliance and support as needed."
+      ]
+    ],
+    "session_id": "1111",
+    "feedback": "Your responses align well with clear, concise, and factual communication. Spelling, punctuation, and grammar throughout your messages were correct, ensuring your intent was always clear. Your word choice and structure were straightforward, aiding comprehension for both technical and business audiences. You maintained engagement through proactive questioning and regular status updates, making the thread informative to all stakeholders. Your delivery was considerate of the context and audience, striking an appropriate balance between technical depth and necessary clarity for non-technical participants. You structured updates to align with business expectations, which supported cooperative problem solving and mutual understanding.",
+    "did_well": "You demonstrated strong situational awareness and coordinated the team effectively from the beginning of the incident. You balanced technical investigation with ongoing business communication, ensuring all stakeholders were informed without delay. You made regular, contextually relevant requests for additional data, maintained focus on customer impact, and escalated appropriately to security and compliance roles once a threat was identified. Your willingness to work across team boundaries and your diligence in confirming recovery actions contributed positively to the outcome. Continue this thoroughness and cross-team collaboration in future scenarios.",
+    "room_for_improvement": "In future drills, consider explicitly confirming restoration with customer-facing teams or directly incorporating metrics showing improvement after mitigation actions, which may further reinforce confidence in the system's recovery. It may also be helpful to more proactively request quantification of financial impact earlier in the incident, supporting more data-driven business updates. Maintaining or even increasing the clarity of internal action plans once a threat is identified could aid mutual understanding within the team. Exploring follow-up actions or longer-term preventative measures at the tail end of the incident could further demonstrate thorough incident handling."
+  }
+}

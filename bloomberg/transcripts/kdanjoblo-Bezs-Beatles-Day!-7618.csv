@@ -1,0 +1,107 @@
+datetime,player,channel,message
+2026-02-04 13:09:49,tinus,online-boutique-7618,Hey everyone. I'm pumped today about our flash sale
+2026-02-04 13:09:55,tinus,online-boutique-7618,You know it's been 56 years since the Beatles released Abbey Road right? My favourite album
+2026-02-04 13:10:00,tanya,online-boutique-7618,56 years already?? Wow that makes me feel old...
+2026-02-04 13:10:05,tinus,online-boutique-7618,Indeed! We're celebrating today by promoting a flash sale on retro items from 1969
+2026-02-04 13:10:13,uptimelabs,online-boutique-7618,"Welcome to Bezs Beatles Day, remember communication is key to diagnose the problem.
+
+ *Access game links by pressing the Uptime Labs Logo in the top right of the screen*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin"
+2026-02-04 13:12:02,tinus,online-boutique-7618,We're a step closer to allowing folks to pay for items from the 1960s with Bitcoin thanks to Daniel!
+2026-02-04 13:12:08,daniel,online-boutique-7618,Think of it like time travelling!
+2026-02-04 13:12:13,hamed,online-boutique-7618,Wow good work Daniel! Looking forward to seeing it in action in prod
+2026-02-04 13:12:19,hamed,online-boutique-7618,How's the test-driven development going?
+2026-02-04 13:12:24,daniel,online-boutique-7618,TDDs going well. We are as solid as a rock! Though don't ask me what the Liskov Substitution Principle is...
+2026-02-04 13:12:31,shay,online-boutique-7618,"erm - funny you should say that Daniel, I'm just testing my checkout service change in prod and I can't complete the payment - something's up"
+2026-02-04 13:12:38,shay,online-boutique-7618,"I hope my checkout service change is all good. Can someone check its not just me? And before you ask, yes I've cleared my cookies"
+2026-02-04 13:12:44,tanya,online-boutique-7618,Sorry Daniel it's not looking good on my end either
+2026-02-04 13:12:47,tinus,online-boutique-7618,Uh oh...here we go again
+2026-02-04 13:12:51,tinus,online-boutique-7618,"@kdanjo-bloomberg.net can you ""Size up the Issue"" please and keep us informed"
+2026-02-04 13:12:53,bob,online-boutique-7618,From what I can see it looks like we are still getting orders through
+2026-02-04 13:12:58,tinus,online-boutique-7618,Get this sorted ASAP!!!
+2026-02-04 13:13:37,PLAYER,online-boutique-7618,I get an Payment Unavailable error
+2026-02-04 13:13:40,uptimelabs,online-boutique-7618,:star: Reproduces the incident
+2026-02-04 13:13:43,tanya,online-boutique-7618,"Just got a message from my cousin in London, she can't buy any of the new Beatles merch either. Says her payment failed."
+2026-02-04 13:14:01,bob,online-boutique-7618,I'm noticing the failures seem concentrated in Europe. Looks like the UK is particularly affected.
+2026-02-04 13:14:07,PLAYER,online-boutique-7618,How are the orders going through without payment. Is it only affecting some orders
+2026-02-04 13:14:14,shay,online-boutique-7618,I will start checking the logs now
+2026-02-04 13:14:19,daniel,online-boutique-7618,Could it be your checkout change again @Shay? It broke the platform last week!
+2026-02-04 13:14:29,PLAYER,online-boutique-7618,Can you route Europe orders through other country gateways
+2026-02-04 13:14:31,shay,online-boutique-7618,The checkout service logs are healthy and the service is working as intended
+2026-02-04 13:14:42,shay,online-boutique-7618,"I see 504 HTTP errors in the payment service, which means the application is failing to serve the requests"
+2026-02-04 13:15:03,bob,online-boutique-7618,"Order completion rates are down for UK transactions, but other regions seem unaffected and are processing normally."
+2026-02-04 13:15:03,shay,online-boutique-7618,"The 504 errors from the payment service are only appearing for UK transaction IDs, which aligns with the failed payments."
+2026-02-04 13:15:06,PLAYER,online-boutique-7618,Can you bounce the payment service without affecting other regions
+2026-02-04 13:15:14,tanya,online-boutique-7618,"Rerouting would require a config change and a redeploy, but the underlying payment service latency issue would still need to be addressed."
+2026-02-04 13:15:26,tanya,online-boutique-7618,"Restarting the payment service is possible and should be safe since resource usage is normal, but the elevated latency and 504s are only impacting UK transactions."
+2026-02-04 13:15:56,PLAYER,online-boutique-7618,Can the UK instance for the service be bounced
+2026-02-04 13:16:06,tanya,online-boutique-7618,"We can bounce just the UK instance of the payment service since it's isolated, and resource usage is within normal limits."
+2026-02-04 13:16:19,PLAYER,online-boutique-7618,Go for it. 
+2026-02-04 13:16:28,tanya,online-boutique-7618,I'm initiating a restart of the UK payment service instance now and will monitor its health checks closely.
+2026-02-04 13:17:04,PLAYER,online-boutique-7618,Keep an eye on the order traffic
+2026-02-04 13:17:13,bob,online-boutique-7618,I'm monitoring order volumes and will report any changes in UK transaction success rates after the restart.
+2026-02-04 13:17:30,PLAYER,online-boutique-7618,Which other regions are placing orders at the moment and where is it working as expected
+2026-02-04 13:17:33,uptimelabs,online-boutique-7618,:star: Asking questions to validate impact of the problem
+2026-02-04 13:17:42,bob,online-boutique-7618,"Order traffic from the US, Germany, and France is steady and those regions are processing payments successfully."
+2026-02-04 13:17:58,PLAYER,online-boutique-7618,Is the restart complete
+2026-02-04 13:18:02,PLAYER,online-boutique-7618,Whats the ETA
+2026-02-04 13:18:04,uptimelabs,online-boutique-7618,:star: Manage actions and timings
+2026-02-04 13:18:07,tanya,online-boutique-7618,"The UK payment service instance has restarted and is now passing health checks, but I'll keep monitoring for any further latency spikes."
+2026-02-04 13:18:16,tanya,online-boutique-7618,"The UK payment service is stable post-restart, so if the trend holds, we should see normal transaction flow within a few minutes."
+2026-02-04 13:18:32,PLAYER,online-boutique-7618,Let me try and reproduce again. Should i try to reload the webpage before trying again
+2026-02-04 13:18:43,daniel,online-boutique-7618,"Yes, please reload the page to ensure you're not seeing a cached error before attempting the payment again."
+2026-02-04 13:19:08,PLAYER,online-boutique-7618,Still getting the same error
+2026-02-04 13:19:17,tanya,online-boutique-7618,"Despite the restart, the payment service health check in the UK is still returning 504s and latency remains high."
+2026-02-04 13:19:17,shay,online-boutique-7618,I'm still seeing 504 errors in the payment service logs for UK transactions after the restart.
+2026-02-04 13:19:35,PLAYER,online-boutique-7618,Lets route the orders via Germany or France
+2026-02-04 13:19:44,tanya,online-boutique-7618,I'll update the routing configuration to direct UK orders through the Germany and France payment gateways and redeploy the changes.
+2026-02-04 13:19:54,PLAYER,online-boutique-7618,How long is that expected to take
+2026-02-04 13:20:04,tanya,online-boutique-7618,The routing config update and redeploy should take about five to ten minutes to complete.
+2026-02-04 13:20:51,PLAYER,online-boutique-7618,Are we seeing any successful orders in UK at the moment
+2026-02-04 13:20:59,bob,online-boutique-7618,"Currently, there are no successful UK orders coming through since the issue began."
+2026-02-04 13:25:06,PLAYER,online-boutique-7618,Have we tried bouncing other related services
+2026-02-04 13:25:15,tanya,online-boutique-7618,"So far, only the UK payment service instance has been restarted; no other related services have been bounced yet."
+2026-02-04 13:25:24,PLAYER,online-boutique-7618,Can we put in a banner notifying UK users that we are expreiencing an issue
+2026-02-04 13:25:31,daniel,online-boutique-7618,I recommend adding a temporary banner for UK users to inform them of the ongoing payment issue while we work on a fix.
+2026-02-04 13:25:43,PLAYER,online-boutique-7618,Lets bounce checkout service
+2026-02-04 13:25:47,uptimelabs,online-boutique-7618,:star: Restoration over root cause analysis
+2026-02-04 13:25:52,tanya,online-boutique-7618,I'm restarting the UK checkout service instance now and will monitor its health status closely.
+2026-02-04 13:28:04,PLAYER,online-boutique-7618,who is working on the banner
+2026-02-04 13:28:13,daniel,online-boutique-7618,I'm coordinating with the frontend team to implement the UK-specific incident banner now.
+2026-02-04 13:29:14,PLAYER,online-boutique-7618,Whats the ETA for restart
+2026-02-04 13:29:22,tanya,online-boutique-7618,"The UK checkout service restart should complete within the next two to three minutes, and I'll confirm once it's healthy."
+2026-02-04 13:30:02,PLAYER,online-boutique-7618,Anything different for the UK instance of the services?
+2026-02-04 13:30:11,shay,online-boutique-7618,"The 504 errors are only affecting UK transaction IDs, and this pattern started right after the recent deployment."
+2026-02-04 13:30:11,PLAYER,online-boutique-7618,Any errors being seen in the logs for these servcies so far
+2026-02-04 13:30:21,shay,online-boutique-7618,"Checkout service logs look clean and healthy so far, but the Payment service is returning 504 errors upstream."
+2026-02-04 13:30:29,PLAYER,online-boutique-7618,roll back the last deployment
+2026-02-04 13:30:32,shay,online-boutique-7618,I will rollback my checkout change right away
+2026-02-04 13:30:39,shay,online-boutique-7618,Rollback complete!
+2026-02-04 13:30:42,bob,online-boutique-7618,"Hmm, customer reports are still coming in at the same rate"
+2026-02-04 13:30:50,bob,online-boutique-7618,The failure pattern hasn't changed - still 100% failure in the UK
+2026-02-04 13:31:00,tanya,online-boutique-7618,Something else must be causing this
+2026-02-04 13:31:05,tinus,online-boutique-7618,We need this fixed!
+2026-02-04 13:31:12,PLAYER,online-boutique-7618,still the same error
+2026-02-04 13:31:23,bob,online-boutique-7618,Metrics show the UK payment failures are still at 100% even after the rollback.
+2026-02-04 13:31:23,daniel,online-boutique-7618,"Since Shay's rollback didn't help, maybe we should look at my change, but my code was thoroughly tested and shouldn't affect this."
+2026-02-04 13:31:41,PLAYER,online-boutique-7618,Do we need another bounce after the rollback
+2026-02-04 13:31:45,PLAYER,online-boutique-7618,Lets bounce again
+2026-02-04 13:31:50,tanya,online-boutique-7618,"A bounce after the rollback likely won't help since the issue persisted through the last restart, but I can do it if you want."
+2026-02-04 13:31:59,tanya,online-boutique-7618,I'm restarting the UK checkout and payment services again now and will report back once they're up.
+2026-02-04 13:32:07,PLAYER,online-boutique-7618,Any other recent rollouts?
+2026-02-04 13:32:09,uptimelabs,online-boutique-7618,"Drill Wrap-Up
+
+Thanks for playing! This session is now closed.
+
+Please return to your Uptime Labs tab to review your performance and complete the Retrospective & Feedback form.
+
+If you've already closed the tab, you can reopen the form using the button below."
+2026-02-04 13:32:10,uptimelabs,online-boutique-7618,:star: Check changes done to the platform
+2026-02-04 13:32:16,tanya,online-boutique-7618,"Yes, AdService and PaymentDatabase were both recently deployed to production as part of scheduled updates."
+2026-02-04 13:32:55,PLAYER,online-boutique-7618,rollback those deployments too
+2026-02-04 13:32:57,uptimelabs,online-boutique-7618,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/5/7618/feedback"
+2026-02-04 13:33:02,tanya,online-boutique-7618,"Okay, rolling back AdService now"
+2026-02-04 13:33:02,tanya,online-boutique-7618,"Rollback complete. This change was just cosmetic, so it's unlikely to be the cause."

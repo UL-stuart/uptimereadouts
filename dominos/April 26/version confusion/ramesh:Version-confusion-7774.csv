@@ -1,0 +1,98 @@
+datetime,player,channel,diff,message
+19/02/2026 14:03,uptimelabs,online-boutique-7774,,"Welcome to Version Confusion, the responsibility is on you to size up the problem.
+
+? *Use `/help` at any time for a list of useful links and commands*
+ ? *Use `/incident` to create an incident record*
+
+Once youre ready just click start to begin"
+19/02/2026 14:09,tanya,online-boutique-7774,5.62,Hey guys im seeing an issue with the website loading slowly
+19/02/2026 14:09,tanya,online-boutique-7774,5.63,Anyone else experaning this?
+19/02/2026 14:09,shay,online-boutique-7774,5.67,No all ok for me
+19/02/2026 14:09,daniel,online-boutique-7774,5.68,No issue for me
+19/02/2026 14:09,daniel,online-boutique-7774,5.70,What browser and version of it are you using Tanya?
+19/02/2026 14:09,tanya,online-boutique-7774,5.73,Im using chrome and let me check the version
+19/02/2026 14:09,daniel,online-boutique-7774,5.77,Ok if it is V105.0 this is a recorded bug with a ticket in the backlog
+19/02/2026 14:09,tanya,online-boutique-7774,5.78,Yeah it is V105.0
+19/02/2026 14:09,tanya,online-boutique-7774,5.80,Should we not raise an incident for this? I know I can update the version and it will stop effecting me.
+19/02/2026 14:09,tanya,online-boutique-7774,5.83,But could this not be effecting customers?
+19/02/2026 14:09,daniel,online-boutique-7774,5.87,Had a look at the market share of people using this version it is only at 0.09%
+19/02/2026 14:09,tanya,online-boutique-7774,5.93,Still not sure if it should not be an incidnt. @ramesh.matta-dominos.co.uk What do you think? 
+19/02/2026 14:10,PLAYER,online-boutique-7774,6.75,"HI @bob , May I know the impact on the issue that is reported website is loading slow ?"
+19/02/2026 14:10,uptimelabs,online-boutique-7774,6.85,:star: Asking questions to validate impact of the problem
+19/02/2026 14:10,bob,online-boutique-7774,6.95,I'll check the reports now
+19/02/2026 14:10,bob,online-boutique-7774,7.43,I do have a few reports from users complaining about timeouts and slow load times
+19/02/2026 14:10,PLAYER,online-boutique-7774,7.53,Please let me know if this is happening on all regions or only particular region?
+19/02/2026 14:11,bob,online-boutique-7774,7.77,The reports I see right now aren't coming from one specific region
+19/02/2026 14:12,daniel,online-boutique-7774,8.62,I don't see the point in raising a ticket for a simple bug
+19/02/2026 14:12,PLAYER,online-boutique-7774,8.65,May I know the impact of this on Business and Customers?
+19/02/2026 14:12,bob,online-boutique-7774,9.00,Ohh the reports is actually showing that 20% of our customers are experiencing an issue where it is taking three times as long the website to load. Seeing a few timeouts occurring as well
+19/02/2026 14:13,bob,online-boutique-7774,10.02,It appears this has been ongoing for over two weeks as the reports date that far back. I can also see that there has been a drop in sales of 10% compared to the average over a two week period
+19/02/2026 14:13,daniel,online-boutique-7774,10.55,"We logged it as a bug back then, we've just had a lot of feature work this sprint"
+19/02/2026 14:14,PLAYER,online-boutique-7774,11.35,Incident p1 website experiencing slowness impacting 20% customers
+19/02/2026 14:14,uptimelabs,online-boutique-7774,11.42,:bulb: Declare an incident.
+19/02/2026 14:14,uptimelabs,online-boutique-7774,11.42,:star: Qualify the problem
+19/02/2026 14:15,PLAYER,online-boutique-7774,12.07,Incident p2 website experiencing slowness impacting 20% customers
+19/02/2026 14:15,PLAYER,online-boutique-7774,12.17,help
+19/02/2026 14:15,uptimelabs,online-boutique-7774,12.27,Use /incident followed by (description) to formally declare an incident
+19/02/2026 14:16,PLAYER,online-boutique-7774,12.77,
+19/02/2026 14:16,uptimelabs,business-comms-7774,12.77,"*Incident Number INC100095:* P2 ""website experiencing slowness impacting 20% customers"""
+19/02/2026 14:16,uptimelabs,online-boutique-7774,12.77,:star: Incident record created
+19/02/2026 14:16,daniel,online-boutique-7774,12.85,Really dont think we need an incident. As I said we have a bug already and really need to focus on delivery of new features.
+19/02/2026 14:16,PLAYER,online-boutique-7774,13.55,"Hi Daniel, Can you please help me to analyze why this is causing ?"
+19/02/2026 14:17,PLAYER,online-boutique-7774,13.98,"HI @shay , Please analyze why the website is causing the delay?"
+19/02/2026 14:17,daniel,online-boutique-7774,14.12,I have no idea what's causing the issue
+19/02/2026 14:17,daniel,online-boutique-7774,14.30,would you like to see the ticket logged from two weeks ago?
+19/02/2026 14:17,shay,online-boutique-7774,14.43,I'll help where I can!
+19/02/2026 14:18,shay,online-boutique-7774,14.62,Want to see the changes made recently?
+19/02/2026 14:18,PLAYER,business-comms-7774,14.97,"HI @bez and @Tinus, There is a P2 issue created for website slowness impacting 20% customers, we are analysing the issue.."
+19/02/2026 14:18,uptimelabs,online-boutique-7774,15.02,:star: Formally assign criticality level to the incident
+19/02/2026 14:18,PLAYER,business-comms-7774,15.27,I will comeback in 5 mins and keep you posted
+19/02/2026 14:18,uptimelabs,online-boutique-7774,15.32,:star: Track actions and time box them
+19/02/2026 14:18,bez,business-comms-7774,15.53,Can you confirm it's a global issue?
+19/02/2026 14:19,PLAYER,online-boutique-7774,16.27,Are there any deployments happened any Scripts that are ran before this?
+19/02/2026 14:19,uptimelabs,online-boutique-7774,16.32,:star: Check changes done to the platform
+19/02/2026 14:20,shay,online-boutique-7774,16.65,Not sure about scripts but there were some deployments today
+19/02/2026 14:20,shay,online-boutique-7774,17.10,Here you go: https://uptime-labs.atlassian.net/wiki/spaces/ULPUBLIC/pages/1114341401/Version+Confusion+-+Change+Request+Logs
+19/02/2026 14:20,PLAYER,online-boutique-7774,17.10,"HI Daniel and Shay, I need update with in 2 mins immediately to root cause of this?"
+19/02/2026 14:20,daniel,online-boutique-7774,17.25,"Title 
+Slow load times for users using V105.0 of chrome
+Description
+
+User have reported the frontend as loading slowly and with quick look at there set up appears to be an issue with frontend for users using V105.0 of chrome. 
+Reporter
+User
+Components
+OB-Frontend"
+19/02/2026 14:20,daniel,online-boutique-7774,17.42,This is the ticket created
+19/02/2026 14:21,daniel,online-boutique-7774,17.77,Also where do we even begin to investigate you're the IM
+19/02/2026 14:21,tinus,online-boutique-7774,18.25,"Bez wants an update on the investigation, what do we know so far?"
+19/02/2026 14:22,PLAYER,online-boutique-7774,19.12,"HI @tanya,Daniel  , I see CHG89553 , May I know the details on this?
+"
+19/02/2026 14:23,tanya,online-boutique-7774,19.78,I believe that's Daniels change
+19/02/2026 14:23,PLAYER,online-boutique-7774,19.90,Can we roll back this CHG89553 ?
+19/02/2026 14:23,daniel,online-boutique-7774,19.95,"Yes, i was just doing some clean-up of the code"
+19/02/2026 14:23,uptimelabs,online-boutique-7774,20.00,:star: Restoration over root cause analysis
+19/02/2026 14:23,daniel,online-boutique-7774,20.18,Do you think the issue is related to my change>
+19/02/2026 14:23,daniel,online-boutique-7774,20.47,"I have no issue rolling it back, just wondering why you think it's the cause"
+19/02/2026 14:24,PLAYER,online-boutique-7774,20.65,"Yes, it could be .. Please analyze and let me know what else can impact this?"
+19/02/2026 14:24,daniel,online-boutique-7774,21.15,I'll begin the rollback first
+19/02/2026 14:24,daniel,online-boutique-7774,21.60,Rollback has been completed
+19/02/2026 14:25,PLAYER,online-boutique-7774,21.88,"HI @shay , Please check verify now after the roll back.."
+19/02/2026 14:25,PLAYER,online-boutique-7774,22.22,"HI Daniel, please verify now and let me know.."
+19/02/2026 14:25,shay,online-boutique-7774,22.22,Erm I wasn't having an issues accessing the site
+19/02/2026 14:26,PLAYER,business-comms-7774,22.68,"Yes, it is . we are trying the find the root cause.."
+19/02/2026 14:26,PLAYER,business-comms-7774,23.02,I will keep you posted in few mins..
+19/02/2026 14:26,uptimelabs,online-boutique-7774,23.22,:bulb: Restoration over root cause analysis
+19/02/2026 14:27,hamed,online-boutique-7774,23.75,"We need to focus on restoring the service to those impacted, what do we know so far?"
+19/02/2026 14:27,PLAYER,online-boutique-7774,24.05,"HI Daniel/Tanya, Is the slowness issue resolved?"
+19/02/2026 14:27,tanya,online-boutique-7774,24.45,I'm still having the slowness issue with intermittent timeouts
+19/02/2026 14:27,PLAYER,online-boutique-7774,24.47,"HI Hamed, can you please help me if there is any other issue ?"
+19/02/2026 14:28,daniel,online-boutique-7774,24.63,I never had any issues with the site
+19/02/2026 14:28,tanya,online-boutique-7774,25.17,I would like to add I'm using chrome version 105.0
+19/02/2026 14:28,PLAYER,online-boutique-7774,25.42,"HI Daniel, Slowness is observed as per Tanya. Request you to analyze the root cause.."
+19/02/2026 14:29,uptimelabs,online-boutique-7774,25.80,"Thank you for playing Version Confusion, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit start when you are ready."
+19/02/2026 14:29,PLAYER,online-boutique-7774,26.17,"Tanya, Are you saying it is only related to browser?"
+19/02/2026 14:30,uptimelabs,online-boutique-7774,26.78,Thank you for playing! The drill has been completed.
+19/02/2026 14:31,uptimelabs,online-boutique-7774,28.32,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/17/7774/feedback"

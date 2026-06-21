@@ -1,0 +1,217 @@
+datetime,player,channel,message
+2026-04-20 13:02:40,uptimelabs,online-boutique-8511,"Welcome to The Unknown Unknown, are you prepared for the challenge?
+
+ *Use `/help` at any time for a list of useful links and commands* 
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin"
+2026-04-20 13:05:37,bob,online-boutique-8511,"Hey team, getting a few reports now, looks like confusion from the customers on what they ordering?"
+2026-04-20 13:05:44,bob,online-boutique-8511,This is strange
+2026-04-20 13:05:50,bob,online-boutique-8511,Just seen a couple of reports of customers not receiving the right item on delivery
+2026-04-20 13:05:55,tinus,online-boutique-8511,Hmm? that sounds strange. @PLAYER can you take point and start sizing this up?
+2026-04-20 13:06:02,PLAYER,online-boutique-8511,Will do 
+2026-04-20 13:06:57,PLAYER,online-boutique-8511,Daniel Shay is there any issues with the ordering system where items in the cart at not matching up with what shipped?
+2026-04-20 13:06:59,shay,online-boutique-8511,Nothing as of now- What's the issue ? i can place orders without an issue
+2026-04-20 13:07:00,uptimelabs,online-boutique-8511,:star: Asking questions to validate impact of the problem
+2026-04-20 13:07:15,uptimelabs,online-boutique-8511,:bulb: Understand the problem by reproducing it
+2026-04-20 13:07:19,PLAYER,online-boutique-8511,Bob is it global or just one area 
+2026-04-20 13:07:22,bob,online-boutique-8511,Checking reports...
+2026-04-20 13:07:46,bob,online-boutique-8511,One report said the user wanted to buy 'Sunglasses' but he got 'Tank-top' in confirmation
+2026-04-20 13:07:57,bob,online-boutique-8511,Just double checked with shipping looks like the items that has been ordered are correct and we're sending the right item
+2026-04-20 13:08:02,bob,online-boutique-8511,We have currently got more than 17 complaints so far
+2026-04-20 13:08:48,bez,business-comms-8511,Do we have an issue? @PLAYER
+2026-04-20 13:09:21,PLAYER,online-boutique-8511,The pictures on the website are not mating up with the description 
+2026-04-20 13:09:23,bob,online-boutique-8511,Oh thats bad- we might have a bigge rissue
+2026-04-20 13:09:41,daniel,online-boutique-8511,We could try to halt all incoming orders but not sure on the scale of impact
+2026-04-20 13:09:47,bob,online-boutique-8511,@PLAYER Could you please discuss this with Bez?
+2026-04-20 13:10:03,PLAYER,online-boutique-8511,Daniel Shay was anything done with the website lately that could change that?
+2026-04-20 13:10:06,uptimelabs,online-boutique-8511,:star: Check changes done to the platform
+2026-04-20 13:10:13,bob,online-boutique-8511,Do we know if we are taking orders base don image or label ?
+2026-04-20 13:10:25,PLAYER,online-boutique-8511,bez something seems to be wrong with the site 
+2026-04-20 13:10:25,shay,online-boutique-8511,Here's the detailed info on each of the changes made today
+2026-04-20 13:10:26,bez,business-comms-8511,"If we're taking the wrong orders, then let's pause all incoming orders right away. We can't afford huge returns or refunds"
+2026-04-20 13:10:27,shay,online-boutique-8511,Hope this helps:https://uptime-labs.atlassian.net/wiki/external/MDI1YjRiNzUxMGEwNGVmMjkwNmU2Y2ZkNzRjZjBjMWE
+2026-04-20 13:10:37,PLAYER,online-boutique-8511,
+2026-04-20 13:10:37,uptimelabs,business-comms-8511,*Incident Number INC1021:* p2 site mismatch
+2026-04-20 13:10:37,uptimelabs,online-boutique-8511,:star: Incident record created
+2026-04-20 13:10:38,bob,online-boutique-8511,Bez dont monitor this channel
+2026-04-20 13:10:46,bez,business-comms-8511,How big is this problem?
+2026-04-20 13:11:06,bez,business-comms-8511,What's the impact? 
+2026-04-20 13:11:10,PLAYER,business-comms-8511,There is an issue with the site where pictures are not matching the description investigating this now  update in 10 min 
+2026-04-20 13:11:12,bez,online-boutique-8511,Do we know if we are taking orders based on Image or label ?
+2026-04-20 13:11:13,uptimelabs,online-boutique-8511,:star: Qualify the problem
+2026-04-20 13:11:13,uptimelabs,online-boutique-8511,:star: Track actions and time box them
+2026-04-20 13:11:26,PLAYER,online-boutique-8511,bob how big of an issue is this now 
+2026-04-20 13:11:27,bez,business-comms-8511,"Sorry , this is concerning"
+2026-04-20 13:11:36,bez,business-comms-8511,Please update me here
+2026-04-20 13:11:45,bob,online-boutique-8511,The returns
+2026-04-20 13:11:49,bob,online-boutique-8511,shipping charges
+2026-04-20 13:11:54,bob,online-boutique-8511,everythign should be taken by us
+2026-04-20 13:12:07,bob,online-boutique-8511,every item we are dispatchign will be wrong order
+2026-04-20 13:13:03,PLAYER,online-boutique-8511,Bob Can we please stop processing orders for now and update the site to include an apology for the confusion and we are working on a solution 
+2026-04-20 13:13:05,bob,online-boutique-8511,"Yes, Dan or app team can do it"
+2026-04-20 13:13:21,PLAYER,online-boutique-8511,Daniel Shay Can we please stop processing orders for now and update the site to include an apology for the confusion and we are working on a solution 
+2026-04-20 13:13:22,daniel,online-boutique-8511,"Whenever needed, we can switch the site to maintenance mode via a feature-flag update in the config repo. It cleanly pauses new orders once business gives the go-ahead"
+2026-04-20 13:13:24,uptimelabs,online-boutique-8511,:star: Restoration over root cause analysis
+2026-04-20 13:13:40,PLAYER,online-boutique-8511,daniel yes please for now 
+2026-04-20 13:14:12,daniel,online-boutique-8511,Getting up maintenance banner on the website...
+2026-04-20 13:14:44,PLAYER,online-boutique-8511,Daniel Shay hamed tanya I don't see any changes that could lead to this issue is there anything you can see that could of caused this?
+2026-04-20 13:14:52,daniel,online-boutique-8511,Ok the website now displays a maintenance banner
+2026-04-20 13:14:57,daniel,online-boutique-8511,@PLAYER How does it look now?
+2026-04-20 13:15:00,shay,online-boutique-8511,We can dig logs
+2026-04-20 13:15:14,hamed,online-boutique-8511,I am currently away should be back in 5
+2026-04-20 13:15:16,PLAYER,business-comms-8511,All orders appear to be wrong at this point still working on a root cause and if that is actually true 
+2026-04-20 13:15:22,bez,business-comms-8511,@PLAYER Now that we are under maintenance. Let's prioritize resolution
+2026-04-20 13:15:47,PLAYER,online-boutique-8511,daniel site is down thanks
+2026-04-20 13:15:48,daniel,online-boutique-8511,"Yes, looking into logs now"
+2026-04-20 13:15:53,daniel,online-boutique-8511,I can take a look into our services now
+2026-04-20 13:16:12,daniel,online-boutique-8511,We don't have any alerts in the system
+2026-04-20 13:16:18,daniel,online-boutique-8511,"All apps looks healthy, no errors at all"
+2026-04-20 13:16:26,PLAYER,online-boutique-8511,tinus anything we should say on your side of things as an official statement?
+2026-04-20 13:16:26,shay,online-boutique-8511,Even i don't see any issue
+2026-04-20 13:16:35,daniel,online-boutique-8511,Must be network or platform issue.
+2026-04-20 13:16:44,tinus,online-boutique-8511,"No, lets focus on resolution faster"
+2026-04-20 13:16:58,PLAYER,online-boutique-8511,Daniel Shay  is the description or picture right on the  site when it comes to ordering?
+2026-04-20 13:17:12,daniel,online-boutique-8511,Not sure on it -
+2026-04-20 13:17:23,daniel,online-boutique-8511,T\Literally there are no errors or even warning
+2026-04-20 13:17:27,daniel,online-boutique-8511,can we bring platfoirms team
+2026-04-20 13:17:31,PLAYER,online-boutique-8511,tanya anything you can see on your side as to the picture or discriptions
+2026-04-20 13:17:33,uptimelabs,online-boutique-8511,:star: Reproduces the incident
+2026-04-20 13:17:36,tanya,online-boutique-8511,Checking now...
+2026-04-20 13:17:50,PLAYER,online-boutique-8511,hamed are you back yet and can you help tanya 
+2026-04-20 13:17:55,tanya,online-boutique-8511,no memory or cpu spikes all looks good from Infra nothing to highlight
+2026-04-20 13:17:57,tanya,online-boutique-8511,
+2026-04-20 13:18:03,tanya,online-boutique-8511,"Although I don't have any data, I strongly believe this issue originates from the application rather than the platform."
+2026-04-20 13:18:11,tanya,online-boutique-8511,"No spikes or response time deviations, app owners must check configuration."
+2026-04-20 13:18:20,tanya,online-boutique-8511,"This is not an infra problem. If users are seeing mismatched products, someone could be messing with our system otherwise its an application/service-level bug"
+2026-04-20 13:18:26,tanya,online-boutique-8511,But it's not a platform issue.
+2026-04-20 13:18:50,hamed,online-boutique-8511,"Yeah , we cannot play a blame game if the issue is in platform or App - We have to check and deep dive the issue"
+2026-04-20 13:19:01,PLAYER,online-boutique-8511,tanya can you please look into any logs that you can see?
+2026-04-20 13:19:15,tanya,online-boutique-8511,I believe the system assumes its is working as expected
+2026-04-20 13:19:38,bez,business-comms-8511,@PLAYER - Do we have everyone on the chat to wor kon inc
+2026-04-20 13:19:56,PLAYER,online-boutique-8511,hamed tanya Please try and do an order or check that side of things to see how it is working
+2026-04-20 13:19:59,hamed,online-boutique-8511,"The issue could be anywhere, we should look at the configuration mapping between product images and names."
+2026-04-20 13:20:07,PLAYER,online-boutique-8511,Daniel Shay  can you please keep looking?
+2026-04-20 13:20:09,uptimelabs,online-boutique-8511,:star: Manage actions and timings
+2026-04-20 13:20:10,hamed,online-boutique-8511,Daniel do you know which application holds this data?
+2026-04-20 13:20:18,hamed,online-boutique-8511,"Tanya you check if this is stored in a database or Redis cache?"
+2026-04-20 13:20:28,hamed,online-boutique-8511,"@PLAYER if there are no visible errors, this might be a configuration issue; the above details may help narrow it down."
+2026-04-20 13:20:48,PLAYER,business-comms-8511,Working with everyone still no root cause found still investigating another 10 min please 
+2026-04-20 13:20:58,daniel,online-boutique-8511,The configuration is stored in the Product Catalogue Service. I pushed a change in UAT yesterday that updates the Redis cache with the latest product names.
+2026-04-20 13:21:05,tanya,online-boutique-8511,"Hamed yes, this information is stored in Redis cache and the cache was refreshed earlier today."
+2026-04-20 13:21:13,bez,business-comms-8511,Can you send me a photo of what you are seeing wrong with the platform @PLAYER
+2026-04-20 13:21:40,PLAYER,online-boutique-8511,can we please check the cache for errors in product descriptions?
+2026-04-20 13:21:42,daniel,online-boutique-8511,I can check the database and provide a Redis key dump for product:<id>:name keys 
+2026-04-20 13:21:46,uptimelabs,online-boutique-8511,'Redis key dump' means extracting the stored data for specific Redis keys like 'product:<id>:name' so you can see what values are currently saved in the Redis database.
+2026-04-20 13:21:58,daniel,online-boutique-8511,Ok here is what i found 
+2026-04-20 13:22:00,daniel,online-boutique-8511,
+2026-04-20 13:22:03,PLAYER,online-boutique-8511,Also can we revert that change?
+2026-04-20 13:22:07,tanya,online-boutique-8511,But product_id: 3 is actually 'mug' 
+2026-04-20 13:22:09,tanya,online-boutique-8511,
+2026-04-20 13:22:11,bez,business-comms-8511,Where are we in the investigation? I just want to know the current working theories
+2026-04-20 13:22:15,daniel,online-boutique-8511,"It is, looks like my script has run in PROD and updated the wrong names for each product in DB"
+2026-04-20 13:22:20,shay,online-boutique-8511,"Oh no, that not good! Shall we go with a rollback? "
+2026-04-20 13:22:28,PLAYER,online-boutique-8511,Yes please 
+2026-04-20 13:22:48,PLAYER,online-boutique-8511,After is is rolled back can we please see why that happened?
+2026-04-20 13:23:21,PLAYER,business-comms-8511,Issue found trying a roll back now. the product database was updated and the wrong entries were updated 
+2026-04-20 13:23:38,hamed,online-boutique-8511,I dont think roll back is a good option
+2026-04-20 13:23:42,hamed,online-boutique-8511,considerign DB
+2026-04-20 13:24:09,PLAYER,online-boutique-8511,Daniel Shay hamed what other options do we have 
+2026-04-20 13:24:12,daniel,online-boutique-8511,"I think this is cache issue we should clear the cache and restart Product catalogue Service, that will make fresh calls to DB and the cache will be refreshed "
+2026-04-20 13:24:16,tanya,online-boutique-8511,"No, Dan's query has updated the wrong names in DB. The data is wrong in DB therfore we will have to rehydrate the canonical database with the correct product Id names ."
+2026-04-20 13:24:21,bez,business-comms-8511,Do we have an ETA for the fix?
+2026-04-20 13:24:26,daniel,online-boutique-8511,"Tanya i think you are complicating an easy solution. A restart should fix this"
+2026-04-20 13:24:33,tanya,online-boutique-8511,It your call @PLAYER
+2026-04-20 13:25:02,PLAYER,online-boutique-8511,Daniel Shay Newbie Hamed Silatani what is the safest and quickest solution?
+2026-04-20 13:25:37,hamed,online-boutique-8511,Both the solution looks alright- but do we know if the data is corrupted
+2026-04-20 13:25:38,PLAYER,business-comms-8511,Not yet as it might be something else now but we should have an eta soon 
+2026-04-20 13:25:54,hamed,online-boutique-8511,"If Dan's change has changed DB, clearing cache wouldnt help"
+2026-04-20 13:26:01,hamed,online-boutique-8511,we should go with Tanya's option
+2026-04-20 13:26:12,hamed,online-boutique-8511,to rehydrate the DB
+2026-04-20 13:26:12,PLAYER,online-boutique-8511,Daniel Shay are you able to see if the data is corrupted?
+2026-04-20 13:26:13,uptimelabs,online-boutique-8511,:star: Facts over opinion
+2026-04-20 13:26:21,tanya,online-boutique-8511,"Yes, i see the data is corrupted"
+2026-04-20 13:26:32,tanya,online-boutique-8511,Since Dan's change ran on PROD
+2026-04-20 13:26:53,PLAYER,online-boutique-8511,Lets go with  rehydrate the canonical database with the correct product Id names .
+2026-04-20 13:26:57,tanya,online-boutique-8511,We will have to follow below steps to Rehydrate the db.
+2026-04-20 13:27:01,PLAYER,online-boutique-8511,please and thank you 
+2026-04-20 13:27:02,uptimelabs,online-boutique-8511,'Rehydrate the db' means restoring or repopulating the main database with accurate data from a reliable source or backup.
+2026-04-20 13:27:08,tanya,online-boutique-8511,1. **Flush** corrupted product-name keys
+2026-04-20 13:27:10,tanya,online-boutique-8511,"```bash
+redis-cli --scan --pattern 'product:*:name'| xargs redis-cli del```"
+2026-04-20 13:27:16,tanya,online-boutique-8511,2. **Rehydrate** product name cache from canonical DB
+2026-04-20 13:27:21,tanya,online-boutique-8511,3. **Restart** frontend/product-catalog-service** to refresh in memory cache
+2026-04-20 13:27:26,tanya,online-boutique-8511,4. **Verify** product listings display correct names
+2026-04-20 13:27:27,PLAYER,online-boutique-8511,Bob how are we looking?
+2026-04-20 13:27:33,tanya,online-boutique-8511,I can perform Step 1 and 2. Dan or Shay has to perform step 3
+2026-04-20 13:27:38,tanya,online-boutique-8511,@PLAYER please verify that all steps have been completed 
+2026-04-20 13:27:43,tanya,online-boutique-8511,Are we good to proceed @PLAYER
+2026-04-20 13:27:45,bob,online-boutique-8511,Still bad
+2026-04-20 13:28:04,bob,online-boutique-8511,although there are no new calls due to maintenance site
+2026-04-20 13:28:08,PLAYER,online-boutique-8511,hamed tanya Yes please if hamed says we are good 
+2026-04-20 13:28:12,bob,online-boutique-8511,but we are rloosing  alot of revenue due to this
+2026-04-20 13:28:20,tanya,online-boutique-8511,"Thanks for go ahead, implementing step 1 now "
+2026-04-20 13:28:29,tanya,online-boutique-8511,Step 1 is now complete 
+2026-04-20 13:28:29,PLAYER,business-comms-8511,Database is going to be rebuilt now 
+2026-04-20 13:28:36,tanya,online-boutique-8511,Moving on to step 2
+2026-04-20 13:28:38,PLAYER,online-boutique-8511,Can I get an eta please 
+2026-04-20 13:28:46,tanya,online-boutique-8511,Step 2 complete
+2026-04-20 13:28:54,tanya,online-boutique-8511,lets proceed with the next 2 steps
+2026-04-20 13:29:00,daniel,online-boutique-8511,Starting step 3.....
+2026-04-20 13:29:19,daniel,online-boutique-8511,Step 3 is complete
+2026-04-20 13:29:23,tanya,online-boutique-8511,All the recovery steps are completed
+2026-04-20 13:29:32,PLAYER,online-boutique-8511,Daniel Shay tanya can we please validate the fix?
+2026-04-20 13:29:34,uptimelabs,online-boutique-8511,:star: Cross checking resolution with team
+2026-04-20 13:29:44,PLAYER,online-boutique-8511,Can i get a test site link?
+2026-04-20 13:29:52,PLAYER,online-boutique-8511,So i can check too?
+2026-04-20 13:30:06,hamed,online-boutique-8511,Lets validate in back end from DB
+2026-04-20 13:30:12,PLAYER,business-comms-8511,Fix implemented testing now
+2026-04-20 13:30:14,uptimelabs,online-boutique-8511,:star: Confirm resolution with the business
+2026-04-20 13:30:27,tanya,online-boutique-8511,@PLAYER Checked the mapping again. And this how it looks now 
+2026-04-20 13:30:32,tanya,online-boutique-8511,
+2026-04-20 13:30:42,uptimelabs,online-boutique-8511,"Always confirm service health, errors, and data testing before removing a maintenance page - it avoids surprises when traffic returns"
+2026-04-20 13:31:01,PLAYER,online-boutique-8511,tanya is that correct?
+2026-04-20 13:31:08,hamed,online-boutique-8511,"I have validated for all Ietms, mapping is alright"
+2026-04-20 13:31:11,PLAYER,online-boutique-8511,Daniel Shay can you check on your side?
+2026-04-20 13:31:23,daniel,online-boutique-8511,"Yes, Data looks alright for all other items"
+2026-04-20 13:31:39,PLAYER,online-boutique-8511,Are we good to make the site live?
+2026-04-20 13:31:43,hamed,online-boutique-8511,"Yes, we should be good"
+2026-04-20 13:31:51,PLAYER,online-boutique-8511,Lets bring it back up please 
+2026-04-20 13:31:52,daniel,online-boutique-8511,Maintenance page removal in progress...
+2026-04-20 13:32:02,PLAYER,business-comms-8511,Matance page is coming down 
+2026-04-20 13:32:05,bez,business-comms-8511,Thanks
+2026-04-20 13:32:14,daniel,online-boutique-8511,We are LIVE for orders back again!
+2026-04-20 13:32:16,bez,business-comms-8511,Let me know if we are back
+2026-04-20 13:32:27,bob,online-boutique-8511,"We've recovered, but a few orders are in dispute. Should we cancel them or contact customers first?"
+2026-04-20 13:32:29,PLAYER,online-boutique-8511,Can we please test the live site 
+2026-04-20 13:32:30,bob,online-boutique-8511,Please confirm this with Bez before we proceed 
+2026-04-20 13:32:43,daniel,online-boutique-8511,"Yes, Site is back"
+2026-04-20 13:32:47,daniel,online-boutique-8511,can we validate please
+2026-04-20 13:32:56,PLAYER,business-comms-8511,"We've recovered, but a few orders are in dispute. Should we cancel them or contact customers first?
+"
+2026-04-20 13:33:06,bez,business-comms-8511,Are we back yet @PLAYER ?
+2026-04-20 13:33:33,PLAYER,online-boutique-8511,Site seems correct 
+2026-04-20 13:33:34,uptimelabs,online-boutique-8511,:star: Validate the fix
+2026-04-20 13:33:41,PLAYER,business-comms-8511,We are back 
+2026-04-20 13:33:45,PLAYER,business-comms-8511,Should we cancel them or contact customers first?\
+2026-04-20 13:33:49,bez,business-comms-8511,Brilliant work @PLAYER -
+2026-04-20 13:33:54,bez,business-comms-8511,"If a customer really wants to cancel, go ahead - otherwise leave the order as is. For anything not delivered yet, have support double-check with the customer before taking action"
+2026-04-20 13:33:57,bob,online-boutique-8511,Looks like we are back to business
+2026-04-20 13:34:10,PLAYER,online-boutique-8511,"bob If a customer really wants to cancel, go ahead - otherwise leave the order as is. For anything not delivered yet, have support double-check with the customer before taking action"
+2026-04-20 13:34:14,bob,online-boutique-8511,Thank you
+2026-04-20 13:34:19,PLAYER,online-boutique-8511,that is from bez
+2026-04-20 13:34:25,bob,online-boutique-8511,Much appreciae the quick help@Patrick
+2026-04-20 13:34:43,daniel,online-boutique-8511,Well done everyone
+2026-04-20 13:34:48,hamed,online-boutique-8511,"Root cause - UAT data refresh script was accidentally run against prod, overwriting product names in DB and Redis cache with test data. Monitoring missed it as health metrics stayed normal."
+2026-04-20 13:34:53,bez,business-comms-8511,Thanks @PLAYER and team. You kept the Online Boutique on track - great work under pressure
+2026-04-20 13:35:04,uptimelabs,online-boutique-8511,"Drill Wrap-Up
+
+Thanks for playing! This session is now closed.
+
+Please return to your Uptime Labs tab to review your performance and complete the Retrospective & Feedback form.
+
+If you've already closed the tab, you can reopen the form using the button below."
+2026-04-20 13:35:05,PLAYER,online-boutique-8511,tinus want to weigh in on any statement to the public?
+2026-04-20 13:35:06,tinus,online-boutique-8511,"Yes, i will take care of that , thanks"
+2026-04-20 13:35:52,uptimelabs,online-boutique-8511,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/33/8511/feedback"

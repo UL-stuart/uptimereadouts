@@ -1,0 +1,131 @@
+datetime,player,channel,message
+2025-11-19 12:34:37,Bez,online-boutique-6828,"Morning, team! Anyone else need a triple espresso today?"
+2025-11-19 12:34:46,Tinus,online-boutique-6828,"You're not the only one, Bez! The reports from last week are still giving me nightmares."
+2025-11-19 12:34:56,Bob,online-boutique-6828,"Tell me about it, Tinus."
+2025-11-19 12:34:59,Bob,online-boutique-6828,"But hey, at least it's sunny outside today. :sunrise:"
+2025-11-19 12:35:01,Bez,online-boutique-6828,"True, a little sunshine makes everything better."
+2025-11-19 12:35:03,Bez,online-boutique-6828,"Also, I'm having my usual green smoothie. That's my secret energy booster."
+2025-11-19 12:35:05,Daniel,online-boutique-6828,"Nice, Bez! I'll stick with my coffee though."
+2025-11-19 12:35:06,Daniel,online-boutique-6828,Anyone else excited for the launch of the new BitCoin :coin: payment feature this week?
+2025-11-19 12:35:08,Tinus,online-boutique-6828,"Absolutely, Daniel! Been looking forward to it."
+2025-11-19 12:35:10,Tinus,online-boutique-6828,"By the way, no spoilers, but did anyone catch the football game? Epic comeback!"
+2025-11-19 12:35:13,Shay,online-boutique-6828,I missed it! I was knee deep in a sci-fi novel. Anyone else into that?
+2025-11-19 12:35:21,Tanya,online-boutique-6828,"Oh, I love sci-fi! Can you share the name of the book, Shay?"
+2025-11-19 12:35:29,Daniel,online-boutique-6828,I've been reading a bit of sci-fi myself.
+2025-11-19 12:35:31,Daniel,online-boutique-6828,"Looking forward to sharing recommendations, Shay!"
+2025-11-19 12:35:35,Bez,online-boutique-6828,"There's always so much happening outside of work! Keep the energy :battery: going, team."
+2025-11-19 12:35:38,Bez,online-boutique-6828,It's going to be another productive day. :raised_hands:
+2025-11-19 12:35:41,UptimeLabs,online-boutique-6828,"Welcome to The Chain, the responsibility is on you to size up the problem.
+
+? *Use `/help` at any time for a list of useful links and commands*
+ ? *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin Start button"
+2025-11-19 12:37:47,PLAYER,online-boutique-6828,Clicked Start button
+2025-11-19 12:37:48,UptimeLabs,online-boutique-6828,":alarm_clock: - You have 25 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-11-19 12:37:49,Bob,online-boutique-6828,"Hey, we're getting reports of customers struggling to make purchases"
+2025-11-19 12:37:51,Bob,online-boutique-6828,@here Anyone else seeing this?
+2025-11-19 12:37:54,Tinus,online-boutique-6828,"Yes, I've noticed the same, @Bob . It seems like an error in the system"
+2025-11-19 12:37:57,Bez,online-boutique-6828,"Whatever it is, we need to sort it out quickly."
+2025-11-19 12:37:59,Bez,online-boutique-6828,we need to step on it! before the social media backlash is turning into a storm.
+2025-11-19 12:38:03,Tinus,online-boutique-6828,"Who is handling incidents today? Please size up the issue, this is urgent"
+2025-11-19 12:38:26,PLAYER,online-boutique-6828,"HI Bob, May I know the impact on Cusotmers and business on trade due to this?"
+2025-11-19 12:38:29,Bob,online-boutique-6828,I'll check the reports now...
+2025-11-19 12:38:31,UptimeLabs,online-boutique-6828,:star: Asking questions to validate impact of the problem
+2025-11-19 12:38:56,Bob,online-boutique-6828,I have initial reports of users using bitcoin struggling to checkout
+2025-11-19 12:39:19,Bob,online-boutique-6828,I shall continue to investigate and find any commonality between the reports
+2025-11-19 12:39:21,PLAYER,online-boutique-6828,"Hi Bob, Is this happening across or any particular location ?"
+2025-11-19 12:39:50,Bob,online-boutique-6828,The reports seem to be only coming from the EU
+2025-11-19 12:40:11,PLAYER,online-boutique-6828,HOW MUCH IMPACT OF THIS ON TRADE?
+2025-11-19 12:40:48,Bob,online-boutique-6828,It would be one of our bigger markets so about 85%
+2025-11-19 12:41:14,PLAYER,online-boutique-6828,P1 This is impacting checkout with Bitcoin with impact of 85% in EU
+2025-11-19 12:41:15,UptimeLabs,online-boutique-6828,:star: Incident record created
+2025-11-19 12:41:15,PLAYER,business-comms-6828,*Incident Number INC100049:* P1 This is impacting checkout with Bitcoin with impact of 85% in EU
+2025-11-19 12:41:17,UptimeLabs,online-boutique-6828,:star: Send first comms in first 5 minutes
+2025-11-19 12:41:17,UptimeLabs,online-boutique-6828,:star: Qualify the problem
+2025-11-19 12:41:31,Bob,online-boutique-6828,However there's about 100 reports of users using bitcoin and unable to checkout
+2025-11-19 12:41:54,Shay,online-boutique-6828,Has anyone reproduced the issue?
+2025-11-19 12:43:02,PLAYER,business-comms-6828,"HI Bob,@Bez,@Tinus, There is an incident while checkout with Bit coin which is impacting 85%. we are investing on this I will keep you posted in next 5 mins.."
+2025-11-19 12:43:07,UptimeLabs,online-boutique-6828,:star: Track actions and time box them
+2025-11-19 12:44:09,Daniel,online-boutique-6828,"We could try restarting the cart service, based on what bob has reported"
+2025-11-19 12:44:43,PLAYER,online-boutique-6828,"Hi Shay,@Daniel, Are there any changes deployed related to checkout today which might cause this related to Bit coin?"
+2025-11-19 12:44:47,Shay,online-boutique-6828,Here are the changes: <https://uptime-labs.atlassian.net/wiki/external/MjMxNGU0ZjU1ZTVhNDA0NWJmY2M1NjU1OGFiMGY2YjA>
+2025-11-19 12:44:49,UptimeLabs,online-boutique-6828,:star: Check changes done to the platform
+2025-11-19 12:44:56,PLAYER,online-boutique-6828,"Yes, please.."
+2025-11-19 12:45:06,Daniel,online-boutique-6828,"sure @Ramesh Matta, restarting the cart service"
+2025-11-19 12:45:09,Daniel,online-boutique-6828,I will have to restart frontend to pick up new service endpoints.
+2025-11-19 12:45:34,Daniel,online-boutique-6828,the service restart is completed
+2025-11-19 12:46:19,Bob,online-boutique-6828,"I can make payments now, is the incident resolved?"
+2025-11-19 12:46:23,Bob,online-boutique-6828,should I inform the customers?
+2025-11-19 12:46:27,PLAYER,online-boutique-6828,I see checkout is failing
+2025-11-19 12:46:48,PLAYER,online-boutique-6828,Can you pease cross check whether there is any issue?
+2025-11-19 12:47:05,Shay,online-boutique-6828,Hey @Ramesh Matta the cart service is crashing again.
+2025-11-19 12:47:07,Daniel,online-boutique-6828,Are you seeing any errors relating to that service?
+2025-11-19 12:47:07,Shay,online-boutique-6828,I'm not sure what the problem is.
+2025-11-19 12:47:46,Shay,online-boutique-6828,I'm about to do a deep dive into the checkout service!
+2025-11-19 12:47:49,PLAYER,online-boutique-6828,Can you please check what is the problem?
+2025-11-19 12:47:53,Daniel,online-boutique-6828,that sounds good
+2025-11-19 12:48:01,Daniel,online-boutique-6828,"while you're at it, you might want to verify the data persistence in the checkout service."
+2025-11-19 12:48:07,Daniel,online-boutique-6828,I remember we had some issues with the state maintenance in the past
+2025-11-19 12:48:21,PLAYER,business-comms-6828,"Though we restarted server , we still see payment is failing .. I will keep you posted.."
+2025-11-19 12:48:28,PLAYER,business-comms-6828,in next 5 mins
+2025-11-19 12:48:50,PLAYER,online-boutique-6828,"ok, gr8 please check that.."
+2025-11-19 12:49:40,Shay,online-boutique-6828,I'm not seeing any issues with the checkout service
+2025-11-19 12:49:55,PLAYER,online-boutique-6828,Tanya are the pods / vm's working properly ?
+2025-11-19 12:50:02,Shay,online-boutique-6828,"I'm sure we deployed a change relating to payments, should we not start there?"
+2025-11-19 12:50:12,PLAYER,online-boutique-6828,related to Check out service and Payment service?
+2025-11-19 12:50:32,Tanya,online-boutique-6828,"I'll take a look now, is there any specific pod failure you're expecting to see, given the investigation so far?"
+2025-11-19 12:50:34,PLAYER,online-boutique-6828,Can we revert that changes related to payment?
+2025-11-19 12:50:38,UptimeLabs,online-boutique-6828,:star: Restoration over root cause analysis
+2025-11-19 12:51:20,Shay,online-boutique-6828,"I didn't deploy anything related to changes, If you get the change number we can get rollbacks started"
+2025-11-19 12:51:53,PLAYER,online-boutique-6828,I see 500 issues our payment service has some issues..
+2025-11-19 12:52:20,Daniel,online-boutique-6828,"I deployed a change to the checkout service and the payment service, which should I prioritise rolling back first?"
+2025-11-19 12:52:25,PLAYER,online-boutique-6828,"Hi Daniel, Please provide Change number to Shay.."
+2025-11-19 12:52:32,Bob,online-boutique-6828,That aligns with user reports
+2025-11-19 12:53:23,Tanya,online-boutique-6828,"I've identified our payment service is down, as is our cart service. It's unclear as to what's the cause though"
+2025-11-19 12:53:39,PLAYER,online-boutique-6828,Ask Shay to revert the payment service changes and you revert checkout .. Please do it fast
+2025-11-19 12:53:46,UptimeLabs,online-boutique-6828,:star: Take command
+2025-11-19 12:54:16,Daniel,online-boutique-6828,"Understood, I'll proceed with rolling back the payment service"
+2025-11-19 12:54:32,PLAYER,online-boutique-6828,Yes please..
+2025-11-19 12:54:36,Daniel,online-boutique-6828,payment service rollback is complete
+2025-11-19 12:54:39,Shay,online-boutique-6828,I thought it would be safer if Daniel rolled back his own changes
+2025-11-19 12:54:51,Hamed,online-boutique-6828,This is not good. Something is broken after the payment rollback
+2025-11-19 12:55:33,Bob,online-boutique-6828,Oh no...
+2025-11-19 12:55:36,PLAYER,business-comms-6828,"Hi Bob / Tinus, we see issues with Payment service ..we are rolling back the changes.. Issue should be resolved in next few mins.. I will keep you posted"
+2025-11-19 12:56:13,Bob,online-boutique-6828,"Reports are rising, and it looks like it is now a global issue"
+2025-11-19 12:56:24,PLAYER,online-boutique-6828,"oh, no..@Hamed , can u please help me here?"
+2025-11-19 12:56:30,UptimeLabs,online-boutique-6828,:star: Escalating when required
+2025-11-19 12:56:48,Hamed,online-boutique-6828,"I'm more than happy to help, but where should I begin, what have we investigated so far?"
+2025-11-19 12:57:11,PLAYER,online-boutique-6828,"Hi Hamed S, please help me here with Payment service why it is not working .."
+2025-11-19 12:57:42,Hamed,online-boutique-6828,"I'm not sure why it's not working... The change has been rolled back, yes?"
+2025-11-19 12:58:06,PLAYER,online-boutique-6828,"HI Daniel , please confirm me on this changes roll back.."
+2025-11-19 12:58:15,UptimeLabs,online-boutique-6828,:star: Reviewed changes
+2025-11-19 12:58:24,Tanya,online-boutique-6828,I'm seeing some errors in redis cache also
+2025-11-19 12:58:40,PLAYER,online-boutique-6828,Can we restart redis cache ?
+2025-11-19 12:58:49,UptimeLabs,online-boutique-6828,:alarm_clock: - You have less than 4 minutes. You can type `/help` if you need any reminders.
+2025-11-19 12:58:51,Daniel,online-boutique-6828,"I just rolled back my change to the payment service, it was a change that included implementing bitcoin as a payment option"
+2025-11-19 12:59:12,Daniel,online-boutique-6828,"However, I didn't check if there were any dependencies..."
+2025-11-19 12:59:25,Tanya,online-boutique-6828,Do you think it's related to the problems we're seeing?
+2025-11-19 12:59:26,PLAYER,online-boutique-6828,"Hi Tanya, Is the radis cache restarted?"
+2025-11-19 12:59:46,Tanya,online-boutique-6828,I'll restart the service now
+2025-11-19 12:59:49,PLAYER,online-boutique-6828,"Yes, this could be because of cache.."
+2025-11-19 13:00:09,Tanya,online-boutique-6828,Restart complete
+2025-11-19 13:00:34,PLAYER,online-boutique-6828,"Hi Daniel, please check the website and revert back.."
+2025-11-19 13:00:49,UptimeLabs,online-boutique-6828,:alarm_clock: - You have less than 2 minutes. You can type `/help` if you need any reminders.
+2025-11-19 13:00:52,Daniel,online-boutique-6828,I'm stilling getting errors on the site
+2025-11-19 13:01:01,Daniel,online-boutique-6828,Also revert back?
+2025-11-19 13:01:38,Bez,business-comms-6828,What's the outcome?
+2025-11-19 13:02:02,Shay,online-boutique-6828,I'm very confused
+2025-11-19 13:02:30,Shay,online-boutique-6828,Is it payments or redis cache or cart service that's broken?
+2025-11-19 13:02:33,PLAYER,online-boutique-6828,Have we reeverted all the changes Shay and Daniel?
+2025-11-19 13:02:41,UptimeLabs,online-boutique-6828,:star: Manage actions and timings
+2025-11-19 13:02:51,Shay,online-boutique-6828,What changes are you referring to?
+2025-11-19 13:03:03,Daniel,online-boutique-6828,Are you suggesting we roll back all deployments made today?
+2025-11-19 13:03:12,PLAYER,online-boutique-6828,"Daniel, Checkout and Payment both.."
+2025-11-19 13:03:20,Daniel,online-boutique-6828,Payments has been rolled back
+2025-11-19 13:03:24,UptimeLabs,online-boutique-6828,"Thank you for playing The Chain, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit start when you are ready. I am ready button"
+2025-11-19 13:03:24,PLAYER,online-boutique-6828,"Yes, Daniel"
+2025-11-19 13:03:26,Daniel,online-boutique-6828,I'll rollback checkout now
+2025-11-19 13:04:45,PLAYER,online-boutique-6828,Clicked Start_feedback button
+2025-11-19 13:06:21,UptimeLabs,online-boutique-6828,Submission successful

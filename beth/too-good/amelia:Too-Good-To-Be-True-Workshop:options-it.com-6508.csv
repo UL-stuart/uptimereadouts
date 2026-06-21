@@ -1,0 +1,108 @@
+datetime,player,channel,message
+2025-10-30 10:15:54,UptimeLabs,online-boutique-6508,"Welcome to Too Good To Be True, the responsibility is on you to size up the problem.
+
+ *Use `/help` at any time for a list of useful links and commands*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin Start button"
+2025-10-30 10:22:31,PLAYER,online-boutique-6508,Clicked undefined button
+2025-10-30 10:22:40,PLAYER,online-boutique-6508,Clicked org button
+2025-10-30 10:22:42,PLAYER,online-boutique-6508,Clicked undefined button
+2025-10-30 10:26:02,PLAYER,online-boutique-6508,test sev-1
+2025-10-30 10:26:02,PLAYER,business-comms-6508,*Incident Number INC100094:* test sev-1
+2025-10-30 10:28:24,PLAYER,online-boutique-6508,Clicked Start button
+2025-10-30 10:28:24,Tinus,online-boutique-6508,"Welcome our new IM @Amelia Horwood, Happy to have you in the team. Hope you get comfortable with everyone"
+2025-10-30 10:28:24,UptimeLabs,online-boutique-6508,":alarm_clock: - You have 25 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-10-30 10:28:29,Shay,online-boutique-6508,Welcome @Amelia Horwood
+2025-10-30 10:28:35,Daniel,online-boutique-6508,Nice to meet you @Amelia Horwood
+2025-10-30 10:28:39,PLAYER,online-boutique-6508,Hi guys
+2025-10-30 10:28:41,PLAYER,online-boutique-6508,Nice to meet you!
+2025-10-30 10:28:44,Bob,online-boutique-6508,There are a few strange customer reports with the helpdesk
+2025-10-30 10:28:48,Bob,online-boutique-6508,"Apparently, the site is loading slowly"
+2025-10-30 10:28:51,PLAYER,online-boutique-6508,What are they reporting
+2025-10-30 10:28:52,Bob,online-boutique-6508,People are reporting that they can't make payments either
+2025-10-30 10:28:53,PLAYER,online-boutique-6508,how many
+2025-10-30 10:28:56,Bob,online-boutique-6508,customer_reports
+2025-10-30 10:28:59,Bob,online-boutique-6508,@Amelia Horwood Can you check this?
+2025-10-30 10:29:01,UptimeLabs,online-boutique-6508,:star: Asking questions to validate impact of the problem
+2025-10-30 10:30:27,PLAYER,online-boutique-6508,"Hi all, users reporting slowness on the site and unable to make payments SEV-2"
+2025-10-30 10:30:28,PLAYER,business-comms-6508,"*Incident Number INC100047:* Hi all, users reporting slowness on the site and unable to make payments SEV-2"
+2025-10-30 10:30:28,UptimeLabs,online-boutique-6508,:star: Incident record created
+2025-10-30 10:30:30,UptimeLabs,online-boutique-6508,:star: Send first comms in first 5 minutes
+2025-10-30 10:30:31,UptimeLabs,online-boutique-6508,:star: Qualify the problem
+2025-10-30 10:30:33,Bez,business-comms-6508,How many customers are affected? Are the reports coming in from all regions?
+2025-10-30 10:30:34,Bob,online-boutique-6508,Let me gather the information for you
+2025-10-30 10:30:39,Bob,online-boutique-6508,There are more than 300 customer reports till now
+2025-10-30 10:30:46,Bob,online-boutique-6508,"Calls are from every region, likely to be Global"
+2025-10-30 10:30:52,Bob,online-boutique-6508,There's a bunch of messages coming in. A few people saying they can't do anything on the site
+2025-10-30 10:30:57,Bob,online-boutique-6508,Let me know if you need more information
+2025-10-30 10:31:03,PLAYER,online-boutique-6508,"Hi Tanya, Shay any issues you can see on the backend?"
+2025-10-30 10:31:15,Shay,online-boutique-6508,Uhm I'll try help
+2025-10-30 10:31:28,Tanya,online-boutique-6508,I can investigate platforms side
+2025-10-30 10:31:37,PLAYER,online-boutique-6508,getting 502 bad gateway when clicking on products
+2025-10-30 10:31:41,UptimeLabs,online-boutique-6508,:star: Reproduces the incident
+2025-10-30 10:31:41,PLAYER,online-boutique-6508,thanks both
+2025-10-30 10:31:48,Shay,online-boutique-6508,Same!
+2025-10-30 10:32:48,Tanya,online-boutique-6508,There are no alerts on the Infrastructure. I did see a few errors on the frontend apps
+2025-10-30 10:32:53,PLAYER,business-comms-6508,More than 300 client reports till now
+2025-10-30 10:32:55,Tanya,online-boutique-6508,This looks to me like an issue in the frontend pod
+2025-10-30 10:32:56,PLAYER,business-comms-6508,All regions
+2025-10-30 10:33:21,Daniel,online-boutique-6508,Do you want to see what changes were made today?
+2025-10-30 10:33:59,PLAYER,online-boutique-6508,Yes please
+2025-10-30 10:34:05,Daniel,online-boutique-6508,Below are the changes implemented this morning
+2025-10-30 10:34:11,Daniel,online-boutique-6508,deployments
+2025-10-30 10:34:14,Daniel,online-boutique-6508,"If you want more information, check out Incident Manager dashboard for more details: <https://grafana.prod.uptimelabs.io/d/aOf5yan4z/incident-management>"
+2025-10-30 10:35:21,PLAYER,online-boutique-6508,hi Shay what was CHG89349
+2025-10-30 10:35:26,UptimeLabs,online-boutique-6508,:star: Check changes done to the platform
+2025-10-30 10:35:26,PLAYER,online-boutique-6508,can it be rolled back?
+2025-10-30 10:35:30,UptimeLabs,online-boutique-6508,:star: Restoration over root cause analysis
+2025-10-30 10:35:48,Shay,online-boutique-6508,It's just a change I did to the frontend earlier today
+2025-10-30 10:35:54,Shay,online-boutique-6508,It was working fine earlier
+2025-10-30 10:36:22,PLAYER,online-boutique-6508,hi Daniel what was your change to the payments service
+2025-10-30 10:36:26,UptimeLabs,online-boutique-6508,:star: Reviewed changes
+2025-10-30 10:36:40,Daniel,online-boutique-6508,Just some extra unit tests - nothing customer impacting
+2025-10-30 10:36:52,Daniel,online-boutique-6508,Want me to do a review of the changes deployed?
+2025-10-30 10:36:53,PLAYER,online-boutique-6508,people are reporting they can't make payments
+2025-10-30 10:37:08,PLAYER,online-boutique-6508,yes please review the changes deployed to see what could be causing the slowness
+2025-10-30 10:37:19,Daniel,online-boutique-6508,"I have verified Payments change (CHG89347), there are no errors and the service is up and healthy"
+2025-10-30 10:37:24,Daniel,online-boutique-6508,"Checkout service change(CHG89350) is in UAT, so not affecting PROD. But I see a few errors from Frontend pods"
+2025-10-30 10:37:30,Daniel,online-boutique-6508,All the errors started right after the change (CHG89349) on the Frontend
+2025-10-30 10:37:33,Bob,online-boutique-6508,The customer complaints are rising. @Amelia Horwood Do we have an ETA for resolution?
+2025-10-30 10:37:35,Bez,business-comms-6508,What is the latest on this?
+2025-10-30 10:38:02,PLAYER,online-boutique-6508,Hi Tanya please can you investigate your change further
+2025-10-30 10:38:11,PLAYER,online-boutique-6508,Hi @bob
+2025-10-30 10:38:19,PLAYER,online-boutique-6508,will get back to you with ETA ASAP
+2025-10-30 10:38:27,Tanya,online-boutique-6508,As per Daniel's review it doesn't look like my change is impacting users
+2025-10-30 10:39:39,Tanya,online-boutique-6508,"Frontend change CHG89349 appears to have introduced a regression affecting request handling or scaling logic. This is likely not a memory leak, but a change-related issue that's crashing the frontend pods"
+2025-10-30 10:40:09,Daniel,online-boutique-6508,"We should revert the frontend change as early as possible, I have verified that other changes are good"
+2025-10-30 10:40:15,Daniel,online-boutique-6508,"@Amelia Horwood It's your call, Shall we revert it?"
+2025-10-30 10:40:23,PLAYER,online-boutique-6508,Hi Shay please revert the frontend change
+2025-10-30 10:40:28,Shay,online-boutique-6508,"Sorry, I've never done a rollback in PROD before, can someone help me with the steps?"
+2025-10-30 10:40:40,UptimeLabs,online-boutique-6508,:bulb: Hint: keep the business informed regularly
+2025-10-30 10:40:50,PLAYER,online-boutique-6508,Hi Daniel are you able to assist Shay?
+2025-10-30 10:40:58,Daniel,online-boutique-6508,"I will help you, @Shay. Rolling back now"
+2025-10-30 10:40:58,PLAYER,business-comms-6508,We are rolling back the front end change
+2025-10-30 10:41:04,PLAYER,online-boutique-6508,Thanks Daniel
+2025-10-30 10:41:13,Daniel,online-boutique-6508,I have rollbacked Frontend:version to 10.1.0 to more stable version. Can somebody verify?
+2025-10-30 10:41:16,UptimeLabs,online-boutique-6508,"To 'verify' that the resolution has worked and to close the incident you must: 
+--Validate the fix yourself or with the team:white_check_mark: 
+--Cross check resolution with Customer Support:white_check_mark: 
+--Confirm resolution in the 'Business-comms' channel:white_check_mark: "
+2025-10-30 10:41:28,Bob,online-boutique-6508,"Customers are able to place the orders, complaint calls have reduced as well."
+2025-10-30 10:41:43,PLAYER,online-boutique-6508,Site looks to be working to me
+2025-10-30 10:41:56,PLAYER,business-comms-6508,"Change rolled back and site back up, customers are able to use site again."
+2025-10-30 10:42:10,UptimeLabs,online-boutique-6508,:star: Confirm resolution with the business
+2025-10-30 10:42:27,PLAYER,online-boutique-6508,"Hi team, can you please also test on your end"
+2025-10-30 10:42:31,UptimeLabs,online-boutique-6508,:star: Cross checking resolution with team
+2025-10-30 10:42:35,Shay,online-boutique-6508,I can place an order!
+2025-10-30 10:42:40,PLAYER,online-boutique-6508,Great
+2025-10-30 10:42:41,Daniel,online-boutique-6508,It's definitely working again!
+2025-10-30 10:42:42,PLAYER,online-boutique-6508,Thank you all
+2025-10-30 10:42:46,Shay,online-boutique-6508,Wow that was intense!
+2025-10-30 10:42:48,Bez,business-comms-6508,Thanks! for resolving it quickly
+2025-10-30 10:42:51,Hamed,online-boutique-6508,Good job guys
+2025-10-30 10:42:55,Tinus,online-boutique-6508,Yes well done! that could have gone much worse so props to everyone
+2025-10-30 10:42:59,Tinus,online-boutique-6508,We will have a Post-Incident Review (PIR) to understand what happened
+2025-10-30 10:43:09,UptimeLabs,online-boutique-6508,"Thank you for playing, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit I am ready when you want to start. I am ready button"
+2025-10-30 10:43:18,PLAYER,online-boutique-6508,Clicked Start_feedback button

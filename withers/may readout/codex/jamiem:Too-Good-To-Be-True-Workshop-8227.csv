@@ -1,0 +1,149 @@
+datetime,player,channel,message
+2026-03-27 10:12:57,uptimelabs,online-boutique-8227,"Welcome to Too Good To Be True, the responsibility is on you to size up the problem.
+
+ *Access game links by pressing the Uptime Labs Logo in the top right of the screen*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin"
+2026-03-27 10:18:32,PLAYER,online-boutique-8227,
+2026-03-27 10:18:32,uptimelabs,business-comms-8227,*Incident Number INC100063:* P1 test
+2026-03-27 10:20:01,tinus,online-boutique-8227,"Welcome our new IM @PLAYER Happy to have you in the team. Hope you get comfortable with everyone"
+2026-03-27 10:20:06,shay,online-boutique-8227,Welcome @PLAYER
+2026-03-27 10:20:11,daniel,online-boutique-8227,Nice to meet you @PLAYER
+2026-03-27 10:20:13,PLAYER,online-boutique-8227,"Thank you , pleased to be here"
+2026-03-27 10:20:21,bob,online-boutique-8227,There are a few strange customer reports with the helpdesk
+2026-03-27 10:20:25,bob,online-boutique-8227,"Apparently, the site is loading slowly"
+2026-03-27 10:20:29,bob,online-boutique-8227,People are reporting that they can't make payments either
+2026-03-27 10:20:32,bob,online-boutique-8227,
+2026-03-27 10:20:36,bob,online-boutique-8227,@PLAYER Can you check this?
+2026-03-27 10:20:51,PLAYER,online-boutique-8227,Do we know how many people are being impacted and in which regions?
+2026-03-27 10:20:53,uptimelabs,online-boutique-8227,:star: Asking questions to validate impact of the problem
+2026-03-27 10:20:57,PLAYER,online-boutique-8227,Is this unusual behaviour
+2026-03-27 10:21:32,bob,online-boutique-8227,Let me gather the information for you
+2026-03-27 10:21:37,PLAYER,online-boutique-8227,"OK, look like we have an issues - I have a 502 Bad Gateway error (nginx/1.29.7"
+2026-03-27 10:21:37,bob,online-boutique-8227,There are more than 300 customer reports till now
+2026-03-27 10:21:40,uptimelabs,online-boutique-8227,:star: Reproduces the incident
+2026-03-27 10:21:44,bob,online-boutique-8227,"Calls are from every region, likely to be Global"
+2026-03-27 10:21:50,bob,online-boutique-8227,There's a bunch of messages coming in. A few people saying they can't do anything on the site
+2026-03-27 10:21:55,bob,online-boutique-8227,Let me know if you need more information
+2026-03-27 10:22:07,PLAYER,online-boutique-8227,
+2026-03-27 10:22:07,uptimelabs,business-comms-8227,*Incident Number INC100078:* P1 website appears to be down globally and being investigated
+2026-03-27 10:22:07,uptimelabs,online-boutique-8227,:star: Incident record created
+2026-03-27 10:22:09,uptimelabs,online-boutique-8227,:star: Send first comms in first 5 minutes
+2026-03-27 10:22:12,bez,business-comms-8227,How many customers are affected? Are the reports coming in from all regions?
+2026-03-27 10:22:45,hamed,online-boutique-8227,HI
+2026-03-27 10:23:06,daniel,online-boutique-8227,Hello Jamie
+2026-03-27 10:23:12,tanya,online-boutique-8227,I am here
+2026-03-27 10:23:28,PLAYER,online-boutique-8227,"bob can you look to prepare comms please"
+2026-03-27 10:23:30,uptimelabs,online-boutique-8227,:star: Know your team and their roles
+2026-03-27 10:23:46,PLAYER,online-boutique-8227,I ahve added our tech team to look into this issue
+2026-03-27 10:23:47,bob,online-boutique-8227,"Sure, will do - Is there an ETA so i can let customers know"
+2026-03-27 10:24:01,PLAYER,business-comms-8227,This seems to be impacting all regions Bez at this moment in time
+2026-03-27 10:24:03,uptimelabs,online-boutique-8227,:star: Qualify the problem
+2026-03-27 10:24:16,PLAYER,business-comms-8227,We have zero user activity on our site
+2026-03-27 10:24:22,daniel,online-boutique-8227,What's the issue @PLAYER ?
+2026-03-27 10:24:35,PLAYER,online-boutique-8227,"Team, we have zero user activity on the web site, can we have a look into why this is please"
+2026-03-27 10:24:42,shay,online-boutique-8227,Looking into this and trying to replicate the issue
+2026-03-27 10:24:44,daniel,online-boutique-8227,I am able to replicate the issue. Checking the logs now
+2026-03-27 10:24:47,daniel,online-boutique-8227,"I see a lot of errors, most of them are context initialisation errors "
+2026-03-27 10:24:51,daniel,online-boutique-8227,
+2026-03-27 10:24:51,PLAYER,online-boutique-8227,The site is hard down
+2026-03-27 10:24:53,shay,online-boutique-8227,Yes replicated the issue and even i'm seeing similar errors in frontend logs
+2026-03-27 10:24:57,bez,business-comms-8227,"I have a stake holders meet in next 10 minutes, @PLAYER do you think this can be resolved by then? "
+2026-03-27 10:25:06,hamed,online-boutique-8227,Site's looking bad
+2026-03-27 10:25:11,PLAYER,online-boutique-8227,Has there been any changes made today which could have impacted the system now
+2026-03-27 10:25:14,uptimelabs,online-boutique-8227,:star: Check changes done to the platform
+2026-03-27 10:25:32,bez,business-comms-8227,Is this impacting particular region ?
+2026-03-27 10:25:35,PLAYER,business-comms-8227,"At this moment in time, I am not sure. I will let you know before your meeting"
+2026-03-27 10:25:38,daniel,online-boutique-8227,Below are the changes implemented this morning
+2026-03-27 10:25:43,daniel,online-boutique-8227,
+2026-03-27 10:25:46,daniel,online-boutique-8227,"If you want more information, checkout the change details : https://uptime-labs.atlassian.net/wiki/external/ZmRkZTQ1ODg2M2U1NGM3NDk1ZjZhM2I3MWY0MTM5ODA "
+2026-03-27 10:26:51,PLAYER,online-boutique-8227,"Tanya, you made a change 5 minutes ago, can you please make sure this was indeed carried out in Test and not production"
+2026-03-27 10:26:53,uptimelabs,online-boutique-8227,:star: Reviewed changes
+2026-03-27 10:27:08,tanya,online-boutique-8227,But the change was on UAT - and Checkout shouldn't have impact on PROD
+2026-03-27 10:27:21,tanya,online-boutique-8227,There are no alerts on the Infrastructure. I did see a few errors on the frontend apps
+2026-03-27 10:27:27,tanya,online-boutique-8227,This looks to me like an issue in the frontend pod
+2026-03-27 10:28:29,PLAYER,online-boutique-8227,"Tinus, I am adding you as you need to be aware and involved in this MI"
+2026-03-27 10:28:31,bez,business-comms-8227,Any ETA? We are completely down
+2026-03-27 10:28:32,uptimelabs,online-boutique-8227,:star: Escalating when required
+2026-03-27 10:28:42,PLAYER,business-comms-8227,"No ETA, we are completely down"
+2026-03-27 10:28:43,tinus,business-comms-8227,I am monitoring teh chat here
+2026-03-27 10:28:45,uptimelabs,online-boutique-8227,:star: Formally assign criticality level to the incident
+2026-03-27 10:28:54,tinus,business-comms-8227,Do you need me for any escaltions?
+2026-03-27 10:29:15,daniel,online-boutique-8227,I see a lot of errors from Front end
+2026-03-27 10:29:28,daniel,online-boutique-8227,mostly Context initialization error
+2026-03-27 10:29:31,PLAYER,online-boutique-8227,"Maya, we seem to be hard down at the moment, are there any signs from you sign of an maleware or spyware etc that could be causing an issue?"
+2026-03-27 10:29:52,maya,online-boutique-8227,"Sure, let me scan from sec ops"
+2026-03-27 10:30:10,PLAYER,online-boutique-8227,"bob how are we getting on with the comms - can we put a message on the front of our web page?"
+2026-03-27 10:30:12,uptimelabs,online-boutique-8227,:star: Manage actions and timings
+2026-03-27 10:30:14,bob,online-boutique-8227,The calls are increasing
+2026-03-27 10:30:29,bob,online-boutique-8227,Looks like the whole website is down- Its not a good customer experience
+2026-03-27 10:30:43,daniel,online-boutique-8227,"I have verified Payments change (CHG89347), there are no errors and the service is up and healthy"
+2026-03-27 10:30:48,daniel,online-boutique-8227,"Checkout service change(CHG89350) is in UAT, so not affecting PROD. But I see a few errors from Frontend pods"
+2026-03-27 10:30:53,PLAYER,online-boutique-8227,"No, this is not a good exeperience, in your experience, what comms can we get out to our users"
+2026-03-27 10:30:54,daniel,online-boutique-8227,All the errors started right after the change (CHG89349) on the Frontend
+2026-03-27 10:30:57,bob,online-boutique-8227,The customer complaints are rising. @PLAYER Do we have an ETA for resolution?
+2026-03-27 10:30:59,bez,business-comms-8227,What is the latest on this?
+2026-03-27 10:31:11,bob,online-boutique-8227,The tech team should display a banner with right customer message
+2026-03-27 10:31:13,PLAYER,online-boutique-8227,There is no ETA at this moment in time
+2026-03-27 10:31:17,PLAYER,online-boutique-8227,Who owns the front end?
+2026-03-27 10:31:20,bob,online-boutique-8227,"As of now, i haev sent emails to customers stating we are down"
+2026-03-27 10:31:26,bob,online-boutique-8227,Do we have an ETA ?
+2026-03-27 10:31:42,PLAYER,business-comms-8227,"Looks to be a front end issue - tinus what is your experience with resolving front end issues"
+2026-03-27 10:31:51,tinus,business-comms-8227,Most of the incidents are dur to change
+2026-03-27 10:31:54,PLAYER,online-boutique-8227,"Thats great, well done Bo"
+2026-03-27 10:31:57,PLAYER,online-boutique-8227,Bob
+2026-03-27 10:31:58,tinus,business-comms-8227,were there any change?
+2026-03-27 10:32:29,daniel,online-boutique-8227,"@PLAYER looks like the front end is down atm"
+2026-03-27 10:32:48,PLAYER,online-boutique-8227,shay can you start looking at the front end and the change you made earlier please
+2026-03-27 10:32:52,maya,online-boutique-8227,All clean from Securioty side
+2026-03-27 10:33:00,maya,online-boutique-8227,no error or alerts- this is internal issue
+2026-03-27 10:33:03,PLAYER,online-boutique-8227,This is your area and I have not had any input from you at the moment
+2026-03-27 10:33:07,daniel,online-boutique-8227,A Frontend change caused by change CHG89349 has brought down the Frontend pods
+2026-03-27 10:33:08,PLAYER,online-boutique-8227,Thanks Maya
+2026-03-27 10:33:13,shay,online-boutique-8227,But this functionally worked when I tested
+2026-03-27 10:33:18,daniel,online-boutique-8227,"Even if it worked in your test environment, something's behaving differently in prod, maybe a config mismatch or unhandled edge case"
+2026-03-27 10:33:21,bez,business-comms-8227,Can you give a quick update on the status?
+2026-03-27 10:33:28,PLAYER,business-comms-8227,Confirmation this is not a security issue from Maya
+2026-03-27 10:33:44,PLAYER,online-boutique-8227,Can you role back your change asap please
+2026-03-27 10:33:46,uptimelabs,online-boutique-8227,:star: Restoration over root cause analysis
+2026-03-27 10:33:55,shay,online-boutique-8227,"Sorry, I've never done a rollback in PROD before, can someone help me with the steps?"
+2026-03-27 10:34:03,PLAYER,online-boutique-8227,"bob can you prep resolution comms so we dont waste time later"
+2026-03-27 10:34:05,bob,online-boutique-8227,"Sure, will do"
+2026-03-27 10:34:25,daniel,online-boutique-8227,"I will help you, Shay Rolling back now"
+2026-03-27 10:34:26,PLAYER,online-boutique-8227,daniel can you help Shay asap please
+2026-03-27 10:34:40,daniel,online-boutique-8227,I have rollbacked Frontend:version to 10.1.0 to more stable version. Can somebody verify?
+2026-03-27 10:34:41,PLAYER,business-comms-8227,"Looks to be a change made from earlier, rolling back nonw"
+2026-03-27 10:34:43,uptimelabs,online-boutique-8227,"To verify resolution and close incident:
+--Validate fix with team:white_check_mark:
+--Check with Customer Support:white_check_mark:
+--Confirm in 'Business-comms':white_check_mark:"
+2026-03-27 10:34:43,uptimelabs,online-boutique-8227,:star: Confirm resolution with the business
+2026-03-27 10:34:51,PLAYER,business-comms-8227,1 minute to your meeting
+2026-03-27 10:34:55,bob,online-boutique-8227,"Customers are able to place the orders, complaint calls have reduced as well."
+2026-03-27 10:35:16,PLAYER,business-comms-8227,Calls and orders are coming back through Bez. We are back up and running
+2026-03-27 10:35:21,bez,business-comms-8227,Thats great
+2026-03-27 10:35:25,PLAYER,business-comms-8227,Website is back
+2026-03-27 10:35:32,bez,business-comms-8227,Much appreciate quick turn around time
+2026-03-27 10:35:34,PLAYER,business-comms-8227,I can place an order
+2026-03-27 10:35:47,PLAYER,online-boutique-8227,"Great, Bob, please send out the resolution comms"
+2026-03-27 10:35:51,bob,online-boutique-8227,Will do
+2026-03-27 10:35:58,PLAYER,online-boutique-8227,Great work team - it looks like we are back up and running
+2026-03-27 10:35:59,daniel,online-boutique-8227,It's definitely working again!
+2026-03-27 10:36:04,shay,online-boutique-8227,Wow that was intense!
+2026-03-27 10:36:06,bez,business-comms-8227,Thanks! for resolving it quickly
+2026-03-27 10:36:09,hamed,online-boutique-8227,Good job guys
+2026-03-27 10:36:13,tinus,online-boutique-8227,Yes well done! that could have gone much worse so props to everyone
+2026-03-27 10:36:17,tinus,online-boutique-8227,We will have a Post-Incident Review (PIR) to understand what happened
+2026-03-27 10:36:19,PLAYER,online-boutique-8227,"Daniel, can you review the change Shay made earlier please and prepare for the Major Incident Review"
+2026-03-27 10:36:21,daniel,online-boutique-8227,"Yes, I will work with Shay"
+2026-03-27 10:36:27,uptimelabs,online-boutique-8227,"Drill Wrap-Up
+
+Thanks for playing! This session is now closed.
+
+Please return to your Uptime Labs tab to review your performance and complete the Retrospective & Feedback form.
+
+If you've already closed the tab, you can reopen the form using the button below."
+2026-03-27 10:36:28,PLAYER,online-boutique-8227,Thank you
+2026-03-27 10:36:38,uptimelabs,online-boutique-8227,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/29/8227/feedback"

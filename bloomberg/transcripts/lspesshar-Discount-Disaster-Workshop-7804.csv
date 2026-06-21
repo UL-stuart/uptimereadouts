@@ -1,0 +1,44 @@
+datetime,player,channel,message
+2026-02-24 08:55:05,bez,online-boutique-7804,Can you believe it? That influencer photoshoot is blowing up! We're making waves all over social media.
+2026-02-24 08:55:09,bob,online-boutique-7804,
+2026-02-24 08:55:15,bez,online-boutique-7804,Our watches and loafers are all over everyone's feeds 
+2026-02-24 08:55:19,bob,online-boutique-7804,You're telling me? My inbox is packed with customer queries 
+2026-02-24 08:55:26,uptimelabs,online-boutique-7804,"Welcome to Discount Disaster, the responsibility is on you to size up the problem.
+
+? *Use `/help` at any time for a list of useful links and commands*
+ ? *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin"
+2026-02-24 09:04:03,daniel,online-boutique-7804,"Yeah, I'm seeing it, traffic's surging. But nothing we didn't anticipate for"
+2026-02-24 09:04:06,hamed,online-boutique-7804,Good. We've optimised the backend for this kind of spike
+2026-02-24 09:04:10,maya,online-boutique-7804,Let's just make sure that's all it is - legit traffic. Influencer campaigns can attract more than just customers
+2026-02-24 09:04:15,shay,online-boutique-7804,I'll keep eyes on the dashboard. We're running at nearly 80% capacity right now for all the user actvity our platform can handle
+2026-02-24 09:04:19,bez,online-boutique-7804,It's all good. People are scrambling to get their hands on our products. That viral post is gold
+2026-02-24 09:04:22,daniel,online-boutique-7804,We're inching closer to max capacity. We're at 95% load now
+2026-02-24 09:04:28,shay,online-boutique-7804,I just refreshed the website and it's now taking ages to load
+2026-02-24 09:04:33,shay,online-boutique-7804,Is the website down? Or maybe it's just my machine
+2026-02-24 09:05:16,PLAYER,online-boutique-7804,I got an error when I tried to place an order. 503 service unavailable
+2026-02-24 09:05:20,uptimelabs,online-boutique-7804,:star: Reproduces the incident
+2026-02-24 09:05:31,PLAYER,online-boutique-7804,Is this impacting customers or only our internal environnment
+2026-02-24 09:05:34,uptimelabs,online-boutique-7804,:star: Asking questions to validate impact of the problem
+2026-02-24 09:05:52,PLAYER,online-boutique-7804,Order confirmations have dropped as per the dashboard
+2026-02-24 09:05:54,uptimelabs,online-boutique-7804,:star: Use metrics as evidence
+2026-02-24 09:06:03,PLAYER,online-boutique-7804,Same with Order numbers
+2026-02-24 09:06:36,PLAYER,online-boutique-7804,@shay Do you have any order confirmations coming through?
+2026-02-24 09:07:22,PLAYER,online-boutique-7804,
+2026-02-24 09:07:22,uptimelabs,business-comms-7804,*Incident Number INC100086:* Let's mark this as Sev-1
+2026-02-24 09:08:01,PLAYER,online-boutique-7804,Let's escalated to @daniel and @hamed 
+2026-02-24 09:08:03,uptimelabs,online-boutique-7804,:star: Escalating when required
+2026-02-24 09:08:28,PLAYER,online-boutique-7804,Do we see any services down from the logs?
+2026-02-24 09:09:00,PLAYER,online-boutique-7804,Looks like order numbers are picking up slightly
+2026-02-24 09:09:06,PLAYER,online-boutique-7804,Did we restart any services?
+2026-02-24 09:09:10,uptimelabs,online-boutique-7804,:star: Check changes done to the platform
+2026-02-24 09:09:38,PLAYER,online-boutique-7804,Any recent releases?
+2026-02-24 09:11:10,PLAYER,online-boutique-7804,Do we see any services down?
+2026-02-24 09:11:51,PLAYER,online-boutique-7804,The grafan page is showing a error for me
+2026-02-24 09:12:36,PLAYER,online-boutique-7804,@daniel you around?
+2026-02-24 09:12:40,PLAYER,online-boutique-7804,can we call our
+2026-02-24 09:12:48,PLAYER,online-boutique-7804,call out*
+2026-02-24 09:15:06,PLAYER,online-boutique-7804,@shay are you there?
+2026-02-24 09:34:10,uptimelabs,online-boutique-7804,"Thank you for playing 'Discount Disaster', We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit start when you are ready."

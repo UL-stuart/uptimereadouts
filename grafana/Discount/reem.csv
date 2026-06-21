@@ -1,0 +1,147 @@
+index,datetime,player,channel,message
+0,17/12/2025 10:07,Bez,online-boutique-7171,Can you believe it? That influencer photoshoot is blowing up! We're making waves all over social media.
+1,17/12/2025 10:07,Bob,online-boutique-7171,Infleuncer photoshoot
+2,17/12/2025 10:07,Bez,online-boutique-7171,Our watches and loafers are all over everyone's feeds
+3,17/12/2025 10:08,Bob,online-boutique-7171,You're telling me? My inbox is packed with customer queries
+5,17/12/2025 10:09,PLAYER,online-boutique-7171,Clicked undefined button
+6,17/12/2025 10:10,PLAYER,online-boutique-7171,Clicked org button
+7,17/12/2025 10:11,PLAYER,online-boutique-7171,Clicked undefined button
+8,17/12/2025 10:13,PLAYER,online-boutique-7171,Clicked Start button
+10,17/12/2025 10:13,Daniel,online-boutique-7171,Yeah I'm seeing it traffic's surging. But nothing we didn't anticipate for
+11,17/12/2025 10:13,Hamed,online-boutique-7171,Good. We've optimised the backend for this kind of spike
+12,17/12/2025 10:14,Maya,online-boutique-7171,Let's just make sure that's all it is - legit traffic. Influencer campaigns can attract more than just customers
+13,17/12/2025 10:14,Shay,online-boutique-7171,I'll keep eyes on the dashboard. We're running at nearly 80% capacity right now for all the user actvity our platform can handle
+14,17/12/2025 10:14,Bez,online-boutique-7171,It's all good. People are scrambling to get their hands on our products. That viral post is gold
+15,17/12/2025 10:14,Daniel,online-boutique-7171,We're inching closer to max capacity. We're at 95% load now
+16,17/12/2025 10:14,Shay,online-boutique-7171,I just refreshed the website and it's now taking ages to load
+17,17/12/2025 10:14,Shay,online-boutique-7171,Is the website down? Or maybe it's just my machine
+18,17/12/2025 10:15,PLAYER,online-boutique-7171,Yes the website is down i see 503
+20,17/12/2025 10:15,Shay,online-boutique-7171,Same here i see the issue
+21,17/12/2025 10:16,PLAYER,online-boutique-7171,"online botique system is down 503 service unavailable"" sev-1"
+22,17/12/2025 10:16,PLAYER,business-comms-7171,"*Incident Number INC100029:* ""online botique system is down 503 service unavailable"" sev-1"
+24,17/12/2025 10:16,Bez,business-comms-7171,Not good
+25,17/12/2025 10:16,Bez,business-comms-7171,Can you please get this sorted asap - This sale is really important to us
+26,17/12/2025 10:17,Bez,business-comms-7171,DO you if this is regional or global ?
+28,17/12/2025 10:17,PLAYER,online-boutique-7171,Currently there's no functionality is working the whole system is down
+29,17/12/2025 10:18,Shay,online-boutique-7171,I see a lot of errors on front end app
+30,17/12/2025 10:18,PLAYER,online-boutique-7171,we need to determine if this is regional or global cc Hamed
+31,17/12/2025 10:18,PLAYER,online-boutique-7171,Bob
+33,17/12/2025 10:18,Bob,online-boutique-7171,We are getting a lot of calls from customers that they are unable to access the website
+34,17/12/2025 10:18,Bob,online-boutique-7171,Few are reporting long loading times
+35,17/12/2025 10:18,Bob,online-boutique-7171,and few are able to load platforms but unable to order
+36,17/12/2025 10:18,Bob,online-boutique-7171,Here are the latest reports
+37,17/12/2025 10:18,Bob,online-boutique-7171,Customer Reports Graph
+38,17/12/2025 10:18,PLAYER,online-boutique-7171,so looks like regional
+39,17/12/2025 10:18,Bob,online-boutique-7171,Looks like a global issue
+40,17/12/2025 10:18,PLAYER,business-comms-7171,it's regional
+41,17/12/2025 10:18,Bob,online-boutique-7171,It is Global
+42,17/12/2025 10:18,PLAYER,business-comms-7171,Global issue
+43,17/12/2025 10:19,Bob,online-boutique-7171,Right now teh calls are from every region
+44,17/12/2025 10:19,Bez,business-comms-7171,Okay
+45,17/12/2025 10:19,Daniel,online-boutique-7171,Shall we dig more on front end logs?
+46,17/12/2025 10:19,PLAYER,online-boutique-7171,yes
+47,17/12/2025 10:19,Daniel,online-boutique-7171,I see a lot of 429's and 5xx on front end
+48,17/12/2025 10:19,Shay,online-boutique-7171,Im seeing a lot of errors in the logs
+49,17/12/2025 10:19,Shay,online-boutique-7171,Not sure what the root cause is but we are seeing high load on our Frontend Pods - this may be due to the ongoing discount or if it could be related to any tests we were running.
+50,17/12/2025 10:20,Shay,online-boutique-7171,I see high number of rest-call errors like  http429 http503 and 504s
+51,17/12/2025 10:20,Shay,online-boutique-7171,```\nERROR: GET /api/GetInfo HTTP/1.1 429 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/91.0.4472.124 Safari/537.36 FrontEndApp\n``` ```\nERROR: GET /api/GetInfo HTTP/1.1 429 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/91.0.4472.124 Safari/537.36 FrontEndApp\n```
+52,17/12/2025 10:20,Shay,online-boutique-7171,Im also seeing this
+53,17/12/2025 10:20,Shay,online-boutique-7171,```\n[error]: Service unavailable cannot process request for /api/GetInfo (503).\n``` ```
+54,17/12/2025 10:20,Daniel,online-boutique-7171,Seeing frontend errors as well
+55,17/12/2025 10:20,Daniel,online-boutique-7171,```\n[error] 12345#12345: *98765 limiting requests exceeded 10 requests per second for client 149.34.52.176 request: GET /api/GetInfo HTTP/1.1 FrontEndApp\n``` \n```[error] 12345#12345: *98766 limiting requests exceeded 10 requests per second for client 149.34.52.176 request: GET /api/GetInfo HTTP/1.1 FrontEndApp\n``` ```
+56,17/12/2025 10:20,PLAYER,online-boutique-7171,can we check backend logs for this  /api/GetInfo  ?
+57,17/12/2025 10:20,Daniel,online-boutique-7171,```\n[ERROR] 12345#12345: *98765 gateway timed out (504) while receiving response from upstream client: 149.34.52.176 request: GET /api/GetInfo HTTP/1.1 host: FrontEndApp\n``` ```\n[ERROR] 12345#12345: *98766 gateway timed out (504) while receiving response from upstream client: 149.34.52.176 request: GET /api/GetInfo HTTP/1.1 host: FrontEndApp\n``` ```
+58,17/12/2025 10:20,Daniel,online-boutique-7171,Do we know what the expected amount of traffic should be due to the on-going discount?
+59,17/12/2025 10:21,PLAYER,online-boutique-7171,also maybe there's an issue in the FE that causing manycalls to the backend maybe ?
+61,17/12/2025 10:21,Daniel,online-boutique-7171,Yes the platform team can give more info if we can scale
+62,17/12/2025 10:21,Daniel,online-boutique-7171,definately FE cannot habdle this many requests
+65,17/12/2025 10:22,PLAYER,online-boutique-7171,Tanya would you please check if we can scale till we figure out the rootcause
+67,17/12/2025 10:22,Tanya,online-boutique-7171,Did we check teh changes this morning ?
+68,17/12/2025 10:22,Tanya,online-boutique-7171,I see Front end is unable to handle all requests coming in
+69,17/12/2025 10:22,Shay,online-boutique-7171,<https://uptime-labs.atlassian.net/wiki/spaces/ULPUBLIC/pages/1118961668/Discount+Disaster+-+Change+Request+Logs>
+70,17/12/2025 10:22,Shay,online-boutique-7171,These are teh changes
+71,17/12/2025 10:23,Tanya,online-boutique-7171,Right now i see there are 6000 login requests coming in
+72,17/12/2025 10:24,PLAYER,online-boutique-7171,i suspect CHG85387 and CHG85385
+74,17/12/2025 10:24,Tanya,online-boutique-7171,In that case can we stop all load tests running ?
+75,17/12/2025 10:25,PLAYER,online-boutique-7171,Daniel Shay would you please help in e stop all load tests running ?
+76,17/12/2025 10:25,Tanya,online-boutique-7171,I doubt any other change would cause high load on system
+77,17/12/2025 10:25,Daniel,online-boutique-7171,Sure i am pausing all testst now
+78,17/12/2025 10:25,Shay,online-boutique-7171,Both the tests are paused
+79,17/12/2025 10:25,Shay,online-boutique-7171,i still see the errors
+80,17/12/2025 10:25,Bez,business-comms-7171,What's the latest
+81,17/12/2025 10:25,Bez,business-comms-7171,Can i get an update please? I have stakeholders calling me now
+82,17/12/2025 10:25,PLAYER,business-comms-7171,we suspect this's related to load testing running now stopping all load tests from running to see if this will help
+83,17/12/2025 10:26,Daniel,online-boutique-7171,do we know what was the expected number of new logins due to sales?
+84,17/12/2025 10:26,PLAYER,online-boutique-7171,Bob
+85,17/12/2025 10:27,Bob,online-boutique-7171,New sale or discount was expected to bring around 10% more users - But right now i see 10X which is not right
+86,17/12/2025 10:27,Daniel,online-boutique-7171,I need network traffic data
+87,17/12/2025 10:27,Daniel,online-boutique-7171,an anyone give me
+88,17/12/2025 10:27,Daniel,online-boutique-7171,to see where is teh traffic comign from
+89,17/12/2025 10:27,PLAYER,online-boutique-7171,Tanya Amit
+90,17/12/2025 10:27,PLAYER,online-boutique-7171,Hamed
+91,17/12/2025 10:27,Tanya,online-boutique-7171,My dashboards are loading too slow- Hamed ?
+92,17/12/2025 10:28,Hamed,online-boutique-7171,I was looking at Network traffic - But the dashboard took ages to load.
+93,17/12/2025 10:28,Hamed,online-boutique-7171,Here's a screenshot of Network traffic across each region.
+94,17/12/2025 10:28,Hamed,online-boutique-7171,Customer Reports Graph
+95,17/12/2025 10:28,Shay,online-boutique-7171,Wow Spain must really like our products
+96,17/12/2025 10:29,PLAYER,online-boutique-7171,do we have any outage from our cloud providers in Eu regions specially spain ?
+97,17/12/2025 10:29,Daniel,online-boutique-7171,No - They are alright - But I see the traffic from Spain is high
+98,17/12/2025 10:29,Hamed,online-boutique-7171,i really suspect this must be an attack  we should involve Sec ops team
+99,17/12/2025 10:29,PLAYER,online-boutique-7171,Clicked org button
+100,17/12/2025 10:30,PLAYER,online-boutique-7171,Maya
+101,17/12/2025 10:30,Maya,online-boutique-7171,Can you please brief me about the issue please
+102,17/12/2025 10:30,Bez,business-comms-7171,DO we have an ETA for resolution ?
+103,17/12/2025 10:30,PLAYER,online-boutique-7171,would you help us figuring out why we have such a traffic from Spain causing an outage and a high amount of api requests
+104,17/12/2025 10:31,Maya,online-boutique-7171,Hey @PLAYER after reviewing the logs I strongly suspect that this is a security-related issue.
+105,17/12/2025 10:31,Maya,online-boutique-7171,The abnormally high traffic with http 429 503 and 504 errors may be due to a possible DDoS/DoS attack
+106,17/12/2025 10:31,Maya,online-boutique-7171,I'll need to continue investigating further but it definitely looks like something is targeting our system
+107,17/12/2025 10:31,Tinus,business-comms-7171,Looks like we have a security threat - We should be extra careful with this incident
+108,17/12/2025 10:31,Bez,business-comms-7171,Do we know what's the financial impact of the issue? How much are we losing every minute?
+109,17/12/2025 10:31,Bez,business-comms-7171,@PLAYER Should we inform the 'Compliance Team' about this issue?
+110,17/12/2025 10:31,PLAYER,business-comms-7171,the tests weren't the reason we suspect there's a DDoS attack
+111,17/12/2025 10:31,Bez,business-comms-7171,The Compliance Team makes sure we follow laws and rules like reporting the incident to the right people and keeping proper records. It helps us avoid legal trouble and protects our reputation.
+112,17/12/2025 10:31,Bez,business-comms-7171,oh noo
+113,17/12/2025 10:32,PLAYER,online-boutique-7171,do you have an ETA to fix it Maya?\\
+114,17/12/2025 10:32,Maya,online-boutique-7171,Honestly  no
+116,17/12/2025 10:32,Maya,online-boutique-7171,we are still investigating this
+117,17/12/2025 10:32,PLAYER,business-comms-7171,we still have no ETA Sec team is investigating
+118,17/12/2025 10:32,PLAYER,online-boutique-7171,Clicked org button
+119,17/12/2025 10:32,Maya,online-boutique-7171,I need teh IP address of the incoming traffic from logs if anyone has handy
+120,17/12/2025 10:32,PLAYER,online-boutique-7171,Tanya
+121,17/12/2025 10:33,Daniel,online-boutique-7171,<https://uptimelabs-metaverse.slack.com/archives/C0A40RFHD4M/p1765966836368869>\nFrom my logs above client 149.34.52.176
+122,17/12/2025 10:33,Daniel,online-boutique-7171,Looks like all requests are comign from Single IP
+123,17/12/2025 10:33,Tinus,business-comms-7171,Leave Compliance with me - I will talk to them
+124,17/12/2025 10:33,PLAYER,online-boutique-7171,can we block this IP ?
+125,17/12/2025 10:34,Maya,online-boutique-7171,Yes thats a better solution right now
+126,17/12/2025 10:34,Maya,online-boutique-7171,The IP address has now been blocked
+127,17/12/2025 10:34,Tinus,online-boutique-7171,Can you confirm @PLAYER?
+128,17/12/2025 10:34,Hamed,online-boutique-7171,Lucky this was DoS (Denial of Service ) from a single IP - What if this attack happens from multiple IP addresses (DDoS)?
+129,17/12/2025 10:34,Hamed,online-boutique-7171,We should start working on the pending WAF rule updates for the frontend
+130,17/12/2025 10:34,Bob,online-boutique-7171,@PLAYER Should we let the customers know about the attack?
+131,17/12/2025 10:34,PLAYER,online-boutique-7171,yes
+132,17/12/2025 10:35,PLAYER,business-comms-7171,can we write a status page or send to the users informing them about the DoS attack ?
+134,17/12/2025 10:35,PLAYER,online-boutique-7171,can we check the dashboard again to see the upcoming traffixc
+135,17/12/2025 10:35,Tinus,business-comms-7171,lets not disclose it to customers yet pleaselet complaince team handle it
+136,17/12/2025 10:35,PLAYER,business-comms-7171,we were able to block the IP that was causing the DoS attack
+137,17/12/2025 10:35,PLAYER,online-boutique-7171,we are up again
+139,17/12/2025 10:36,Bob,online-boutique-7171,<https://uptimelabs-metaverse.slack.com/archives/C0A40RFHD4M/p1765967676224299>
+140,17/12/2025 10:36,PLAYER,online-boutique-7171,Can folks confirm please ?
+142,17/12/2025 10:36,Daniel,online-boutique-7171,I can see 200's in Front end
+143,17/12/2025 10:36,PLAYER,business-comms-7171,We are up again
+144,17/12/2025 10:36,Shay,online-boutique-7171,I can login and place orders
+145,17/12/2025 10:36,Bob,online-boutique-7171,Can you help me @PLAYER
+146,17/12/2025 10:36,PLAYER,online-boutique-7171,Tinus said\n> lets not disclose it to customers yet pleaselet complaince team handle it
+147,17/12/2025 10:37,Maya,online-boutique-7171,Good call @PLAYER
+148,17/12/2025 10:37,Maya,online-boutique-7171,these are sensitve we cannot let customers know
+149,17/12/2025 10:37,Tanya,online-boutique-7171,Great work we managed to save the sale
+150,17/12/2025 10:37,Tinus,online-boutique-7171,I knew we had it in us
+151,17/12/2025 10:37,Shay,online-boutique-7171,Now i can continue shopping and get some nice discounts
+152,17/12/2025 10:37,Daniel,online-boutique-7171,Absolutely Shay! But i hope not during work hours
+153,17/12/2025 10:37,Shay,online-boutique-7171,Of course Daniel...... Sorry team i got to go close a unrelated tab now
+154,17/12/2025 10:37,Bez,online-boutique-7171,Anyways well done team
+155,17/12/2025 10:37,Bez,online-boutique-7171,You all did an amazing job
+156,17/12/2025 10:37,PLAYER,online-boutique-7171,we need to have an action item to understand how can we protect the system against such attacks
+157,17/12/2025 10:37,Hamed,online-boutique-7171,I will work on pending WAF rules
+158,17/12/2025 10:38,Hamed,online-boutique-7171,we should implament WAF ASAP
+160,17/12/2025 10:38,PLAYER,online-boutique-7171,incident closed
+161,17/12/2025 10:38,PLAYER,online-boutique-7171,Clicked Start_feedback button\n

@@ -1,0 +1,87 @@
+datetime,player,channel,message
+2025-07-23 13:24:27,UptimeLabs,online-boutique-5122,Start lvl 29 [n/a - 0]
+2025-07-23 13:27:45,PLAYER,online-boutique-5122,Clicked org button
+2025-07-23 13:28:29,PLAYER,online-boutique-5122,Clicked undefined button
+2025-07-23 13:29:00,PLAYER,online-boutique-5122,Clicked undefined button
+2025-07-23 13:34:15,PLAYER,business-comms-5122,*Incident Number INC100057:* - Test  Sev1 [n/a - 0]
+2025-07-23 13:35:21,PLAYER,online-boutique-5122,Clicked Start button
+2025-07-23 13:35:22,UptimeLabs,online-boutique-5122,":alarm_clock: - You have 25 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders. [n/a - 0]"
+2025-07-23 13:35:22,Tinus,online-boutique-5122,"Welcome our new IM @Ramesh Matta, Happy to have you in the team. Hope you get comfortable with everyone [n/a - 0]"
+2025-07-23 13:35:27,Shay,online-boutique-5122,Welcome @Ramesh Matta [n/a - 0]
+2025-07-23 13:35:32,Daniel,online-boutique-5122,Nice to meet you @Ramesh Matta [n/a - 0]
+2025-07-23 13:35:42,Bob,online-boutique-5122,There are a few strange customer reports with the helpdesk [n/a - 0]
+2025-07-23 13:35:46,Bob,online-boutique-5122,"Apparently, the site is loading slowly [n/a - 0]"
+2025-07-23 13:35:50,Bob,online-boutique-5122,People are reporting that they can't make payments either [n/a - 0]
+2025-07-23 13:35:54,Bob,online-boutique-5122,customer_reports [n/a - 0]
+2025-07-23 13:35:57,Bob,online-boutique-5122,@Ramesh Matta Can you check this? [n/a - 0]
+2025-07-23 13:38:56,Bob,online-boutique-5122,if you need any information from the customers I'm here to help [n/a - 0]
+2025-07-23 13:39:46,PLAYER,online-boutique-5122,Bob Can you please elaborate more on this production issue? [n/a - 0]
+2025-07-23 13:39:51,UptimeLabs,online-boutique-5122,:star: Qualify the problem [n/a - 0]
+2025-07-23 13:40:21,Bob,online-boutique-5122,"not sure what is going on in the production side of things, I can gather reports, customers are talking about though [n/a - 0]"
+2025-07-23 13:40:35,Daniel,online-boutique-5122,Below are the changes implemented this morning [n/a - 0]
+2025-07-23 13:40:40,Daniel,online-boutique-5122,deployments [n/a - 0]
+2025-07-23 13:40:41,PLAYER,online-boutique-5122,How many customers are impacted and from how long this incident happened? [n/a - 0]
+2025-07-23 13:40:47,Bob,online-boutique-5122,Let me gather the information for you [n/a - 0]
+2025-07-23 13:40:48,UptimeLabs,online-boutique-5122,:star: Asking questions to validate impact of the problem [n/a - 0]
+2025-07-23 13:40:52,Bob,online-boutique-5122,There are more than 300 customer reports till now [n/a - 0]
+2025-07-23 13:40:59,Bob,online-boutique-5122,"Calls are from every region, likely to be Global [n/a - 0]"
+2025-07-23 13:41:05,Bob,online-boutique-5122,The majority of reports say the frontend isn't loading for them [n/a - 0]
+2025-07-23 13:41:08,Bob,online-boutique-5122,Let me know if you need more information [n/a - 0]
+2025-07-23 13:41:31,PLAYER,online-boutique-5122,"Tanya, May I know the changes done on Checkout Service on CHG89350? [n/a - 0]"
+2025-07-23 13:41:37,UptimeLabs,online-boutique-5122,:star: Check changes done to the platform [n/a - 0]
+2025-07-23 13:42:28,Daniel,online-boutique-5122,I am able to replicate the issue. Checking the logs now [n/a - 0]
+2025-07-23 13:42:33,Daniel,online-boutique-5122,"I see a lot of errors, most of them are context initialisation errors  [n/a - 0]"
+2025-07-23 13:42:37,Daniel,online-boutique-5122,Logs [n/a - 0]
+2025-07-23 13:42:41,PLAYER,online-boutique-5122,"HI Shay, May I know the changes deployed on Front end w.r.t CHG89349? [n/a - 0]"
+2025-07-23 13:42:43,Bez,business-comms-5122,"I have a stake holders meet in next 10 minutes, @Ramesh Matta do you think this can be resolved by then?  [n/a - 0]"
+2025-07-23 13:42:46,UptimeLabs,online-boutique-5122,:star: Check changes done to the platform [n/a - 0]
+2025-07-23 13:42:56,Tanya,online-boutique-5122,i will be happy to help in 2 minutes working on something here [n/a - 0]
+2025-07-23 13:43:48,UptimeLabs,online-boutique-5122,:bulb: Hint: Declare an incident. [n/a - 0]
+2025-07-23 13:43:49,Shay,online-boutique-5122,i will take a look into this change for you now [n/a - 0]
+2025-07-23 13:44:15,UptimeLabs,online-boutique-5122,:bulb: Hint: Understand the problem by reproducing it [n/a - 0]
+2025-07-23 13:44:19,PLAYER,online-boutique-5122,"HI Shay, Can u please help me in identifying the issue why the page is not loading ? [n/a - 0]"
+2025-07-23 13:44:25,UptimeLabs,online-boutique-5122,:star: Qualify the problem [n/a - 0]
+2025-07-23 13:44:58,Tanya,online-boutique-5122,"im here to help now, do you want me to look into the infra now? [n/a - 0]"
+2025-07-23 13:45:33,Shay,online-boutique-5122,"im seeing some issues with the frontend here, there seems to be some errors in the logs for this [n/a - 0]"
+2025-07-23 13:45:39,PLAYER,online-boutique-5122,Tanya Can u please check how to reproduce this issue or were u able to reproduce this for me? [n/a - 0]
+2025-07-23 13:45:43,Shay,online-boutique-5122,unsure if my change is causing this error [n/a - 0]
+2025-07-23 13:45:44,UptimeLabs,online-boutique-5122,:star: Attempt to replicate the issue [n/a - 0]
+2025-07-23 13:45:50,Tanya,online-boutique-5122,i will try that now [n/a - 0]
+2025-07-23 13:46:26,Tanya,online-boutique-5122,502 Bad Gateway [n/a - 0]
+2025-07-23 13:46:41,Tanya,online-boutique-5122,"im seeing this error when i load the site, do you see the same thing? [n/a - 0]"
+2025-07-23 13:47:10,Bez,business-comms-5122,Why is there no incident ticket for this outage??? [n/a - 0]
+2025-07-23 13:47:18,UptimeLabs,online-boutique-5122,:bulb: Hint: Declare an incident. [n/a - 0]
+2025-07-23 13:47:18,PLAYER,business-comms-5122,*Incident Number INC10005:* - Page is not loading with 502 Bad Gateway Sev1 [n/a - 0]
+2025-07-23 13:47:18,UptimeLabs,online-boutique-5122,:star: Incident record created [n/a - 0]
+2025-07-23 13:47:20,UptimeLabs,online-boutique-5122,:star: Send first comms in first 5 minutes [n/a - 0]
+2025-07-23 13:47:24,Bez,business-comms-5122,How many customers are affected? Are the reports coming in from all regions? [n/a - 0]
+2025-07-23 13:47:59,PLAYER,business-comms-5122,300 customers are impacted [n/a - 0]
+2025-07-23 13:48:17,PLAYER,business-comms-5122,Yes.. Reports are coming from all regions [n/a - 0]
+2025-07-23 13:48:30,Shay,online-boutique-5122,"from my investigation, i think that my frontend change is causing this issue, the errors line up with the deployment of my change [n/a - 0]"
+2025-07-23 13:49:03,PLAYER,online-boutique-5122,Can you please rollback the change that you have done ? [n/a - 0]
+2025-07-23 13:49:19,Shay,online-boutique-5122,"Sorry, I've never done a rollback in PROD before, can someone help me with the steps? [n/a - 0]"
+2025-07-23 13:49:24,Daniel,online-boutique-5122,"I will help you, @Shay. Rolling back now [n/a - 0]"
+2025-07-23 13:49:38,UptimeLabs,online-boutique-5122,:star: Restoration over root cause analysis [n/a - 0]
+2025-07-23 13:49:42,Daniel,online-boutique-5122,Rollback completed. Can somebody verify? [n/a - 0]
+2025-07-23 13:49:44,UptimeLabs,online-boutique-5122,:bulb: Hint: Cross check resolution with stakeholders [n/a - 0]
+2025-07-23 13:49:46,UptimeLabs,online-boutique-5122,:bulb: Hint: Confirm resolution with the business [n/a - 0]
+2025-07-23 13:49:55,PLAYER,online-boutique-5122,"Tanya, can u please assist Shay here in rolling back the changes he has done ? [n/a - 0]"
+2025-07-23 13:50:05,UptimeLabs,online-boutique-5122,:star: Manage actions and timings [n/a - 0]
+2025-07-23 13:50:43,PLAYER,online-boutique-5122,"Hi Bob, Can u please check now whether website is working properly ? [n/a - 0]"
+2025-07-23 13:50:50,UptimeLabs,online-boutique-5122,:star: Attempt to replicate the issue [n/a - 0]
+2025-07-23 13:50:55,Bob,online-boutique-5122,checking reports now [n/a - 0]
+2025-07-23 13:51:12,Bob,online-boutique-5122,"happy to say no more reports are coming in, customers are happy [n/a - 0]"
+2025-07-23 13:52:22,PLAYER,online-boutique-5122,"Hi Daniel, It looks like the issue is resolved now.. Can u pls confirm that? [n/a - 0]"
+2025-07-23 13:52:29,UptimeLabs,online-boutique-5122,:star: Cross checking resolution with team [n/a - 0]
+2025-07-23 13:52:38,Daniel,online-boutique-5122,yes no more errors in the logs [n/a - 0]
+2025-07-23 13:53:02,PLAYER,business-comms-5122,Now the issue is resolved and no issues persists. thank you [n/a - 0]
+2025-07-23 13:53:07,Daniel,online-boutique-5122,It's definitely working again! [n/a - 0]
+2025-07-23 13:53:09,UptimeLabs,online-boutique-5122,:star: Confirm resolution with the business [n/a - 0]
+2025-07-23 13:53:12,Shay,online-boutique-5122,Wow that was intense! [n/a - 0]
+2025-07-23 13:53:14,Bez,business-comms-5122,Thanks! for resolving it quickly [n/a - 0]
+2025-07-23 13:53:17,Hamed,online-boutique-5122,Good job guys [n/a - 0]
+2025-07-23 13:53:20,Tinus,online-boutique-5122,Yes well done! that could have gone much worse so props to everyone [n/a - 0]
+2025-07-23 13:53:28,UptimeLabs,online-boutique-5122,Start retro and feedback [n/a - 0]
+2025-07-23 13:53:49,PLAYER,online-boutique-5122,"HI Tanya, Shay, Good job guys.. keep it up.. [n/a - 0]"
+2025-07-23 13:54:18,PLAYER,online-boutique-5122,Clicked Start_feedback button
+2025-07-23 14:00:36,UptimeLabs,online-boutique-5122,Submission successful [n/a - 0]

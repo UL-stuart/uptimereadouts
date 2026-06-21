@@ -1,0 +1,126 @@
+index,datetime,player,channel,message
+0,10/02/2026 16:12,bez@localhost,online-boutique-7688,Morning team! Anyone else need a triple espresso today?
+1,10/02/2026 16:13,tinus@localhost,online-boutique-7688,You're not the only one Bez! The reports from last week are still giving me nightmares.
+2,10/02/2026 16:13,bob@localhost,online-boutique-7688,Tell me about it Tinus.
+3,10/02/2026 16:13,bob@localhost,online-boutique-7688,But hey at least it's sunny outside today. :sunrise:
+4,10/02/2026 16:13,bez@localhost,online-boutique-7688,True a little sunshine makes everything better.
+5,10/02/2026 16:13,bez@localhost,online-boutique-7688,Also I'm having my usual green smoothie. That's my secret energy booster.
+6,10/02/2026 16:13,daniel@localhost,online-boutique-7688,Nice Bez! I'll stick with my coffee though.
+7,10/02/2026 16:13,daniel@localhost,online-boutique-7688,Anyone else excited for the launch of the new BitCoin :coin: payment feature this week?
+8,10/02/2026 16:13,tinus@localhost,online-boutique-7688,Absolutely Daniel! Been looking forward to it.
+9,10/02/2026 16:13,tinus@localhost,online-boutique-7688,By the way no spoilers but did anyone catch the football game? Epic comeback!
+10,10/02/2026 16:13,shay@localhost,online-boutique-7688,I missed it! I was knee deep in a sci-fi novel. Anyone else into that?
+11,10/02/2026 16:13,tanya@localhost,online-boutique-7688,Oh I love sci-fi! Can you share the name of the book Shay?
+12,10/02/2026 16:13,daniel@localhost,online-boutique-7688,I've been reading a bit of sci-fi myself.
+13,10/02/2026 16:13,daniel@localhost,online-boutique-7688,Looking forward to sharing recommendations Shay!
+14,10/02/2026 16:13,bez@localhost,online-boutique-7688,There's always so much happening outside of work! Keep the energy :battery: going team.
+15,10/02/2026 16:13,bez@localhost,online-boutique-7688,It's going to be another productive day. :raised_hands:
+16,10/02/2026 16:14,uptimelabs@localhost,online-boutique-7688,Welcome to The Chain the responsibility is on you to size up the problem.\n\n? *Use `/help` at any time for a list of useful links and commands*\n ? *Use `/incident` to create an incident record*\n\nOnce you're ready just click start to begin
+17,10/02/2026 16:14,bob@localhost,online-boutique-7688,Hey we're getting reports of customers struggling to make purchases
+18,10/02/2026 16:14,bob@localhost,online-boutique-7688,@here Anyone else seeing this?
+19,10/02/2026 16:15,tinus@localhost,online-boutique-7688,Yes I've noticed the same @Bob . It seems like an error in the system
+20,10/02/2026 16:15,bez@localhost,online-boutique-7688,Whatever it is we need to sort it out quickly.
+21,10/02/2026 16:15,bez@localhost,online-boutique-7688,we need to step on it! before the social media backlash is turning into a storm.
+22,10/02/2026 16:15,tinus@localhost,online-boutique-7688,Who is handling incidents today? Please size up the issue this is urgent
+23,10/02/2026 16:15,PLAYER,online-boutique-7688,I'll handle it.
+24,10/02/2026 16:15,uptimelabs@localhost,online-boutique-7688,:star: Take command
+25,10/02/2026 16:15,PLAYER,online-boutique-7688,
+26,10/02/2026 16:15,uptimelabs@localhost,business-comms-7688,*Incident Number INC100040:*
+27,10/02/2026 16:15,uptimelabs@localhost,online-boutique-7688,:star: Incident record created
+28,10/02/2026 16:15,uptimelabs@localhost,online-boutique-7688,:star: Send first comms in first 5 minutes
+29,10/02/2026 16:16,bez@localhost,business-comms-7688,Is it a global or regional issue ?
+30,10/02/2026 16:16,PLAYER,online-boutique-7688,@tinus can you start working with Bob find out what errors are happening on the customer side?
+31,10/02/2026 16:16,uptimelabs@localhost,online-boutique-7688,:star: Form an effective investigation team
+32,10/02/2026 16:17,PLAYER,business-comms-7688,@bob Do we know if customers are having trouble just in certain regions or is this a global issue?
+33,10/02/2026 16:17,uptimelabs@localhost,online-boutique-7688,:star: Asking questions to validate impact of the problem
+34,10/02/2026 16:17,tinus@localhost,online-boutique-7688,I got to go with Bez on an important discussion. I'll pull in Bob to give you info around same
+35,10/02/2026 16:17,bob@localhost,online-boutique-7688,Sure i can help
+36,10/02/2026 16:17,PLAYER,online-boutique-7688,Thank you.
+37,10/02/2026 16:17,bob@localhost,online-boutique-7688,Getting over 120+ reports looks like customers unable to make payments
+38,10/02/2026 16:17,bob@localhost,online-boutique-7688,Looks like a European issue
+39,10/02/2026 16:18,PLAYER,online-boutique-7688,Okay so issue seems to be just Europe right now. Let's start there.
+40,10/02/2026 16:18,uptimelabs@localhost,online-boutique-7688,:star: Qualify the problem
+41,10/02/2026 16:18,bob@localhost,online-boutique-7688,Wait just checked this again. The reports are now global. Initially it started with Bitcoin payment failures in EU region only
+42,10/02/2026 16:18,PLAYER,business-comms-7688,@bez this appears to just be a Europe issue.
+43,10/02/2026 16:19,PLAYER,online-boutique-7688,@bob so to clarify it started as Bitcoin problems for Europe but now is impacting all customers globally?
+44,10/02/2026 16:19,bob@localhost,online-boutique-7688,Right and now none of the payment methods are working
+45,10/02/2026 16:19,PLAYER,online-boutique-7688,Okay thank you for the clarification.
+46,10/02/2026 16:19,bob@localhost,online-boutique-7688,I'm getting lot of reports now. What shall i convey to customers ?
+47,10/02/2026 16:20,PLAYER,online-boutique-7688,@bob we can let them know that we are experiencing problems taking payments and are working to fix.
+48,10/02/2026 16:20,bob@localhost,online-boutique-7688,Sure thanks
+49,10/02/2026 16:21,bez@localhost,business-comms-7688,Any new updates ?
+50,10/02/2026 16:21,PLAYER,online-boutique-7688,@hamed are you around?
+51,10/02/2026 16:21,hamed@localhost,online-boutique-7688,Yes i am
+52,10/02/2026 16:22,PLAYER,online-boutique-7688,@hamed can you start looking at logs to see where our payment system is failing? Customers are unable to make payments.
+53,10/02/2026 16:22,hamed@localhost,online-boutique-7688,I can pull in Tanya with me to check into infra. Meanwhile it'd be good to include someone from app team. Could be some app issue
+54,10/02/2026 16:22,uptimelabs@localhost,online-boutique-7688,:star: Facts over opinion
+55,10/02/2026 16:23,hamed@localhost,online-boutique-7688,Here are the recent changes : https://uptime-labs.atlassian.net/wiki/external/MjMxNGU0ZjU1ZTVhNDA0NWJmY2M1NjU1OGFiMGY2YjA
+56,10/02/2026 16:23,PLAYER,business-comms-7688,@bez Yes we now know that all customers cannot make payments. I have pulled in the Platform Team to start investigating and Bob is fielding customer reports.
+57,10/02/2026 16:24,tanya@localhost,online-boutique-7688,I can see payment pod is not running. Trying to bring it back again
+58,10/02/2026 16:24,PLAYER,online-boutique-7688,@daniel can you lend us a hand? Customers can't make payments. Hamed and Tanya are investigating but we could use your help.
+59,10/02/2026 16:24,uptimelabs@localhost,online-boutique-7688,:star: Escalating when required
+60,10/02/2026 16:24,daniel@localhost,online-boutique-7688,Sure let me check the logs
+61,10/02/2026 16:25,daniel@localhost,online-boutique-7688,I'm seeing below errors in payment service \n[ERROR]
+62,10/02/2026 16:25,tanya@localhost,online-boutique-7688,Restart isn't working
+63,10/02/2026 16:25,daniel@localhost,online-boutique-7688,There seems to be an error coming up from cart service which act as an upstream for payments
+64,10/02/2026 16:25,daniel@localhost,online-boutique-7688,[WARN]
+65,10/02/2026 16:25,tanya@localhost,online-boutique-7688,I can see a latest change was around payments
+66,10/02/2026 16:26,bez@localhost,business-comms-7688,This is worst. How fast can we come back online for the payments ?
+67,10/02/2026 16:27,PLAYER,online-boutique-7688,I need some ideas folks. If cart service is broken we need to get that to a usable state first before payments will even start. Am I right?
+68,10/02/2026 16:27,uptimelabs@localhost,online-boutique-7688,:star: Restoration over root cause analysis
+69,10/02/2026 16:28,tanya@localhost,online-boutique-7688,I have got a theory. Why not we check the changes by asking the timeline around customer reports
+70,10/02/2026 16:28,hamed@localhost,online-boutique-7688,Yeah Tanya's correct
+71,10/02/2026 16:28,PLAYER,business-comms-7688,@bez we're still trying to find the bug - unfortunately all the latest changes to the payment system are related to the new Bitcoin payments so rolling back would eliminate that option.
+72,10/02/2026 16:29,uptimelabs@localhost,online-boutique-7688,:star: Reviewed changes
+73,10/02/2026 16:29,PLAYER,online-boutique-7688,@bob when did we start getting reports from customers about payment problems?
+74,10/02/2026 16:29,bob@localhost,online-boutique-7688,The first report came around 2 hrs ago with intermittent failures in payment
+75,10/02/2026 16:30,tanya@localhost,online-boutique-7688,This looks like a payments change causing an issue
+76,10/02/2026 16:30,tanya@localhost,online-boutique-7688,Latest change was in payments app around 2 hrs ago
+77,10/02/2026 16:30,PLAYER,online-boutique-7688,@tanya can we rollback or will that break the new Bitcoin checkout?
+78,10/02/2026 16:31,hamed@localhost,online-boutique-7688,Good to point out @joe.muller-sonic.com i'm seeing errors in cart service and payments as well
+79,10/02/2026 16:31,hamed@localhost,online-boutique-7688,This looks like a cascading failure
+80,10/02/2026 16:31,hamed@localhost,online-boutique-7688,If we look at the change's decsription then there are total 3 changes mentioning bitcoin
+81,10/02/2026 16:32,tanya@localhost,online-boutique-7688,Correct and the issue first started with bitcoin failures
+82,10/02/2026 16:32,PLAYER,online-boutique-7688,@hamed is it a simple failure or do we need to rollback the cart service changes?
+83,10/02/2026 16:33,hamed@localhost,online-boutique-7688,We should get the whole bitcoin feature rolled back across 3 services - payment service cart service and cart redis
+84,10/02/2026 16:33,PLAYER,business-comms-7688,@bez we're still investigating - we have expanded scope to both the Cart and Payment services
+85,10/02/2026 16:34,hamed@localhost,online-boutique-7688,These are 3 changes for bitcoin : \nCHG89777 CHG89778 CHG89779
+86,10/02/2026 16:34,PLAYER,online-boutique-7688,@hamed can you rollback those changes now?
+87,10/02/2026 16:34,hamed@localhost,online-boutique-7688,It must be done in backward fashion
+88,10/02/2026 16:34,hamed@localhost,online-boutique-7688,Starting with CHG89779
+89,10/02/2026 16:35,PLAYER,online-boutique-7688,Okay @tanya can you rollback CHG89779
+90,10/02/2026 16:35,hamed@localhost,online-boutique-7688,Daniel could help us as well
+91,10/02/2026 16:35,PLAYER,online-boutique-7688,@daniel let's get the Bitcoin changes rolled back - Hamed says they are CHG89777 CHG89778 CHG89779
+92,10/02/2026 16:35,daniel@localhost,online-boutique-7688,Yes i can rollback my payments change CHG89779
+93,10/02/2026 16:35,hamed@localhost,online-boutique-7688,I'll do for CHG89777
+94,10/02/2026 16:36,tanya@localhost,online-boutique-7688,I can do CHG89778
+95,10/02/2026 16:36,daniel@localhost,online-boutique-7688,Payments have been rolled back
+96,10/02/2026 16:36,PLAYER,online-boutique-7688,Okay one at a time please.
+97,10/02/2026 16:36,tanya@localhost,online-boutique-7688,Rolling back cart redis now
+98,10/02/2026 16:36,tanya@localhost,online-boutique-7688,done
+99,10/02/2026 16:36,hamed@localhost,online-boutique-7688,Doing it for cart service now
+100,10/02/2026 16:37,bez@localhost,business-comms-7688,Do we have an ETA for the fix ?
+101,10/02/2026 16:37,tanya@localhost,online-boutique-7688,Rollbacks are completed
+102,10/02/2026 16:37,hamed@localhost,online-boutique-7688,Done
+103,10/02/2026 16:37,daniel@localhost,online-boutique-7688,Great i've also restarted the frontend so the website should be working now
+104,10/02/2026 16:38,tinus@localhost,online-boutique-7688,@joe.muller-sonic.com can you confirm?
+105,10/02/2026 16:38,PLAYER,online-boutique-7688,@daniel are you sure? I'm getting a cart error when I visit the site.
+106,10/02/2026 16:38,uptimelabs@localhost,online-boutique-7688,:star: Cross checking resolution with team
+107,10/02/2026 16:38,hamed@localhost,online-boutique-7688,Can see the same error
+108,10/02/2026 16:39,hamed@localhost,online-boutique-7688,Have we restarted the frontend properly after clearing redis cache ?
+109,10/02/2026 16:39,PLAYER,business-comms-7688,@bez we just rolled back the most recent changes - currently working with platform team to make sure the website is stable.
+110,10/02/2026 16:39,uptimelabs@localhost,online-boutique-7688,:star: Confirm resolution with the business
+111,10/02/2026 16:39,daniel@localhost,online-boutique-7688,Sorry i did it now
+112,10/02/2026 16:39,daniel@localhost,online-boutique-7688,I can see the website back again
+113,10/02/2026 16:39,PLAYER,online-boutique-7688,Can confirm. Website is loading again.
+114,10/02/2026 16:39,uptimelabs@localhost,online-boutique-7688,:star: Validate the fix
+115,10/02/2026 16:39,hamed@localhost,online-boutique-7688,I can see it back again as well
+116,10/02/2026 16:40,PLAYER,online-boutique-7688,Payments appear to be working.
+117,10/02/2026 16:40,uptimelabs@localhost,online-boutique-7688,Thank you for playing The Chain We recommend that you take 5 minutes to go and get a drink or stretch your legs.\nOnce you are back we ask that you complete this retrospective and feedback form just hit start when you are ready.
+118,10/02/2026 16:40,PLAYER,online-boutique-7688,@bob how are things looking on your end? Customers happy other than missing the Bitcoin payments?
+119,10/02/2026 16:40,bez@localhost,business-comms-7688,Update me once you've got confirmation
+120,10/02/2026 16:40,uptimelabs@localhost,online-boutique-7688,:star: Cross check resolution with stakeholders
+121,10/02/2026 16:40,bob@localhost,online-boutique-7688,No new complaints. Order metrics are going up
+122,10/02/2026 16:41,PLAYER,business-comms-7688,@bez this is now fixed. It seems we were not ready to rollout Bitcoin payments - platform and software team will need to test more thoroughly before we try again.
+123,10/02/2026 16:41,PLAYER,online-boutique-7688,Excellent. Thank you Bob.
+124,10/02/2026 16:41,uptimelabs@localhost,online-boutique-7688,"Thanks for playing! Please complete your feedback here:\nhttps://learn.uptimelabs.io/scenario/online-boutique/levels/8/7688/feedback\n"""

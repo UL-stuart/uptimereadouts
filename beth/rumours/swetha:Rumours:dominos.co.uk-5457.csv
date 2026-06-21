@@ -1,0 +1,122 @@
+datetime,player,channel,message
+2025-08-20 13:25:59,tinus,online-boutique-5457,"Hi team, let's have a mood check send an emoji to describe your mood"
+2025-08-20 13:26:03,tinus,online-boutique-5457,"I'll go first, :thumbsup:"
+2025-08-20 13:26:09,tanya,online-boutique-5457,:thumbsup:
+2025-08-20 13:26:11,tinus,online-boutique-5457,I'm excited about showing off all your hard work at todays stakeholder meeting
+2025-08-20 13:26:14,daniel,online-boutique-5457,":skull: knackered, had a few too many late nights this week"
+2025-08-20 13:26:17,shay,online-boutique-5457,:rainbow:
+2025-08-20 13:26:20,hamed,online-boutique-5457,living the dream :smile:
+2025-08-20 13:26:24,bez,online-boutique-5457,:smirk: im excited to see the show too
+2025-08-20 13:26:26,tinus,online-boutique-5457,shouldn't you be prepping for the meeting 
+2025-08-20 13:26:29,bez,online-boutique-5457,:sweat_smile: i am indeed I'll leave you lot to it
+2025-08-20 13:26:31,shay,online-boutique-5457,hang in there @daniel its gonne be the weekend sooner or later :joy:
+2025-08-20 13:26:34,tinus,online-boutique-5457,I should get on with my prep too have a good day team
+2025-08-20 13:26:35,daniel,online-boutique-5457,@shay strict diet of energy drink for me today lol
+2025-08-20 13:26:38,daniel,online-boutique-5457,hope the presentation goes well @tinus
+2025-08-20 13:26:40,tanya,online-boutique-5457,:raised_hands:
+2025-08-20 13:26:55,UptimeLabs,online-boutique-5457,Level 7 start button
+2025-08-20 13:28:36,PLAYER,online-boutique-5457,Clicked org button
+2025-08-20 13:28:42,PLAYER,online-boutique-5457,Clicked undefined button
+2025-08-20 13:29:11,PLAYER,online-boutique-5457,Clicked Start button
+2025-08-20 13:29:12,UptimeLabs,online-boutique-5457,":alarm_clock: - You have 20 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-08-20 13:29:15,tinus,online-boutique-5457,"Hey team, I'm texting from the board room - kinda embarrassing but in my demo to the board, I tried to add a pair of Aviator sunglasses to the shopping cart and I got a ?http 500?"
+2025-08-20 13:29:17,tinus,online-boutique-5457,"I've bought some time but need this be able to do this demo if we can lets get this sorted in the next 20 minutes.
+"
+2025-08-20 13:29:19,tinus,online-boutique-5457,500 screenshot
+2025-08-20 13:29:22,tanya,online-boutique-5457,"uh oh, those Aviators are top sellers due to the new Top Gun movie...It's size up the issue time Swetha Nayudu"
+2025-08-20 13:29:25,shay,online-boutique-5457,Come on this can't be happening!
+2025-08-20 13:29:27,tinus,online-boutique-5457,"I'm in this meeting so, wont be able to help but I trust that you all can get this fixed asap, just @ me if you need anything"
+2025-08-20 13:29:30,shay,online-boutique-5457,ok looking into this now
+2025-08-20 13:30:06,PLAYER,business-comms-5457,sev1 500 internal servcer
+2025-08-20 13:30:06,PLAYER,business-comms-5457,*Incident Number INC100044:* sev1 500 internal servcer
+2025-08-20 13:30:06,UptimeLabs,online-boutique-5457,:star: Incident record created
+2025-08-20 13:30:08,UptimeLabs,online-boutique-5457,:star: Send first comms in first 5 minutes
+2025-08-20 13:30:13,UptimeLabs,online-boutique-5457,:bulb: Hint: Fully understand scope of the problem
+2025-08-20 13:30:14,UptimeLabs,online-boutique-5457,:star: Formally assign criticality level to the incident
+2025-08-20 13:30:16,UptimeLabs,online-boutique-5457,:bulb: Hint: Understand the problem by reproducing it
+2025-08-20 13:30:32,PLAYER,online-boutique-5457,I am unable to see an issue
+2025-08-20 13:30:40,PLAYER,online-boutique-5457,can we clarify  few things .
+2025-08-20 13:30:44,UptimeLabs,online-boutique-5457,:star: Attempt to replicate the issue
+2025-08-20 13:30:55,Bez,business-comms-5457,Whats happening?
+2025-08-20 13:31:04,PLAYER,online-boutique-5457,"When are we seeing this issue / error ?
+Is the issue impacting Regional or Global ?"
+2025-08-20 13:31:09,Bez,business-comms-5457,Are teh reports from all over?
+2025-08-20 13:31:14,UptimeLabs,online-boutique-5457,:star: Asking questions to validate impact of the problem
+2025-08-20 13:31:35,PLAYER,online-boutique-5457,Tanya - can you see any issue in logs etc ?
+2025-08-20 13:31:43,Bob,online-boutique-5457,Hi Swetha - No calls from customer
+2025-08-20 13:31:56,Bob,online-boutique-5457,the phones silent- none in our social media platform
+2025-08-20 13:32:06,Tanya,online-boutique-5457,Let me look at infra
+2025-08-20 13:32:17,PLAYER,online-boutique-5457,Thanks Bob
+2025-08-20 13:32:24,Daniel,online-boutique-5457,I am able to place orders with out any issue
+2025-08-20 13:32:24,PLAYER,online-boutique-5457,Let's hold the comms for now ...
+2025-08-20 13:32:37,Daniel,online-boutique-5457,Is this a P1 ?
+2025-08-20 13:32:52,UptimeLabs,online-boutique-5457,:bulb: Hint: Check the changes done in the platform
+2025-08-20 13:33:16,PLAYER,online-boutique-5457,Tinus - can you please help us replicate the issue as we havent been able to replicate and orders are plaved without issue
+2025-08-20 13:33:17,Bez,online-boutique-5457,Hi Swetha - can you update me here please
+2025-08-20 13:33:24,UptimeLabs,online-boutique-5457,:star: Escalating when required
+2025-08-20 13:33:25,Bez,online-boutique-5457,In the Business channel
+2025-08-20 13:33:26,PLAYER,online-boutique-5457,Yes a P1 as we have
+2025-08-20 13:33:51,Tinus,online-boutique-5457,I was trying to place orders in UAT - it was workign fine
+2025-08-20 13:33:57,PLAYER,online-boutique-5457,Daniel Shay Tanya - Also please confirm changes made at your end any if today ?
+2025-08-20 13:34:00,Tinus,online-boutique-5457,When i use the production site - Its giving me error
+2025-08-20 13:34:05,UptimeLabs,online-boutique-5457,:star: Check changes done to the platform
+2025-08-20 13:34:06,Tinus,online-boutique-5457,I have a client demo in 5 minutes
+2025-08-20 13:34:18,Shay,online-boutique-5457,I cant replicate issue either
+2025-08-20 13:34:32,PLAYER,business-comms-5457,"Hi Bez, Tinus have got 500 errors  which we ar etrying to replicate and looking into"
+2025-08-20 13:34:35,Shay,online-boutique-5457,Logs look fine - No errors in the syetm
+2025-08-20 13:34:48,PLAYER,business-comms-5457,we are treating this as  Sev1 no call yet from customers
+2025-08-20 13:34:55,Bez,business-comms-5457,Tinus has an important Stakeholders meeting - can we work on priority
+2025-08-20 13:35:09,PLAYER,online-boutique-5457,Tanya - please check changes made into platform ?
+2025-08-20 13:35:10,Bez,business-comms-5457,But not sure why is this s a P1 if its impacting only Tinus
+2025-08-20 13:35:27,PLAYER,online-boutique-5457,Hamed - FYI please see changes made in app
+2025-08-20 13:35:32,Tanya,online-boutique-5457,Are we treating this as P1 ?
+2025-08-20 13:35:49,Tanya,online-boutique-5457,I can't replicate the issue - no errors in system .
+2025-08-20 13:35:54,Tanya,online-boutique-5457,Changes look okay to me
+2025-08-20 13:36:00,UptimeLabs,online-boutique-5457,:bulb: Form a working theory and try to validate or invalidate it
+2025-08-20 13:36:01,UptimeLabs,online-boutique-5457,:bulb: Facts over opinion
+2025-08-20 13:36:19,Hamed,online-boutique-5457,"OKay - Pull me if this is critical , i am working on a projext"
+2025-08-20 13:36:35,Daniel,online-boutique-5457,I see something strange in Tinus screen shot
+2025-08-20 13:36:59,Daniel,online-boutique-5457,<https://hipster-shop.prod.uptimelabs.io/product/OLJCESPC7Z>
+2025-08-20 13:37:12,PLAYER,online-boutique-5457,Hamed - we got Stakeholder Demo in 5 mins and Tinus is reportig errors which we can't replicate  but seems critical
+2025-08-20 13:37:15,Daniel,online-boutique-5457,The product ID in Tinus screen shot is different than what we hav ein production
+2025-08-20 13:37:35,Hamed,online-boutique-5457,Okay - How many users are impacted- Tinus alon e?
+2025-08-20 13:37:39,PLAYER,online-boutique-5457,that's is a good spot Daniel - Why do you think that can be ?
+2025-08-20 13:38:15,Daniel,online-boutique-5457,The Product ID in screenshot is the UAT - Looks like it may have cached
+2025-08-20 13:38:15,PLAYER,online-boutique-5457,I see the change in URL
+2025-08-20 13:38:37,PLAYER,online-boutique-5457,Tinus says Hipster-shop.prod
+2025-08-20 13:38:45,PLAYER,online-boutique-5457,in general its hipser.prod
+2025-08-20 13:38:50,Daniel,online-boutique-5457,Exactly - That's UAT url
+2025-08-20 13:39:15,PLAYER,online-boutique-5457,Ca we see if any cinfig chages are  made  ?
+2025-08-20 13:39:18,Hamed,online-boutique-5457,This is Tinus issue - Did we check if he used other browser?
+2025-08-20 13:39:30,PLAYER,online-boutique-5457,wht UAT prod is visible in prod ?
+2025-08-20 13:39:39,Hamed,online-boutique-5457,When Tinus have tested it in UAT- His data might have cache'd
+2025-08-20 13:39:41,PLAYER,online-boutique-5457,Tinus - are you using the correct URL ?
+2025-08-20 13:39:51,PLAYER,online-boutique-5457,i think you may be using UAT ?
+2025-08-20 13:39:56,Tinus,online-boutique-5457,Think so
+2025-08-20 13:40:04,PLAYER,online-boutique-5457,please confirm Tinus
+2025-08-20 13:40:10,Hamed,online-boutique-5457,He is not using UAT- But cache may be redirecting to UAT
+2025-08-20 13:40:15,Hamed,online-boutique-5457,he hsould clear his cache
+2025-08-20 13:40:29,PLAYER,online-boutique-5457,"ok , Tinus - can you please clear cache and try ?"
+2025-08-20 13:40:36,PLAYER,online-boutique-5457,thanks Hamed
+2025-08-20 13:40:46,Tinus,online-boutique-5457,This is important demo - dont have time
+2025-08-20 13:40:51,Tinus,online-boutique-5457,i hope this works
+2025-08-20 13:40:55,Tinus,online-boutique-5457,i will clear my cache now
+2025-08-20 13:41:00,PLAYER,online-boutique-5457,Hnecy why please try its important
+2025-08-20 13:41:10,Bez,business-comms-5457,Is it fixed?
+2025-08-20 13:41:19,UptimeLabs,online-boutique-5457,:bulb: Hint: Communicate clearly and frequently
+2025-08-20 13:41:28,tinus,online-boutique-5457,Damn! thats it
+2025-08-20 13:41:30,tinus,online-boutique-5457,"Great Ive got to do my presentation now, thanks for figuring this out so quickly. @daniel @shay can you look in to a cache busting solution?"
+2025-08-20 13:41:31,UptimeLabs,online-boutique-5457,:star: Know your team and their roles
+2025-08-20 13:41:32,shay,online-boutique-5457,it was the cache! sure we can do that
+2025-08-20 13:41:34,daniel,online-boutique-5457,"no worries boss, at least its not a significat issue"
+2025-08-20 13:41:35,daniel,online-boutique-5457,good luck with the presentation!
+2025-08-20 13:41:36,tanya,online-boutique-5457,yes good luck @tinus
+2025-08-20 13:41:38,shay,online-boutique-5457,good luck @tinus!
+2025-08-20 13:41:49,UptimeLabs,online-boutique-5457,Start retro and feedback
+2025-08-20 13:41:50,UptimeLabs,online-boutique-5457,:star: Ask team members to provide evidence of their assertions
+2025-08-20 13:41:53,UptimeLabs,online-boutique-5457,:star: Cross check resolution with stakeholders
+2025-08-20 13:41:53,PLAYER,online-boutique-5457,Clicked Start_feedback button
+2025-08-20 13:41:56,UptimeLabs,online-boutique-5457,:star: Form a working theory
+2025-08-20 13:42:13,UptimeLabs,online-boutique-5457,":star: Good star knowledge, and able to explain to others"
+2025-08-20 13:42:18,UptimeLabs,online-boutique-5457,:star: Form an effective investigation team
+2025-08-20 13:42:45,UptimeLabs,online-boutique-5457,Submission successful

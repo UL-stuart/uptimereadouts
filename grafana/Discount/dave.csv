@@ -1,0 +1,130 @@
+index,datetime,player,channel,message
+0,09/02/2026 15:14,bez@localhost,online-boutique-7669,Can you believe it? That influencer photoshoot is blowing up! We're making waves all over social media.
+1,09/02/2026 15:14,bob@localhost,online-boutique-7669,
+2,09/02/2026 15:14,bez@localhost,online-boutique-7669,Our watches and loafers are all over everyone's feeds
+3,09/02/2026 15:14,bob@localhost,online-boutique-7669,You're telling me? My inbox is packed with customer queries
+4,09/02/2026 15:14,uptimelabs@localhost,online-boutique-7669,Welcome to Discount Disaster the responsibility is on you to size up the problem.\n\n? *Use `/help` at any time for a list of useful links and commands*\n ? *Use `/incident` to create an incident record*\n\nOnce you're ready just click start to begin
+5,09/02/2026 15:17,PLAYER,online-boutique-7669,PLAYER
+6,09/02/2026 15:17,daniel@localhost,online-boutique-7669,Yeah I'm seeing it traffic's surging. But nothing we didn't anticipate for
+7,09/02/2026 15:17,hamed@localhost,online-boutique-7669,Good. We've optimised the backend for this kind of spike
+8,09/02/2026 15:17,maya@localhost,online-boutique-7669,Let's just make sure that's all it is - legit traffic. Influencer campaigns can attract more than just customers
+9,09/02/2026 15:18,shay@localhost,online-boutique-7669,I'll keep eyes on the dashboard. We're running at nearly 80% capacity right now for all the user actvity our platform can handle
+10,09/02/2026 15:18,bez@localhost,online-boutique-7669,It's all good. People are scrambling to get their hands on our products. That viral post is gold
+11,09/02/2026 15:18,daniel@localhost,online-boutique-7669,We're inching closer to max capacity. We're at 95% load now
+12,09/02/2026 15:18,shay@localhost,online-boutique-7669,I just refreshed the website and it's now taking ages to load
+13,09/02/2026 15:18,shay@localhost,online-boutique-7669,Is the website down? Or maybe it's just my machine
+14,09/02/2026 15:18,PLAYER,online-boutique-7669,@shay Do we know if our users are seeing this behavior?
+15,09/02/2026 15:18,uptimelabs@localhost,online-boutique-7669,:star: Asking questions to validate impact of the problem
+16,09/02/2026 15:18,shay@localhost,online-boutique-7669,@bob - Can you take that question for PLAYER please
+17,09/02/2026 15:19,bob@localhost,online-boutique-7669,Sure checking
+18,09/02/2026 15:19,bob@localhost,online-boutique-7669,We are getting a lot of calls from customers that they are unable to access the website
+19,09/02/2026 15:19,bob@localhost,online-boutique-7669,Few are reporting long loading times
+20,09/02/2026 15:19,bob@localhost,online-boutique-7669,and few are able to load platforms but unable to order
+21,09/02/2026 15:19,bob@localhost,online-boutique-7669,Here are the latest reports
+22,09/02/2026 15:19,bob@localhost,online-boutique-7669,
+23,09/02/2026 15:19,bob@localhost,online-boutique-7669,Looks like a global issue
+24,09/02/2026 15:20,bob@localhost,online-boutique-7669,So yes Users are having issues loading platform
+25,09/02/2026 15:20,PLAYER,online-boutique-7669,Thanks @bob. @shay do we have metrics on customer latency?
+26,09/02/2026 15:20,uptimelabs@localhost,online-boutique-7669,:bulb: Understand the problem by reproducing it
+27,09/02/2026 15:21,PLAYER,online-boutique-7669,@daniel you mentioned being close to max capacity do we have the ability to scale out if we need to?
+28,09/02/2026 15:21,shay@localhost,online-boutique-7669,I can check logs - but what i see is i am unable to even load front end
+29,09/02/2026 15:21,PLAYER,online-boutique-7669,I see number of 503 and 504 errors increasing on the Grafana dashboard.
+30,09/02/2026 15:21,daniel@localhost,online-boutique-7669,I just took  a look at logs  i see  alot of 429's in the health check  Platform teams can help take a look
+31,09/02/2026 15:22,PLAYER,online-boutique-7669,Please page out to platform team.
+32,09/02/2026 15:22,bez@localhost,business-comms-7669,Hi @PLAYER i see a lot of noise in Social media is there anything wrong in the platform
+33,09/02/2026 15:22,daniel@localhost,online-boutique-7669,@Tanya
+34,09/02/2026 15:22,PLAYER,business-comms-7669,Heads up we have an ongoing incident effecting customer's ability to access the site.
+35,09/02/2026 15:22,uptimelabs@localhost,online-boutique-7669,:star: Qualify the problem
+36,09/02/2026 15:22,uptimelabs@localhost,online-boutique-7669,:star: Formally assign criticality level to the incident
+37,09/02/2026 15:23,tanya@localhost,online-boutique-7669,Hi PLAYER i see our front is unable to handle requests coming in
+38,09/02/2026 15:23,PLAYER,business-comms-7669,We have a large number of customer reports. We are declaring a P1.
+39,09/02/2026 15:23,tanya@localhost,online-boutique-7669,I did check if we can scale - we have max'ed our capacity
+40,09/02/2026 15:23,PLAYER,online-boutique-7669,Ok thank you.
+41,09/02/2026 15:23,bez@localhost,business-comms-7669,Thanks keep me posted- This is important day for us  we have a sale
+42,09/02/2026 15:24,PLAYER,online-boutique-7669,@maya have you made any progress on identifying whether any of the traffic we are seeing is not coming from customers?
+43,09/02/2026 15:24,tanya@localhost,online-boutique-7669,Do we have front end logs please ?
+44,09/02/2026 15:24,maya@localhost,online-boutique-7669,Hi @PLAYER - Anything in particular - At high level we had few alerts but its normal
+45,09/02/2026 15:24,PLAYER,online-boutique-7669,@tanya have we made any recent changes to the app or infrastructure?
+46,09/02/2026 15:24,uptimelabs@localhost,online-boutique-7669,:star: Check changes done to the platform
+47,09/02/2026 15:25,maya@localhost,online-boutique-7669,anythig you want me to look specific?
+48,09/02/2026 15:25,tanya@localhost,online-boutique-7669,https://uptime-labs.atlassian.net/wiki/spaces/ULPUBLIC/pages/1118961668/Discount+Disaster+-+Change+Request+Logs
+49,09/02/2026 15:25,bez@localhost,business-comms-7669,@PLAYER - Do we know if we are completely down ? i have a press meet in next 10 .\nAlso financial impact as well
+50,09/02/2026 15:26,PLAYER,online-boutique-7669,Does the rollout of the change align with when we started seeing issues?
+51,09/02/2026 15:26,uptimelabs@localhost,online-boutique-7669,:star: Reviewed changes
+52,09/02/2026 15:26,uptimelabs@localhost,online-boutique-7669,:star: Facts over opinion
+53,09/02/2026 15:26,shay@localhost,online-boutique-7669,We see  alot of 503's 429's - Do you want us to dig deeper into logs @PLAYER ?
+54,09/02/2026 15:26,tanya@localhost,online-boutique-7669,I see 2 changes Load tests run by Daniel and Shay- i suspect that can have similar impact
+55,09/02/2026 15:27,PLAYER,online-boutique-7669,Can we rollback the 2 changes impacting frontend?
+56,09/02/2026 15:27,bob@localhost,online-boutique-7669,@PLAYER the customer calls are raising - Do we have an ETA for resolution ? the phone's blowing up
+57,09/02/2026 15:27,daniel@localhost,online-boutique-7669,I will roll back now
+58,09/02/2026 15:27,PLAYER,online-boutique-7669,No ETA yet @bob
+59,09/02/2026 15:27,daniel@localhost,online-boutique-7669,I have rolled back both the changes i still see same error
+60,09/02/2026 15:27,daniel@localhost,online-boutique-7669,shall i paste you errors here
+61,09/02/2026 15:28,uptimelabs@localhost,online-boutique-7669,:bulb: Collect enough information to send meaningful business comunication within the first 5 minutes
+62,09/02/2026 15:28,uptimelabs@localhost,online-boutique-7669,:bulb: keep the business informed regularly
+63,09/02/2026 15:28,PLAYER,online-boutique-7669,@shay can you correlate where traffic generating the 429s is coming from?
+64,09/02/2026 15:28,shay@localhost,online-boutique-7669,Im seeing a lot of errors in the logs
+65,09/02/2026 15:28,shay@localhost,online-boutique-7669,Not sure what the root cause is but we are seeing high load on our Frontend Pods - this may be due to the ongoing discount or if it could be related to any tests we were running.
+66,09/02/2026 15:28,shay@localhost,online-boutique-7669,I see high number of rest-call errors like  http429 http503 and 504s
+67,09/02/2026 15:28,shay@localhost,online-boutique-7669,```\nERROR: GET /api/GetInfo HTTP/1.1 429 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/91.0.4472.124 Safari/537.36 FrontEndApp\n``` ```\nERROR: GET /api/GetInfo HTTP/1.1 429 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/91.0.4472.124 Safari/537.36 FrontEndApp\n```
+68,09/02/2026 15:28,PLAYER,business-comms-7669,We are not completely down but some subset of customers are unable to access. Unknown scope of impact.
+69,09/02/2026 15:28,shay@localhost,online-boutique-7669,Im also seeing this
+70,09/02/2026 15:28,shay@localhost,online-boutique-7669,```\n[error]: Service unavailable cannot process request for /api/GetInfo (503).\n``` ```
+71,09/02/2026 15:29,daniel@localhost,online-boutique-7669,Seeing frontend errors as well
+72,09/02/2026 15:29,daniel@localhost,online-boutique-7669,```\n[error] 12345#12345: *98765 limiting requests exceeded 10 requests per second for client 149.34.52.176 request: GET /api/GetInfo HTTP/1.1 FrontEndApp\n``` \n```[error] 12345#12345: *98766 limiting requests exceeded 10 requests per second for client 149.34.52.176 request: GET /api/GetInfo HTTP/1.1 FrontEndApp\n``` ```
+73,09/02/2026 15:29,daniel@localhost,online-boutique-7669,```\n[ERROR] 12345#12345: *98765 gateway timed out (504) while receiving response from upstream client: 149.34.52.176 request: GET /api/GetInfo HTTP/1.1 host: FrontEndApp\n``` ```\n[ERROR] 12345#12345: *98766 gateway timed out (504) while receiving response from upstream client: 149.34.52.176 request: GET /api/GetInfo HTTP/1.1 host: FrontEndApp\n``` ```
+74,09/02/2026 15:29,daniel@localhost,online-boutique-7669,Do we know what the expected amount of traffic should be due to the on-going discount?
+75,09/02/2026 15:29,PLAYER,online-boutique-7669,The getInfo endpoints match the UAT testing change that went out.
+76,09/02/2026 15:29,bez@localhost,business-comms-7669,That's bad - give me an update as soon as you have please
+77,09/02/2026 15:29,PLAYER,online-boutique-7669,Did we revert that change?
+78,09/02/2026 15:30,daniel@localhost,online-boutique-7669,Yes i have paused all load tests as well
+79,09/02/2026 15:30,PLAYER,online-boutique-7669,@daniel Where were the load tests running?
+80,09/02/2026 15:30,daniel@localhost,online-boutique-7669,Its on UAT
+81,09/02/2026 15:31,daniel@localhost,online-boutique-7669,but i could see our apps couldn't take more than 4k requests
+82,09/02/2026 15:31,PLAYER,online-boutique-7669,And you confirmed those are disabled now?
+83,09/02/2026 15:31,daniel@localhost,online-boutique-7669,Can you please get me network traffic distribution data ?
+84,09/02/2026 15:31,daniel@localhost,online-boutique-7669,Yes ALl load tests are disabled now
+85,09/02/2026 15:31,PLAYER,online-boutique-7669,It looks like 503 and 504 responses are still high.
+86,09/02/2026 15:31,uptimelabs@localhost,online-boutique-7669,:star: Use metrics as evidence
+87,09/02/2026 15:31,hamed@localhost,online-boutique-7669,I was looking at Network traffic - But the dashboard took ages to load.
+88,09/02/2026 15:31,hamed@localhost,online-boutique-7669,Here's a screenshot of Network traffic across each region.
+89,09/02/2026 15:32,hamed@localhost,online-boutique-7669,
+90,09/02/2026 15:32,bez@localhost,business-comms-7669,What's the latest ?
+91,09/02/2026 15:32,shay@localhost,online-boutique-7669,Wow Spain must really like our products
+92,09/02/2026 15:32,PLAYER,online-boutique-7669,The logs say client 149.34.52.176 is being limited.
+93,09/02/2026 15:32,maya@localhost,online-boutique-7669,Hey PLAYER after reviewing the logs I strongly suspect that this is a security-related issue.
+94,09/02/2026 15:32,maya@localhost,online-boutique-7669,The abnormally high traffic with http 429 503 and 504 errors may be due to a possible DDoS/DoS attack
+95,09/02/2026 15:32,maya@localhost,online-boutique-7669,I'll need to continue investigating further but it definitely looks like something is targeting our system
+96,09/02/2026 15:32,tinus@localhost,business-comms-7669,Looks like we have a security threat - We should be extra careful with this incident
+97,09/02/2026 15:32,bez@localhost,business-comms-7669,Do we know what's the financial impact of the issue? How much are we losing every minute?
+98,09/02/2026 15:32,PLAYER,online-boutique-7669,Can we block 149.34.52.176 for the time being?
+99,09/02/2026 15:33,bez@localhost,business-comms-7669,PLAYER Should we inform the 'Compliance Team' about this issue?
+100,09/02/2026 15:33,bez@localhost,business-comms-7669,The Compliance Team makes sure we follow laws and rules like reporting the incident to the right people and keeping proper records. It helps us avoid legal trouble and protects our reputation.
+101,09/02/2026 15:33,maya@localhost,online-boutique-7669,Yes lets blaock - looks like its coming from single IP
+102,09/02/2026 15:33,maya@localhost,online-boutique-7669,The IP address has now been blocked
+103,09/02/2026 15:33,tinus@localhost,online-boutique-7669,Can you confirm PLAYER?
+104,09/02/2026 15:33,hamed@localhost,online-boutique-7669,Lucky this was DoS (Denial of Service ) from a single IP - What if this attack happens from multiple IP addresses (DDoS)?
+105,09/02/2026 15:33,hamed@localhost,online-boutique-7669,We should start working on the pending WAF rule updates for the frontend
+106,09/02/2026 15:33,bob@localhost,online-boutique-7669,PLAYER Should we let the customers know about the attack?
+107,09/02/2026 15:33,PLAYER,business-comms-7669,There is a high financial impact but haven't quantified it yet. We will review disclosure after we resolve.
+108,09/02/2026 15:34,PLAYER,online-boutique-7669,Looks like we are starting to recover. Still seeing elevated 503 and 504 but less than the peak.
+109,09/02/2026 15:34,daniel@localhost,online-boutique-7669,I see the Front end apps is giving 200's now
+110,09/02/2026 15:35,PLAYER,online-boutique-7669,@hamed can you generate the region traffic chart again to see if we are still seeing increased traffic from Spain?
+111,09/02/2026 15:35,tinus@localhost,business-comms-7669,Leave Compliance with me - I will talk to them
+112,09/02/2026 15:35,tanya@localhost,online-boutique-7669,I see the infra is settling down now
+113,09/02/2026 15:35,hamed@localhost,online-boutique-7669,Sure i see the traffic is back to normal - Spain have around 10 users login in now
+114,09/02/2026 15:36,bob@localhost,online-boutique-7669,https://comms.prod.uptimelabs.io/grafana-com/pl/okybxbm163ro7f5tx7fkc44dzw\n@PLAYER  any update on this
+115,09/02/2026 15:36,bez@localhost,business-comms-7669,Are we back @PLAYER?
+116,09/02/2026 15:36,PLAYER,online-boutique-7669,Please ping customer support and security teams and review our disclosure policies.
+117,09/02/2026 15:37,maya@localhost,online-boutique-7669,Good call  this may bring panic in customers
+118,09/02/2026 15:37,maya@localhost,online-boutique-7669,Let complaince handle the comms
+119,09/02/2026 15:37,maya@localhost,online-boutique-7669,We can let customers know we are back
+120,09/02/2026 15:37,bob@localhost,online-boutique-7669,Notde  thanks @PLAYER
+121,09/02/2026 15:37,tanya@localhost,online-boutique-7669,Great work we managed to save the sale
+122,09/02/2026 15:37,tinus@localhost,online-boutique-7669,I knew we had it in us
+123,09/02/2026 15:37,shay@localhost,online-boutique-7669,Now i can continue shopping and get some nice discounts
+124,09/02/2026 15:37,daniel@localhost,online-boutique-7669,Absolutely Shay! But i hope not during work hours
+125,09/02/2026 15:37,shay@localhost,online-boutique-7669,Of course Daniel...... Sorry team i got to go close a unrelated tab now
+126,09/02/2026 15:37,bez@localhost,online-boutique-7669,Anyways well done team
+127,09/02/2026 15:37,bez@localhost,online-boutique-7669,You all did an amazing job
+128,09/02/2026 15:38,uptimelabs@localhost,online-boutique-7669,"Thank you for playing 'Discount Disaster' We recommend that you take 5 minutes to go and get a drink or stretch your legs.\nOnce you are back we ask that you complete this retrospective and feedback form just hit start when you are ready.\n"""

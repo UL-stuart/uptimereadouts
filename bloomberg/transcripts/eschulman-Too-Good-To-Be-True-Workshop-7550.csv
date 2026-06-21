@@ -1,0 +1,116 @@
+datetime,player,channel,message
+2026-01-28 15:47:29,uptimelabs,online-boutique-7550,"Welcome to Too Good To Be True, the responsibility is on you to size up the problem.
+
+ *Access game links by pressing the Uptime Labs Logo in the top right of the screen*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin"
+2026-01-28 15:49:24,tinus,online-boutique-7550,"Welcome our new IM @eschulman6-bloomberg.net, Happy to have you in the team. Hope you get comfortable with everyone"
+2026-01-28 15:49:29,shay,online-boutique-7550,Welcome @eschulman6-bloomberg.net
+2026-01-28 15:49:33,PLAYER,online-boutique-7550,hi
+2026-01-28 15:49:34,daniel,online-boutique-7550,Nice to meet you @eschulman6-bloomberg.net
+2026-01-28 15:49:44,bob,online-boutique-7550,There are a few strange customer reports with the helpdesk
+2026-01-28 15:49:48,bob,online-boutique-7550,"Apparently, the site is loading slowly"
+2026-01-28 15:49:52,bob,online-boutique-7550,People are reporting that they can't make payments either
+2026-01-28 15:49:55,bob,online-boutique-7550,
+2026-01-28 15:49:59,bob,online-boutique-7550,@eschulman6-bloomberg.net Can you check this?
+2026-01-28 15:50:08,PLAYER,online-boutique-7550,Can you say more?  Is anyone currently investigating?
+2026-01-28 15:50:12,uptimelabs,online-boutique-7550,:star: Manage actions and timings
+2026-01-28 15:51:16,bob,online-boutique-7550,Let me gather the information for you
+2026-01-28 15:51:21,bob,online-boutique-7550,There are more than 300 customer reports till now
+2026-01-28 15:51:28,bob,online-boutique-7550,"Calls are from every region, likely to be Global"
+2026-01-28 15:51:34,bob,online-boutique-7550,There's a bunch of messages coming in. A few people saying they can't do anything on the site
+2026-01-28 15:51:39,bob,online-boutique-7550,Let me know if you need more information
+2026-01-28 15:52:11,shay,online-boutique-7550,"Investigating, checking logs"
+2026-01-28 15:52:18,PLAYER,online-boutique-7550,Hi @tanya can you take a look at this?
+2026-01-28 15:52:30,PLAYER,online-boutique-7550,I notice that user traffic has fallen off in the dashboard...
+2026-01-28 15:52:36,uptimelabs,online-boutique-7550,:star: Qualify the problem
+2026-01-28 15:52:36,uptimelabs,online-boutique-7550,:star: Use metrics as evidence
+2026-01-28 15:52:39,PLAYER,online-boutique-7550,and... that log activity has tailed off.
+2026-01-28 15:52:45,tanya,online-boutique-7550,There are no alerts on the Infrastructure. I did see a few errors on the frontend apps
+2026-01-28 15:52:51,tanya,online-boutique-7550,This looks to me like an issue in the frontend pod
+2026-01-28 15:53:51,PLAYER,online-boutique-7550,Which team owns the frontend?  Can we pull them in?
+2026-01-28 15:54:05,shay,online-boutique-7550,"we should get Daniel to help, we both own this app"
+2026-01-28 15:54:17,PLAYER,online-boutique-7550,I'm seeing 502 Bad Gateway now -  customers seem to be seeing this as well.
+2026-01-28 15:54:19,hamed,online-boutique-7550,"I did follow the chat, I could see the issue started exactly at the time when the change was implemented on the frontend"
+2026-01-28 15:54:26,hamed,online-boutique-7550,Did we test the change in the UAT environment before implementation
+2026-01-28 15:54:26,uptimelabs,online-boutique-7550,:star: Reproduces the incident
+2026-01-28 15:54:28,shay,online-boutique-7550,lets get Hamed as well
+2026-01-28 15:54:35,PLAYER,online-boutique-7550,@hamed look like we have a live issue here -  FYI -  We're investigating.
+2026-01-28 15:54:51,hamed,online-boutique-7550,have we checked the changes folks?
+2026-01-28 15:54:55,PLAYER,online-boutique-7550,We have a reproduction of customer complaints about web site availability.
+2026-01-28 15:54:58,daniel,online-boutique-7550,Below are the changes implemented this morning
+2026-01-28 15:55:03,daniel,online-boutique-7550,
+2026-01-28 15:55:06,daniel,online-boutique-7550,"If you want more information, checkout the change details : https://uptime-labs.atlassian.net/wiki/external/ZmRkZTQ1ODg2M2U1NGM3NDk1ZjZhM2I3MWY0MTM5ODA "
+2026-01-28 15:55:44,PLAYER,online-boutique-7550,Are we able to safely back out the change to the front-end service?
+2026-01-28 15:55:46,daniel,online-boutique-7550,"checking the frontend logs, need a few mins"
+2026-01-28 15:55:49,uptimelabs,online-boutique-7550,:star: Restoration over root cause analysis
+2026-01-28 15:55:57,PLAYER,online-boutique-7550,Who can do that back-out?
+2026-01-28 15:56:02,PLAYER,online-boutique-7550,... and when?
+2026-01-28 15:56:07,uptimelabs,online-boutique-7550,:bulb: Declare an incident.
+2026-01-28 15:57:49,PLAYER,online-boutique-7550,
+2026-01-28 15:57:49,uptimelabs,business-comms-7550,*Incident Number INC100066:* Sev-1 Site unavailable
+2026-01-28 15:57:49,uptimelabs,online-boutique-7550,:star: Incident record created
+2026-01-28 15:57:51,uptimelabs,online-boutique-7550,:star: Send first comms in first 5 minutes
+2026-01-28 15:57:54,bez,business-comms-7550,How many customers are affected? Are the reports coming in from all regions?
+2026-01-28 15:58:07,bez,business-comms-7550,"sounds serious, do we have an ETA?"
+2026-01-28 15:58:46,shay,online-boutique-7550,Looking into this and trying to replicate the issue
+2026-01-28 15:58:47,PLAYER,business-comms-7550,"There are 300 customer reports  so far, all regions"
+2026-01-28 15:58:49,daniel,online-boutique-7550,I am able to replicate the issue. Checking the logs now
+2026-01-28 15:58:51,daniel,online-boutique-7550,"I see a lot of errors, most of them are context initialisation errors "
+2026-01-28 15:58:55,daniel,online-boutique-7550,
+2026-01-28 15:58:57,shay,online-boutique-7550,Yes replicated the issue and even i'm seeing similar errors in frontend logs
+2026-01-28 15:58:59,PLAYER,business-comms-7550,We are able to reproduce the problem and have engineers engaged.
+2026-01-28 15:59:01,bez,business-comms-7550,"I have a stake holders meet in next 10 minutes, @eschulman6-bloomberg.net do you think this can be resolved by then? "
+2026-01-28 15:59:16,PLAYER,business-comms-7550,Recent changes have been identified - and we have identified a candidate for rollback.
+2026-01-28 15:59:20,PLAYER,business-comms-7550,No ETA yet.
+2026-01-28 15:59:46,PLAYER,business-comms-7550,We're working with engineers to establish a time for the rollback of the suspected change.
+2026-01-28 15:59:48,hamed,online-boutique-7550,let me check
+2026-01-28 16:00:15,PLAYER,online-boutique-7550,Guys is a rollback appropriate?  Can you pin an estimate for rollback of this change?
+2026-01-28 16:00:42,daniel,online-boutique-7550,A Frontend change caused by change CHG89349 has brought down the Frontend pods
+2026-01-28 16:00:48,shay,online-boutique-7550,But this functionally worked when I tested
+2026-01-28 16:00:53,daniel,online-boutique-7550,"Even if it worked in your test environment, something's behaving differently in prod, maybe a config mismatch or unhandled edge case"
+2026-01-28 16:00:56,bez,business-comms-7550,Can you give a quick update on the status?
+2026-01-28 16:01:04,PLAYER,online-boutique-7550,Can we proceed to rollback?  Can that be done now?  The site is down.
+2026-01-28 16:01:09,daniel,online-boutique-7550,"We should revert the frontend change as early as possible, I have verified that other changes are good"
+2026-01-28 16:01:15,daniel,online-boutique-7550,"@eschulman6-bloomberg.net It's your call, Shall we revert it?"
+2026-01-28 16:01:25,PLAYER,online-boutique-7550,"The site is down now,  please now execute the rollback."
+2026-01-28 16:01:27,shay,online-boutique-7550,"Sorry, I've never done a rollback in PROD before, can someone help me with the steps?"
+2026-01-28 16:01:41,PLAYER,online-boutique-7550,@daniel are you able to help @shay with the rollback?
+2026-01-28 16:01:53,daniel,online-boutique-7550,sure
+2026-01-28 16:01:57,daniel,online-boutique-7550,"I will help you, @Shay. Rolling back now"
+2026-01-28 16:02:06,PLAYER,online-boutique-7550,How long will the rollback take?
+2026-01-28 16:02:12,daniel,online-boutique-7550,I have rollbacked Frontend:version to 10.1.0 to more stable version. Can somebody verify?
+2026-01-28 16:02:15,uptimelabs,online-boutique-7550,"To verify resolution and close incident:
+--Validate fix with team:white_check_mark:
+--Check with Customer Support:white_check_mark:
+--Confirm in 'Business-comms':white_check_mark:"
+2026-01-28 16:02:27,bob,online-boutique-7550,"Customers are able to place the orders, complaint calls have reduced as well."
+2026-01-28 16:02:29,PLAYER,online-boutique-7550,Looks like site is up.
+2026-01-28 16:02:33,uptimelabs,online-boutique-7550,:star: Validate the fix
+2026-01-28 16:02:40,PLAYER,online-boutique-7550,Any other actions before we declare fixed?
+2026-01-28 16:02:44,uptimelabs,online-boutique-7550,:star: Cross checking resolution with team
+2026-01-28 16:02:47,bez,business-comms-7550,how are we looking?
+2026-01-28 16:03:02,uptimelabs,online-boutique-7550,:bulb: Use metrics as evidence
+2026-01-28 16:03:19,PLAYER,business-comms-7550,The offending change has been rolled back and the site is up now.  We are confirming that the environment is normalized.
+2026-01-28 16:03:26,uptimelabs,online-boutique-7550,:star: Confirm resolution with the business
+2026-01-28 16:03:31,PLAYER,online-boutique-7550,How long were we down?
+2026-01-28 16:03:45,bob,online-boutique-7550,i can verify
+2026-01-28 16:04:20,bob,online-boutique-7550,"reports came in about 10.50
+stopped a minute ago"
+2026-01-28 16:04:29,PLAYER,business-comms-7550,Timespan of the outage was 10:50 - 11:02
+2026-01-28 16:04:39,daniel,online-boutique-7550,It's definitely working again!
+2026-01-28 16:04:44,shay,online-boutique-7550,Wow that was intense!
+2026-01-28 16:04:46,bez,business-comms-7550,Thanks! for resolving it quickly
+2026-01-28 16:04:49,hamed,online-boutique-7550,Good job guys
+2026-01-28 16:04:53,tinus,online-boutique-7550,Yes well done! that could have gone much worse so props to everyone
+2026-01-28 16:04:57,tinus,online-boutique-7550,We will have a Post-Incident Review (PIR) to understand what happened
+2026-01-28 16:05:07,uptimelabs,online-boutique-7550,"Drill Wrap-Up
+
+Thanks for playing! This session is now closed.
+
+Please return to your Uptime Labs tab to review your performance and complete the Retrospective & Feedback form.
+
+If you've already closed the tab, you can reopen the form using the button below."
+2026-01-28 16:07:26,uptimelabs,online-boutique-7550,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/29/7550/feedback"

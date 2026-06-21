@@ -1,0 +1,221 @@
+datetime,player,channel,message
+2026-01-14 13:10:55,UptimeLabs,online-boutique-7406,"Welcome to The Unknown Unknown, are you prepared for the challenge?
+
+ *Use `/help` at any time for a list of useful links and commands*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin Start button"
+2026-01-14 13:11:34,PLAYER,online-boutique-7406,Clicked Start button
+2026-01-14 13:11:36,Bob,online-boutique-7406,"Hey team, getting a few reports now, looks like confusion from the customers on what they ordering?"
+2026-01-14 13:11:43,Bob,online-boutique-7406,This is strange
+2026-01-14 13:11:49,Bob,online-boutique-7406,Just seen a couple of reports of customers not receiving the right item on delivery
+2026-01-14 13:11:54,Tinus,online-boutique-7406,Hmm? that sounds strange. @soumya.jk can you take point and start sizing this up?
+2026-01-14 13:11:55,PLAYER,online-boutique-7406,"HI Bob, Could you please share more details on the incident"
+2026-01-14 13:12:12,PLAYER,online-boutique-7406,Is it coming from customers everywhere?
+2026-01-14 13:12:17,Bob,online-boutique-7406,Checking reports...
+2026-01-14 13:12:22,UptimeLabs,online-boutique-7406,:star: Asking questions to validate impact of the problem
+2026-01-14 13:12:25,PLAYER,online-boutique-7406,can you give an example of specific order or order id?
+2026-01-14 13:12:41,Bob,online-boutique-7406,One report said the user wanted to buy 'Sunglasses' but he got 'Tank-top' in confirmation
+2026-01-14 13:12:52,Bob,online-boutique-7406,Just double checked with shipping looks like the items that has been ordered are correct and we're sending the right item
+2026-01-14 13:12:57,Bob,online-boutique-7406,We have currently got more than 17 complaints so far
+2026-01-14 13:13:02,Bob,online-boutique-7406,You are right
+2026-01-14 13:13:05,Bob,online-boutique-7406,Gathering more information....
+2026-01-14 13:13:19,PLAYER,online-boutique-7406,Website showing incorrect product details
+2026-01-14 13:13:19,PLAYER,business-comms-7406,*Incident Number INC100018:* Website showing incorrect product details
+2026-01-14 13:13:19,UptimeLabs,online-boutique-7406,:star: Incident record created
+2026-01-14 13:13:27,Bob,online-boutique-7406,The customers are complaining that the image is not matching up with the product name
+2026-01-14 13:13:29,Bez,business-comms-7406,How big is this problem?
+2026-01-14 13:13:35,Bez,business-comms-7406,Whats teh user impact ?
+2026-01-14 13:13:37,Bob,online-boutique-7406,Seems to be that users don't know whether the product they're purchasing matches the image or the description. 
+2026-01-14 13:13:52,Bez,business-comms-7406,can they place order and right orders are getting delivered?
+2026-01-14 13:14:28,Bob,online-boutique-7406,"We'll likely see high return rates from customers, that's going to mean a lot of financial loss from shipping and refund costs."
+2026-01-14 13:14:39,PLAYER,online-boutique-7406,Daniel could you please help us investigate ? SKU #66VCHSJNUP what exactly is this product?  its showing as tank top with a sunglass image
+2026-01-14 13:14:48,Bob,online-boutique-7406,I'm receiving more cancellation/refund requests than new orders. @soumya.jk What shall we do now? 
+2026-01-14 13:14:53,Bob,online-boutique-7406,This is actually going bad- we have to do somethign to stop this
+2026-01-14 13:15:03,Bob,online-boutique-7406,Customers dont know what they are ordering
+2026-01-14 13:15:08,Daniel,online-boutique-7406,I ll check that
+2026-01-14 13:15:13,PLAYER,business-comms-7406,They are seeing incorrect information on the website.
+2026-01-14 13:15:18,Bez,business-comms-7406,I'm concerned we might be doing more harm than good by letting the new orders continue... 
+2026-01-14 13:15:21,PLAYER,business-comms-7406,I think its best to put the site on maintencance
+2026-01-14 13:15:25,Bez,business-comms-7406,What are the orders ? Image or Label ?
+2026-01-14 13:15:42,Bez,online-boutique-7406,Yes go ahead
+2026-01-14 13:15:46,Daniel,online-boutique-7406,We could try to halt all incoming orders but not sure on the scale of impact
+2026-01-14 13:15:48,Bob,online-boutique-7406,"Orders are still coming in high volume, and we now have 130+ customers asking to cancel their orders"
+2026-01-14 13:15:50,PLAYER,business-comms-7406,"Its very unclear at the moment. But, while we investigate its best to take down the website as we are misleading the customers."
+2026-01-14 13:15:51,Bob,online-boutique-7406,@soumya.jk Could you please discuss this with Bez?
+2026-01-14 13:15:58,PLAYER,business-comms-7406,If you approve i will ask the team to put the site on maintenance.
+2026-01-14 13:16:01,Bez,business-comms-7406,Go Ahead
+2026-01-14 13:16:22,Daniel,online-boutique-7406,"Whenever needed, we can switch the site to maintenance mode via a feature-flag update in the config repo. It cleanly pauses new orders once business gives the go-ahead"
+2026-01-14 13:16:27,Daniel,online-boutique-7406,Getting up maintenance banner on the website...
+2026-01-14 13:16:31,Bez,business-comms-7406,"If we're taking the wrong orders, then let's pause all incoming orders right away. We can't afford huge returns or refunds"
+2026-01-14 13:16:35,PLAYER,online-boutique-7406,Can we please put the site to maintenance immediately. I have approval from Bez
+2026-01-14 13:16:43,Daniel,online-boutique-7406,I am on it
+2026-01-14 13:16:50,UptimeLabs,online-boutique-7406,:star: Restoration over root cause analysis
+2026-01-14 13:16:52,Daniel,online-boutique-7406,Ok the website now displays a maintenance banner
+2026-01-14 13:16:59,Daniel,online-boutique-7406,@soumya.jk How does it look now?
+2026-01-14 13:17:09,Daniel,online-boutique-7406,I can take a look into our services now
+2026-01-14 13:17:10,PLAYER,online-boutique-7406,Hamed can we do a sweep of the platform in the meanwhile?
+2026-01-14 13:17:11,Bez,business-comms-7406,What's the impact? 
+2026-01-14 13:17:24,Bez,business-comms-7406,@soumya.jk Now that we are under maintenance. Let's prioritize resolution
+2026-01-14 13:17:28,Daniel,online-boutique-7406,We don't have any alerts in the system
+2026-01-14 13:17:34,Daniel,online-boutique-7406,"All apps looks healthy, no errors at all"
+2026-01-14 13:17:37,Hamed,online-boutique-7406,"Can we involve Tanya, i ll join in a minute"
+2026-01-14 13:17:42,Shay,online-boutique-7406,Even i don't see any issue
+2026-01-14 13:17:47,PLAYER,online-boutique-7406,Site is now under maintenance while we investigate the issue.
+2026-01-14 13:17:47,PLAYER,business-comms-7406,*Incident Number INC100098:* Site is now under maintenance while we investigate the issue.
+2026-01-14 13:17:52,Daniel,online-boutique-7406,Must be network or platform issue.
+2026-01-14 13:18:03,PLAYER,online-boutique-7406,Tanya can you please do a sweep of the platform and report any anomalies
+2026-01-14 13:18:13,Bez,business-comms-7406,"This  is the first time , we have to intentionally bring our own Site down"
+2026-01-14 13:18:16,UptimeLabs,online-boutique-7406,:star: Manage actions and timings
+2026-01-14 13:18:20,Tanya,online-boutique-7406,Checking now...
+2026-01-14 13:18:39,Tanya,online-boutique-7406,no memory or cpu spikes all looks good from Infra nothing to highlight
+2026-01-14 13:18:41,Tanya,online-boutique-7406,Application_Check
+2026-01-14 13:18:48,Tanya,online-boutique-7406,"Although I don't have any data, I strongly believe this issue originates from the application rather than the platform."
+2026-01-14 13:18:56,Tanya,online-boutique-7406,"No spikes or response time deviations, app owners must check configuration."
+2026-01-14 13:19:04,Tanya,online-boutique-7406,"This is not an infra problem. If users are seeing mismatched products, someone could be messing with our system otherwise its an application/service-level bug"
+2026-01-14 13:19:05,PLAYER,online-boutique-7406,"Lets focus on a single product Daniel. can you confirm what this product is
+<https://uptimelabs-metaverse.slack.com/archives/C0A8P1HKS66/p1768396479586829>"
+2026-01-14 13:19:10,Tanya,online-boutique-7406,But it's not a platform issue.
+2026-01-14 13:19:26,Daniel,online-boutique-7406,"Its tough since there are no errors, but yes, as you said, i ll check that"
+2026-01-14 13:19:39,PLAYER,business-comms-7406,We are trying to understand if its an image issue or a text issue.
+2026-01-14 13:19:41,Hamed,online-boutique-7406,"The issue could be anywhere, we should look at the configuration mapping between product images and names."
+2026-01-14 13:19:52,Hamed,online-boutique-7406,@Daniel do you know which application holds this data?
+2026-01-14 13:20:00,Hamed,online-boutique-7406,"@Tanya,can you check if this is stored in a database or Redis cache?"
+2026-01-14 13:20:05,PLAYER,online-boutique-7406,Shay can you pull the list of recent changes?
+2026-01-14 13:20:08,UptimeLabs,online-boutique-7406,:star: Check changes done to the platform
+2026-01-14 13:20:10,Hamed,online-boutique-7406,"@soumya.jk if there are no visible errors, this might be a configuration issue; the above details may help narrow it down."
+2026-01-14 13:20:11,Shay,online-boutique-7406,Here's the detailed info on each of the changes made today
+2026-01-14 13:20:13,Shay,online-boutique-7406,Hope this helps:<https://uptime-labs.atlassian.net/wiki/external/MDI1YjRiNzUxMGEwNGVmMjkwNmU2Y2ZkNzRjZjBjMWE>
+2026-01-14 13:20:40,Daniel,online-boutique-7406,The configuration is stored in the Product Catalogue Service. I pushed a change in UAT yesterday that updates the Redis cache with the latest product names.
+2026-01-14 13:20:47,Tanya,online-boutique-7406,"@Hamed yes, this information is stored in Redis cache and the cache was refreshed earlier today."
+2026-01-14 13:20:50,PLAYER,online-boutique-7406,Hamed thanks for the suggestion. I prefer looking at one data closely. Lets please wait for Daniel to confirm this particular product SKU #66VCHSJNUP
+2026-01-14 13:20:55,Bez,business-comms-7406,Can you send me a photo of what you are seeing wrong with the platform @soumya.jk
+2026-01-14 13:21:01,Daniel,online-boutique-7406,"When i track down the data - Its looks fine, the data is comign from redis cache"
+2026-01-14 13:21:16,Daniel,online-boutique-7406,And that hits the DB - DB is fetching teh data for us
+2026-01-14 13:21:32,PLAYER,online-boutique-7406,who can tell me : SKU #66VCHSJNUP what exactly is this product? its showing as tank top with a sunglass image
+2026-01-14 13:21:42,Daniel,online-boutique-7406,I can check the database and provide a Redis key dump for product:&lt;id&gt;:name keys 
+2026-01-14 13:21:46,UptimeLabs,online-boutique-7406,'Redis key dump' means extracting the stored data for specific Redis keys like 'product:&lt;id&gt;:name' so you can see what values are currently saved in the Redis database.
+2026-01-14 13:21:53,PLAYER,online-boutique-7406,Lets first identify its a image or text issue
+2026-01-14 13:21:57,Hamed,online-boutique-7406,Agreed
+2026-01-14 13:21:58,Daniel,online-boutique-7406,Ok here is what i found 
+2026-01-14 13:22:00,Daniel,online-boutique-7406,Daniel_redis_check
+2026-01-14 13:22:04,Hamed,online-boutique-7406,Or it can be image to label mapping
+2026-01-14 13:22:07,Tanya,online-boutique-7406,But product_id: 3 is actually 'mug' 
+2026-01-14 13:22:09,Tanya,online-boutique-7406,tanya_redis_dump_check
+2026-01-14 13:22:11,Bez,business-comms-7406,Where are we in the investigation? I just want to know the current working theories
+2026-01-14 13:22:15,Daniel,online-boutique-7406,"It is, looks like my script has run in PROD and updated the wrong names for each product in DB"
+2026-01-14 13:22:20,Shay,online-boutique-7406,"Oh no, that not good! Shall we go with a rollback? "
+2026-01-14 13:22:40,PLAYER,online-boutique-7406,i am not following. Can we please slow down.
+2026-01-14 13:22:46,PLAYER,online-boutique-7406,Did the text change or the image?
+2026-01-14 13:23:11,PLAYER,online-boutique-7406,"are we confident SKU #66VCHSJNUP what exactly is this product? its showing as tank top with a sunglass image
+its a tank top or sunglass"
+2026-01-14 13:23:21,Daniel,online-boutique-7406,I made a change in UAT Redis cache - but looks like it has gone to PROD and updated wrong sequence of names in PROD
+2026-01-14 13:23:59,Bez,business-comms-7406,Thats really bad customer experience
+2026-01-14 13:24:05,PLAYER,business-comms-7406,currently site is on maintenance. so no orders are going through
+2026-01-14 13:24:11,Bez,business-comms-7406,"yeah , i follow that"
+2026-01-14 13:24:15,UptimeLabs,online-boutique-7406,:star: Qualify the problem
+2026-01-14 13:24:26,PLAYER,online-boutique-7406,Daniel what exactly did you change/
+2026-01-14 13:24:30,Daniel,online-boutique-7406,"So, the mapping of image and label has changed"
+2026-01-14 13:24:30,UptimeLabs,online-boutique-7406,:star: Reviewed changes
+2026-01-14 13:24:45,PLAYER,online-boutique-7406,Can you share full details of the changes?
+2026-01-14 13:24:53,Daniel,online-boutique-7406,My change was to update the names in UAT - But its not the same order in PROD
+2026-01-14 13:24:55,PLAYER,online-boutique-7406,Shay did any other change happen in the last 1 hour?
+2026-01-14 13:25:08,Shay,online-boutique-7406,"No, but cache refrshed in last 1 hour"
+2026-01-14 13:25:16,Shay,online-boutique-7406,hence we were serving from cache
+2026-01-14 13:25:21,PLAYER,online-boutique-7406,Shay which cache refreshed?
+2026-01-14 13:25:37,Shay,online-boutique-7406,"Redis cache have teh data, but that got refreshed"
+2026-01-14 13:25:45,PLAYER,online-boutique-7406,Daniel can you share the query? did you update the names of the product against their id?
+2026-01-14 13:26:25,Daniel,online-boutique-7406,yes
+2026-01-14 13:26:36,Daniel,online-boutique-7406,"Change ID: CHG89412
+Owner: Daniel
+Service: CartRedis
+Environment: UAT
+Version Deployed: 2.7.4
+Time Of Change: 27 hours ago
+Description: Execute a cache-refresh script in UAT to verify that product names in Redis match the latest product-name records in the UAT database"
+2026-01-14 13:26:59,Daniel,online-boutique-7406,"Its just that instead of PROD , it ha sgone to UAT"
+2026-01-14 13:27:04,Daniel,online-boutique-7406,"I think this is cache issue we should clear the cache and restart Product catalogue Service, that will make fresh calls to DB and the cache will be refreshed "
+2026-01-14 13:27:08,Tanya,online-boutique-7406,"No, Dan's query has updated the wrong names in DB. The data is wrong in DB therfore we will have to rehydrate the canonical database with the correct product Id names ."
+2026-01-14 13:27:13,Bez,business-comms-7406,Do we have an ETA for the fix?
+2026-01-14 13:27:18,Hamed,online-boutique-7406,I think we should make some decisions now
+2026-01-14 13:27:19,Daniel,online-boutique-7406,"@Tanya, i think you are complicating an easy solution. A restart should fix this"
+2026-01-14 13:27:22,Hamed,online-boutique-7406,we are runnign out of time
+2026-01-14 13:27:25,Tanya,online-boutique-7406,It your call @soumya.jk
+2026-01-14 13:27:41,Bez,business-comms-7406,Do you have any ETA ?i have calls with stake holders now
+2026-01-14 13:27:45,PLAYER,online-boutique-7406,Does the database currently have the correct data?
+2026-01-14 13:28:08,Tanya,online-boutique-7406,No -
+2026-01-14 13:28:18,PLAYER,online-boutique-7406,we have identified that the redis database update has caused the issue.
+2026-01-14 13:28:18,PLAYER,business-comms-7406,*Incident Number INC100018:* we have identified that the redis database update has caused the issue.
+2026-01-14 13:28:31,PLAYER,online-boutique-7406,Daniel can you put the correct data base to redis database?
+2026-01-14 13:28:37,Tanya,online-boutique-7406,"We will have to repopulate the data , as i told Dan's query has updated wrong names in DB- Dan suggestion wont fix"
+2026-01-14 13:28:53,PLAYER,online-boutique-7406,Who can put the correct data back to database?
+2026-01-14 13:29:05,PLAYER,business-comms-7406,We are workign on updating the database
+2026-01-14 13:29:12,Tanya,online-boutique-7406,i can
+2026-01-14 13:29:18,Tanya,online-boutique-7406,We will have to follow below steps to Rehydrate the db.
+2026-01-14 13:29:23,UptimeLabs,online-boutique-7406,'Rehydrate the db' means restoring or repopulating the main database with accurate data from a reliable source or backup.
+2026-01-14 13:29:25,PLAYER,online-boutique-7406,Tanya please go ahead. Do you have an ETA?
+2026-01-14 13:29:29,Tanya,online-boutique-7406,1. **Flush** corrupted product-name keys
+2026-01-14 13:29:31,Tanya,online-boutique-7406,"```bash
+redis-cli --scan --pattern 'product:*:name'| xargs redis-cli del```"
+2026-01-14 13:29:37,Tanya,online-boutique-7406,2. **Rehydrate** product name cache from canonical DB
+2026-01-14 13:29:42,Tanya,online-boutique-7406,3. **Restart** frontend/product-catalog-service** to refresh in memory cache
+2026-01-14 13:29:47,Tanya,online-boutique-7406,4. **Verify** product listings display correct names
+2026-01-14 13:29:48,PLAYER,online-boutique-7406,Hamed can you review Tanya’s changes
+2026-01-14 13:29:54,Tanya,online-boutique-7406,I can perform Step 1 and 2. Dan or Shay has to perform step 3
+2026-01-14 13:29:59,Tanya,online-boutique-7406,@soumya.jk please verify that all steps have been completed 
+2026-01-14 13:30:02,Hamed,online-boutique-7406,"Yes, this looks good for me"
+2026-01-14 13:30:04,Tanya,online-boutique-7406,Are we good to proceed @soumya.jk?
+2026-01-14 13:30:14,PLAYER,online-boutique-7406,Proceed
+2026-01-14 13:30:22,Tanya,online-boutique-7406,"Thanks for go ahead, implementing step 1 now "
+2026-01-14 13:30:31,Tanya,online-boutique-7406,Step 1 is now complete 
+2026-01-14 13:30:33,PLAYER,online-boutique-7406,We are working on updating the database with the correct details
+2026-01-14 13:30:33,PLAYER,business-comms-7406,*Incident Number INC100048:* We are working on updating the database with the correct details
+2026-01-14 13:30:38,Tanya,online-boutique-7406,Moving on to step 2
+2026-01-14 13:30:48,Tanya,online-boutique-7406,Step 2 complete
+2026-01-14 13:30:56,Tanya,online-boutique-7406,lets proceed with the next 2 steps
+2026-01-14 13:31:02,Daniel,online-boutique-7406,Starting step 3.....
+2026-01-14 13:31:09,PLAYER,online-boutique-7406,"Flush completed
+Rehydrate completed"
+2026-01-14 13:31:21,Daniel,online-boutique-7406,Step 3 is complete
+2026-01-14 13:31:25,Tanya,online-boutique-7406,All the recovery steps are completed
+2026-01-14 13:31:45,PLAYER,online-boutique-7406,Can we verify if the product details are now correct without bringng the website back online?
+2026-01-14 13:31:54,PLAYER,online-boutique-7406,I dont want bad orders to go through if its still not correct.
+2026-01-14 13:31:58,Daniel,online-boutique-7406,Maintenance page removal in progress...
+2026-01-14 13:32:03,PLAYER,online-boutique-7406,Daniel hold on
+2026-01-14 13:32:05,Tanya,online-boutique-7406,@soumya.jk Checked the mapping again. And this how it looks now 
+2026-01-14 13:32:11,Daniel,online-boutique-7406,"sorry, i did chk that"
+2026-01-14 13:32:17,Daniel,online-boutique-7406,it looks fine for me
+2026-01-14 13:32:20,Tanya,online-boutique-7406,Post_recovery
+2026-01-14 13:32:20,Daniel,online-boutique-7406,We are LIVE for orders back again!
+2026-01-14 13:32:33,Bob,online-boutique-7406,"We've recovered, but a few orders are in dispute. Should we cancel them or contact customers first?"
+2026-01-14 13:32:34,UptimeLabs,online-boutique-7406,"Always confirm service health, errors, and data testing before removing a maintenance page - it avoids surprises when traffic returns"
+2026-01-14 13:32:37,Bob,online-boutique-7406,Please confirm this with Bez before we proceed 
+2026-01-14 13:32:49,PLAYER,online-boutique-7406,great all looks okay
+2026-01-14 13:33:00,PLAYER,online-boutique-7406,Bob can you please check if orders are okay
+2026-01-14 13:33:05,Bob,online-boutique-7406,"yes, we are looking good"
+2026-01-14 13:33:09,UptimeLabs,online-boutique-7406,:star: Cross check resolution with stakeholders
+2026-01-14 13:33:11,Bob,online-boutique-7406,calls have reduced
+2026-01-14 13:33:21,PLAYER,online-boutique-7406,we have updated the database and taken the site out of maintenance
+2026-01-14 13:33:21,PLAYER,business-comms-7406,*Incident Number INC100038:* we have updated the database and taken the site out of maintenance
+2026-01-14 13:33:29,PLAYER,online-boutique-7406,we are monitoring the platform
+2026-01-14 13:33:29,PLAYER,business-comms-7406,*Incident Number INC100018:* we are monitoring the platform
+2026-01-14 13:33:41,PLAYER,online-boutique-7406,Bob can you report back in 2 mins if any more complaints
+2026-01-14 13:33:43,Bob,online-boutique-7406,sure
+2026-01-14 13:33:49,Bez,business-comms-7406,"If a customer really wants to cancel, go ahead - otherwise leave the order as is. For anything not delivered yet, have support double-check with the customer before taking action"
+2026-01-14 13:33:52,Bob,online-boutique-7406,Looks like we are back to business
+2026-01-14 13:33:55,UptimeLabs,online-boutique-7406,:star: Track actions and time box them
+2026-01-14 13:33:56,Daniel,online-boutique-7406,Well done everyone
+2026-01-14 13:34:03,Bez,business-comms-7406,Thanks @soumya.jk and team. You kept the Online Boutique on track - great work under pressure
+2026-01-14 13:34:06,Bez,business-comms-7406,_thanks Soumya - that was intense
+2026-01-14 13:34:10,UptimeLabs,online-boutique-7406,"Thank you for playing, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit I am ready when you want to start. I am ready button"
+2026-01-14 13:34:18,Bez,business-comms-7406,appreciate your readiness
+2026-01-14 13:34:19,PLAYER,online-boutique-7406,"For every order which happened during the issue Bob: If a customer really wants to cancel, go ahead - otherwise leave the order as is. For anything not delivered yet, have support double-check with the customer before taking action"
+2026-01-14 13:34:32,PLAYER,online-boutique-7406,resolve the incident.
+2026-01-14 13:34:33,PLAYER,business-comms-7406,*Incident Number INC100048:* resolve the incident.
+2026-01-14 13:34:33,Bob,online-boutique-7406,thanks
+2026-01-14 13:34:40,PLAYER,online-boutique-7406,thanks all
+2026-01-14 13:34:44,PLAYER,business-comms-7406,thanks Bez
+2026-01-14 13:34:50,Bez,business-comms-7406,thanks
+2026-01-14 13:34:52,PLAYER,online-boutique-7406,Clicked Start_feedback button
+2026-01-14 13:35:45,UptimeLabs,online-boutique-7406,Submission successful

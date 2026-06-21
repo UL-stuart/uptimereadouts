@@ -1,0 +1,100 @@
+datetime,player,channel,Diff,message
+23/02/2026 13:02,uptimelabs,online-boutique-7796,,"Welcome to Version Confusion, the responsibility is on you to size up the problem.
+
+? *Use `/help` at any time for a list of useful links and commands*
+ ? *Use `/incident` to create an incident record*
+
+Once youre ready just click start to begin"
+23/02/2026 13:04,tanya,online-boutique-7796,1.75,Hey guys im seeing an issue with the website loading slowly
+23/02/2026 13:04,tanya,online-boutique-7796,1.77,Anyone else experaning this?
+23/02/2026 13:04,shay,online-boutique-7796,1.80,No all ok for me
+23/02/2026 13:04,daniel,online-boutique-7796,1.82,No issue for me
+23/02/2026 13:04,daniel,online-boutique-7796,1.83,What browser and version of it are you using Tanya?
+23/02/2026 13:04,tanya,online-boutique-7796,1.87,Im using chrome and let me check the version
+23/02/2026 13:04,daniel,online-boutique-7796,1.90,Ok if it is V105.0 this is a recorded bug with a ticket in the backlog
+23/02/2026 13:04,tanya,online-boutique-7796,1.92,Yeah it is V105.0
+23/02/2026 13:04,tanya,online-boutique-7796,1.93,Should we not raise an incident for this? I know I can update the version and it will stop effecting me.
+23/02/2026 13:04,tanya,online-boutique-7796,1.97,But could this not be effecting customers?
+23/02/2026 13:04,daniel,online-boutique-7796,2.00,Had a look at the market share of people using this version it is only at 0.09%
+23/02/2026 13:04,tanya,online-boutique-7796,2.05,Still not sure if it should not be an incidnt. @pradeep.c-dominos.co.uk What do you think? 
+23/02/2026 13:05,PLAYER,online-boutique-7796,3.30,Need to check how many customers are affected and what is the impact @bob could you please help on this
+23/02/2026 13:05,uptimelabs,online-boutique-7796,3.38,:star: Asking questions to validate impact of the problem
+23/02/2026 13:06,bob,online-boutique-7796,3.63,I will take a look into the customer reports for you now
+23/02/2026 13:07,bob,online-boutique-7796,4.62,"From the looks of things we havent got a lot of reports from users having issues with the platform today, in the past 24 hours we are looking at 30 reports"
+23/02/2026 13:08,PLAYER,online-boutique-7796,6.03,@tanya is V105.0 version is a older version that doesnt support our website ?
+23/02/2026 13:09,PLAYER,online-boutique-7796,6.63,Do we see these reports globally ?
+23/02/2026 13:09,tanya,online-boutique-7796,6.67,"It is quite an old version yes, i will take a look"
+23/02/2026 13:09,bob,online-boutique-7796,7.43,it is impacting users on a browser version so it is global
+23/02/2026 13:10,PLAYER,online-boutique-7796,7.77,Did we deployed anything new in production today ? @daniel @shay @tanya 
+23/02/2026 13:10,uptimelabs,online-boutique-7796,7.82,:star: Check changes done to the platform
+23/02/2026 13:10,tanya,online-boutique-7796,8.10,it seems our site is having issues supporting that version recently
+23/02/2026 13:10,daniel,online-boutique-7796,8.32,"not sure if this is a priority, we have features to look into"
+23/02/2026 13:10,shay,online-boutique-7796,8.38,i can gather changes
+23/02/2026 13:10,shay,online-boutique-7796,8.50,https://uptime-labs.atlassian.net/wiki/external/ZDQ1MTE3NWU5ZDYxNDA4MTkxZmM3ZGJmMGJhNmE1OTE
+23/02/2026 13:11,PLAYER,business-comms-7796,9.25,Hi @bez we have received around 30 reports globally saying that the customers with chrome version V105.0 are unable to browser our website 
+23/02/2026 13:11,uptimelabs,online-boutique-7796,9.30,:star: Qualify the problem
+23/02/2026 13:11,bez,business-comms-7796,9.42,Is this a priority for us?
+23/02/2026 13:12,tanya,online-boutique-7796,9.78,let me try and reproduce the issue by changing my browser version
+23/02/2026 13:12,PLAYER,business-comms-7796,10.55,"Not much affected but since it is causing due to recent changes, we are looking into it"
+23/02/2026 13:13,tanya,online-boutique-7796,10.62,Other versions are working but it seems the specific V105.0 is broken
+23/02/2026 13:13,tanya,online-boutique-7796,10.80,I can't load the web page
+23/02/2026 13:13,bez,business-comms-7796,11.17,if we are investigating this will there be a incident ticket?
+23/02/2026 13:14,PLAYER,online-boutique-7796,12.53,"Basically our website should support all the web browser versions, correct me if im wrong @tanya @daniel "
+23/02/2026 13:15,tanya,online-boutique-7796,12.85,yes it really should
+23/02/2026 13:15,tanya,online-boutique-7796,13.02,ut chrome version 105 isnt working right now
+23/02/2026 13:15,daniel,online-boutique-7796,13.12,yes it should
+23/02/2026 13:15,daniel,online-boutique-7796,13.50,we have know of this issue for 2 weeks now
+23/02/2026 13:15,PLAYER,online-boutique-7796,13.55,I think the recent change on Frontend services should be looked again. @daniel 
+23/02/2026 13:15,uptimelabs,online-boutique-7796,13.58,:star: Reviewed changes
+23/02/2026 13:16,daniel,online-boutique-7796,13.72,but we need to focus on the features bez wants for the promo in 3 days
+23/02/2026 13:16,tanya,online-boutique-7796,14.27,I dont think the recent changes would have any impact on the platform Pradeep
+23/02/2026 13:16,PLAYER,online-boutique-7796,14.48,
+23/02/2026 13:16,uptimelabs,business-comms-7796,14.48,*Incident Number INC100015:* P2 Web browser with V105.0 isnt supporting online boutique website
+23/02/2026 13:16,uptimelabs,online-boutique-7796,14.48,:star: Incident record created
+23/02/2026 13:16,daniel,online-boutique-7796,14.57,Really dont think we need an incident. As I said we have a bug already and really need to focus on delivery of new features.
+23/02/2026 13:17,PLAYER,business-comms-7796,14.83,I have created one
+23/02/2026 13:17,tanya,online-boutique-7796,15.18,I found the ols incident ticket from 2 weeks ago
+23/02/2026 13:17,tanya,online-boutique-7796,15.23,"Title; Slow load times for users using V105.0 of chrome
+Description; User have reported the frontend as loading slowly and with quick look at there set up appears to be an issue with frontend for users using V105.0 of chrome. 
+Reporter; User
+Component; OB-Frontend"
+23/02/2026 13:18,bez,business-comms-7796,15.72,what do we know so far
+23/02/2026 13:18,shay,online-boutique-7796,15.92,what is the plan?
+23/02/2026 13:19,PLAYER,online-boutique-7796,17.02,Thanks @tanya do we have any updates in this ticket ? 
+23/02/2026 13:19,uptimelabs,online-boutique-7796,17.08,:star: Manage actions and timings
+23/02/2026 13:19,tanya,online-boutique-7796,17.60,"i wasnt part of the investigation team, i beleve daniel was lead for this"
+23/02/2026 13:21,PLAYER,online-boutique-7796,18.92,@daniel I understood your concern however we need to look into this issue as we have customers with the older version which shouldnt be affected
+23/02/2026 13:21,bez,business-comms-7796,18.93,how long has this went on for?
+23/02/2026 13:21,daniel,online-boutique-7796,19.40,When i first looked into this 2 weeks ago only 0.09% of the total google users actualy have this browser version
+23/02/2026 13:22,daniel,online-boutique-7796,19.62,it wasnt worth looking into as the impact was soo small
+23/02/2026 13:22,daniel,online-boutique-7796,20.13,the frontend was showing issues with this version but the features took priority
+23/02/2026 13:22,PLAYER,online-boutique-7796,20.48,@daniel is it the same percentage of users impacted now as well ? could you please have a look
+23/02/2026 13:22,daniel,online-boutique-7796,20.55,"We never looked into that, @bob do you know this metric?"
+23/02/2026 13:23,bob,online-boutique-7796,20.73,i will gather data from the past 2 weeks on this issue
+23/02/2026 13:23,bob,online-boutique-7796,21.13,i will also ask users online
+23/02/2026 13:24,PLAYER,business-comms-7796,21.63,"We had this issue 2 weeks ago, 0.09% customers were impacted. We are looking at the percentage of impact now"
+23/02/2026 13:24,uptimelabs,online-boutique-7796,21.92,"Thank you for playing Version Confusion, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit start when you are ready."
+23/02/2026 13:24,bob,online-boutique-7796,21.95,"Ok this seems to have slipped past us, when i put out a message customers are saying they have been having issues for a while now (2 weeks) and didnt report it as they didnt know how to find the link because the sit was down for them"
+23/02/2026 13:24,bob,online-boutique-7796,22.10,i am gathering data on how many are impacted now
+23/02/2026 13:24,bob,online-boutique-7796,22.40,This looks to be a large amount of customers 5% in total
+23/02/2026 13:25,PLAYER,online-boutique-7796,23.20,@daniel please look into your change and revert if needed. Looks like we have considerable impact
+23/02/2026 13:25,uptimelabs,online-boutique-7796,23.25,:star: Restoration over root cause analysis
+23/02/2026 13:25,daniel,online-boutique-7796,23.28,the recent changes would have no impact if the issue started 2 weeks ago
+23/02/2026 13:25,PLAYER,business-comms-7796,23.50,"Bob Johnson
+
+BOT
+
+[6:54 PM](https://comms.prod.uptimelabs.io/dominos-co-uk/pl/yih9g86yg7fd9qobjefnmjswoe)
+
+Ok this seems to have slipped past us, when i put out a message customers are saying they have been having issues for a while now (2 weeks) and didnt report it as they didnt know how to find the link because the sit was down for them
+
+[6:54 PM](https://comms.prod.uptimelabs.io/dominos-co-uk/pl/dot4by7q93f8db4rif64hhndqo)
+
+i am gathering data on how many are impacted now
+
+[6:54 PM](https://comms.prod.uptimelabs.io/dominos-co-uk/pl/q57z9q7dkfg5znxarcqiiqrrdo)
+
+This looks to be a large amount of customers 5% in total"
+23/02/2026 13:26,uptimelabs,online-boutique-7796,23.75,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/17/7796/feedback"

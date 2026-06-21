@@ -1,0 +1,105 @@
+index,datetime,player,channel,message
+0,2025-06-06 15:23:09,Bez,incident-4505,Hey everyone. I'm pumped today about our flash sale
+1,2025-06-06 15:23:15,Bez,incident-4505,You know it's been 53 years since the Beatles released Abbey Road right? My favourite album
+2,2025-06-06 15:23:19,Tanya,incident-4505,53 years already?? Wow that makes me feel old...
+3,2025-06-06 15:23:24,Bez,incident-4505,Indeed! We're celebrating today by promoting a flash sale on retro items from 1969
+4,2025-06-06 15:23:30,Bez,incident-4505,I re-watched Paul McCartney's Glastonbury set last night to get in the mood!
+6,2025-06-06 15:27:13,PLAYER,incident-4505,Clicked org button
+7,2025-06-06 15:29:31,PLAYER,incident-4505,Clicked Start button
+8,2025-06-06 15:29:32,Tinus,incident-4505,That sounds great Bez. Huge Beatles fan myself here
+10,2025-06-06 15:29:37,Tinus,incident-4505,We've just deployed a couple of changes into prod earlier but we should be all good
+11,2025-06-06 15:29:42,Tinus,incident-4505,We're a step closer to allowing folks to pay for items from the 1960s with Bitcoin thanks to Daniel!
+12,2025-06-06 15:29:45,Daniel,incident-4505,Think of it like time travelling!
+13,2025-06-06 15:29:49,Bez,incident-4505,Wow good work Daniel! Looking forward to seeing it in action in prod
+14,2025-06-06 15:29:53,Tinus,incident-4505,How's the test-driven development going?
+15,2025-06-06 15:29:58,Daniel,incident-4505,TDDs going well. We are as solid as a rock! Though don't ask me what the Liskov Substitution Principle is...
+16,2025-06-06 15:30:06,Shay,incident-4505,"erm - funny you should say that Daniel, I'm just testing my checkout service change in prod and I can't complete the payment - something's up"
+17,2025-06-06 15:30:12,Shay,incident-4505,"I hope my checkout service change is all good. Can someone check its not just me? And before you ask, yes I've cleared my cookies"
+18,2025-06-06 15:30:18,Tanya,incident-4505,Sorry Daniel it's not looking good on my end either
+19,2025-06-06 15:30:21,Tinus,incident-4505,Uh oh...here we go again
+20,2025-06-06 15:30:25,Tinus,incident-4505,"@Jose Luis Roiz can you ""Size up the Issue"" please and keep us informed"
+21,2025-06-06 15:30:27,Bob,incident-4505,From what I can see it looks like we are still getting orders through
+22,2025-06-06 15:30:35,Daniel,incident-4505,"It can't be payments service, the new code shouldn't be invoked yet"
+23,2025-06-06 15:30:41,Daniel,incident-4505,@Jose Luis Roiz it's worth having a look at the checkout service change first
+24,2025-06-06 15:30:45,Shay,incident-4505,@Jose Luis Roiz what should I look at first?
+25,2025-06-06 15:31:04,Bez,incident-4505,Get this sorted ASAP!!!
+26,2025-06-06 15:31:10,Bob,incident-4505,I'm getting lot of reports from customers
+27,2025-06-06 15:31:12,Daniel,incident-4505,@Bob it could be UK only issue? I can also see orders coming through
+28,2025-06-06 15:31:26,PLAYER,incident-4505,how many customer reports for the issue?
+30,2025-06-06 15:31:53,Bob,incident-4505,Let me pull in reports and summarise it
+31,2025-06-06 15:32:05,PLAYER,incident-4505,did we test the checkout service change in qa?
+32,2025-06-06 15:32:19,Bob,incident-4505,Not able to make payments. Seems to be affecting globally at the moment.
+34,2025-06-06 15:32:39,Bob,incident-4505,"We are still getting orders coming through, but nothing in terms of sales"
+35,2025-06-06 15:32:55,joseluis.roiz,business-comms-4505,"*Incident Number INC10000:* checkout service (payments) down sev1"
+38,2025-06-06 15:33:03,Shay,incident-4505,"Hi Roiz, i made change into checkout. Its working fine"
+40,2025-06-06 15:33:35,Shay,incident-4505,"I have tested , its healthy"
+41,2025-06-06 15:33:38,PLAYER,incident-4505,can we confirm the new code is good and not being actually invoked
+44,2025-06-06 15:34:38,PLAYER,incident-4505,can we check this CHG89360:AdService:version 8.4 ?
+45,2025-06-06 15:34:45,PLAYER,incident-4505,is it healthy?
+47,2025-06-06 15:35:01,Tanya,incident-4505,"Hi Roiz, i made this Adservice change. Let me review"
+48,2025-06-06 15:35:18,Bez,business-comms-4505,"This is serious - Is this a global issue?"
+49,2025-06-06 15:35:25,Shay,incident-4505,I see something's wrong in payments
+50,2025-06-06 15:35:45,PLAYER,business-comms-4505,"checkout (payment) service is down global issue orders coming through but no sales are checked. teams are testing the changes and the code right now."
+51,2025-06-06 15:35:50,Tanya,incident-4505,My change to adservice was just repositioning some of our ads. Should be non-customer impacting
+52,2025-06-06 15:36:14,PLAYER,incident-4505,CHG89357:PaymentService:version 1.4  ?
+53,2025-06-06 15:36:16,Bez,business-comms-4505,"Okay - keep the updates coming Shareholders are getting antsy"
+54,2025-06-06 15:36:38,PLAYER,incident-4505,is CHG89357:PaymentService:version 1.4 ok ?
+55,2025-06-06 15:36:44,Shay,incident-4505,Yes i suspect payments made by Daniel
+56,2025-06-06 15:37:02,PLAYER,incident-4505,check the change in prod is it healthy? check the code
+57,2025-06-06 15:37:09,PLAYER,business-comms-4505,"sure thing"
+58,2025-06-06 15:37:32,Tanya,incident-4505,Payments service is down at the moment.
+59,2025-06-06 15:37:52,PLAYER,incident-4505,"there are two changes to payment, CHG89357 and CHG89359 check both please"
+60,2025-06-06 15:37:57,Daniel,incident-4505,"It can't be payments service, the new code shouldn't be invoked yet."
+61,2025-06-06 15:38:51,PLAYER,incident-4505,check CHG89357
+62,2025-06-06 15:38:57,PLAYER,incident-4505,check CHG89359
+63,2025-06-06 15:39:00,Daniel,incident-4505,"It could be a dependent service affecting payments, which in this case is our checkout service."
+65,2025-06-06 15:39:32,Shay,incident-4505,"CHG89357 , this was in UAT , shoudn't be impacting clients"
+66,2025-06-06 15:39:54,PLAYER,incident-4505,check CHG89358
+67,2025-06-06 15:40:05,PLAYER,incident-4505,check CHG89361
+68,2025-06-06 15:40:21,Shay,incident-4505,Shall I roll back my checkout change ?
+69,2025-06-06 15:40:23,PLAYER,incident-4505,"we need faster checks on health and code of these changes please, this is a global issue."
+71,2025-06-06 15:40:39,PLAYER,incident-4505,can you roll back and do a smoke test?
+72,2025-06-06 15:40:47,Shay,incident-4505,Doing the checkout change rollback now
+73,2025-06-06 15:40:56,Bez,business-comms-4505,"Have we identified what's causing the problem yet?"
+75,2025-06-06 15:41:33,PLAYER,business-comms-4505,"most likely a change to the checkout service both payment services are ok teams are checking now."
+76,2025-06-06 15:41:39,Shay,incident-4505,"Rollback completed. Did smoke tests, still payment is failing."
+77,2025-06-06 15:42:19,Tanya,incident-4505,I see a lot of errors after Daniel's change to payments
+78,2025-06-06 15:42:22,PLAYER,incident-4505,which chg did you roll back?
+79,2025-06-06 15:42:33,Bez,business-comms-4505,"Have we got our best engineers on the case"
+80,2025-06-06 15:42:44,Shay,incident-4505,CHG89361 - checkout - PROD
+81,2025-06-06 15:43:25,PLAYER,incident-4505,can we make CHG89358 prod instead?
+82,2025-06-06 15:43:52,Shay,incident-4505,Its made in UAT
+83,2025-06-06 15:44:04,PLAYER,incident-4505,Clicked org button
+84,2025-06-06 15:44:25,PLAYER,incident-4505,can we get hamed silatani in here please?
+85,2025-06-06 15:44:27,Tanya,incident-4505,CHG89359 has issue made by Daniel
+87,2025-06-06 15:44:34,Hamed,incident-4505,Yes i'm here
+88,2025-06-06 15:44:46,Hamed,incident-4505,"Can see and observe that orders are coming through, but no sales are being added to the figure!"
+89,2025-06-06 15:44:55,Hamed,incident-4505,This is a clear indication that checkout service is working but not payments
+90,2025-06-06 15:45:09,PLAYER,incident-4505,"since both changes to checkout and payment ""seem"" to be healthy, what else could it be in your experience?"
+91,2025-06-06 15:45:22,PLAYER,incident-4505,payment services were checked
+93,2025-06-06 15:45:35,Hamed,incident-4505,I'd suggest Daniel to rollback his Payments change into PROD
+94,2025-06-06 15:45:39,PLAYER,incident-4505,can we check CHG89359 again and roll back if necessary
+95,2025-06-06 15:45:56,Hamed,incident-4505,"After his deployment , i see lot of errors"
+96,2025-06-06 15:46:05,Daniel,incident-4505,Yes
+97,2025-06-06 15:46:08,Daniel,incident-4505,i'm checking now
+98,2025-06-06 15:46:27,Daniel,incident-4505,I’m telling you I tested my change thoroughly. But we can try to roll back if you think that will help
+99,2025-06-06 15:46:31,PLAYER,business-comms-4505,"they are in the call change for payment into production is being fixed now"
+100,2025-06-06 15:46:39,PLAYER,incident-4505,rollback
+101,2025-06-06 15:46:56,Daniel,incident-4505,"I see errors after my change, but I'm confident I tested it thoroughly"
+102,2025-06-06 15:47:17,PLAYER,incident-4505,if there are errors we need it to roll it back
+103,2025-06-06 15:47:19,Daniel,incident-4505,I'm still not happy with the rollback. But i'll do if you say so @roiz
+104,2025-06-06 15:47:25,PLAYER,incident-4505,yes
+105,2025-06-06 15:47:26,Daniel,incident-4505,Doing the rollback
+107,2025-06-06 15:47:53,Bob,incident-4505,Customers are saying they can make payments again
+108,2025-06-06 15:47:57,Tinus,incident-4505,Perfect! @Jose Luis Roiz can you confirm with the team?
+109,2025-06-06 15:48:01,Daniel,incident-4505,Rollback done
+110,2025-06-06 15:48:25,PLAYER,incident-4505,"root cause was daniels change to payments into production, even after testing we had errors"
+111,2025-06-06 15:48:32,Shay,incident-4505,I am able to do the payments. @Roiz can you cehck at your end once
+112,2025-06-06 15:48:38,PLAYER,incident-4505,we need a more thourough testing of these changes in uat
+113,2025-06-06 15:48:51,PLAYER,incident-4505,confirmations are coming through
+116,2025-06-06 15:49:02,PLAYER,business-comms-4505,"issue is fixed confirmations are through"
+117,2025-06-06 15:49:10,PLAYER,business-comms-4505,"it was the payment change in production"
+119,2025-06-06 15:49:13,PLAYER,business-comms-4505,"it was rolled back"
+120,2025-06-06 15:49:28,PLAYER,incident-4505,business can confirm with clients
+122,2025-06-06 15:49:42,Bob,incident-4505,I'll let know clients now
+123,2025-06-06 15:50:30,PLAYER,incident-4505,Clicked Start_feedback button\n

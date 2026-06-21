@@ -1,0 +1,138 @@
+datetime,player,channel,message
+2026-03-11 11:38:13,tinus,online-boutique-7959,Hey everyone. I'm pumped today about our flash sale
+2026-03-11 11:38:19,tinus,online-boutique-7959,You know it's been 56 years since the Beatles released Abbey Road right? My favourite album
+2026-03-11 11:38:24,tanya,online-boutique-7959,56 years already?? Wow that makes me feel old...
+2026-03-11 11:38:29,tinus,online-boutique-7959,Indeed! We're celebrating today by promoting a flash sale on retro items from 1969
+2026-03-11 11:38:37,uptimelabs,online-boutique-7959,"Welcome to Bezs Beatles Day, remember communication is key to diagnose the problem.
+
+ *Access game links by pressing the Uptime Labs Logo in the top right of the screen*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin"
+2026-03-11 11:41:23,tinus,online-boutique-7959,We're a step closer to allowing folks to pay for items from the 1960s with Bitcoin thanks to Daniel!
+2026-03-11 11:41:29,daniel,online-boutique-7959,Think of it like time travelling!
+2026-03-11 11:41:34,hamed,online-boutique-7959,Wow good work Daniel! Looking forward to seeing it in action in prod
+2026-03-11 11:41:40,hamed,online-boutique-7959,How's the test-driven development going?
+2026-03-11 11:41:45,daniel,online-boutique-7959,TDDs going well. We are as solid as a rock! Though don't ask me what the Liskov Substitution Principle is...
+2026-03-11 11:41:52,shay,online-boutique-7959,"erm - funny you should say that Daniel, I'm just testing my checkout service change in prod and I can't complete the payment - something's up"
+2026-03-11 11:41:59,shay,online-boutique-7959,"I hope my checkout service change is all good. Can someone check its not just me? And before you ask, yes I've cleared my cookies"
+2026-03-11 11:42:05,tanya,online-boutique-7959,Sorry Daniel it's not looking good on my end either
+2026-03-11 11:42:08,tinus,online-boutique-7959,Uh oh...here we go again
+2026-03-11 11:42:13,tinus,online-boutique-7959,"@mayank.dhillon-zomato.com can you ""Size up the Issue"" please and keep us informed"
+2026-03-11 11:42:14,bob,online-boutique-7959,From what I can see it looks like we are still getting orders through
+2026-03-11 11:42:19,tinus,online-boutique-7959,Get this sorted ASAP!!!
+2026-03-11 11:43:46,mayank.dhillon-zomato.com,online-boutique-7959,
+2026-03-11 11:43:46,uptimelabs,business-comms-7959,*Incident Number INC100052:* P1 payment failure and intermittent website open failure
+2026-03-11 11:43:49,bob,online-boutique-7959,I'm seeing a significant spike in failed payment transactions—about 40% of customer checkouts are not completing successfully right now.
+2026-03-11 11:43:50,bez,business-comms-7959,What regions are affected? I need exact numbers on impacted customers and orders. Are we currently losing revenue?
+2026-03-11 11:44:36,mayank.dhillon-zomato.com,online-boutique-7959,@daniel @shay is this related to the change that @tinus was mentioning?
+2026-03-11 11:44:39,uptimelabs,online-boutique-7959,:star: Reviewed changes
+2026-03-11 11:44:40,tanya,online-boutique-7959,"Just got a message from my cousin in London, she can't buy any of the new Beatles merch either. Says her payment failed."
+2026-03-11 11:44:43,mayank.dhillon-zomato.com,online-boutique-7959,Have we made any change in the system
+2026-03-11 11:44:46,uptimelabs,online-boutique-7959,:star: Check changes done to the platform
+2026-03-11 11:44:56,bob,online-boutique-7959,I'm noticing the failures seem concentrated in Europe. Looks like the UK is particularly affected.
+2026-03-11 11:45:10,shay,online-boutique-7959,"Give me a second, I'll get the detailed info on each of the changes made today"
+2026-03-11 11:45:22,shay,online-boutique-7959,Hope this helps: https://uptime-labs.atlassian.net/wiki/external/OGU1YjE2MmE4ZmI4NGFkMjgzNzEwZGVkYjlmNzgwNWY
+2026-03-11 11:45:38,tinus,online-boutique-7959,Any updates on the investigation?
+2026-03-11 11:45:50,daniel,online-boutique-7959,"Yes, my PaymentService change (CHG89362) was deployed 5 minutes ago, but the new Bitcoin payment code isn't being called yet and has solid test coverage."
+2026-03-11 11:45:50,shay,online-boutique-7959,"I deployed a CheckoutService change (CHG89360) to production about 1 hour ago, which mainly refactored the payment initiation logic but it's safe to rollback if needed."
+2026-03-11 11:45:57,mayank.dhillon-zomato.com,online-boutique-7959,"There was intermittent spike of 500 at around 17:30, @tanya can we check the cause"
+2026-03-11 11:45:59,uptimelabs,online-boutique-7959,:star: Manage actions and timings
+2026-03-11 11:46:02,shay,online-boutique-7959,I will start checking the logs now
+2026-03-11 11:46:06,daniel,online-boutique-7959,Could it be your checkout change again @Shay? It broke the platform last week!
+2026-03-11 11:46:11,shay,online-boutique-7959,The checkout service logs are healthy and the service is working as intended
+2026-03-11 11:46:22,shay,online-boutique-7959,"I see 504 HTTP errors in the payment service, which means the application is failing to serve the requests"
+2026-03-11 11:46:40,mayank.dhillon-zomato.com,online-boutique-7959,"@shay if it is just being deployed, and are safe to revert, let's revert them if there is no harm. @daniel to verify"
+2026-03-11 11:46:42,shay,online-boutique-7959,I will rollback my checkout change right away
+2026-03-11 11:46:44,uptimelabs,online-boutique-7959,:star: Restoration over root cause analysis
+2026-03-11 11:46:57,shay,online-boutique-7959,Rollback complete!
+2026-03-11 11:47:02,bob,online-boutique-7959,"Hmm, customer reports are still coming in at the same rate"
+2026-03-11 11:47:07,bob,online-boutique-7959,The failure pattern hasn't changed - still 100% failure in the UK
+2026-03-11 11:47:12,mayank.dhillon-zomato.com,business-comms-7959,"@bob we are facing payment failures, can we ask the agents to handle the customers that team is working on quick fix for this."
+2026-03-11 11:47:12,tanya,online-boutique-7959,Something else must be causing this
+2026-03-11 11:47:17,tinus,online-boutique-7959,We need this fixed!
+2026-03-11 11:47:22,bez,business-comms-7959,I need specifics: how many customers are unable to pay right now? Which regions are impacted? Is there an estimate for when this will be resolved?
+2026-03-11 11:47:37,mayank.dhillon-zomato.com,online-boutique-7959,"@tanya can we review other metrics, are all other service metrics stable?"
+2026-03-11 11:47:39,uptimelabs,online-boutique-7959,:star: Asking questions to validate impact of the problem
+2026-03-11 11:47:41,tanya,online-boutique-7959,"All other service metrics look stable except for the payment flow, which is still showing elevated errors in the UK region."
+2026-03-11 11:47:51,mayank.dhillon-zomato.com,online-boutique-7959,@shay anything else that we might've changed
+2026-03-11 11:47:55,shay,online-boutique-7959,"No, my checkout service rollback was the only recent change from my side and nothing else has been deployed by me."
+2026-03-11 11:48:09,mayank.dhillon-zomato.com,online-boutique-7959,@tanya is this region specific. Are all other regions stable
+2026-03-11 11:48:14,tanya,online-boutique-7959,"Yes, the elevated payment failures are isolated to the UK region, and all other regions are stable at this time."
+2026-03-11 11:48:47,mayank.dhillon-zomato.com,online-boutique-7959,@shay @daniel are we aware of any change that might impact UK?
+2026-03-11 11:48:51,shay,online-boutique-7959,"I don't have any changes that would specifically affect the UK, and my rollback didn't resolve the issue."
+2026-03-11 11:48:51,daniel,online-boutique-7959,"My change shouldn't impact the UK specifically, as the Bitcoin payment code isn't active for that region and all my tests passed."
+2026-03-11 11:49:09,mayank.dhillon-zomato.com,online-boutique-7959,@tanya are there any resource which are this region specific that might've been impacted
+2026-03-11 11:49:12,tanya,online-boutique-7959,"The only region-specific resources involved are the payment processing libraries and endpoints for GBP transactions, which are unique to the UK flow."
+2026-03-11 11:49:14,mayank.dhillon-zomato.com,online-boutique-7959,any unusual pattern?
+2026-03-11 11:49:18,bob,online-boutique-7959,"The only unusual pattern is that payment failures remain at 100% in the UK, while all other regions are unaffected."
+2026-03-11 11:50:22,mayank.dhillon-zomato.com,online-boutique-7959,"@channel seeing error for GW error due to high load, are we aware of it"
+2026-03-11 11:50:24,uptimelabs,online-boutique-7959,:star: Qualify the problem
+2026-03-11 11:50:26,tanya,online-boutique-7959,I'm not seeing any signs of resource exhaustion or high load on the gateway or backend services in our metrics.
+2026-03-11 11:50:36,mayank.dhillon-zomato.com,online-boutique-7959,"```
+{""error"":""gateway timeout: server error due to high load"",""message"":""request error"",""severity"":""error"",""timestamp"":""2026-03-11T11:50:20.205618705Z""}
+
+```"
+2026-03-11 11:50:41,bob,online-boutique-7959,"Customer complaints from the UK are still coming in at the same rate, with no improvement after the last rollback."
+2026-03-11 11:50:41,tanya,online-boutique-7959,"The gateway timeout errors are only appearing for UK payment flows, and overall system load remains normal."
+2026-03-11 11:51:06,mayank.dhillon-zomato.com,online-boutique-7959,is there any abnormal traffic in uk region? from any specific IP or any script running at our end?
+2026-03-11 11:51:11,tanya,online-boutique-7959,I've checked the traffic patterns and there is no abnormal spike or suspicious activity from any specific IP or internal script in the UK region.
+2026-03-11 11:51:42,mayank.dhillon-zomato.com,online-boutique-7959,Any specific payment method that is affected for uk or all
+2026-03-11 11:51:45,bob,online-boutique-7959,"All payment methods for UK customers are failing, not just a specific one."
+2026-03-11 11:52:09,mayank.dhillon-zomato.com,online-boutique-7959,@tanya can we deep dive on what is causing the load
+2026-03-11 11:52:13,tanya,online-boutique-7959,I've started a deep dive into the UK payment flow and will focus on recent changes and shared components that could be causing the increased load.
+2026-03-11 11:52:20,mayank.dhillon-zomato.com,online-boutique-7959,@hamed can you also check
+2026-03-11 11:52:21,hamed,online-boutique-7959,Online now but I've been following the conversation. I can take a look and let you know what I find
+2026-03-11 11:52:37,hamed,online-boutique-7959,"I can see from the user experience that it's failing at the payments stage, and I can also see HTTP 504 in payments"
+2026-03-11 11:52:47,mayank.dhillon-zomato.com,business-comms-7959,@bob it seems only UK is impacted
+2026-03-11 11:52:54,hamed,online-boutique-7959,"This is a clear indication that the checkout service is working, but not the payments"
+2026-03-11 11:52:57,mayank.dhillon-zomato.com,business-comms-7959,Team is checking. All payment methods are failing atm.
+2026-03-11 11:53:04,hamed,online-boutique-7959,I strongly suggest we look into payment service right away
+2026-03-11 11:53:13,bez,business-comms-7959,"Understood, UK only. How many customers or orders are affected so far? Are we seeing a measurable drop in revenue at this moment? I need numbers."
+2026-03-11 11:53:18,uptimelabs,online-boutique-7959,:star: Formally assign criticality level to the incident
+2026-03-11 11:53:20,mayank.dhillon-zomato.com,online-boutique-7959,@shay can we please check
+2026-03-11 11:53:22,shay,online-boutique-7959,"I've double-checked my changes and the rollback is confirmed, so the issue isn't coming from my side."
+2026-03-11 11:53:42,mayank.dhillon-zomato.com,online-boutique-7959,@daniel can you please help in checking for payment service related metrics and changes
+2026-03-11 11:53:45,daniel,online-boutique-7959,"I can check the payment service metrics, but my recent change was only to the Bitcoin payment code and all my unit tests passed."
+2026-03-11 11:54:03,mayank.dhillon-zomato.com,online-boutique-7959,@daniel can we revert those or kill those changes
+2026-03-11 11:54:04,daniel,online-boutique-7959,"Fine if you insist, I'll rollback"
+2026-03-11 11:54:09,daniel,online-boutique-7959,Rolling back my Bitcoin payment service change now
+2026-03-11 11:54:27,mayank.dhillon-zomato.com,online-boutique-7959,@daniel please ensure that this shouldn't break anything existing
+2026-03-11 11:54:29,daniel,online-boutique-7959,Rollback complete. Might take a few minutes to stabilise
+2026-03-11 11:54:34,shay,online-boutique-7959,Did that fix it?
+2026-03-11 11:54:38,mayank.dhillon-zomato.com,online-boutique-7959,@hamed can you please help in verifying the metrics
+2026-03-11 11:54:40,daniel,online-boutique-7959,"I've double-checked the rollback and it restores the previous stable version, so there shouldn't be any impact on existing functionality."
+2026-03-11 11:54:40,uptimelabs,online-boutique-7959,:star: Cross checking resolution with team
+2026-03-11 11:54:44,hamed,online-boutique-7959,I'm on it and will review the payment metrics to confirm if the rollback resolved the issue.
+2026-03-11 11:54:56,mayank.dhillon-zomato.com,online-boutique-7959,@tanya can you please check the cart flow
+2026-03-11 11:54:59,daniel,online-boutique-7959,I'll check the payment service logs now.
+2026-03-11 11:55:05,shay,online-boutique-7959,I'll try a test transaction from my side.
+2026-03-11 11:55:10,daniel,online-boutique-7959,"Logs are looking clean, no more 504 errors."
+2026-03-11 11:55:12,bez,business-comms-7959,All payment methods down in the UK—confirm the number of impacted customers and current revenue loss. I need an ETA for resolution.
+2026-03-11 11:55:16,shay,online-boutique-7959,My test payment went through successfully! Looks like we're back in business.
+2026-03-11 11:55:23,mayank.dhillon-zomato.com,online-boutique-7959,Seems to be working now for me
+2026-03-11 11:55:24,uptimelabs,online-boutique-7959,:star: Validate the fix
+2026-03-11 11:55:30,shay,online-boutique-7959,"Great to hear! For full confirmation, could we ask Bob from Customer Service to check if customer transactions are back to normal on his end?"
+2026-03-11 11:55:30,daniel,online-boutique-7959,Awesome! Let's have Bob confirm that customer metrics are healthy before we close this out.
+2026-03-11 11:55:57,mayank.dhillon-zomato.com,business-comms-7959,@bob seems to have resolved now. Currently seems to be related to Bitcoing related changes which team has reverted. Team will do an internal RCA on this.
+2026-03-11 11:56:00,uptimelabs,online-boutique-7959,:star: Confirm resolution with the business
+2026-03-11 11:56:19,mayank.dhillon-zomato.com,business-comms-7959,@maya can you please also review this
+2026-03-11 11:56:36,mayank.dhillon-zomato.com,online-boutique-7959,@channel let's cross verify all the metrics for all the services once
+2026-03-11 11:56:39,tanya,online-boutique-7959,"I've rechecked the cart flow and everything looks normal from my side. For a complete picture, let's confirm with Bob if customer-facing metrics are back to baseline."
+2026-03-11 11:56:39,maya,online-boutique-7959,Security systems remain quiet—no alerts or anomalies detected. Suggest we check with Bob for the latest customer status to ensure everything is resolved externally.
+2026-03-11 11:56:56,mayank.dhillon-zomato.com,online-boutique-7959,@bob can you please help here
+2026-03-11 11:56:57,bob,online-boutique-7959,Looking into it now... Metrics seem to be improving!
+2026-03-11 11:57:04,bob,online-boutique-7959,Customer payments appear to be back up and processing normally
+2026-03-11 11:57:04,tinus,online-boutique-7959,I don't think the Beatles would've anticipated cryptocurrency so let's keep it that way for now
+2026-03-11 11:57:12,bez,business-comms-7959,"If resolved, confirm that payments are processing and revenue is back to normal. I want verification that orders are going through now."
+2026-03-11 11:57:12,tinus,online-boutique-7959,Excellent! Get me a full incident report by end of day
+2026-03-11 11:57:18,uptimelabs,online-boutique-7959,"Drill Wrap-Up
+
+Thanks for playing! This session is now closed.
+
+Please return to your Uptime Labs tab to review your performance and complete the Retrospective & Feedback form.
+
+If you've already closed the tab, you can reopen the form using the button below."
+2026-03-11 11:57:20,tanya,online-boutique-7959,Great work everyone - crisis averted!
+2026-03-11 11:58:02,uptimelabs,online-boutique-7959,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/5/7959/feedback"

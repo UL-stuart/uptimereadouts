@@ -1,0 +1,116 @@
+datetime,player,channel,message
+2025-09-03 15:20:47,UptimeLabs,online-boutique-5625,Start lvl 29
+2025-09-03 15:25:38,PLAYER,business-comms-5625,test
+2025-09-03 15:25:38,PLAYER,business-comms-5625,*Incident Number INC100039:* test
+2025-09-03 15:26:58,PLAYER,online-boutique-5625,Clicked undefined button
+2025-09-03 15:28:11,PLAYER,online-boutique-5625,Clicked Start button
+2025-09-03 15:28:12,Tinus,online-boutique-5625,"Welcome our new IM @jose rodrigo de la rosa walls, Happy to have you in the team. Hope you get comfortable with everyone"
+2025-09-03 15:28:12,UptimeLabs,online-boutique-5625,":alarm_clock: - You have 25 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-09-03 15:28:17,Shay,online-boutique-5625,Welcome @jose rodrigo de la rosa walls
+2025-09-03 15:28:22,Daniel,online-boutique-5625,Nice to meet you @jose rodrigo de la rosa walls
+2025-09-03 15:28:29,PLAYER,online-boutique-5625,":wave: Hello, team!"
+2025-09-03 15:28:32,Bob,online-boutique-5625,There are a few strange customer reports with the helpdesk
+2025-09-03 15:28:36,Bob,online-boutique-5625,"Apparently, the site is loading slowly"
+2025-09-03 15:28:40,Bob,online-boutique-5625,People are reporting that they can't make payments either
+2025-09-03 15:28:43,Bob,online-boutique-5625,customer_reports
+2025-09-03 15:28:47,Bob,online-boutique-5625,@jose rodrigo de la rosa walls Can you check this?
+2025-09-03 15:28:54,PLAYER,online-boutique-5625,on it
+2025-09-03 15:29:45,UptimeLabs,online-boutique-5625,:bulb: Hint: Who in the organisation can help you understand how customers are affected?
+2025-09-03 15:31:06,PLAYER,online-boutique-5625,Bob can you tell me more about whats the customer experience like?
+2025-09-03 15:31:11,Bob,online-boutique-5625,Let me gather the information for you
+2025-09-03 15:31:13,UptimeLabs,online-boutique-5625,:star: Asking questions to validate impact of the problem
+2025-09-03 15:31:16,Bob,online-boutique-5625,There are more than 300 customer reports till now
+2025-09-03 15:31:23,Bob,online-boutique-5625,"Calls are from every region, likely to be Global"
+2025-09-03 15:31:29,Bob,online-boutique-5625,There's a bunch of messages coming in. A few people saying they can't do anything on the site
+2025-09-03 15:31:29,PLAYER,online-boutique-5625,When did we receive the first report?
+2025-09-03 15:31:34,Bob,online-boutique-5625,Let me know if you need more information
+2025-09-03 15:31:45,Bob,online-boutique-5625,They've only just started
+2025-09-03 15:31:59,Bob,online-boutique-5625,Maybe roughly in the last 10 minutes
+2025-09-03 15:32:24,UptimeLabs,online-boutique-5625,:bulb: Hint: Declare an incident.
+2025-09-03 15:32:28,PLAYER,online-boutique-5625,Hamed how does our infra look like?
+2025-09-03 15:32:36,UptimeLabs,online-boutique-5625,:star: Qualify the problem
+2025-09-03 15:32:54,Hamed,online-boutique-5625,What's going on? is there something specific I should be looking out for?
+2025-09-03 15:33:31,PLAYER,business-comms-5625,site degradation
+2025-09-03 15:33:31,PLAYER,business-comms-5625,*Incident Number INC100069:* site degradation
+2025-09-03 15:33:32,UptimeLabs,online-boutique-5625,:star: Incident record created
+2025-09-03 15:33:33,Hamed,online-boutique-5625,I would suggest talking to Tanya first about the infra if you're still doing an initial investigation
+2025-09-03 15:33:34,UptimeLabs,online-boutique-5625,:star: Send first comms in first 5 minutes
+2025-09-03 15:33:37,Bez,business-comms-5625,How many customers are affected? Are the reports coming in from all regions?
+2025-09-03 15:33:40,UptimeLabs,online-boutique-5625,:star: Formally assign criticality level to the incident
+2025-09-03 15:34:01,PLAYER,online-boutique-5625,Tanya have you seen any high responses at some point in the infra?
+2025-09-03 15:34:17,Tanya,online-boutique-5625,I'll take a look
+2025-09-03 15:34:41,Tanya,online-boutique-5625,There are no alerts on the Infrastructure. I did see a few errors on the frontend apps
+2025-09-03 15:34:47,Tanya,online-boutique-5625,This looks to me like an issue in the frontend pod
+2025-09-03 15:34:58,PLAYER,business-comms-5625,"300 customers are affected, across all regions, tanya is looking into our infra"
+2025-09-03 15:35:25,UptimeLabs,online-boutique-5625,:bulb: Hint: Who in the organisation can help you understand about developer changes
+2025-09-03 15:35:26,PLAYER,online-boutique-5625,Shay can you take a look into the frontend pods?
+2025-09-03 15:36:04,Shay,online-boutique-5625,"Oh I'm not sure how to check our K8s, Daniel would know though!"
+2025-09-03 15:36:32,PLAYER,online-boutique-5625,Daniel can you take a look into the frontend pods?
+2025-09-03 15:36:51,Daniel,online-boutique-5625,Yes I'll check now...
+2025-09-03 15:37:27,Daniel,online-boutique-5625,It looks like it's down - should I review our latest deployments?
+2025-09-03 15:37:32,PLAYER,online-boutique-5625,thanks!
+2025-09-03 15:37:44,PLAYER,online-boutique-5625,please review if any changes have been made
+2025-09-03 15:37:52,UptimeLabs,online-boutique-5625,:star: Check changes done to the platform
+2025-09-03 15:38:08,Daniel,online-boutique-5625,Just to confirm i'm reviewing the correct stuff can you forward the change numbers to me
+2025-09-03 15:38:28,Daniel,online-boutique-5625,You'll find them on the incident management dashboard towards the top
+2025-09-03 15:39:34,PLAYER,online-boutique-5625,CHG89350 is the last one
+2025-09-03 15:39:52,Daniel,online-boutique-5625,Thanks
+2025-09-03 15:40:03,Daniel,online-boutique-5625,"I have verified Payments change (CHG89347), there are no errors and the service is up and healthy"
+2025-09-03 15:40:09,Daniel,online-boutique-5625,"Checkout service change(CHG89350) is in UAT, so not affecting PROD. But I see a few errors from Frontend pods"
+2025-09-03 15:40:12,PLAYER,online-boutique-5625,prior to that one CHG89349 and CHG89347 were performed
+2025-09-03 15:40:15,Daniel,online-boutique-5625,All the errors started right after the change (CHG89349) on the Frontend
+2025-09-03 15:40:18,Bob,online-boutique-5625,The customer complaints are rising. @jose rodrigo de la rosa walls Do we have an ETA for resolution?
+2025-09-03 15:40:20,Bez,business-comms-5625,What is the latest on this?
+2025-09-03 15:40:43,PLAYER,online-boutique-5625,Bob we dont have an eta yet
+2025-09-03 15:40:53,UptimeLabs,online-boutique-5625,:bulb: Hint: keep the business informed regularly
+2025-09-03 15:41:05,PLAYER,business-comms-5625,daniel is looking into the frontend changes
+2025-09-03 15:41:17,Bob,online-boutique-5625,Should i send out comms along the lines of we're working to resolve the issue asao?
+2025-09-03 15:41:24,Bob,online-boutique-5625,ASAP* LOL
+2025-09-03 15:41:26,PLAYER,online-boutique-5625,yes please
+2025-09-03 15:41:32,Bob,online-boutique-5625,Yes boss
+2025-09-03 15:42:00,PLAYER,online-boutique-5625,Daniel what changed on CHG89349?
+2025-09-03 15:42:08,Daniel,online-boutique-5625,Hmm I'll need to do a deep dive on that change
+2025-09-03 15:42:16,PLAYER,online-boutique-5625,please do
+2025-09-03 15:42:20,UptimeLabs,online-boutique-5625,:star: Reviewed changes
+2025-09-03 15:42:32,Daniel,online-boutique-5625,A Frontend change caused by change CHG89349 has brought down the Frontend pods
+2025-09-03 15:42:38,PLAYER,online-boutique-5625,is it quicker to rollback or to dive down into the problem?
+2025-09-03 15:42:38,Shay,online-boutique-5625,But this functionally worked when I tested
+2025-09-03 15:42:43,Daniel,online-boutique-5625,"Even if it worked in your test environment, something's behaving differently in prod, maybe a config mismatch or unhandled edge case"
+2025-09-03 15:42:45,UptimeLabs,online-boutique-5625,:star: Restoration over root cause analysis
+2025-09-03 15:42:46,Bez,business-comms-5625,Can you give a quick update on the status?
+2025-09-03 15:42:55,PLAYER,online-boutique-5625,i would say lets roll it back
+2025-09-03 15:43:07,PLAYER,online-boutique-5625,and do the investigation after resolution
+2025-09-03 15:43:15,Daniel,online-boutique-5625,Good idea
+2025-09-03 15:43:31,Shay,online-boutique-5625,"Sorry, I've never done a rollback in PROD before, can someone help me with the steps?"
+2025-09-03 15:43:49,PLAYER,business-comms-5625,"we are rolling back CHG89349, we will investigate what went wrong after service restoration"
+2025-09-03 15:43:59,UptimeLabs,online-boutique-5625,:star: Confirm resolution with the business
+2025-09-03 15:44:01,Daniel,online-boutique-5625,"I will help you, @Shay. Rolling back now"
+2025-09-03 15:44:09,PLAYER,online-boutique-5625,Daniel would be able to guide you
+2025-09-03 15:44:16,Daniel,online-boutique-5625,I have rollbacked Frontend:version to 10.1.0 to more stable version. Can somebody verify?
+2025-09-03 15:44:19,UptimeLabs,online-boutique-5625,"To 'verify' that the resolution has worked and to close the incident you must: 
+--Validate the fix yourself or with the team:white_check_mark: 
+--Cross check resolution with Customer Support:white_check_mark: 
+--Confirm resolution in the 'Business-comms' channel:white_check_mark: "
+2025-09-03 15:44:31,Bob,online-boutique-5625,"Customers are able to place the orders, complaint calls have reduced as well."
+2025-09-03 15:44:31,Shay,online-boutique-5625,Thanks guys you're so supportive
+2025-09-03 15:44:55,PLAYER,online-boutique-5625,orders are coming in
+2025-09-03 15:45:03,UptimeLabs,online-boutique-5625,:star: Validate the fix
+2025-09-03 15:45:03,PLAYER,business-comms-5625,orders are coming in
+2025-09-03 15:45:42,PLAYER,online-boutique-5625,it worked for me
+2025-09-03 15:45:56,Bez,business-comms-5625,Can we close the ticket?
+2025-09-03 15:46:08,Daniel,online-boutique-5625,It's definitely working again!
+2025-09-03 15:46:13,Shay,online-boutique-5625,Wow that was intense!
+2025-09-03 15:46:14,PLAYER,online-boutique-5625,Tanya do you see normal traffic?
+2025-09-03 15:46:16,Bez,business-comms-5625,Thanks! for resolving it quickly
+2025-09-03 15:46:19,Hamed,online-boutique-5625,Good job guys
+2025-09-03 15:46:20,UptimeLabs,online-boutique-5625,:star: Cross checking resolution with team
+2025-09-03 15:46:23,Tinus,online-boutique-5625,Yes well done! that could have gone much worse so props to everyone
+2025-09-03 15:46:27,Tinus,online-boutique-5625,We will have a Post-Incident Review (PIR) to understand what happened
+2025-09-03 15:46:27,PLAYER,business-comms-5625,we are back up and running
+2025-09-03 15:46:30,Tanya,online-boutique-5625,Yes I can confirm
+2025-09-03 15:46:37,UptimeLabs,online-boutique-5625,Start retro and feedback
+2025-09-03 15:46:48,PLAYER,business-comms-5625,resolved
+2025-09-03 15:46:48,PLAYER,business-comms-5625,*Incident Number INC100075:* resolved
+2025-09-03 15:47:05,PLAYER,business-comms-5625,please close the ticket
+2025-09-03 15:47:18,PLAYER,online-boutique-5625,Clicked Start_feedback button
+2025-09-03 15:47:51,UptimeLabs,online-boutique-5625,Submission successful

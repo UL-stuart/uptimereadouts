@@ -1,0 +1,42 @@
+level_state,julian,adam,jason,gwen,eamonn
+playing,0,0,0,0,0
+customer_support_info,0,2,0,1,0
+STAR-Asking questions to validate impact of the problem,0,2,,1,0
+STAR-Reproduces the incident,,2,,0,
+comms_in_5_mins,2,3,2,1,2
+incident_record,2,3,2,1,2
+STAR-Check changes done to the platform,2,,,3,
+STAR-Qualify the problem,2,6,,2,1
+developer_investigation,2,3,2,4,3
+STAR-Escalating when required,,,3,,
+list_deployments,,4,4,3,3
+review_deployments,,,4,,
+STAR-Form a working theory,6,,,,3
+platform_investigation,5,5,4,5,5
+STAR-Reviewed changes,7,5,,4,
+STAR-Track actions and time box them,,7,,,
+STAR-Facts over opinion,,,14,,3
+maya_tanya_evidence,,,,,9
+involve_maya,7,9,8,11,12
+STAR-Take command,0,,8,17,14
+STAR-Restoration over root cause analysis,,,,,10
+STAR-Manage actions and timings,11,,18,2,
+ransom_gets_doubled,9,11,8,14,15
+basic_protocols,11,12,10,15,16
+breach_confirmation,,,,13,14
+STAR-Form an effective investigation team,15,9,14,20,
+STAR-Use metrics as evidence,,24,,,5
+security_channel_creation,13,15,11,17,18
+STAR-Ask team members to provide evidence of their assertions,,,,10,21
+only_checkout_affected,17,,14,,
+main_plan,14,16,13,19,18
+STAR-Know your team and their roles,18,,15,20,
+execute_isolation,15,20,15,20,20
+decision_on_restoration,,22,17,22,22
+execute_restoration,18,25,19,25,24
+business_go_ahead,,24,18,24,23
+recovered,23,26,22,26,26
+post_fix_checks_and_forensics,24,29,24,28,28
+STAR-Confirm resolution with the business,,28,,,
+completed,28,32,27,32,32
+STAR-Cross checking resolution with team,,,,31,

@@ -1,0 +1,128 @@
+datetime,player,channel,message
+2026-02-27 10:32:48,bez,online-boutique-7840,Can you believe it? That influencer photoshoot is blowing up! We're making waves all over social media.
+2026-02-27 10:32:52,bob,online-boutique-7840,
+2026-02-27 10:32:58,bez,online-boutique-7840,Our watches and loafers are all over everyone's feeds 
+2026-02-27 10:33:02,bob,online-boutique-7840,You're telling me? My inbox is packed with customer queries 
+2026-02-27 10:33:09,uptimelabs,online-boutique-7840,"Welcome to Discount Disaster, the responsibility is on you to size up the problem.
+
+ *Access game links by pressing the Uptime Labs Logo in the top right of the screen* 
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin"
+2026-02-27 10:34:00,daniel,online-boutique-7840,"Yeah, I'm seeing it, traffic's surging. But nothing we didn't anticipate for"
+2026-02-27 10:34:06,hamed,online-boutique-7840,Good. We've optimised the backend for this kind of spike
+2026-02-27 10:34:10,maya,online-boutique-7840,"Let's hope it's all human traffic, these AI agents nowadays are scraping the whole internet"
+2026-02-27 10:34:15,shay,online-boutique-7840,I'll keep eyes on the dashboard. We're running at nearly 80% capacity right now for all the user actvity our platform can handle
+2026-02-27 10:34:19,bez,online-boutique-7840,It's all good. People are scrambling to get their hands on our products. That viral post is gold
+2026-02-27 10:34:22,daniel,online-boutique-7840,We're inching closer to max capacity. We're at 95% load now
+2026-02-27 10:34:28,shay,online-boutique-7840,I just refreshed the website and it's now taking ages to load
+2026-02-27 10:34:33,shay,online-boutique-7840,Is this just on my end?
+2026-02-27 10:34:59,PLAYER,online-boutique-7840,"Hi All, John from teh Incident Management team"
+2026-02-27 10:35:10,PLAYER,online-boutique-7840,I am getting an error on the website as well
+2026-02-27 10:35:11,bob,online-boutique-7840,"Hi John, Bob from Customer Services here—let me know if you need any impact or customer metrics."
+2026-02-27 10:35:11,daniel,online-boutique-7840,"Hey John, Daniel here—happy to help with any technical validation or testing you need."
+2026-02-27 10:35:12,uptimelabs,online-boutique-7840,:star: Reproduces the incident
+2026-02-27 10:35:20,shay,online-boutique-7840,"I'm also seeing the website stuck loading on my end, so it's not just you."
+2026-02-27 10:35:25,PLAYER,online-boutique-7840,Error saya 'Temporary Service Disruption'
+2026-02-27 10:35:29,shay,online-boutique-7840,I'm seeing a lot of errors in the logs.
+2026-02-27 10:35:34,shay,online-boutique-7840,"I see a high number of rest-call errors like http429, http503 and 504s."
+2026-02-27 10:35:43,shay,online-boutique-7840,```ERROR: GET /api/GetInfo HTTP/1.1 429 200 - Mozilla/5.0```
+2026-02-27 10:35:45,PLAYER,online-boutique-7840,Do we know where these errors are from
+2026-02-27 10:35:52,daniel,online-boutique-7840,"Seeing frontend errors as well: ```[error] 12345#12345: *98765 limiting requests, exceeded 10 requests per second for client 149.34.52.176```"
+2026-02-27 10:36:15,daniel,online-boutique-7840,"The 429 errors indicate too many requests are being sent to the service, which is triggering rate limiting."
+2026-02-27 10:36:15,shay,online-boutique-7840,The 503 and 504 errors usually mean the backend services are unavailable or timing out.
+2026-02-27 10:36:36,PLAYER,online-boutique-7840,Do we know of any recent changes there that could be causing this error
+2026-02-27 10:36:39,uptimelabs,online-boutique-7840,:star: Check changes done to the platform
+2026-02-27 10:36:41,shay,online-boutique-7840,"Give me a second, I'll get the detailed info on each of the changes made today."
+2026-02-27 10:36:46,shay,online-boutique-7840,Hope this helps: https://uptime-labs.atlassian.net/wiki/external/YmMxM2RhNDA1YWY0NGZmY2E0NzJmN2M5YWJmOGRhOGM
+2026-02-27 10:38:02,PLAYER,online-boutique-7840,Don't see any changes to the backend service from this 
+2026-02-27 10:38:10,hamed,online-boutique-7840,"I deployed ProductCatalogue version 2.0.8 to PROD about 4 hours ago, but it's been stable since then."
+2026-02-27 10:38:53,PLAYER,online-boutique-7840,Do we know if the spike in the usage could be causing this issue?
+2026-02-27 10:38:56,uptimelabs,online-boutique-7840,:star: Form a working theory
+2026-02-27 10:39:00,hamed,online-boutique-7840,I was looking at Network traffic - But the dashboard took ages to load.
+2026-02-27 10:39:08,PLAYER,online-boutique-7840,"https://grafana.prod.uptimelabs.io/d/aOf5yan4z/incident-management?orgId=1&refresh=10s&from=now-15m&to=now&timezone=browser
+
+indicates a significant spike in user activity "
+2026-02-27 10:39:11,hamed,online-boutique-7840,Here's a screenshot of Network traffic across each region: ![Network Graph](https://assets.prod.uptimelabs.io/drill-assets/36/Network-graph.webp)
+2026-02-27 10:39:11,uptimelabs,online-boutique-7840,:star: Use metrics as evidence
+2026-02-27 10:39:32,shay,online-boutique-7840,"Wow, Spain must really like our products."
+2026-02-27 10:39:37,daniel,online-boutique-7840,I think the influencer we sponsored is based in Spain - That would explain the spike.
+2026-02-27 10:39:52,PLAYER,online-boutique-7840,
+2026-02-27 10:39:52,uptimelabs,business-comms-7840,*Incident Number INC100045:* P1 - Website is Down
+2026-02-27 10:39:55,hamed,online-boutique-7840,"The network dashboard shows a massive vertical spike in traffic originating from Spain, with over 6500 requests per minute, while other regions like the UK, US, and Germany remain flat."
+2026-02-27 10:39:57,bez,business-comms-7840,"Acknowledged. What is the current customer impact—how many users or orders are affected? Also, which regions are experiencing the outage?"
+2026-02-27 10:39:58,maya,online-boutique-7840,"I'm seeing a huge volume of requests coming from a single user in Spain, which aligns with the spike on the dashboard."
+2026-02-27 10:40:17,PLAYER,business-comms-7840,Users are not able to access the website and get an error 'Temporary Service Disruption'
+2026-02-27 10:40:19,uptimelabs,online-boutique-7840,:star: Qualify the problem
+2026-02-27 10:40:44,PLAYER,online-boutique-7840,Is there a way for this user to be blocked 
+2026-02-27 10:40:46,maya,online-boutique-7840,"The abnormally high traffic with http 429, 503 and 504 errors may be due to a possible DoS attack."
+2026-02-27 10:40:58,maya,online-boutique-7840,"I'll need to continue investigating further, but it definitely looks like something is targeting our system."
+2026-02-27 10:40:58,PLAYER,online-boutique-7840,And is there a way to check if this is a bot attack?
+2026-02-27 10:41:01,uptimelabs,online-boutique-7840,:star: Asking questions to validate impact of the problem
+2026-02-27 10:41:08,tinus,online-boutique-7840,Looks like we have a security threat. Do we know what the financial impact is?
+2026-02-27 10:41:20,maya,online-boutique-7840,Checking that now...
+2026-02-27 10:41:42,maya,online-boutique-7840,Confirmed: the spike in traffic is due to a DoS attack originating from IP 149.34.52.176.
+2026-02-27 10:41:57,bez,business-comms-7840,"I need numbers. How many users are currently impacted? Which regions are affected by this outage? Also, are we losing revenue at this moment?"
+2026-02-27 10:42:18,PLAYER,online-boutique-7840,"@tanya is there a way for us to block this IP o the website
+"
+2026-02-27 10:42:23,tanya,online-boutique-7840,Maya is ready to block the malicious IP as soon as you approve.
+2026-02-27 10:42:23,maya,online-boutique-7840,"Yes, I can block IP 149.34.52.176 at the firewall immediately—just give me a clear go-ahead to proceed."
+2026-02-27 10:42:36,PLAYER,online-boutique-7840,"Approved, please procceed"
+2026-02-27 10:42:37,maya,online-boutique-7840,The IP address has now been blocked at the firewall.
+2026-02-27 10:42:42,maya,online-boutique-7840,Traffic from that specific IP should be dropping to zero now.
+2026-02-27 10:42:52,hamed,online-boutique-7840,Let's hope this was just a DoS from a single IP.
+2026-02-27 10:42:59,tinus,online-boutique-7840,"@lspesshardt-bloomberg.net, can you confirm everything is stabilizing?"
+2026-02-27 10:43:02,PLAYER,business-comms-7840,checking on it now
+2026-02-27 10:43:17,PLAYER,online-boutique-7840,https://grafana.prod.uptimelabs.io/d/aOf5yan4z/incident-management?orgId=1&refresh=10s&from=now-15m&to=now&timezone=browser indicates a drop in the usage
+2026-02-27 10:43:23,bob,online-boutique-7840,Would you like me to check the customer-facing metrics dashboard to confirm if transactions and error rates are back to normal?
+2026-02-27 10:43:57,bez,business-comms-7840,"Understood. Please update me as soon as you have concrete figures on user impact, affected regions, and revenue loss. I need specifics."
+2026-02-27 10:44:00,PLAYER,online-boutique-7840,@maya can you confirm the financial impact here please
+2026-02-27 10:44:08,maya,online-boutique-7840,Checking that now...
+2026-02-27 10:44:16,PLAYER,online-boutique-7840,"Also, the website is now loading as expected"
+2026-02-27 10:44:18,uptimelabs,online-boutique-7840,:star: Validate the fix
+2026-02-27 10:44:22,tanya,online-boutique-7840,Would you like me to run a test transaction or check internal logs to help verify that the issue is fully resolved?
+2026-02-27 10:44:30,maya,online-boutique-7840,"The immediate financial impact appears limited, but to confirm the incident is fully resolved, could you ask Bob and the engineering team to verify that transactions are processing normally and no errors are present?"
+2026-02-27 10:44:51,PLAYER,online-boutique-7840,"Also, can i have the details of the  affected regions, was this across all regions?"
+2026-02-27 10:44:53,bob,online-boutique-7840,Great news! Customer reports have stopped coming in.
+2026-02-27 10:44:59,bob,online-boutique-7840,I'm seeing successful transactions processing from Spain and the UK again.
+2026-02-27 10:46:28,PLAYER,online-boutique-7840,"Thanks Bob, can you confirm the regions that were impacted by this issue and the  financial impact  "
+2026-02-27 10:46:33,maya,online-boutique-7840,Let me check on that for you...
+2026-02-27 10:46:53,PLAYER,business-comms-7840,"The issue is now fixed, we are working to get details of the regions impacted and the financial impact"
+2026-02-27 10:46:54,bez,business-comms-7840,I need confirmation that transactions are processing and revenue is flowing again. Awaiting your update on regions and financial impact.
+2026-02-27 10:46:55,uptimelabs,online-boutique-7840,:star: Confirm resolution with the business
+2026-02-27 10:46:58,maya,online-boutique-7840,Daniel here—let's focus on verifying the fix; I can check the service logs for any lingering issues if you'd like.
+2026-02-27 10:47:36,PLAYER,online-boutique-7840,@bob   can you confirm the regions that were impacted by this issue and the  financial impact  
+2026-02-27 10:47:39,uptimelabs,online-boutique-7840,:star: Ask team members to provide evidence of their assertions
+2026-02-27 10:47:42,bob,online-boutique-7840,"For financial impact, I'm still compiling the numbers but initial estimates suggest minimal revenue loss due to the quick mitigation."
+2026-02-27 10:47:42,bob,online-boutique-7840,"I can confirm that the issue affected users in Europe and parts of North America, but transaction volumes are now recovering."
+2026-02-27 10:48:26,PLAYER,business-comms-7840,"We have confirmation that the issue affected users in Europe and parts of North America, and the initial estimates suggest minimal revenue loss due to the quick mitigation."
+2026-02-27 10:48:53,bez,business-comms-7840,Thank you for the update. Please provide the final numbers on affected users and any revenue loss as soon as they are available.
+2026-02-27 10:49:00,PLAYER,online-boutique-7840,Issue is now confirmed to be fixed 
+2026-02-27 10:49:05,daniel,online-boutique-7840,Great to hear—I'll double-check the service logs to confirm everything is stable internally.
+2026-02-27 10:49:05,shay,online-boutique-7840,Ready to run a test transaction to verify the website is functioning as expected.
+2026-02-27 10:49:27,PLAYER,business-comms-7840,"Ack, working to get these details "
+2026-02-27 10:50:01,PLAYER,online-boutique-7840,@bob please let us know when you have the details of the number of affected users and revenue loss as soon as they are available.
+2026-02-27 10:50:09,bob,online-boutique-7840,Checking on that now...
+2026-02-27 10:50:32,PLAYER,online-boutique-7840,@shay please run these tests and confirm
+2026-02-27 10:50:34,shay,online-boutique-7840,I just refreshed the site - it loaded instantly for me!
+2026-02-27 10:50:34,tanya,online-boutique-7840,"Great work, we managed to save the sale"
+2026-02-27 10:50:34,uptimelabs,online-boutique-7840,:star: Cross checking resolution with team
+2026-02-27 10:50:38,tinus,online-boutique-7840,I knew we had it in us
+2026-02-27 10:50:42,shay,online-boutique-7840,Now i can continue shopping and get some nice discounts 
+2026-02-27 10:50:42,daniel,online-boutique-7840,Logs are clearing up. The 429s and 503s have completely stopped.
+2026-02-27 10:50:47,daniel,online-boutique-7840,"Absolutely, Shay! But i hope not during work hours "
+2026-02-27 10:50:50,maya,online-boutique-7840,I'll continue to monitor the situation and keep everyone updated.
+2026-02-27 10:50:55,shay,online-boutique-7840,Of course Daniel...... Sorry team i got to go close a unrelated tab now
+2026-02-27 10:50:55,bez,business-comms-7840,Understood. Keep me posted with the exact figures as soon as you have them.
+2026-02-27 10:50:57,tinus,online-boutique-7840,Anyways well done team
+2026-02-27 10:51:09,PLAYER,online-boutique-7840,Thanks all 
+2026-02-27 10:51:18,uptimelabs,online-boutique-7840,"Drill Wrap-Up
+
+Thanks for playing! This session is now closed.
+
+Please return to your Uptime Labs tab to review your performance and complete the Retrospective & Feedback form.
+
+If you've already closed the tab, you can reopen the form using the button below."
+2026-02-27 10:51:49,uptimelabs,online-boutique-7840,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/36/7840/feedback"
+2026-02-27 10:51:59,bob,online-boutique-7840,"Based on the latest data, approximately 1,200 users were affected during the incident, resulting in an estimated revenue loss of $3,500 before recovery began."

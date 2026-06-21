@@ -1,0 +1,144 @@
+index,datetime,player,channel,message
+0,26/01/2026 13:08,bez@localhost,online-boutique-7524,Morning team! Anyone else need a triple espresso today?
+1,26/01/2026 13:08,tinus@localhost,online-boutique-7524,You're not the only one Bez! The reports from last week are still giving me nightmares.
+2,26/01/2026 13:08,bob@localhost,online-boutique-7524,Tell me about it Tinus.
+3,26/01/2026 13:09,bob@localhost,online-boutique-7524,But hey at least it's sunny outside today. :sunrise:
+4,26/01/2026 13:09,bez@localhost,online-boutique-7524,True a little sunshine makes everything better.
+5,26/01/2026 13:09,bez@localhost,online-boutique-7524,Also I'm having my usual green smoothie. That's my secret energy booster.
+6,26/01/2026 13:09,daniel@localhost,online-boutique-7524,Nice Bez! I'll stick with my coffee though.
+7,26/01/2026 13:09,daniel@localhost,online-boutique-7524,Anyone else excited for the launch of the new BitCoin :coin: payment feature this week?
+8,26/01/2026 13:09,tinus@localhost,online-boutique-7524,Absolutely Daniel! Been looking forward to it.
+9,26/01/2026 13:09,tinus@localhost,online-boutique-7524,By the way no spoilers but did anyone catch the football game? Epic comeback!
+10,26/01/2026 13:09,shay@localhost,online-boutique-7524,I missed it! I was knee deep in a sci-fi novel. Anyone else into that?
+11,26/01/2026 13:09,tanya@localhost,online-boutique-7524,Oh I love sci-fi! Can you share the name of the book Shay?
+12,26/01/2026 13:09,daniel@localhost,online-boutique-7524,I've been reading a bit of sci-fi myself.
+13,26/01/2026 13:09,daniel@localhost,online-boutique-7524,Looking forward to sharing recommendations Shay!
+14,26/01/2026 13:09,bez@localhost,online-boutique-7524,There's always so much happening outside of work! Keep the energy :battery: going team.
+15,26/01/2026 13:09,bez@localhost,online-boutique-7524,It's going to be another productive day. :raised_hands:
+16,26/01/2026 13:09,uptimelabs@localhost,online-boutique-7524,Welcome to The Chain the responsibility is on you to size up the problem.\n\n? *Use `/help` at any time for a list of useful links and commands*\n ? *Use `/incident` to create an incident record*\n\nOnce you're ready just click start to begin
+17,26/01/2026 13:14,bob@localhost,online-boutique-7524,Hey we're getting reports of customers struggling to make purchases
+18,26/01/2026 13:14,bob@localhost,online-boutique-7524,@here Anyone else seeing this?
+19,26/01/2026 13:14,tinus@localhost,online-boutique-7524,Yes I've noticed the same @Bob . It seems like an error in the system
+20,26/01/2026 13:14,bez@localhost,online-boutique-7524,Whatever it is we need to sort it out quickly.
+21,26/01/2026 13:14,bez@localhost,online-boutique-7524,we need to step on it! before the social media backlash is turning into a storm.
+22,26/01/2026 13:14,tinus@localhost,online-boutique-7524,Who is handling incidents today? Please size up the issue this is urgent
+23,26/01/2026 13:14,PLAYER,online-boutique-7524,I'll take incident command
+24,26/01/2026 13:14,PLAYER,online-boutique-7524,Bob can you get a screenshot of what customers are seeing?
+25,26/01/2026 13:14,uptimelabs@localhost,online-boutique-7524,:star: Asking questions to validate impact of the problem
+26,26/01/2026 13:14,PLAYER,online-boutique-7524,"Anyone else seeing the ""HTTP Status: 500 Internal Server Error"" error on the site?"
+27,26/01/2026 13:14,uptimelabs@localhost,online-boutique-7524,:star: Reproduces the incident
+28,26/01/2026 13:15,shay@localhost,online-boutique-7524,I can see the same issue
+29,26/01/2026 13:15,PLAYER,online-boutique-7524,Just because someone give me the changelog
+30,26/01/2026 13:15,uptimelabs@localhost,online-boutique-7524,:star: Check changes done to the platform
+31,26/01/2026 13:15,shay@localhost,online-boutique-7524,Here are the recent changes : https://uptime-labs.atlassian.net/wiki/external/MjMxNGU0ZjU1ZTVhNDA0NWJmY2M1NjU1OGFiMGY2YjA
+32,26/01/2026 13:15,PLAYER,online-boutique-7524,Hamed and Daniel are your teams reporting anything anomolous?
+33,26/01/2026 13:16,PLAYER,business-comms-7524,
+34,26/01/2026 13:16,uptimelabs@localhost,business-comms-7524,*Incident Number INC10000:* SEV-1 website down
+35,26/01/2026 13:16,hamed@localhost,online-boutique-7524,I'll pull in Tanya to look into infra
+36,26/01/2026 13:16,uptimelabs@localhost,online-boutique-7524,:star: Incident record created
+37,26/01/2026 13:16,uptimelabs@localhost,online-boutique-7524,:star: Send first comms in first 5 minutes
+38,26/01/2026 13:16,PLAYER,online-boutique-7524,Looks like we have a SEV-1 here
+39,26/01/2026 13:16,daniel@localhost,online-boutique-7524,Sure let me check the logs
+40,26/01/2026 13:16,tanya@localhost,online-boutique-7524,I can check the infra
+41,26/01/2026 13:16,uptimelabs@localhost,online-boutique-7524,:star: Incident record created
+42,26/01/2026 13:16,uptimelabs@localhost,online-boutique-7524,:star: Send first comms in first 5 minutes
+43,26/01/2026 13:16,hamed@localhost,online-boutique-7524,I'll pull in Tanya to look into infra
+44,26/01/2026 13:17,daniel@localhost,online-boutique-7524,Do we have more data about what customers are reporting ?
+45,26/01/2026 13:17,PLAYER,online-boutique-7524,Bob tell customers that we're looking into an issue impacting the online shopping experience
+46,26/01/2026 13:17,bob@localhost,online-boutique-7524,Getting over 120+ reports looks like customers unable to make payments
+47,26/01/2026 13:17,bob@localhost,online-boutique-7524,Looks like a global issue
+48,26/01/2026 13:17,PLAYER,online-boutique-7524,Daniel I'm stilling waiting to hear back from Bob here: https://comms.prod.uptimelabs.io/sonic-com/pl/b69s4q67qfreum99a6udqt3uno
+49,26/01/2026 13:17,uptimelabs@localhost,online-boutique-7524,:star: Manage actions and timings
+50,26/01/2026 13:17,bob@localhost,online-boutique-7524,They are seeing cart errors on the website
+51,26/01/2026 13:18,PLAYER,online-boutique-7524,Hamed and Daniel is it Platform or Software teams that own the Payment Service?
+52,26/01/2026 13:18,bob@localhost,online-boutique-7524,Initially reports started to come with bitcoin payments not going well. Later all payments were not working
+53,26/01/2026 13:18,PLAYER,business-comms-7524,Customers are having issue with what looks like Payments
+54,26/01/2026 13:18,uptimelabs@localhost,online-boutique-7524,:star: Qualify the problem
+55,26/01/2026 13:18,daniel@localhost,online-boutique-7524,I am having a look into payments app
+56,26/01/2026 13:18,daniel@localhost,online-boutique-7524,[ERROR]
+57,26/01/2026 13:18,PLAYER,business-comms-7524,Summary: Website down - Pulling in dept. heads - Assign someone to look at it
+58,26/01/2026 13:18,uptimelabs@localhost,online-boutique-7524,:star: Formally assign criticality level to the incident
+59,26/01/2026 13:18,uptimelabs@localhost,online-boutique-7524,:star: Form an effective investigation team
+60,26/01/2026 13:19,daniel@localhost,online-boutique-7524,There seems to be an error coming up from cart service which act as an upstream for payments
+61,26/01/2026 13:19,daniel@localhost,online-boutique-7524,[WARN]
+62,26/01/2026 13:19,PLAYER,online-boutique-7524,Cart service is software?  Who is the Subject Matter Expert on it?
+63,26/01/2026 13:19,tanya@localhost,online-boutique-7524,Do we know at what time issue has started to appear ?
+64,26/01/2026 13:19,uptimelabs@localhost,online-boutique-7524,:star: Know your team and their roles
+65,26/01/2026 13:19,PLAYER,online-boutique-7524,Good q Tanya.  Bob when did you get your first report?
+66,26/01/2026 13:20,daniel@localhost,online-boutique-7524,I own all the app logic but infra part is looked by Hamed's team
+67,26/01/2026 13:20,bob@localhost,online-boutique-7524,Around 2 hrs ago
+68,26/01/2026 13:20,bez@localhost,business-comms-7524,Whats the current theory ?
+69,26/01/2026 13:20,PLAYER,online-boutique-7524,Daniel rollback your changes - if it's non-destructive to checkout and other services:\nChange ID: CHG89777\nEven the one that is non-prod:\nChange ID: CHG89772
+70,26/01/2026 13:20,uptimelabs@localhost,online-boutique-7524,:star: Restoration over root cause analysis
+71,26/01/2026 13:20,bez@localhost,business-comms-7524,I've got a meeting with board in next 15 mins
+72,26/01/2026 13:21,daniel@localhost,online-boutique-7524,Shall i rollback cart service change then ?
+73,26/01/2026 13:21,PLAYER,business-comms-7524,Summary: Payment service isn't working - Have people digging into the infrastructure - Daniel is rolling back some changes to Cart Service
+74,26/01/2026 13:21,uptimelabs@localhost,online-boutique-7524,:star: Reviewed changes
+75,26/01/2026 13:21,PLAYER,online-boutique-7524,Yes
+76,26/01/2026 13:21,PLAYER,online-boutique-7524,If it's non-destructive
+77,26/01/2026 13:22,tanya@localhost,online-boutique-7524,But the latest change was into payments around 2 hrs ago
+78,26/01/2026 13:22,PLAYER,online-boutique-7524,In other words rollback should NOT affect other currencies
+79,26/01/2026 13:22,PLAYER,online-boutique-7524,Yeah Daniel roll this one back too:\nChange ID: CHG89779
+80,26/01/2026 13:22,PLAYER,online-boutique-7524,Bob you got the comms out to customers?
+81,26/01/2026 13:22,hamed@localhost,online-boutique-7524,@PLAYER lets ground here for a bit. What informations we have about the symptoms
+82,26/01/2026 13:23,bob@localhost,online-boutique-7524,I'll keep the users informed. Do we have an ETA for the fix ?
+83,26/01/2026 13:23,PLAYER,online-boutique-7524,Hamed Payment and Cart services seems to be affected.  Assumption (working theory): changes in pord need rolling abck.
+84,26/01/2026 13:23,uptimelabs@localhost,online-boutique-7524,:star: Form a working theory
+85,26/01/2026 13:23,PLAYER,online-boutique-7524,Bob no ETA
+86,26/01/2026 13:23,daniel@localhost,online-boutique-7524,Ok i'll rollback payment service first
+87,26/01/2026 13:24,daniel@localhost,online-boutique-7524,Understood I'll proceed with rolling back the payment service
+88,26/01/2026 13:24,daniel@localhost,online-boutique-7524,payment service rollback is complete
+89,26/01/2026 13:24,hamed@localhost,online-boutique-7524,This is not good. Something is broken after the payment rollback
+90,26/01/2026 13:24,PLAYER,online-boutique-7524,Website still down - so get the other changes rolled back too.  Just to confirm.
+91,26/01/2026 13:24,hamed@localhost,online-boutique-7524,I doubt only payment's rollback is going to work.
+92,26/01/2026 13:25,hamed@localhost,online-boutique-7524,Initial reports started with customers complaining about bitcoin payment method
+93,26/01/2026 13:25,hamed@localhost,online-boutique-7524,3 changes went for bitcoin feature
+94,26/01/2026 13:25,bez@localhost,business-comms-7524,Is there any ETA for the fix ?
+95,26/01/2026 13:26,PLAYER,business-comms-7524,Summary: Cart Service still down - Rolled back the prod change but no fix - getting the other changes rolled back too
+96,26/01/2026 13:26,PLAYER,business-comms-7524,No ETA
+97,26/01/2026 13:26,hamed@localhost,online-boutique-7524,Complete cart service and cart redis is down
+98,26/01/2026 13:26,PLAYER,online-boutique-7524,Daniel roll all those bitcoin changes back
+99,26/01/2026 13:26,tanya@localhost,online-boutique-7524,I did a restart but now it failed again after payments rollback
+100,26/01/2026 13:26,PLAYER,online-boutique-7524,Tanya rollback your Change ID: CHG89778
+101,26/01/2026 13:27,daniel@localhost,online-boutique-7524,You're right. We need to rollback in sequence for all these 3 changes
+102,26/01/2026 13:27,tanya@localhost,online-boutique-7524,Ok doing it now
+103,26/01/2026 13:27,daniel@localhost,online-boutique-7524,I'm rolling back cart service
+104,26/01/2026 13:27,tanya@localhost,online-boutique-7524,I am doing for cart redis
+105,26/01/2026 13:28,bob@localhost,online-boutique-7524,Customer complaints are rising now
+106,26/01/2026 13:28,PLAYER,online-boutique-7524,Report when rollbacks are complete
+107,26/01/2026 13:28,tanya@localhost,online-boutique-7524,Rollbacks are completed
+108,26/01/2026 13:28,daniel@localhost,online-boutique-7524,Great i've also restarted the frontend so the website should be working now
+109,26/01/2026 13:28,daniel@localhost,online-boutique-7524,Rollback done
+110,26/01/2026 13:28,PLAYER,online-boutique-7524,Site still broken
+111,26/01/2026 13:28,PLAYER,online-boutique-7524,Rollback the two UAT changes Daniel
+112,26/01/2026 13:28,tinus@localhost,online-boutique-7524,@PLAYER can you confirm?
+113,26/01/2026 13:28,hamed@localhost,online-boutique-7524,@Tanya have you restarted the cache  followed by frontend ?
+114,26/01/2026 13:29,PLAYER,online-boutique-7524,I mean Shay and Daniel:\nshay: Change ID: CHG89759\ndaniel: Change ID: CHG89772
+115,26/01/2026 13:29,shay@localhost,online-boutique-7524,I'm still seeing site down
+116,26/01/2026 13:29,PLAYER,online-boutique-7524,Hamed has a good thought.  Shay please do.
+117,26/01/2026 13:29,tanya@localhost,online-boutique-7524,I did it. Will be up in few mins
+118,26/01/2026 13:29,tanya@localhost,online-boutique-7524,I can see it back again
+119,26/01/2026 13:29,PLAYER,business-comms-7524,Summary: Site still down - Rolled back prod changes to no affect - restarting services on the backend (platform team)
+120,26/01/2026 13:30,shay@localhost,online-boutique-7524,I can place the order again
+121,26/01/2026 13:30,PLAYER,online-boutique-7524,Website is up - Bob have customers retry
+122,26/01/2026 13:30,uptimelabs@localhost,online-boutique-7524,:star: Cross check resolution with stakeholders
+123,26/01/2026 13:30,bob@localhost,online-boutique-7524,I can see the order metrics are going up a bit. And no new reports in last min
+124,26/01/2026 13:30,bez@localhost,business-comms-7524,Great @PLAYER
+125,26/01/2026 13:30,PLAYER,business-comms-7524,Summary: Website is up right now - Restarted backend service after all prod rollbacks for bitcoin - Customers retrying site
+126,26/01/2026 13:30,uptimelabs@localhost,online-boutique-7524,:star: Confirm resolution with the business
+127,26/01/2026 13:31,tanya@localhost,online-boutique-7524,Are we good to close the incident ?
+128,26/01/2026 13:31,PLAYER,online-boutique-7524,Not yet - Bob customers need to confirm issue is fixed
+129,26/01/2026 13:31,bob@localhost,online-boutique-7524,I checked again and the customers are no longer reporting any more issues
+130,26/01/2026 13:31,PLAYER,online-boutique-7524,We'll need a postmortem after this to look at what went wrong with the bitcoin deployment
+131,26/01/2026 13:32,PLAYER,online-boutique-7524,Yeah I would call the incident over
+132,26/01/2026 13:32,bob@localhost,online-boutique-7524,Great work everyone! The payments issue has been resolved and customers can now check out smoothly
+133,26/01/2026 13:32,daniel@localhost,online-boutique-7524,It appears that everything has returned to its normal state
+134,26/01/2026 13:32,tanya@localhost,online-boutique-7524,Phew! Glad we got that sorted. Fantastic teamwork!
+135,26/01/2026 13:32,tinus@localhost,online-boutique-7524,Absolutely! Proud to be a part of this team
+136,26/01/2026 13:32,tinus@localhost,online-boutique-7524,Thank you @PLAYER for coordinating the rollback effectively
+137,26/01/2026 13:32,shay@localhost,online-boutique-7524,I was worried for a bit but everything looks good now.
+138,26/01/2026 13:32,bez@localhost,online-boutique-7524,I've been monitoring the financial metrics and they're already improving
+139,26/01/2026 13:32,PLAYER,business-comms-7524,Summary: Incident over - Confirmed with customers no more errors - Now buy me lunch
+140,26/01/2026 13:33,bez@localhost,online-boutique-7524,Brilliant job team and @PLAYER!
+141,26/01/2026 13:33,uptimelabs@localhost,online-boutique-7524,Thank you for playing The Chain We recommend that you take 5 minutes to go and get a drink or stretch your legs.\nOnce you are back we ask that you complete this retrospective and feedback form just hit start when you are ready.
+142,26/01/2026 13:33,uptimelabs@localhost,online-boutique-7524,"Thanks for playing! Please complete your feedback here:\nhttps://learn.uptimelabs.io/scenario/online-boutique/levels/8/7524/feedback\n"""

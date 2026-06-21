@@ -1,0 +1,135 @@
+datetime,player,channel,message
+2025-11-11 15:05:13,tinus,online-boutique-6736,"Hi team, let's have a mood check send an emoji to describe your mood"
+2025-11-11 15:05:17,tinus,online-boutique-6736,"I'll go first, :thumbsup:"
+2025-11-11 15:05:23,tanya,online-boutique-6736,:thumbsup:
+2025-11-11 15:05:25,tinus,online-boutique-6736,I'm excited about showing off all your hard work at todays stakeholder meeting
+2025-11-11 15:05:28,daniel,online-boutique-6736,":skull: knackered, had a few too many late nights this week"
+2025-11-11 15:05:31,shay,online-boutique-6736,:rainbow:
+2025-11-11 15:05:34,hamed,online-boutique-6736,living the dream :smile:
+2025-11-11 15:05:38,bez,online-boutique-6736,:smirk: im excited to see the show too
+2025-11-11 15:05:40,tinus,online-boutique-6736,shouldn't you be prepping for the meeting 
+2025-11-11 15:05:43,bez,online-boutique-6736,:sweat_smile: i am indeed I'll leave you lot to it
+2025-11-11 15:05:45,shay,online-boutique-6736,hang in there @daniel its gonne be the weekend sooner or later :joy:
+2025-11-11 15:05:48,tinus,online-boutique-6736,I should get on with my prep too have a good day team
+2025-11-11 15:05:49,daniel,online-boutique-6736,@shay strict diet of energy drink for me today lol
+2025-11-11 15:05:52,daniel,online-boutique-6736,hope the presentation goes well @tinus
+2025-11-11 15:05:54,tanya,online-boutique-6736,:raised_hands:
+2025-11-11 15:06:10,UptimeLabs,online-boutique-6736,"Welcome to Rumours, remember communication is key to diagnose the problem.
+
+ *Use `/help` at any time for a list of useful links and commands*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin Start button"
+2025-11-11 15:07:21,PLAYER,online-boutique-6736,Clicked undefined button
+2025-11-11 15:07:23,PLAYER,online-boutique-6736,Clicked org button
+2025-11-11 15:07:25,PLAYER,online-boutique-6736,Clicked undefined button
+2025-11-11 15:08:15,PLAYER,online-boutique-6736,Clicked Start button
+2025-11-11 15:08:15,UptimeLabs,online-boutique-6736,":alarm_clock: - You have 20 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-11-11 15:08:18,tinus,online-boutique-6736,"Hey team, I'm texting from the board room - kinda embarrassing but in my demo to the board, I tried to add a pair of Aviator sunglasses to the shopping cart and I got a ?http 500?"
+2025-11-11 15:08:21,tinus,online-boutique-6736,"I've bought some time but need this be able to do this demo if we can lets get this sorted in the next 20 minutes.
+"
+2025-11-11 15:08:22,tinus,online-boutique-6736,Metrics
+2025-11-11 15:08:25,tanya,online-boutique-6736,"uh oh, those Aviators are top sellers due to the new Top Gun movie...It's size up the issue time Elsa Louise Savage"
+2025-11-11 15:08:28,shay,online-boutique-6736,Come on this can't be happening!
+2025-11-11 15:08:30,tinus,online-boutique-6736,"I'm in this meeting so, wont be able to help but I trust that you all can get this fixed asap, just @ me if you need anything"
+2025-11-11 15:08:33,shay,online-boutique-6736,ok looking into this now
+2025-11-11 15:08:49,PLAYER,online-boutique-6736,p1
+2025-11-11 15:08:50,PLAYER,business-comms-6736,*Incident Number INC100082:* p1
+2025-11-11 15:08:50,UptimeLabs,online-boutique-6736,:star: Incident record created
+2025-11-11 15:08:52,UptimeLabs,online-boutique-6736,:star: Send first comms in first 5 minutes
+2025-11-11 15:08:58,PLAYER,online-boutique-6736,looking at this now
+2025-11-11 15:09:09,PLAYER,online-boutique-6736,i have checked and i can add the aviators to my baket
+2025-11-11 15:09:14,PLAYER,online-boutique-6736,could someone else test please
+2025-11-11 15:09:14,UptimeLabs,online-boutique-6736,:star: Attempt to replicate the issue
+2025-11-11 15:09:17,UptimeLabs,online-boutique-6736,:star: Reproduces the incident
+2025-11-11 15:09:25,Bez,online-boutique-6736,"oh wow, did someone raise a p1? Tinus is in that board meeting!"
+2025-11-11 15:09:32,PLAYER,online-boutique-6736,I raised it
+2025-11-11 15:09:49,PLAYER,online-boutique-6736,he is presenting and getting http 500
+2025-11-11 15:09:59,PLAYER,online-boutique-6736,but i have tried buying and have had no issue
+2025-11-11 15:10:04,Bez,online-boutique-6736,"Hey Elsa, thanks, I'm a bit worried now. I'll try to stay out of your way but keep me updated in the business comms chat"
+2025-11-11 15:10:34,Bob,online-boutique-6736,a p1? I'm here if you need me!
+2025-11-11 15:10:45,PLAYER,online-boutique-6736,Tinus - have you tried a refreshing the website
+2025-11-11 15:10:46,Daniel,online-boutique-6736,me too
+2025-11-11 15:10:48,PLAYER,online-boutique-6736,and trying again
+2025-11-11 15:10:58,PLAYER,online-boutique-6736,Has anyone made any recent chnages
+2025-11-11 15:11:06,UptimeLabs,online-boutique-6736,:star: Check changes done to the platform
+2025-11-11 15:11:13,PLAYER,online-boutique-6736,or could everyone else test adding something to their basket
+2025-11-11 15:11:14,Tinus,online-boutique-6736,I've been refreshing for the past minute...still seeing the error
+2025-11-11 15:11:23,Shay,online-boutique-6736,I'll get the change logs now
+2025-11-11 15:11:37,Shay,online-boutique-6736,here you go Elsa: <https://uptime-labs.atlassian.net/wiki/external/YzljMTlhYTdhNDNkNGFjYzk1MzMwMzgxZjg0NzdhODE>
+2025-11-11 15:11:56,PLAYER,online-boutique-6736,could you try adding a different item Tinus
+2025-11-11 15:12:05,PLAYER,online-boutique-6736,so we know if its an overall issue
+2025-11-11 15:12:22,Tinus,online-boutique-6736,bit busy here...answering board questions. I'll try
+2025-11-11 15:12:27,PLAYER,online-boutique-6736,could someone else please try to add something to their basket
+2025-11-11 15:12:36,PLAYER,online-boutique-6736,so we can detect if this is a local issue
+2025-11-11 15:12:53,PLAYER,online-boutique-6736,Shay Daniel Tanya?
+2025-11-11 15:12:54,Daniel,online-boutique-6736,"I've been looking at this Elsa, I can't seem to reprode it, can you?"
+2025-11-11 15:12:57,PLAYER,online-boutique-6736,Is anyone about
+2025-11-11 15:13:11,PLAYER,online-boutique-6736,Nope no issues on my side
+2025-11-11 15:13:16,Tanya,online-boutique-6736,I'll have a look too
+2025-11-11 15:13:49,Tinus,online-boutique-6736,ah man...it happens on every product for me
+2025-11-11 15:13:53,PLAYER,online-boutique-6736,There seems to be no incidents on incident manager
+2025-11-11 15:14:19,Bez,business-comms-6736,"Keep us updated over here, I'll try to keep the board away from the demo for now until this is fixed"
+2025-11-11 15:14:21,PLAYER,online-boutique-6736,order per minute are going down slowly but steadily on the incdient manager
+2025-11-11 15:14:25,PLAYER,business-comms-6736,we will
+2025-11-11 15:14:28,UptimeLabs,online-boutique-6736,:star: Use metrics as evidence
+2025-11-11 15:14:39,PLAYER,business-comms-6736,no issues on our side we have tested
+2025-11-11 15:14:45,PLAYER,business-comms-6736,but must be and external factor
+2025-11-11 15:14:57,PLAYER,online-boutique-6736,it must be an external issue
+2025-11-11 15:15:06,Bob,online-boutique-6736,I'm seeing the same Elsa...I'll ask the team if there have been customer reports
+2025-11-11 15:15:13,PLAYER,online-boutique-6736,a local issue to individual devices
+2025-11-11 15:15:23,Bob,online-boutique-6736,if its external we'll have complaints
+2025-11-11 15:15:36,PLAYER,online-boutique-6736,can you check the reports - thanks bob
+2025-11-11 15:15:50,Bob,online-boutique-6736,one sec BRB
+2025-11-11 15:16:26,PLAYER,online-boutique-6736,in the mean time Tinus if possible could you check if you internet is stable ?
+2025-11-11 15:16:40,Hamed,online-boutique-6736,"Hey, is this really a sev1? I was paged..."
+2025-11-11 15:16:57,PLAYER,online-boutique-6736,or if you try accessing the website on you phone using mobile data
+2025-11-11 15:17:19,Tinus,online-boutique-6736,I'm able to load the bbc website....at leat those guys over there can build working software
+2025-11-11 15:17:20,PLAYER,online-boutique-6736,Hi Hamed - I dont think its quite a p1
+2025-11-11 15:17:28,Tinus,online-boutique-6736,sorry...stressed
+2025-11-11 15:17:37,PLAYER,online-boutique-6736,Clicked undefined button
+2025-11-11 15:17:53,Tinus,online-boutique-6736,I don't have my phone on me
+2025-11-11 15:18:31,Bob,online-boutique-6736,"ok, no complaints from customers other than the usual issues with the price of sunglasses"
+2025-11-11 15:19:03,PLAYER,online-boutique-6736,ok so this appears to be an issue only for a few
+2025-11-11 15:19:10,UptimeLabs,online-boutique-6736,:star: Qualify the problem
+2025-11-11 15:19:17,PLAYER,online-boutique-6736,hi Daniel / Shay
+2025-11-11 15:19:50,PLAYER,business-comms-6736,it seems to be only an issue for tinus
+2025-11-11 15:19:54,UptimeLabs,online-boutique-6736,:star: Formally assign criticality level to the incident
+2025-11-11 15:20:00,PLAYER,business-comms-6736,Have you got your laptop with you Bez?
+2025-11-11 15:20:11,Daniel,online-boutique-6736,I've got his IP address I'll see if there's anything registering on his device
+2025-11-11 15:20:48,Daniel,online-boutique-6736,weird...I don't see any errors on the server
+2025-11-11 15:20:54,PLAYER,online-boutique-6736,"Yes,e it would be good to check the logs"
+2025-11-11 15:21:06,Tinus,online-boutique-6736,"OMG they're wrapping up, I need a fix pretty quick"
+2025-11-11 15:21:31,PLAYER,online-boutique-6736,we need to fidn the root cause asap
+2025-11-11 15:21:33,Daniel,online-boutique-6736,"That's what I'm saying, I see not errors in the logs from tinus's IP"
+2025-11-11 15:22:03,PLAYER,online-boutique-6736,Tinus can you reboot your laptop or duoble check wifi connection
+2025-11-11 15:22:19,Shay,online-boutique-6736,"me neither, I'm checking too"
+2025-11-11 15:22:39,Tinus,online-boutique-6736,"That'll take too long, you know what windows laptops are like"
+2025-11-11 15:22:41,PLAYER,online-boutique-6736,this must be on the server end
+2025-11-11 15:22:58,PLAYER,online-boutique-6736,couls someone check server logs instead
+2025-11-11 15:23:14,Bez,online-boutique-6736,"I have my laptop, its working for me!"
+2025-11-11 15:23:26,PLAYER,online-boutique-6736,or alternatively try to repair or regenerate  the file which looks curropted
+2025-11-11 15:23:38,Bez,business-comms-6736,I'm gonna give Tinus my laptop
+2025-11-11 15:23:55,PLAYER,online-boutique-6736,Tinus can you refresh?
+2025-11-11 15:24:06,PLAYER,online-boutique-6736,or switch to a different network
+2025-11-11 15:24:14,PLAYER,online-boutique-6736,or even clear your browser cached creds
+2025-11-11 15:24:16,UptimeLabs,online-boutique-6736,:alarm_clock: - You have less than 4 minutes. You can type `/help` if you need any reminders.
+2025-11-11 15:24:24,Tinus,online-boutique-6736,ok I'll try the cache
+2025-11-11 15:24:31,PLAYER,online-boutique-6736,this is local issue so will need to at least try to troubleshoot
+2025-11-11 15:24:38,Tinus,online-boutique-6736,oh man...
+2025-11-11 15:24:49,tinus,online-boutique-6736,Damn! thats it
+2025-11-11 15:24:50,tinus,online-boutique-6736,"Great Ive got to do my presentation now, thanks for figuring this out so quickly. @daniel @shay can you look in to a cache busting solution?"
+2025-11-11 15:24:52,shay,online-boutique-6736,it was the cache! sure we can do that
+2025-11-11 15:24:54,daniel,online-boutique-6736,"no worries boss, at least its not a significat issue"
+2025-11-11 15:24:55,daniel,online-boutique-6736,good luck with the presentation!
+2025-11-11 15:24:57,tanya,online-boutique-6736,yes good luck @tinus
+2025-11-11 15:24:58,shay,online-boutique-6736,good luck @tinus!
+2025-11-11 15:25:07,PLAYER,business-comms-6736,dont worry
+2025-11-11 15:25:10,UptimeLabs,online-boutique-6736,"Thank you for playing, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit I am ready when you want to start. I am ready button"
+2025-11-11 15:25:10,PLAYER,business-comms-6736,we have sorted it
+2025-11-11 15:25:17,PLAYER,business-comms-6736,he just had to clear his cache
+2025-11-11 15:25:23,PLAYER,business-comms-6736,we can close the incident
+2025-11-11 15:25:25,Bez,business-comms-6736,Good think Tinus the CTO knows what a browser cache is LOL
+2025-11-11 15:25:50,PLAYER,online-boutique-6736,Clicked Start_feedback button
+2025-11-11 15:27:00,UptimeLabs,online-boutique-6736,Submission successful

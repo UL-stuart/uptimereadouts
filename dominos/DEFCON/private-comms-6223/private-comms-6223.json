@@ -1,0 +1,5236 @@
+[
+    {
+        "subtype": "channel_join",
+        "user": "U03CD3S4A0J",
+        "text": "<@U03CD3S4A0J> has joined the channel",
+        "type": "message",
+        "ts": "1759928646.341879"
+    },
+    {
+        "subtype": "bot_message",
+        "text": "Is this been agreed by business ?",
+        "username": "Maya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+        },
+        "type": "message",
+        "ts": "1759930340.790879",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Mznx",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Is this been agreed by business ?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "subtype": "channel_join",
+        "user": "U03BY6AJZMM",
+        "text": "<@U03BY6AJZMM> has joined the channel",
+        "inviter": "U03CD3S4A0J",
+        "type": "message",
+        "ts": "1759930417.457309"
+    },
+    {
+        "subtype": "channel_join",
+        "user": "U03C9QC6HHB",
+        "text": "<@U03C9QC6HHB> has joined the channel",
+        "inviter": "U03CD3S4A0J",
+        "type": "message",
+        "ts": "1759930417.554899"
+    },
+    {
+        "subtype": "channel_join",
+        "user": "U03MH3MV62J",
+        "text": "<@U03MH3MV62J> has joined the channel",
+        "inviter": "U03CD3S4A0J",
+        "type": "message",
+        "ts": "1759930417.649819"
+    },
+    {
+        "subtype": "channel_join",
+        "user": "U03TKA1PRB9",
+        "text": "<@U03TKA1PRB9> has joined the channel",
+        "inviter": "U03CD3S4A0J",
+        "type": "message",
+        "ts": "1759930417.734639"
+    },
+    {
+        "subtype": "channel_join",
+        "user": "U046ZV3A6TU",
+        "text": "<@U046ZV3A6TU> has joined the channel",
+        "inviter": "U03CD3S4A0J",
+        "type": "message",
+        "ts": "1759930417.819769"
+    },
+    {
+        "subtype": "channel_join",
+        "user": "U048D1HGP5M",
+        "text": "<@U048D1HGP5M> has joined the channel",
+        "inviter": "U03CD3S4A0J",
+        "type": "message",
+        "ts": "1759930417.885249"
+    },
+    {
+        "subtype": "channel_join",
+        "user": "U05T5GU82RL",
+        "text": "<@U05T5GU82RL> has joined the channel",
+        "inviter": "U03CD3S4A0J",
+        "type": "message",
+        "ts": "1759930417.958229"
+    },
+    {
+        "subtype": "channel_join",
+        "user": "U063QU0F60M",
+        "text": "<@U063QU0F60M> has joined the channel",
+        "inviter": "U03CD3S4A0J",
+        "type": "message",
+        "ts": "1759930418.031429"
+    },
+    {
+        "subtype": "channel_join",
+        "user": "U06511E4ZSA",
+        "text": "<@U06511E4ZSA> has joined the channel",
+        "inviter": "U03CD3S4A0J",
+        "type": "message",
+        "ts": "1759930418.104729"
+    },
+    {
+        "subtype": "channel_join",
+        "user": "U06FL69C6JF",
+        "text": "<@U06FL69C6JF> has joined the channel",
+        "inviter": "U03CD3S4A0J",
+        "type": "message",
+        "ts": "1759930418.176589"
+    },
+    {
+        "subtype": "channel_join",
+        "user": "U06HZTCU3EZ",
+        "text": "<@U06HZTCU3EZ> has joined the channel",
+        "inviter": "U03CD3S4A0J",
+        "type": "message",
+        "ts": "1759930418.254809"
+    },
+    {
+        "subtype": "channel_join",
+        "user": "U06LRHG8SSZ",
+        "text": "<@U06LRHG8SSZ> has joined the channel",
+        "inviter": "U03CD3S4A0J",
+        "type": "message",
+        "ts": "1759930418.332919"
+    },
+    {
+        "subtype": "channel_join",
+        "user": "U072WJ4V5LP",
+        "text": "<@U072WJ4V5LP> has joined the channel",
+        "inviter": "U03CD3S4A0J",
+        "type": "message",
+        "ts": "1759930418.395939"
+    },
+    {
+        "subtype": "channel_join",
+        "user": "U073FURH2PN",
+        "text": "<@U073FURH2PN> has joined the channel",
+        "inviter": "U03CD3S4A0J",
+        "type": "message",
+        "ts": "1759930418.471159"
+    },
+    {
+        "subtype": "channel_join",
+        "user": "U0793RSL46R",
+        "text": "<@U0793RSL46R> has joined the channel",
+        "inviter": "U03CD3S4A0J",
+        "type": "message",
+        "ts": "1759930418.535269"
+    },
+    {
+        "subtype": "channel_join",
+        "user": "U07KYBU5U9H",
+        "text": "<@U07KYBU5U9H> has joined the channel",
+        "inviter": "U03CD3S4A0J",
+        "type": "message",
+        "ts": "1759930418.602139"
+    },
+    {
+        "subtype": "channel_join",
+        "user": "U088NNB60QK",
+        "text": "<@U088NNB60QK> has joined the channel",
+        "inviter": "U03CD3S4A0J",
+        "type": "message",
+        "ts": "1759930418.675069"
+    },
+    {
+        "subtype": "channel_join",
+        "user": "U08MJ4UMZ7T",
+        "text": "<@U08MJ4UMZ7T> has joined the channel",
+        "inviter": "U03CD3S4A0J",
+        "type": "message",
+        "ts": "1759930418.739409"
+    },
+    {
+        "subtype": "channel_join",
+        "user": "U08UR5Q0N79",
+        "text": "<@U08UR5Q0N79> has joined the channel",
+        "inviter": "U03CD3S4A0J",
+        "type": "message",
+        "ts": "1759930418.809669"
+    },
+    {
+        "subtype": "channel_join",
+        "user": "U06CA3MRAJF",
+        "text": "<@U06CA3MRAJF> has joined the channel",
+        "inviter": "U03CD3S4A0J",
+        "type": "message",
+        "ts": "1759930419.046599"
+    },
+    {
+        "subtype": "channel_join",
+        "user": "U0962TX79QS",
+        "text": "<@U0962TX79QS> has joined the channel",
+        "inviter": "U03CD3S4A0J",
+        "type": "message",
+        "ts": "1759930422.069019"
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759930428.000000",
+        "text": "@Ramesh Matta let's build the core response team here. I've already added myself. Who else should we pull in to keep it tight and efficient?",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "0g6",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "@Ramesh Matta let's build the core response team here. I've already added myself. Who else should we pull in to keep it tight and efficient?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "@Ramesh Matta let's build the core response team here. I've already added myself. Who else should we pull in to keep it tight and efficient?",
+            "username": "Maya",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+            },
+            "type": "message",
+            "ts": "1759930427.105789",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "NQn7s",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "@Ramesh Matta let's build the core response team here. I've already added myself. Who else should we pull in to keep it tight and efficient?"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "subtype": "bot_message",
+        "text": "@Ramesh Matta let's build the core response team here. I've already added myself. Who else should we pull in to keep it tight and efficient?",
+        "username": "Maya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+        },
+        "type": "message",
+        "ts": "1759930427.105789",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "uUC",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "@Ramesh Matta let's build the core response team here. I've already added myself. Who else should we pull in to keep it tight and efficient?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759930432.000000",
+        "text": "I'd say one senior person each from security, platform, and engineering. Also add Tanya, tasks could be platform intensive",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "\/uVjK",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "I'd say one senior person each from security, platform, and engineering. Also add Tanya, tasks could be platform intensive"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "I'd say one senior person each from security, platform, and engineering. Also add Tanya, tasks could be platform intensive",
+            "username": "Maya",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+            },
+            "type": "message",
+            "ts": "1759930431.084919",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "B\/I",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "I'd say one senior person each from security, platform, and engineering. Also add Tanya, tasks could be platform intensive"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "subtype": "bot_message",
+        "text": "I'd say one senior person each from security, platform, and engineering. Also add Tanya, tasks could be platform intensive",
+        "username": "Maya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+        },
+        "type": "message",
+        "ts": "1759930431.084919",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "O6e",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "I'd say one senior person each from security, platform, and engineering. Also add Tanya, tasks could be platform intensive"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "user": "U0962TX79QS",
+        "type": "message",
+        "ts": "1759930541.665509",
+        "client_msg_id": "69049366-3a60-49a1-b7e7-c2513ac678d3",
+        "text": "HI <@U06CA3MRAJF>, Let 's run Cyvantics Security on retainer",
+        "team": "T03CR9QEEJD",
+        "user_team": "T03CR9QEEJD",
+        "source_team": "T03CR9QEEJD",
+        "user_profile": {
+            "avatar_hash": "gacb5921367d",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/acb5921367d28c9852acd4ccdbc7305e.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-72.png",
+            "first_name": "Ramesh",
+            "real_name": "Ramesh Matta",
+            "display_name": "Ramesh Matta",
+            "team": "T03CR9QEEJD",
+            "name": "ramesh.matta",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "VrZyv",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "HI "
+                            },
+                            {
+                                "type": "user",
+                                "user_id": "U06CA3MRAJF"
+                            },
+                            {
+                                "type": "text",
+                                "text": ", Let 's run Cyvantics Security on retainer"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "subtype": "bot_message",
+        "text": "I'll pull in Hamed, Tanya and Daniel",
+        "username": "Maya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+        },
+        "type": "message",
+        "ts": "1759930554.845219",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ii9",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "I'll pull in Hamed, Tanya and Daniel"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "subtype": "bot_message",
+        "text": "I'm here",
+        "username": "Hamed",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9594120179024_48.png"
+        },
+        "type": "message",
+        "ts": "1759930569.790059",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "N7dFL",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "I'm here"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "subtype": "bot_message",
+        "text": "Yes, we've got an IR(incident response) retainer with Cyvantics Security",
+        "username": "Maya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+        },
+        "type": "message",
+        "ts": "1759930571.140619",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "\/sn",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Yes, we've got an IR(incident response) retainer with Cyvantics Security"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759930572.000000",
+        "text": "Yes, we've got an IR(incident response) retainer with Cyvantics Security",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ec5UU",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Yes, we've got an IR(incident response) retainer with Cyvantics Security"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "Yes, we've got an IR(incident response) retainer with Cyvantics Security",
+            "username": "Maya",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+            },
+            "type": "message",
+            "ts": "1759930571.140619",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "9+yVJ",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "Yes, we've got an IR(incident response) retainer with Cyvantics Security"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "user": "U0962TX79QS",
+        "type": "message",
+        "ts": "1759930571.829629",
+        "client_msg_id": "0078a350-24e3-4485-80af-c72a1b62f197",
+        "text": "Also we intimated this cycber security cell..",
+        "team": "T03CR9QEEJD",
+        "user_team": "T03CR9QEEJD",
+        "source_team": "T03CR9QEEJD",
+        "user_profile": {
+            "avatar_hash": "gacb5921367d",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/acb5921367d28c9852acd4ccdbc7305e.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-72.png",
+            "first_name": "Ramesh",
+            "real_name": "Ramesh Matta",
+            "display_name": "Ramesh Matta",
+            "team": "T03CR9QEEJD",
+            "name": "ramesh.matta",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "IclD9",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Also we intimated this cycber security cell.."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "subtype": "bot_message",
+        "text": "Yes",
+        "username": "Daniel",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9565953197826_48.png"
+        },
+        "type": "message",
+        "ts": "1759930578.648329",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "gSHNF",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Yes"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "subtype": "bot_message",
+        "text": "Looped in Cyvantics Security - they're on their way now to take snapshots of the infected server and storage, followed by forensics on it",
+        "username": "Maya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+        },
+        "type": "message",
+        "ts": "1759930586.179649",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "iSlkF",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Looped in Cyvantics Security - they're on their way now to take snapshots of the infected server and storage, followed by forensics on it"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759930587.000000",
+        "text": "Looped in Cyvantics Security - they're on their way now to take snapshots of the infected server and storage, followed by forensics on it",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "stsR",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Looped in Cyvantics Security - they're on their way now to take snapshots of the infected server and storage, followed by forensics on it"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "Looped in Cyvantics Security - they're on their way now to take snapshots of the infected server and storage, followed by forensics on it",
+            "username": "Maya",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+            },
+            "type": "message",
+            "ts": "1759930586.179649",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "Alr4E",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "Looped in Cyvantics Security - they're on their way now to take snapshots of the infected server and storage, followed by forensics on it"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "subtype": "bot_message",
+        "text": "I'm in as well",
+        "username": "Tanya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9551430654519_48.png"
+        },
+        "type": "message",
+        "ts": "1759930589.353819",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "xk1rv",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "I'm in as well"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "subtype": "bot_message",
+        "text": "Meanwhile, I've got this from Cyvantics. @Ramesh Matta, can you help track the steps and coordinate?",
+        "username": "Maya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+        },
+        "type": "message",
+        "ts": "1759930596.299889",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "unRR",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Meanwhile, I've got this from Cyvantics. @Ramesh Matta, can you help track the steps and coordinate?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759930597.000000",
+        "text": "Meanwhile, I've got this from Cyvantics. @Ramesh Matta, can you help track the steps and coordinate?",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "CUN",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Meanwhile, I've got this from Cyvantics. @Ramesh Matta, can you help track the steps and coordinate?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "Meanwhile, I've got this from Cyvantics. @Ramesh Matta, can you help track the steps and coordinate?",
+            "username": "Maya",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+            },
+            "type": "message",
+            "ts": "1759930596.299889",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "jkyC3",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "Meanwhile, I've got this from Cyvantics. @Ramesh Matta, can you help track the steps and coordinate?"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "subtype": "bot_message",
+        "text": "<https:\/\/uptime-labs.atlassian.net\/wiki\/external\/MThjMTk4ZDU5ODU0NGZmMWE1NzhmNGY0MDQwNWI1NTA>",
+        "username": "Maya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+        },
+        "type": "message",
+        "ts": "1759930598.227489",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "iurSj",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/uptime-labs.atlassian.net\/wiki\/external\/MThjMTk4ZDU5ODU0NGZmMWE1NzhmNGY0MDQwNWI1NTA"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759930603.000000",
+        "text": "We've got isolation steps in the playbook, but before we dive in, can you paste that list here? I'll help team run through it",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "LaX=",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "We've got isolation steps in the playbook, but before we dive in, can you paste that list here? I'll help team run through it"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "We've got isolation steps in the playbook, but before we dive in, can you paste that list here? I'll help team run through it",
+            "username": "Maya",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+            },
+            "type": "message",
+            "ts": "1759930603.250229",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "Fbcl",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "We've got isolation steps in the playbook, but before we dive in, can you paste that list here? I'll help team run through it"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "subtype": "bot_message",
+        "text": "We've got isolation steps in the playbook, but before we dive in, can you paste that list here? I'll help team run through it",
+        "username": "Maya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+        },
+        "type": "message",
+        "ts": "1759930603.250229",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "i3mr",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "We've got isolation steps in the playbook, but before we dive in, can you paste that list here? I'll help team run through it"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759930649.000000",
+        "text": "we need to move things faster . @Ramesh Matta keep checking with business time to time. I'll run through these steps.",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "p4GI",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "we need to move things faster . @Ramesh Matta keep checking with business time to time. I'll run through these steps."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "we need to move things faster . @Ramesh Matta keep checking with business time to time. I'll run through these steps.",
+            "username": "Maya",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+            },
+            "type": "message",
+            "ts": "1759930649.369179",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "n+J",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "we need to move things faster . @Ramesh Matta keep checking with business time to time. I'll run through these steps."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "subtype": "bot_message",
+        "text": "we need to move things faster . @Ramesh Matta keep checking with business time to time. I'll run through these steps.",
+        "username": "Maya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+        },
+        "type": "message",
+        "ts": "1759930649.369179",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "yNci",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "we need to move things faster . @Ramesh Matta keep checking with business time to time. I'll run through these steps."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "user": "U0962TX79QS",
+        "type": "message",
+        "ts": "1759930703.845399",
+        "client_msg_id": "e494eb19-afd4-4d39-94f5-891bd867359b",
+        "text": "Can I get the iformation whether there is suspecious mails or any software link, 3rd party link that was clicked by any one ?",
+        "team": "T03CR9QEEJD",
+        "user_team": "T03CR9QEEJD",
+        "source_team": "T03CR9QEEJD",
+        "user_profile": {
+            "avatar_hash": "gacb5921367d",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/acb5921367d28c9852acd4ccdbc7305e.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-72.png",
+            "first_name": "Ramesh",
+            "real_name": "Ramesh Matta",
+            "display_name": "Ramesh Matta",
+            "team": "T03CR9QEEJD",
+            "name": "ramesh.matta",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "e6XFX",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Can I get the iformation whether there is suspecious mails or any software link, 3rd party link that was clicked by any one ?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759930750.000000",
+        "text": "3rd party is doing forensics. Meanwhile they have suggested to go with isolation",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "1Vm6T",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "3rd party is doing forensics. Meanwhile they have suggested to go with isolation"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "3rd party is doing forensics. Meanwhile they have suggested to go with isolation",
+            "username": "Maya",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+            },
+            "type": "message",
+            "ts": "1759930749.358069",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "ilZ",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "3rd party is doing forensics. Meanwhile they have suggested to go with isolation"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "subtype": "bot_message",
+        "text": "3rd party is doing forensics. Meanwhile they have suggested to go with isolation",
+        "username": "Maya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+        },
+        "type": "message",
+        "ts": "1759930749.358069",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Sc4",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "3rd party is doing forensics. Meanwhile they have suggested to go with isolation"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "user": "U0962TX79QS",
+        "type": "message",
+        "ts": "1759930765.298839",
+        "client_msg_id": "ffde863a-5d96-4704-b10a-42fb87209412",
+        "text": "Hi <@U06CA3MRAJF>, Can you please run below steps?",
+        "team": "T03CR9QEEJD",
+        "user_team": "T03CR9QEEJD",
+        "source_team": "T03CR9QEEJD",
+        "user_profile": {
+            "avatar_hash": "gacb5921367d",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/acb5921367d28c9852acd4ccdbc7305e.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-72.png",
+            "first_name": "Ramesh",
+            "real_name": "Ramesh Matta",
+            "display_name": "Ramesh Matta",
+            "team": "T03CR9QEEJD",
+            "name": "ramesh.matta",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "4E3ml",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Hi "
+                            },
+                            {
+                                "type": "user",
+                                "user_id": "U06CA3MRAJF"
+                            },
+                            {
+                                "type": "text",
+                                "text": ", Can you please run below steps?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0962TX79QS",
+        "type": "message",
+        "ts": "1759930767.170599",
+        "client_msg_id": "56500410-566c-4f8c-8d17-243bfd0f5eff",
+        "text": "1. Disconnect the infected server -&gt; Platforms \n2. Cut off infrastructure traffic -&gt; Platforms\n3. Disconnect DB &amp; freeze backup -&gt; Application\n4. Detach from Shared Resource -&gt; Platforms\n5. Take snapshots (Disk &amp; Memory) -&gt; Ask team\n6. Kill suspicious process or activity -&gt; Platforms\n",
+        "team": "T03CR9QEEJD",
+        "user_team": "T03CR9QEEJD",
+        "source_team": "T03CR9QEEJD",
+        "user_profile": {
+            "avatar_hash": "gacb5921367d",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/acb5921367d28c9852acd4ccdbc7305e.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-72.png",
+            "first_name": "Ramesh",
+            "real_name": "Ramesh Matta",
+            "display_name": "Ramesh Matta",
+            "team": "T03CR9QEEJD",
+            "name": "ramesh.matta",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "FhoDU",
+                "elements": [
+                    {
+                        "type": "rich_text_list",
+                        "elements": [
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "Disconnect the infected server -> Platforms "
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "Cut off infrastructure traffic -> Platforms"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "Disconnect DB & freeze backup -> Application"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "Detach from Shared Resource -> Platforms"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "Take snapshots (Disk & Memory) -> Ask team"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "Kill suspicious process or activity -> Platforms"
+                                    }
+                                ]
+                            }
+                        ],
+                        "style": "ordered",
+                        "indent": 0,
+                        "border": 0
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": []
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "subtype": "bot_message",
+        "text": "And so sar they have confirmed that there is no data theft , only lockout",
+        "username": "Maya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+        },
+        "type": "message",
+        "ts": "1759930771.896729",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "k0IM",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "And so sar they have confirmed that there is no data theft , only lockout"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759930772.000000",
+        "text": "And so sar they have confirmed that there is no data theft , only lockout",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "y9Y",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "And so sar they have confirmed that there is no data theft , only lockout"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "And so sar they have confirmed that there is no data theft , only lockout",
+            "username": "Maya",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+            },
+            "type": "message",
+            "ts": "1759930771.896729",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "8Py",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "And so sar they have confirmed that there is no data theft , only lockout"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "subtype": "bot_message",
+        "text": "And its has affected only till checkout app",
+        "username": "Maya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+        },
+        "type": "message",
+        "ts": "1759930783.421469",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "R9Ppv",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "And its has affected only till checkout app"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "subtype": "bot_message",
+        "text": "I've given write access to Tanya, Hamed, Daniel, and myself",
+        "username": "Maya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+        },
+        "type": "message",
+        "ts": "1759930786.157919",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "TS7se",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "I've given write access to Tanya, Hamed, Daniel, and myself"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759930787.000000",
+        "text": "I've given write access to Tanya, Hamed, Daniel, and myself",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "F418e",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "I've given write access to Tanya, Hamed, Daniel, and myself"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "I've given write access to Tanya, Hamed, Daniel, and myself",
+            "username": "Maya",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+            },
+            "type": "message",
+            "ts": "1759930786.157919",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "7Fj",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "I've given write access to Tanya, Hamed, Daniel, and myself"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "user": "U0962TX79QS",
+        "type": "message",
+        "ts": "1759930789.341579",
+        "client_msg_id": "a6f23751-1dab-4c4f-aa4b-3ff209ac3227",
+        "text": "gr8.. Let's try to resolve it..",
+        "team": "T03CR9QEEJD",
+        "user_team": "T03CR9QEEJD",
+        "source_team": "T03CR9QEEJD",
+        "user_profile": {
+            "avatar_hash": "gacb5921367d",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/acb5921367d28c9852acd4ccdbc7305e.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-72.png",
+            "first_name": "Ramesh",
+            "real_name": "Ramesh Matta",
+            "display_name": "Ramesh Matta",
+            "team": "T03CR9QEEJD",
+            "name": "ramesh.matta",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "dJjpU",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "gr8.. Let's try to resolve it.."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "subtype": "bot_message",
+        "text": "Disconnecting the checkout servers from the infra now",
+        "username": "Tanya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9551430654519_48.png"
+        },
+        "type": "message",
+        "ts": "1759930790.267969",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "RGFv",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Disconnecting the checkout servers from the infra now"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759930792.000000",
+        "text": "I'm on it. Disconnecting DB access for checkout and checking if scheduled backups exist",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "+Be8",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "I'm on it. Disconnecting DB access for checkout and checking if scheduled backups exist"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "I'm on it. Disconnecting DB access for checkout and checking if scheduled backups exist",
+            "username": "Daniel",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9565953197826_48.png"
+            },
+            "type": "message",
+            "ts": "1759930792.275729",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "Mm6Z",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "I'm on it. Disconnecting DB access for checkout and checking if scheduled backups exist"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "subtype": "bot_message",
+        "text": "I'm on it. Disconnecting DB access for checkout and checking if scheduled backups exist",
+        "username": "Daniel",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9565953197826_48.png"
+        },
+        "type": "message",
+        "ts": "1759930792.275729",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Bha",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "I'm on it. Disconnecting DB access for checkout and checking if scheduled backups exist"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "subtype": "bot_message",
+        "text": "I'll verify if any shared storage is still attached to the checkout DB",
+        "username": "Hamed",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9594120179024_48.png"
+        },
+        "type": "message",
+        "ts": "1759930794.272719",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "LC\/y+",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "I'll verify if any shared storage is still attached to the checkout DB"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759930794.000000",
+        "text": "I'll verify if any shared storage is still attached to the checkout DB",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "5DeL",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "I'll verify if any shared storage is still attached to the checkout DB"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "I'll verify if any shared storage is still attached to the checkout DB",
+            "username": "Hamed",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9594120179024_48.png"
+            },
+            "type": "message",
+            "ts": "1759930794.272719",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "ZFQbV",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "I'll verify if any shared storage is still attached to the checkout DB"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "subtype": "bot_message",
+        "text": "Step 3 done, DB connection to checkout is now cut",
+        "username": "Daniel",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9565953197826_48.png"
+        },
+        "type": "message",
+        "ts": "1759930806.313099",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "CiH0",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Step 3 done, DB connection to checkout is now cut"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759930807.000000",
+        "text": "Step 3 done, DB connection to checkout is now cut",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "JP5",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Step 3 done, DB connection to checkout is now cut"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "Step 3 done, DB connection to checkout is now cut",
+            "username": "Daniel",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9565953197826_48.png"
+            },
+            "type": "message",
+            "ts": "1759930806.313099",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "8O2",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "Step 3 done, DB connection to checkout is now cut"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "subtype": "bot_message",
+        "text": "Step 1 done, Checkout servers are now fully disconnected. Moving to isolate the infra from all external traffic",
+        "username": "Tanya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9551430654519_48.png"
+        },
+        "type": "message",
+        "ts": "1759930808.472379",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "huM",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Step 1 done, Checkout servers are now fully disconnected. Moving to isolate the infra from all external traffic"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759930809.000000",
+        "text": "Step 1 done, Checkout servers are now fully disconnected. Moving to isolate the infra from all external traffic",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "eot9p",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Step 1 done, Checkout servers are now fully disconnected. Moving to isolate the infra from all external traffic"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "Step 1 done, Checkout servers are now fully disconnected. Moving to isolate the infra from all external traffic",
+            "username": "Tanya",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9551430654519_48.png"
+            },
+            "type": "message",
+            "ts": "1759930808.472379",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "CWAH\/",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "Step 1 done, Checkout servers are now fully disconnected. Moving to isolate the infra from all external traffic"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759930810.000000",
+        "text": "Step 4 confirmed, No shared storage attached to checkout, which makes sense since checkout has its standalone storage",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "kFpzH",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Step 4 confirmed, No shared storage attached to checkout, which makes sense since checkout has its standalone storage"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "Step 4 confirmed, No shared storage attached to checkout, which makes sense since checkout has its standalone storage",
+            "username": "Hamed",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9594120179024_48.png"
+            },
+            "type": "message",
+            "ts": "1759930810.335349",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "udl5d",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "Step 4 confirmed, No shared storage attached to checkout, which makes sense since checkout has its standalone storage"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "subtype": "bot_message",
+        "text": "Step 4 confirmed, No shared storage attached to checkout, which makes sense since checkout has its standalone storage",
+        "username": "Hamed",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9594120179024_48.png"
+        },
+        "type": "message",
+        "ts": "1759930810.335349",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "XSyID",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Step 4 confirmed, No shared storage attached to checkout, which makes sense since checkout has its standalone storage"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759930817.000000",
+        "text": "Step 2 completed, Infra is now fully cut off from the outside world. That means the website will remain completely down until we recover",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "a3daz",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Step 2 completed, Infra is now fully cut off from the outside world. That means the website will remain completely down until we recover"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "Step 2 completed, Infra is now fully cut off from the outside world. That means the website will remain completely down until we recover",
+            "username": "Tanya",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9551430654519_48.png"
+            },
+            "type": "message",
+            "ts": "1759930816.357059",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "e0v",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "Step 2 completed, Infra is now fully cut off from the outside world. That means the website will remain completely down until we recover"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "subtype": "bot_message",
+        "text": "Step 2 completed, Infra is now fully cut off from the outside world. That means the website will remain completely down until we recover",
+        "username": "Tanya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9551430654519_48.png"
+        },
+        "type": "message",
+        "ts": "1759930816.357059",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "FRyW",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Step 2 completed, Infra is now fully cut off from the outside world. That means the website will remain completely down until we recover"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "subtype": "bot_message",
+        "text": "Step 5 done, Cyvantics has completed taking snapshots of the checkout servers and database. They've now moved on to forensics. @Hamed, we're good to kill the script now",
+        "username": "Maya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+        },
+        "type": "message",
+        "ts": "1759930821.366689",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "qF2S",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Step 5 done, Cyvantics has completed taking snapshots of the checkout servers and database. They've now moved on to forensics. @Hamed, we're good to kill the script now"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759930822.000000",
+        "text": "Step 5 done, Cyvantics has completed taking snapshots of the checkout servers and database. They've now moved on to forensics. @Hamed, we're good to kill the script now",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "eNR",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Step 5 done, Cyvantics has completed taking snapshots of the checkout servers and database. They've now moved on to forensics. @Hamed, we're good to kill the script now"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "Step 5 done, Cyvantics has completed taking snapshots of the checkout servers and database. They've now moved on to forensics. @Hamed, we're good to kill the script now",
+            "username": "Maya",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+            },
+            "type": "message",
+            "ts": "1759930821.366689",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "8RP2q",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "Step 5 done, Cyvantics has completed taking snapshots of the checkout servers and database. They've now moved on to forensics. @Hamed, we're good to kill the script now"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "user": "U0962TX79QS",
+        "type": "message",
+        "ts": "1759930827.675649",
+        "client_msg_id": "48b23ecf-ee6a-4ea5-b7a6-add4d9f0fed7",
+        "text": "Excellent..",
+        "team": "T03CR9QEEJD",
+        "user_team": "T03CR9QEEJD",
+        "source_team": "T03CR9QEEJD",
+        "user_profile": {
+            "avatar_hash": "gacb5921367d",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/acb5921367d28c9852acd4ccdbc7305e.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-72.png",
+            "first_name": "Ramesh",
+            "real_name": "Ramesh Matta",
+            "display_name": "Ramesh Matta",
+            "team": "T03CR9QEEJD",
+            "name": "ramesh.matta",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "2L7yy",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Excellent.."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759930832.000000",
+        "text": "Step 6 done, The Script has been killed. @Ramesh Matta let us know and double-check if anything else is pending on our side",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "MCI",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Step 6 done, The Script has been killed. @Ramesh Matta let us know and double-check if anything else is pending on our side"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "Step 6 done, The Script has been killed. @Ramesh Matta let us know and double-check if anything else is pending on our side",
+            "username": "Hamed",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9594120179024_48.png"
+            },
+            "type": "message",
+            "ts": "1759930831.410859",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "p+pDH",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "Step 6 done, The Script has been killed. @Ramesh Matta let us know and double-check if anything else is pending on our side"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "subtype": "bot_message",
+        "text": "Step 6 done, The Script has been killed. @Ramesh Matta let us know and double-check if anything else is pending on our side",
+        "username": "Hamed",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9594120179024_48.png"
+        },
+        "type": "message",
+        "ts": "1759930831.410859",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "3sdhC",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Step 6 done, The Script has been killed. @Ramesh Matta let us know and double-check if anything else is pending on our side"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759930857.000000",
+        "text": "I think we have completed all the steps of isolation",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "JRi",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "I think we have completed all the steps of isolation"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "I think we have completed all the steps of isolation",
+            "username": "Maya",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+            },
+            "type": "message",
+            "ts": "1759930856.647389",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "ViE",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "I think we have completed all the steps of isolation"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "subtype": "bot_message",
+        "text": "I think we have completed all the steps of isolation",
+        "username": "Maya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+        },
+        "type": "message",
+        "ts": "1759930856.647389",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "AjRMk",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "I think we have completed all the steps of isolation"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "user": "U0962TX79QS",
+        "type": "message",
+        "ts": "1759930857.697019",
+        "client_msg_id": "0a3933a7-43d6-4a36-b3ce-0a1fe9e034f9",
+        "text": "1. Validate backups → Security\n2. Wipe infected systems → Platforms\n3. Rebuild from clean backup → Platforms\n4. Re-enable security agent on the servers → Security\n5. Reconnect traffic to services and monitor → Platforms\nLet's do the above steps immediately..",
+        "team": "T03CR9QEEJD",
+        "user_team": "T03CR9QEEJD",
+        "source_team": "T03CR9QEEJD",
+        "user_profile": {
+            "avatar_hash": "gacb5921367d",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/acb5921367d28c9852acd4ccdbc7305e.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-72.png",
+            "first_name": "Ramesh",
+            "real_name": "Ramesh Matta",
+            "display_name": "Ramesh Matta",
+            "team": "T03CR9QEEJD",
+            "name": "ramesh.matta",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "sZ+uR",
+                "elements": [
+                    {
+                        "type": "rich_text_list",
+                        "elements": [
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "Validate backups → Security"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "Wipe infected systems → Platforms"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "Rebuild from clean backup → Platforms"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "Re-enable security agent on the servers → Security"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "Reconnect traffic to services and monitor → Platforms"
+                                    }
+                                ]
+                            }
+                        ],
+                        "style": "ordered",
+                        "indent": 0,
+                        "border": 0
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Let's do the above steps immediately.."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "subtype": "bot_message",
+        "text": "Yes, we must have a backup. Platform team can confirm us",
+        "username": "Maya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+        },
+        "type": "message",
+        "ts": "1759930867.606519",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ZbZ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Yes, we must have a backup. Platform team can confirm us"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759930868.000000",
+        "text": "Yes, we must have a backup. Platform team can confirm us",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "xKztK",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Yes, we must have a backup. Platform team can confirm us"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "Yes, we must have a backup. Platform team can confirm us",
+            "username": "Maya",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+            },
+            "type": "message",
+            "ts": "1759930867.606519",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "FDdZ",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "Yes, we must have a backup. Platform team can confirm us"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "subtype": "bot_message",
+        "text": "Correct, we do have backup which only runs at 2AM. Latest is yesterday's. We'll lose today's orders",
+        "username": "Hamed",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9594120179024_48.png"
+        },
+        "type": "message",
+        "ts": "1759930876.617059",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "VM\/",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Correct, we do have backup which only runs at 2AM. Latest is yesterday's. We'll lose today's orders"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759930877.000000",
+        "text": "Correct, we do have backup which only runs at 2AM. Latest is yesterday's. We'll lose today's orders",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "jvU",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Correct, we do have backup which only runs at 2AM. Latest is yesterday's. We'll lose today's orders"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "Correct, we do have backup which only runs at 2AM. Latest is yesterday's. We'll lose today's orders",
+            "username": "Hamed",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9594120179024_48.png"
+            },
+            "type": "message",
+            "ts": "1759930876.617059",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "4Y\/",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "Correct, we do have backup which only runs at 2AM. Latest is yesterday's. We'll lose today's orders"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759930880.000000",
+        "text": "Isolation is complete. We're good to move toward restoration using the backup storage now",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "+84D",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Isolation is complete. We're good to move toward restoration using the backup storage now"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "Isolation is complete. We're good to move toward restoration using the backup storage now",
+            "username": "Maya",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+            },
+            "type": "message",
+            "ts": "1759930879.613789",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "n3HYp",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "Isolation is complete. We're good to move toward restoration using the backup storage now"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "subtype": "bot_message",
+        "text": "Isolation is complete. We're good to move toward restoration using the backup storage now",
+        "username": "Maya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+        },
+        "type": "message",
+        "ts": "1759930879.613789",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "qUB",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Isolation is complete. We're good to move toward restoration using the backup storage now"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "subtype": "bot_message",
+        "text": "@Ramesh Matta could you please confirm with business before moving forward on this",
+        "username": "Maya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+        },
+        "type": "message",
+        "ts": "1759930882.644259",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Ec+",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "@Ramesh Matta could you please confirm with business before moving forward on this"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759930884.000000",
+        "text": "@Ramesh Matta could you please confirm with business before moving forward on this",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "S1zK",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "@Ramesh Matta could you please confirm with business before moving forward on this"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "@Ramesh Matta could you please confirm with business before moving forward on this",
+            "username": "Maya",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+            },
+            "type": "message",
+            "ts": "1759930882.644259",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "G3r",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "@Ramesh Matta could you please confirm with business before moving forward on this"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "subtype": "bot_message",
+        "text": "I've called in @Bob to the channel",
+        "username": "Maya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+        },
+        "type": "message",
+        "ts": "1759930891.653669",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "bRuBt",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "I've called in @Bob to the channel"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "subtype": "bot_message",
+        "text": "@Ramesh Matta, I hear you need my help, what exactly should I look into?",
+        "username": "Bob",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9563677173445_48.png"
+        },
+        "type": "message",
+        "ts": "1759930899.713519",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "PYW",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "@Ramesh Matta, I hear you need my help, what exactly should I look into?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759930900.000000",
+        "text": "@Ramesh Matta, I hear you need my help, what exactly should I look into?",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "LIVVr",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "@Ramesh Matta, I hear you need my help, what exactly should I look into?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "@Ramesh Matta, I hear you need my help, what exactly should I look into?",
+            "username": "Bob",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9563677173445_48.png"
+            },
+            "type": "message",
+            "ts": "1759930899.713519",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "OsV",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "@Ramesh Matta, I hear you need my help, what exactly should I look into?"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "user": "U0962TX79QS",
+        "type": "message",
+        "ts": "1759930906.656949",
+        "client_msg_id": "dde92886-1821-4ede-bce3-8a7f18539d5e",
+        "text": "HI <@U047N91SRH8>, can you please help me here?",
+        "team": "T03CR9QEEJD",
+        "user_team": "T03CR9QEEJD",
+        "source_team": "T03CR9QEEJD",
+        "user_profile": {
+            "avatar_hash": "gacb5921367d",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/acb5921367d28c9852acd4ccdbc7305e.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-72.png",
+            "first_name": "Ramesh",
+            "real_name": "Ramesh Matta",
+            "display_name": "Ramesh Matta",
+            "team": "T03CR9QEEJD",
+            "name": "ramesh.matta",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ZOePf",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "HI "
+                            },
+                            {
+                                "type": "user",
+                                "user_id": "U047N91SRH8"
+                            },
+                            {
+                                "type": "text",
+                                "text": ", can you please help me here?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "subtype": "channel_join",
+        "user": "U047N91SRH8",
+        "text": "<@U047N91SRH8> has joined the channel",
+        "inviter": "U0962TX79QS",
+        "type": "message",
+        "ts": "1759930913.756659"
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759930916.000000",
+        "text": "With the sale starting today, the potential loss is significant - around $180k",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "NXOk",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "With the sale starting today, the potential loss is significant - around $180k"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "With the sale starting today, the potential loss is significant - around $180k",
+            "username": "Bob",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9563677173445_48.png"
+            },
+            "type": "message",
+            "ts": "1759930914.670889",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "9Byx",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "With the sale starting today, the potential loss is significant - around $180k"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "subtype": "bot_message",
+        "text": "With the sale starting today, the potential loss is significant - around $180k",
+        "username": "Bob",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9563677173445_48.png"
+        },
+        "type": "message",
+        "ts": "1759930914.670889",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "LZE7i",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "With the sale starting today, the potential loss is significant - around $180k"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759930937.000000",
+        "text": "There will be loss of $180k worth of orders if backup is available only till 2AM",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "2Ar2",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "There will be loss of $180k worth of orders if backup is available only till 2AM"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "There will be loss of $180k worth of orders if backup is available only till 2AM",
+            "username": "Bob",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9563677173445_48.png"
+            },
+            "type": "message",
+            "ts": "1759930935.739739",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "eYJ",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "There will be loss of $180k worth of orders if backup is available only till 2AM"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "subtype": "bot_message",
+        "text": "There will be loss of $180k worth of orders if backup is available only till 2AM",
+        "username": "Bob",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9563677173445_48.png"
+        },
+        "type": "message",
+        "ts": "1759930935.739739",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "YnZ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "There will be loss of $180k worth of orders if backup is available only till 2AM"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "user": "U0962TX79QS",
+        "type": "message",
+        "ts": "1759930944.567289",
+        "client_msg_id": "172e1e61-5916-47dc-a74c-fae8f845251c",
+        "text": "Let's take the back up and continue on resolving steps..",
+        "team": "T03CR9QEEJD",
+        "user_team": "T03CR9QEEJD",
+        "source_team": "T03CR9QEEJD",
+        "user_profile": {
+            "avatar_hash": "gacb5921367d",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/acb5921367d28c9852acd4ccdbc7305e.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-72.png",
+            "first_name": "Ramesh",
+            "real_name": "Ramesh Matta",
+            "display_name": "Ramesh Matta",
+            "team": "T03CR9QEEJD",
+            "name": "ramesh.matta",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Y52qO",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Let's take the back up and continue on resolving steps.."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "subtype": "bot_message",
+        "text": "Have we informed this to business ?",
+        "username": "Maya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+        },
+        "type": "message",
+        "ts": "1759930962.639629",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "MZhOQ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Have we informed this to business ?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759930998.000000",
+        "text": "Ok i'll run through the steps. Check with business please",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "kiTY",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Ok i'll run through the steps. Check with business please"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "Ok i'll run through the steps. Check with business please",
+            "username": "Maya",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+            },
+            "type": "message",
+            "ts": "1759930998.274329",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "1\/+o",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "Ok i'll run through the steps. Check with business please"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "subtype": "bot_message",
+        "text": "Ok i'll run through the steps. Check with business please",
+        "username": "Maya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+        },
+        "type": "message",
+        "ts": "1759930998.274329",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "bi=x",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Ok i'll run through the steps. Check with business please"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759931002.000000",
+        "text": "Thanks for the go-ahead. @Ramesh Matta, please track all restoration steps",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "figd",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Thanks for the go-ahead. @Ramesh Matta, please track all restoration steps"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "Thanks for the go-ahead. @Ramesh Matta, please track all restoration steps",
+            "username": "Maya",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+            },
+            "type": "message",
+            "ts": "1759931002.455439",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "3A1jr",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "Thanks for the go-ahead. @Ramesh Matta, please track all restoration steps"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "subtype": "bot_message",
+        "text": "Thanks for the go-ahead. @Ramesh Matta, please track all restoration steps",
+        "username": "Maya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+        },
+        "type": "message",
+        "ts": "1759931002.455439",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "A9O",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Thanks for the go-ahead. @Ramesh Matta, please track all restoration steps"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759931011.000000",
+        "text": "I'm now validating the backup storage to ensure it's safe",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "iy5",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "I'm now validating the backup storage to ensure it's safe"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "I'm now validating the backup storage to ensure it's safe",
+            "username": "Maya",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+            },
+            "type": "message",
+            "ts": "1759931011.420369",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "BKA3T",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "I'm now validating the backup storage to ensure it's safe"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "subtype": "bot_message",
+        "text": "I'm now validating the backup storage to ensure it's safe",
+        "username": "Maya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+        },
+        "type": "message",
+        "ts": "1759931011.420369",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "uz4x0",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "I'm now validating the backup storage to ensure it's safe"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "subtype": "bot_message",
+        "text": "I'm provisioning new checkout servers, will update once ready",
+        "username": "Hamed",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9594120179024_48.png"
+        },
+        "type": "message",
+        "ts": "1759931014.425219",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Vfhm",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "I'm provisioning new checkout servers, will update once ready"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759931021.000000",
+        "text": "Backup is clean and safe. @Hamed, you can start rebuilding checkout from backup storage",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "cv+",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Backup is clean and safe. @Hamed, you can start rebuilding checkout from backup storage"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "Backup is clean and safe. @Hamed, you can start rebuilding checkout from backup storage",
+            "username": "Maya",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+            },
+            "type": "message",
+            "ts": "1759931020.444279",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "F+lu",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "Backup is clean and safe. @Hamed, you can start rebuilding checkout from backup storage"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "subtype": "bot_message",
+        "text": "Backup is clean and safe. @Hamed, you can start rebuilding checkout from backup storage",
+        "username": "Maya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+        },
+        "type": "message",
+        "ts": "1759931020.444279",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "0mGUX",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Backup is clean and safe. @Hamed, you can start rebuilding checkout from backup storage"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759931025.000000",
+        "text": "Thanks, Maya. New servers are ready. I'll start rebuilding now using backup storage",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "9YJr",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Thanks, Maya. New servers are ready. I'll start rebuilding now using backup storage"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "Thanks, Maya. New servers are ready. I'll start rebuilding now using backup storage",
+            "username": "Hamed",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9594120179024_48.png"
+            },
+            "type": "message",
+            "ts": "1759931024.480449",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "uF6",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "Thanks, Maya. New servers are ready. I'll start rebuilding now using backup storage"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "subtype": "bot_message",
+        "text": "Thanks, Maya. New servers are ready. I'll start rebuilding now using backup storage",
+        "username": "Hamed",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9594120179024_48.png"
+        },
+        "type": "message",
+        "ts": "1759931024.480449",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "VWyt",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Thanks, Maya. New servers are ready. I'll start rebuilding now using backup storage"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "subtype": "bot_message",
+        "text": "Rebuild completed",
+        "username": "Hamed",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9594120179024_48.png"
+        },
+        "type": "message",
+        "ts": "1759931031.448609",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "uqit",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Rebuild completed"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "subtype": "bot_message",
+        "text": "I've enabled the security agents (EDR) on checkout servers",
+        "username": "Maya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+        },
+        "type": "message",
+        "ts": "1759931035.471879",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "BsN",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "I've enabled the security agents (EDR) on checkout servers"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "subtype": "bot_message",
+        "text": "I'll monitor application health once services are restored",
+        "username": "Daniel",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9565953197826_48.png"
+        },
+        "type": "message",
+        "ts": "1759931038.491769",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "+=u",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "I'll monitor application health once services are restored"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "subtype": "bot_message",
+        "text": " @Ramesh Matta , can you confirm all tasks are wrapped up and we are good to bring the traffic back? Just want to be sure, as this is the final restoration step before we move",
+        "username": "Maya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+        },
+        "type": "message",
+        "ts": "1759931041.564289",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "m7y",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "@Ramesh Matta , can you confirm all tasks are wrapped up and we are good to bring the traffic back? Just want to be sure, as this is the final restoration step before we move"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759931043.000000",
+        "text": " @Ramesh Matta , can you confirm all tasks are wrapped up and we are good to bring the traffic back? Just want to be sure, as this is the final restoration step before we move",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "9y4o0",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "@Ramesh Matta , can you confirm all tasks are wrapped up and we are good to bring the traffic back? Just want to be sure, as this is the final restoration step before we move"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": " @Ramesh Matta , can you confirm all tasks are wrapped up and we are good to bring the traffic back? Just want to be sure, as this is the final restoration step before we move",
+            "username": "Maya",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+            },
+            "type": "message",
+            "ts": "1759931041.564289",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "AHl",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "@Ramesh Matta , can you confirm all tasks are wrapped up and we are good to bring the traffic back? Just want to be sure, as this is the final restoration step before we move"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "user": "U0962TX79QS",
+        "type": "message",
+        "ts": "1759931075.085399",
+        "client_msg_id": "d7aa9d4c-29d4-4e8e-9510-6cc01d593202",
+        "text": "Yes, please go ahead..",
+        "team": "T03CR9QEEJD",
+        "user_team": "T03CR9QEEJD",
+        "source_team": "T03CR9QEEJD",
+        "user_profile": {
+            "avatar_hash": "gacb5921367d",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/acb5921367d28c9852acd4ccdbc7305e.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-72.png",
+            "first_name": "Ramesh",
+            "real_name": "Ramesh Matta",
+            "display_name": "Ramesh Matta",
+            "team": "T03CR9QEEJD",
+            "name": "ramesh.matta",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "bVI2T",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Yes, please go ahead.."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759931084.000000",
+        "text": "Thanks for the go ahead. Bringing up network traffic in progress...",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "5Cps",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Thanks for the go ahead. Bringing up network traffic in progress..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "Thanks for the go ahead. Bringing up network traffic in progress...",
+            "username": "Tanya",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9551430654519_48.png"
+            },
+            "type": "message",
+            "ts": "1759931083.212019",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "nGO\/",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "Thanks for the go ahead. Bringing up network traffic in progress..."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "subtype": "bot_message",
+        "text": "Thanks for the go ahead. Bringing up network traffic in progress...",
+        "username": "Tanya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9551430654519_48.png"
+        },
+        "type": "message",
+        "ts": "1759931083.212019",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "yPB",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Thanks for the go ahead. Bringing up network traffic in progress..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "subtype": "bot_message",
+        "text": "Restoration completed",
+        "username": "Tanya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9551430654519_48.png"
+        },
+        "type": "message",
+        "ts": "1759931102.292279",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "a76",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Restoration completed"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0962TX79QS",
+        "type": "message",
+        "ts": "1759931111.814119",
+        "client_msg_id": "69133812-39e5-4ff4-ace9-e5f6b35565fa",
+        "text": "<@U06CA3MRAJF>, do we have any component impact because of this?",
+        "team": "T03CR9QEEJD",
+        "user_team": "T03CR9QEEJD",
+        "source_team": "T03CR9QEEJD",
+        "user_profile": {
+            "avatar_hash": "gacb5921367d",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/acb5921367d28c9852acd4ccdbc7305e.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-72.png",
+            "first_name": "Ramesh",
+            "real_name": "Ramesh Matta",
+            "display_name": "Ramesh Matta",
+            "team": "T03CR9QEEJD",
+            "name": "ramesh.matta",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "cRmo\/",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "user",
+                                "user_id": "U06CA3MRAJF"
+                            },
+                            {
+                                "type": "text",
+                                "text": ", do we have any component impact because of this?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759931128.000000",
+        "text": "Wait!! getting a bunch of new complaints now. Users are neither able to see their return requests nor able to place new returns on the site",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "S3gyQ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Wait!! getting a bunch of new complaints now. Users are neither able to see their return requests nor able to place new returns on the site"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "Wait!! getting a bunch of new complaints now. Users are neither able to see their return requests nor able to place new returns on the site",
+            "username": "Bob",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9563677173445_48.png"
+            },
+            "type": "message",
+            "ts": "1759931127.273749",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "R7p",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "Wait!! getting a bunch of new complaints now. Users are neither able to see their return requests nor able to place new returns on the site"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "subtype": "bot_message",
+        "text": "Wait!! getting a bunch of new complaints now. Users are neither able to see their return requests nor able to place new returns on the site",
+        "username": "Bob",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9563677173445_48.png"
+        },
+        "type": "message",
+        "ts": "1759931127.273749",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Myzg",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Wait!! getting a bunch of new complaints now. Users are neither able to see their return requests nor able to place new returns on the site"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "subtype": "bot_message",
+        "text": "Yeah, that's probably the missing today's checkout data. Anyone who ordered or returned something during that time won't see it - makes sense since we restored from the yesterday's backup",
+        "username": "Maya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+        },
+        "type": "message",
+        "ts": "1759931134.283989",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "2WR",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Yeah, that's probably the missing today's checkout data. Anyone who ordered or returned something during that time won't see it - makes sense since we restored from the yesterday's backup"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759931135.000000",
+        "text": "Yeah, that's probably the missing today's checkout data. Anyone who ordered or returned something during that time won't see it - makes sense since we restored from the yesterday's backup",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "9UI\/5",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Yeah, that's probably the missing today's checkout data. Anyone who ordered or returned something during that time won't see it - makes sense since we restored from the yesterday's backup"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "Yeah, that's probably the missing today's checkout data. Anyone who ordered or returned something during that time won't see it - makes sense since we restored from the yesterday's backup",
+            "username": "Maya",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+            },
+            "type": "message",
+            "ts": "1759931134.283989",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "UyN8k",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "Yeah, that's probably the missing today's checkout data. Anyone who ordered or returned something during that time won't see it - makes sense since we restored from the yesterday's backup"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "subtype": "bot_message",
+        "text": "Tough, but expected :)",
+        "username": "Tanya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9551430654519_48.png"
+        },
+        "type": "message",
+        "ts": "1759931136.304109",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "X9B05",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Tough, but expected :)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "subtype": "bot_message",
+        "text": "What should I tell them? They are asking for refunds",
+        "username": "Bob",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9563677173445_48.png"
+        },
+        "type": "message",
+        "ts": "1759931137.299989",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "0=7m",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "What should I tell them? They are asking for refunds"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759931138.000000",
+        "text": "What should I tell them? They are asking for refunds",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "c19",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "What should I tell them? They are asking for refunds"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "What should I tell them? They are asking for refunds",
+            "username": "Bob",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9563677173445_48.png"
+            },
+            "type": "message",
+            "ts": "1759931137.299989",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "\/qCZ",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "What should I tell them? They are asking for refunds"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "subtype": "bot_message",
+        "text": "No only checkout component was affected",
+        "username": "Maya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+        },
+        "type": "message",
+        "ts": "1759931140.558219",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "AfE",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "No only checkout component was affected"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0962TX79QS",
+        "type": "message",
+        "ts": "1759931144.423689",
+        "client_msg_id": "9b851e03-ca6e-4fe5-9fa3-29864fc84fa4",
+        "text": "I am able to place the order..",
+        "team": "T03CR9QEEJD",
+        "user_team": "T03CR9QEEJD",
+        "source_team": "T03CR9QEEJD",
+        "user_profile": {
+            "avatar_hash": "gacb5921367d",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/acb5921367d28c9852acd4ccdbc7305e.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-72.png",
+            "first_name": "Ramesh",
+            "real_name": "Ramesh Matta",
+            "display_name": "Ramesh Matta",
+            "team": "T03CR9QEEJD",
+            "name": "ramesh.matta",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "\/VJuE",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "I am able to place the order.."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759931216.000000",
+        "text": "@Ramesh Matta I've received the forensics report from Cyvantics Security",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "1QkBe",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "@Ramesh Matta I've received the forensics report from Cyvantics Security"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "@Ramesh Matta I've received the forensics report from Cyvantics Security",
+            "username": "Maya",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+            },
+            "type": "message",
+            "ts": "1759931215.492179",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "xX=",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "@Ramesh Matta I've received the forensics report from Cyvantics Security"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "subtype": "bot_message",
+        "text": "@Ramesh Matta I've received the forensics report from Cyvantics Security",
+        "username": "Maya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+        },
+        "type": "message",
+        "ts": "1759931215.492179",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "=41",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "@Ramesh Matta I've received the forensics report from Cyvantics Security"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "subtype": "bot_message",
+        "text": "forensics",
+        "username": "Maya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+        },
+        "type": "message",
+        "ts": "1759931218.550119",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "image",
+                "block_id": "hlkjb",
+                "image_url": "https:\/\/i.ibb.co\/q3Jp58dv\/CONFIDENTIAL-6-page-0001.webp",
+                "alt_text": "forensics",
+                "image_width": 1241,
+                "image_height": 1755,
+                "image_bytes": 85332,
+                "is_animated": true,
+                "fallback": "1241x1755px image"
+            }
+        ]
+    },
+    {
+        "subtype": "bot_message",
+        "text": "Also, I just finished combing through Shay's mailbox. There's something important here, I found two emails from what looks like our monitoring vendor - ClearTech",
+        "username": "Maya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+        },
+        "type": "message",
+        "ts": "1759931235.495379",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Rpx",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Also, I just finished combing through Shay's mailbox. There's something important here, I found two emails from what looks like our monitoring vendor - ClearTech"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759931236.000000",
+        "text": "Also, I just finished combing through Shay's mailbox. There's something important here, I found two emails from what looks like our monitoring vendor - ClearTech",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "byQF",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Also, I just finished combing through Shay's mailbox. There's something important here, I found two emails from what looks like our monitoring vendor - ClearTech"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "Also, I just finished combing through Shay's mailbox. There's something important here, I found two emails from what looks like our monitoring vendor - ClearTech",
+            "username": "Maya",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+            },
+            "type": "message",
+            "ts": "1759931235.495379",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "8cE",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "Also, I just finished combing through Shay's mailbox. There's something important here, I found two emails from what looks like our monitoring vendor - ClearTech"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "subtype": "bot_message",
+        "text": "phished_email",
+        "username": "Maya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+        },
+        "type": "message",
+        "ts": "1759931237.578899",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "image",
+                "block_id": "dw3qx",
+                "image_url": "https:\/\/i.ibb.co\/VpLJHh7y\/CT-20250829-055655-0000.webp",
+                "alt_text": "phished_email",
+                "image_width": 2048,
+                "image_height": 1142,
+                "image_bytes": 102676,
+                "is_animated": true,
+                "fallback": "2048x1142px image"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759931256.000000",
+        "text": "We will take this forward in PIR , for now website is restored",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "4GM6m",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "We will take this forward in PIR , for now website is restored"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "We will take this forward in PIR , for now website is restored",
+            "username": "Maya",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+            },
+            "type": "message",
+            "ts": "1759931255.600759",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "vcXND",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "We will take this forward in PIR , for now website is restored"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "subtype": "bot_message",
+        "text": "We will take this forward in PIR , for now website is restored",
+        "username": "Maya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+        },
+        "type": "message",
+        "ts": "1759931255.600759",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "tULNl",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "We will take this forward in PIR , for now website is restored"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "user": "U0962TX79QS",
+        "type": "message",
+        "ts": "1759931268.389119",
+        "client_msg_id": "d96f3d97-485d-4df1-81e7-fac0dfabb168",
+        "text": "HI Team, Thank you very much for resolving it at earliest and restoring it..",
+        "team": "T03CR9QEEJD",
+        "user_team": "T03CR9QEEJD",
+        "source_team": "T03CR9QEEJD",
+        "user_profile": {
+            "avatar_hash": "gacb5921367d",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/acb5921367d28c9852acd4ccdbc7305e.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-72.png",
+            "first_name": "Ramesh",
+            "real_name": "Ramesh Matta",
+            "display_name": "Ramesh Matta",
+            "team": "T03CR9QEEJD",
+            "name": "ramesh.matta",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "39bl+",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "HI Team, Thank you very much for resolving it at earliest and restoring it.."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "type": "message",
+        "user": "U00",
+        "upload": false,
+        "ts": "1759931316.000000",
+        "text": "It was your seamless efforts and support that made it possible",
+        "subtype": "message_changed",
+        "thread_ts": "0000000000.000000",
+        "editor_id": "U00",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Huxrs",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "It was your seamless efforts and support that made it possible"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "original": {
+            "subtype": "bot_message",
+            "text": "It was your seamless efforts and support that made it possible",
+            "username": "Maya",
+            "icons": {
+                "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+            },
+            "type": "message",
+            "ts": "1759931315.399099",
+            "bot_id": "B03CA7DQX29",
+            "app_id": "A03CFD4EZRS",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "MkGLa",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "It was your seamless efforts and support that made it possible"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "edited_by": "U00"
+    },
+    {
+        "subtype": "bot_message",
+        "text": "It was your seamless efforts and support that made it possible",
+        "username": "Maya",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-24\/9578844544772_48.png"
+        },
+        "type": "message",
+        "ts": "1759931315.399099",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "124",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "It was your seamless efforts and support that made it possible"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "user": "U0962TX79QS",
+        "type": "message",
+        "ts": "1759931339.542039",
+        "client_msg_id": "b3e8b830-c2b4-467b-9475-563c8d5d3a14",
+        "text": "HI <@U0480TP9ZA5> , Let's inform the team not to click any such mail links to avoid such impact on the business..",
+        "team": "T03CR9QEEJD",
+        "user_team": "T03CR9QEEJD",
+        "source_team": "T03CR9QEEJD",
+        "user_profile": {
+            "avatar_hash": "gacb5921367d",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/acb5921367d28c9852acd4ccdbc7305e.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-72.png",
+            "first_name": "Ramesh",
+            "real_name": "Ramesh Matta",
+            "display_name": "Ramesh Matta",
+            "team": "T03CR9QEEJD",
+            "name": "ramesh.matta",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "dhvya",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "HI "
+                            },
+                            {
+                                "type": "user",
+                                "user_id": "U0480TP9ZA5"
+                            },
+                            {
+                                "type": "text",
+                                "text": " , Let's inform the team not to click any such mail links to avoid such impact on the business.."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "subtype": "bot_message",
+        "text": "Yes",
+        "username": "Hamed",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9594120179024_48.png"
+        },
+        "type": "message",
+        "ts": "1759931351.937089",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "5=Y",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Yes"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0962TX79QS",
+        "type": "message",
+        "ts": "1759931390.010979",
+        "client_msg_id": "ac8d1c49-147b-4336-b79b-a978d987f819",
+        "text": "HI <@U047KAE5JLV>, Incident is resolved . hope we are good to close the incident..",
+        "team": "T03CR9QEEJD",
+        "user_team": "T03CR9QEEJD",
+        "source_team": "T03CR9QEEJD",
+        "user_profile": {
+            "avatar_hash": "gacb5921367d",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/acb5921367d28c9852acd4ccdbc7305e.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-72.png",
+            "first_name": "Ramesh",
+            "real_name": "Ramesh Matta",
+            "display_name": "Ramesh Matta",
+            "team": "T03CR9QEEJD",
+            "name": "ramesh.matta",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "eD0u0",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "HI "
+                            },
+                            {
+                                "type": "user",
+                                "user_id": "U047KAE5JLV"
+                            },
+                            {
+                                "type": "text",
+                                "text": ", Incident is resolved . hope we are good to close the incident.."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "language": {
+            "locale": "en",
+            "is_reliable": true
+        }
+    },
+    {
+        "subtype": "channel_join",
+        "user": "U047KAE5JLV",
+        "text": "<@U047KAE5JLV> has joined the channel",
+        "inviter": "U0962TX79QS",
+        "type": "message",
+        "ts": "1759931395.156909"
+    },
+    {
+        "subtype": "bot_message",
+        "text": "Yes we are good , great",
+        "username": "Tinus",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2025-09-23\/9571167268980_48.png"
+        },
+        "type": "message",
+        "ts": "1759931411.495369",
+        "bot_id": "B03CA7DQX29",
+        "app_id": "A03CFD4EZRS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "z8E=",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Yes we are good , great"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0962TX79QS",
+        "type": "message",
+        "ts": "1759931493.784279",
+        "client_msg_id": "c02315f0-28fe-4d06-8f8c-22bf9d6eab7f",
+        "text": "Thank you all",
+        "team": "T03CR9QEEJD",
+        "user_team": "T03CR9QEEJD",
+        "source_team": "T03CR9QEEJD",
+        "user_profile": {
+            "avatar_hash": "gacb5921367d",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/acb5921367d28c9852acd4ccdbc7305e.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-72.png",
+            "first_name": "Ramesh",
+            "real_name": "Ramesh Matta",
+            "display_name": "Ramesh Matta",
+            "team": "T03CR9QEEJD",
+            "name": "ramesh.matta",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "lCg7z",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Thank you all"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "subtype": "channel_archive",
+        "user": "U03CD3S4A0J",
+        "text": "archived the channel",
+        "type": "message",
+        "ts": "1759931676.341289"
+    },
+    {
+        "subtype": "channel_archive",
+        "user": "U03CD3S4A0J",
+        "text": "archived the channel",
+        "type": "message",
+        "ts": "1759931676.436089"
+    }
+]

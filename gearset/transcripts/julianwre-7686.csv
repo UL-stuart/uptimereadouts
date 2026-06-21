@@ -1,0 +1,182 @@
+datetime,player,channel,message
+2026-02-10 15:04:22,uptimelabs,online-boutique-7686,"Welcome to Memory Lane, the responsibility is on you to size up the problem.
+
+ *Use `/help` at any time for a list of useful links and commands*
+  *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin"
+2026-02-10 15:05:33,shay,online-boutique-7686,"I just received an alert: *Currency Service Timeout Alert*
+
+Service: Currency Service
+Urgency: Critical
+
+ We need to investigate this immediately, I dont know if it is affecting customers but need to get ahead of this."
+2026-02-10 15:05:38,daniel,online-boutique-7686,"Hi, team. I've just seen the alert as well. Think this may be bad, lets investigate"
+2026-02-10 15:05:43,tinus,online-boutique-7686,Maybe check the recent deployments and see if anything has changed that could be impacting service stability. @PLAYER can you jump on and investigate?
+2026-02-10 15:05:53,PLAYER,online-boutique-7686,I am the incident commander. I'm in control
+2026-02-10 15:05:58,uptimelabs,online-boutique-7686,:star: Take command
+2026-02-10 15:06:05,PLAYER,online-boutique-7686,What does this alert mean @shay and @daniel ?
+2026-02-10 15:06:13,shay,online-boutique-7686,ill try digging in
+2026-02-10 15:06:21,PLAYER,online-boutique-7686,How would this alert correspond to user experience?
+2026-02-10 15:06:26,uptimelabs,online-boutique-7686,:star: Asking questions to validate impact of the problem
+2026-02-10 15:06:28,bob,online-boutique-7686,"Hey @PLAYER, I'll check on this right away. Let me gather the details from the team and I'll get back to you as soon as I have more information."
+2026-02-10 15:06:40,bob,online-boutique-7686,"I've started looking into it. So far, it seems like customers can't see the prices of items on the website. This is definitely affecting their ability to shop and complete purchases."
+2026-02-10 15:06:46,PLAYER,online-boutique-7686,I can't see any prices on the website at all 
+2026-02-10 15:06:50,bob,online-boutique-7686,"Looking into the sales data, I'm seeing a sharp and sudden drop in sales, which is making me wonder if the price issue is the only cause. I'm still working on confirming that, but it's something to consider as we investigate further."
+2026-02-10 15:07:00,bob,online-boutique-7686,We are getting complaints from all regions. The issue is widespread.
+2026-02-10 15:07:07,PLAYER,online-boutique-7686,
+2026-02-10 15:07:07,uptimelabs,business-comms-7686,*Incident Number INC100016:* P1 Customers unable to view price of items on the website
+2026-02-10 15:07:10,bob,online-boutique-7686,Here is a quick summary of the reports so far:
+2026-02-10 15:07:12,bob,online-boutique-7686,
+2026-02-10 15:07:36,PLAYER,online-boutique-7686,@daniel who owns the currency service?
+2026-02-10 15:07:43,bez,business-comms-7686,Are we down completely ?
+2026-02-10 15:07:48,PLAYER,online-boutique-7686,And also @daniel please let me know the changes which have been made recently
+2026-02-10 15:07:51,uptimelabs,online-boutique-7686,:star: Check changes done to the platform
+2026-02-10 15:08:09,shay,online-boutique-7686,let me look into the logs
+2026-02-10 15:08:19,shay,online-boutique-7686,"Hey @PLAYER, I'm trying to access the logs for the Currency Service, but it seems like there's a permissions issue. Its strange, I've been able to access them before, so something must have changed recently."
+2026-02-10 15:08:21,PLAYER,online-boutique-7686,"The currency service has no dependencies on any other service, so it feels like we may have made some changes here"
+2026-02-10 15:08:26,daniel,online-boutique-7686,https://uptime-labs.atlassian.net/wiki/spaces/ULPUBLIC/pages/1114669059/Memory+Lane-+Change+Request+Logs
+2026-02-10 15:08:26,uptimelabs,online-boutique-7686,:star: Form a working theory
+2026-02-10 15:08:26,uptimelabs,online-boutique-7686,:star: Reviewed changes
+2026-02-10 15:08:27,daniel,online-boutique-7686,"I'm having the same issue. We both should have access to the logs before as well, so it's odd that I can't get in now. While it could still be a permissions issue, I'm also considering that it could be something more serious, like a service failure or corruption preventing us from accessing them."
+2026-02-10 15:08:35,shay,online-boutique-7686,"In the meantime, it might be worth considering a server restart. If the logs are being blocked due to a temporary service issue, a restart could help"
+2026-02-10 15:08:39,PLAYER,online-boutique-7686,That is very suspicious
+2026-02-10 15:08:43,daniel,online-boutique-7686,A restart might be worth trying to see if that resolves the issue. On the logs maybe a different access level might help
+2026-02-10 15:08:57,PLAYER,business-comms-7686,"No, prices are currently not displaying. That is blocking users from making purchases"
+2026-02-10 15:08:59,bez,business-comms-7686,Whats the user experience? is this global ?
+2026-02-10 15:09:01,uptimelabs,online-boutique-7686,:star: Qualify the problem
+2026-02-10 15:09:11,PLAYER,online-boutique-7686,"Okay, lets try to restart the service then"
+2026-02-10 15:09:15,uptimelabs,online-boutique-7686,:star: Restoration over root cause analysis
+2026-02-10 15:09:29,tanya,online-boutique-7686,"Thanks @PLAYER, I'll restart the service now."
+2026-02-10 15:09:34,tanya,online-boutique-7686,The restart is in progress.
+2026-02-10 15:09:57,PLAYER,online-boutique-7686,@daniel how is the access control for that service defined?
+2026-02-10 15:10:05,tanya,online-boutique-7686,Restart completed
+2026-02-10 15:10:06,daniel,online-boutique-7686,Worth checking with Tanya
+2026-02-10 15:10:10,daniel,online-boutique-7686,i shoul dhave had access
+2026-02-10 15:10:10,shay,online-boutique-7686,I just checked the website and can see the prices are back.
+2026-02-10 15:10:34,PLAYER,online-boutique-7686,"Okay, is there any signs of what the restart could have fixed? @shay ?"
+2026-02-10 15:10:36,bez,business-comms-7686,Whats the latest ?
+2026-02-10 15:10:36,uptimelabs,online-boutique-7686,:star: Manage actions and timings
+2026-02-10 15:10:41,bez,business-comms-7686,@Julian
+2026-02-10 15:10:55,PLAYER,online-boutique-7686,@tanya how is the access control on that service defined?
+2026-02-10 15:11:00,tanya,online-boutique-7686,"Hey @PLAYER, let me try accessing the logs now."
+2026-02-10 15:11:06,tanya,online-boutique-7686,"Just to make you aware, we recently moved the service to new infrastructure."
+2026-02-10 15:11:14,PLAYER,business-comms-7686,We have tried restarting the service and it seems to have restored the prices. But we don't have a root cause yet
+2026-02-10 15:11:15,bez,business-comms-7686,"That was quick , thanks"
+2026-02-10 15:11:16,daniel,online-boutique-7686,Maybe the migration is why Shay and I can't access the logs.
+2026-02-10 15:11:26,tanya,online-boutique-7686,"No worries, I've gained root access and started looking through the logs. It's taking me some time."
+2026-02-10 15:11:32,PLAYER,online-boutique-7686,@tanya what was involved in the migration of the service?
+2026-02-10 15:11:46,tanya,online-boutique-7686,I'm starting to see some errors in the logs.
+2026-02-10 15:11:50,tanya,online-boutique-7686,Currency service has crashed again! Just checked the site prices are gone again. Back to square one
+2026-02-10 15:11:50,tanya,online-boutique-7686,"```
+server kernel: No space left on device while writing logs for process nginx 
+server nginx[3241]: [emerg] open() /var/log/nginx/currency.logAudit failed (28: No space left on device)
+```"
+2026-02-10 15:11:52,PLAYER,online-boutique-7686,"@tanya, can you share the analysis with @daniel and @shay please? It is better to have multiple eyes on the problem"
+2026-02-10 15:11:58,tanya,online-boutique-7686,Looks like we're dealing with a disk storage issue.
+2026-02-10 15:12:07,tanya,online-boutique-7686,Might be worth swarming on this to figure out what's going on.
+2026-02-10 15:12:11,PLAYER,online-boutique-7686,@tanya please can you take a look at the disk storage usage for that service
+2026-02-10 15:12:35,PLAYER,online-boutique-7686,"Yep lets get all eyes on it, @hamed , please can you assist as well"
+2026-02-10 15:12:38,uptimelabs,online-boutique-7686,:star: Escalating when required
+2026-02-10 15:12:40,hamed,online-boutique-7686,"Hey sorry, can I get caught up on what's happening here?"
+2026-02-10 15:13:03,PLAYER,online-boutique-7686,"The disk seems to be full on the currency service. @tanya is investigating what is going on, but we might need to scale the disk"
+2026-02-10 15:13:15,PLAYER,online-boutique-7686,"@hamed the disk seems to be full on the currency service. @Tanya is investigating what is going on, but we might need to scale the disk"
+2026-02-10 15:13:36,bez,business-comms-7686,"Can you check , the prices seems to be down for me"
+2026-02-10 15:13:40,hamed,online-boutique-7686,"Ohh okay, I'm caught up. I think I've got some more info that might help."
+2026-02-10 15:13:41,hamed,online-boutique-7686,
+2026-02-10 15:13:47,hamed,online-boutique-7686,Root partition is full (100%). `/var/log/nginx/currency.logAudit` alone is over 45GB.
+2026-02-10 15:13:55,hamed,online-boutique-7686,The logs aren't archiving need to figure out what's causing that.
+2026-02-10 15:14:06,PLAYER,online-boutique-7686,"Okay, can we scale the disk up in the mean time?"
+2026-02-10 15:14:27,tanya,online-boutique-7686,I did check that at the beginning - we are max'ed our capacity
+2026-02-10 15:14:27,PLAYER,online-boutique-7686,"@hamed , alternatively we could delete some of the log audit files to unblock the issue?"
+2026-02-10 15:14:47,PLAYER,business-comms-7686,"Yep, the issue has re-occurred. We think we have a root cause, we are now planning mitigation steps ASAP"
+2026-02-10 15:14:48,bez,business-comms-7686,Dont tell me that
+2026-02-10 15:15:14,hamed,online-boutique-7686,It contaisn some historical prices data
+2026-02-10 15:15:33,tanya,online-boutique-7686,"Ok, I'm going to compare the configuration of the old and new infrastructure."
+2026-02-10 15:15:35,PLAYER,online-boutique-7686,@hamed is that data backed up somewhere else? It is currently causing instability for live customers
+2026-02-10 15:16:00,hamed,online-boutique-7686,Checking
+2026-02-10 15:16:03,tanya,online-boutique-7686,"Ohh, I see the cause of the issue. Logrotate is missing in the new infrastructure."
+2026-02-10 15:16:08,tanya,online-boutique-7686,That's why the log files aren't being archived and the disk is full.
+2026-02-10 15:16:15,shay,online-boutique-7686,"Sorry @Tanya, what does Logrotate do?"
+2026-02-10 15:16:18,hamed,online-boutique-7686,i think th eold servers are already Decomm'ed
+2026-02-10 15:16:18,PLAYER,online-boutique-7686,"Okay, @tanya can we enable that now?"
+2026-02-10 15:16:26,tanya,online-boutique-7686,"Logrotate automatically rotates, compresses, removes, and manages log files based on predefined rules to save disk space and maintain system logs efficiently. I missed this as part of the migration to the new infra."
+2026-02-10 15:16:33,tanya,online-boutique-7686,"So the log files aren't being archived, and the disk is full."
+2026-02-10 15:16:40,tanya,online-boutique-7686,"I used ` logrotate --version ` to check, and I'm getting ` bash: logrotate: command not found. `"
+2026-02-10 15:16:52,tanya,online-boutique-7686,"@Hamed, do we have any workaround for this? Might take a while to get Logrotate installed."
+2026-02-10 15:17:05,bez,business-comms-7686,Can you give me what are we working towards?
+2026-02-10 15:17:10,bez,business-comms-7686,Any ETA please
+2026-02-10 15:17:12,hamed,online-boutique-7686,"Since Logrotate isn't running, we need to compress the log to preserve it and free up space.` Run: gzip /var/log/nginx/currency.logAudit ` from within the service host."
+2026-02-10 15:17:23,hamed,online-boutique-7686,"After that, transfer the compressed file to your machine using your usual tooling, then upload it to our long-term storage for retention."""
+2026-02-10 15:17:25,PLAYER,online-boutique-7686,"That sounds good, please action @tanya "
+2026-02-10 15:17:36,maya,online-boutique-7686,"Hey, just flagging these logs may contain sensitive user data or internal system info, so we need to handle them with care."
+2026-02-10 15:17:45,maya,online-boutique-7686,"Store the downloaded log only on an encrypted, company-managed device. Upload it to our long-term storage, and link it in the incident report."
+2026-02-10 15:17:48,PLAYER,business-comms-7686,"Hameed has a suggestion which we are implementing now
+I'll give you another update in 3 mins"
+2026-02-10 15:17:51,uptimelabs,online-boutique-7686,:star: Track actions and time box them
+2026-02-10 15:17:51,hamed,online-boutique-7686,"Not sure why the logs aren't archiving, but since we're using disk storage on the server, and the file growth is filling it up."
+2026-02-10 15:17:54,tanya,online-boutique-7686,"Ok @PLAYER, happy to proceed with this plan?"
+2026-02-10 15:18:01,hamed,online-boutique-7686,"As a result, the host can't write new data, which caused a backlog of requests that can't be processed hence this incident."
+2026-02-10 15:18:06,hamed,online-boutique-7686,"@Tanya, any theories on why the disk is full?"
+2026-02-10 15:18:11,shay,online-boutique-7686,"We could delete the log files and restart the service, that should restore the system and make users happy."
+2026-02-10 15:18:14,hamed,online-boutique-7686,I saw you mentioned we moved to new infra for the Currency Service do you think it could be related? Also open to suggestions on how to fix this.
+2026-02-10 15:18:16,bob,online-boutique-7686,Hey complaints from users are climbing. They're really not happy can we resolve soon?
+2026-02-10 15:18:30,PLAYER,online-boutique-7686,@tanya yeah please proceed with gzip plan
+2026-02-10 15:18:54,PLAYER,online-boutique-7686,@maya I appreciate your concern. We are not downloading any data right now so that isn't a concern
+2026-02-10 15:18:59,bob,online-boutique-7686,Whats the latest ? calls are increasing
+2026-02-10 15:19:02,maya,online-boutique-7686,Okay
+2026-02-10 15:19:08,tanya,online-boutique-7686,Thanks for the go ahead @PLAYER and @Hamed for the guidence.
+2026-02-10 15:19:24,PLAYER,online-boutique-7686,@bob we are currently applying a mitigation. Please update customers that we're aware of the issue and working towards a resolution
+2026-02-10 15:19:28,uptimelabs,online-boutique-7686,:star: Know your team and their roles
+2026-02-10 15:19:36,bez,business-comms-7686,I have a stake holders call in next 10 @Julian
+2026-02-10 15:19:58,PLAYER,online-boutique-7686,@tanya have you been able to apply the mitigation?
+2026-02-10 15:19:58,tanya,online-boutique-7686,Done . I can see space is cleared up now.
+2026-02-10 15:20:01,tanya,online-boutique-7686,Done . I can see space is cleared up now.
+2026-02-10 15:20:06,tanya,online-boutique-7686,Can some one verify?
+2026-02-10 15:20:10,PLAYER,online-boutique-7686,"Great, how is the service looking now? @shay "
+2026-02-10 15:20:24,shay,online-boutique-7686,Service looks alright
+2026-02-10 15:20:29,PLAYER,online-boutique-7686,@tanya  I have verified that the site seems to be looking okay
+2026-02-10 15:20:33,uptimelabs,online-boutique-7686,:star: Attempt to replicate the issue
+2026-02-10 15:20:41,hamed,online-boutique-7686,We might still need to add log rotate script
+2026-02-10 15:20:41,PLAYER,business-comms-7686,@bez we have resolved the issue and the site is back up
+2026-02-10 15:20:58,PLAYER,online-boutique-7686,@bob please can you update the customers to tell them that the incident is resolved
+2026-02-10 15:21:02,bob,online-boutique-7686,"Perfect, thanks a ton"
+2026-02-10 15:21:04,bob,online-boutique-7686,i will
+2026-02-10 15:21:31,PLAYER,online-boutique-7686,"@hamed, how urgent is it for us to get a log rotate script in? It looks like we have now got >40GB of storage available"
+2026-02-10 15:21:33,hamed,online-boutique-7686,"The disk might get filled pretty soon , @Tanya"
+2026-02-10 15:21:38,tanya,online-boutique-7686,I'm working on getting the log rotation automation back in place. We'll also monitor the system to ensure long-term stability.
+2026-02-10 15:21:48,tanya,online-boutique-7686,"```
+/etc/logrotate.d/currency-service:
+
+/var/log/nginx/currency.logAudit {
+    daily
+    rotate 7
+    compress
+    missingok
+    notifempty
+    create 0640 root adm
+    postrotate
+        [ -s /run/nginx.pid ] && kill -USR1 $(cat /run/nginx.pid)
+        /usr/local/bin/upload-to-storage /var/log/nginx/currency.logAudit.1.gz
+    endscript
+}
+``` "
+2026-02-10 15:21:58,tanya,online-boutique-7686,Ok I've added the log rotation configuration to the new infrastructure. We should not see this issue again.
+2026-02-10 15:22:08,PLAYER,online-boutique-7686,"@hamed , please review the above script to confirm it is what you'd expect"
+2026-02-10 15:22:15,hamed,online-boutique-7686,We will push it to prod tonight
+2026-02-10 15:22:37,PLAYER,online-boutique-7686,"@hamed sounds good, have we got enough capacity to get us through to that?"
+2026-02-10 15:22:46,hamed,online-boutique-7686,"Yes, we have- took 2 weeks to get full"
+2026-02-10 15:23:10,PLAYER,online-boutique-7686,"Okay thanks @hamed , I think that means the incident is resolved."
+2026-02-10 15:23:14,hamed,online-boutique-7686,yes
+2026-02-10 15:23:16,tanya,online-boutique-7686,"The system is stable now, and we've resolved the immediate issue with disk space. Let's make sure we reintroduce the automated log rotation to prevent this from happening again."
+2026-02-10 15:23:21,tinus,online-boutique-7686,Agreed. We need to reintroduce the log rotation automation and ensure it works properly to prevent manual interventions like this in the future.
+2026-02-10 15:23:26,hamed,online-boutique-7686,"To clarify the technical side, here's what happened: The disk space issue was caused by the ` currency.logAudit ` file growing too large. Since we're using disk storage on the server, the file growth filled it up. As a result, the service couldn't write new data, which caused a backlog of requests that couldn't be processed."
+2026-02-10 15:23:34,hamed,online-boutique-7686,"Eventually, the system couldn't keep up with the backlog of requests caused by the full disk. This is why users couldn't see prices or complete checkouts. The log rotation script would have kept the currency.logAudit file in check, but it was missed during the infrastructure migration."
+2026-02-10 15:23:38,tanya,online-boutique-7686,I'll work on getting the log rotation automation back in place. We'll also monitor the system to ensure long-term stability.
+2026-02-10 15:23:44,tanya,online-boutique-7686,I'll continue monitoring and will make sure we implement the proper automation to keep everything running smoothly going forward.
+2026-02-10 15:23:59,uptimelabs,online-boutique-7686,"Thank you for playing, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit I am ready when you want to start."
+2026-02-10 15:24:04,PLAYER,online-boutique-7686,That sounds good
+2026-02-10 15:24:05,bez,business-comms-7686,Much appreciate quick turn around
+2026-02-10 15:24:18,uptimelabs,online-boutique-7686,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/28/7686/feedback"

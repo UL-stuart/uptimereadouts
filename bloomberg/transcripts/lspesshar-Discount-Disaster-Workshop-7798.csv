@@ -1,0 +1,188 @@
+datetime,player,channel,message
+2026-02-23 13:24:16,bez,online-boutique-7798,Can you believe it? That influencer photoshoot is blowing up! We're making waves all over social media.
+2026-02-23 13:24:20,bob,online-boutique-7798,
+2026-02-23 13:24:26,bez,online-boutique-7798,Our watches and loafers are all over everyone's feeds 
+2026-02-23 13:24:30,bob,online-boutique-7798,You're telling me? My inbox is packed with customer queries 
+2026-02-23 13:24:37,uptimelabs,online-boutique-7798,"Welcome to Discount Disaster, the responsibility is on you to size up the problem.
+
+? *Use `/help` at any time for a list of useful links and commands*
+ ? *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin"
+2026-02-23 13:25:11,daniel,online-boutique-7798,"Yeah, I'm seeing it, traffic's surging. But nothing we didn't anticipate for"
+2026-02-23 13:25:14,hamed,online-boutique-7798,Good. We've optimised the backend for this kind of spike
+2026-02-23 13:25:18,maya,online-boutique-7798,Let's just make sure that's all it is - legit traffic. Influencer campaigns can attract more than just customers
+2026-02-23 13:25:23,shay,online-boutique-7798,I'll keep eyes on the dashboard. We're running at nearly 80% capacity right now for all the user actvity our platform can handle
+2026-02-23 13:25:27,bez,online-boutique-7798,It's all good. People are scrambling to get their hands on our products. That viral post is gold
+2026-02-23 13:25:30,daniel,online-boutique-7798,We're inching closer to max capacity. We're at 95% load now
+2026-02-23 13:25:36,shay,online-boutique-7798,I just refreshed the website and it's now taking ages to load
+2026-02-23 13:25:41,shay,online-boutique-7798,Is the website down? Or maybe it's just my machine
+2026-02-23 13:26:15,PLAYER,online-boutique-7798,getting 503 error on refreshing the site 
+2026-02-23 13:26:19,uptimelabs,online-boutique-7798,:star: Reproduces the incident
+2026-02-23 13:26:30,shay,online-boutique-7798,Its same for me as well
+2026-02-23 13:27:12,PLAYER,online-boutique-7798,@bob are you getting customer complaints?
+2026-02-23 13:27:14,uptimelabs,online-boutique-7798,:star: Asking questions to validate impact of the problem
+2026-02-23 13:27:27,bob,online-boutique-7798,Sure let me check the reports
+2026-02-23 13:27:40,bob,online-boutique-7798,We are getting a lot of calls from customers that they are unable to access the website
+2026-02-23 13:27:43,bob,online-boutique-7798,Few are reporting long loading times 
+2026-02-23 13:27:47,bob,online-boutique-7798,and few are able to load platforms but unable to order
+2026-02-23 13:27:51,bob,online-boutique-7798,Here are the latest reports
+2026-02-23 13:27:54,bob,online-boutique-7798,
+2026-02-23 13:27:58,bob,online-boutique-7798,Looks like a global issue
+2026-02-23 13:28:18,PLAYER,online-boutique-7798,@shay where is the change dashboard?
+2026-02-23 13:28:30,PLAYER,online-boutique-7798,any recent changes that could be causing this?
+2026-02-23 13:28:33,uptimelabs,online-boutique-7798,:star: Check changes done to the platform
+2026-02-23 13:28:44,shay,online-boutique-7798,Let me share it with you
+2026-02-23 13:28:50,shay,online-boutique-7798,https://uptime-labs.atlassian.net/wiki/external/YmMxM2RhNDA1YWY0NGZmY2E0NzJmN2M5YWJmOGRhOGM
+2026-02-23 13:29:00,PLAYER,online-boutique-7798,thanks
+2026-02-23 13:29:16,uptimelabs,online-boutique-7798,:bulb: Declare an incident.
+2026-02-23 13:29:32,PLAYER,online-boutique-7798,
+2026-02-23 13:29:32,uptimelabs,business-comms-7798,*Incident Number INC100013:* Website slowness
+2026-02-23 13:30:06,PLAYER,online-boutique-7798,@shay is there any chance the load test could have spilled over into prod?
+2026-02-23 13:30:10,uptimelabs,online-boutique-7798,:star: Reviewed changes
+2026-02-23 13:30:22,shay,online-boutique-7798,This test must be running in UAT
+2026-02-23 13:30:36,PLAYER,online-boutique-7798,is the test stiill ongoing?
+2026-02-23 13:30:36,shay,online-boutique-7798,So it shouldn't be impacting prod
+2026-02-23 13:30:45,shay,online-boutique-7798,Yes its running but in UAT
+2026-02-23 13:30:58,bez,business-comms-7798,Is it global issue ?
+2026-02-23 13:31:16,bez,business-comms-7798,This will bleed us more due to ongoing sale
+2026-02-23 13:31:24,PLAYER,business-comms-7798,"@bez We have a major incident, the website is extremely slow to load or in some cases not loading at all. Appears to be load related."
+2026-02-23 13:31:29,uptimelabs,online-boutique-7798,:star: Qualify the problem
+2026-02-23 13:31:29,uptimelabs,online-boutique-7798,:star: Formally assign criticality level to the incident
+2026-02-23 13:31:49,daniel,online-boutique-7798,I see a lot of https426 and 503
+2026-02-23 13:31:53,PLAYER,online-boutique-7798,"given the impact, let's make this a Sev 1"
+2026-02-23 13:32:18,shay,online-boutique-7798,"Just to confirm again, would you like me to stop the test ?"
+2026-02-23 13:32:22,PLAYER,online-boutique-7798,@bob any changes in the reports coming in?
+2026-02-23 13:32:33,PLAYER,online-boutique-7798,@shay yes. stop the test
+2026-02-23 13:32:47,bob,online-boutique-7798,Reports are turning severe. 180+ complaints so far
+2026-02-23 13:32:59,bob,online-boutique-7798,Its sale . We can't afford longer downtime
+2026-02-23 13:33:07,shay,online-boutique-7798,ok stopping the tests now
+2026-02-23 13:33:12,PLAYER,online-boutique-7798,@bob let customers know we are investigating
+2026-02-23 13:33:26,bez,business-comms-7798,Whats going to be the revenue impact ?
+2026-02-23 13:34:04,bob,online-boutique-7798,Sure i'll keep them posted
+2026-02-23 13:34:14,PLAYER,business-comms-7798,"180+ customer reports, unsure of revenue impact at this time"
+2026-02-23 13:34:17,shay,online-boutique-7798,Tests have been stopped now
+2026-02-23 13:34:24,shay,online-boutique-7798,I dont see it making any difference
+2026-02-23 13:34:50,PLAYER,online-boutique-7798,is there any way to add additional capacity to prod?
+2026-02-23 13:34:52,bez,business-comms-7798,Keep me posted and get this resolved asap
+2026-02-23 13:34:58,PLAYER,business-comms-7798,ack#
+2026-02-23 13:35:12,daniel,online-boutique-7798,Me and Shay will look into logs now
+2026-02-23 13:35:26,daniel,online-boutique-7798,"On capacity, platform team could help more"
+2026-02-23 13:35:35,PLAYER,online-boutique-7798,do we understand the revenue impact?
+2026-02-23 13:36:00,PLAYER,online-boutique-7798,@hamed @tanya can you explore adding more capacity?
+2026-02-23 13:36:04,bob,online-boutique-7798,We are losing revenue at the rate of $1.5k every min due to huge sale
+2026-02-23 13:36:09,shay,online-boutique-7798,Im seeing a lot of errors in the logs 
+2026-02-23 13:36:13,shay,online-boutique-7798,Not sure what the root cause is but we are seeing high load on our Frontend Pods - this may be due to the ongoing discount or if it could be related to any tests we were running.
+2026-02-23 13:36:18,shay,online-boutique-7798,"I see high number of rest-call errors like  http429, http503 and 504s "
+2026-02-23 13:36:26,PLAYER,business-comms-7798,@bez We are losing revenue at the rate of $1.5k every min. 
+2026-02-23 13:36:26,shay,online-boutique-7798,"```
+ERROR: GET /api/GetInfo HTTP/1.1 429 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/91.0.4472.124 Safari/537.36 FrontEndApp
+``` ```
+ERROR: GET /api/GetInfo HTTP/1.1 429 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/91.0.4472.124 Safari/537.36 FrontEndApp
+```"
+2026-02-23 13:36:28,uptimelabs,online-boutique-7798,:star: Use metrics as evidence
+2026-02-23 13:36:34,shay,online-boutique-7798,Im also seeing this
+2026-02-23 13:36:37,shay,online-boutique-7798,"```
+[error]: Service unavailable, cannot process request for /api/GetInfo (503).
+``` ```
+[error]: Service unavailable, cannot process request for /api/GetInfo (503).
+```"
+2026-02-23 13:36:43,tanya,online-boutique-7798,checking infra
+2026-02-23 13:36:47,daniel,online-boutique-7798,Seeing frontend errors as well
+2026-02-23 13:36:52,daniel,online-boutique-7798,"```
+[error] 12345#12345: *98765 limiting requests, exceeded 10 requests per second for client 149.34.52.176, request: GET /api/GetInfo HTTP/1.1, FrontEndApp
+``` 
+```[error] 12345#12345: *98766 limiting requests, exceeded 10 requests per second for client 149.34.52.176, request: GET /api/GetInfo HTTP/1.1, FrontEndApp
+``` ```
+[error] 12345#12345: *98767 limiting requests, exceeded 10 requests per second for client 149.34.52.176, request: GET /api/GetInfo HTTP/1.1, FrontEndApp
+```"
+2026-02-23 13:37:02,daniel,online-boutique-7798,"```
+[ERROR] 12345#12345: *98765 gateway timed out (504) while receiving response from upstream, client: 149.34.52.176, request: GET /api/GetInfo HTTP/1.1, host: FrontEndApp
+``` ```
+[ERROR] 12345#12345: *98766 gateway timed out (504) while receiving response from upstream, client: 149.34.52.176, request: GET /api/GetInfo HTTP/1.1, host: FrontEndApp
+``` ```
+[ERROR] 12345#12345: *98767 gateway timed out (504) while receiving response from upstream, client: 149.34.52.176, request: GET /api/GetInfo HTTP/1.1, host: FrontEndApp
+``` "
+2026-02-23 13:37:08,hamed,online-boutique-7798,Do we know how many users we were anticipating in this sale ?
+2026-02-23 13:37:11,daniel,online-boutique-7798,Do we know what the expected amount of traffic should be due to the on-going discount? 
+2026-02-23 13:37:40,PLAYER,online-boutique-7798,@tanya are you able to block single IPs?
+2026-02-23 13:37:54,tanya,online-boutique-7798,Infra is under huge load. Maybe due to sale
+2026-02-23 13:38:17,PLAYER,online-boutique-7798,logs make it look like single IP address is hitting site a lot
+2026-02-23 13:38:21,tanya,online-boutique-7798,Maya from SecOps would help if you suspect
+2026-02-23 13:38:50,bob,online-boutique-7798,At max we were expecting around 3500 user logins
+2026-02-23 13:39:01,PLAYER,online-boutique-7798,@maya is there any pattern with a single IP 149.34.52.176 hitting more than others?
+2026-02-23 13:39:22,PLAYER,online-boutique-7798,@tanya can you check if additional capacity can be added or not?
+2026-02-23 13:39:57,tanya,online-boutique-7798,We are already maxed out on the rack. No additional space is available to add in VMs
+2026-02-23 13:40:10,maya,online-boutique-7798,Let me run things quickly on my end
+2026-02-23 13:40:22,daniel,online-boutique-7798,Meanwhile lets do traffic analysis
+2026-02-23 13:40:29,hamed,online-boutique-7798,I was looking at Network traffic - But the dashboard took ages to load. 
+2026-02-23 13:40:33,hamed,online-boutique-7798,Here's a screenshot of Network traffic across each region. 
+2026-02-23 13:40:39,hamed,online-boutique-7798,
+2026-02-23 13:40:41,bez,business-comms-7798,Have you got any working theories ?
+2026-02-23 13:40:43,shay,online-boutique-7798,"Wow, Spain must really like our products"
+2026-02-23 13:40:46,PLAYER,business-comms-7798,traffic analysis is being done
+2026-02-23 13:41:08,tanya,online-boutique-7798,Spain's traffic looks very suspicious to me
+2026-02-23 13:41:31,PLAYER,online-boutique-7798,is it possible to put a geo block in?
+2026-02-23 13:41:37,maya,online-boutique-7798,"Hey @lspesshardt-bloomberg.net, after reviewing the logs, I strongly suspect that this is a security-related issue."
+2026-02-23 13:41:42,maya,online-boutique-7798,"The abnormally high traffic with http 429, 503 and 504 errors may be due to a possible DDoS/DoS attack "
+2026-02-23 13:41:48,maya,online-boutique-7798,"I'll need to continue investigating further, but it definitely looks like something is targeting our system"
+2026-02-23 13:41:53,tinus,business-comms-7798,Looks like we have a security threat - We should be extra careful with this incident
+2026-02-23 13:41:58,bez,business-comms-7798,Do we know what's the financial impact of the issue? How much are we losing every minute?
+2026-02-23 13:41:59,PLAYER,business-comms-7798,suspected ddos being investigated
+2026-02-23 13:42:06,bez,business-comms-7798,@lspesshardt-bloomberg.net Should we inform the 'Compliance Team' about this issue?
+2026-02-23 13:42:13,bez,business-comms-7798,"The Compliance Team makes sure we follow laws and rules, like reporting the incident to the right people and keeping proper records. It helps us avoid legal trouble and protects our reputation."
+2026-02-23 13:42:28,bez,business-comms-7798,Keep us informed if it goes beyond hand. Also let us know if you need help from me and Tinus
+2026-02-23 13:42:55,tanya,online-boutique-7798,We dont have geo blocking enabled
+2026-02-23 13:43:19,PLAYER,online-boutique-7798,is it possible to enable for spain?
+2026-02-23 13:43:26,maya,online-boutique-7798,@lspesshardt-bloomberg.net do you have suspected IP handy ?
+2026-02-23 13:43:46,PLAYER,online-boutique-7798,149.34.52.176 from the logs provided earlier
+2026-02-23 13:44:07,maya,online-boutique-7798,Right now its just a DoS attack. Do you reckon on blocking the single IP first followed by geo blocking enablement ?
+2026-02-23 13:44:10,PLAYER,business-comms-7798,"@bez unsure about compliance team notification, will need help"
+2026-02-23 13:44:13,tinus,business-comms-7798,Leave Compliance with me - I will talk to them
+2026-02-23 13:44:17,maya,online-boutique-7798,Shall i start blocking it ?
+2026-02-23 13:44:22,PLAYER,online-boutique-7798,block single ip
+2026-02-23 13:44:33,maya,online-boutique-7798,On it
+2026-02-23 13:44:42,PLAYER,business-comms-7798,ack#
+2026-02-23 13:44:56,maya,online-boutique-7798,The IP address has now been blocked
+2026-02-23 13:45:01,tinus,online-boutique-7798,Can you confirm @lspesshardt-bloomberg.net?
+2026-02-23 13:45:07,hamed,online-boutique-7798,Lucky this was DoS (Denial of Service ) from a single IP - What if this attack happens from multiple IP addresses (DDoS)?
+2026-02-23 13:45:08,tanya,online-boutique-7798,I'll keep things ready to enable geo blocking
+2026-02-23 13:45:13,hamed,online-boutique-7798,We should start working on the pending WAF rule updates for the frontend
+2026-02-23 13:45:19,bob,online-boutique-7798,@lspesshardt-bloomberg.net Should we let the customers know about the attack?
+2026-02-23 13:45:24,PLAYER,online-boutique-7798,still not working
+2026-02-23 13:45:25,PLAYER,online-boutique-7798,HTTP Status: 503 Service Unavailable
+2026-02-23 13:45:27,uptimelabs,online-boutique-7798,:star: Cross check resolution with stakeholders
+2026-02-23 13:45:41,PLAYER,online-boutique-7798,@bob please let them know we are investigating no additional information yet
+2026-02-23 13:45:48,tanya,online-boutique-7798,Check again
+2026-02-23 13:45:55,tanya,online-boutique-7798,Just loaded for me
+2026-02-23 13:45:57,bob,online-boutique-7798,Customers are repeatedly asking on what happened at OB backend. Shall i disclose about having a security issue ?
+2026-02-23 13:46:15,PLAYER,online-boutique-7798,it's up now
+2026-02-23 13:46:17,PLAYER,online-boutique-7798,@bob
+2026-02-23 13:46:30,bez,business-comms-7798,Have we recovered ? Any ETA on the fix ?
+2026-02-23 13:46:35,PLAYER,online-boutique-7798,@bob please don't disclose any further info at this time
+2026-02-23 13:46:46,PLAYER,business-comms-7798,the site is loading again
+2026-02-23 13:46:48,uptimelabs,online-boutique-7798,:star: Confirm resolution with the business
+2026-02-23 13:46:52,bob,online-boutique-7798,"Sure thanks, yes new orders are coming in"
+2026-02-23 13:47:09,maya,online-boutique-7798,Shall we close the incident ? Looks alright to me
+2026-02-23 13:47:17,bez,business-comms-7798,What a relief
+2026-02-23 13:47:25,bez,business-comms-7798,Great job @lspesshardt-bloomberg.net
+2026-02-23 13:47:25,PLAYER,online-boutique-7798,@tanya @maya  did you do anything else?
+2026-02-23 13:47:35,tanya,online-boutique-7798,Enabled geo blocking
+2026-02-23 13:47:40,tanya,online-boutique-7798,Infra looks good now
+2026-02-23 13:47:40,PLAYER,online-boutique-7798,got it
+2026-02-23 13:47:59,PLAYER,business-comms-7798,single ip address was blocked and that wAS FOLLOWED BY GEO BLOCKING FOR SPAIN
+2026-02-23 13:48:22,tinus,business-comms-7798,Well done @lspesshardt-bloomberg.net
+2026-02-23 13:48:33,PLAYER,online-boutique-7798,let's gather logs and for further analysis if needed
+2026-02-23 13:48:37,PLAYER,online-boutique-7798,incident can be closed
+2026-02-23 13:48:41,tanya,online-boutique-7798,"Great work, we managed to save the sale"
+2026-02-23 13:48:45,tinus,online-boutique-7798,I knew we had it in us
+2026-02-23 13:48:48,tanya,online-boutique-7798,Lets take it further in PIR call
+2026-02-23 13:48:49,shay,online-boutique-7798,Now i can continue shopping and get some nice discounts 
+2026-02-23 13:48:54,daniel,online-boutique-7798,"Absolutely, Shay! But i hope not during work hours "
+2026-02-23 13:48:59,shay,online-boutique-7798,Of course Daniel...... Sorry team i got to go close a unrelated tab now
+2026-02-23 13:49:04,bez,online-boutique-7798,Anyways well done team
+2026-02-23 13:49:09,bez,online-boutique-7798,You all did an amazing job 
+2026-02-23 13:49:25,uptimelabs,online-boutique-7798,"Thank you for playing 'Discount Disaster', We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit start when you are ready."
+2026-02-23 13:49:31,uptimelabs,online-boutique-7798,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/26/7798/feedback"

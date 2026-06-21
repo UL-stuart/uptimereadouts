@@ -1,0 +1,14 @@
+# vivekdube-The-Switch-5643.csv
+
+| Criterion | Grade | Evidence | Rationale |
+|---|---|---|---|
+| Abstraction at Business Level | ⚠️ | "P2-- an issue where we have found that intermittently we have network issues across the ethos system"<br>"we dont have any confirmed use case or users affected"<br>"We have got complains of slowness but not anything not affectes Revenue"<br>"No just overload system we are at the moment thinking to re route the traffic to a backup switch" | Mentions users, revenue, and data‑risk in plain terms, but summaries are vague, inconsistent, and mixed with technical phrasing, making business impact unclear. Lacks scope/scale (who, how many, regions) and concrete customer effect. |
+| Regular Updates | ✅ | "*Incident Number INC10002:* P2-- ..."<br>"We are working to identify a slow burning issue ..."<br>"We have idenntified that a security switch needs a critical patch ..."<br>"We beleive that we have managed to work out the intermittent issues and all reported issues seems to be resolved." | Provides multiple external updates across the incident lifecycle: declaration, investigation progress, mitigation plan, and resolution. Updates respond to stakeholder questions (e.g., data compromise) and show continuity. |
+| Timelines / Next Update Commitments | ❌ | "is everyone clear.. ... I am going to communicate to the business now"<br>"teams continue to investigate" | No explicit next update time or trigger was set; stakeholders were not told when to expect the next communication. Statements describe ongoing work but do not manage expectations on cadence. |
+| Urgency and Assurance | ⚠️ | "P2-- an issue ..."<br>"We are working to identify a slow burning issue ..."<br>"No Bex, I would take care.. let me take care of your worries"<br>"Once we bring it back we would do other mitigation steps such as patching the switch ..." | Shows some structure and reassurance (severity set, actions underway, mitigation plan), but urgency is softened and assurance is generic or potentially premature. Messaging downplays impact at times and could better balance seriousness with concrete control. |
+
+## Summary
+- Strengths: You provided frequent, continuous updates in the business channel, including incident declaration, progress, and a clear closure message; you also addressed executive concerns (e.g., data compromise) and outlined a mitigation plan.
+- Gaps: Business impact framing was vague and sometimes inconsistent (users/revenue/scale), and some reassurance felt generic or premature.
+- Risk: Lack of next-update commitments left stakeholders without clear expectations on cadence, which can increase anxiety during ambiguous incidents.
+- Improvements: Use a standard external-update template (Impact, Scope, What we’re doing, Risk, ETA/Next update) and always commit to a time or trigger for the next update (e.g., “Next update in 15 minutes or sooner if we restore”).

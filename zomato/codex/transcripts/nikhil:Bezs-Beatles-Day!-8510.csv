@@ -1,0 +1,104 @@
+datetime,player,channel,message
+2026-04-20 12:12:58,tinus,online-boutique-8510,Hey everyone. I'm pumped today about our flash sale
+2026-04-20 12:13:04,tinus,online-boutique-8510,You know it's been 56 years since the Beatles released Abbey Road right? My favourite album
+2026-04-20 12:13:09,tanya,online-boutique-8510,56 years already?? Wow that makes me feel old...
+2026-04-20 12:13:14,tinus,online-boutique-8510,Indeed! We're celebrating today by promoting a flash sale on retro items from 1969
+2026-04-20 12:13:22,uptimelabs,online-boutique-8510,"Welcome to Bezs Beatles Day, remember communication is key to diagnose the problem.
+
+ *Access game links by pressing the Uptime Labs Logo in the top right of the screen*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin"
+2026-04-20 12:15:57,tinus,online-boutique-8510,We're a step closer to allowing folks to pay for items from the 1960s with Bitcoin thanks to Daniel!
+2026-04-20 12:16:03,daniel,online-boutique-8510,Think of it like time travelling!
+2026-04-20 12:16:08,hamed,online-boutique-8510,Wow good work Daniel! Looking forward to seeing it in action in prod
+2026-04-20 12:16:14,hamed,online-boutique-8510,How's the test-driven development going?
+2026-04-20 12:16:19,daniel,online-boutique-8510,TDDs going well. We are as solid as a rock! Though don't ask me what the Liskov Substitution Principle is...
+2026-04-20 12:16:26,shay,online-boutique-8510,"erm - funny you should say that Daniel, I'm just testing my checkout service change in prod and I can't complete the payment - something's up"
+2026-04-20 12:16:33,shay,online-boutique-8510,"I hope my checkout service change is all good. Can someone check its not just me? And before you ask, yes I've cleared my cookies"
+2026-04-20 12:16:39,tanya,online-boutique-8510,Sorry Daniel it's not looking good on my end either
+2026-04-20 12:16:42,tinus,online-boutique-8510,Uh oh...here we go again
+2026-04-20 12:16:46,tinus,online-boutique-8510,"@nikhil.p-zomato.com can you ""Size up the Issue"" please and keep us informed"
+2026-04-20 12:16:48,bob,online-boutique-8510,From what I can see it looks like we are still getting orders through
+2026-04-20 12:16:53,tinus,online-boutique-8510,Get this sorted ASAP!!!
+2026-04-20 12:18:00,PLAYER,online-boutique-8510,
+2026-04-20 12:18:00,uptimelabs,business-comms-8510,*Incident Number INC1089:* p2 slight drop in checkout
+2026-04-20 12:18:01,bez,business-comms-8510,Specify the affected region and provide the number of impacted customers or orders. Are we currently losing revenue?
+2026-04-20 12:18:02,bob,online-boutique-8510,I'm seeing a spike in failed transactions—about 40% of payment attempts are currently failing during checkout.
+2026-04-20 12:18:27,PLAYER,online-boutique-8510,@daniel have made any new changes recently
+2026-04-20 12:18:29,uptimelabs,online-boutique-8510,:star: Check changes done to the platform
+2026-04-20 12:18:30,tanya,online-boutique-8510,"Just got a message from my cousin in London, she can't buy any of the new Beatles merch either. Says her payment failed."
+2026-04-20 12:18:37,bob,online-boutique-8510,I'm noticing the failures seem concentrated in Europe. Looks like the UK is particularly affected.
+2026-04-20 12:18:45,shay,online-boutique-8510,"Give me a second, I'll get the detailed info on each of the changes made today"
+2026-04-20 12:18:50,shay,online-boutique-8510,Hope this helps: https://uptime-labs.atlassian.net/wiki/external/OGU1YjE2MmE4ZmI4NGFkMjgzNzEwZGVkYjlmNzgwNWY
+2026-04-20 12:18:55,tinus,online-boutique-8510,Any updates on the investigation?
+2026-04-20 12:19:09,PLAYER,online-boutique-8510,@hamed plese check if any region specific changes made
+2026-04-20 12:19:11,hamed,online-boutique-8510,Online now but I've been following the conversation. I can take a look and let you know what I find
+2026-04-20 12:19:16,hamed,online-boutique-8510,"I can see from the user experience that it's failing at the payments stage, and I can also see HTTP 504 in payments"
+2026-04-20 12:19:19,hamed,online-boutique-8510,"This is a clear indication that the checkout service is working, but not the payments"
+2026-04-20 12:19:22,hamed,online-boutique-8510,I strongly suggest we look into payment service right away
+2026-04-20 12:19:29,PLAYER,business-comms-8510,currently seems eurpose region is affected. with 40% of drop in orders
+2026-04-20 12:19:32,uptimelabs,online-boutique-8510,:star: Qualify the problem
+2026-04-20 12:20:01,bez,business-comms-8510,40% drop in orders across Europe is significant. What is the estimated time to resolution? Keep me updated on any changes in order volume or revenue impact.
+2026-04-20 12:20:16,PLAYER,online-boutique-8510,@daniel can check application side issues
+2026-04-20 12:20:21,shay,online-boutique-8510,I will start checking the logs now
+2026-04-20 12:20:26,daniel,online-boutique-8510,Could it be your checkout change again @Shay? It broke the platform last week!
+2026-04-20 12:20:31,shay,online-boutique-8510,The checkout service logs are healthy and the service is working as intended
+2026-04-20 12:20:34,shay,online-boutique-8510,"I see 504 HTTP errors in the payment service, which means the application is failing to serve the requests"
+2026-04-20 12:20:51,PLAYER,business-comms-8510,"we are still figuring this out, eta is about 10mins."
+2026-04-20 12:21:17,PLAYER,business-comms-8510,@bob can we keep customers updated about payments failing and not to panic
+2026-04-20 12:22:00,bez,business-comms-8510,Understood. Keep me posted every 10 minutes or sooner if there’s a change. I expect immediate notification once the issue is resolved and orders are recovering.
+2026-04-20 12:22:01,PLAYER,online-boutique-8510,@hamed  can you check from infra pov if requests are currently reaching servers
+2026-04-20 12:22:03,uptimelabs,online-boutique-8510,:star: Facts over opinion
+2026-04-20 12:22:07,tanya,online-boutique-8510,"We're seeing high incoming traffic due to the flash sale, but all servers are reachable and resource usage is within normal limits."
+2026-04-20 12:22:16,shay,online-boutique-8510,"The payment service is returning 504 errors upstream, indicating requests are reaching the service but it's not responding in time."
+2026-04-20 12:22:44,PLAYER,online-boutique-8510,@hamed @shay  can you check if latency has increased for any upstreams/databases
+2026-04-20 12:22:51,tanya,online-boutique-8510,"Latency for the Payment service has spiked significantly, and its health check is returning 504 errors."
+2026-04-20 12:22:59,shay,online-boutique-8510,"The 504 errors from the Payment service suggest it's timing out when communicating with an upstream dependency, possibly a database or external API."
+2026-04-20 12:23:27,PLAYER,online-boutique-8510,@daniel  can you check db metrics for payments service
+2026-04-20 12:23:32,daniel,online-boutique-8510,I'm reviewing the database metrics for the Payment service and don't see any unusual query times or connection issues so far.
+2026-04-20 12:23:41,tanya,online-boutique-8510,"Database CPU and memory usage are stable, and there are no signs of resource exhaustion on the database servers."
+2026-04-20 12:23:56,PLAYER,online-boutique-8510,@daniel is there any third party integrations in this flow
+2026-04-20 12:24:01,daniel,online-boutique-8510,"Yes, the Payment service integrates with a third-party payment gateway as part of the transaction flow."
+2026-04-20 12:24:11,PLAYER,online-boutique-8510,can you check latency there and raise it to them
+2026-04-20 12:24:17,daniel,online-boutique-8510,Checking the latency to the payment gateway now.
+2026-04-20 12:24:41,daniel,online-boutique-8510,"I'm seeing a significant increase in latency when reaching the third-party payment gateway, and I've escalated this to their support team."
+2026-04-20 12:24:51,PLAYER,online-boutique-8510,can we kill bitcoin flow for now ?
+2026-04-20 12:24:53,uptimelabs,online-boutique-8510,:star: Restoration over root cause analysis
+2026-04-20 12:24:56,daniel,online-boutique-8510,"Disabling the Bitcoin flow won't address the root cause, as the 504 errors are affecting all UK payment transactions, not just Bitcoin."
+2026-04-20 12:25:07,uptimelabs,online-boutique-8510,:bulb: Check the changes done in the platform
+2026-04-20 12:25:22,PLAYER,online-boutique-8510,as bitcoin is the only new flow. it is better to kill it before anything else
+2026-04-20 12:25:24,daniel,online-boutique-8510,"Fine if you insist, I'll rollback"
+2026-04-20 12:25:27,daniel,online-boutique-8510,Rolling back my Bitcoin payment service change now
+2026-04-20 12:25:47,daniel,online-boutique-8510,Rollback complete. Might take a few minutes to stabilise
+2026-04-20 12:25:50,PLAYER,online-boutique-8510,did we get any revert from gateway ?
+2026-04-20 12:25:52,shay,online-boutique-8510,Did that fix it?
+2026-04-20 12:25:52,uptimelabs,online-boutique-8510,:star: Cross checking resolution with team
+2026-04-20 12:25:55,uptimelabs,online-boutique-8510,":bulb: To complete this drill, ask the engineering team to verify the payment service is working, and check with Bob if UK customer payments have recovered."
+2026-04-20 12:26:11,daniel,online-boutique-8510,"I haven't received any update from the payment gateway support yet, but I'll let you know as soon as I hear back."
+2026-04-20 12:26:20,PLAYER,online-boutique-8510,@shay can you see recovery ?
+2026-04-20 12:26:23,daniel,online-boutique-8510,I'll check the payment service logs now.
+2026-04-20 12:26:26,shay,online-boutique-8510,I'll try a test transaction from my side.
+2026-04-20 12:26:32,daniel,online-boutique-8510,"Logs are looking clean, no more 504 errors."
+2026-04-20 12:26:35,shay,online-boutique-8510,My test payment went through successfully! Looks like we're back in business.
+2026-04-20 12:27:09,PLAYER,business-comms-8510,this is resolved now. there was some issue with integrating new bitcoin flow. we have reverted those changes now
+2026-04-20 12:27:11,bez,business-comms-8510,Confirm that order volume and revenue in Europe have returned to normal levels. I need assurance that no further impact remains.
+2026-04-20 12:27:11,uptimelabs,online-boutique-8510,:star: Confirm resolution with the business
+2026-04-20 12:27:40,PLAYER,online-boutique-8510,@bob  can you confirm if any new errors
+2026-04-20 12:27:42,bob,online-boutique-8510,Looking into it now... Metrics seem to be improving!
+2026-04-20 12:27:43,uptimelabs,online-boutique-8510,:star: Cross check resolution with stakeholders
+2026-04-20 12:27:44,PLAYER,business-comms-8510,"yes, they are returning back to normalcy now"
+2026-04-20 12:27:47,bob,online-boutique-8510,Customer payments appear to be back up and processing normally
+2026-04-20 12:27:49,tinus,online-boutique-8510,I don't think the Beatles would've anticipated cryptocurrency so let's keep it that way for now
+2026-04-20 12:27:52,tinus,online-boutique-8510,Excellent! Get me a full incident report by end of day
+2026-04-20 12:27:55,tanya,online-boutique-8510,Great work everyone - crisis averted!
+2026-04-20 12:28:02,uptimelabs,online-boutique-8510,"Drill Wrap-Up
+
+Thanks for playing! This session is now closed.
+
+Please return to your Uptime Labs tab to review your performance and complete the Retrospective & Feedback form.
+
+If you've already closed the tab, you can reopen the form using the button below."
+2026-04-20 12:28:05,uptimelabs,online-boutique-8510,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/5/8510/feedback"
+2026-04-20 12:29:10,bez,business-comms-8510,"Monitor closely and alert me if there’s any further dip. Prepare a summary of the incident, including lost orders and estimated revenue impact, for review."

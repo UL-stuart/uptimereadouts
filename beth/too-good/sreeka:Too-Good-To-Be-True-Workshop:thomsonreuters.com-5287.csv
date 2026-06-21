@@ -1,0 +1,105 @@
+datetime,player,channel,message
+2025-08-06 15:08:46,UptimeLabs,online-boutique-5287,Start lvl 29 [n/a - 0]
+2025-08-06 15:13:28,PLAYER,online-boutique-5287,*`/incident slow internet sev1`* [n/a - 0]
+2025-08-06 15:13:45,PLAYER,business-comms-5287,slow internet sev1 [n/a - 0]
+2025-08-06 15:13:45,PLAYER,business-comms-5287,*Incident Number INC100035:* slow internet sev1 [n/a - 0]
+2025-08-06 15:15:31,PLAYER,online-boutique-5287,Clicked Start button
+2025-08-06 15:15:32,Tinus,online-boutique-5287,"Welcome our new IM @M Sreekanth, Happy to have you in the team. Hope you get comfortable with everyone [n/a - 0]"
+2025-08-06 15:15:37,Shay,online-boutique-5287,Welcome @M Sreekanth [n/a - 0]
+2025-08-06 15:15:42,Daniel,online-boutique-5287,Nice to meet you @M Sreekanth [n/a - 0]
+2025-08-06 15:15:52,Bob,online-boutique-5287,There are a few strange customer reports with the helpdesk [n/a - 0]
+2025-08-06 15:15:56,Bob,online-boutique-5287,"Apparently, the site is loading slowly [n/a - 0]"
+2025-08-06 15:16:00,Bob,online-boutique-5287,People are reporting that they can't make payments either [n/a - 0]
+2025-08-06 15:16:03,Bob,online-boutique-5287,customer_reports [n/a - 0]
+2025-08-06 15:16:07,Bob,online-boutique-5287,@M Sreekanth Can you check this? [n/a - 0]
+2025-08-06 15:17:13,UptimeLabs,online-boutique-5287,:bulb: Hint: Understand the problem by reproducing it [n/a - 0]
+2025-08-06 15:17:24,PLAYER,online-boutique-5287,"Hello Bob would you have the details of when the issue started, how many customers have reported so far? Also, do we have the right teams engaged to troubleshoot the site slowness? [n/a - 0]"
+2025-08-06 15:17:31,UptimeLabs,online-boutique-5287,:star: Asking questions to validate impact of the problem [n/a - 0]
+2025-08-06 15:17:36,Bob,online-boutique-5287,Let me gather the information for you [n/a - 0]
+2025-08-06 15:17:41,Bob,online-boutique-5287,There are more than 300 customer reports till now [n/a - 0]
+2025-08-06 15:17:48,Bob,online-boutique-5287,"Calls are from every region, likely to be Global [n/a - 0]"
+2025-08-06 15:17:54,Bob,online-boutique-5287,There's a bunch of messages coming in. A few people saying they can't do anything on the site [n/a - 0]
+2025-08-06 15:17:59,Bob,online-boutique-5287,Let me know if you need more information [n/a - 0]
+2025-08-06 15:18:16,PLAYER,online-boutique-5287,"I tried reproducing the issue and I see ""502 bad gateway""error [n/a - 0]"
+2025-08-06 15:18:26,UptimeLabs,online-boutique-5287,:star: Reproduces the incident [n/a - 0]
+2025-08-06 15:19:10,Shay,online-boutique-5287,"If this started recently, could it be tied to one of today’s changes? Daniel, can you list what got deployed? [n/a - 0]"
+2025-08-06 15:19:38,PLAYER,online-boutique-5287,Daniel Shay Can you please investigate what the issue is? Is the team already looking into it? [n/a - 0]
+2025-08-06 15:19:45,UptimeLabs,online-boutique-5287,:star: Manage actions and timings [n/a - 0]
+2025-08-06 15:19:53,Daniel,online-boutique-5287,Sure we are looking into it [n/a - 0]
+2025-08-06 15:19:56,PLAYER,online-boutique-5287,Please check if we had any changes implemented today [n/a - 0]
+2025-08-06 15:19:57,Daniel,online-boutique-5287,Below are the changes implemented this morning [n/a - 0]
+2025-08-06 15:20:02,UptimeLabs,online-boutique-5287,:star: Check changes done to the platform [n/a - 0]
+2025-08-06 15:20:02,Daniel,online-boutique-5287,deployments [n/a - 0]
+2025-08-06 15:20:05,Daniel,online-boutique-5287,"If you want more information, check out Incident Manager dashboard for more details: <https://grafana.prod.uptimelabs.io/d/aOf5yan4z/incident-management> [n/a - 0]"
+2025-08-06 15:20:08,UptimeLabs,online-boutique-5287,:bulb: Hint: keep the business informed regularly [n/a - 0]
+2025-08-06 15:20:17,Daniel,online-boutique-5287,Let me look into this deeper — I’ll try to replicate and check the logs. [n/a - 0]
+2025-08-06 15:20:38,Daniel,online-boutique-5287,Which change shall I look into? [n/a - 0]
+2025-08-06 15:20:55,Shay,online-boutique-5287,I will check check my changes [n/a - 0]
+2025-08-06 15:20:58,Daniel,online-boutique-5287,I am able to replicate the issue. Checking the logs now [n/a - 0]
+2025-08-06 15:21:01,Daniel,online-boutique-5287,"I see a lot of errors, most of them are context initialisation errors  [n/a - 0]"
+2025-08-06 15:21:05,Daniel,online-boutique-5287,Logs [n/a - 0]
+2025-08-06 15:21:11,Bez,business-comms-5287,"I have a stake holders meet in next 10 minutes, @M Sreekanth do you think this can be resolved by then?  [n/a - 0]"
+2025-08-06 15:21:43,Bez,business-comms-5287,Is it a global or regional issue? [n/a - 0]
+2025-08-06 15:22:38,PLAYER,online-boutique-5287,Is this a global or regional issue? [n/a - 0]
+2025-08-06 15:22:48,PLAYER,online-boutique-5287,how long do we think we would need to mitigate the issue? [n/a - 0]
+2025-08-06 15:23:07,Bob,online-boutique-5287,"Check :point_down::skin-tone-2:
+<https://uptimelabs-metaverse.slack.com/archives/C098R6C7LKH/p1754493468974799> [n/a - 0]"
+2025-08-06 15:23:32,PLAYER,online-boutique-5287,Thank you Bob [n/a - 0]
+2025-08-06 15:23:36,PLAYER,online-boutique-5287,how long do we think we would need to mitigate the issue? [n/a - 0]
+2025-08-06 15:23:39,Daniel,online-boutique-5287,"I have verified Payments change (CHG89347), there are no errors and the service is up and healthy [n/a - 0]"
+2025-08-06 15:23:44,Daniel,online-boutique-5287,"Checkout service change(CHG89350) is in UAT, so not affecting PROD. But I see a few errors from Frontend pods [n/a - 0]"
+2025-08-06 15:23:51,Daniel,online-boutique-5287,All the errors started right after the change (CHG89349) on the Frontend [n/a - 0]
+2025-08-06 15:23:54,Shay,online-boutique-5287,My change is safe to rollback and has no dependenices [n/a - 0]
+2025-08-06 15:23:56,Bob,online-boutique-5287,The customer complaints are rising. @M Sreekanth Do we have an ETA for resolution? [n/a - 0]
+2025-08-06 15:23:58,Bez,business-comms-5287,What is the latest on this? [n/a - 0]
+2025-08-06 15:24:06,Daniel,online-boutique-5287,"We are trying to check the changes first. Not sure if solved within 10 mins or not, we will see [n/a - 0]"
+2025-08-06 15:24:45,PLAYER,business-comms-5287,"Hello Bez This is a Global issue and atleast 300 customers have reported the issue so far. The teams are investigating the issue. I am gathering the details on ETA to fix the issue, will share the details soon [n/a - 0]"
+2025-08-06 15:24:54,UptimeLabs,online-boutique-5287,:star: Formally assign criticality level to the incident [n/a - 0]
+2025-08-06 15:25:57,Daniel,online-boutique-5287,Looks like an issue with the frontend change [n/a - 0]
+2025-08-06 15:26:12,Daniel,online-boutique-5287,A Frontend change caused by change CHG89349 has brought down the Frontend pods [n/a - 0]
+2025-08-06 15:26:18,Shay,online-boutique-5287,But this functionally worked when I tested [n/a - 0]
+2025-08-06 15:26:23,Daniel,online-boutique-5287,"Even if it worked in your test environment, something's behaving differently in prod, maybe a config mismatch or unhandled edge case [n/a - 0]"
+2025-08-06 15:26:26,Bez,business-comms-5287,Can you give a quick update on the status? [n/a - 0]
+2025-08-06 15:27:42,PLAYER,online-boutique-5287,Can we perform a rollback of the change ? What can be the impact and how long do we need to roll back [n/a - 0]
+2025-08-06 15:27:49,UptimeLabs,online-boutique-5287,:star: Restoration over root cause analysis [n/a - 0]
+2025-08-06 15:28:14,Daniel,online-boutique-5287,Yes right [n/a - 0]
+2025-08-06 15:28:17,Daniel,online-boutique-5287,"We should revert the frontend change as early as possible, I have verified that other changes are good [n/a - 0]"
+2025-08-06 15:28:23,Daniel,online-boutique-5287,"@M Sreekanth It's your call, Shall we revert it? [n/a - 0]"
+2025-08-06 15:29:36,PLAYER,online-boutique-5287,Please proveed to rever the change [n/a - 0]
+2025-08-06 15:29:46,Shay,online-boutique-5287,"Sorry, I've never done a rollback in PROD before, can someone help me with the steps? [n/a - 0]"
+2025-08-06 15:29:50,PLAYER,online-boutique-5287,how long do you think we wold need? [n/a - 0]
+2025-08-06 15:29:51,Daniel,online-boutique-5287,"I will help you, @Shay. Rolling back now [n/a - 0]"
+2025-08-06 15:30:09,Daniel,online-boutique-5287,I have rollbacked Frontend:version to 10.1.0 to more stable version. Can somebody verify? [n/a - 0]
+2025-08-06 15:30:10,Daniel,online-boutique-5287,Should be done in any next min [n/a - 0]
+2025-08-06 15:30:12,UptimeLabs,online-boutique-5287,"To 'verify' that the resolution has worked and to close the incident you must: 
+--Validate the fix yourself or with the team:white_check_mark: 
+--Cross check resolution with Customer Support:white_check_mark: 
+--Confirm resolution in the 'Business-comms' channel:white_check_mark:  [n/a - 0]"
+2025-08-06 15:30:13,Daniel,online-boutique-5287,its done [n/a - 0]
+2025-08-06 15:30:25,PLAYER,business-comms-5287,Hello Bez the support team have identified a Change that caused this issue and are working on the rollback [n/a - 0]
+2025-08-06 15:30:32,UptimeLabs,online-boutique-5287,:star: Confirm resolution with the business [n/a - 0]
+2025-08-06 15:30:39,PLAYER,business-comms-5287,More details will be shared soon [n/a - 0]
+2025-08-06 15:30:52,PLAYER,business-comms-5287,"We are up and running, [n/a - 0]"
+2025-08-06 15:31:12,PLAYER,online-boutique-5287,"I can confirm, the site is working as expected [n/a - 0]"
+2025-08-06 15:31:17,UptimeLabs,online-boutique-5287,:star: Validate the fix [n/a - 0]
+2025-08-06 15:31:28,PLAYER,online-boutique-5287,Great job everyone! Can we get confirmation from customer support? [n/a - 0]
+2025-08-06 15:31:34,UptimeLabs,online-boutique-5287,:star: Cross check resolution with stakeholders [n/a - 0]
+2025-08-06 15:31:35,Bob,online-boutique-5287,"Customer reports have gone down, and metrics are also looking good [n/a - 0]"
+2025-08-06 15:31:56,PLAYER,online-boutique-5287,Bob can you please check from customer end if they are good? [n/a - 0]
+2025-08-06 15:32:19,Bob,online-boutique-5287,"Yes, it's looking good at my end as well [n/a - 0]"
+2025-08-06 15:32:21,PLAYER,online-boutique-5287,Daniel &amp; Shay can we document the actions taken under a retrospective Change? [n/a - 0]
+2025-08-06 15:32:34,PLAYER,online-boutique-5287,Bob perfect! thanks for the confirmation [n/a - 0]
+2025-08-06 15:32:47,Daniel,online-boutique-5287,"Doing it, we will see it in PIR [n/a - 0]"
+2025-08-06 15:32:54,PLAYER,business-comms-5287,The issue is confirmed as resolved. We are good to close the incident [n/a - 0]
+2025-08-06 15:33:06,PLAYER,online-boutique-5287,Thank you all for the efforts! [n/a - 0]
+2025-08-06 15:33:10,Daniel,online-boutique-5287,"Shay missed an edge case, which we will be working to fix permanently [n/a - 0]"
+2025-08-06 15:33:13,Daniel,online-boutique-5287,It's definitely working again! [n/a - 0]
+2025-08-06 15:33:18,Shay,online-boutique-5287,Wow that was intense! [n/a - 0]
+2025-08-06 15:33:20,Bez,business-comms-5287,Thanks! for resolving it quickly [n/a - 0]
+2025-08-06 15:33:23,Hamed,online-boutique-5287,Good job guys [n/a - 0]
+2025-08-06 15:33:27,Tinus,online-boutique-5287,Yes well done! that could have gone much worse so props to everyone [n/a - 0]
+2025-08-06 15:33:31,Tinus,online-boutique-5287,We will have a Post-Incident Review (PIR) to understand what happened [n/a - 0]
+2025-08-06 15:33:41,UptimeLabs,online-boutique-5287,Start retro and feedback [n/a - 0]
+2025-08-06 15:37:19,PLAYER,online-boutique-5287,Clicked Start_feedback button
+2025-08-06 15:38:47,UptimeLabs,online-boutique-5287,:star: Manage actions and timings [n/a - 0]
+2025-08-06 15:38:49,UptimeLabs,online-boutique-5287,Submission successful [n/a - 0]

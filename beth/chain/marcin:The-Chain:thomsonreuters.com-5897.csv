@@ -1,0 +1,224 @@
+datetime,player,channel,message
+2025-09-23 13:09:24,Bez,online-boutique-5897,"Morning, team! Anyone else need a triple espresso today?"
+2025-09-23 13:09:33,Tinus,online-boutique-5897,"You're not the only one, Bez! The reports from last week are still giving me nightmares."
+2025-09-23 13:09:43,Bob,online-boutique-5897,"Tell me about it, Tinus."
+2025-09-23 13:09:46,Bob,online-boutique-5897,"But hey, at least it's sunny outside today. :sunrise:"
+2025-09-23 13:09:48,Bez,online-boutique-5897,"True, a little sunshine makes everything better."
+2025-09-23 13:09:50,Bez,online-boutique-5897,"Also, I'm having my usual green smoothie. That's my secret energy booster."
+2025-09-23 13:09:52,Daniel,online-boutique-5897,"Nice, Bez! I'll stick with my coffee though."
+2025-09-23 13:09:53,Daniel,online-boutique-5897,Anyone else excited for the launch of the new BitCoin :coin: payment feature this week?
+2025-09-23 13:09:55,Tinus,online-boutique-5897,"Absolutely, Daniel! Been looking forward to it."
+2025-09-23 13:09:57,Tinus,online-boutique-5897,"By the way, no spoilers, but did anyone catch the football game? Epic comeback!"
+2025-09-23 13:10:00,Shay,online-boutique-5897,I missed it! I was knee deep in a sci-fi novel. Anyone else into that?
+2025-09-23 13:10:09,Tanya,online-boutique-5897,"Oh, I love sci-fi! Can you share the name of the book, Shay?"
+2025-09-23 13:10:16,Daniel,online-boutique-5897,I've been reading a bit of sci-fi myself.
+2025-09-23 13:10:18,Daniel,online-boutique-5897,"Looking forward to sharing recommendations, Shay!"
+2025-09-23 13:10:22,Bez,online-boutique-5897,"There's always so much happening outside of work! Keep the energy :battery: going, team."
+2025-09-23 13:10:25,Bez,online-boutique-5897,It's going to be another productive day. :raised_hands:
+2025-09-23 13:10:28,UptimeLabs,online-boutique-5897,"Welcome to The Chain, the responsibility is on you to size up the problem.
+
+? *Use `/help` at any time for a list of useful links and commands*
+ ? *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin Start button"
+2025-09-23 13:11:34,PLAYER,online-boutique-5897,Clicked undefined button
+2025-09-23 13:12:20,PLAYER,online-boutique-5897,Clicked org button
+2025-09-23 13:12:39,PLAYER,online-boutique-5897,Clicked Start button
+2025-09-23 13:12:40,UptimeLabs,online-boutique-5897,":alarm_clock: - You have 25 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-09-23 13:12:41,Bob,online-boutique-5897,"Hey, we're getting reports of customers struggling to make purchases"
+2025-09-23 13:12:43,Bob,online-boutique-5897,@here Anyone else seeing this?
+2025-09-23 13:12:46,Tinus,online-boutique-5897,"Yes, I've noticed the same, @Bob . It seems like an error in the system"
+2025-09-23 13:12:49,Bez,online-boutique-5897,"Whatever it is, we need to sort it out quickly."
+2025-09-23 13:12:51,Bez,online-boutique-5897,we need to step on it! before the social media backlash is turning into a storm.
+2025-09-23 13:12:56,Tinus,online-boutique-5897,"Who is handling incidents today? Please size up the issue, this is urgent"
+2025-09-23 13:14:23,PLAYER,online-boutique-5897,Bob how many customers reported the issue? is it only affecting bitcoin purchases or any other?
+2025-09-23 13:14:32,Bob,online-boutique-5897,"I'm just collecting reports on this at the moment, it only seems to be affecting EU"
+2025-09-23 13:14:32,UptimeLabs,online-boutique-5897,:star: Asking questions to validate impact of the problem
+2025-09-23 13:15:01,Bob,online-boutique-5897,Reports of Bitcoin but there also seem to be issues with our other payment services
+2025-09-23 13:15:07,PLAYER,online-boutique-5897,Bob how many customer reports?
+2025-09-23 13:15:16,Bob,online-boutique-5897,I've received over 100 so far
+2025-09-23 13:15:21,PLAYER,business-comms-5897,P1 - bitcoin and other payments degradation for EU
+2025-09-23 13:15:21,PLAYER,business-comms-5897,*Incident Number INC100019:* P1 - bitcoin and other payments degradation for EU
+2025-09-23 13:15:22,UptimeLabs,online-boutique-5897,:star: Incident record created
+2025-09-23 13:15:24,UptimeLabs,online-boutique-5897,:star: Send first comms in first 5 minutes
+2025-09-23 13:15:31,UptimeLabs,online-boutique-5897,:star: Formally assign criticality level to the incident
+2025-09-23 13:15:43,Tanya,online-boutique-5897,Yes there were a few - let me share
+2025-09-23 13:15:45,PLAYER,online-boutique-5897,"I assume, we had one today for bitcoin"
+2025-09-23 13:16:02,PLAYER,business-comms-5897,"Bez, 100 reports from EU so far, will keep u posted"
+2025-09-23 13:16:07,Tanya,online-boutique-5897,"PaymentService:version 1.6
+CartRedis:version 4.2
+CartService:version 3.2
+EmailService:version 2.3
+AdService:version 8.6
+CheckoutService:version 5.1"
+2025-09-23 13:16:19,Bez,business-comms-5897,"Thanks for declaring that, let's get the whole engineering team engaged"
+2025-09-23 13:16:21,PLAYER,online-boutique-5897,Tanya who was responsible for each one?
+2025-09-23 13:16:28,UptimeLabs,online-boutique-5897,:star: Know your team and their roles
+2025-09-23 13:16:28,Daniel,online-boutique-5897,Yes my payments change was to Bitcoin
+2025-09-23 13:16:38,Daniel,online-boutique-5897,It lead to subsequent changes in cart service and redis-cart
+2025-09-23 13:16:46,PLAYER,online-boutique-5897,Daniel do you see anything in the logs?
+2025-09-23 13:16:55,Daniel,online-boutique-5897,Let me investigate
+2025-09-23 13:16:57,UptimeLabs,online-boutique-5897,:star: Facts over opinion
+2025-09-23 13:16:59,PLAYER,online-boutique-5897,Daniel can we rollback the change?
+2025-09-23 13:17:06,UptimeLabs,online-boutique-5897,:star: Restoration over root cause analysis
+2025-09-23 13:17:14,Daniel,online-boutique-5897,"Should be an option, we need to be wary of the dependent changes though"
+2025-09-23 13:17:19,PLAYER,online-boutique-5897,or not advised due to the Bitcoin rollout
+2025-09-23 13:17:37,Shay,online-boutique-5897,Can you replicate the issue on your end @Marcin?
+2025-09-23 13:18:14,PLAYER,online-boutique-5897,I can't even select product Shay
+2025-09-23 13:18:16,PLAYER,online-boutique-5897,"```rpc error: code = Unavailable desc = connection error: desc = ""transport: Error while dialing: dial tcp 172.20.218.65:7070: connect: connection refused""
+could not retrieve cart
+main.(*frontendServer).productHandler
+	/src/handlers.go:167
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2220
+<http://github.com/gorilla/mux.(*Router).ServeHTTP|github.com/gorilla/mux.(*Router).ServeHTTP>
+	/go/pkg/mod/github.com/gorilla/mux@v1.8.1/mux.go:212
+main.(*logHandler).ServeHTTP
+	/src/middleware.go:82
+main.main.ensureSessionID.func4
+	/src/middleware.go:109
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2220
+<http://go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*middleware).serveHTTP|go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*middleware).serveHTTP>
+	/go/pkg/mod/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.60.0/handler.go:179
+<http://go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.NewMiddleware.func1.1|go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.NewMiddleware.func1.1>
+	/go/pkg/mod/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.60.0/handler.go:67
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2220
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:3210
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:2092
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700```
+"
+2025-09-23 13:18:20,Daniel,online-boutique-5897,"Seeing this in the logs:
+BTC_PAYMENT_UPDATE_001 - Bitcoin payments are currently unavailable"
+2025-09-23 13:18:21,UptimeLabs,online-boutique-5897,:star: Reproduces the incident
+2025-09-23 13:18:30,Daniel,online-boutique-5897,It seems to have affected other payment methods as well though
+2025-09-23 13:18:59,Bez,business-comms-5897,What is the impact on sales?
+2025-09-23 13:19:02,PLAYER,online-boutique-5897,"getting this error msg, Shay Daniel"
+2025-09-23 13:19:09,Shay,online-boutique-5897,Same here
+2025-09-23 13:19:20,PLAYER,online-boutique-5897,'could not retrieve cart' - shouldn't we focus on this one?
+2025-09-23 13:19:27,Daniel,online-boutique-5897,Damn that's not good
+2025-09-23 13:19:40,PLAYER,online-boutique-5897,CartService:version 3.2 - who performed this change and when?
+2025-09-23 13:19:43,Daniel,online-boutique-5897,My payments deployment had subsequent changes to cart service and redis-cart
+2025-09-23 13:19:47,PLAYER,online-boutique-5897,Bob when was the first report?
+2025-09-23 13:19:49,UptimeLabs,online-boutique-5897,:star: Check changes done to the platform
+2025-09-23 13:19:53,Daniel,online-boutique-5897,That was mine
+2025-09-23 13:20:04,PLAYER,online-boutique-5897,can we try rolling it back and see how it goes?
+2025-09-23 13:20:08,Bob,online-boutique-5897,First report was 8 mins ago
+2025-09-23 13:20:32,PLAYER,online-boutique-5897,"Tanya i need timings for each change when was deployed:
+
+PaymentService:version 1.6
+CartRedis:version 4.2
+CartService:version 3.2
+EmailService:version 2.3
+AdService:version 8.6
+CheckoutService:version 5.1
+
+*Marcin Nowok*  [1:16 PM]"
+2025-09-23 13:20:34,Daniel,online-boutique-5897,"As payments caused those two changes, shall we try rolling back payment service first?"
+2025-09-23 13:20:59,Tanya,online-boutique-5897,"Payment Service, redis-cart and cart service were deployed around 9 mins ago"
+2025-09-23 13:21:14,Tanya,online-boutique-5897,The others were a few hours earlier
+2025-09-23 13:21:16,PLAYER,online-boutique-5897,"yes Daniel, let's go with that"
+2025-09-23 13:21:36,Shay,online-boutique-5897,What about the dependencies?
+2025-09-23 13:21:39,PLAYER,online-boutique-5897,Tinus what is the impact on sales?
+2025-09-23 13:21:42,Daniel,online-boutique-5897,Yep I can go ahead with that
+2025-09-23 13:21:53,Tinus,online-boutique-5897,@Bob should be able to fill in
+2025-09-23 13:22:05,PLAYER,online-boutique-5897,Bob pls help getting that ingo
+2025-09-23 13:22:07,Bob,online-boutique-5897,Currently down 45%
+2025-09-23 13:22:08,PLAYER,online-boutique-5897,info
+2025-09-23 13:22:13,PLAYER,business-comms-5897,Currently down 45%
+2025-09-23 13:22:34,Daniel,online-boutique-5897,"Understood, I'll proceed with rolling back the payment service"
+2025-09-23 13:22:46,PLAYER,online-boutique-5897,sec
+2025-09-23 13:22:54,Daniel,online-boutique-5897,payment service rollback is complete
+2025-09-23 13:22:57,PLAYER,online-boutique-5897,wouldn't it be better to roll back cart service first?
+2025-09-23 13:23:09,Hamed,online-boutique-5897,This is not good. Something is broken after the payment rollback
+2025-09-23 13:23:22,Daniel,online-boutique-5897,I thought you asked to rollback payment service
+2025-09-23 13:23:51,Bob,online-boutique-5897,"Team, I'm seeing a lot more reports coming through now..."
+2025-09-23 13:23:54,PLAYER,online-boutique-5897,let's roll back every single change that was executed 10 minutes back to the latest working version
+2025-09-23 13:24:02,PLAYER,online-boutique-5897,"Bob, how many?"
+2025-09-23 13:24:05,PLAYER,online-boutique-5897,still EU?
+2025-09-23 13:24:07,Bob,online-boutique-5897,This is affecting users globally
+2025-09-23 13:24:26,PLAYER,online-boutique-5897,"Daniel, will u be able to rollback other 2 changes or any objections to that?"
+2025-09-23 13:24:38,Daniel,online-boutique-5897,"That sounds reasonable, let's do that"
+2025-09-23 13:25:05,Daniel,online-boutique-5897,Both cart service and redis-cart are out of sync with our rolled-back payments version
+2025-09-23 13:25:19,Daniel,online-boutique-5897,Which shall I rollback first?
+2025-09-23 13:25:40,PLAYER,online-boutique-5897,let's go the the payment pls
+2025-09-23 13:25:52,Daniel,online-boutique-5897,Payments has already been rolled back
+2025-09-23 13:25:59,PLAYER,business-comms-5897,update: issue is affecting users globally; rolling back changes
+2025-09-23 13:26:04,Daniel,online-boutique-5897,But these dependent changes need to be rolled back too
+2025-09-23 13:26:21,Bez,business-comms-5897,So this is affecting all our customers now??
+2025-09-23 13:26:38,PLAYER,online-boutique-5897,1. redis-cart and 2) cart service
+2025-09-23 13:26:46,Daniel,online-boutique-5897,"Got it, rolling back redis-cart"
+2025-09-23 13:26:46,PLAYER,business-comms-5897,yes sir
+2025-09-23 13:27:11,Daniel,online-boutique-5897,Complete
+2025-09-23 13:27:38,PLAYER,online-boutique-5897,now 2nd
+2025-09-23 13:27:39,Bez,business-comms-5897,Do we have an ETA?
+2025-09-23 13:27:51,Daniel,online-boutique-5897,"Yep, rolling back cart service now"
+2025-09-23 13:28:13,PLAYER,business-comms-5897,last changed is being finished; pending
+2025-09-23 13:28:21,Daniel,online-boutique-5897,Complete
+2025-09-23 13:28:27,Tanya,online-boutique-5897,Rollbacks are completed
+2025-09-23 13:28:31,Daniel,online-boutique-5897,"Great, i've also restarted the frontend so the website should be working now"
+2025-09-23 13:28:51,Daniel,online-boutique-5897,"It may take a moment to reconfigure, let's hope that's sorted it"
+2025-09-23 13:29:03,Tinus,online-boutique-5897,@Marcin Nowok can you confirm?
+2025-09-23 13:29:22,PLAYER,online-boutique-5897,i am able to add products to cart rn
+2025-09-23 13:29:30,UptimeLabs,online-boutique-5897,:star: Validate the fix
+2025-09-23 13:29:44,PLAYER,online-boutique-5897,"but when I am proceeding to place order I am still getting this error:
+
+```pc error: code = Internal desc = cart failure: failed to get user cart during checkout: rpc error: code = Unavailable desc = connection error: desc = ""transport: Error while dialing: dial tcp 172.20.218.65:7070: connect: connection refused""
+failed to complete the order
+main.(*frontendServer).placeOrderHandler
+	/src/handlers.go:372
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2220
+<http://github.com/gorilla/mux.(*Router).ServeHTTP|github.com/gorilla/mux.(*Router).ServeHTTP>
+	/go/pkg/mod/github.com/gorilla/mux@v1.8.1/mux.go:212
+main.(*logHandler).ServeHTTP
+	/src/middleware.go:82
+main.main.ensureSessionID.func4
+	/src/middleware.go:109
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2220
+<http://go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*middleware).serveHTTP|go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*middleware).serveHTTP>
+	/go/pkg/mod/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.60.0/handler.go:179
+<http://go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.NewMiddleware.func1.1|go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.NewMiddleware.func1.1>
+	/go/pkg/mod/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.60.0/handler.go:67
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2220
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:3210
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:2092
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700```
+"
+2025-09-23 13:29:51,Daniel,online-boutique-5897,"Cart service was deploying, it should be working now"
+2025-09-23 13:29:59,Shay,online-boutique-5897,Yeah I'm able to place an order!
+2025-09-23 13:30:10,PLAYER,business-comms-5897,now it works
+2025-09-23 13:30:17,UptimeLabs,online-boutique-5897,:star: Confirm resolution with the business
+2025-09-23 13:30:18,PLAYER,online-boutique-5897,now it works
+2025-09-23 13:30:30,PLAYER,online-boutique-5897,but still not Bitcoin service available
+2025-09-23 13:30:38,PLAYER,online-boutique-5897,Bobcan you check with customers?
+2025-09-23 13:30:46,UptimeLabs,online-boutique-5897,:star: Cross check resolution with stakeholders
+2025-09-23 13:30:53,Bob,online-boutique-5897,Customers are able to make payments again
+2025-09-23 13:31:09,Daniel,online-boutique-5897,"That's okay, we were doing A/B testing for Bitcoin. I will switch that back over and work on a fix"
+2025-09-23 13:31:14,Daniel,online-boutique-5897,It appears that everything has returned to its normal state
+2025-09-23 13:31:16,Shay,online-boutique-5897,I was worried for a bit but everything looks good now.
+2025-09-23 13:31:19,Bob,online-boutique-5897,"Great work, everyone! The payments issue has been resolved and customers can now check out smoothly"
+2025-09-23 13:31:22,PLAYER,business-comms-5897,but btc payments is still not available as we rolled back the change
+2025-09-23 13:31:24,Tanya,online-boutique-5897,Phew! Glad we got that sorted. Fantastic teamwork!
+2025-09-23 13:31:25,Tinus,online-boutique-5897,Absolutely! Proud to be a part of this team
+2025-09-23 13:31:26,Tinus,online-boutique-5897,Thank you @Marcin Nowok for coordinating the rollback effectively
+2025-09-23 13:31:29,PLAYER,business-comms-5897,should we aim to have it todat?
+2025-09-23 13:31:30,Bez,online-boutique-5897,"Brilliant job, team and @Marcin Nowok!"
+2025-09-23 13:31:31,Bez,online-boutique-5897,"I've been monitoring the financial metrics, and they're already improving"
+2025-09-23 13:31:35,PLAYER,business-comms-5897,today Bez
+2025-09-23 13:31:46,Bez,business-comms-5897,"No rush, we'll iron that out and get that deployed another day"
+2025-09-23 13:32:04,PLAYER,business-comms-5897,incident resolved
+2025-09-23 13:32:04,PLAYER,business-comms-5897,*Incident Number INC100059:* incident resolved
+2025-09-23 13:32:09,UptimeLabs,online-boutique-5897,"Thank you for playing The Chain, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit start when you are ready. I am ready button"
+2025-09-23 13:32:37,PLAYER,online-boutique-5897,Clicked Start_feedback button
+2025-09-23 13:33:30,UptimeLabs,online-boutique-5897,Submission successful

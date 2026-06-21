@@ -1,0 +1,196 @@
+datetime,player,channel,message
+2026-02-23 11:34:07,shay,online-boutique-7794,"Hey guys, hope you are all having a good day. just wondering if anyone would like suport on anything?"
+2026-02-23 11:34:10,daniel,online-boutique-7794,All good for now Shay. Why dont you take this time to have a look at the docs I sent to you could be a good time to upskill
+2026-02-23 11:34:12,shay,online-boutique-7794,"Good idea, thanks Daniel."
+2026-02-23 11:34:15,uptimelabs,online-boutique-7794,"Welcome to Cart-astrophe, the responsibility is on you to size up the problem.
+
+? *Use `/help` at any time for a list of useful links and commands*
+ ? *Use `/incident` to create an incident record*
+
+Once youre ready just click start to begin"
+2026-02-23 11:36:18,bob,online-boutique-7794,"Team, we have a situation. Customers are reporting the are not able to place orders."
+2026-02-23 11:36:23,shay,online-boutique-7794,Guess I will have to hold off on that reading
+2026-02-23 11:36:28,tinus,online-boutique-7794,"Yes Shay and team please make resloving this your top piroity, hopefuly we can reslove it quickly"
+2026-02-23 11:36:31,daniel,online-boutique-7794,We will get on it Tinus.
+2026-02-23 11:36:34,bob,online-boutique-7794,Ok have more detail one of the customers. They said they were putting stuff in the cart when it started to load very slowly and now the whole website is broken.
+2026-02-23 11:36:35,bob,online-boutique-7794,hope this helps.
+2026-02-23 11:36:38,tinus,online-boutique-7794,"@jack.walsh-options-it.com, as please work with the team and try and reslove this asap."
+2026-02-23 11:37:00,PLAYER,online-boutique-7794,Acknowledged @bob  - did they say when the issue started / when was the first report? Is this impacting all customers or on a region basis? 
+2026-02-23 11:37:04,uptimelabs,online-boutique-7794,:star: Asking questions to validate impact of the problem
+2026-02-23 11:37:06,PLAYER,online-boutique-7794,Checking the website. 
+2026-02-23 11:37:09,uptimelabs,online-boutique-7794,:star: Reproduces the incident
+2026-02-23 11:37:12,bob,online-boutique-7794,"I will take a look into this for you now, give me a min to gather information on the customers"
+2026-02-23 11:37:38,PLAYER,online-boutique-7794,I can't get onto the website at all - @daniel is this the same for you? 
+2026-02-23 11:38:20,daniel,online-boutique-7794,it is the same for me
+2026-02-23 11:38:22,bob,online-boutique-7794,reports started an hour ago and looked to impact the eu only but the issue has grown to 100% customer impact globally
+2026-02-23 11:38:23,PLAYER,online-boutique-7794,Seeing a downward trend at 11.36 UTC of order confirmations. 
+2026-02-23 11:38:26,uptimelabs,online-boutique-7794,:star: Use metrics as evidence
+2026-02-23 11:38:43,bob,online-boutique-7794,past 5 mins has been the worst of the impact
+2026-02-23 11:38:46,PLAYER,online-boutique-7794,"Were any changes pushed? @daniel please review. 
+
+@tanya please check on the platform side. "
+2026-02-23 11:38:50,uptimelabs,online-boutique-7794,:star: Check changes done to the platform
+2026-02-23 11:38:50,uptimelabs,online-boutique-7794,:star: Form an effective investigation team
+2026-02-23 11:39:06,daniel,online-boutique-7794,yes here are the changes:
+2026-02-23 11:39:08,daniel,online-boutique-7794,https://uptime-labs.atlassian.net/wiki/external/YjIzNTVmM2U0NGU5NGI1MmI1OGEyMDM5MmQ4ZmViNzE
+2026-02-23 11:39:16,PLAYER,online-boutique-7794,
+2026-02-23 11:39:16,uptimelabs,business-comms-7794,*Incident Number INC100033:* P1 Incident - Global Outage - Customers Unable to Place Orders.
+2026-02-23 11:39:17,uptimelabs,online-boutique-7794,:star: Incident record created
+2026-02-23 11:39:31,PLAYER,online-boutique-7794,@bob are customers able to reach the website? 
+2026-02-23 11:39:45,bob,online-boutique-7794,no customer can
+2026-02-23 11:39:58,bez,business-comms-7794,what are we looking into?
+2026-02-23 11:40:02,PLAYER,online-boutique-7794,"This is the error I am seeing when trying:
+
+rpc error: code = Unavailable desc = connection error: desc = ""transport: Error while dialing: dial tcp 172.20.175.148:7070: connect: connection refused""
+could not retrieve cart
+main.(*frontendServer).homeHandler
+	/src/handlers.go:74
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2220
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/go/pkg/mod/github.com/gorilla/mux@v1.8.1/mux.go:212
+main.(*logHandler).ServeHTTP
+	/src/middleware.go:82
+main.main.ensureSessionID.func4
+	/src/middleware.go:109
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2220
+go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*middleware).serveHTTP
+	/go/pkg/mod/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.60.0/handler.go:179
+go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.NewMiddleware.func1.1
+	/go/pkg/mod/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.60.0/handler.go:67
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2220
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:3210
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:2092
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700
+
+@daniel / @tanya please investigate. "
+2026-02-23 11:40:21,daniel,online-boutique-7794,i will take a look at the logs for more information on our side of things
+2026-02-23 11:40:25,shay,online-boutique-7794,"I havent heard from tanya, we were meant to have a meeting on my change earlier, but she never showed up"
+2026-02-23 11:40:37,PLAYER,business-comms-7794,"P1 Outage - Customers Unable to Place Orders, team are investigating - will provide a further update in five minutes. "
+2026-02-23 11:40:42,uptimelabs,online-boutique-7794,:star: Qualify the problem
+2026-02-23 11:40:42,uptimelabs,online-boutique-7794,:star: Track actions and time box them
+2026-02-23 11:40:42,uptimelabs,online-boutique-7794,:star: Formally assign criticality level to the incident
+2026-02-23 11:41:02,PLAYER,online-boutique-7794,"Acknowledged @shay, looping in @hamed here in @tanya 's absence. "
+2026-02-23 11:41:05,uptimelabs,online-boutique-7794,:star: Escalating when required
+2026-02-23 11:41:16,hamed,online-boutique-7794,Sure how can i help?
+2026-02-23 11:41:24,PLAYER,online-boutique-7794,"Let's break this down, @bob when were the first reports received? "
+2026-02-23 11:41:47,bob,online-boutique-7794,1 hour ago
+2026-02-23 11:41:54,PLAYER,online-boutique-7794,"@hamed - P1 Outage, customers unable to place orders or use the website functionally - can you please check on the platform side? "
+2026-02-23 11:42:29,daniel,online-boutique-7794,"i can see the cart service is down, and full of errors"
+2026-02-23 11:42:49,hamed,online-boutique-7794,i will take a look into the cart service while tanya is away
+2026-02-23 11:43:59,PLAYER,online-boutique-7794,"@daniel can you review these changes?
+
+- CHG89351
+- CHG89347
+
+@hamed  can you review these changes?
+
+- CHG89348
+- CHG89350
+- CHG89349"
+2026-02-23 11:44:03,uptimelabs,online-boutique-7794,:star: Reviewed changes
+2026-02-23 11:44:08,bez,business-comms-7794,"all customers? this isnt good, do we have all the team on for this?"
+2026-02-23 11:44:20,shay,online-boutique-7794,"Tanya gave me code to change the ‘Cart_Update’ function in the frontend change, im not sure what it contained, i will need help with this"
+2026-02-23 11:44:43,PLAYER,online-boutique-7794,"@hamed specifically, @tanya pushed this change this morning for the CART Service - CHG89350."
+2026-02-23 11:44:46,hamed,online-boutique-7794,i see one CHG89350 is made to cart service
+2026-02-23 11:44:59,hamed,online-boutique-7794,yes i will look into this one to start
+2026-02-23 11:45:04,PLAYER,business-comms-7794,"Yes, full team on this - reviewing changes and all customers impacted. "
+2026-02-23 11:45:25,daniel,online-boutique-7794,"ad service change should have no impact on the customers, i will look into shays change to help him first"
+2026-02-23 11:45:29,shay,online-boutique-7794,thanks daniel
+2026-02-23 11:45:30,PLAYER,online-boutique-7794,"Looping in @tinus as well for the P1 Outage, all customers impacted - the team are reviewing changes. "
+2026-02-23 11:45:52,PLAYER,online-boutique-7794,"Acknowledged @daniel, please report in the next two minutes. "
+2026-02-23 11:46:43,hamed,online-boutique-7794,cart service is definitely causing the issues here
+2026-02-23 11:47:19,PLAYER,online-boutique-7794,"Checking through the logs, the error's are pointing to the frontend service and cart service. 
+
+Let's roll back the below changes:
+
+- CHG89351
+- CHG89350"
+2026-02-23 11:47:20,hamed,online-boutique-7794,"after the change released, there are signs of issues and only got worse"
+2026-02-23 11:47:25,uptimelabs,online-boutique-7794,:star: Restoration over root cause analysis
+2026-02-23 11:47:39,daniel,online-boutique-7794,sure
+2026-02-23 11:47:53,PLAYER,online-boutique-7794,@bob please get COMMS out to customers notifying them that we are aware of the issue and working on this. 
+2026-02-23 11:48:06,PLAYER,online-boutique-7794,@hamed please assist @daniel in rolling back the changes. 
+2026-02-23 11:48:10,uptimelabs,online-boutique-7794,:star: Take command
+2026-02-23 11:48:11,hamed,online-boutique-7794,on it
+2026-02-23 11:48:21,bob,online-boutique-7794,putting out a message now
+2026-02-23 11:48:35,daniel,online-boutique-7794,frotnend rolled back
+2026-02-23 11:48:50,hamed,online-boutique-7794,thats the cart service done
+2026-02-23 11:48:56,PLAYER,business-comms-7794,"Two changes pushed into production this morning that could be our smoking gun, we are rolling back the changes now to prioritise resolution. "
+2026-02-23 11:49:00,uptimelabs,online-boutique-7794,:star: Form a working theory
+2026-02-23 11:49:13,PLAYER,online-boutique-7794,Checking 
+2026-02-23 11:49:13,daniel,online-boutique-7794,"now payment service is down, what happend"
+2026-02-23 11:49:17,PLAYER,online-boutique-7794,Same issue. 
+2026-02-23 11:49:18,hamed,online-boutique-7794,let me look into this
+2026-02-23 11:49:43,PLAYER,online-boutique-7794,"Error received: 
+
+rpc error: code = Unavailable desc = connection error: desc = ""transport: Error while dialing: dial tcp 172.20.175.148:7070: connect: connection refused""
+could not retrieve cart
+main.(*frontendServer).homeHandler
+	/src/handlers.go:74
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2220
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/go/pkg/mod/github.com/gorilla/mux@v1.8.1/mux.go:212
+main.(*logHandler).ServeHTTP
+	/src/middleware.go:82
+main.main.ensureSessionID.func4
+	/src/middleware.go:109
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2220
+go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*middleware).serveHTTP
+	/go/pkg/mod/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.60.0/handler.go:179
+go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.NewMiddleware.func1.1
+	/go/pkg/mod/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.60.0/handler.go:67
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2220
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:3210
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:2092
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700"
+2026-02-23 11:50:00,hamed,online-boutique-7794,"Ok we forgot to check for dependancies, the cart redis change is dependant on the frontend change, this must be tanyas code she gave to shay"
+2026-02-23 11:50:14,hamed,online-boutique-7794,We will need to rollback this to fix the issue
+2026-02-23 11:50:18,daniel,online-boutique-7794,i can get on that
+2026-02-23 11:50:25,daniel,online-boutique-7794,Jack what do you say?
+2026-02-23 11:50:38,PLAYER,online-boutique-7794,"Yes, I was clear that both changes should be rolled back:
+
+CHG89351
+CHG89350
+"
+2026-02-23 11:51:07,daniel,online-boutique-7794,we need to rollback CHG89349 aswell to restore
+2026-02-23 11:51:27,PLAYER,online-boutique-7794,Yes do this now. 
+2026-02-23 11:51:43,daniel,online-boutique-7794,Changes have been sucessfully rolledback
+2026-02-23 11:51:47,tinus,online-boutique-7794,Are we sure its fixed?
+2026-02-23 11:51:50,tinus,online-boutique-7794,@jack.walsh-options-it.com what do you think?
+2026-02-23 11:52:01,PLAYER,online-boutique-7794,"No, checking. "
+2026-02-23 11:52:08,hamed,online-boutique-7794,we need to restart the services first
+2026-02-23 11:52:17,hamed,online-boutique-7794,i will run that now
+2026-02-23 11:52:30,PLAYER,online-boutique-7794,"Thanks @hamed, please confirm once done. "
+2026-02-23 11:52:34,uptimelabs,online-boutique-7794,:star: Cross checking resolution with team
+2026-02-23 11:53:07,hamed,online-boutique-7794,restarting them one by one so this will be done in a minute
+2026-02-23 11:53:19,daniel,online-boutique-7794,services seems to be running with no errors so far
+2026-02-23 11:53:30,hamed,online-boutique-7794,thsts us
+2026-02-23 11:53:34,hamed,online-boutique-7794,thats*
+2026-02-23 11:53:48,PLAYER,online-boutique-7794,All services restarted @hamed ?
+2026-02-23 11:53:56,hamed,online-boutique-7794,yes
+2026-02-23 11:54:03,PLAYER,business-comms-7794,"Changes rolled back, restarting services now - orders coming back through but monitoring before declaring as resolved. "
+2026-02-23 11:54:18,PLAYER,online-boutique-7794,Let's do full post checks across the board @daniel  / @hamed 
+2026-02-23 11:54:27,PLAYER,online-boutique-7794,I can place an order on the website 
+2026-02-23 11:54:30,uptimelabs,online-boutique-7794,:star: Validate the fix
+2026-02-23 11:54:32,daniel,online-boutique-7794,checking
+2026-02-23 11:54:43,PLAYER,online-boutique-7794,Orders coming back in as of 11.51
+2026-02-23 11:54:43,hamed,online-boutique-7794,website works for me with no issues
+2026-02-23 11:54:53,daniel,online-boutique-7794,all services are running healthy
+2026-02-23 11:54:59,bez,online-boutique-7794,Great work guys
+2026-02-23 11:55:04,tinus,online-boutique-7794,Yeah guys great team effort
+2026-02-23 11:55:13,uptimelabs,online-boutique-7794,"Thank you for playing Cart-astrophe, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit start when you are ready."
+2026-02-23 11:55:21,uptimelabs,online-boutique-7794,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/9/7794/feedback"

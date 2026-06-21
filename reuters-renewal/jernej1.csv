@@ -1,0 +1,95 @@
+index,datetime,player,channel,message
+0,2025-05-29 11:52:09,Bez,incident-4388,Hey everyone. I'm pumped today about our flash sale
+1,2025-05-29 11:52:15,Bez,incident-4388,You know it's been 53 years since the Beatles released Abbey Road right? My favourite album
+2,2025-05-29 11:52:20,Tanya,incident-4388,53 years already?? Wow that makes me feel old...
+3,2025-05-29 11:52:25,Bez,incident-4388,Indeed! We're celebrating today by promoting a flash sale on retro items from 1969
+4,2025-05-29 11:52:31,Bez,incident-4388,I re-watched Paul McCartney's Glastonbury set last night to get in the mood!
+6,2025-05-29 11:53:56,jernej.primcic,business-comms-4388,"*Incident Number INC100090:* sev1 testing"
+7,2025-05-29 11:55:05,PLAYER,incident-4388,Clicked Start button
+9,2025-05-29 11:55:06,Tinus,incident-4388,That sounds great Bez. Huge Beatles fan myself here
+10,2025-05-29 11:55:11,Tinus,incident-4388,We've just deployed a couple of changes into prod earlier but we should be all good
+11,2025-05-29 11:55:16,Tinus,incident-4388,We're a step closer to allowing folks to pay for items from the 1960s with Bitcoin thanks to Daniel!
+12,2025-05-29 11:55:19,Daniel,incident-4388,Think of it like time travelling!
+13,2025-05-29 11:55:23,Bez,incident-4388,Wow good work Daniel! Looking forward to seeing it in action in prod
+14,2025-05-29 11:55:27,Tinus,incident-4388,How's the test-driven development going?
+15,2025-05-29 11:55:32,Daniel,incident-4388,TDDs going well. We are as solid as a rock! Though don't ask me what the Liskov Substitution Principle is...
+16,2025-05-29 11:55:39,Shay,incident-4388,"erm - funny you should say that Daniel, I'm just testing my checkout service change in prod and I can't complete the payment - something's up"
+17,2025-05-29 11:55:46,Shay,incident-4388,"I hope my checkout service change is all good. Can someone check its not just me? And before you ask, yes I've cleared my cookies"
+18,2025-05-29 11:55:52,Tanya,incident-4388,Sorry Daniel it's not looking good on my end either
+19,2025-05-29 11:55:55,Tinus,incident-4388,Uh oh...here we go again
+20,2025-05-29 11:55:59,Tinus,incident-4388,"@jernej Primcic can you ""Size up the Issue"" please and keep us informed"
+21,2025-05-29 11:56:01,Bob,incident-4388,From what I can see it looks like we are still getting orders through
+22,2025-05-29 11:56:09,Daniel,incident-4388,"It can't be payments service, the new code shouldn't be invoked yet"
+23,2025-05-29 11:56:15,Daniel,incident-4388,@jernej Primcic it's worth having a look at the checkout service change first
+24,2025-05-29 11:56:19,Shay,incident-4388,@jernej Primcic what should I look at first?
+25,2025-05-29 11:56:38,Bez,incident-4388,Get this sorted ASAP!!!
+26,2025-05-29 11:56:46,Daniel,incident-4388,@Bob it could be UK only issue? I can also see orders coming through
+27,2025-05-29 11:56:46,PLAYER,incident-4388,"Hi everyone, I have tried on my end, and when trying to pay I receive a 500 internal error, can we check if the same issue is happening with the customers or not, and if the error is specific to a certain payment method?"
+28,2025-05-29 11:56:57,PLAYER,incident-4388,Or if its specific to a region?
+29,2025-05-29 11:57:08,Bob,incident-4388,I can check the reports now..
+30,2025-05-29 11:57:15,Bob,incident-4388,will update you soon
+32,2025-05-29 11:57:16,PLAYER,incident-4388,Thank you bob
+34,2025-05-29 11:57:32,Daniel,incident-4388,I can check the logs
+35,2025-05-29 11:57:44,Shay,incident-4388,We do have recent changes made to the platform
+36,2025-05-29 11:57:48,PLAYER,incident-4388,"I can see in the dashboard that the order numbers are looking okay, its just the order confirmation that is down."
+37,2025-05-29 11:58:04,Bob,incident-4388,Getting over 200+ reports
+38,2025-05-29 11:58:12,PLAYER,incident-4388,Was there a change deployed specific to only order confirmation?
+39,2025-05-29 11:58:13,Bob,incident-4388,Looks to be a global issue
+41,2025-05-29 11:58:48,Daniel,incident-4388,Not sure but there is changes to checkout and payment service
+42,2025-05-29 11:58:49,PLAYER,incident-4388,"Thanks Bob. Considering the orders are coming through, its just the order confirmation Service thats not working, we will run it as a Sev 2 incident, Im creating the incident as we speak"
+43,2025-05-29 11:59:06,Bez,business-comms-4388,"is there an incident ongoing?"
+44,2025-05-29 11:59:07,jernej.primcic,business-comms-4388,"*Incident Number INC100097:* Sev2 Order Confirmations not working"
+47,2025-05-29 11:59:25,Daniel,incident-4388,But i made the change to payments service and the new code shouldn't be invoked yet
+48,2025-05-29 11:59:44,PLAYER,business-comms-4388,"Hi Bez we have a Sev2 incident ongoing for issues with order confirmations. The orders itself are going through it is just the confirmation that are not being received by customers. The teams are looking further into the issue"
+49,2025-05-29 12:00:02,Bob,incident-4388,looks like no customers are able to make payments @Jernej
+51,2025-05-29 12:00:24,Bez,business-comms-4388,"Let me know the scope of the customer impact when you can"
+52,2025-05-29 12:00:32,Shay,incident-4388,Checkout service change looks good @Jernej
+53,2025-05-29 12:01:04,PLAYER,incident-4388,"Looks like we are seeing an increase currencyservices, can someone check the logs for that service please, looks like it could be something going on with that"
+54,2025-05-29 12:01:13,Shay,incident-4388,Will do
+55,2025-05-29 12:01:22,PLAYER,incident-4388,Thank you Shay
+56,2025-05-29 12:02:12,Daniel,incident-4388,Looks like the payments service is down
+57,2025-05-29 12:02:52,PLAYER,incident-4388,Thank you Daniel. Can we please roll back the change for payment services? CHG89359
+58,2025-05-29 12:02:59,Shay,incident-4388,Currency service is not having any issue looking at the logs
+59,2025-05-29 12:03:28,PLAYER,business-comms-4388,"Hi Bez currently no customers are able to make payments how ever the orders are still coming through. We have discovered an issue with the payment services and are discussing the possibility to roll back the change that was deployed to PROD earlier today"
+60,2025-05-29 12:04:06,Daniel,incident-4388,Are we sure? I don't think that the current issue is to do with payments as my change is related to crypto
+61,2025-05-29 12:04:35,Bez,business-comms-4388,"i see can you tell me how many reports we have on this issue?"
+63,2025-05-29 12:05:03,PLAYER,incident-4388,"Tanya, can we check the change you made to Ad services is not connected to this? Lets check logs and dump files"
+65,2025-05-29 12:05:29,PLAYER,incident-4388,"And daniel, lets do the same for payment services. I can see the following error:\n\n```rpc error: code = Internal desc = failed to charge card: could not charge the card: rpc error: code = Unavailable desc = connection error: desc = ""transport: Error while dialing: dial tcp 172.20.253.125:50051: connect: connection refused""\nfailed to complete the order\nmain.(*frontendServer).placeOrderHandler\n\t/src/handlers.go:360\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2122\n<http://github.com/gorilla/mux.(*Router).ServeHTTP|github.com/gorilla/mux.(*Router).ServeHTTP>\n\t/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210\nmain.(*logHandler).ServeHTTP\n\t/src/middleware.go:82\nmain.ensureSessionID.func1\n\t/src/middleware.go:109\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2122\n<http://go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*Handler).ServeHTTP|go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*Handler).ServeHTTP>\n\t/go/pkg/mod/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.41.1/handler.go:212\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2936\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:1995\nruntime.goexit\n\t/usr/local/go/src/runtime/asm_amd64.s:1598```"
+66,2025-05-29 12:05:31,Tanya,incident-4388,Can do
+67,2025-05-29 12:05:48,PLAYER,business-comms-4388,"200+ but let me get the current number for you from the customer service team"
+68,2025-05-29 12:05:54,PLAYER,incident-4388,Thank you Tanya
+69,2025-05-29 12:05:54,Daniel,incident-4388,ill check my change now
+70,2025-05-29 12:06:07,PLAYER,incident-4388,"Bob, what is the current customer report count?"
+71,2025-05-29 12:06:09,PLAYER,incident-4388,Thanks Daniel
+72,2025-05-29 12:06:40,Bob,incident-4388,over 278 reports so far
+73,2025-05-29 12:06:49,Bez,business-comms-4388,"Thanks for that are we close to a resolution?"
+74,2025-05-29 12:06:56,PLAYER,incident-4388,Thank you Bob
+75,2025-05-29 12:06:58,Bez,business-comms-4388,"and do we have an eta on the fix?"
+76,2025-05-29 12:07:02,Bob,incident-4388,about 80% of sales is affected
+77,2025-05-29 12:07:03,PLAYER,business-comms-4388,"278 reports as of right now"
+78,2025-05-29 12:07:23,PLAYER,business-comms-4388,"the teams are currently looking at all the changes that were deployed to prod today and analyzing the logs and dump files to pinpoint the issue"
+79,2025-05-29 12:07:32,Daniel,incident-4388,oh im seeing errors on my change
+80,2025-05-29 12:07:41,PLAYER,incident-4388,"Thanks Daniel, lets roll back the change please in that case"
+81,2025-05-29 12:08:04,Daniel,incident-4388,i changed some common libraries that are used on the payments flow for different cards
+82,2025-05-29 12:08:07,Daniel,incident-4388,Will do
+83,2025-05-29 12:08:07,PLAYER,business-comms-4388,"The teams have observed errors on the PROD change for paymentservices. We are disscusing the possibility of a rolback now"
+84,2025-05-29 12:08:18,PLAYER,incident-4388,"Thank you Daniel, let us know once the rollback is completed please"
+86,2025-05-29 12:08:39,Tanya,incident-4388,Ad-service Looks good to me @Jernej
+87,2025-05-29 12:08:43,PLAYER,business-comms-4388,"Rollback of the paymentservices change is in progress"
+88,2025-05-29 12:08:49,Daniel,incident-4388,Rolling back now ....
+89,2025-05-29 12:08:53,PLAYER,incident-4388,"Thank you Tanya, appreciate it"
+90,2025-05-29 12:09:02,PLAYER,incident-4388,How long do you think the rollback will take Daniel?
+91,2025-05-29 12:09:18,Daniel,incident-4388,not long at all
+92,2025-05-29 12:09:25,Bob,incident-4388,Customers are saying they can make payments again
+93,2025-05-29 12:09:29,Tinus,incident-4388,Perfect! @jernej Primcic can you confirm with the team?
+94,2025-05-29 12:09:30,Daniel,incident-4388,rollback should be complete
+95,2025-05-29 12:10:07,PLAYER,incident-4388,"Thank you, looks like we are mitigated at this point, lets please just perform quick checks again to confirm"
+96,2025-05-29 12:10:20,Shay,incident-4388,logs are looking better
+98,2025-05-29 12:10:27,PLAYER,business-comms-4388,"Rollback is completed customer service is receiving reports that they are able to complete payments again looks like we are mitigated"
+99,2025-05-29 12:10:38,Tinus,incident-4388,How does the website look @Jernej?
+100,2025-05-29 12:10:57,PLAYER,incident-4388,Just did a test order and it looks good
+102,2025-05-29 12:11:08,PLAYER,incident-4388,I think we can call the issue mitigated/resolved at this point. Good job team!
+104,2025-05-29 12:11:27,Bez,incident-4388,Well done!
+105,2025-05-29 12:11:38,PLAYER,business-comms-4388,"The rollback has resolved the issue. Business and technical validations are succesful."
+106,2025-05-29 12:11:41,Tinus,incident-4388,Great work
+110,2025-05-29 12:12:20,PLAYER,incident-4388,Clicked Start_feedback button\n

@@ -1,0 +1,114 @@
+datetime,player,channel,message
+2026-02-27 12:09:48,tinus,online-boutique-7842,Hey everyone. I'm pumped today about our flash sale
+2026-02-27 12:09:54,tinus,online-boutique-7842,You know it's been 56 years since the Beatles released Abbey Road right? My favourite album
+2026-02-27 12:09:59,tanya,online-boutique-7842,56 years already?? Wow that makes me feel old...
+2026-02-27 12:10:04,tinus,online-boutique-7842,Indeed! We're celebrating today by promoting a flash sale on retro items from 1969
+2026-02-27 12:10:12,uptimelabs,online-boutique-7842,"Welcome to Bezs Beatles Day, remember communication is key to diagnose the problem.
+
+ *Access game links by pressing the Uptime Labs Logo in the top right of the screen*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin"
+2026-02-27 12:12:26,tinus,online-boutique-7842,We're a step closer to allowing folks to pay for items from the 1960s with Bitcoin thanks to Daniel!
+2026-02-27 12:12:32,daniel,online-boutique-7842,Think of it like time travelling!
+2026-02-27 12:12:37,hamed,online-boutique-7842,Wow good work Daniel! Looking forward to seeing it in action in prod
+2026-02-27 12:12:43,hamed,online-boutique-7842,How's the test-driven development going?
+2026-02-27 12:12:48,daniel,online-boutique-7842,TDDs going well. We are as solid as a rock! Though don't ask me what the Liskov Substitution Principle is...
+2026-02-27 12:12:55,shay,online-boutique-7842,"erm - funny you should say that Daniel, I'm just testing my checkout service change in prod and I can't complete the payment - something's up"
+2026-02-27 12:13:02,shay,online-boutique-7842,"I hope my checkout service change is all good. Can someone check its not just me? And before you ask, yes I've cleared my cookies"
+2026-02-27 12:13:08,tanya,online-boutique-7842,Sorry Daniel it's not looking good on my end either
+2026-02-27 12:13:11,tinus,online-boutique-7842,Uh oh...here we go again
+2026-02-27 12:13:15,tinus,online-boutique-7842,"@angad.sharma-zomato.com can you ""Size up the Issue"" please and keep us informed"
+2026-02-27 12:13:17,bob,online-boutique-7842,From what I can see it looks like we are still getting orders through
+2026-02-27 12:13:22,tinus,online-boutique-7842,Get this sorted ASAP!!!
+2026-02-27 12:13:37,PLAYER,online-boutique-7842,
+2026-02-27 12:13:37,uptimelabs,business-comms-7842,*Incident Number INC100027:* P1 checkout is failing
+2026-02-27 12:13:39,bob,online-boutique-7842,I'm seeing a spike in failed transactions—about 40% of payment attempts are currently failing during checkout.
+2026-02-27 12:13:40,bez,business-comms-7842,"Noted on the P1 incident. What is the current impact in terms of affected customers and lost orders? Also, which regions are experiencing this issue?"
+2026-02-27 12:14:10,PLAYER,business-comms-7842,"There is drop in orders per minute due to failed checkouts, we are checking"
+2026-02-27 12:14:12,uptimelabs,online-boutique-7842,:star: Qualify the problem
+2026-02-27 12:14:22,PLAYER,online-boutique-7842,Checkout is not working for me either.
+2026-02-27 12:14:24,uptimelabs,online-boutique-7842,:star: Reproduces the incident
+2026-02-27 12:14:24,daniel,online-boutique-7842,I'm having the same problem—my payments aren't going through either.
+2026-02-27 12:14:32,PLAYER,online-boutique-7842,Are there any recent changes that went out in the checkout flow? 
+2026-02-27 12:14:34,tanya,online-boutique-7842,"Just got a message from my cousin in London, she can't buy any of the new Beatles merch either. Says her payment failed."
+2026-02-27 12:14:34,uptimelabs,online-boutique-7842,:star: Check changes done to the platform
+2026-02-27 12:14:48,bob,online-boutique-7842,I'm noticing the failures seem concentrated in Europe. Looks like the UK is particularly affected.
+2026-02-27 12:14:52,PLAYER,online-boutique-7842,@daniel can you provide the changelog?
+2026-02-27 12:15:03,shay,online-boutique-7842,"Give me a second, I'll get the detailed info on each of the changes made today"
+2026-02-27 12:15:14,shay,online-boutique-7842,Hope this helps: https://uptime-labs.atlassian.net/wiki/external/OGU1YjE2MmE4ZmI4NGFkMjgzNzEwZGVkYjlmNzgwNWY
+2026-02-27 12:15:25,tinus,online-boutique-7842,Any updates on the investigation?
+2026-02-27 12:15:31,PLAYER,online-boutique-7842,If its concentrated in europe then it could be a network issue on payment gateways. @hamed @tanya can you confirm?
+2026-02-27 12:15:34,uptimelabs,online-boutique-7842,:star: Form a working theory
+2026-02-27 12:15:34,uptimelabs,online-boutique-7842,:star: Asking questions to validate impact of the problem
+2026-02-27 12:15:36,daniel,online-boutique-7842,"My PaymentService change (CHG89362) was deployed 5 minutes ago, but the new Bitcoin payment code isn't being called by the frontend yet and all my tests passed."
+2026-02-27 12:15:41,tanya,online-boutique-7842,"From the platform side, there haven't been any recent network changes or gateway configuration updates that would impact Europe specifically."
+2026-02-27 12:15:43,bez,business-comms-7842,"I need exact figures—how many customers or orders are impacted so far? Also, confirm which regions are affected. This is critical for our business assessment."
+2026-02-27 12:16:07,PLAYER,business-comms-7842,"Seems like UK is affected. We are checking, next update in 5 mins"
+2026-02-27 12:16:10,uptimelabs,online-boutique-7842,:star: Track actions and time box them
+2026-02-27 12:16:32,PLAYER,online-boutique-7842,@daniel lets revert the change 
+2026-02-27 12:16:34,uptimelabs,online-boutique-7842,:star: Restoration over root cause analysis
+2026-02-27 12:16:34,daniel,online-boutique-7842,"My code isn't even being called yet, so I don't think rolling back is necessary."
+2026-02-27 12:16:44,daniel,online-boutique-7842,Would make more sense to investigate Shay's change first?
+2026-02-27 12:16:49,tanya,online-boutique-7842,Daniel has a point - let's try Shay's change first before touching the payment service
+2026-02-27 12:17:42,bez,business-comms-7842,Understood. Awaiting your update in 5 minutes. Please ensure you provide concrete numbers on customer impact and any changes in order volume.
+2026-02-27 12:17:51,PLAYER,online-boutique-7842,@daniel lets revert shay's change. @tanya can you help?
+2026-02-27 12:17:54,shay,online-boutique-7842,I will rollback my checkout change right away
+2026-02-27 12:18:09,shay,online-boutique-7842,Rollback complete!
+2026-02-27 12:18:12,PLAYER,business-comms-7842,"Some changes were made to the checkout service, we are reverting them to check if they were the root cause"
+2026-02-27 12:18:14,bob,online-boutique-7842,"Hmm, customer reports are still coming in at the same rate"
+2026-02-27 12:18:19,bob,online-boutique-7842,The failure pattern hasn't changed - still 100% failure in the UK
+2026-02-27 12:18:24,tanya,online-boutique-7842,Something else must be causing this
+2026-02-27 12:18:29,tinus,online-boutique-7842,We need this fixed!
+2026-02-27 12:19:41,bez,business-comms-7842,"Focus on quantifying the impact—how many UK customers or orders have failed so far? Also, confirm if we are currently losing revenue. I need specifics."
+2026-02-27 12:21:00,PLAYER,online-boutique-7842,I can see an increase in http 504s
+2026-02-27 12:21:04,tanya,online-boutique-7842,I'll dig deeper into recent backend changes to see if anything else could be impacting the payment flow.
+2026-02-27 12:21:04,bob,online-boutique-7842,That matches what I'm seeing—UK customers are still unable to complete payments and the error rate hasn't dropped at all.
+2026-02-27 12:21:34,PLAYER,online-boutique-7842,gateway timeout: server error due to high load
+2026-02-27 12:21:37,daniel,online-boutique-7842,"The new code isn't being invoked yet, can I investigate a bit more."
+2026-02-27 12:21:56,PLAYER,online-boutique-7842,This log is being generated in the frontend service. Did we make any changes to the frontend and only rolled them out in the UK?
+2026-02-27 12:22:00,uptimelabs,online-boutique-7842,:star: Reviewed changes
+2026-02-27 12:22:01,tanya,online-boutique-7842,"There haven't been any frontend deployments targeted specifically at the UK, but I did notice Daniel's recent change modified some shared libraries used in GBP payment flows."
+2026-02-27 12:22:24,PLAYER,online-boutique-7842,@daniel can we revert those changes?
+2026-02-27 12:22:27,daniel,online-boutique-7842,"Fine if you insist, I'll rollback"
+2026-02-27 12:22:30,daniel,online-boutique-7842,Rolling back my Bitcoin payment service change now
+2026-02-27 12:22:38,PLAYER,business-comms-7842,Sharing them
+2026-02-27 12:22:50,daniel,online-boutique-7842,Rollback complete. Might take a few minutes to stabilise
+2026-02-27 12:22:54,PLAYER,business-comms-7842,@bob can you help with the numbers here?
+2026-02-27 12:22:55,shay,online-boutique-7842,Did that fix it?
+2026-02-27 12:22:59,bez,business-comms-7842,Acknowledged. Please share the impact data as soon as possible. I need to know the scale of lost orders and revenue immediately.
+2026-02-27 12:23:23,PLAYER,business-comms-7842,"Team is still debugging the issue, next update in 5 mins. Meanwhile @bob please keep us informed on the customer impact"
+2026-02-27 12:23:26,uptimelabs,online-boutique-7842,:star: Know your team and their roles
+2026-02-27 12:23:50,PLAYER,online-boutique-7842,"Its working for me now, "
+2026-02-27 12:23:52,PLAYER,online-boutique-7842,lets monitor
+2026-02-27 12:23:52,bob,online-boutique-7842,Looking into it now... Metrics seem to be improving!
+2026-02-27 12:23:58,bob,online-boutique-7842,Customer payments appear to be back up and processing normally
+2026-02-27 12:24:07,PLAYER,business-comms-7842,Order rate is recovering
+2026-02-27 12:24:10,PLAYER,business-comms-7842,We are monitoring
+2026-02-27 12:24:11,uptimelabs,online-boutique-7842,:star: Confirm resolution with the business
+2026-02-27 12:24:11,shay,online-boutique-7842,Standing by to run a test transaction if you want internal confirmation.
+2026-02-27 12:24:11,daniel,online-boutique-7842,I can check the service logs to confirm everything is stable on our end—just let me know.
+2026-02-27 12:24:22,PLAYER,business-comms-7842,"It was due to a recent change in payment GBP, RCA to be shared soon"
+2026-02-27 12:24:36,PLAYER,online-boutique-7842,@daniel what was the issue in the change?
+2026-02-27 12:24:39,daniel,online-boutique-7842,"The issue was with a change in the payment routing logic for GBP transactions. It inadvertently caused requests from the UK to loop, leading to high load and gateway timeouts. Rolling back restored the previous stable logic."
+2026-02-27 12:24:59,bez,business-comms-7842,Is revenue fully restored and are all UK orders processing successfully now? I need confirmation that business operations are back to normal before we close this out.
+2026-02-27 12:25:22,PLAYER,business-comms-7842,"The issue was with a change in the payment routing logic for GBP transactions. It inadvertently caused requests from the UK to loop, leading to high load and gateway timeouts. Rolling back restored the previous stable logic.
+
+"
+2026-02-27 12:25:33,PLAYER,business-comms-7842,@bob please help checking if we have any new customer reports
+2026-02-27 12:25:43,PLAYER,business-comms-7842,Order rate has fully recovered now
+2026-02-27 12:25:59,PLAYER,business-comms-7842,Business operations are back to normal
+2026-02-27 12:26:25,PLAYER,business-comms-7842,incident resolved
+2026-02-27 12:26:33,PLAYER,online-boutique-7842,incident resolved
+2026-02-27 12:26:36,tanya,online-boutique-7842,"Great work, everyone. I'll keep monitoring platform health for a while just in case, but things look stable now."
+2026-02-27 12:26:59,bez,business-comms-7842,Understood. Confirmed that revenue and order flow are normal. Please ensure the RCA is delivered promptly and that monitoring is tightened to prevent recurrence. Thank you.
+2026-02-27 12:29:53,tinus,online-boutique-7842,I don't think the Beatles would've anticipated cryptocurrency so let's keep it that way for now
+2026-02-27 12:30:06,uptimelabs,online-boutique-7842,"Drill Wrap-Up
+
+Thanks for playing! This session is now closed.
+
+Please return to your Uptime Labs tab to review your performance and complete the Retrospective & Feedback form.
+
+If you've already closed the tab, you can reopen the form using the button below."
+2026-02-27 12:30:15,uptimelabs,online-boutique-7842,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/5/7842/feedback"

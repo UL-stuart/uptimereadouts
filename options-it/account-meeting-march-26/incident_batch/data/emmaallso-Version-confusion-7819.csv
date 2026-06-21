@@ -1,0 +1,159 @@
+datetime,player,channel,message
+2026-02-25 13:12:03,uptimelabs,online-boutique-7819,"Welcome to Version Confusion, the responsibility is on you to size up the problem.
+
+? *Use `/help` at any time for a list of useful links and commands*
+ ? *Use `/incident` to create an incident record*
+
+Once youre ready just click start to begin"
+2026-02-25 13:13:42,tanya,online-boutique-7819,Hey guys im seeing an issue with the website loading slowly
+2026-02-25 13:13:43,tanya,online-boutique-7819,Anyone else experaning this?
+2026-02-25 13:13:45,shay,online-boutique-7819,No all ok for me
+2026-02-25 13:13:46,daniel,online-boutique-7819,No issue for me
+2026-02-25 13:13:47,daniel,online-boutique-7819,What browser and version of it are you using Tanya?
+2026-02-25 13:13:49,tanya,online-boutique-7819,Im using chrome and let me check the version
+2026-02-25 13:13:51,daniel,online-boutique-7819,Ok if it is V105.0 this is a recorded bug with a ticket in the backlog
+2026-02-25 13:13:52,tanya,online-boutique-7819,Yeah it is V105.0
+2026-02-25 13:13:53,tanya,online-boutique-7819,Should we not raise an incident for this? I know I can update the version and it will stop effecting me.
+2026-02-25 13:13:55,tanya,online-boutique-7819,But could this not be effecting customers?
+2026-02-25 13:13:57,daniel,online-boutique-7819,Had a look at the market share of people using this version it is only at 0.09%
+2026-02-25 13:14:00,tanya,online-boutique-7819,Still not sure if it should not be an incidnt. @emma.allsopp-options-it.com What do you think? 
+2026-02-25 13:14:23,PLAYER,online-boutique-7819,"I can access ok too, @bob any complaints on the customer front?"
+2026-02-25 13:14:26,uptimelabs,online-boutique-7819,:star: Attempt to replicate the issue
+2026-02-25 13:14:26,uptimelabs,online-boutique-7819,:star: Asking questions to validate impact of the problem
+2026-02-25 13:14:41,bob,online-boutique-7819,We’ve had a couple of customers mention slow loading on Chrome
+2026-02-25 13:14:52,bob,online-boutique-7819,"I don’t have numbers yet, but I can check reports"
+2026-02-25 13:15:19,PLAYER,online-boutique-7819,"0.09% is a low amount of people using this version, @tanya is there anyway we can deploy the update for everyone? @bob yes pleasee check reports so we can see how many people this is affecting"
+2026-02-25 13:15:22,daniel,online-boutique-7819,Might just be legacy browser quirks
+2026-02-25 13:15:50,PLAYER,online-boutique-7819,@maya are you seeing any issues with anything loading?
+2026-02-25 13:15:56,tanya,online-boutique-7819,It would require planning in order to avoid service disruption and other possible conflicts
+2026-02-25 13:16:06,PLAYER,online-boutique-7819,@bob please report back asap once you know the impact of this
+2026-02-25 13:16:08,uptimelabs,online-boutique-7819,:star: Manage actions and timings
+2026-02-25 13:16:10,bob,online-boutique-7819,I’ve pulled some numbers — this is bigger than expected
+2026-02-25 13:16:15,bob,online-boutique-7819,About 20% of sessions are showing elevated load times
+2026-02-25 13:16:22,bob,online-boutique-7819,Seeing some timeouts as well
+2026-02-25 13:16:34,tanya,online-boutique-7819,That’s much larger than Chrome 105’s share
+2026-02-25 13:16:41,tanya,online-boutique-7819,That suggests this might affect more versions than we thought
+2026-02-25 13:16:46,PLAYER,online-boutique-7819,@tanya are we sure this is related to the older verison V105.0
+2026-02-25 13:16:48,uptimelabs,online-boutique-7819,:star: Reviewed changes
+2026-02-25 13:16:56,maya,online-boutique-7819,Checking things on my end
+2026-02-25 13:17:15,tanya,online-boutique-7819,I’m seeing TTFB differences between browser versions
+2026-02-25 13:17:22,daniel,online-boutique-7819,20%? That’s surprising
+2026-02-25 13:17:28,daniel,online-boutique-7819,That wouldn’t align with just Chrome 105
+2026-02-25 13:17:30,PLAYER,online-boutique-7819,
+2026-02-25 13:17:31,uptimelabs,business-comms-7819,*Incident Number INC100090:* p2 20% users having elevated load times due to version of website
+2026-02-25 13:17:31,uptimelabs,online-boutique-7819,:star: Incident record created
+2026-02-25 13:17:35,daniel,online-boutique-7819,Maybe detection is mislabeling browser versions?
+2026-02-25 13:17:36,daniel,online-boutique-7819,Really dont think we need an incident. As I said we have a bug already and really need to focus on delivery of new features.
+2026-02-25 13:17:46,shay,online-boutique-7819,I’m not seeing spikes in payment retries
+2026-02-25 13:17:50,PLAYER,online-boutique-7819,@daniel can you please check to see what other factors may be causing this
+2026-02-25 13:18:01,PLAYER,online-boutique-7819,@shay can i get a list of recent changes deployed 
+2026-02-25 13:18:03,uptimelabs,online-boutique-7819,:star: Check changes done to the platform
+2026-02-25 13:18:10,bez,online-boutique-7819,Are customers abandoning sessions?
+2026-02-25 13:18:22,PLAYER,online-boutique-7819,@bob are customers not buying?
+2026-02-25 13:18:35,maya,online-boutique-7819,Nothing on my end would indicate this to be a scopes issue or any services being blocked
+2026-02-25 13:18:53,PLAYER,online-boutique-7819,@bez user activity is still high
+2026-02-25 13:19:02,bob,online-boutique-7819,We see decline in revenue compared to last 2 weeks
+2026-02-25 13:19:21,PLAYER,online-boutique-7819,@bob is this affecting 20% of customers in a certain region?
+2026-02-25 13:19:22,bob,online-boutique-7819,It seems that trends was build up for that period of time
+2026-02-25 13:19:32,bob,online-boutique-7819,Seems to be global
+2026-02-25 13:19:43,PLAYER,online-boutique-7819,@daniel can i please get report back?
+2026-02-25 13:19:53,PLAYER,online-boutique-7819,@shay can I please get those changes?
+2026-02-25 13:19:58,tinus,business-comms-7819,Can someone confirm when this trend began?
+2026-02-25 13:20:15,PLAYER,online-boutique-7819,@bob when did reports start comign in?
+2026-02-25 13:20:18,shay,online-boutique-7819,"sure
+https://uptime-labs.atlassian.net/wiki/external/ZDQ1MTE3NWU5ZDYxNDA4MTkxZmM3ZGJmMGJhNmE1OTE"
+2026-02-25 13:20:29,daniel,online-boutique-7819,Currently investigating this cause
+2026-02-25 13:20:42,PLAYER,online-boutique-7819,Hi everyone can we please get everyone's attention here - we are having a global issue
+2026-02-25 13:20:43,bob,online-boutique-7819,First report was mentioned as far as 2 weeks ago
+2026-02-25 13:20:56,PLAYER,business-comms-7819,Global issue - first reported 2 weeks ago
+2026-02-25 13:20:57,daniel,online-boutique-7819,Could be a frontend performance regression
+2026-02-25 13:21:11,PLAYER,business-comms-7819,investigating recent changes on platform will report back in 5 mins
+2026-02-25 13:21:11,shay,online-boutique-7819,"If checkout forms are timing out, maybe retry logic is triggering delays."
+2026-02-25 13:21:13,uptimelabs,online-boutique-7819,:star: Track actions and time box them
+2026-02-25 13:21:28,tanya,online-boutique-7819,The delay appears before JS execution
+2026-02-25 13:21:29,tanya,online-boutique-7819,That makes frontend less likely as root cause.
+2026-02-25 13:21:44,PLAYER,online-boutique-7819,@hamed do you have an idea of the root casue?
+2026-02-25 13:21:56,hamed,online-boutique-7819,Just joined the chat
+2026-02-25 13:22:02,hamed,online-boutique-7819,what do we know so far?
+2026-02-25 13:22:52,PLAYER,online-boutique-7819,"20% users having elevated load times due to version of website - the delay appears before JS execution, That makes frontend less likely as root cause."
+2026-02-25 13:22:56,uptimelabs,online-boutique-7819,:star: Qualify the problem
+2026-02-25 13:22:56,uptimelabs,online-boutique-7819,:star: Form a working theory
+2026-02-25 13:23:00,PLAYER,online-boutique-7819,first report is 2 weeks ago also
+2026-02-25 13:23:17,PLAYER,online-boutique-7819,@bob any further reports or still affecting only 20%
+2026-02-25 13:23:24,daniel,online-boutique-7819,"I have reviewed latest changes within 24h, nothing stands out"
+2026-02-25 13:23:28,hamed,online-boutique-7819,"If this is browser-specific and global, we should check proxy behavior."
+2026-02-25 13:23:42,PLAYER,online-boutique-7819,@maya can you check proxy behaviour please
+2026-02-25 13:23:55,PLAYER,online-boutique-7819,@tanya can you also help maya with this please
+2026-02-25 13:23:56,hamed,online-boutique-7819,"trend started two weeks ago — timing doesn’t match, agree most likely not anything recently deployed"
+2026-02-25 13:24:03,maya,online-boutique-7819,On it
+2026-02-25 13:24:14,tanya,online-boutique-7819,:thumbsup:
+2026-02-25 13:24:24,PLAYER,business-comms-7819,changes in last 24hrs do not seem to have impacted this as first report is 2 weeks ago
+2026-02-25 13:24:26,uptimelabs,online-boutique-7819,:star: Facts over opinion
+2026-02-25 13:24:30,hamed,online-boutique-7819,Reviewing NGINX version history now.
+2026-02-25 13:24:39,hamed,online-boutique-7819,There was a version upgrade around two weeks ago
+2026-02-25 13:24:44,hamed,online-boutique-7819,That aligns more closely with impact timeline
+2026-02-25 13:24:58,tinus,business-comms-7819,Correlation with timeline is key.
+2026-02-25 13:25:06,tinus,business-comms-7819,Focus on changes closest to when trend began
+2026-02-25 13:25:09,PLAYER,business-comms-7819,"Currently reviewing NGINX version history now.
+There was a version upgrade around two weeks ago
+That aligns more closely with impact timeline"
+2026-02-25 13:25:23,PLAYER,online-boutique-7819,@hamed does this appear to be the issue?
+2026-02-25 13:25:26,bez,business-comms-7819,Have we notified the customers about this?
+2026-02-25 13:25:41,hamed,online-boutique-7819,Confirmed — NGINX version update introduced compatibility issue.
+2026-02-25 13:25:48,hamed,online-boutique-7819,Older Chrome versions are experiencing delayed request handling.
+2026-02-25 13:25:50,PLAYER,online-boutique-7819,@tanya and @maya any update on proxy?
+2026-02-25 13:25:54,hamed,online-boutique-7819,Some headers/feature negotiation aren’t fully supported
+2026-02-25 13:26:00,maya,online-boutique-7819,Still nothing
+2026-02-25 13:26:06,PLAYER,business-comms-7819,"Confirmed — NGINX version update introduced compatibility issue.
+
+Older Chrome versions are experiencing delayed request handling. "
+2026-02-25 13:26:10,tanya,online-boutique-7819,That explains the TTFB differences I was seeing.
+2026-02-25 13:26:12,uptimelabs,online-boutique-7819,:star: Formally assign criticality level to the incident
+2026-02-25 13:26:12,PLAYER,business-comms-7819,Notifying customers.
+2026-02-25 13:26:16,tanya,online-boutique-7819,Frontend itself is behaving normally.
+2026-02-25 13:26:28,daniel,online-boutique-7819,So frontend was fine — issue was before it even loaded
+2026-02-25 13:26:33,daniel,online-boutique-7819,That explains why bundle analysis didn’t show regression.
+2026-02-25 13:26:35,PLAYER,online-boutique-7819,"@bob  can you please notify customers that Confirmed — NGINX version update introduced compatibility issue.
+
+Older Chrome versions are experiencing delayed request handling"
+2026-02-25 13:26:51,PLAYER,online-boutique-7819,"@bob an you please notify customers that Confirmed — NGINX version update introduced compatibility issue.
+
+Older Chrome versions are experiencing delayed request handling"
+2026-02-25 13:27:00,PLAYER,online-boutique-7819,@hamed how can we resolve this
+2026-02-25 13:27:01,bob,online-boutique-7819,Certainly!
+2026-02-25 13:27:02,uptimelabs,online-boutique-7819,:star: Escalating when required
+2026-02-25 13:27:20,hamed,online-boutique-7819,We can either roll back NGINX or patch config
+2026-02-25 13:27:25,PLAYER,business-comms-7819,"Bob has notified customers, working hamed to resolve issue"
+2026-02-25 13:27:32,hamed,online-boutique-7819,"Rollback is fastest, lowest risk. but that's only a temp fix"
+2026-02-25 13:27:53,PLAYER,online-boutique-7819,lets roll back for now as customer experience is priority and getting the site working as normal 
+2026-02-25 13:27:56,uptimelabs,online-boutique-7819,:star: Restoration over root cause analysis
+2026-02-25 13:28:01,PLAYER,online-boutique-7819,then we can resolve root cause after
+2026-02-25 13:28:19,tanya,online-boutique-7819,"Agree, I will work on the rollback and patch the service later"
+2026-02-25 13:28:23,PLAYER,online-boutique-7819,@hamed / @tanya can we please roll back?
+2026-02-25 13:28:35,hamed,online-boutique-7819,I’ll monitor latency by browser version post-deploy.
+2026-02-25 13:28:42,PLAYER,business-comms-7819,We are working to roll back NGINX to resolve issue for the moment
+2026-02-25 13:28:56,PLAYER,online-boutique-7819,@tanya let me know once completed thank you
+2026-02-25 13:29:01,tanya,online-boutique-7819,Just double checking everything before the rollback
+2026-02-25 13:29:16,PLAYER,business-comms-7819,Tanya working on roll back will update once completed.
+2026-02-25 13:29:16,tanya,online-boutique-7819,Rollback in progress.....
+2026-02-25 13:29:34,tinus,business-comms-7819,Let’s confirm stability before declaring full recovery
+2026-02-25 13:29:44,PLAYER,business-comms-7819,This is not a permanent fix however will restore the site for customers and we can resolve root cause once restored
+2026-02-25 13:29:47,tanya,online-boutique-7819,Rollback complete
+2026-02-25 13:29:55,PLAYER,online-boutique-7819,@hamed everything look good on your end?
+2026-02-25 13:30:12,hamed,online-boutique-7819,timeouts and delay about is dropping
+2026-02-25 13:30:28,hamed,online-boutique-7819,Looks like we are recovering
+2026-02-25 13:30:37,PLAYER,online-boutique-7819,this has not resolved the issue?
+2026-02-25 13:30:42,tanya,online-boutique-7819,Hey @emma.allsopp-options-it.com I have just retried the website with V105.0 of chrome and it seems the fix worked
+2026-02-25 13:30:44,tinus,online-boutique-7819,Glad we created an incident for this. Need to review our training on when to create an incident or a bug but great work team.
+2026-02-25 13:30:46,daniel,online-boutique-7819,Sorry guys should have raised an incident when first discovered.
+2026-02-25 13:30:50,PLAYER,online-boutique-7819,oh great!
+2026-02-25 13:30:56,tinus,online-boutique-7819,We are all learning Daniel. We can carry the learnings foward
+2026-02-25 13:30:59,bob,online-boutique-7819,Just checked and it looks all good now team
+2026-02-25 13:31:01,tinus,online-boutique-7819,Lets continue monitoring this and we can have a great conversation during the PIR
+2026-02-25 13:31:01,PLAYER,online-boutique-7819,@bob can we confirm site is working as normal?
+2026-02-25 13:31:17,bob,online-boutique-7819,Sales metrics are improving
+2026-02-25 13:31:23,uptimelabs,online-boutique-7819,"Thank you for playing Version Confusion, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit start when you are ready."
+2026-02-25 13:31:27,PLAYER,business-comms-7819,"Roll back complete, Tanya has retried the website with V105.0 of chrome and it seems the fix worked"
+2026-02-25 13:31:30,uptimelabs,online-boutique-7819,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/17/7819/feedback"

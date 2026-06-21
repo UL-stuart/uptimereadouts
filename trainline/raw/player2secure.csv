@@ -1,0 +1,101 @@
+datetime,player,Channel,message
+17/09/2025 11:17,Roberta Roccia,secure-channel,Hey
+17/09/2025 11:17,Roberta Roccia,secure-channel,<@U06CA3MRAJF> <@U03BY6AJZMM> <@U047N91SRH8> <@U047N6LUYJX>
+17/09/2025 11:17,Maya,secure-channel,@Roberta Roccia let's build the core response team here. I've already added myself. Who else should we pull in to keep it tight and efficient?
+17/09/2025 11:17,Maya,secure-channel,"I'd say one senior person each from security, platform, and engineering. Also add Tanya, tasks could be platform intensive"
+17/09/2025 11:17,Roberta Roccia,secure-channel,<@U047N6MGH19> <@U047N6LHU0K>
+17/09/2025 11:18,Roberta Roccia,secure-channel,ok I have added the core team
+17/09/2025 11:18,Roberta Roccia,secure-channel,<@U06CA3MRAJF> pls contact Cyvantics Security
+17/09/2025 11:18,Maya,secure-channel,"Yes, we've got an IR(incident response) retainer with Cyvantics Security. That means they're on standby for scenarios like this - to investigate, contain, and guide us through recovery"
+17/09/2025 11:18,Roberta Roccia,secure-channel,lets contact them asap
+17/09/2025 11:18,Maya,secure-channel,"Looped in Cyvantics Security - they're on their way now to take snapshots of the infected server and storage. Once that's done, they'll begin full forensics to trace the origin and impact"
+17/09/2025 11:19,Roberta Roccia,secure-channel,ok
+17/09/2025 11:19,Maya,secure-channel,"Meanwhile, I'd gotten a checklist from Cyvantics earlier for situations like this. @Roberta Roccia, can you help track the steps and coordinate? We've got this, together."
+17/09/2025 11:19,Maya,secure-channel,<https://uptime-labs.atlassian.net/wiki/external/MThjMTk4ZDU5ODU0NGZmMWE1NzhmNGY0MDQwNWI1NTA>
+17/09/2025 11:19,Maya,secure-channel,"I'm up here coordinating with Cyvantics and our team, I need you to track the checklist steps closely. It's a high stake situation, i might miss something in between"
+17/09/2025 11:19,Maya,secure-channel,"We've got isolation steps in the playbook, but before we dive in, can you paste that list here? I'll help run through them with Tanya, Hamed, and Daniel so we can hit the ground fast"
+17/09/2025 11:19,Roberta Roccia,secure-channel,"do we need to add anything on the website, do we need a maintenance page?"
+17/09/2025 11:19,Maya,secure-channel,Bob will take care of it
+17/09/2025 11:20,Roberta Roccia,secure-channel,"Steps for Isolation:
+
+
+Steps to be done, mentioned along with the *owning* team
+1. Disconnect the infected server -&gt; Platforms 
+2. Cut off infrastructure traffic -&gt; Platforms
+3. Disconnect DB &amp; freeze backup -&gt; Application
+4. Detach from Shared Resource -&gt; Platforms
+5. Take snapshots (Disk &amp; Memory) -&gt; Ask team
+6. Kill suspicious process or activity -&gt; Platforms
+Steps for Restoration:
+
+
+Steps to be done, mentioned along with the *owning* team
+1. Validate backups → Security
+2. Wipe infected systems → Platforms
+3. Rebuild from clean backup → Platforms
+4. Re-enable security agent on the servers → Security
+5. Reconnect traffic to services and monitor → Platforms
+"
+17/09/2025 11:20,Maya,secure-channel,"I've given write access to Tanya, Hamed, Daniel, and myself"
+17/09/2025 11:20,Roberta Roccia,secure-channel,OK lets start
+17/09/2025 11:20,Tanya,secure-channel,Disconnecting the checkout servers from the infra now
+17/09/2025 11:20,Daniel,secure-channel,I'm on it. Disconnecting DB access for checkout and checking if scheduled backups exist
+17/09/2025 11:20,Hamed,secure-channel,I'll verify if any shared storage is still attached to the checkout DB
+17/09/2025 11:21,Daniel,secure-channel,"Step 3 done, DB connection to checkout is now cut. Also confirmed that we have a daily backup job in place running at 2AM everyday"
+17/09/2025 11:21,Tanya,secure-channel,"Step 1 done, Checkout servers are now fully disconnected. Moving to isolate the infra from all external traffic"
+17/09/2025 11:21,Hamed,secure-channel,"Step 4 confirmed, No shared storage attached to checkout, which makes sense since checkout has its standalone storage"
+17/09/2025 11:21,Tanya,secure-channel,"Step 2 completed, Infra is now fully cut off from the outside world. That means the website will remain completely down until we recover"
+17/09/2025 11:21,Maya,secure-channel,"Step 5 done, Cyvantics has completed taking snapshots of the checkout servers and database. They've now moved on to forensics. @Hamed, we're good to kill the script now"
+17/09/2025 11:21,Hamed,secure-channel,"Step 6 done, The Script has been killed. @Roberta Roccia let us know and double-check if anything else is pending on our side"
+17/09/2025 11:22,Roberta Roccia,secure-channel,ok
+17/09/2025 11:22,Roberta Roccia,secure-channel,restoraiton
+17/09/2025 11:22,Roberta Roccia,secure-channel,which applications are impacted? Bez is asking. Basket?
+17/09/2025 11:23,Tanya,secure-channel,Checking...
+17/09/2025 11:23,Tanya,secure-channel,"From what I'm seeing, the impact seems limited to the checkout servers. We haven't spotted similar symptoms on the others so far"
+17/09/2025 11:23,Maya,secure-channel,"Also, I checked. All other servers have security agents running and reporting normally. The only ones missing agents were the checkout servers - which feels a bit off"
+17/09/2025 11:24,Roberta Roccia,secure-channel,what is the Sec agency saying?
+17/09/2025 11:24,Maya,secure-channel,"Yes, we must have a backup. Platform team can confirm us"
+17/09/2025 11:24,Hamed,secure-channel,"Correct, we do have backup which only runs at 2AM. Latest is yesterday's. We'll lose today's orders"
+17/09/2025 11:24,Maya,secure-channel,Isolation is complete. We're good to move toward restoration using the backup storage now
+17/09/2025 11:24,Maya,secure-channel,@Roberta Roccia could you please confirm with business before moving forward on this
+17/09/2025 11:24,Maya,secure-channel,I've called in @Bob to the channel
+17/09/2025 11:24,Bob,secure-channel,"I hear you need my help, what exactly should I look into?"
+17/09/2025 11:24,Roberta Roccia,secure-channel,sure
+17/09/2025 11:24,Bob,secure-channel,"With the sale starting today, the potential loss is significant ? around $180k"
+17/09/2025 11:25,Maya,secure-channel,"Yet to get report, high level that must be phising email"
+17/09/2025 11:25,Roberta Roccia,secure-channel,can we restore from snapshots?
+17/09/2025 11:26,Roberta Roccia,secure-channel,Bez advised
+17/09/2025 11:26,Roberta Roccia,secure-channel,lets restore
+17/09/2025 11:26,Maya,secure-channel,"Thanks for the go-ahead. I've rechecked and confirmed that only checkout components were impacted. @Roberta Roccia, please track all restoration steps"
+17/09/2025 11:26,Maya,secure-channel,I'm now validating the backup storage to ensure it's safe
+17/09/2025 11:26,Roberta Roccia,secure-channel,the loss is irrelevant if we then lose the whole platform.
+17/09/2025 11:26,Hamed,secure-channel,"I'm provisioning new checkout servers, will update once ready"
+17/09/2025 11:26,Maya,secure-channel,"Backup is clean and safe. @Hamed, you can start rebuilding checkout from backup storage"
+17/09/2025 11:26,Hamed,secure-channel,"Thanks, Maya. New servers are ready. I'll start rebuilding now using backup storage"
+17/09/2025 11:26,Hamed,secure-channel,Rebuild completed
+17/09/2025 11:27,Maya,secure-channel,I've enabled the security agents (EDR) on checkout servers
+17/09/2025 11:27,Daniel,secure-channel,I'll monitor application health once services are restored
+17/09/2025 11:27,Maya,secure-channel," @Roberta Roccia , can you confirm all tasks are wrapped up and we are good to bring the traffic back? Just want to be sure, as this is the final restoration step before we move"
+17/09/2025 11:27,Roberta Roccia,secure-channel,guys are we confident?
+17/09/2025 11:27,Roberta Roccia,secure-channel,can we bring traffic in? what do the sec experts say?
+17/09/2025 11:27,Maya,secure-channel,100% confident
+17/09/2025 11:27,Roberta Roccia,secure-channel,ok lets move the traffic then
+17/09/2025 11:27,Tanya,secure-channel,Thanks for the go ahead. Bringing up network traffic in progress?
+17/09/2025 11:28,Tanya,secure-channel,Restoration completed
+17/09/2025 11:28,Roberta Roccia,secure-channel,I managed to complete the order
+17/09/2025 11:28,Bob,secure-channel,Wait!! getting a bunch of new complaints now. Users are neither able to see their return requests nor able to place new returns on the site
+17/09/2025 11:28,Roberta Roccia,secure-channel,Can we analyse the new logs please? make sure all is clean?
+17/09/2025 11:28,Maya,secure-channel,"Yeah, that's probably the missing today's checkout data. Anyone who ordered or returned something during that time won't see it - makes sense since we restored from the yesterday's backup"
+17/09/2025 11:28,Tanya,secure-channel,"Tough, but expected :)"
+17/09/2025 11:28,Bob,secure-channel,What should I tell them? Can you check with business before sending anything out?
+17/09/2025 11:29,Bob,secure-channel,They are demanding refunds
+17/09/2025 11:30,Maya,secure-channel,@Roberta Roccia I've received the forensics report from Cyvantics Security
+17/09/2025 11:30,Maya,secure-channel,forensics
+17/09/2025 11:30,Roberta Roccia,secure-channel,as per Bez refund them and get $10 as apology
+17/09/2025 11:30,Maya,secure-channel,"Also, I just finished combing through Shay's mailbox. There's something important here, I found two emails from what looks like our monitoring vendor - ClearTech"
+17/09/2025 11:30,Maya,secure-channel,phished_email
+17/09/2025 11:30,Bob,secure-channel,Thanks
+17/09/2025 11:31,Maya,secure-channel,"We will take this forward in PIR , for now website is restored"
+17/09/2025 11:31,Roberta Roccia,secure-channel,guys be carefulk when clicking on things you don't know
+17/09/2025 11:31,Maya,secure-channel,"Alright, since everything's back up and stable, we can now move back to the main #online-boutique channel. No further actions left here"
+17/09/2025 11:31,Roberta Roccia,secure-channel,ok

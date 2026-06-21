@@ -1,0 +1,117 @@
+datetime,player,channel,message
+2026-01-21 10:48:14,uptimelabs,online-boutique-7480,"Welcome to Too Good To Be True, the responsibility is on you to size up the problem.
+
+ *Access game links by pressing the Uptime Labs Logo in the top right of the screen*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin"
+2026-01-21 10:52:59,PLAYER,online-boutique-7480,
+2026-01-21 10:52:59,uptimelabs,business-comms-7480,*Incident Number INC100072:* P1 Test: Website is down
+2026-01-21 10:53:46,tinus,online-boutique-7480,"Welcome our new IM @s.sasi-bloomberg.net, Happy to have you in the team. Hope you get comfortable with everyone"
+2026-01-21 10:53:51,shay,online-boutique-7480,Welcome @s.sasi-bloomberg.net
+2026-01-21 10:53:56,daniel,online-boutique-7480,Nice to meet you @s.sasi-bloomberg.net
+2026-01-21 10:54:05,bob,online-boutique-7480,There are a few strange customer reports with the helpdesk
+2026-01-21 10:54:10,bob,online-boutique-7480,"Apparently, the site is loading slowly"
+2026-01-21 10:54:14,bob,online-boutique-7480,People are reporting that they can't make payments either
+2026-01-21 10:54:17,bob,online-boutique-7480,
+2026-01-21 10:54:21,bob,online-boutique-7480,@s.sasi-bloomberg.net Can you check this?
+2026-01-21 10:55:22,PLAYER,online-boutique-7480,I can see the same @hamed @tanya could you please take a look and the possible failure underneath ?
+2026-01-21 10:55:25,hamed,online-boutique-7480,"Sure, let me take a look"
+2026-01-21 10:55:25,uptimelabs,online-boutique-7480,:star: Form an effective investigation team
+2026-01-21 10:55:38,tanya,online-boutique-7480,Do we have an incident ?
+2026-01-21 10:56:02,bez,business-comms-7480,There is alot of noise in Social media X platform
+2026-01-21 10:56:06,PLAYER,online-boutique-7480,"While @hamed is looking at it, can we have @daniel also look at the backend "
+2026-01-21 10:56:11,bez,business-comms-7480,DO we have an issue?
+2026-01-21 10:56:23,daniel,online-boutique-7480,"Sure, i ll take a look"
+2026-01-21 10:56:43,uptimelabs,online-boutique-7480,:bulb: Collect enough information to send meaningful business comunication within the first 5 minutes
+2026-01-21 10:57:00,PLAYER,online-boutique-7480,"yes, 502 failure"
+2026-01-21 10:57:01,bez,business-comms-7480,is this  a global issue?
+2026-01-21 10:57:04,uptimelabs,online-boutique-7480,:star: Qualify the problem
+2026-01-21 10:57:04,uptimelabs,online-boutique-7480,:star: Reproduces the incident
+2026-01-21 10:57:21,daniel,online-boutique-7480,I see a lot of errors in Front end pods
+2026-01-21 10:57:47,PLAYER,online-boutique-7480,@bob whats the customer impact so far ?
+2026-01-21 10:57:49,uptimelabs,online-boutique-7480,:star: Asking questions to validate impact of the problem
+2026-01-21 10:57:55,daniel,online-boutique-7480,can you create an incident ? i need it to login to server
+2026-01-21 10:58:01,bob,online-boutique-7480,Let me gather the information for you
+2026-01-21 10:58:06,bob,online-boutique-7480,There are more than 300 customer reports till now
+2026-01-21 10:58:13,bob,online-boutique-7480,"Calls are from every region, likely to be Global"
+2026-01-21 10:58:19,bob,online-boutique-7480,There's a bunch of messages coming in. A few people saying they can't do anything on the site
+2026-01-21 10:58:24,bob,online-boutique-7480,Let me know if you need more information
+2026-01-21 10:58:29,bez,business-comms-7480,"Hi Sree, any update please"
+2026-01-21 10:58:38,bez,business-comms-7480,I have a stake holders meet in 10 minutes
+2026-01-21 10:58:46,PLAYER,online-boutique-7480,
+2026-01-21 10:58:46,uptimelabs,business-comms-7480,*Incident Number INC10008:* Test: Access to website failing globally (502 error)
+2026-01-21 10:58:46,uptimelabs,online-boutique-7480,:star: Incident record created
+2026-01-21 10:58:48,uptimelabs,online-boutique-7480,:star: Send first comms in first 5 minutes
+2026-01-21 10:58:51,daniel,online-boutique-7480,"Thanks, i ll do the check now"
+2026-01-21 10:58:51,bez,business-comms-7480,How many customers are affected? Are the reports coming in from all regions?
+2026-01-21 10:59:00,daniel,online-boutique-7480,"@Shay, can you join as wel"
+2026-01-21 10:59:05,shay,online-boutique-7480,Looking into this and trying to replicate the issue
+2026-01-21 10:59:07,daniel,online-boutique-7480,I am able to replicate the issue. Checking the logs now
+2026-01-21 10:59:10,daniel,online-boutique-7480,"I see a lot of errors, most of them are context initialisation errors "
+2026-01-21 10:59:14,daniel,online-boutique-7480,
+2026-01-21 10:59:14,uptimelabs,online-boutique-7480,:bulb: Encourage business comms
+2026-01-21 10:59:16,shay,online-boutique-7480,Yes replicated the issue and even i'm seeing similar errors in frontend logs
+2026-01-21 10:59:20,bez,business-comms-7480,"I have a stake holders meet in next 10 minutes, @s.sasi-bloomberg.net do you think this can be resolved by then? "
+2026-01-21 11:00:18,PLAYER,business-comms-7480,"Quick Update 
+* We have a global issue accessing our website
+* Impacting around 300 customers globally "
+2026-01-21 11:00:21,hamed,online-boutique-7480,I see Front end pods are down
+2026-01-21 11:00:26,hamed,online-boutique-7480,Did we have any changes ?
+2026-01-21 11:00:40,PLAYER,online-boutique-7480,Did we have any recent rollouts ? Can we review and rollback ?
+2026-01-21 11:00:41,daniel,online-boutique-7480,Below are the changes implemented this morning
+2026-01-21 11:00:46,daniel,online-boutique-7480,
+2026-01-21 11:00:47,uptimelabs,online-boutique-7480,:star: Check changes done to the platform
+2026-01-21 11:00:47,uptimelabs,online-boutique-7480,:star: Reviewed changes
+2026-01-21 11:00:49,daniel,online-boutique-7480,"If you want more information, checkout the change details : https://uptime-labs.atlassian.net/wiki/external/ZmRkZTQ1ODg2M2U1NGM3NDk1ZjZhM2I3MWY0MTM5ODA "
+2026-01-21 11:01:39,PLAYER,online-boutique-7480,"@bob Are there further complains coming along. For you to manage client expectations, we are actively looking at the root cause and keep you posted on the recovery "
+2026-01-21 11:01:41,bob,online-boutique-7480,The phone's blowing - its  complete break down
+2026-01-21 11:01:52,bob,online-boutique-7480,Any ETA would be really helpful
+2026-01-21 11:02:08,tanya,online-boutique-7480,There are no alerts on the Infrastructure. I did see a few errors on the frontend apps
+2026-01-21 11:02:14,tanya,online-boutique-7480,This looks to me like an issue in the frontend pod
+2026-01-21 11:02:20,PLAYER,online-boutique-7480,Change ID: CHG89349 seems to the closest to the time window
+2026-01-21 11:02:28,PLAYER,online-boutique-7480,can we rollback that change asap 
+2026-01-21 11:02:29,daniel,online-boutique-7480,A Frontend change caused by change CHG89349 has brought down the Frontend pods
+2026-01-21 11:02:31,uptimelabs,online-boutique-7480,:star: Restoration over root cause analysis
+2026-01-21 11:02:35,shay,online-boutique-7480,But this functionally worked when I tested
+2026-01-21 11:02:40,daniel,online-boutique-7480,"Even if it worked in your test environment, something's behaving differently in prod, maybe a config mismatch or unhandled edge case"
+2026-01-21 11:02:43,bez,business-comms-7480,Can you give a quick update on the status?
+2026-01-21 11:02:50,PLAYER,online-boutique-7480,@shay lets take that conversation in the Post Mortem 
+2026-01-21 11:02:53,shay,online-boutique-7480,"Sorry, I've never done a rollback in PROD before, can someone help me with the steps?"
+2026-01-21 11:03:09,bez,business-comms-7480,Any update @Sree
+2026-01-21 11:03:23,daniel,online-boutique-7480,"I will help you, @Shay. Rolling back now"
+2026-01-21 11:03:27,PLAYER,online-boutique-7480,@daniel can you get someone additional from the team or if @hamed can help
+2026-01-21 11:03:32,PLAYER,online-boutique-7480,thanks 
+2026-01-21 11:03:38,daniel,online-boutique-7480,I have rollbacked Frontend:version to 10.1.0 to more stable version. Can somebody verify?
+2026-01-21 11:03:41,uptimelabs,online-boutique-7480,"To verify resolution and close incident:
+--Validate fix with team:white_check_mark:
+--Check with Customer Support:white_check_mark:
+--Confirm in 'Business-comms':white_check_mark:"
+2026-01-21 11:03:53,bob,online-boutique-7480,"Customers are able to place the orders, complaint calls have reduced as well."
+2026-01-21 11:03:53,PLAYER,business-comms-7480,We have found the causing problem and being rolled back as we speak
+2026-01-21 11:03:58,uptimelabs,online-boutique-7480,:star: Confirm resolution with the business
+2026-01-21 11:04:15,PLAYER,online-boutique-7480,"Sounds good, thanks team."
+2026-01-21 11:04:34,uptimelabs,online-boutique-7480,:bulb: Use metrics as evidence
+2026-01-21 11:05:07,PLAYER,online-boutique-7480,"lets discuss the below in the PM:
+- Root cause
+- Guardrails in Testing
+- Post Deployment Checks 
+- limited release to reduce the blast radius "
+2026-01-21 11:05:09,tinus,online-boutique-7480,"Great , well done @Sree - appreciate quick turn around time"
+2026-01-21 11:05:17,PLAYER,business-comms-7480,we are back in business now
+2026-01-21 11:05:26,bez,business-comms-7480,Perfect- thanks SRee
+2026-01-21 11:05:33,daniel,online-boutique-7480,It's definitely working again!
+2026-01-21 11:05:38,shay,online-boutique-7480,Wow that was intense!
+2026-01-21 11:05:40,bez,business-comms-7480,Thanks! for resolving it quickly
+2026-01-21 11:05:43,hamed,online-boutique-7480,Good job guys
+2026-01-21 11:05:47,tinus,online-boutique-7480,Yes well done! that could have gone much worse so props to everyone
+2026-01-21 11:05:51,tinus,online-boutique-7480,We will have a Post-Incident Review (PIR) to understand what happened
+2026-01-21 11:06:02,uptimelabs,online-boutique-7480,"Drill Wrap-Up
+
+Thanks for playing! This session is now closed.
+
+Please return to your Uptime Labs tab to review your performance and complete the Retrospective & Feedback form.
+
+If you've already closed the tab, you can reopen the form using the button below."
+2026-01-21 11:06:15,uptimelabs,online-boutique-7480,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/29/7480/feedback"

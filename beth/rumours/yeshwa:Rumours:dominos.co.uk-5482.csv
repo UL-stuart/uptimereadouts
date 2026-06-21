@@ -1,0 +1,120 @@
+datetime,player,channel,message
+2025-08-21 10:08:47,tinus,online-boutique-5482,"Hi team, let's have a mood check send an emoji to describe your mood"
+2025-08-21 10:08:51,tinus,online-boutique-5482,"I'll go first, :thumbsup:"
+2025-08-21 10:08:57,tanya,online-boutique-5482,:thumbsup:
+2025-08-21 10:08:59,tinus,online-boutique-5482,I'm excited about showing off all your hard work at todays stakeholder meeting
+2025-08-21 10:09:02,daniel,online-boutique-5482,":skull: knackered, had a few too many late nights this week"
+2025-08-21 10:09:05,shay,online-boutique-5482,:rainbow:
+2025-08-21 10:09:08,hamed,online-boutique-5482,living the dream :smile:
+2025-08-21 10:09:12,bez,online-boutique-5482,:smirk: im excited to see the show too
+2025-08-21 10:09:14,tinus,online-boutique-5482,shouldn't you be prepping for the meeting 
+2025-08-21 10:09:17,bez,online-boutique-5482,:sweat_smile: i am indeed I'll leave you lot to it
+2025-08-21 10:09:19,shay,online-boutique-5482,hang in there @daniel its gonne be the weekend sooner or later :joy:
+2025-08-21 10:09:22,tinus,online-boutique-5482,I should get on with my prep too have a good day team
+2025-08-21 10:09:23,daniel,online-boutique-5482,@shay strict diet of energy drink for me today lol
+2025-08-21 10:09:26,daniel,online-boutique-5482,hope the presentation goes well @tinus
+2025-08-21 10:09:28,tanya,online-boutique-5482,:raised_hands:
+2025-08-21 10:09:44,UptimeLabs,online-boutique-5482,Level 7 start button
+2025-08-21 10:14:22,PLAYER,online-boutique-5482,Clicked Start button
+2025-08-21 10:14:23,UptimeLabs,online-boutique-5482,":alarm_clock: - You have 20 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-08-21 10:14:25,tinus,online-boutique-5482,"Hey team, I'm texting from the board room - kinda embarrassing but in my demo to the board, I tried to add a pair of Aviator sunglasses to the shopping cart and I got a ?http 500?"
+2025-08-21 10:14:27,tinus,online-boutique-5482,"I've bought some time but need this be able to do this demo if we can lets get this sorted in the next 20 minutes.
+"
+2025-08-21 10:14:30,tinus,online-boutique-5482,500 screenshot
+2025-08-21 10:14:33,tanya,online-boutique-5482,"uh oh, those Aviators are top sellers due to the new Top Gun movie...It's size up the issue time Yeshwanth Tumkur Prakash"
+2025-08-21 10:14:35,shay,online-boutique-5482,Come on this can't be happening!
+2025-08-21 10:14:37,tinus,online-boutique-5482,"I'm in this meeting so, wont be able to help but I trust that you all can get this fixed asap, just @ me if you need anything"
+2025-08-21 10:14:41,shay,online-boutique-5482,ok looking into this now
+2025-08-21 10:15:35,Shay,online-boutique-5482,"I tried placing an order , its working fine for me"
+2025-08-21 10:16:11,PLAYER,online-boutique-5482,"Tinus, Let me check from my end with by doing the flow"
+2025-08-21 10:16:18,UptimeLabs,online-boutique-5482,:star: Reproduces the incident
+2025-08-21 10:16:43,Bez,business-comms-5482,I heard Tinus is facing issues with the website. He's in a demo presentation in the conference hall
+2025-08-21 10:16:51,Tinus,online-boutique-5482,Please
+2025-08-21 10:17:15,Tinus,online-boutique-5482,"It's a high-stakes demo, and a lot of customers and potential investors are here"
+2025-08-21 10:17:40,Tinus,online-boutique-5482,Demo presentation will start in next 15 mins
+2025-08-21 10:18:11,PLAYER,online-boutique-5482,"Tinus, Can you please confirm from which location shopping cart is impacted"
+2025-08-21 10:18:18,UptimeLabs,online-boutique-5482,:star: Asking questions to validate impact of the problem
+2025-08-21 10:18:20,Tinus,online-boutique-5482,Check if customers are having any issues
+2025-08-21 10:19:18,Tinus,online-boutique-5482,Whenever i'm clicking on place order. I'm seeing this error of item not found
+2025-08-21 10:19:37,Bez,business-comms-5482,Any updates ???
+2025-08-21 10:20:03,PLAYER,online-boutique-5482,"Bob, can you please check if there is any issue while adding a product to cart (specially for sunglasses)
+As Tinus reported that he is unable to add sunglasses to cart but when i tried to replicate it working fine for me"
+2025-08-21 10:20:10,UptimeLabs,online-boutique-5482,:star: Attempt to replicate the issue
+2025-08-21 10:20:12,Bob,online-boutique-5482,Let me check my reports
+2025-08-21 10:20:46,Bob,online-boutique-5482,No reports from users as well
+2025-08-21 10:20:55,Bob,online-boutique-5482,I'm able to place the orders
+2025-08-21 10:21:04,PLAYER,online-boutique-5482,"Tinus, Please confirm the source of the location, mean while I check logs"
+2025-08-21 10:21:14,Tinus,online-boutique-5482,"@Yeshwanth , please sort this out asap!"
+2025-08-21 10:21:36,Tinus,online-boutique-5482,I'm in the conference hall down the building
+2025-08-21 10:21:50,UptimeLabs,online-boutique-5482,:bulb: Form an effective investigation team
+2025-08-21 10:22:22,Shay,online-boutique-5482,Perhaps this might be a local issue to Tinus only
+2025-08-21 10:22:32,PLAYER,online-boutique-5482,"Hamed S, Please check is there any issues from Infra end.
+As Tinus is about to start his demo to client, but we are unable to replicate the isseus"
+2025-08-21 10:22:39,UptimeLabs,online-boutique-5482,:star: Escalating when required
+2025-08-21 10:22:48,Hamed,online-boutique-5482,Sure on it
+2025-08-21 10:22:56,Hamed,online-boutique-5482,Can you please create a ticket
+2025-08-21 10:23:04,PLAYER,online-boutique-5482,Let me send a Business comm first
+2025-08-21 10:23:09,Hamed,online-boutique-5482,Tinus' demo is very important
+2025-08-21 10:23:59,Hamed,online-boutique-5482,"In our infrastructure, I don't see any issues. All the servers are running and apps are healthy"
+2025-08-21 10:24:21,PLAYER,business-comms-5482,Add products to cart in not working as expected and throwing 500 errors
+2025-08-21 10:24:21,PLAYER,business-comms-5482,*Incident Number INC100099:* Add products to cart in not working as expected and throwing 500 errors
+2025-08-21 10:24:21,UptimeLabs,online-boutique-5482,:star: Incident record created
+2025-08-21 10:24:23,UptimeLabs,online-boutique-5482,:star: Send first comms in first 5 minutes
+2025-08-21 10:24:37,Hamed,online-boutique-5482,I found an observation
+2025-08-21 10:25:01,Hamed,online-boutique-5482,The product ID in Tinus's screenshot is not in production
+2025-08-21 10:25:20,Hamed,online-boutique-5482,"in prod : OLJCESPC7Z
+in Tinus's screenshot : OLJCESPC7D"
+2025-08-21 10:26:01,PLAYER,business-comms-5482,"Bez, Updates to business, we are in a situation where Tinus is unable to add products to cart but issue is not replicating on others
+Seems to be local issues which Tinus location, we are working on the same.
+Will send updates on the incident"
+2025-08-21 10:26:04,Bez,business-comms-5482,"Yes, please resolve it quickly for him. It's a high-stakes situation for business"
+2025-08-21 10:26:50,Hamed,online-boutique-5482,Check the same product on our website
+2025-08-21 10:27:06,PLAYER,online-boutique-5482,"Daniel, Can you please take a look, this seems to be an issue with products"
+2025-08-21 10:27:23,Daniel,online-boutique-5482,"Sure, this is definitely local to Tinus only"
+2025-08-21 10:27:52,Daniel,online-boutique-5482,This morning he tested my one of the feature via a feature enabled branch in prod
+2025-08-21 10:28:32,PLAYER,online-boutique-5482,"I can see there are three prod changes went live
+CHG89358:CheckoutService:version 4.6 deployed:PROD:Shay N
+CHG89360:AdService:version 8.4 deployed:PROD:Tanya
+CHG89359:PaymentService:version 1.6 deployed:PROD:Daniel B
+
+Daniel, Please check if any of these releases are the cause for the issue"
+2025-08-21 10:28:42,UptimeLabs,online-boutique-5482,:star: Reviewed changes
+2025-08-21 10:28:48,Daniel,online-boutique-5482,I am working on the feature of enhancing product listing. So this product in Tinus's screenshot is in my testing DB
+2025-08-21 10:29:07,PLAYER,online-boutique-5482,"Hamed / Daniel, This needs to be sorted in next 10 minutes, as Tinus have a Demo with client"
+2025-08-21 10:29:15,UptimeLabs,online-boutique-5482,:star: Track actions and time box them
+2025-08-21 10:29:21,Daniel,online-boutique-5482,"I don't think it's because of changes. If it were the case, then it would have affected customers as well"
+2025-08-21 10:29:25,PLAYER,online-boutique-5482,"Daniel, Thank you"
+2025-08-21 10:30:24,UptimeLabs,online-boutique-5482,:alarm_clock: - You have less than 4 minutes. You can type `/help` if you need any reminders.
+2025-08-21 10:30:50,PLAYER,business-comms-5482,"Bez,
+Working on resolution.
+This issue is impacting only one user as we are aware and I have a confirmation from Bob that all users are not impacted"
+2025-08-21 10:31:09,PLAYER,online-boutique-5482,"Daniel, Any updates on the issue?"
+2025-08-21 10:31:18,UptimeLabs,online-boutique-5482,:star: Manage actions and timings
+2025-08-21 10:31:24,Daniel,online-boutique-5482,I think it's specific to the browser
+2025-08-21 10:31:33,PLAYER,online-boutique-5482,"Demo to investors start in less that 5 minutes.
+Please get this fixed asap"
+2025-08-21 10:31:52,Daniel,online-boutique-5482,Could be his browser's cache messing up with the prod website
+2025-08-21 10:32:17,PLAYER,online-boutique-5482,"Tinus, Can you please another browser ?
+Which browser currently you are using?
+I tried Mozilla and its works well for me"
+2025-08-21 10:32:24,UptimeLabs,online-boutique-5482,:alarm_clock: - You have less than 2 minutes. You can type `/help` if you need any reminders.
+2025-08-21 10:32:30,Tinus,online-boutique-5482,I only have one browser at the moment
+2025-08-21 10:32:41,PLAYER,online-boutique-5482,"Tinus, Please use Incognito mode and give a try"
+2025-08-21 10:32:51,Tinus,online-boutique-5482,Sure let me try it
+2025-08-21 10:33:10,Bez,business-comms-5482,Have we found the issue ?
+2025-08-21 10:33:17,tinus,online-boutique-5482,Damn! thats it
+2025-08-21 10:33:19,tinus,online-boutique-5482,"Great Ive got to do my presentation now, thanks for figuring this out so quickly. @daniel @shay can you look in to a cache busting solution?"
+2025-08-21 10:33:21,PLAYER,online-boutique-5482,"Tinus, No worries, as Tech team is suspecting issues is about cache.
+Clean up cache or use incognito mode"
+2025-08-21 10:33:21,shay,online-boutique-5482,it was the cache! sure we can do that
+2025-08-21 10:33:23,daniel,online-boutique-5482,"no worries boss, at least its not a significat issue"
+2025-08-21 10:33:24,daniel,online-boutique-5482,good luck with the presentation!
+2025-08-21 10:33:25,tanya,online-boutique-5482,yes good luck @tinus
+2025-08-21 10:33:27,shay,online-boutique-5482,good luck @tinus!
+2025-08-21 10:33:38,UptimeLabs,online-boutique-5482,Start retro and feedback
+2025-08-21 10:33:51,PLAYER,online-boutique-5482,"Tinus, Cool
+Daniel / Hamed Thanks for you support"
+2025-08-21 10:34:22,PLAYER,business-comms-5482,"Bez Issue is now resolved
+Issue was with with his local system cache"
+2025-08-21 10:34:41,PLAYER,online-boutique-5482,Clicked Start_feedback button
+2025-08-21 10:35:31,UptimeLabs,online-boutique-5482,Submission successful

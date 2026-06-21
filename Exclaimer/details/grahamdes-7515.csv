@@ -1,0 +1,130 @@
+datetime,player,channel,message
+2026-01-23 11:01:54,shay,online-boutique-7515,Morning team! Feeling pumped for the big ?Hipster Haul? event this week?
+2026-01-23 11:01:57,bez,online-boutique-7515,Absolutely! Can't wait to see all our hard work pay off. 
+2026-01-23 11:02:01,tanya,online-boutique-7515,"Agreed, it's going to be a game-changer for us"
+2026-01-23 11:02:07,bob,online-boutique-7515,Customer support team standing by to handle any queries. Let's do this!
+2026-01-23 11:02:12,bez,online-boutique-7515,"Team, the excitement is palpable! I have full confidence in each of you to make this event a roaring success."
+2026-01-23 11:02:16,bez,online-boutique-7515,"Let's showcase our best and leave our customers thrilled with what we have to offer. Together, we'll make it happen!"
+2026-01-23 11:02:19,tinus,online-boutique-7515,"Absolutely, Bez! And let's not forget the potential revenue boost this event could bring. Our projections are looking promising."
+2026-01-23 11:02:22,tanya,online-boutique-7515,:moneybag: :moneybag: :moneybag:
+2026-01-23 11:02:25,daniel,online-boutique-7515,Fingers crossed everything goes smoothly this time! :crossed_fingers: :joy:
+2026-01-23 11:02:32,uptimelabs,online-boutique-7515,"Welcome to Details Matter, the responsibility is on you to size up the problem.
+
+? *Use `/help` at any time for a list of useful links and commands*
+ ? *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin"
+2026-01-23 11:04:03,tinus,online-boutique-7515,"Speaking of celebrations, any recommendations for a post-event holiday destination? I could use some time off after this!"
+2026-01-23 11:04:08,maya,online-boutique-7515,How about a tropical paradise with no Wi-Fi? :desert_island: 
+2026-01-23 11:04:12,bob,online-boutique-7515,"Hey folks, hate to rain on the parade, but I've got some new reports coming in about customers encountering issues with the products on the website."
+2026-01-23 11:04:17,daniel,online-boutique-7515,"Yeah, Bob, anything specific you're noticing? Error messages, affected payment methods?"
+2026-01-23 11:04:21,bob,online-boutique-7515,Customers are not able to place orders
+2026-01-23 11:04:25,tanya,online-boutique-7515,"Alright team, let's get to work. Tinus, you can start planning that holiday once we've got this sorted!."
+2026-01-23 11:04:29,tinus,online-boutique-7515,"Deal! But first, let's get to the bottom of this issue"
+2026-01-23 11:04:32,bez,online-boutique-7515,"Hey team, just dropping in to emphasise the urgency of resolving this issue swiftly. We've got a major event on the horizon - the launch of our exclusive ""Hipster Haul Weekend"" next week."
+2026-01-23 11:04:37,bez,online-boutique-7515,"It's poised to be our biggest sale yet, and any delays caused by this payment glitch could seriously impact our preparations."
+2026-01-23 11:04:40,bez,online-boutique-7515,Let's prioritise frequent updates and keep the communication channels wide open.
+2026-01-23 11:04:44,shay,online-boutique-7515,We have a lot of recent changes made to the platform so im going to compile a list with the changes and the descriptions.
+2026-01-23 11:04:49,shay,online-boutique-7515,Will send it over soon
+2026-01-23 11:05:16,PLAYER,online-boutique-7515,@bob How many customers have reported issues so far and are they from any specific region?
+2026-01-23 11:05:20,uptimelabs,online-boutique-7515,:star: Asking questions to validate impact of the problem
+2026-01-23 11:05:27,bob,online-boutique-7515,from what i can tell most of the reports seems to be coming from the two regions
+2026-01-23 11:05:30,bob,online-boutique-7515,My team has gathered the customer reports as of the last 3 hours to make it easier to understand
+2026-01-23 11:05:34,bob,online-boutique-7515,
+2026-01-23 11:05:46,bob,online-boutique-7515,Perhaps its similar to our incident in Frankfurt with the network being down for that region?
+2026-01-23 11:06:58,PLAYER,online-boutique-7515,
+2026-01-23 11:06:58,uptimelabs,business-comms-7515,*Incident Number INC100089:* Sev-2 Customers unable to place orders on website
+2026-01-23 11:07:13,bez,business-comms-7515,what is the impact on this issue?
+2026-01-23 11:08:18,PLAYER,online-boutique-7515,@tanya Are there any changes to the platform that you are aware of that would effect customers in those regions?
+2026-01-23 11:08:22,uptimelabs,online-boutique-7515,:star: Check changes done to the platform
+2026-01-23 11:08:25,tanya,online-boutique-7515,"I will get the link to the changes now, 1 second"
+2026-01-23 11:08:49,tanya,online-boutique-7515,https://uptime-labs.atlassian.net/wiki/external/YjZjNWFhYjFlZmQ0NDBmOWFlZDNlY2VjNDUxNzc4NjA
+2026-01-23 11:08:50,PLAYER,online-boutique-7515,@bob Can you confirm when customers first started reporting this issue?
+2026-01-23 11:09:02,bob,online-boutique-7515,sure i will look into that now
+2026-01-23 11:09:54,bob,online-boutique-7515,i see reports on this issue about 1 hour back
+2026-01-23 11:10:18,bob,online-boutique-7515,they arent too frequent but as time went on they have become more frequent
+2026-01-23 11:10:51,PLAYER,online-boutique-7515,@maya Can you investigate if this is related to any security updates that were made?
+2026-01-23 11:10:54,uptimelabs,online-boutique-7515,:star: Reviewed changes
+2026-01-23 11:11:03,maya,online-boutique-7515,"Sure thing, what regions is this impacting and what issue are we facing? this info will help with my investigation"
+2026-01-23 11:11:18,PLAYER,online-boutique-7515,@hamed Could this be caused by the API key change?
+2026-01-23 11:11:48,hamed,online-boutique-7515,"sorry i havent been keeping up with the chat, whats going on?"
+2026-01-23 11:12:36,PLAYER,online-boutique-7515,"@maya from the information that @bob has shared, this appears to be affecting customers in Turkey and Japan more than others."
+2026-01-23 11:12:38,uptimelabs,online-boutique-7515,:star: Qualify the problem
+2026-01-23 11:13:03,maya,online-boutique-7515,"i see, so people from that region cant place orders, i will look into this now"
+2026-01-23 11:13:23,PLAYER,online-boutique-7515,@hamed Customers have reported being unable to place orders
+2026-01-23 11:13:27,uptimelabs,online-boutique-7515,:star: Escalating when required
+2026-01-23 11:13:37,maya,online-boutique-7515,are you able to reporduce the issue?
+2026-01-23 11:13:52,PLAYER,online-boutique-7515,@daniel Can you review the changes with @shay ?
+2026-01-23 11:14:06,hamed,online-boutique-7515,"at what point do they see the issue, have we a good understanding of what the issue is?"
+2026-01-23 11:14:12,hamed,online-boutique-7515,and what do the logs say?
+2026-01-23 11:14:45,PLAYER,online-boutique-7515,@maya I have been unable to reproduce the issue
+2026-01-23 11:14:48,uptimelabs,online-boutique-7515,:star: Attempt to replicate the issue
+2026-01-23 11:15:01,shay,online-boutique-7515,"let me give it a try, i have a vpn"
+2026-01-23 11:15:08,maya,online-boutique-7515,so far nothing is coming up from the security scans
+2026-01-23 11:15:25,shay,online-boutique-7515,i can load the site fine with a vpn on that location
+2026-01-23 11:15:52,shay,online-boutique-7515,"Oh i think i found the issue, when i swap to their local currency i am mmet with an error"
+2026-01-23 11:16:04,PLAYER,business-comms-7515,"@bez Some customers have reported being unable to place orders on the website, we are checking to see how widespread the issue is."
+2026-01-23 11:16:11,shay,online-boutique-7515,Graham can you do the same without the VPN and see  if youre having any issues
+2026-01-23 11:16:57,hamed,online-boutique-7515,"thats good information shay thanks, but we need more from a logs perspective, Graham i suggest getting the engenerring team to look into this if you think its a good idea"
+2026-01-23 11:17:32,bob,online-boutique-7515,"i just checked and i am seeing orders coming from that region, seems they can pay with dollars and poiunds"
+2026-01-23 11:18:01,bez,business-comms-7515,"ok thanks for the update, do we know what % of users see this issue?"
+2026-01-23 11:18:35,PLAYER,online-boutique-7515,"@maya I have been able to reproduce the issue by changing the currency:
+HTTP Status: 500 Internal Server Error
+
+Error Message: rpc error: code = Unavailable desc = connection error: desc = ""transport: Error while dialing: dial tcp 172.20.164.247:7000: connect: connection refused"" failed to fetch necessary data for processing
+
+Function: main.(*dataProcessor).fetchData
+
+File: /src/data_processor.go:124
+
+We apologize for the inconvenience. Our system encountered an unexpected issue while attempting to retrieve essential data. Our team is actively investigating the problem. Please try your request again later.
+
+If you need immediate assistance, please contact support."
+2026-01-23 11:18:39,uptimelabs,online-boutique-7515,:star: Reproduces the incident
+2026-01-23 11:18:47,shay,online-boutique-7515,thats what i see aswell
+2026-01-23 11:19:22,maya,online-boutique-7515,this doesnt seem like a security issue at all then
+2026-01-23 11:19:31,PLAYER,online-boutique-7515,@maya and @tanya Could you investigate why the connections are being refused?
+2026-01-23 11:19:37,uptimelabs,online-boutique-7515,:star: Form an effective investigation team
+2026-01-23 11:19:52,tanya,online-boutique-7515,i will check with the network team
+2026-01-23 11:20:42,PLAYER,business-comms-7515,"@bez This is only affecting customers from Turkey and Japan, which is 9% of our customers."
+2026-01-23 11:21:14,shay,online-boutique-7515,"i see hamed suggested we look into the logs, did you miss that message Graham?"
+2026-01-23 11:21:36,PLAYER,online-boutique-7515,@daniel and @shay Could those errors be caused by software deployments?
+2026-01-23 11:21:39,daniel,online-boutique-7515,i will take a look into this now
+2026-01-23 11:22:16,hamed,online-boutique-7515,"in the recent changes maya has a currency change, @graham what do you make of that?"
+2026-01-23 11:22:30,tanya,online-boutique-7515,no issues when it comes to the network connections
+2026-01-23 11:23:08,daniel,online-boutique-7515,no new software update would impact like this
+2026-01-23 11:23:26,daniel,online-boutique-7515,could this be related to the currency changes?
+2026-01-23 11:23:33,daniel,online-boutique-7515,have we looked into the api's?
+2026-01-23 11:24:11,hamed,online-boutique-7515,i updated the API's over 8 hours ago
+2026-01-23 11:24:24,hamed,online-boutique-7515,if there was an issue im sure they would have shown up long ago
+2026-01-23 11:25:06,PLAYER,online-boutique-7515,"@daniel and @shay I am seeing this message in the check-out service logs:
+""failed to charge card: could not charge the card: rpc error: code = Code(400) desc = Sorry, we cannot process visa_electron credit cards. Only VISA or MasterCard is accepted."
+2026-01-23 11:25:10,uptimelabs,online-boutique-7515,:star: Facts over opinion
+2026-01-23 11:25:43,shay,online-boutique-7515,"i havent looked at the logs yet, let me take a look and see if i can find anyting else"
+2026-01-23 11:26:00,daniel,online-boutique-7515,"same here, not sure what to make of it"
+2026-01-23 11:26:14,shay,online-boutique-7515,"i see this error 
+ERROR: Authentication failed for currency exchange rate service. ERROR CODE: 401 Unauthorized"
+2026-01-23 11:26:54,PLAYER,online-boutique-7515,"@daniel Would we be able to rollback the changes to the check-out service alone, or would we need to rollback changes for other services too?"
+2026-01-23 11:26:57,uptimelabs,online-boutique-7515,:star: Restoration over root cause analysis
+2026-01-23 11:27:24,daniel,online-boutique-7515,its an independant change and has no dependencies
+2026-01-23 11:28:15,PLAYER,online-boutique-7515,@daniel
+2026-01-23 11:28:18,tanya,online-boutique-7515,i dont think checkout will be the issue
+2026-01-23 11:28:27,tanya,online-boutique-7515,"if it was, all users should see this issue"
+2026-01-23 11:28:37,tanya,online-boutique-7515,it seems like its local to them 2 currencies
+2026-01-23 11:29:05,tanya,online-boutique-7515,"Rechecking the currency healthy and changes may be the best move, what do you think graham?"
+2026-01-23 11:29:23,bez,business-comms-7515,how is the investigation going?
+2026-01-23 11:29:30,bez,business-comms-7515,are we close to a resolution?
+2026-01-23 11:30:56,PLAYER,online-boutique-7515,@tanya Could you provide further details on why you think it is the currency service?
+2026-01-23 11:31:03,uptimelabs,online-boutique-7515,:star: Ask team members to provide evidence of their assertions
+2026-01-23 11:31:45,tanya,online-boutique-7515,I think it is because of the error shay sent in and i checked all currencies and i can make a purchase with no issue unless its them 2 we have reported
+2026-01-23 11:31:56,tanya,online-boutique-7515,seems to point in that direction
+2026-01-23 11:32:32,tanya,online-boutique-7515,seems the currency exchange service is having issues operationg correctly
+2026-01-23 11:32:50,PLAYER,online-boutique-7515,@daniel is there a dependency between the currency service and the checkout service?
+2026-01-23 11:33:10,daniel,online-boutique-7515,cart service would use currency service to see the price of items
+2026-01-23 11:33:35,daniel,online-boutique-7515,if tanya is right this this may be why chckout is seeing issues (due to an issue in currency service)
+2026-01-23 11:33:48,daniel,online-boutique-7515,i was looking at my change and i am confident its not the issue
+2026-01-23 11:33:51,PLAYER,business-comms-7515,@bez We are just confirm the best option for restoring the service.
+2026-01-23 11:34:11,uptimelabs,online-boutique-7515,"Thank you for playing 'Details Matter', We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit start when you are ready."
+2026-01-23 11:34:35,uptimelabs,online-boutique-7515,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/19/7515/feedback"

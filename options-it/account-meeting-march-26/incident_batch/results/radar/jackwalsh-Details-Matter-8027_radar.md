@@ -1,0 +1,9 @@
+# jackwalsh-Details-Matter-8027.csv
+
+| Expertise | Score | Evidence | Notes |
+|-----------|-------|----------|-------|
+| Incident Mechanics | 5 | [uptimelabs] "*Incident Number INC100071:* - SEV1 - Multiple Customers cannot place orders (JPY and TRY Regions)."; "Looks good on my end, tested and confirmed working."; "Issue resolved." | Incident record + SEV via bot at T+5; closure declared after restoration evidence from Tanya/Bob at ~T+22. |
+| External Comms | 4 | "We have users unable to place orders in JPY and TRY regions."; "Working on it - rollback didn't work, preparing intraday changes to resolve the issue - next update in 2 minutes."; "COMMS going out now to update customers." | Proactive in biz-comms from T+8 with frequent updates and next-update promise at T+20; minor lack of structured template. |
+| Internal Comms | 5 | "I am able to place orders fine - @tanya / @daniel can you place orders on your end?"; "Adding @hamed as well."; "Action Plan: @tanya contact the third party... @hamed prepare the change... @daniel be ready to update configuration..." | Recruited by name, escalated, coordinated roles/timeboxing; calm and directive; cross-checked with support and engineers. |
+| Identify Scope | 5 | "Hey @bob - can you confirm if all customers are impacted?"; "I see the issue when accessing Japan and Turkey currencies."; "Error received: HTTP Status: 500 Internal Server Error" | Replicated at ~T+4, narrowed to JPY/TRY, shared concrete error details; asked support for timing/impact. |
+| Commanding the Incident | 4 | "Roll this back ASAP @hamed."; "Action Plan: @tanya... @hamed... @daniel..."; "Wait until the change is compelte and confirmation is received to let customers know - @bob" | Clear decisions, prioritized restoration, controlled comms (rollback at T+16, plan at T+19); did not explicitly state IC role. |

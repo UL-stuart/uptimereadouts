@@ -1,0 +1,183 @@
+datetime,player,channel,message
+2025-11-14 14:10:14,Bez,online-boutique-6781,"Morning, team! Anyone else need a triple espresso today?"
+2025-11-14 14:10:23,Tinus,online-boutique-6781,"You're not the only one, Bez! The reports from last week are still giving me nightmares."
+2025-11-14 14:10:33,Bob,online-boutique-6781,"Tell me about it, Tinus."
+2025-11-14 14:10:36,Bob,online-boutique-6781,"But hey, at least it's sunny outside today. :sunrise:"
+2025-11-14 14:10:38,Bez,online-boutique-6781,"True, a little sunshine makes everything better."
+2025-11-14 14:10:40,Bez,online-boutique-6781,"Also, I'm having my usual green smoothie. That's my secret energy booster."
+2025-11-14 14:10:42,Daniel,online-boutique-6781,"Nice, Bez! I'll stick with my coffee though."
+2025-11-14 14:10:43,Daniel,online-boutique-6781,Anyone else excited for the launch of the new BitCoin :coin: payment feature this week?
+2025-11-14 14:10:45,Tinus,online-boutique-6781,"Absolutely, Daniel! Been looking forward to it."
+2025-11-14 14:10:47,Tinus,online-boutique-6781,"By the way, no spoilers, but did anyone catch the football game? Epic comeback!"
+2025-11-14 14:10:50,Shay,online-boutique-6781,I missed it! I was knee deep in a sci-fi novel. Anyone else into that?
+2025-11-14 14:10:58,Tanya,online-boutique-6781,"Oh, I love sci-fi! Can you share the name of the book, Shay?"
+2025-11-14 14:11:06,Daniel,online-boutique-6781,I've been reading a bit of sci-fi myself.
+2025-11-14 14:11:08,Daniel,online-boutique-6781,"Looking forward to sharing recommendations, Shay!"
+2025-11-14 14:11:12,Bez,online-boutique-6781,"There's always so much happening outside of work! Keep the energy :battery: going, team."
+2025-11-14 14:11:16,Bez,online-boutique-6781,It's going to be another productive day. :raised_hands:
+2025-11-14 14:11:18,UptimeLabs,online-boutique-6781,"Welcome to The Chain, the responsibility is on you to size up the problem.
+
+? *Use `/help` at any time for a list of useful links and commands*
+ ? *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin Start button"
+2025-11-14 14:12:45,PLAYER,online-boutique-6781,Clicked Start button
+2025-11-14 14:12:45,UptimeLabs,online-boutique-6781,":alarm_clock: - You have 25 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-11-14 14:12:46,Bob,online-boutique-6781,"Hey, we're getting reports of customers struggling to make purchases"
+2025-11-14 14:12:48,Bob,online-boutique-6781,@here Anyone else seeing this?
+2025-11-14 14:12:51,Tinus,online-boutique-6781,"Yes, I've noticed the same, @Bob . It seems like an error in the system"
+2025-11-14 14:12:54,Bez,online-boutique-6781,"Whatever it is, we need to sort it out quickly."
+2025-11-14 14:12:56,Bez,online-boutique-6781,we need to step on it! before the social media backlash is turning into a storm.
+2025-11-14 14:13:00,Tinus,online-boutique-6781,"Who is handling incidents today? Please size up the issue, this is urgent"
+2025-11-14 14:13:24,PLAYER,online-boutique-6781,Hi Bob where are these customers located? globally or a specific region?
+2025-11-14 14:13:33,UptimeLabs,online-boutique-6781,:star: Asking questions to validate impact of the problem
+2025-11-14 14:13:40,Bob,online-boutique-6781,Let me check the reports
+2025-11-14 14:13:56,Bob,online-boutique-6781,"Getting over 120+ reports, looks like customers unable to make payments"
+2025-11-14 14:14:08,Bob,online-boutique-6781,Looks like a European issue
+2025-11-14 14:14:11,PLAYER,online-boutique-6781,Bob do you get any specifics? what problems are they encountering with the payment? any error messages ?
+2025-11-14 14:14:33,Bob,online-boutique-6781,They are facing while trying to do payments via bitcoin
+2025-11-14 14:15:32,PLAYER,business-comms-6781,Sev 1 - European customers not able to perform bitcoin payments - 120 + reports so far
+2025-11-14 14:15:38,UptimeLabs,online-boutique-6781,:star: Qualify the problem
+2025-11-14 14:15:38,UptimeLabs,online-boutique-6781,:star: Formally assign criticality level to the incident
+2025-11-14 14:15:48,PLAYER,online-boutique-6781,Sev 1 - European customers not able to perform bitcoin payments - 120 + reports so far
+2025-11-14 14:16:16,Bez,business-comms-6781,Is this an internal issue or related to any 3rd party provider from Europe?
+2025-11-14 14:16:33,Bob,online-boutique-6781,Reports are rising
+2025-11-14 14:17:35,PLAYER,online-boutique-6781,Daniel Hamed  Any changes done recently that could be causing this?
+2025-11-14 14:17:42,UptimeLabs,online-boutique-6781,:star: Check changes done to the platform
+2025-11-14 14:17:54,Bob,online-boutique-6781,Wait
+2025-11-14 14:18:18,Bob,online-boutique-6781,New reports are coming up saying none of the users are able to pay now
+2025-11-14 14:18:23,PLAYER,online-boutique-6781,Bob These reports from Europe any specific counties that form a patern?
+2025-11-14 14:18:36,Daniel,online-boutique-6781,Here are the changes : <https://uptime-labs.atlassian.net/wiki/external/MjMxNGU0ZjU1ZTVhNDA0NWJmY2M1NjU1OGFiMGY2YjA>
+2025-11-14 14:18:57,Bob,online-boutique-6781,Order confirmations metric is flat to 0
+2025-11-14 14:19:30,PLAYER,online-boutique-6781,Daniel This Change CHG89779 - What was done? And was it properly tested?
+2025-11-14 14:19:34,UptimeLabs,online-boutique-6781,:star: Reviewed changes
+2025-11-14 14:19:41,Daniel,online-boutique-6781,I'm seeing errors in payment logs
+2025-11-14 14:20:07,PLAYER,online-boutique-6781,Daniel Is this an internal issue or related to any 3rd party provider from Europe?
+2025-11-14 14:20:17,Daniel,online-boutique-6781,[ERROR] [payment-service] Transaction failed - unknown error returned from upstream service. TraceID=7fdc91a2
+2025-11-14 14:20:34,Daniel,online-boutique-6781,"About 3rd party , platform guys give us more clarity"
+2025-11-14 14:20:41,PLAYER,business-comms-6781,Sev 1 - Payments now not possible globally - Resolver team have found errors in logs
+2025-11-14 14:20:53,Daniel,online-boutique-6781,So far i'm seeing there are so many popped in payment service logs
+2025-11-14 14:21:19,Bez,business-comms-6781,This is worst. How fast can we come back online for the payments ?
+2025-11-14 14:21:23,PLAYER,online-boutique-6781,Daniel would this indicate a 3rd party? returned from upstream service.?
+2025-11-14 14:21:55,Daniel,online-boutique-6781,There seems to be an error coming up from cart service which act as an upstream for payments
+2025-11-14 14:22:06,Daniel,online-boutique-6781,[WARN] [cart-service] Request to payment endpoint timed out after 3000ms. Retrying (attempt 3/5)...
+2025-11-14 14:22:39,PLAYER,online-boutique-6781,Tanya Is see your name on this CHG89778 related to CartRedis - Please check if related
+2025-11-14 14:23:01,Tanya,online-boutique-6781,Sure
+2025-11-14 14:23:16,Tanya,online-boutique-6781,Do we know at what time the issue started ?
+2025-11-14 14:23:35,PLAYER,online-boutique-6781,Bob Do we know at what time the issue started ?
+2025-11-14 14:23:39,UptimeLabs,online-boutique-6781,:star: Facts over opinion
+2025-11-14 14:23:52,Bob,online-boutique-6781,Around 2 hrs ago
+2025-11-14 14:24:10,Tanya,online-boutique-6781,Then latest change around that time was into payments
+2025-11-14 14:24:37,PLAYER,online-boutique-6781,Tanya can you elaborate?
+2025-11-14 14:24:40,Tanya,online-boutique-6781,I dont see it as a 3rd party issue
+2025-11-14 14:24:57,Tanya,online-boutique-6781,This looks like to be a payments change causing it
+2025-11-14 14:25:24,Bez,business-comms-6781,Have we prepared any holding statement for the customers ?
+2025-11-14 14:25:31,PLAYER,business-comms-6781,"• *All customers globally unable to complete payments*, initially reported as Bitcoin payment failures in Europe.
+• *Order confirmations dropped to zero*, indicating full transaction disruption.
+• Over *120+ customer reports* and rising.
+*Key Findings:*
+• Outage coincides with recent platform changes (*CHG89779 – Payment Service*, *CHG89778 – CartRedis*).
+• Logs show *payment-service transaction failures* and *cart-service timeouts*, suggesting upstream dependency issues.
+• Root cause investigation underway; potential link to recent code changes and/or third-party integrations.
+*Immediate Actions Taken:*
+• Incident formally classified as *Sev 1*.
+• Change review initiated; engineering teams analyzing logs and rollback options.
+• Communication channels active to validate scope and mitigate customer impact.
+*Next Steps:*
+• Confirm root cause and implement fix or rollback.
+• Monitor payment metrics and customer reports.
+• Prepare post-incident review and preventive measures.
+"
+2025-11-14 14:25:31,Daniel,online-boutique-6781,I can rollback my change
+2025-11-14 14:25:40,PLAYER,online-boutique-6781,"• *All customers globally unable to complete payments*, initially reported as Bitcoin payment failures in Europe.
+• *Order confirmations dropped to zero*, indicating full transaction disruption.
+• Over *120+ customer reports* and rising.
+*Key Findings:*
+• Outage coincides with recent platform changes (*CHG89779 – Payment Service*, *CHG89778 – CartRedis*).
+• Logs show *payment-service transaction failures* and *cart-service timeouts*, suggesting upstream dependency issues.
+• Root cause investigation underway; potential link to recent code changes and/or third-party integrations.
+*Immediate Actions Taken:*
+• Incident formally classified as *Sev 1*.
+• Change review initiated; engineering teams analyzing logs and rollback options.
+• Communication channels active to validate scope and mitigate customer impact.
+*Next Steps:*
+• Confirm root cause and implement fix or rollback.
+• Monitor payment metrics and customer reports.
+• Prepare post-incident review and preventive measures.
+"
+2025-11-14 14:25:45,PLAYER,online-boutique-6781,Daniel Please try
+2025-11-14 14:26:00,PLAYER,online-boutique-6781,Daniel rollback and lets see the effect
+2025-11-14 14:26:01,Tanya,online-boutique-6781,"For the issue with the cart service, i can try doing a restart"
+2025-11-14 14:26:04,UptimeLabs,online-boutique-6781,:star: Restoration over root cause analysis
+2025-11-14 14:26:22,PLAYER,online-boutique-6781,Tanya please try and perform a restart
+2025-11-14 14:26:27,Daniel,online-boutique-6781,"Understood, I'll proceed with rolling back the payment service"
+2025-11-14 14:26:47,Daniel,online-boutique-6781,payment service rollback is complete
+2025-11-14 14:27:02,Hamed,online-boutique-6781,This is not good. Something is broken after the payment rollback
+2025-11-14 14:27:15,PLAYER,online-boutique-6781,Hamed what broke?
+2025-11-14 14:27:20,Bez,business-comms-6781,Is there any blocker ?
+2025-11-14 14:27:41,Hamed,online-boutique-6781,I see there are 3 deployments were made for bitcoin related feature
+2025-11-14 14:27:58,PLAYER,online-boutique-6781,Daniel Can you bring back the change?
+2025-11-14 14:28:02,Hamed,online-boutique-6781,Complete cart service and cart redis is down
+2025-11-14 14:28:19,Daniel,online-boutique-6781,I can bring it back up
+2025-11-14 14:28:24,PLAYER,online-boutique-6781,Tanya how are we doing on the restart?
+2025-11-14 14:28:30,UptimeLabs,online-boutique-6781,:star: Manage actions and timings
+2025-11-14 14:28:46,Tanya,online-boutique-6781,I did a restart but now it failed again after payments rollback
+2025-11-14 14:28:47,PLAYER,online-boutique-6781,Daniel please be specific? bring what back up?
+2025-11-14 14:29:04,Hamed,online-boutique-6781,@arek.jadwiszczak there are 3 changes around bitcoin
+2025-11-14 14:29:29,PLAYER,online-boutique-6781,CHG89779 and CHG89778 what is the third?
+2025-11-14 14:29:29,Daniel,online-boutique-6781,I can bring back the rolled version but it will not solve the issue
+2025-11-14 14:29:43,Hamed,online-boutique-6781,CHG89777
+2025-11-14 14:30:01,Hamed,online-boutique-6781,These changes are dependent to each other
+2025-11-14 14:30:06,PLAYER,online-boutique-6781,Daniel can you check this: CHG89777
+2025-11-14 14:30:31,Daniel,online-boutique-6781,Hamed is right. We need to rollback in sequence for all these 3 changes
+2025-11-14 14:31:41,PLAYER,online-boutique-6781,"ok then: so we need to roll back first: CHG89779, CHG89778 and then CHG89777 in that order? Hamed Daniel"
+2025-11-14 14:31:50,Hamed,online-boutique-6781,"Sequence to rollback the changes are : 
+1. Cart-redis 
+2. Cart service 
+3. Payments"
+2025-11-14 14:33:04,Bez,business-comms-6781,Whats happening ? People are going crazy on social media about OB being down
+2025-11-14 14:33:11,PLAYER,online-boutique-6781,Daniel the change you rolled back needs to be brought back before we start rolling back in sequence yes?
+2025-11-14 14:33:15,Bez,business-comms-6781,Are we completely down ?
+2025-11-14 14:33:40,PLAYER,business-comms-6781,We have 3 change we need to revert in sequesnce and we are working on that
+2025-11-14 14:33:46,UptimeLabs,online-boutique-6781,:alarm_clock: - You have less than 4 minutes. You can type `/help` if you need any reminders.
+2025-11-14 14:33:48,Daniel,online-boutique-6781,My change has been already rolled back. I'll bring down the payments
+2025-11-14 14:33:53,PLAYER,business-comms-6781,so it is a matter of minutes before we should be back
+2025-11-14 14:33:57,Tanya,online-boutique-6781,Rolling back cart redis
+2025-11-14 14:34:20,PLAYER,online-boutique-6781,Tanya tell me when done
+2025-11-14 14:34:24,Tanya,online-boutique-6781,Daniel keep is down until we are done rolling back cart service
+2025-11-14 14:34:32,Tanya,online-boutique-6781,Cart redis rollback done
+2025-11-14 14:34:42,PLAYER,online-boutique-6781,Daniel roll back CHG89779
+2025-11-14 14:34:46,Daniel,online-boutique-6781,Cart service rollback in progress now
+2025-11-14 14:34:56,PLAYER,online-boutique-6781,Daniel tell me when doen
+2025-11-14 14:35:00,Daniel,online-boutique-6781,Its done
+2025-11-14 14:35:11,Hamed,online-boutique-6781,Bring up the payments now
+2025-11-14 14:35:16,PLAYER,online-boutique-6781,Bob are we back up?
+2025-11-14 14:35:21,Tanya,online-boutique-6781,I'm doing it @arek.jadwiszczak
+2025-11-14 14:35:33,PLAYER,online-boutique-6781,Tanya tell me when done
+2025-11-14 14:35:34,Tanya,online-boutique-6781,Rollbacks are completed
+2025-11-14 14:35:38,Daniel,online-boutique-6781,"Great, i've also restarted the frontend so the website should be working now"
+2025-11-14 14:35:47,UptimeLabs,online-boutique-6781,:alarm_clock: - You have less than 2 minutes. You can type `/help` if you need any reminders.
+2025-11-14 14:35:52,PLAYER,online-boutique-6781,Bob can you confirm site being back?
+2025-11-14 14:35:56,UptimeLabs,online-boutique-6781,:star: Cross check resolution with stakeholders
+2025-11-14 14:36:01,Bob,online-boutique-6781,Checking
+2025-11-14 14:36:10,Tinus,online-boutique-6781,@arek.jadwiszczak can you confirm?
+2025-11-14 14:36:19,PLAYER,business-comms-6781,"Bez
+ restarted the frontend so the website should be working now"
+2025-11-14 14:36:23,Bob,online-boutique-6781,Reports have gone down
+2025-11-14 14:36:25,UptimeLabs,online-boutique-6781,:star: Confirm resolution with the business
+2025-11-14 14:36:40,PLAYER,online-boutique-6781,Tinus confirm what?
+2025-11-14 14:36:57,Bob,online-boutique-6781,Website is up again
+2025-11-14 14:37:12,Tinus,online-boutique-6781,is everything back up ?
+2025-11-14 14:37:15,PLAYER,online-boutique-6781,Tinus it seems that the site is back Bob said reports are going down
+2025-11-14 14:37:31,Tinus,online-boutique-6781,Orders are up as well
+2025-11-14 14:37:39,Tinus,online-boutique-6781,I can see the metrics
+2025-11-14 14:37:57,PLAYER,online-boutique-6781,Just placed a order and it went through
+2025-11-14 14:38:03,Bez,business-comms-6781,Are we good to close it?
+2025-11-14 14:38:11,PLAYER,business-comms-6781,Bez site is back up we are good to close it
+2025-11-14 14:38:17,Bez,business-comms-6781,Good to know that everything back up again
+2025-11-14 14:38:22,UptimeLabs,online-boutique-6781,"Thank you for playing The Chain, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit start when you are ready. I am ready button"
+2025-11-14 14:38:25,Bez,business-comms-6781,Thanks @arek.jadwiszczak
+2025-11-14 14:38:26,PLAYER,business-comms-6781,Sev 1 - Resolved
+2025-11-14 14:38:37,PLAYER,online-boutique-6781,Clicked Start_feedback button
+2025-11-14 14:39:53,UptimeLabs,online-boutique-6781,Submission successful

@@ -1,0 +1,155 @@
+datetime,player,channel,message
+2025-09-04 12:19:23,Bez,online-boutique-5643,Hey team!:rocket: Can you believe it's been 8 fantastic years for Online Boutique?
+2025-09-04 12:19:27,Bez,online-boutique-5643,"Before we dive into anniversary celebrations, let's give a warm welcome to Maya, our new Security Analyst. She's got 5 years of cybersecurity expertise under her belt! :clap: "
+2025-09-04 12:19:32,Maya,online-boutique-5643,"Hi everyone! :raised_hand_with_fingers_splayed: Thrilled to be here, especially on such a special occasion. Let's make Online Boutique even successful and secure together!"
+2025-09-04 12:19:35,Tinus,online-boutique-5643,"Welcome, Maya! Your experience will elevate our cybersecurity efforts."
+2025-09-04 12:19:39,Tanya,online-boutique-5643,"Excited to have you, Maya! Bez has been very excited to have you on the team."
+2025-09-04 12:19:42,Daniel,online-boutique-5643,"Impressive! Eager to learn from you, Maya."
+2025-09-04 12:19:46,Shay,online-boutique-5643,":+1: Welcome Maya, pleasure meeting you."
+2025-09-04 12:19:49,Bob,online-boutique-5643,Hi Maya! Your experience is top-notch. Cheers to you and to Online Boutique's 8-year anniversary! :partying_face: :tada:
+2025-09-04 12:19:52,Maya,online-boutique-5643,Thanks for the warm welcome! Excited for the celebration and our anniversary party.
+2025-09-04 12:20:02,UptimeLabs,online-boutique-5643,Start lvl 18
+2025-09-04 12:22:17,PLAYER,online-boutique-5643,Clicked Start button
+2025-09-04 12:22:17,UptimeLabs,online-boutique-5643,":alarm_clock: - You have 25 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-09-04 12:22:19,Bez,online-boutique-5643,We are all so glad you have joined us Maya
+2025-09-04 12:22:21,Tinus,online-boutique-5643,"Hold on, team. Quick check-in. Is anyone else experiencing internet problems or slow connectivity?"
+2025-09-04 12:22:24,Shay,online-boutique-5643,"Internet's definitely sluggish, was loading up github and it took ages to load"
+2025-09-04 12:22:27,Bez,online-boutique-5643,Perhaps it could be due to the increase of sales we have been having with this anniversary sale?
+2025-09-04 12:22:29,Hamed,online-boutique-5643,"Hey team, we've seen some weird traffic from our data centre network in the last couple of days, it's been mostly minor but never as bad compared to now although"
+2025-09-04 12:22:33,Tanya,online-boutique-5643,Hamed and I will have been monitoring outbound traffic. Checking for anomalies again.
+2025-09-04 12:22:40,Daniel,online-boutique-5643,I will try to place an order and check the platform.
+2025-09-04 12:22:49,PLAYER,online-boutique-5643,Hi all
+2025-09-04 12:22:50,Shay,online-boutique-5643,Just ran a test on my internet speed.
+2025-09-04 12:22:53,Shay,online-boutique-5643,
+2025-09-04 12:23:01,PLAYER,online-boutique-5643,let me know if we need to work on this
+2025-09-04 12:23:18,PLAYER,online-boutique-5643,Define weird traffic Hamid ?
+2025-09-04 12:23:40,Hamed,online-boutique-5643,Soem traffic was unexpectedly high in numbers
+2025-09-04 12:23:46,Hamed,online-boutique-5643,but that was intermittent
+2025-09-04 12:24:05,UptimeLabs,online-boutique-5643,:bulb: Hint: how many users are affected? does this rule out possible causes?
+2025-09-04 12:24:22,PLAYER,online-boutique-5643,ok i sthis happening in a particular time of the day
+2025-09-04 12:24:23,Hamed,online-boutique-5643,Do we have any user complaints ?
+2025-09-04 12:24:28,PLAYER,online-boutique-5643,how many users
+2025-09-04 12:24:29,UptimeLabs,online-boutique-5643,:star: Asking questions to validate impact of the problem
+2025-09-04 12:24:35,PLAYER,online-boutique-5643,Bob do we have any users complaining
+2025-09-04 12:24:43,PLAYER,online-boutique-5643,I just placed on order looks good to me
+2025-09-04 12:24:50,UptimeLabs,online-boutique-5643,:star: Attempt to replicate the issue
+2025-09-04 12:24:50,PLAYER,online-boutique-5643,where from they are complaining
+2025-09-04 12:24:58,Bob,online-boutique-5643,we did get few queries - but intermittently
+2025-09-04 12:25:01,Bob,online-boutique-5643,This site can’t be reached happens irregularly but been getting similar types of reports for a while
+2025-09-04 12:25:09,Bob,online-boutique-5643,Some customers are witnessing the site is performing slowly and display a timeout error
+2025-09-04 12:25:15,Bob,online-boutique-5643,Some customers can place order with no issue
+2025-09-04 12:25:16,PLAYER,online-boutique-5643,hmm
+2025-09-04 12:25:23,Bob,online-boutique-5643,Not affecting one area likely global
+2025-09-04 12:25:31,PLAYER,online-boutique-5643,okay any particular timem of the day
+2025-09-04 12:25:31,Shay,online-boutique-5643,"Nothings loading  like Youtube, Github and even the OB platform"
+2025-09-04 12:25:46,Bob,online-boutique-5643,Genrally once in th emornign adn afternoon
+2025-09-04 12:25:57,PLAYER,online-boutique-5643,Tanya can we check from the networkinng perspecitve pls
+2025-09-04 12:26:01,Tanya,online-boutique-5643,taking too long to load  - even internal servers
+2025-09-04 12:26:23,PLAYER,online-boutique-5643,Hi Maya seems like your experience is required
+2025-09-04 12:26:25,Tanya,online-boutique-5643,"I’m on the hunt in our logs filtering through event types to see any lateral movements within the services but no indication of anything in our logs, keep you updated if we find anything."
+2025-09-04 12:26:30,PLAYER,online-boutique-5643,what do you reckoon is happening here
+2025-09-04 12:26:35,Maya,online-boutique-5643,I will run Security Scan
+2025-09-04 12:26:46,PLAYER,online-boutique-5643,do we have any hypthesis with the issues or the info we have
+2025-09-04 12:26:47,Hamed,online-boutique-5643,"We have intermittently observed a few instances of anomalous outbound traffic in the last couple of days from our data center network, but nothing major. We have seen this type of traffic in the past"
+2025-09-04 12:26:55,UptimeLabs,online-boutique-5643,:star: Form a working theory
+2025-09-04 12:27:12,UptimeLabs,online-boutique-5643,:bulb: Hint: Declare an incident.
+2025-09-04 12:27:21,PLAYER,online-boutique-5643,Hmm we need to havea possible working scenarios to get this investigated propertly
+2025-09-04 12:27:50,PLAYER,online-boutique-5643,I can get an incident raised and we can work out our individual bits.. i would keep this as low priority intially and then would up the priority as per the situation ..
+2025-09-04 12:28:02,Daniel,online-boutique-5643,Looks like only outbound traffic is affected
+2025-09-04 12:28:03,PLAYER,online-boutique-5643,is everyone clear.. anyone has any questions I am going to communicate to the business now
+2025-09-04 12:28:24,Daniel,online-boutique-5643,I still don't know - i dont see any issues while placing orders
+2025-09-04 12:28:29,Daniel,online-boutique-5643,this is selective
+2025-09-04 12:28:38,PLAYER,online-boutique-5643,"so how come we are havingn issues in accessing and loading Youtube, git hub etx if it is only outbound"
+2025-09-04 12:28:57,Hamed,online-boutique-5643,There is a spike in outbound connections in the edge router and the origin ip block 10.50.0.0/24. That ip range is the same as the ip block the frontend and payments are hosted on.
+2025-09-04 12:29:07,PLAYER,online-boutique-5643,I think we first need to know what we are investigating me not convinced either if it is outbound or inb ound
+2025-09-04 12:29:13,Maya,online-boutique-5643,Just ran a network security scan and our issues all seem to be relating to our network switch trying to figure out what exactly.
+2025-09-04 12:29:15,UptimeLabs,online-boutique-5643,:star: Qualify the problem
+2025-09-04 12:29:35,Maya,online-boutique-5643,Our investigation uncovered a critical issue: the network switch was compromised due to unpatched vulnerabilities. We have identified a BotNet in the switch and its creating outbound connections to the outside. It creates a DDOS (Distributed Denial of Service) to attack an external party
+2025-09-04 12:29:37,PLAYER,online-boutique-5643,Keep investigating
+2025-09-04 12:30:21,PLAYER,business-comms-5643,P2-- an issue where we have found that intermittently we have network issues across the ethos system
+2025-09-04 12:30:21,PLAYER,business-comms-5643,*Incident Number INC10002:* P2-- an issue where we have found that intermittently we have network issues across the ethos system
+2025-09-04 12:30:28,UptimeLabs,online-boutique-5643,:star: Formally assign criticality level to the incident
+2025-09-04 12:30:43,Bez,business-comms-5643,Oh - is this impacting globally ?
+2025-09-04 12:30:56,Bez,business-comms-5643,i am able to place orders with out any issue
+2025-09-04 12:31:00,PLAYER,business-comms-5643,We are working to identify a slow burning issue where the network is behaving weirdly we dont have any confirmed use case or users affected but it seems this is intemitteny
+2025-09-04 12:31:00,Bez,business-comms-5643,are there any customer reports ?
+2025-09-04 12:31:18,PLAYER,business-comms-5643,We have got complains of slowness but not anything not affectes Revenue
+2025-09-04 12:31:28,Hamed,online-boutique-5643,"network switch had unpatched vulnerabilities, leaving it susceptible to known exploits. Attackers had exploited these vulnerabilities, leading to the compromise of the switch's integrity"
+2025-09-04 12:31:49,PLAYER,online-boutique-5643,Maya what can we do in the interim to quickly deal wtih this critical isssue
+2025-09-04 12:31:52,Maya,online-boutique-5643,This means that The disruptions in outbound connections are affecting our internal company's users and the external global customer base.
+2025-09-04 12:31:58,UptimeLabs,online-boutique-5643,:star: Restoration over root cause analysis
+2025-09-04 12:32:13,Maya,online-boutique-5643,Looks like our Switch is compromised
+2025-09-04 12:32:20,PLAYER,online-boutique-5643,What can we do short term immeidately
+2025-09-04 12:32:22,Maya,online-boutique-5643,Do you think a restart woudl help ?
+2025-09-04 12:32:27,Maya,online-boutique-5643,@hamed
+2025-09-04 12:32:36,PLAYER,online-boutique-5643,Certainly would help but someone should do the assessment
+2025-09-04 12:32:52,Hamed,online-boutique-5643,Restart might make it worse
+2025-09-04 12:33:21,PLAYER,business-comms-5643,We have idenntified that a security switch needs a critical patch that is affecting our both outbound and inbound calls teams continue to investigate
+2025-09-04 12:33:23,Bez,business-comms-5643,Seriously - should we be worried ?
+2025-09-04 12:33:41,PLAYER,online-boutique-5643,Whats are our alternatives.. swapping the switch
+2025-09-04 12:33:48,Maya,online-boutique-5643,Your right restarting the switch isnt the best option as it might intruduce some more issues
+2025-09-04 12:33:52,PLAYER,online-boutique-5643,or routing the traffic to another ISP
+2025-09-04 12:33:53,Maya,online-boutique-5643,Trying to think of another solution but i'm not too familiar with the network infrastructure here at OB
+2025-09-04 12:33:58,Hamed,online-boutique-5643,No worries Maya I can send over the graph of the network infra if you wanna look at it
+2025-09-04 12:34:03,Maya,online-boutique-5643,That would be perfect @hamed
+2025-09-04 12:34:06,Hamed,online-boutique-5643,
+2025-09-04 12:34:09,Hamed,online-boutique-5643,You're right @vivek
+2025-09-04 12:34:10,Maya,online-boutique-5643,"Looking at the diagram now, will need a moment to figure out what to do next"
+2025-09-04 12:34:13,Maya,online-boutique-5643,Let me know if you have any suggestions in the mean time
+2025-09-04 12:34:29,PLAYER,online-boutique-5643,can we focus more on remediation quickly pleas
+2025-09-04 12:34:31,PLAYER,online-boutique-5643,please
+2025-09-04 12:34:41,Hamed,online-boutique-5643,"As Vivek said, we have a back up switch"
+2025-09-04 12:34:54,PLAYER,online-boutique-5643,Bon how is it looking I mean Bob
+2025-09-04 12:35:05,PLAYER,online-boutique-5643,did you get any more calls or issues
+2025-09-04 12:35:18,Bob,online-boutique-5643,There are not many reports in flow- but definately there is impact
+2025-09-04 12:35:24,PLAYER,online-boutique-5643,thanks
+2025-09-04 12:35:31,PLAYER,online-boutique-5643,how much time to swap Hamid
+2025-09-04 12:35:37,UptimeLabs,online-boutique-5643,:star: Manage actions and timings
+2025-09-04 12:35:38,PLAYER,online-boutique-5643,what do we need to do this
+2025-09-04 12:35:40,Maya,online-boutique-5643,Shall we migrate the traffic to back up switch
+2025-09-04 12:35:51,Hamed,online-boutique-5643,"yes, i am just checking the steps"
+2025-09-04 12:35:57,PLAYER,online-boutique-5643,Yes if we are certain that it wont get affected
+2025-09-04 12:36:11,Hamed,online-boutique-5643,Swapping the traffic now
+2025-09-04 12:36:16,PLAYER,online-boutique-5643,okay perfect
+2025-09-04 12:36:17,PLAYER,online-boutique-5643,thanks
+2025-09-04 12:36:21,Hamed,online-boutique-5643,we can patch the other switch later
+2025-09-04 12:36:34,Bez,business-comms-5643,is there any data compromise?
+2025-09-04 12:36:38,PLAYER,business-comms-5643,"No Bex, I would take care.. let me take care of your worries"
+2025-09-04 12:36:52,Maya,online-boutique-5643,the infected switch has been successfully changed over
+2025-09-04 12:36:55,Hamed,online-boutique-5643,The Catalyst 9300 Series which is our infected switch has been swapped over to old but reliable (Cisco Catalyst 2960 Series)
+2025-09-04 12:36:58,PLAYER,business-comms-5643,No just overload system we are at the moment thinking to re route the traffic to a backup switch
+2025-09-04 12:37:02,Tinus,online-boutique-5643,"Good job, can we confirm @Vivek  Dubey?"
+2025-09-04 12:37:30,PLAYER,business-comms-5643,Once we bring it back we would do other mitigation steps such as patching the switch which will be more long term
+2025-09-04 12:37:53,PLAYER,online-boutique-5643,I would get this checked
+2025-09-04 12:38:04,PLAYER,online-boutique-5643,The issue I see we need to monitor continously
+2025-09-04 12:38:19,PLAYER,online-boutique-5643,as this issue is intermittent so it cant be checked quickly
+2025-09-04 12:38:25,UptimeLabs,online-boutique-5643,:bulb: Cross checking resolution with team
+2025-09-04 12:38:53,Hamed,online-boutique-5643,Shay had issue earlier
+2025-09-04 12:39:01,PLAYER,online-boutique-5643,I am not seeing any change in behaviour but I think we should all be alert and check for next two hours and see how it behaves
+2025-09-04 12:39:02,Hamed,online-boutique-5643,can Shay validate ?
+2025-09-04 12:39:21,PLAYER,online-boutique-5643,and thanks Hamid Shay can validate along with Bob telling us if he is still getting calls
+2025-09-04 12:39:28,UptimeLabs,online-boutique-5643,:star: Cross checking resolution with team
+2025-09-04 12:39:28,UptimeLabs,online-boutique-5643,:star: Cross check resolution with stakeholders
+2025-09-04 12:39:31,Bob,online-boutique-5643,Users who reported earlier are able to load now
+2025-09-04 12:39:32,Shay,online-boutique-5643,Checking
+2025-09-04 12:39:38,Shay,online-boutique-5643,its workign fine form me
+2025-09-04 12:39:45,Hamed,online-boutique-5643,Greta
+2025-09-04 12:39:46,PLAYER,online-boutique-5643,We have to keep this under monitoring to be certain that it has fixed
+2025-09-04 12:39:47,Hamed,online-boutique-5643,great
+2025-09-04 12:39:52,Tanya,online-boutique-5643,"Cheers, everyone! Resolving these network issues added a bit of spice to our celebration"
+2025-09-04 12:39:54,PLAYER,online-boutique-5643,Perfect
+2025-09-04 12:39:55,Tinus,online-boutique-5643,Good job team! We managed to keep the anniversary vibe alive despite the detour.
+2025-09-04 12:39:58,Hamed,online-boutique-5643,High-fives all around!  I will take out that faulty switch as soon as possible.
+2025-09-04 12:40:03,Shay,online-boutique-5643,The website's performance is looking solid again 
+2025-09-04 12:40:07,Daniel,online-boutique-5643,The anniversary orders are flowing smoothly now. No hiccups on the code side.
+2025-09-04 12:40:10,Bob,online-boutique-5643,"Our customers are back to enjoying the celebration. Happy customers, happy anniversary!"
+2025-09-04 12:40:13,Maya,online-boutique-5643,Really great job @Vivek  Dubey.
+2025-09-04 12:40:13,PLAYER,online-boutique-5643,Thanks all but dont forget the patching after your celebrations
+2025-09-04 12:40:16,Bez,online-boutique-5643,Special congratulations to our Incident Manager for steering the ship with finesse and to Maya for your help identifying the faulty switch. Cheers to a remarkable team! :tada:
+2025-09-04 12:40:37,UptimeLabs,online-boutique-5643,Start drill retro and feedback
+2025-09-04 12:40:40,PLAYER,business-comms-5643,We beleive that we have managed to work out the intermittent issues and all reported issues seems to be resolved.
+2025-09-04 12:40:42,Bez,business-comms-5643,Great - thanks Vivek
+2025-09-04 12:40:45,PLAYER,online-boutique-5643,Clicked Start_feedback button
+2025-09-04 12:40:48,UptimeLabs,online-boutique-5643,:star: Confirm resolution with the business
+2025-09-04 12:40:51,Bez,business-comms-5643,"Very well done, much appreciate the quick turn around"
+2025-09-04 12:42:02,UptimeLabs,online-boutique-5643,Submission successful

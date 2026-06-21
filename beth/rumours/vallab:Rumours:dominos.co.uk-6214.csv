@@ -1,0 +1,122 @@
+datetime,player,channel,message
+2025-10-08 10:14:56,tinus,online-boutique-6214,"Hi team, let's have a mood check send an emoji to describe your mood"
+2025-10-08 10:15:01,tinus,online-boutique-6214,"I'll go first, :thumbsup:"
+2025-10-08 10:15:07,tanya,online-boutique-6214,:thumbsup:
+2025-10-08 10:15:09,tinus,online-boutique-6214,I'm excited about showing off all your hard work at todays stakeholder meeting
+2025-10-08 10:15:12,daniel,online-boutique-6214,":skull: knackered, had a few too many late nights this week"
+2025-10-08 10:15:15,shay,online-boutique-6214,:rainbow:
+2025-10-08 10:15:18,hamed,online-boutique-6214,living the dream :smile:
+2025-10-08 10:15:22,bez,online-boutique-6214,:smirk: im excited to see the show too
+2025-10-08 10:15:24,tinus,online-boutique-6214,shouldn't you be prepping for the meeting 
+2025-10-08 10:15:27,bez,online-boutique-6214,:sweat_smile: i am indeed I'll leave you lot to it
+2025-10-08 10:15:29,shay,online-boutique-6214,hang in there @daniel its gonne be the weekend sooner or later :joy:
+2025-10-08 10:15:32,tinus,online-boutique-6214,I should get on with my prep too have a good day team
+2025-10-08 10:15:33,daniel,online-boutique-6214,@shay strict diet of energy drink for me today lol
+2025-10-08 10:15:36,daniel,online-boutique-6214,hope the presentation goes well @tinus
+2025-10-08 10:15:38,tanya,online-boutique-6214,:raised_hands:
+2025-10-08 10:15:53,UptimeLabs,online-boutique-6214,"Welcome to Rumours, remember communication is key to diagnose the problem.
+
+ *Use `/help` at any time for a list of useful links and commands*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin Start button"
+2025-10-08 10:17:34,PLAYER,online-boutique-6214,Clicked org button
+2025-10-08 10:18:28,PLAYER,online-boutique-6214,Clicked Start button
+2025-10-08 10:18:29,UptimeLabs,online-boutique-6214,":alarm_clock: - You have 20 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-10-08 10:18:32,tinus,online-boutique-6214,"Hey team, I'm texting from the board room - kinda embarrassing but in my demo to the board, I tried to add a pair of Aviator sunglasses to the shopping cart and I got a ?http 500?"
+2025-10-08 10:18:34,tinus,online-boutique-6214,"I've bought some time but need this be able to do this demo if we can lets get this sorted in the next 20 minutes.
+"
+2025-10-08 10:18:36,tinus,online-boutique-6214,Metrics
+2025-10-08 10:18:39,tanya,online-boutique-6214,"uh oh, those Aviators are top sellers due to the new Top Gun movie...It's size up the issue time Vallabh Vyas"
+2025-10-08 10:18:42,shay,online-boutique-6214,Come on this can't be happening!
+2025-10-08 10:18:44,tinus,online-boutique-6214,"I'm in this meeting so, wont be able to help but I trust that you all can get this fixed asap, just @ me if you need anything"
+2025-10-08 10:18:47,shay,online-boutique-6214,ok looking into this now
+2025-10-08 10:19:23,Shay,online-boutique-6214,I am able to buy the orders
+2025-10-08 10:19:28,PLAYER,online-boutique-6214,Bob did any customer reported this issue?
+2025-10-08 10:19:35,Shay,online-boutique-6214,How's it for you @Vallabh Vyas ?
+2025-10-08 10:19:47,Bob,online-boutique-6214,Let me check user reports
+2025-10-08 10:19:47,PLAYER,online-boutique-6214,let me check Shay
+2025-10-08 10:20:20,Bob,online-boutique-6214,There are no user complaints
+2025-10-08 10:20:23,PLAYER,online-boutique-6214,I am able to place order Shay
+2025-10-08 10:20:27,UptimeLabs,online-boutique-6214,:star: Attempt to replicate the issue
+2025-10-08 10:20:45,Bob,online-boutique-6214,There are few complaints but not related to break in orders
+2025-10-08 10:21:06,Tinus,online-boutique-6214,Guys this is not good.
+2025-10-08 10:21:09,PLAYER,online-boutique-6214,Daniel could you please check and confirm
+2025-10-08 10:21:22,Tinus,online-boutique-6214,I'm in conference hall in front of potential investors
+2025-10-08 10:21:38,Tinus,online-boutique-6214,Demo is about to star in next 15 mins
+2025-10-08 10:21:39,PLAYER,online-boutique-6214,Tinus could you try using another system once
+2025-10-08 10:21:44,UptimeLabs,online-boutique-6214,:star: Reproduces the incident
+2025-10-08 10:22:03,Shay,online-boutique-6214,Could this be due to any recent changes ? <https://uptime-labs.atlassian.net/wiki/spaces/ULPUBLIC/pages/1113292847/Rumours+-+Change+Request+Logs>
+2025-10-08 10:22:07,PLAYER,online-boutique-6214,p4 tinus having issue with order
+2025-10-08 10:22:07,PLAYER,business-comms-6214,*Incident Number INC10005:* p4 tinus having issue with order
+2025-10-08 10:22:07,UptimeLabs,online-boutique-6214,:star: Incident record created
+2025-10-08 10:22:08,Daniel,online-boutique-6214,Let me check
+2025-10-08 10:22:09,UptimeLabs,online-boutique-6214,:star: Send first comms in first 5 minutes
+2025-10-08 10:22:30,Tinus,online-boutique-6214,I dont have any other laptop with me. Let me check in phone
+2025-10-08 10:22:41,Daniel,online-boutique-6214,I was able to place an order as well
+2025-10-08 10:22:57,PLAYER,online-boutique-6214,Tinus could you check your vpn or internet connection please
+2025-10-08 10:23:11,Bez,business-comms-6214,What's happening ? Tinus isn't able to place orders
+2025-10-08 10:23:22,Bez,business-comms-6214,Is this affecting customers as well ?
+2025-10-08 10:23:32,Tinus,online-boutique-6214,In my phone its working
+2025-10-08 10:23:41,Tinus,online-boutique-6214,My internet connection is very stable
+2025-10-08 10:23:51,Tinus,online-boutique-6214,Not using VPN at the moment
+2025-10-08 10:24:07,Daniel,online-boutique-6214,"Wait , one observation"
+2025-10-08 10:24:47,PLAYER,online-boutique-6214,Tinus could you paste the error message here please. screenshot is little blury.
+2025-10-08 10:24:48,Daniel,online-boutique-6214,Looking at the Product ID from Tinus screenshot is different than PROD
+2025-10-08 10:25:09,PLAYER,online-boutique-6214,thanks Daniel
+2025-10-08 10:25:29,PLAYER,online-boutique-6214,Tinus are you using PROD env. I mean live website. could you please check url once
+2025-10-08 10:25:33,Daniel,online-boutique-6214,"See if you will go to buy the same product on website , the product id is ending by Z not by D"
+2025-10-08 10:25:49,Tinus,online-boutique-6214,Yes i'm in live site
+2025-10-08 10:25:59,Tinus,online-boutique-6214,I’m going to dip in and out of this channel for im speaking to some clients
+2025-10-08 10:26:13,PLAYER,online-boutique-6214,sure.
+2025-10-08 10:26:23,Bez,business-comms-6214,Why its a P4 inc ?
+2025-10-08 10:26:44,Bez,business-comms-6214,This demo is very crucial for our business
+2025-10-08 10:26:54,Daniel,online-boutique-6214,Tinus should be trying to access the site from the browser on his computer. Perhaps it’s a local issue?
+2025-10-08 10:27:06,UptimeLabs,online-boutique-6214,:bulb: keep the business informed regularly
+2025-10-08 10:27:07,PLAYER,online-boutique-6214,Daniel could you look into error screenshot and tell me which environment is this. how Tinus is able to select product id ending by Z
+2025-10-08 10:27:15,UptimeLabs,online-boutique-6214,:star: Manage actions and timings
+2025-10-08 10:27:31,Daniel,online-boutique-6214,Tinus is on live site.
+2025-10-08 10:27:32,PLAYER,online-boutique-6214,Tinus are you available now
+2025-10-08 10:27:58,Daniel,online-boutique-6214,But this morning he was testing a feature which had renovation of product ID in DB
+2025-10-08 10:28:14,Tinus,online-boutique-6214,Have you got any solutions for me ?
+2025-10-08 10:28:23,PLAYER,business-comms-6214,Bez that is local system issue. we are co-coordinating with tinus to resolve his issue
+2025-10-08 10:28:42,Daniel,online-boutique-6214,But that change was on a feature branch
+2025-10-08 10:29:20,PLAYER,online-boutique-6214,Tinus as Daniel mentioned screenshot product id is ending by Z not by D
+2025-10-08 10:29:29,Bez,business-comms-6214,Do it asap
+2025-10-08 10:29:45,Bez,business-comms-6214,I don't want this to get slipped away
+2025-10-08 10:29:48,PLAYER,online-boutique-6214,Tinus could you please confirm which product you are selecting
+2025-10-08 10:30:15,Tinus,online-boutique-6214,Yeah i was testing his feature this morning. But not sure why it is showing up now
+2025-10-08 10:30:25,PLAYER,online-boutique-6214,seem like you are trying to select product which is not there
+2025-10-08 10:30:29,Tinus,online-boutique-6214,For any products its failing
+2025-10-08 10:30:46,Daniel,online-boutique-6214,Yes you're right @Vallabh Vyas
+2025-10-08 10:30:52,PLAYER,online-boutique-6214,could you revert your changes Tinus and check once
+2025-10-08 10:30:56,UptimeLabs,online-boutique-6214,:star: Restoration over root cause analysis
+2025-10-08 10:31:26,Daniel,online-boutique-6214,I think if it is local to Tinus then he should be trying to refresh his cache
+2025-10-08 10:31:51,PLAYER,online-boutique-6214,Tinus could you please refresh your cache and check
+2025-10-08 10:31:52,Daniel,online-boutique-6214,Because request from frontend is not recognised by the server
+2025-10-08 10:32:06,Tinus,online-boutique-6214,Let me try this
+2025-10-08 10:32:09,PLAYER,online-boutique-6214,thanks Daniel
+2025-10-08 10:32:22,PLAYER,business-comms-6214,Sure Bez will keep you posted
+2025-10-08 10:32:25,Bez,business-comms-6214,Have we found any solutions ?
+2025-10-08 10:32:40,Tinus,online-boutique-6214,"Yeah, that's it. I am able to place order now"
+2025-10-08 10:32:44,PLAYER,business-comms-6214,looks like its cache issue. we are checking with Tinus
+2025-10-08 10:32:56,PLAYER,online-boutique-6214,Thanks Tinus
+2025-10-08 10:33:13,PLAYER,business-comms-6214,Bez Tinus issue is resolved
+2025-10-08 10:33:19,Daniel,online-boutique-6214,Shall we close the incident then ?
+2025-10-08 10:33:43,PLAYER,online-boutique-6214,Tinus are we good to close this incident?
+2025-10-08 10:34:07,Tinus,online-boutique-6214,Yes its fine now
+2025-10-08 10:34:19,PLAYER,online-boutique-6214,thanks for Confirmation. Tinus
+2025-10-08 10:34:27,tinus,online-boutique-6214,Damn! thats it
+2025-10-08 10:34:29,tinus,online-boutique-6214,"Great Ive got to do my presentation now, thanks for figuring this out so quickly. @daniel @shay can you look in to a cache busting solution?"
+2025-10-08 10:34:30,PLAYER,online-boutique-6214,Daniel we can close this incident
+2025-10-08 10:34:31,shay,online-boutique-6214,it was the cache! sure we can do that
+2025-10-08 10:34:33,daniel,online-boutique-6214,"no worries boss, at least its not a significat issue"
+2025-10-08 10:34:34,daniel,online-boutique-6214,good luck with the presentation!
+2025-10-08 10:34:35,tanya,online-boutique-6214,yes good luck @tinus
+2025-10-08 10:34:37,shay,online-boutique-6214,good luck @tinus!
+2025-10-08 10:34:48,UptimeLabs,online-boutique-6214,"Thank you for playing, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit I am ready when you want to start. I am ready button"
+2025-10-08 10:34:52,PLAYER,business-comms-6214,Bez incident is closed
+2025-10-08 10:34:58,Bez,business-comms-6214,Thanks @Vallabh Vyas
+2025-10-08 10:34:59,PLAYER,online-boutique-6214,Clicked Start_feedback button
+2025-10-08 10:36:23,UptimeLabs,online-boutique-6214,Submission successful

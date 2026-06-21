@@ -1,0 +1,98 @@
+datetime,player,channel,message
+2025-08-06 11:07:06,tinus,online-boutique-5282,"Hi team, let's have a mood check send an emoji to describe your mood [n/a - 0]"
+2025-08-06 11:07:10,tinus,online-boutique-5282,"I'll go first, :thumbsup: [n/a - 0]"
+2025-08-06 11:07:16,tanya,online-boutique-5282,:thumbsup: [n/a - 0]
+2025-08-06 11:07:18,tinus,online-boutique-5282,I'm excited about showing off all your hard work at todays stakeholder meeting [n/a - 0]
+2025-08-06 11:07:21,daniel,online-boutique-5282,":skull: knackered, had a few too many late nights this week [n/a - 0]"
+2025-08-06 11:07:24,shay,online-boutique-5282,:rainbow: [n/a - 0]
+2025-08-06 11:07:27,hamed,online-boutique-5282,living the dream :smile: [n/a - 0]
+2025-08-06 11:07:31,bez,online-boutique-5282,:smirk: im excited to see the show too [n/a - 0]
+2025-08-06 11:07:33,tinus,online-boutique-5282,shouldn't you be prepping for the meeting  [n/a - 0]
+2025-08-06 11:07:36,bez,online-boutique-5282,:sweat_smile: i am indeed I'll leave you lot to it [n/a - 0]
+2025-08-06 11:07:38,shay,online-boutique-5282,hang in there @daniel its gonne be the weekend sooner or later :joy: [n/a - 0]
+2025-08-06 11:07:41,tinus,online-boutique-5282,I should get on with my prep too have a good day team [n/a - 0]
+2025-08-06 11:07:42,daniel,online-boutique-5282,@shay strict diet of energy drink for me today lol [n/a - 0]
+2025-08-06 11:07:45,daniel,online-boutique-5282,hope the presentation goes well @tinus [n/a - 0]
+2025-08-06 11:07:47,tanya,online-boutique-5282,:raised_hands: [n/a - 0]
+2025-08-06 11:08:02,UptimeLabs,online-boutique-5282,Level 7 start button [n/a - 0]
+2025-08-06 11:10:30,PLAYER,online-boutique-5282,\help [n/a - 0]
+2025-08-06 11:10:44,PLAYER,online-boutique-5282,Clicked undefined button
+2025-08-06 11:10:57,PLAYER,online-boutique-5282,Clicked org button
+2025-08-06 11:11:29,PLAYER,online-boutique-5282,Clicked Start button
+2025-08-06 11:11:30,UptimeLabs,online-boutique-5282,":alarm_clock: - You have 20 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders. [n/a - 0]"
+2025-08-06 11:11:33,tinus,online-boutique-5282,"Hey team, I'm texting from the board room - kinda embarrassing but in my demo to the board, I tried to add a pair of Aviator sunglasses to the shopping cart and I got a ?http 500? [n/a - 0]"
+2025-08-06 11:11:35,tinus,online-boutique-5282,"I've bought some time but need this be able to do this demo if we can lets get this sorted in the next 20 minutes.
+ [n/a - 0]"
+2025-08-06 11:11:37,tinus,online-boutique-5282,500 screenshot [n/a - 0]
+2025-08-06 11:11:40,tanya,online-boutique-5282,"uh oh, those Aviators are top sellers due to the new Top Gun movie...It's size up the issue time Prashanth Palimar [n/a - 0]"
+2025-08-06 11:11:43,shay,online-boutique-5282,Come on this can't be happening! [n/a - 0]
+2025-08-06 11:11:45,tinus,online-boutique-5282,"I'm in this meeting so, wont be able to help but I trust that you all can get this fixed asap, just @ me if you need anything [n/a - 0]"
+2025-08-06 11:11:48,shay,online-boutique-5282,ok looking into this now [n/a - 0]
+2025-08-06 11:12:33,PLAYER,online-boutique-5282,Tinus is this happining in the Demo session or in the production instance? [n/a - 0]
+2025-08-06 11:12:39,UptimeLabs,online-boutique-5282,:star: Asking questions to validate impact of the problem [n/a - 0]
+2025-08-06 11:12:48,Tinus,online-boutique-5282,This is definately in PROD instance [n/a - 0]
+2025-08-06 11:12:55,Tinus,online-boutique-5282,i am just here to show a Demo to clients [n/a - 0]
+2025-08-06 11:13:36,PLAYER,online-boutique-5282,Daniel I see you have deployed an change in the UAT [n/a - 0]
+2025-08-06 11:13:41,UptimeLabs,online-boutique-5282,:star: Check changes done to the platform [n/a - 0]
+2025-08-06 11:14:07,Daniel,online-boutique-5282,"I did verify the change , there are no errors [n/a - 0]"
+2025-08-06 11:14:11,Daniel,online-boutique-5282,the app is healthy [n/a - 0]
+2025-08-06 11:14:25,PLAYER,online-boutique-5282,Tinus I just tried to add the glasses and it is working for me in production. [n/a - 0]
+2025-08-06 11:14:31,UptimeLabs,online-boutique-5282,:star: Attempt to replicate the issue [n/a - 0]
+2025-08-06 11:14:40,Tinus,online-boutique-5282,Is there any thing that can be done quickly ? i have a demo in next 5 minutes [n/a - 0]
+2025-08-06 11:15:10,PLAYER,online-boutique-5282,Shay can we check the logs and see if we see any errors [n/a - 0]
+2025-08-06 11:15:14,UptimeLabs,online-boutique-5282,:star: Facts over opinion [n/a - 0]
+2025-08-06 11:15:38,Shay,online-boutique-5282,Sure [n/a - 0]
+2025-08-06 11:15:45,Shay,online-boutique-5282,is there any customer impact ? [n/a - 0]
+2025-08-06 11:15:47,PLAYER,online-boutique-5282,Shay can you also look at the change CHG89359 [n/a - 0]
+2025-08-06 11:15:51,UptimeLabs,online-boutique-5282,:bulb: Hint: Establish the impact of the issue [n/a - 0]
+2025-08-06 11:15:53,UptimeLabs,online-boutique-5282,:star: Reviewed changes [n/a - 0]
+2025-08-06 11:16:01,PLAYER,online-boutique-5282,this is impacting demo. [n/a - 0]
+2025-08-06 11:16:10,PLAYER,online-boutique-5282,I tried to replicate and it is working as expected [n/a - 0]
+2025-08-06 11:16:15,UptimeLabs,online-boutique-5282,:bulb: Hint: Declare an incident. [n/a - 0]
+2025-08-06 11:16:38,Shay,online-boutique-5282,No errors [n/a - 0]
+2025-08-06 11:16:48,Shay,online-boutique-5282,"and same here, its working fine form me [n/a - 0]"
+2025-08-06 11:17:20,PLAYER,business-comms-5282,P2- Unable to add product in the cart [n/a - 0]
+2025-08-06 11:17:20,PLAYER,business-comms-5282,*Incident Number INC100045:* P2- Unable to add product in the cart [n/a - 0]
+2025-08-06 11:17:21,UptimeLabs,online-boutique-5282,:star: Incident record created [n/a - 0]
+2025-08-06 11:17:23,UptimeLabs,online-boutique-5282,:star: Send first comms in first 5 minutes [n/a - 0]
+2025-08-06 11:17:25,UptimeLabs,online-boutique-5282,:star: Formally assign criticality level to the incident [n/a - 0]
+2025-08-06 11:17:26,Bez,business-comms-5282,"This is critical demo to client from Tinus, @Prashant - can you get this resolved faster [n/a - 0]"
+2025-08-06 11:17:40,UptimeLabs,online-boutique-5282,:star: Attempt to replicate the issue [n/a - 0]
+2025-08-06 11:17:47,PLAYER,online-boutique-5282,Tinus can you share the URL you are trying to use please [n/a - 0]
+2025-08-06 11:18:05,Tinus,online-boutique-5282,<https://hipster-shop.prod.uptimelabs.io/> [n/a - 0]
+2025-08-06 11:18:37,PLAYER,online-boutique-5282,I was able to add the product... [n/a - 0]
+2025-08-06 11:18:43,PLAYER,online-boutique-5282,to the cart [n/a - 0]
+2025-08-06 11:18:46,Daniel,online-boutique-5282,Is anyone else reported this issue @Prashant ? [n/a - 0]
+2025-08-06 11:18:55,UptimeLabs,online-boutique-5282,:bulb: Hint: how many users are affected? does this rule out possible causes? [n/a - 0]
+2025-08-06 11:19:17,PLAYER,online-boutique-5282,Bob do we have any customers who has reported this [n/a - 0]
+2025-08-06 11:19:36,Bob,online-boutique-5282,The Phone's silent - no issue reported till now [n/a - 0]
+2025-08-06 11:19:48,PLAYER,online-boutique-5282,Daniel we dont have any customer impact [n/a - 0]
+2025-08-06 11:20:07,Daniel,online-boutique-5282,"Oh , this is weird [n/a - 0]"
+2025-08-06 11:20:32,Daniel,online-boutique-5282,Tinus should be trying to access the site from the browser on his computer. Perhaps it’s a local issue? [n/a - 0]
+2025-08-06 11:20:39,PLAYER,business-comms-5282,"Bez we are checking on this, we are not able to replicate the issue nor we have got any customer reporting this [n/a - 0]"
+2025-08-06 11:20:55,Daniel,online-boutique-5282,product/OLJCESPC7Z [n/a - 0]
+2025-08-06 11:21:01,Daniel,online-boutique-5282,I see somethign differenet [n/a - 0]
+2025-08-06 11:21:01,PLAYER,online-boutique-5282,Tinus can you clear your cache [n/a - 0]
+2025-08-06 11:21:12,Daniel,online-boutique-5282,The Product ID in Tinus screent shot is different in PROD [n/a - 0]
+2025-08-06 11:21:42,Tinus,online-boutique-5282,I am paralelly talking to clients as well - can you please let me know what should i do now ? [n/a - 0]
+2025-08-06 11:22:13,Tinus,online-boutique-5282,I was testing few things in UAT sometime back [n/a - 0]
+2025-08-06 11:22:24,Tinus,online-boutique-5282,that worked well back then- but its not working in PROD [n/a - 0]
+2025-08-06 11:22:38,PLAYER,online-boutique-5282,Tinus can you clear your cache and try once again [n/a - 0]
+2025-08-06 11:22:44,Tinus,online-boutique-5282,Okay [n/a - 0]
+2025-08-06 11:22:50,Tinus,online-boutique-5282,I hope this works @Prashant [n/a - 0]
+2025-08-06 11:22:59,Bez,business-comms-5282,Have we made any progress [n/a - 0]
+2025-08-06 11:23:05,UptimeLabs,online-boutique-5282,:star: Form an effective investigation team [n/a - 0]
+2025-08-06 11:23:20,PLAYER,online-boutique-5282,Daniel is the product ID from Prod or UAT? [n/a - 0]
+2025-08-06 11:23:30,Daniel,online-boutique-5282,Product ID from Tinus screent shot is from UAT [n/a - 0]
+2025-08-06 11:23:52,Tinus,online-boutique-5282,CLeared cache now [n/a - 0]
+2025-08-06 11:24:31,tinus,online-boutique-5282,Damn! thats it [n/a - 0]
+2025-08-06 11:24:33,tinus,online-boutique-5282,"Great Ive got to do my presentation now, thanks for figuring this out so quickly. @daniel @shay can you look in to a cache busting solution? [n/a - 0]"
+2025-08-06 11:24:35,shay,online-boutique-5282,it was the cache! sure we can do that [n/a - 0]
+2025-08-06 11:24:37,daniel,online-boutique-5282,"no worries boss, at least its not a significat issue [n/a - 0]"
+2025-08-06 11:24:38,daniel,online-boutique-5282,good luck with the presentation! [n/a - 0]
+2025-08-06 11:24:39,tanya,online-boutique-5282,yes good luck @tinus [n/a - 0]
+2025-08-06 11:24:41,shay,online-boutique-5282,good luck @tinus! [n/a - 0]
+2025-08-06 11:24:49,PLAYER,online-boutique-5282,Great [n/a - 0]
+2025-08-06 11:24:52,UptimeLabs,online-boutique-5282,Start retro and feedback [n/a - 0]
+2025-08-06 11:25:07,PLAYER,online-boutique-5282,Clicked Start_feedback button
+2025-08-06 11:27:15,UptimeLabs,online-boutique-5282,Submission successful [n/a - 0]

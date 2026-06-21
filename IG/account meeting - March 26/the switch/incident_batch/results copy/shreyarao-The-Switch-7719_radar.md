@@ -1,0 +1,9 @@
+# shreyarao-The-Switch-7719.csv
+
+| Expertise | Score | Evidence | Notes |
+|-----------|-------|----------|-------|
+| Incident Mechanics | 5 | [context] "*Incident Number INC100011:* sev3 Issues with late loading of site and placing orders"; [context] "*Incident Number INC100083:* sev1 Issue is exposure of vulnerablities and DDOS"; "Issue is resolved, reports for slow browsing have gone down" | Incident record auto-created with severity at T+8; severity updated to SEV-1 at T+18; closure declared at T+27 after restoration evidence at T+24. |
+| External Comms | 4 | "Hello @bez , We are looking into this issue... will update you"; "off by 9% since last month"; "it is a DDOS attack, fixing it imediately" | Proactive in business-comms with multiple updates (T+9,+12,+15,+18,+24,+27); asked to inform customers; no explicit cadence or structured template. |
+| Internal Comms | 5 | "@maya Can you help us out here ? Seems like this is a network issue ? Can we please check? @tanya can help you"; "@tanya @shay can you both check if this has anything to do with the changes..."; "Can we get an ETa?" | Recruited named responders, coordinated tasks, sought ETA/timebox; gave clear go for failover at T+23; calm and polite. |
+| Identify Scope | 4 | "im able to place an order"; "@bob  is there any issue noticed so far from customers perspective?"; "@bob is this affecting our sales?" | Replicated issue; probed customer impact and sales drop; used others’ signals to confirm widespread impact; limited direct quantification by PLAYER. |
+| Commanding the Incident | 5 | "@maya what is the Plan to get this sorted? do you need resources?"; "Can we get an ETa?"; "We should go ahead with the failover then. Please proceed" | Acted as IC (acknowledged by Bez); emphasized impact/ETA; prioritized restoration (failover) at T+23 with clear decision and direction. |

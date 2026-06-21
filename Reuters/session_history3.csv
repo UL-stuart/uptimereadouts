@@ -1,0 +1,371 @@
+time,player,level_state
+2025-09-29 15:07:40,player1,playing
+2025-09-29 15:08:20,player1,STAR-Asking questions to validate impact of the problem
+2025-09-29 15:08:24,player1,customer_support_info
+2025-09-29 15:08:38,player1,incident_record
+2025-09-29 15:08:40,player1,comms_in_5_mins
+2025-09-29 15:08:45,player1,STAR-Formally assign criticality level to the incident
+2025-09-29 15:09:33,player1,developer_investigation
+2025-09-29 15:09:45,player1,STAR-Reproduces the incident
+2025-09-29 15:11:06,player1,STAR-Check changes done to the platform
+2025-09-29 15:11:41,player1,platform_investigation
+2025-09-29 15:12:02,player1,STAR-Track actions and time box them
+2025-09-29 15:12:25,player1,STAR-Qualify the problem
+2025-09-29 15:13:12,player1,STAR-Form a working theory
+2025-09-29 15:13:12,player1,involve_maya
+2025-09-29 15:15:03,player1,STAR-Escalating when required
+2025-09-29 15:15:14,player1,basic_protocols
+2025-09-29 15:16:48,player1,security_channel_creation
+2025-09-29 15:18:35,player1,main_plan
+2025-09-29 15:20:39,player1,execute_isolation
+2025-09-29 15:24:43,player1,decision_on_restoration
+2025-09-29 15:26:51,player1,business_go_ahead
+2025-09-29 15:27:27,player1,only_checkout_affected
+2025-09-29 15:30:20,player1,execute_restoration
+2025-09-29 15:32:29,player1,recovered
+2025-09-29 15:32:53,player1,STAR-Confirm resolution with the business
+2025-09-29 15:34:38,player1,post_fix_checks_and_forensics
+2025-09-29 15:36:48,player1,STAR-Cross check resolution with stakeholders
+2025-09-29 15:37:46,player1,completed
+2025-09-30 14:25:24,player2,playing
+2025-09-30 14:26:45,player2,customer_support_info
+2025-09-30 14:26:52,player2,STAR-Asking questions to validate impact of the problem
+2025-09-30 14:27:18,player2,STAR-Reproduces the incident
+2025-09-30 14:28:12,player2,incident_record
+2025-09-30 14:28:14,player2,comms_in_5_mins
+2025-09-30 14:28:26,player2,STAR-Formally assign criticality level to the incident
+2025-09-30 14:29:32,player2,STAR-Reviewed changes
+2025-09-30 14:29:32,player2,STAR-Check changes done to the platform
+2025-09-30 14:29:50,player2,developer_investigation
+2025-09-30 14:30:58,player2,review_deployments
+2025-09-30 14:32:15,player2,STAR-Escalating when required
+2025-09-30 14:32:20,player2,platform_investigation
+2025-09-30 14:37:04,player2,STAR-Manage actions and timings
+2025-09-30 14:37:04,player2,STAR-Take command
+2025-09-30 14:38:10,player2,involve_maya
+2025-09-30 14:41:34,player2,basic_protocols
+2025-09-30 14:45:36,player2,security_channel_creation
+2025-09-30 14:47:57,player2,main_plan
+2025-09-30 14:49:23,player2,execute_isolation
+2025-09-30 14:51:15,player2,decision_on_restoration
+2025-09-30 14:54:31,player2,business_go_ahead
+2025-09-30 14:55:55,player2,execute_restoration
+2025-09-30 14:57:30,player2,recovered
+2025-09-30 14:58:39,player2,STAR-Confirm resolution with the business
+2025-09-30 14:59:54,player2,post_fix_checks_and_forensics
+2025-09-30 15:01:26,player2,STAR-Cross checking resolution with team
+2025-09-30 15:02:19,player2,completed
+2025-10-01 04:09:42,player2,STAR-Form a working theory
+2025-10-01 04:10:22,player2,STAR-Know your team and their roles
+2025-10-01 04:11:07,player2,STAR-Qualify the problem
+2025-10-01 04:12:16,player2,STAR-Send regular business comms
+2025-10-01 04:13:38,player2,STAR-Take command
+2025-10-01 04:15:29,player2,STAR-Form an effective investigation team
+2025-10-01 04:34:37,player1,STAR-Form an effective investigation team
+2025-10-01 04:35:20,player1,STAR-Facts over opinion
+2025-10-01 04:36:15,player1,STAR-Take command
+2025-10-01 04:37:00,player1,STAR-Communicating clearly and frequently
+2025-10-01 04:37:10,player1,STAR-Attempt to replicate the issue
+2025-10-01 04:38:20,player1,STAR-Send regular business comms
+2025-10-01 04:41:22,player1,STAR-Encourage business comms
+2025-10-03 10:12:53,player3,playing
+2025-10-03 10:13:27,player3,customer_support_info
+2025-10-03 10:13:48,player3,incident_record
+2025-10-03 10:13:50,player3,comms_in_5_mins
+2025-10-03 10:13:54,player3,STAR-Reproduces the incident
+2025-10-03 10:14:59,player3,STAR-Formally assign criticality level to the incident
+2025-10-03 10:16:29,player3,review_deployments
+2025-10-03 10:18:44,player3,platform_investigation
+2025-10-03 10:19:39,player3,developer_investigation
+2025-10-03 10:21:11,player3,involve_maya
+2025-10-03 10:21:14,player3,STAR-Manage actions and timings
+2025-10-03 10:23:02,player3,basic_protocols
+2025-10-03 10:24:41,player3,security_channel_creation
+2025-10-03 10:26:40,player3,main_plan
+2025-10-03 10:27:58,player3,only_checkout_affected
+2025-10-03 10:30:24,player3,STAR-Form an effective investigation team
+2025-10-03 10:30:24,player3,STAR-Know your team and their roles
+2025-10-03 10:30:33,player3,execute_isolation
+2025-10-03 10:33:30,player3,decision_on_restoration
+2025-10-03 10:35:37,player3,business_go_ahead
+2025-10-03 10:36:19,player3,STAR-Use metrics as evidence
+2025-10-03 10:36:45,player3,execute_restoration
+2025-10-03 10:38:21,player3,recovered
+2025-10-03 10:39:17,player3,STAR-Cross checking resolution with team
+2025-10-03 10:41:11,player3,post_fix_checks_and_forensics
+2025-10-03 10:42:27,player3,STAR-Confirm resolution with the business
+2025-10-03 10:43:49,player3,completed
+2025-10-03 14:42:33,player3,STAR-Asking questions to validate impact of the problem
+2025-10-03 14:43:19,player3,STAR-Check changes done to the platform
+2025-10-03 14:44:07,player3,STAR-Take command
+2025-10-03 14:44:54,player3,STAR-Validate the fix
+2025-10-03 14:46:11,player3,STAR-Communicating clearly and frequently
+2025-10-03 14:48:20,player3,STAR-Send regular business comms
+2025-10-03 14:48:27,player3,STAR-Encourage business comms
+2025-10-06 13:39:16,player4,playing
+2025-10-06 13:40:12,player4,developer_investigation
+2025-10-06 13:40:23,player4,customer_support_info
+2025-10-06 13:41:41,player4,STAR-Reproduces the incident
+2025-10-06 13:42:07,player4,incident_record
+2025-10-06 13:42:09,player4,comms_in_5_mins
+2025-10-06 13:42:18,player4,STAR-Take command
+2025-10-06 13:44:03,player4,platform_investigation
+2025-10-06 13:46:23,player4,involve_maya
+2025-10-06 13:47:35,player4,ransom_gets_doubled
+2025-10-06 13:48:20,player4,basic_protocols
+2025-10-06 13:50:01,player4,security_channel_creation
+2025-10-06 13:53:27,player4,main_plan
+2025-10-06 13:55:08,player4,STAR-Asking questions to validate impact of the problem
+2025-10-06 13:55:51,player4,only_checkout_affected
+2025-10-06 13:56:46,player4,STAR-Escalating when required
+2025-10-06 13:57:09,player4,execute_isolation
+2025-10-06 13:59:14,player4,decision_on_restoration
+2025-10-06 14:02:31,player4,STAR-Formally assign criticality level to the incident
+2025-10-06 14:04:16,player4,business_go_ahead
+2025-10-06 14:05:34,player4,execute_restoration
+2025-10-06 14:06:48,player4,recovered
+2025-10-06 14:07:13,player4,STAR-Confirm resolution with the business
+2025-10-06 14:11:02,player4,post_fix_checks_and_forensics
+2025-10-06 14:13:05,player4,completed
+2025-10-06 14:24:58,player4,STAR-Form an effective investigation team
+2025-10-06 14:25:04,player4,STAR-Take command
+2025-10-06 14:25:08,player4,STAR-Escalating when required
+2025-10-06 14:25:11,player4,STAR-Know your team and their roles
+2025-10-06 14:25:15,player4,STAR-Incident record created
+2025-10-06 14:25:16,player4,STAR-Send the first comms in first 5 minutes
+2025-10-06 14:25:17,player4,STAR-Send regular business comms
+2025-10-06 14:25:19,player4,STAR-Cross check resolution with stakeholders
+2025-10-06 14:25:26,player4,STAR-Qualify the problem
+2025-10-06 14:25:37,player4,STAR-Use metrics as evidence
+2025-10-06 14:25:49,player4,STAR-Restoration over root cause analysis
+2025-10-06 14:25:53,player4,STAR-Communicating clearly and frequently
+2025-10-07 13:06:29,player5,playing
+2025-10-07 13:07:31,player5,customer_support_info
+2025-10-07 13:09:29,player5,STAR-Reproduces the incident
+2025-10-07 13:09:50,player5,incident_record
+2025-10-07 13:09:52,player5,comms_in_5_mins
+2025-10-07 13:13:31,player5,STAR-Restoration over root cause analysis
+2025-10-07 13:17:14,player5,platform_investigation
+2025-10-07 13:17:55,player5,developer_investigation
+2025-10-07 13:19:19,player5,involve_maya
+2025-10-07 13:20:43,player5,ransom_gets_doubled
+2025-10-07 13:20:49,player5,STAR-Formally assign criticality level to the incident
+2025-10-07 13:22:24,player5,basic_protocols
+2025-10-07 13:24:02,player5,security_channel_creation
+2025-10-07 13:25:14,player5,main_plan
+2025-10-07 13:26:37,player5,STAR-Form an effective investigation team
+2025-10-07 13:26:37,player5,STAR-Know your team and their roles
+2025-10-07 13:26:42,player5,execute_isolation
+2025-10-07 13:28:10,player5,decision_on_restoration
+2025-10-07 13:29:39,player5,business_go_ahead
+2025-10-07 13:30:15,player5,only_checkout_affected
+2025-10-07 13:30:45,player5,execute_restoration
+2025-10-07 13:32:53,player5,recovered
+2025-10-07 13:35:02,player5,post_fix_checks_and_forensics
+2025-10-07 13:36:21,player5,STAR-Confirm resolution with the business
+2025-10-07 13:36:51,player5,completed
+2025-10-09 11:53:57,player6,playing
+2025-10-09 11:54:49,player6,STAR-Reproduces the incident
+2025-10-09 11:55:04,player6,customer_support_info
+2025-10-09 11:56:13,player6,incident_record
+2025-10-09 11:56:15,player6,comms_in_5_mins
+2025-10-09 11:56:18,player6,STAR-Take command
+2025-10-09 11:56:37,player6,STAR-Formally assign criticality level to the incident
+2025-10-09 11:57:02,player6,review_deployments
+2025-10-09 11:58:39,player6,STAR-Restoration over root cause analysis
+2025-10-09 11:58:40,player6,platform_investigation
+2025-10-09 11:59:51,player6,involve_maya
+2025-10-09 12:01:05,player6,basic_protocols
+2025-10-09 12:03:16,player6,security_channel_creation
+2025-10-09 12:05:32,player6,main_plan
+2025-10-09 12:07:01,player6,STAR-Asking questions to validate impact of the problem
+2025-10-09 12:07:11,player6,only_checkout_affected
+2025-10-09 12:08:18,player6,STAR-Manage actions and timings
+2025-10-09 12:10:42,player6,execute_isolation
+2025-10-09 12:10:46,player6,STAR-Track actions and time box them
+2025-10-09 12:10:46,player6,STAR-Form an effective investigation team
+2025-10-09 12:10:46,player6,STAR-Know your team and their roles
+2025-10-09 12:12:39,player6,STAR-Use metrics as evidence
+2025-10-09 12:13:11,player6,decision_on_restoration
+2025-10-09 12:14:28,player6,business_go_ahead
+2025-10-09 12:15:38,player6,execute_restoration
+2025-10-09 12:17:26,player6,STAR-Facts over opinion
+2025-10-09 12:18:18,player6,recovered
+2025-10-09 12:19:14,player6,STAR-Confirm resolution with the business
+2025-10-09 12:20:42,player6,post_fix_checks_and_forensics
+2025-10-09 12:21:42,player6,completed
+2025-10-09 11:51:27,player6,STAR-Cross checking resolution with team
+2025-10-09 11:51:27,player6,STAR-Incident record created
+2025-10-09 11:51:27,player6,STAR-Send the first comms in first 5 minutes
+2025-10-15 13:50:33,player5,STAR-Asking questions to validate impact of the problem
+2025-10-15 13:50:59,player5,STAR-Check changes done to the platform
+2025-10-15 13:51:05,player5,STAR-Reviewed changes
+2025-10-15 13:51:25,player5,STAR-Restoration over root cause analysis
+2025-10-15 13:51:39,player5,STAR-Use metrics as evidence
+2025-10-15 13:52:07,player5,STAR-Form a working theory
+2025-10-15 13:52:29,player5,STAR-Take command
+2025-10-15 13:52:53,player5,STAR-Validate the fix
+2025-10-15 13:53:17,player5,STAR-Incident record created
+2025-10-15 13:54:47,player5,STAR-Send regular business comms
+2025-10-15 13:55:25,player5,STAR-Manage actions and timings
+2025-10-15 13:55:27,player5,STAR-Escalating when required
+2025-10-15 13:55:47,player5,STAR-Qualify the problem
+2025-10-15 13:56:38,player5,STAR-Cross checking resolution with team
+2025-10-15 14:15:22,player6,STAR-Check changes done to the platform
+2025-10-15 14:15:27,player6,STAR-Reviewed changes
+2025-10-15 14:15:48,player6,STAR-Escalating when required
+2025-10-15 14:16:03,player6,STAR-Form a working theory
+2025-10-15 14:17:37,player6,STAR-Send regular business comms
+2025-10-15 14:19:43,player6,STAR-Validate the fix
+2025-10-15 14:19:58,player6,STAR-Cross check resolution with stakeholders
+2025-10-15 14:20:16,player6,STAR-Communicating clearly and frequently
+2025-10-15 16:10:34,player7,playing
+2025-10-15 16:12:26,player7,STAR-Reproduces the incident
+2025-10-15 16:13:05,player7,STAR-Manage actions and timings
+2025-10-15 16:13:06,player7,platform_investigation
+2025-10-15 16:14:02,player7,STAR-Reviewed changes
+2025-10-15 16:14:20,player7,review_deployments
+2025-10-15 16:16:48,player7,STAR-Form an effective investigation team
+2025-10-15 16:16:48,player7,involve_maya
+2025-10-15 16:18:30,player7,STAR-Qualify the problem
+2025-10-15 16:18:52,player7,basic_protocols
+2025-10-15 16:20:16,player7,incident_record
+2025-10-15 16:20:18,player7,comms_in_5_mins
+2025-10-15 16:22:09,player7,security_channel_creation
+2025-10-15 16:24:45,player7,main_plan
+2025-10-15 16:26:38,player7,execute_isolation
+2025-10-15 16:28:26,player7,decision_on_restoration
+2025-10-15 16:29:39,player7,business_go_ahead
+2025-10-15 16:30:03,player7,STAR-Formally assign criticality level to the incident
+2025-10-15 16:30:44,player7,execute_restoration
+2025-10-15 16:33:13,player7,recovered
+2025-10-15 16:33:54,player7,STAR-Confirm resolution with the business
+2025-10-15 16:35:45,player7,post_fix_checks_and_forensics
+2025-10-15 16:37:36,player7,STAR-Cross check resolution with stakeholders
+2025-10-15 16:38:20,player7,STAR-Cross checking resolution with team
+2025-10-15 16:38:53,player7,completed
+2025-10-15 16:39:12,player5,STAR-Facts over opinion
+2025-10-15 16:41:14,player5,STAR-Cross check resolution with stakeholders
+2025-10-15 16:53:27,player5,STAR-Communicating clearly and frequently
+2025-10-15 16:58:31,player5,STAR-Send the first comms in first 5 minutes
+2025-10-17 08:14:46,player8,playing
+2025-10-17 08:15:15,player8,STAR-Reproduces the incident
+2025-10-17 08:16:22,player8,customer_support_info
+2025-10-17 08:16:21,player8,STAR-Asking questions to validate impact of the problem
+2025-10-17 08:16:36,player8,STAR-Manage actions and timings
+2025-10-17 08:17:14,player8,incident_record
+2025-10-17 08:17:16,player8,comms_in_5_mins
+2025-10-17 08:17:19,player8,STAR-Qualify the problem
+2025-10-17 08:17:31,player8,STAR-Check changes done to the platform
+2025-10-17 08:18:02,player8,STAR-Formally assign criticality level to the incident
+2025-10-17 08:18:25,player8,STAR-Facts over opinion
+2025-10-17 08:18:43,player8,developer_investigation
+2025-10-17 08:18:46,player8,platform_investigation
+2025-10-17 08:22:40,player8,STAR-Escalating when required
+2025-10-17 08:23:00,player8,STAR-Reviewed changes
+2025-10-17 08:25:44,player8,STAR-Restoration over root cause analysis
+2025-10-17 08:26:25,player8,involve_maya
+2025-10-17 08:29:58,player8,basic_protocols
+2025-10-17 08:32:08,player8,security_channel_creation
+2025-10-17 08:33:20,player8,main_plan
+2025-10-17 08:35:17,player8,execute_isolation
+2025-10-17 08:37:51,player8,decision_on_restoration
+2025-10-17 08:39:43,player8,business_go_ahead
+2025-10-17 08:40:39,player8,execute_restoration
+2025-10-17 08:42:32,player8,recovered
+2025-10-17 08:43:15,player8,STAR-Cross checking resolution with team
+2025-10-17 08:44:27,player8,STAR-Confirm resolution with the business
+2025-10-17 08:44:41,player8,post_fix_checks_and_forensics
+2025-10-17 08:47:50,player8,completed
+2025-10-15 16:14:19,player7,STAR-Incident record created
+2025-10-15 16:17:19,player7,STAR-Escalating when required
+2025-10-15 16:20:19,player7,STAR-Take command
+2025-10-17 09:03:47,player8,STAR-Form an effective investigation team
+2025-10-17 09:04:40,player8,STAR-Form a working theory
+2025-10-17 09:05:06,player8,STAR-Communicating clearly and frequently
+2025-10-17 09:05:42,player8,STAR-Know your team and their roles
+2025-10-17 09:06:06,player8,STAR-Take command
+2025-10-17 09:06:45,player8,STAR-Send regular business comms
+2025-10-17 09:06:49,player8,STAR-Send the first comms in first 5 minutes
+2025-10-17 09:06:57,player8,STAR-Incident record created
+2025-10-17 09:07:09,player8,STAR-Encourage business comms
+2025-10-17 09:10:26,player8,STAR-Track actions and time box them
+2025-10-17 09:10:53,player8,STAR-Ask team members to provide evidence of their assertions
+2025-10-17 09:17:35,player8,STAR-Validate the fix
+2025-10-17 14:08:29,player9,playing
+2025-10-17 14:09:09,player9,STAR-Qualify the problem
+2025-10-17 14:09:32,player9,customer_support_info
+2025-10-17 14:09:33,player9,STAR-Asking questions to validate impact of the problem
+2025-10-17 14:10:45,player9,developer_investigation
+2025-10-17 14:11:42,player9,incident_record
+2025-10-17 14:11:44,player9,comms_in_5_mins
+2025-10-17 14:12:14,player9,STAR-Check changes done to the platform
+2025-10-17 14:13:37,player9,STAR-Formally assign criticality level to the incident
+2025-10-17 14:15:53,player9,platform_investigation
+2025-10-17 14:16:04,player9,STAR-Ask team members to provide evidence of their assertions
+2025-10-17 14:16:15,player9,STAR-Manage actions and timings
+2025-10-17 14:17:11,player9,involve_maya
+2025-10-17 14:17:14,player9,STAR-Form an effective investigation team
+2025-10-17 14:18:04,player9,STAR-Form a working theory
+2025-10-17 14:18:28,player9,STAR-Take command
+2025-10-17 14:18:55,player9,STAR-Track actions and time box them
+2025-10-17 14:18:59,player9,basic_protocols
+2025-10-17 14:19:32,player9,security_channel_creation
+2025-10-17 14:19:45,player9,STAR-Reviewed changes
+2025-10-17 14:21:46,player9,main_plan
+2025-10-17 14:24:34,player9,STAR-Know your team and their roles
+2025-10-17 14:25:38,player9,execute_isolation
+2025-10-17 14:27:33,player9,decision_on_restoration
+2025-10-17 14:28:52,player9,business_go_ahead
+2025-10-17 14:29:18,player9,STAR-Restoration over root cause analysis
+2025-10-17 14:29:30,player9,execute_restoration
+2025-10-17 14:30:45,player9,recovered
+2025-10-17 14:31:38,player9,STAR-Cross check resolution with stakeholders
+2025-10-17 14:32:22,player9,post_fix_checks_and_forensics
+2025-10-17 14:35:23,player9,completed
+2025-10-19 10:26:44,player9,STAR-Incident record created
+2025-10-19 10:26:56,player9,STAR-Send the first comms in first 5 minutes
+2025-10-19 10:27:14,player9,STAR-Send regular business comms
+2025-10-19 10:27:48,player9,STAR-Facts over opinion
+2025-10-19 10:28:12,player9,STAR-Cross checking resolution with team
+2025-10-19 10:28:38,player9,STAR-Validate the fix
+2025-10-19 10:28:53,player9,STAR-Confirm resolution with the business
+2025-10-19 10:29:16,player9,STAR-Escalating when required
+2025-10-19 10:29:31,player9,STAR-Communicating clearly and frequently
+2025-10-19 10:35:40,player9,STAR-Encourage business comms
+2025-10-19 10:36:57,player9,STAR-Attempt to replicate the issue
+2025-10-31 16:26:17,player10,playing
+2025-10-31 16:26:49,player10,STAR-Check changes done to the platform
+2025-10-31 16:27:12,player10,STAR-Asking questions to validate impact of the problem
+2025-10-31 16:27:14,player10,customer_support_info
+2025-10-31 16:28:15,player10,developer_investigation
+2025-10-31 16:28:12,player10,STAR-Form an effective investigation team
+2025-10-31 16:28:21,player10,platform_investigation
+2025-10-31 16:29:10,player10,STAR-Restoration over root cause analysis
+2025-10-31 16:29:10,player10,STAR-Take command
+2025-10-31 16:29:47,player10,STAR-Qualify the problem
+2025-10-31 16:30:08,player10,incident_record
+2025-10-31 16:30:10,player10,comms_in_5_mins
+2025-10-31 16:30:42,player10,involve_maya
+2025-10-31 16:32:52,player10,ransom_gets_doubled
+2025-10-31 16:34:14,player10,basic_protocols
+2025-10-31 16:35:10,player10,STAR-Ask team members to provide evidence of their assertions
+2025-10-31 16:37:18,player10,security_channel_creation
+2025-10-31 16:39:43,player10,main_plan
+2025-10-31 16:42:09,player10,execute_isolation
+2025-10-31 16:45:09,player10,decision_on_restoration
+2025-10-31 16:47:24,player10,STAR-Use metrics as evidence
+2025-10-31 16:47:26,player10,business_go_ahead
+2025-10-31 16:48:17,player10,execute_restoration
+2025-10-31 16:51:01,player10,recovered
+2025-10-31 16:52:38,player10,post_fix_checks_and_forensics
+2025-10-31 16:54:36,player10,STAR-Cross checking resolution with team
+2025-10-31 16:56:13,player10,STAR-Confirm resolution with the business
+2025-10-31 16:57:10,player10,completed
+2025-10-31 17:01:44,player10,STAR-Facts over opinion
+2025-10-31 17:01:44,player10,STAR-Form a working theory
+2025-10-31 17:02:01,player10,STAR-Validate the fix
+2025-10-31 17:02:05,player10,STAR-Restoration over root cause analysis
+2025-10-31 17:02:22,player10,STAR-Communicating clearly and frequently
+2025-10-31 17:02:23,player10,STAR-Encourage business comms
+2025-10-31 17:02:43,player10,STAR-Send regular business comms

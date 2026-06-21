@@ -1,0 +1,106 @@
+datetime,player,channel,message
+2025-10-01 15:04:03,tinus,online-boutique-6036,"Hi team, let's have a mood check send an emoji to describe your mood"
+2025-10-01 15:04:07,tinus,online-boutique-6036,"I'll go first, :thumbsup:"
+2025-10-01 15:04:13,tanya,online-boutique-6036,:thumbsup:
+2025-10-01 15:04:15,tinus,online-boutique-6036,I'm excited about showing off all your hard work at todays stakeholder meeting
+2025-10-01 15:04:18,daniel,online-boutique-6036,":skull: knackered, had a few too many late nights this week"
+2025-10-01 15:04:21,shay,online-boutique-6036,:rainbow:
+2025-10-01 15:04:24,hamed,online-boutique-6036,living the dream :smile:
+2025-10-01 15:04:28,bez,online-boutique-6036,:smirk: im excited to see the show too
+2025-10-01 15:04:30,tinus,online-boutique-6036,shouldn't you be prepping for the meeting 
+2025-10-01 15:04:33,bez,online-boutique-6036,:sweat_smile: i am indeed I'll leave you lot to it
+2025-10-01 15:04:35,shay,online-boutique-6036,hang in there @daniel its gonne be the weekend sooner or later :joy:
+2025-10-01 15:04:38,tinus,online-boutique-6036,I should get on with my prep too have a good day team
+2025-10-01 15:04:39,daniel,online-boutique-6036,@shay strict diet of energy drink for me today lol
+2025-10-01 15:04:42,daniel,online-boutique-6036,hope the presentation goes well @tinus
+2025-10-01 15:04:44,tanya,online-boutique-6036,:raised_hands:
+2025-10-01 15:05:00,UptimeLabs,online-boutique-6036,"Welcome to Rumours, remember communication is key to diagnose the problem.
+
+ *Use `/help` at any time for a list of useful links and commands*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin Start button"
+2025-10-01 15:07:29,PLAYER,online-boutique-6036,Clicked Start button
+2025-10-01 15:07:30,UptimeLabs,online-boutique-6036,":alarm_clock: - You have 20 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-10-01 15:07:33,tinus,online-boutique-6036,"Hey team, I'm texting from the board room - kinda embarrassing but in my demo to the board, I tried to add a pair of Aviator sunglasses to the shopping cart and I got a ?http 500?"
+2025-10-01 15:07:35,tinus,online-boutique-6036,"I've bought some time but need this be able to do this demo if we can lets get this sorted in the next 20 minutes.
+"
+2025-10-01 15:07:37,tinus,online-boutique-6036,Metrics
+2025-10-01 15:07:40,tanya,online-boutique-6036,"uh oh, those Aviators are top sellers due to the new Top Gun movie...It's size up the issue time jose rodrigo de la rosa walls"
+2025-10-01 15:07:43,shay,online-boutique-6036,Come on this can't be happening!
+2025-10-01 15:07:45,tinus,online-boutique-6036,"I'm in this meeting so, wont be able to help but I trust that you all can get this fixed asap, just @ me if you need anything"
+2025-10-01 15:07:48,shay,online-boutique-6036,ok looking into this now
+2025-10-01 15:08:21,PLAYER,online-boutique-6036,i dont see any recent changes
+2025-10-01 15:08:34,Shay,online-boutique-6036,Let me get it for you
+2025-10-01 15:09:00,Shay,online-boutique-6036,<https://uptime-labs.atlassian.net/wiki/x/L4BbQg>
+2025-10-01 15:09:31,Tinus,online-boutique-6036,Guys its not working for me at all
+2025-10-01 15:09:36,PLAYER,online-boutique-6036,"i see high log message rates for currencyservice and frontend, Shay, Tanya can you take a look into that?"
+2025-10-01 15:09:44,UptimeLabs,online-boutique-6036,:star: Form an effective investigation team
+2025-10-01 15:09:57,Tinus,online-boutique-6036,I'm in a conference hall about to do a demo presentation in front of potential customers
+2025-10-01 15:10:18,Tanya,online-boutique-6036,That is log messages rate not error log rate
+2025-10-01 15:10:29,PLAYER,online-boutique-6036,i was able to place an order for the glasses
+2025-10-01 15:10:36,UptimeLabs,online-boutique-6036,:star: Attempt to replicate the issue
+2025-10-01 15:10:44,Shay,online-boutique-6036,Even for me orders are going well
+2025-10-01 15:11:10,PLAYER,online-boutique-6036,Tinus can you tell me whats the experience like?
+2025-10-01 15:11:15,Bez,business-comms-6036,I've heard Tinus has reported some issues with placing orders. Is this impacting customers?
+2025-10-01 15:11:16,UptimeLabs,online-boutique-6036,:star: Asking questions to validate impact of the problem
+2025-10-01 15:11:36,PLAYER,online-boutique-6036,Tanya do you see any errors?
+2025-10-01 15:11:44,Tinus,online-boutique-6036,"Whenever i go to buy anything on my laptop , it  fails to get an order in the end"
+2025-10-01 15:12:03,Tanya,online-boutique-6036,I tried to place an order and for me its working
+2025-10-01 15:12:18,Tanya,online-boutique-6036,All the servers are in a healthy state.
+2025-10-01 15:12:33,PLAYER,online-boutique-6036,i see some 500 errors in the incident management dashboards
+2025-10-01 15:12:41,UptimeLabs,online-boutique-6036,:star: Use metrics as evidence
+2025-10-01 15:12:46,Tinus,online-boutique-6036,Probably check if customers are having similar issues
+2025-10-01 15:12:52,PLAYER,online-boutique-6036,"can you drill down into them Shay, Tanya?"
+2025-10-01 15:13:06,Bez,business-comms-6036,Have we got an incident for this?
+2025-10-01 15:13:12,PLAYER,online-boutique-6036,Bob have you received any customer complaints?
+2025-10-01 15:13:20,Tanya,online-boutique-6036,Sure let me check
+2025-10-01 15:13:32,PLAYER,online-boutique-6036,Tinus are you using prod or another environment?
+2025-10-01 15:13:36,Bob,online-boutique-6036,Let me check this with my team
+2025-10-01 15:13:50,Tinus,online-boutique-6036,I’m going to dip in and out of this channel for im speaking to some clients
+2025-10-01 15:14:03,Tinus,online-boutique-6036,I'm using prod website
+2025-10-01 15:14:19,PLAYER,business-comms-6036,sev2 500 errors in demo
+2025-10-01 15:14:19,PLAYER,business-comms-6036,*Incident Number INC100098:* sev2 500 errors in demo
+2025-10-01 15:14:19,UptimeLabs,online-boutique-6036,:star: Incident record created
+2025-10-01 15:14:21,UptimeLabs,online-boutique-6036,:star: Send first comms in first 5 minutes
+2025-10-01 15:14:25,UptimeLabs,online-boutique-6036,:star: Formally assign criticality level to the incident
+2025-10-01 15:14:28,Bob,online-boutique-6036,None of the users has reported what Tinus is facing
+2025-10-01 15:14:46,PLAYER,business-comms-6036,"i just created it, its a demo, but we dont see any errors in servers"
+2025-10-01 15:14:50,Shay,online-boutique-6036,I've checked those errors
+2025-10-01 15:15:19,Shay,online-boutique-6036,"These errors are from a non-critical app, which is a work in progress"
+2025-10-01 15:15:37,Tanya,online-boutique-6036,"Yes , i can confirm its not impacting any order flow on the website"
+2025-10-01 15:16:02,Tanya,online-boutique-6036,Tinus should be trying to access the site from the browser on his computer. Perhaps it’s a local issue?
+2025-10-01 15:16:14,PLAYER,online-boutique-6036,i see an error on frontend but it says its an issue with the card
+2025-10-01 15:16:22,UptimeLabs,online-boutique-6036,:star: Reproduces the incident
+2025-10-01 15:16:26,Shay,online-boutique-6036,Thats normal
+2025-10-01 15:16:40,PLAYER,online-boutique-6036,Tinus are you able to do it with a different browser or a different device?
+2025-10-01 15:16:46,Shay,online-boutique-6036,Wait i've found an observation
+2025-10-01 15:17:10,Tinus,online-boutique-6036,I've got only one laptop with me and google chrome as browser
+2025-10-01 15:17:22,Tinus,online-boutique-6036,But let me check this in my phone
+2025-10-01 15:17:27,PLAYER,online-boutique-6036,what did you find Shay?
+2025-10-01 15:18:00,Shay,online-boutique-6036,"I see Product ID from Tinus screenshot is different than PROD
+<https://i.ibb.co/tTPJgkW9/rumours.png>"
+2025-10-01 15:18:40,PLAYER,online-boutique-6036,can someone share the prod link to tinus?
+2025-10-01 15:18:55,Shay,online-boutique-6036,in prod DB it is ending by letter Z in the end
+2025-10-01 15:19:09,Tinus,online-boutique-6036,In my phone its working
+2025-10-01 15:19:30,Tinus,online-boutique-6036,"But i can't do demo on the phone , i need to connect my laptop there"
+2025-10-01 15:19:34,PLAYER,online-boutique-6036,can you clear the cache in your laptop Tinus?
+2025-10-01 15:19:45,PLAYER,online-boutique-6036,and please double check you are using prod?
+2025-10-01 15:19:53,UptimeLabs,online-boutique-6036,:star: Check changes done to the platform
+2025-10-01 15:19:54,Shay,online-boutique-6036,I think you're right Rodrigo. He must try this solution once
+2025-10-01 15:20:16,Tinus,online-boutique-6036,Yes it worked
+2025-10-01 15:20:18,Tinus,online-boutique-6036,That great
+2025-10-01 15:20:24,PLAYER,business-comms-6036,"seems like an isolated issue for tinus, he was able to do it on his phone"
+2025-10-01 15:20:29,tinus,online-boutique-6036,Damn! thats it
+2025-10-01 15:20:31,tinus,online-boutique-6036,"Great Ive got to do my presentation now, thanks for figuring this out so quickly. @daniel @shay can you look in to a cache busting solution?"
+2025-10-01 15:20:31,PLAYER,online-boutique-6036,awesome!
+2025-10-01 15:20:33,shay,online-boutique-6036,it was the cache! sure we can do that
+2025-10-01 15:20:35,daniel,online-boutique-6036,"no worries boss, at least its not a significat issue"
+2025-10-01 15:20:36,daniel,online-boutique-6036,good luck with the presentation!
+2025-10-01 15:20:37,tanya,online-boutique-6036,yes good luck @tinus
+2025-10-01 15:20:40,shay,online-boutique-6036,good luck @tinus!
+2025-10-01 15:20:51,UptimeLabs,online-boutique-6036,"Thank you for playing, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit I am ready when you want to start. I am ready button"
+2025-10-01 15:21:03,PLAYER,business-comms-6036,it is resolved it was a cache issue with tinus laptop
+2025-10-01 15:21:31,PLAYER,online-boutique-6036,Clicked Start_feedback button
+2025-10-01 15:23:01,UptimeLabs,online-boutique-6036,Submission successful

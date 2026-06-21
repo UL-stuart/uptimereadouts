@@ -1,0 +1,148 @@
+datetime,player,channel,message
+2025-11-21 13:14:55,UptimeLabs,online-boutique-6865,"Welcome to The Unknown Unknown, are you prepared for the challenge?
+
+ *Use `/help` at any time for a list of useful links and commands*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin Start button"
+2025-11-21 13:16:30,PLAYER,online-boutique-6865,Clicked Start button
+2025-11-21 13:16:31,UptimeLabs,online-boutique-6865,":alarm_clock: - You have 30 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-11-21 13:16:32,Bob,online-boutique-6865,"Hey team, getting a few reports now, looks like confusion from the customers on what they ordered?"
+2025-11-21 13:16:39,Bob,online-boutique-6865,This is strange
+2025-11-21 13:16:45,Bob,online-boutique-6865,Just seen a couple of reports of customers not receiving the right item on delivery
+2025-11-21 13:16:50,Tinus,online-boutique-6865,Hmm? that sounds strange. @jamie.buchanan can you take point and start sizing this up?
+2025-11-21 13:18:05,PLAYER,online-boutique-6865,Bob can you tell me what percentage of customers are being impacted? And which countries?
+2025-11-21 13:18:12,UptimeLabs,online-boutique-6865,:star: Asking questions to validate impact of the problem
+2025-11-21 13:18:16,PLAYER,online-boutique-6865,Tinus I'm on it
+2025-11-21 13:18:27,PLAYER,online-boutique-6865,Clicked undefined button
+2025-11-21 13:18:31,PLAYER,online-boutique-6865,Clicked org button
+2025-11-21 13:18:34,PLAYER,online-boutique-6865,Clicked undefined button
+2025-11-21 13:18:34,Bob,online-boutique-6865,Checking reports...
+2025-11-21 13:18:58,Bob,online-boutique-6865,One report said the user wanted to buy 'Sunglasses' but he got 'Tank-top' in confirmation
+2025-11-21 13:19:09,Bob,online-boutique-6865,Just double checked with shipping looks like the items that has been ordered are correct and we're sending the right item
+2025-11-21 13:19:14,Bob,online-boutique-6865,We have currently got more than 17 complaints so far
+2025-11-21 13:19:30,PLAYER,online-boutique-6865,Shay Can you try to recreate the problem please? We are looking for wrong items
+2025-11-21 13:19:37,UptimeLabs,online-boutique-6865,:star: Reproduces the incident
+2025-11-21 13:19:51,PLAYER,business-comms-6865,"Bez FYI, just investigating some incorrect item delivery"
+2025-11-21 13:19:58,Shay,online-boutique-6865,Sure i can try now
+2025-11-21 13:20:30,Bez,business-comms-6865,Do we have a ticket created for this?
+2025-11-21 13:21:08,Shay,online-boutique-6865,I was able to place an order
+2025-11-21 13:21:19,PLAYER,online-boutique-6865,"Working theory so far:
+• Customers are seeing incorrect Item after they have chosen it
+• But correct Item is being shipped
+• Problem sounds narrowed to basket presentation?"
+2025-11-21 13:21:25,UptimeLabs,online-boutique-6865,:star: Form a working theory
+2025-11-21 13:21:29,Shay,online-boutique-6865,but i noticed its not matching with the image
+2025-11-21 13:21:33,Shay,online-boutique-6865,<https://i.ibb.co/219gV7DL/outage.png>
+2025-11-21 13:21:57,Shay,online-boutique-6865,We do have recent changes
+2025-11-21 13:22:08,PLAYER,online-boutique-6865,Shay what stage of the customer journey are you looking when you see the wrong item?
+2025-11-21 13:22:36,Shay,online-boutique-6865,On the home page
+2025-11-21 13:22:45,Shay,online-boutique-6865,Do you see the issue as well?
+2025-11-21 13:23:09,PLAYER,online-boutique-6865,Maya Hi. can you do a security sweep to check if you see anything unusal?
+2025-11-21 13:23:32,Bez,business-comms-6865,What about the financial impact @Jamie.buchanan?
+2025-11-21 13:23:46,UptimeLabs,online-boutique-6865,:bulb: Declare an incident.
+2025-11-21 13:24:00,Maya,online-boutique-6865,Sure i can take a look now
+2025-11-21 13:24:25,Maya,online-boutique-6865,No spikes in WAF blocks or suspicious auth patterns. Traffic looks normal from a security perspective.
+2025-11-21 13:24:30,Maya,online-boutique-6865,"There's nothing to highlight from SecOps, no alerts. All security agents are functioning correctly. We don't have any indication of a security issue here."
+2025-11-21 13:24:35,Maya,online-boutique-6865,It's probably more of a data/application layer issue. But i'll keep monitoring in case anything changes.
+2025-11-21 13:25:57,PLAYER,online-boutique-6865,Tinus I can see that none of the images matches their text description
+2025-11-21 13:26:24,Tinus,online-boutique-6865,"Oh no, do we know the financial impact from this?"
+2025-11-21 13:26:30,PLAYER,online-boutique-6865,Tinus that happens on the catalogue page and the basket
+2025-11-21 13:26:46,PLAYER,online-boutique-6865,Bob any update on customer numbers affected?
+2025-11-21 13:26:55,Bob,online-boutique-6865,Gathering more information....
+2025-11-21 13:27:01,PLAYER,business-comms-6865,Bez sizing the problem now
+2025-11-21 13:27:17,Bob,online-boutique-6865,Wait one customer noticed that the image is not matching up with the product name
+2025-11-21 13:27:24,Bob,online-boutique-6865,This will actually have a major financial impact.
+2025-11-21 13:27:29,Bob,online-boutique-6865,"We'll likely see high return rates from customers, that's going to mean a lot of financial loss from shipping and refund costs."
+2025-11-21 13:27:35,Bob,online-boutique-6865,Seems to be that users don't know whether the product they're purchasing matches the image or the description. 
+2025-11-21 13:27:42,Bob,online-boutique-6865,We could be shipping the wrong items 
+2025-11-21 13:27:48,Bob,online-boutique-6865,Please let Bez know right away
+2025-11-21 13:27:55,Bez,business-comms-6865,"Can you explain customer impact, what's the user experience like?"
+2025-11-21 13:28:40,PLAYER,business-comms-6865,"The image is not matching up with the product name
+
+This will actually have a major financial impact.
+We'll likely see high return rates from customers, that's going to mean a lot of financial loss from shipping and refund costs.
+
+Seems to be that users don't know whether the product they're purchasing matches the image or the description."
+2025-11-21 13:28:47,UptimeLabs,online-boutique-6865,:star: Qualify the problem
+2025-11-21 13:28:51,UptimeLabs,online-boutique-6865,:star: Formally assign criticality level to the incident
+2025-11-21 13:29:01,Bez,business-comms-6865,We need to stop users from placing any more orders
+2025-11-21 13:29:19,Bez,business-comms-6865,Can we bring down the platform?
+2025-11-21 13:29:52,PLAYER,business-comms-6865,Bez Confirm you want us to block all users please?
+2025-11-21 13:30:11,Bez,business-comms-6865,"I can confirm, lets bring down the platform"
+2025-11-21 13:30:25,PLAYER,online-boutique-6865,SEV1 due to product description mismatch we are going to block all access - hence SEV1
+2025-11-21 13:30:26,PLAYER,business-comms-6865,*Incident Number INC100078:* SEV1 due to product description mismatch we are going to block all access - hence SEV1
+2025-11-21 13:30:26,UptimeLabs,online-boutique-6865,:star: Incident record created
+2025-11-21 13:30:34,UptimeLabs,online-boutique-6865,:star: Take command
+2025-11-21 13:30:35,Bez,business-comms-6865,"Oh no, please let me know what % of sales is affected by this quickly "
+2025-11-21 13:31:05,PLAYER,online-boutique-6865,Tinus Can you delegate actions to block all access to the platform on Bez's orders please?
+2025-11-21 13:31:36,Tinus,online-boutique-6865,"Can do, Daniel can you bring down the platform please?"
+2025-11-21 13:31:45,Daniel,online-boutique-6865,I will bring down the frontend down now
+2025-11-21 13:31:48,PLAYER,online-boutique-6865,Daniel Can you investigate this mismatch in product image and text details?
+2025-11-21 13:32:11,Daniel,online-boutique-6865,Ok the website is now down
+2025-11-21 13:32:18,Daniel,online-boutique-6865,@jamie.buchanan How does it look now?
+2025-11-21 13:32:47,PLAYER,online-boutique-6865,Daniel HTTP 503 - thanks
+2025-11-21 13:33:11,PLAYER,online-boutique-6865,Daniel what deployments have occurred recently please?
+2025-11-21 13:33:16,UptimeLabs,online-boutique-6865,:star: Check changes done to the platform
+2025-11-21 13:33:37,Daniel,online-boutique-6865,Shay can you provide the list?
+2025-11-21 13:33:42,Shay,online-boutique-6865,Here's the detailed info on each of the changes made today
+2025-11-21 13:33:44,Shay,online-boutique-6865,Hope this helps:<https://uptime-labs.atlassian.net/wiki/spaces/ULPUBLIC/pages/1186431049/The+Unknown+Unknown+-+Change+Request+Logs>
+2025-11-21 13:33:58,PLAYER,business-comms-6865,Bez we have successfully blocked all users - so 100% of sales are affected
+2025-11-21 13:35:39,PLAYER,online-boutique-6865,Tanya Do you think the cart service deploy Change ID: CHG89418 would have created current issues?
+2025-11-21 13:35:44,UptimeLabs,online-boutique-6865,:star: Reviewed changes
+2025-11-21 13:36:00,Tanya,online-boutique-6865,I can take a look now...
+2025-11-21 13:36:44,Tanya,online-boutique-6865,Nope all packages have been checked and would not have caused an outage like this
+2025-11-21 13:36:47,PLAYER,online-boutique-6865,Tinus Can I suggest the hypothesis that this has something to do with cached data? How would you think about that given our architecture?
+2025-11-21 13:37:12,PLAYER,business-comms-6865,Bez we are triaging the problem
+2025-11-21 13:37:27,Tinus,online-boutique-6865,I suggest bringing in Hamed and getting his thoughts on this
+2025-11-21 13:37:50,Tanya,online-boutique-6865,Im going to take a look at the infra
+2025-11-21 13:38:08,PLAYER,online-boutique-6865,Hamed Can I suggest the hypothesis that this has something to do with cached data? How would you think about that given our architecture?
+2025-11-21 13:38:33,Hamed,online-boutique-6865,"So lets ground here, what do we know so far @jamie?"
+2025-11-21 13:38:45,Tanya,online-boutique-6865,Checking now...
+2025-11-21 13:39:04,Tanya,online-boutique-6865,no memory or cpu spikes all looks good from Infra nothing to highlight
+2025-11-21 13:39:12,Tanya,online-boutique-6865,"Although I don't have any data, I strongly believe this issue originates from the application rather than the platform."
+2025-11-21 13:39:16,PLAYER,online-boutique-6865,Shay Can you link the Frontend deploy Change ID: CHG89415 to todays problem? It is the only one at the frontend where we see the problem?
+2025-11-21 13:39:20,Tanya,online-boutique-6865,"No spikes or response time deviations, app owners must check configuration."
+2025-11-21 13:39:29,Tanya,online-boutique-6865,"This is not an infra problem. If users are seeing mismatched products, someone could be messing with our system otherwise its an application/service-level bug"
+2025-11-21 13:39:32,PLAYER,online-boutique-6865,Tinus who is our external CDN provider?
+2025-11-21 13:39:35,Tanya,online-boutique-6865,But it's not a platform issue.
+2025-11-21 13:40:40,Hamed,online-boutique-6865,"For CDN we use Fastly as our external content-delivery provider.
+They handle static asset distribution (images, JS, CSS) at the edge.
+At the moment, Fastly shows no errors, no purges, and no anomalies on our side."
+2025-11-21 13:41:29,Hamed,online-boutique-6865,what do we know so far @jamie?
+2025-11-21 13:41:33,UptimeLabs,online-boutique-6865,:alarm_clock: - You have less than 5 minutes. You can type `/help` if you need any reminders.
+2025-11-21 13:41:36,PLAYER,online-boutique-6865,"Hamed
+Observations:
+• product at first stage of user journey (Frontend?) shows mismatch of image and product detail
+• same mismatch is presnent at the cart stage
+Working Hypothesis:
+• some sort of cache problem?
+• or identifier mismatch at database?
+• or External cdn problelm?"
+2025-11-21 13:41:40,Daniel,online-boutique-6865,Sure me and @Shay can take a look now.
+2025-11-21 13:42:09,Daniel,online-boutique-6865,CHG89415: Checked the mobile Add to Cart button is working perfectly for me
+2025-11-21 13:42:09,PLAYER,online-boutique-6865,Can we flush Fastly CDN Hamed?
+2025-11-21 13:42:15,Hamed,online-boutique-6865,"The issue could be anywhere, we should look at the configuration mapping between product images and names."
+2025-11-21 13:42:15,Shay,online-boutique-6865,"For CHG89418 the CartService 3.9.3 deployed successfully, no functional issues detected."
+2025-11-21 13:42:21,Daniel,online-boutique-6865,And lastly CHG89412: product names in Redis match UAT DB
+2025-11-21 13:42:26,Hamed,online-boutique-6865,@Daniel do you know which application holds this data?
+2025-11-21 13:42:34,Hamed,online-boutique-6865,@Tanya ? can you check if this is stored in a database or Redis cache?
+2025-11-21 13:42:44,Hamed,online-boutique-6865,"@jamie.buchanan if there are no visible errors, this might be a configuration issue; the above details may help narrow it down."
+2025-11-21 13:43:14,Daniel,online-boutique-6865,The configuration is stored in the Product Catalogue Service. I pushed a change in UAT yesterday that updates the Redis cache with the latest product names.
+2025-11-21 13:43:21,Tanya,online-boutique-6865,"@Hamed yes, this information is stored in Redis cache and the cache was refreshed earlier today."
+2025-11-21 13:44:09,PLAYER,online-boutique-6865,Daniel roll back that UAT change please?
+2025-11-21 13:44:13,UptimeLabs,online-boutique-6865,:star: Restoration over root cause analysis
+2025-11-21 13:44:33,PLAYER,online-boutique-6865,Hamed Can we prepare to flush Fastly?
+2025-11-21 13:44:33,UptimeLabs,online-boutique-6865,:alarm_clock: - You have less than 2 minutes. You can type `/help` if you need any reminders.
+2025-11-21 13:44:57,PLAYER,business-comms-6865,Bez we are looking at datastore identifier changes
+2025-11-21 13:45:11,Daniel,online-boutique-6865,Its a script so it cant be rolled back
+2025-11-21 13:45:34,PLAYER,online-boutique-6865,Daniel explain more please?
+2025-11-21 13:45:46,Daniel,online-boutique-6865,but i can check the database and provide a Redis key dump
+2025-11-21 13:46:06,Daniel,online-boutique-6865,Sure let me gather the details
+2025-11-21 13:46:35,Daniel,online-boutique-6865,"Rollback only affects code, container images, or deployments.
+
+It does NOT affect: Redis key values"
+2025-11-21 13:46:39,UptimeLabs,online-boutique-6865,"Thank you for playing, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit I am ready when you want to start. I am ready button"
+2025-11-21 13:47:00,PLAYER,online-boutique-6865,Clicked Start_feedback button
+2025-11-21 13:50:55,UptimeLabs,online-boutique-6865,Submission successful

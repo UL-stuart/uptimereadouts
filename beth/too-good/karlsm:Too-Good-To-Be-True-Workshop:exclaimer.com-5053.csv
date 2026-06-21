@@ -1,0 +1,80 @@
+datetime,player,channel,message
+2025-07-17 14:26:05,UptimeLabs,online-boutique-5053,Start lvl 29 [n/a - 0]
+2025-07-17 14:28:02,PLAYER,business-comms-5053,*Incident Number INC100054:* test severity 1 [n/a - 0]
+2025-07-17 14:29:15,PLAYER,online-boutique-5053,Clicked undefined button
+2025-07-17 14:29:26,PLAYER,online-boutique-5053,Clicked org button
+2025-07-17 14:30:46,PLAYER,online-boutique-5053,Clicked undefined button
+2025-07-17 14:31:10,PLAYER,online-boutique-5053,Clicked Start button
+2025-07-17 14:31:11,UptimeLabs,online-boutique-5053,":alarm_clock: - You have 25 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders. [n/a - 0]"
+2025-07-17 14:31:11,Tinus,online-boutique-5053,"Welcome our new IM @Karl Smith, Happy to have you in the team. Hope you get comfortable with everyone [n/a - 0]"
+2025-07-17 14:31:16,Shay,online-boutique-5053,Welcome @Karl Smith [n/a - 0]
+2025-07-17 14:31:21,Daniel,online-boutique-5053,Nice to meet you @Karl Smith [n/a - 0]
+2025-07-17 14:31:31,Bob,online-boutique-5053,There are a few strange customer reports with the helpdesk [n/a - 0]
+2025-07-17 14:31:35,Bob,online-boutique-5053,"Apparently, the site is loading slowly [n/a - 0]"
+2025-07-17 14:31:39,Bob,online-boutique-5053,People are reporting that they can't make payments either [n/a - 0]
+2025-07-17 14:31:43,Bob,online-boutique-5053,customer_reports [n/a - 0]
+2025-07-17 14:31:46,Bob,online-boutique-5053,@Karl Smith Can you check this? [n/a - 0]
+2025-07-17 14:32:49,PLAYER,online-boutique-5053,Daniel Im getting error 503 Service Temporarily Unavailable when loading the site. Can you take a look at the logs? [n/a - 0]
+2025-07-17 14:33:11,Daniel,online-boutique-5053,I am able to replicate the issue. Checking the logs now [n/a - 0]
+2025-07-17 14:33:16,Daniel,online-boutique-5053,"I see a lot of errors, most of them are context initialisation errors  [n/a - 0]"
+2025-07-17 14:33:20,Daniel,online-boutique-5053,Logs [n/a - 0]
+2025-07-17 14:33:20,PLAYER,online-boutique-5053,Daniel User activity and orders is 0 [n/a - 0]
+2025-07-17 14:33:26,Bez,business-comms-5053,"I have a stake holders meet in next 10 minutes, @Karl Smith do you think this can be resolved by then?  [n/a - 0]"
+2025-07-17 14:33:37,UptimeLabs,online-boutique-5053,:star: Use metrics as evidence [n/a - 0]
+2025-07-17 14:33:44,UptimeLabs,online-boutique-5053,:star: Reproduces the incident [n/a - 0]
+2025-07-17 14:34:24,UptimeLabs,online-boutique-5053,:bulb: Hint: Declare an incident. [n/a - 0]
+2025-07-17 14:35:05,PLAYER,business-comms-5053,*Incident Number INC100075:* website offline sev 1 [n/a - 0]
+2025-07-17 14:35:05,UptimeLabs,online-boutique-5053,:star: Incident record created [n/a - 0]
+2025-07-17 14:35:07,UptimeLabs,online-boutique-5053,:star: Send first comms in first 5 minutes [n/a - 0]
+2025-07-17 14:35:10,Bez,business-comms-5053,How many customers are affected? Are the reports coming in from all regions? [n/a - 0]
+2025-07-17 14:35:22,UptimeLabs,online-boutique-5053,":bulb: Asking questions to validate impact of the problem"" [n/a - 0]"
+2025-07-17 14:35:26,PLAYER,online-boutique-5053,Bob Whats the customer impact? [n/a - 0]
+2025-07-17 14:35:34,UptimeLabs,online-boutique-5053,:star: Asking questions to validate impact of the problem [n/a - 0]
+2025-07-17 14:35:37,Bob,online-boutique-5053,Let me gather the information for you [n/a - 0]
+2025-07-17 14:35:42,Bob,online-boutique-5053,There are more than 300 customer reports till now [n/a - 0]
+2025-07-17 14:35:49,Bob,online-boutique-5053,"Calls are from every region, likely to be Global [n/a - 0]"
+2025-07-17 14:35:55,Bob,online-boutique-5053,The majority of reports say the frontend isn't loading for them [n/a - 0]
+2025-07-17 14:35:58,Bob,online-boutique-5053,Let me know if you need more information [n/a - 0]
+2025-07-17 14:36:03,PLAYER,online-boutique-5053,Tanya are you able to review the logs provided by Bob? [n/a - 0]
+2025-07-17 14:36:52,Tanya,online-boutique-5053,I can look into the platform instead - that's my area of expertise [n/a - 0]
+2025-07-17 14:36:59,UptimeLabs,online-boutique-5053,:bulb: Hint: Check the changes done in the platform [n/a - 0]
+2025-07-17 14:38:02,PLAYER,online-boutique-5053,Daniel Shay What were the changes made earlier? [n/a - 0]
+2025-07-17 14:38:21,Daniel,online-boutique-5053,Below are the changes implemented this morning [n/a - 0]
+2025-07-17 14:38:27,Daniel,online-boutique-5053,deployments [n/a - 0]
+2025-07-17 14:38:27,UptimeLabs,online-boutique-5053,:star: Check changes done to the platform [n/a - 0]
+2025-07-17 14:38:53,PLAYER,online-boutique-5053,Daniel Is UAT still working? [n/a - 0]
+2025-07-17 14:39:00,Tanya,online-boutique-5053,Should I check the infra? [n/a - 0]
+2025-07-17 14:39:13,Daniel,online-boutique-5053,UAT is our testing environment [n/a - 0]
+2025-07-17 14:39:16,PLAYER,online-boutique-5053,Tanya Yes pelase [n/a - 0]
+2025-07-17 14:39:37,Tanya,online-boutique-5053,There are no alerts on the Infrastructure. I did see a few errors on the frontend apps [n/a - 0]
+2025-07-17 14:39:43,Tanya,online-boutique-5053,This looks to me like an issue in the frontend pod [n/a - 0]
+2025-07-17 14:40:18,Daniel,online-boutique-5053,I can investigate the changes listed above [n/a - 0]
+2025-07-17 14:40:18,PLAYER,business-comms-5053,Update: Engineers are checking the platform for errors [n/a - 0]
+2025-07-17 14:40:35,PLAYER,online-boutique-5053,Daniel Can we roll back the changes? [n/a - 0]
+2025-07-17 14:41:06,Daniel,online-boutique-5053,"Changes can be rolled back, but I would suggest we investigate and identify the broken change [n/a - 0]"
+2025-07-17 14:41:54,UptimeLabs,online-boutique-5053,:star: Form an effective investigation team [n/a - 0]
+2025-07-17 14:42:09,PLAYER,online-boutique-5053,"Daniel This is a global outage, lets roll back the changes and investigate the broken change in UAT afterwards [n/a - 0]"
+2025-07-17 14:42:12,UptimeLabs,online-boutique-5053,:star: Take command [n/a - 0]
+2025-07-17 14:43:02,Daniel,online-boutique-5053,"There have been three deployments in total, I'm confident in rolling back my own change, not sure about the other two [n/a - 0]"
+2025-07-17 14:43:58,PLAYER,online-boutique-5053,Shay can you roll back your change to the front end as this is where we are seeing the errors with the site [n/a - 0]
+2025-07-17 14:44:27,Shay,online-boutique-5053,"Sorry, I've never done a rollback in PROD before, can someone help me with the steps? [n/a - 0]"
+2025-07-17 14:44:32,Daniel,online-boutique-5053,"I will help you, @Shay. Rolling back now [n/a - 0]"
+2025-07-17 14:44:50,Daniel,online-boutique-5053,Rollback completed. Can somebody verify? [n/a - 0]
+2025-07-17 14:44:52,UptimeLabs,online-boutique-5053,:bulb: Hint: Cross check resolution with stakeholders [n/a - 0]
+2025-07-17 14:44:54,UptimeLabs,online-boutique-5053,:bulb: Hint: Confirm resolution with the business [n/a - 0]
+2025-07-17 14:45:18,UptimeLabs,online-boutique-5053,:star: Restoration over root cause analysis [n/a - 0]
+2025-07-17 14:45:30,PLAYER,online-boutique-5053,Bob Can you confirm if the customers are still reporting issues? [n/a - 0]
+2025-07-17 14:45:32,UptimeLabs,online-boutique-5053,:star: Cross check resolution with stakeholders [n/a - 0]
+2025-07-17 14:45:47,PLAYER,online-boutique-5053,I am able to load the site successfully now [n/a - 0]
+2025-07-17 14:46:08,UptimeLabs,online-boutique-5053,:star: Validate the fix [n/a - 0]
+2025-07-17 14:46:10,Bob,online-boutique-5053,Customers are no longer reporting problems [n/a - 0]
+2025-07-17 14:46:40,PLAYER,business-comms-5053,Update: Engineers have rolled a recent change. The site is working again. Incident resolved [n/a - 0]
+2025-07-17 14:47:13,UptimeLabs,online-boutique-5053,:star: Confirm resolution with the business [n/a - 0]
+2025-07-17 14:47:26,Daniel,online-boutique-5053,It's definitely working again! [n/a - 0]
+2025-07-17 14:47:31,Shay,online-boutique-5053,Wow that was intense! [n/a - 0]
+2025-07-17 14:47:33,Bez,business-comms-5053,Thanks! for resolving it quickly [n/a - 0]
+2025-07-17 14:47:36,Hamed,online-boutique-5053,Good job guys [n/a - 0]
+2025-07-17 14:47:40,Tinus,online-boutique-5053,Yes well done! that could have gone much worse so props to everyone [n/a - 0]
+2025-07-17 14:47:48,UptimeLabs,online-boutique-5053,Start retro and feedback [n/a - 0]
+2025-07-17 14:47:56,PLAYER,online-boutique-5053,Clicked Start_feedback button
+2025-07-17 14:49:56,UptimeLabs,online-boutique-5053,Submission successful [n/a - 0]

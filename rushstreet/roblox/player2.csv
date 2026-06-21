@@ -1,0 +1,154 @@
+index,datetime,player,channel,delta,notes,message
+0,10/12/2025 12:03,Bez,online-boutique-7079,,,Hey team :) can everyone listen up for today's briefing?
+1,10/12/2025 12:03,Bez,online-boutique-7079,,,Let me know if you're here
+2,10/12/2025 12:03,Hamed,online-boutique-7079,,,I'm here :grin:
+3,10/12/2025 12:03,Daniel,online-boutique-7079,,,Me too!
+4,10/12/2025 12:03,Shay,online-boutique-7079,,,Present sir!
+5,10/12/2025 12:03,Bob,online-boutique-7079,,,here
+6,10/12/2025 12:03,Tinus,online-boutique-7079,,,Morning boss
+7,10/12/2025 12:03,Tanya,online-boutique-7079,,,:wave:
+8,10/12/2025 12:03,Bez,online-boutique-7079,,,Nice one folks! Cheer up Bob I've got some good news :smiley:
+10,10/12/2025 12:03,player2,online-boutique-7079,0,,Clicked Start button
+11,10/12/2025 12:03,Bez,online-boutique-7079,0,,As you know last month we invested considerably on buying advertisement in Roblox (for those who have not heard of the initiative yet: we are advertising in Metaverse)
+13,10/12/2025 12:04,Bez,online-boutique-7079,1,,The numbers so far look great uptake was more then I expected and we see loads of traffic generated from Roblox
+14,10/12/2025 12:04,Tinus,online-boutique-7079,1,,That is a great news Bez but we are getting in to unchartered territory with the load levels in production
+15,10/12/2025 12:04,Tinus,online-boutique-7079,1,,IT team please be super vigilant on the systems. Load related failures are very unpredictable
+16,10/12/2025 12:04,Bez,online-boutique-7079,1,,Ah fair enough Tinus. Keep it online and we'll be swimming in money :) :money_with_wings:
+17,10/12/2025 12:04,Tanya,online-boutique-7079,1,,What is Roblox?
+18,10/12/2025 12:04,Hamed,online-boutique-7079,1,,Tanya revealing her age
+19,10/12/2025 12:04,Shay,online-boutique-7079,1,,Currently googling it... :laughing:
+20,10/12/2025 12:04,Bez,online-boutique-7079,1,,Don't be so rude!
+21,10/12/2025 12:04,Bez,online-boutique-7079,1,,Put simply Roblox is a kool virtual world for young people
+22,10/12/2025 12:04,Bez,online-boutique-7079,1,,Any other questions Tanya?
+23,10/12/2025 12:04,Tanya,online-boutique-7079,1,,Nope I'll just ask my son instead
+24,10/12/2025 12:04,Bez,online-boutique-7079,1,,Great! that's it then
+25,10/12/2025 12:04,Bez,online-boutique-7079,1,,Good luck Stay on it sales team
+26,10/12/2025 12:04,Tinus,online-boutique-7079,1,,Ah I've seen alerts on ad-service
+27,10/12/2025 12:04,Tinus,online-boutique-7079,1,,They look quite worrying
+28,10/12/2025 12:05,Bob,online-boutique-7079,2,,Guys big problem!!
+29,10/12/2025 12:05,Bob,online-boutique-7079,2,,I've got reports from multiple users that they can't access the site
+30,10/12/2025 12:05,Bob,online-boutique-7079,2,,Looks like we've got a random site failure
+31,10/12/2025 12:05,Tinus,online-boutique-7079,2,,the load was quite high could be a load issue
+32,10/12/2025 12:05,Daniel,online-boutique-7079,2,,Checking those alerts for adservice...
+33,10/12/2025 12:05,Shay,online-boutique-7079,2,,what's going on? what do I need to do
+34,10/12/2025 12:05,Daniel,online-boutique-7079,2,,I made a change to that last sprint... let me check
+35,10/12/2025 12:05,Bez,online-boutique-7079,2,,Guys someone tell me what's happening
+36,10/12/2025 12:05,Bez,online-boutique-7079,2,,Let's not ruin this good day
+37,10/12/2025 12:05,player2,online-boutique-7079,2,,Hi how many player complaints are there? site is accessable from my side
+38,10/12/2025 12:05,Daniel,online-boutique-7079,2,,Adservice is not running!
+39,10/12/2025 12:05,Tanya,online-boutique-7079,2,,We're on it Bez!
+42,10/12/2025 12:05,Bob,online-boutique-7079,2,,Checking reports now will update you soon
+43,10/12/2025 12:06,Shay,online-boutique-7079,3,,Yes i can see the website running as well
+44,10/12/2025 12:06,Bob,online-boutique-7079,3,,I have about 50 customer reports so far that they cant have access to the site at all.
+45,10/12/2025 12:06,player2,online-boutique-7079,3,,maybe the link from adservice? do i get it correctly when ppl click on ads they are moved to site?
+46,10/12/2025 12:06,Shay,online-boutique-7079,3,,I doubt this. AdService is a non critical app it cant break an order flow
+47,10/12/2025 12:07,Shay,online-boutique-7079,4,,Do we exactly know from which region complaints are coming up ?
+48,10/12/2025 12:07,player2,online-boutique-7079,4,,Could we get more info regarding this? whats broken and why are players not able to access site?
+49,10/12/2025 12:07,Bob,online-boutique-7079,4,,issue seems to be coming from Europe direction will figure out what location exactly
+50,10/12/2025 12:08,Bob,online-boutique-7079,5,,This is specific to somewhere in the Germany region. I'm unable to replicate
+51,10/12/2025 12:08,player2,online-boutique-7079,5,,is anyone able to test it from Germany IP?
+53,10/12/2025 12:08,Shay,online-boutique-7079,5,,I can see all the apps are running fine
+54,10/12/2025 12:09,player2,online-boutique-7079,6,,Bob any more player complaints? are they oming from germany?
+55,10/12/2025 12:09,Shay,online-boutique-7079,6,,To test for Germany we can have platform team here
+56,10/12/2025 12:09,Bob,online-boutique-7079,6,,Reports are coming from Frankfurt Germany
+57,10/12/2025 12:09,player2,online-boutique-7079,6,,have we done any changes related to adservice?
+58,10/12/2025 12:09,Bob,online-boutique-7079,6,,So far i have got 40+ reports
+60,10/12/2025 12:10,Shay,online-boutique-7079,7,,These are the recent changes : <https://uptime-labs.atlassian.net/wiki/external/NmIyMzM1MDAxOTcxNDNjZWExYWQ4MjNmYWY5Y2Y2ZGU>
+61,10/12/2025 12:10,player2,online-boutique-7079,7,,seems we have real issue going on here creating the incident
+62,10/12/2025 12:10,player2,online-boutique-7079,7,,do we know impact? how many customers are from Germany?
+63,10/12/2025 12:11,player2,online-boutique-7079,8,,create S2 Users are not able to access Online Boutique site from Germany location
+65,10/12/2025 12:11,player2,business-comms-7079,8,,*Incident Number INC100068:* create S2 Users are not able to access Online Boutique site from Germany location
+68,10/12/2025 12:11,Bez,business-comms-7079,8,,How much impact is it doing us ?
+69,10/12/2025 12:11,player2,online-boutique-7079,8,,*Incident summary:* Users in the Germany region primarily Frankfurt reported being unable to access the site. Internal teams were unable to reproduce the issue from other regions and overall platform metrics appeared stable. Adservice was noted as not running but its relevance to the access failure remained uncertain.\n*Impact:* Approximately 40–50 customer reports indicating they could not access the site seemingly restricted to users located in or routed through Germany.\n*Start date/time:* 10/12/2025 12:05 UTC\n (Bob’s first report at 14:05 local time converted from UTC+2)\n*End date/time:* Not yet confirmed\n*Next steps:*\n• Continue validating the scope of affected users in Germany.\n• Confirm whether adservice issues are contributing to failed access flows.\n• Attempt further replication from Germany IP or via platform team.\n• Gather additional user reports to determine whether impact is growing.\n• Investigate recent changes linked in change list.
+70,10/12/2025 12:12,Bob,online-boutique-7079,9,,In Frankfurt we have around close to 300 users
+71,10/12/2025 12:12,player2,business-comms-7079,9,,hello working on incident users from Germany are not able to access site
+72,10/12/2025 12:12,Bob,online-boutique-7079,9,,70+ have reported so far
+73,10/12/2025 12:12,player2,business-comms-7079,9,,*Incident summary:* Users in the Germany region primarily Frankfurt reported being unable to access the site. Internal teams were unable to reproduce the issue from other regions and overall platform metrics appeared stable. Adservice was noted as not running but its relevance to the access failure remained uncertain.\n*Impact:* Approximately 40–50 customer reports indicating they could not access the site seemingly restricted to users located in or routed through Germany.\n*Start date/time:* 10/12/2025 12:05 UTC\n (Bob’s first report at 14:05 local time converted from UTC+2)\n*End date/time:* Not yet confirmed\n*Next steps:*\n• Continue validating the scope of affected users in Germany.\n• Confirm whether adservice issues are contributing to failed access flows.\n• Attempt further replication from Germany IP or via platform team.\n• Gather additional user reports to determine whether impact is growing.\n• Investigate recent changes linked in change list.
+74,10/12/2025 12:13,Bez,business-comms-7079,10,,Are you saying AdService isn't running either?
+75,10/12/2025 12:13,player2,online-boutique-7079,10,,We have 2 adservice changes introduced\n• *Change ID:* CHG89354\n    ◦ *Owner:* Shay\n    ◦ *Service:* AdService\n    ◦ *Environment:* UAT\n    ◦ *Version Deployed:* v8.3\n    ◦ *Time Of Change:* 1 hour ago\n    ◦ *Description:* UAT deployment – AdService deployed in UAT to test new ad rotation logic and targeting improvements.\nand\n\n• *Change ID:* CHG89356\n    ◦ *Owner:* Shay\n    ◦ *Service:* AdService\n    ◦ *Environment:* PROD\n    ◦ *Version Deployed:* v8.3\n    ◦ *Time Of Change:* 5 minutes ago\n    ◦ *Description:* Production deployment – AdService version 8.3 deployed in PROD to test new ad rotation logic and targeting improvements.
+77,10/12/2025 12:13,player2,online-boutique-7079,10,,Shay is any of these changes affecting users in Germany?
+79,10/12/2025 12:13,Shay,online-boutique-7079,10,,I can see AdService is down but this shouldn't impact Frankfurt users
+80,10/12/2025 12:13,player2,online-boutique-7079,10,,Bob have any users shared steps to reproduce the issue?
+81,10/12/2025 12:14,player2,online-boutique-7079,11,,can we get it back up?
+82,10/12/2025 12:14,Bob,online-boutique-7079,11,,I'm unable to reproduce it but i can see the reports are from Frankfurt
+83,10/12/2025 12:15,player2,online-boutique-7079,12,,adding Daniel Hamed here as well do advise
+84,10/12/2025 12:15,Daniel,online-boutique-7079,12,,Sure i can help Shay on this
+85,10/12/2025 12:15,Hamed,online-boutique-7079,12,,Let me see
+86,10/12/2025 12:15,player2,online-boutique-7079,12,,WE need to get this service up ASAP
+87,10/12/2025 12:15,player2,online-boutique-7079,12,,Any ideas why it just affects Germany?
+88,10/12/2025 12:16,Hamed,online-boutique-7079,13,,I'm confused now. I think these 2 issues are different
+89,10/12/2025 12:16,Hamed,online-boutique-7079,13,,AdService can't affect frankfurt users only
+90,10/12/2025 12:16,player2,business-comms-7079,13,,Adservice is not running but it seems its affecting germany only atm
+91,10/12/2025 12:16,player2,business-comms-7079,13,,all customer reports coming from there
+92,10/12/2025 12:16,Daniel,online-boutique-7079,13,,ADService is down for the  last 6-7 mins
+93,10/12/2025 12:17,Bez,business-comms-7079,14,,We have invested heavily on Roblox Ads - Please make sure that is also addressed on time
+94,10/12/2025 12:17,Bez,business-comms-7079,14,,But for German users they are not seeing the website at all
+95,10/12/2025 12:17,player2,online-boutique-7079,14,,Any ideas where the issue might be?
+96,10/12/2025 12:17,Daniel,online-boutique-7079,14,,Can you create another incident for AdService ?
+97,10/12/2025 12:17,player2,online-boutique-7079,14,,might be related to roblox? is it active in Germany?
+98,10/12/2025 12:18,Hamed,online-boutique-7079,15,,I've got network bots in Germany location for Frankfurt
+99,10/12/2025 12:18,player2,online-boutique-7079,15,,are they working as expected?
+100,10/12/2025 12:18,Daniel,online-boutique-7079,15,,AdService is down globally
+101,10/12/2025 12:18,player2,online-boutique-7079,15,,IS the issue on our side?
+102,10/12/2025 12:18,Hamed,online-boutique-7079,15,,The network bots aren't responding - we have a third-party network provider for Germany - Telefonika
+103,10/12/2025 12:18,player2,online-boutique-7079,15,,or is it from 3rd party+?
+104,10/12/2025 12:18,player2,online-boutique-7079,15,,We need to contact telefonika asap
+105,10/12/2025 12:19,player2,online-boutique-7079,16,,anyone have contact info?
+106,10/12/2025 12:19,Hamed,online-boutique-7079,16,,I'm getting in touch now
+107,10/12/2025 12:19,Hamed,online-boutique-7079,16,,Will update you
+108,10/12/2025 12:19,player2,online-boutique-7079,16,,We need to know the ETA and root cause
+109,10/12/2025 12:19,player2,online-boutique-7079,16,,Hamed thanks keep me updated
+110,10/12/2025 12:19,Daniel,online-boutique-7079,16,,What shall we do with AdService? It's costing us in sales
+111,10/12/2025 12:19,player2,business-comms-7079,16,,Seems that issue is from 3rd party provider telefonika Hamed contacted them
+113,10/12/2025 12:20,Hamed,online-boutique-7079,17,,I’ve got a response from our provider in Germany they are restarting their services.
+114,10/12/2025 12:20,player2,online-boutique-7079,17,,We need to get it up asap
+115,10/12/2025 12:20,player2,online-boutique-7079,17,,Good
+116,10/12/2025 12:20,player2,online-boutique-7079,17,,lets see if that fixes the issue
+117,10/12/2025 12:20,Hamed,online-boutique-7079,17,,ETA in next 1-2 mins
+118,10/12/2025 12:20,Daniel,online-boutique-7079,17,,I dont think this issue getting fixed will solve AdService problem
+119,10/12/2025 12:20,player2,online-boutique-7079,17,,Bob Telefonika is working on the fix kindly keep us updated on player reports
+121,10/12/2025 12:21,Bob,online-boutique-7079,18,,Thanks
+122,10/12/2025 12:21,player2,online-boutique-7079,18,,after they restart we need to do sth on our side as well?
+124,10/12/2025 12:21,Hamed,online-boutique-7079,18,,Services are back online. Network bots are responding
+125,10/12/2025 12:21,Hamed,online-boutique-7079,18,,Not required on our side
+126,10/12/2025 12:21,player2,online-boutique-7079,18,,perfect
+127,10/12/2025 12:21,Hamed,online-boutique-7079,18,,They should be seeing the website now
+128,10/12/2025 12:21,player2,online-boutique-7079,18,,Bob any player complains now?
+129,10/12/2025 12:21,Bob,online-boutique-7079,18,,Frankfurt users are seeing the website now
+131,10/12/2025 12:22,Daniel,online-boutique-7079,19,,AdService is still down
+132,10/12/2025 12:22,player2,business-comms-7079,19,,Seems issue is fixed we will confirm
+133,10/12/2025 12:22,player2,online-boutique-7079,19,,Daniel please work on adservice to get it back up
+134,10/12/2025 12:22,Bez,business-comms-7079,19,,Has it fixed AdService as well ?
+136,10/12/2025 12:22,player2,business-comms-7079,19,,Adservice down working on it
+137,10/12/2025 12:22,Daniel,online-boutique-7079,19,,I told you this is separate issue
+138,10/12/2025 12:22,player2,online-boutique-7079,19,,how can help with this?
+139,10/12/2025 12:22,Daniel,online-boutique-7079,19,,I'm getting this rolled back if you're fine
+140,10/12/2025 12:23,player2,online-boutique-7079,20,,sure
+141,10/12/2025 12:23,Shay,online-boutique-7079,20,,Ok i'll rollback my AdService change
+142,10/12/2025 12:23,Shay,online-boutique-7079,20,,In progress
+143,10/12/2025 12:23,Shay,online-boutique-7079,20,,Okay the ad-service has been rolled back
+144,10/12/2025 12:23,Tinus,online-boutique-7079,20,,Are we sure it's fixed?
+145,10/12/2025 12:23,player2,online-boutique-7079,20,,let me know if its rolled back and if the service is up and running
+146,10/12/2025 12:23,Tinus,online-boutique-7079,20,,player2 what do you think?
+148,10/12/2025 12:23,Bez,business-comms-7079,20,,Why am I not seeing a separate ticket for this ?
+149,10/12/2025 12:23,player2,business-comms-7079,20,,working on it
+150,10/12/2025 12:24,Daniel,online-boutique-7079,21,,I can see its running again
+152,10/12/2025 12:24,player2,online-boutique-7079,21,,create S2 Adservice down
+153,10/12/2025 12:24,player2,business-comms-7079,21,,*Incident Number INC100078:* create S2 Adservice down
+154,10/12/2025 12:24,player2,business-comms-7079,21,,incident created we are working on ggetting adservice up again
+156,10/12/2025 12:24,Bez,business-comms-7079,21,,Ok let me know
+157,10/12/2025 12:24,player2,online-boutique-7079,21,,Shay how far are we with rollback?
+158,10/12/2025 12:24,Shay,online-boutique-7079,21,,AdService has been rolled back
+159,10/12/2025 12:24,player2,online-boutique-7079,21,,working now?
+161,10/12/2025 12:25,Daniel,online-boutique-7079,22,,I can confirm its up and running now
+162,10/12/2025 12:25,player2,online-boutique-7079,22,,Yeah
+163,10/12/2025 12:25,player2,online-boutique-7079,22,,Bob has there been any complaints?
+164,10/12/2025 12:25,player2,business-comms-7079,22,,service up and running again
+165,10/12/2025 12:25,Bob,online-boutique-7079,22,,I can see the Ads back again and no new reports now
+166,10/12/2025 12:25,player2,business-comms-7079,22,,both issues addressed checking confirmation with bob if player complaints dropped
+167,10/12/2025 12:25,player2,online-boutique-7079,22,,perfect good job everyone
+168,10/12/2025 12:25,Bez,business-comms-7079,22,,Great
+169,10/12/2025 12:25,player2,business-comms-7079,22,,all working
+170,10/12/2025 12:26,player2,business-comms-7079,23,,issues fixed
+171,10/12/2025 12:26,player2,business-comms-7079,23,,no player complaints
+172,10/12/2025 12:26,player2,online-boutique-7079,23,,Clicked Start_feedback button\n

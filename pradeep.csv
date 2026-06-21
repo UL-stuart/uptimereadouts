@@ -1,0 +1,142 @@
+Channel Name,Time,Character Name,utterance
+UptimeLabs,,System,APP  3:05 PM
+UptimeLabs,,System,"joined online-boutique-5988. Also, Pradeep C"
+Bez,,System,APP  3:05 PM
+Bez,,System,"What a day! Our Grand Summer Sale kicked off this morning at 10, and the response has been insane. Can't believe we're already 5 hours in"
+Bob,,System,APP  3:06 PM
+Bob,,System,"Totally! Just checked the dashboard, we've already crossed $160k+ in revenue :money_mouth_face: . The sale energy is next level!"
+Tinus,,System,APP  3:06 PM
+Tinus,,System,"That's fantastic, but hey, this is just the beginning. Three days to go... I'm keeping my fingers crossed :crossed_fingers:"
+Bez,,System,APP  3:06 PM
+Bez,,System,"Seeing so many people shopping on a holiday, it feels satisfying. Exactly the momentum we were hoping for"
+UptimeLabs,,System,APP  3:06 PM
+UptimeLabs,,System,"Welcome to DEFCON 1, are you perpared for the challenge?."
+Use /incident to create an incident record,,System,Once you're ready just click start to begin
+Use /incident to create an incident record,03:07,System,":alarm_clock: - You have 40 minutes to resolve the outage, good luck! You can type /help if you need any reminders.\n"
+Shay,,System,APP  3:07 PM
+Shay,,System,"Not this time!, I just got a few alerts mentioning severe errors popping up in PROD"
+Bob,,System,APP  3:07 PM
+Bob,,System,Weird... a few users just complained they are unable to complete their orders. Feels... off..
+Pradeep C,03:08,Unknown,"PM\nHi @Bob which region is affected, could you please confirm ?\n"
+Bob,,System,APP  3:08 PM
+Bob,,System,"Sure, let me look at my reports"
+Bob,03:08,System,Here are some of the complaints we've received in the last few minutes. It's coming all across the globe
+Bob,03:08,System,"Germany - ""I added items to my cart, clicked checkout, and it just kept spinning. Then it dumped me back to an empty cart"""
+Bob,03:08,System,"USA - ""Order failed twice, and now the cart is empty. I refreshed, but now the site is laggy"""
+Bob,03:08,System,"Japan - ""Got to checkout, then error 502. Tried again - cart gone"""
+Bob,03:08,System,"To sum it all, we have got 240+ reports globally"
+Bob,03:08,System,(12 kB)\nhttps://i.ibb.co/7csQGjg/Lvl-26-reports-2.webp\n\n\n
+Pradeep C,03:10,Unknown,PM\n@Shay and @Daniel was there any deployments today in prod ?\n
+Shay,,System,APP  3:10 PM
+Pradeep C,03:11,Unknown,PM\nWhile clicking on Place order the cart is getting empty @Daniel @Shay\n
+Daniel,,System,APP  3:11 PM
+Daniel,,System,https://uptime-labs.atlassian.net/wiki/external/YzYwYTAxNWQzOTI0NDYzOWI1MjkxNTI2YmVmMjUyZDE
+Daniel,03:11,System,"I don't think this is due to any changes because nothing matches the issue start time, and no PROD deployments have happened in a while around checkout service\n"
+Tanya,,System,APP  3:11 PM
+Tanya,,System,"Same from the platform side. Strangely, both apps and infrastructure are struggling without any changes"
+Shay,,System,APP  3:11 PM
+Shay,,System,"You're right, that makes sense. On top of that, only checkout is having issues and it hasn't been touched in a while"
+Daniel,,System,APP  3:12 PM
+UptimeLabs,,System,APP  3:12 PM
+UptimeLabs,,System,:star: Incident record created
+UptimeLabs,03:12,System,:star: Send first comms in first 5 minutes\n
+Daniel,,System,APP  3:12 PM
+Daniel,,System,Shall i check the logs?
+UptimeLabs,,System,APP  3:12 PM
+UptimeLabs,,System,:bulb: Hint: Declare an incident.
+Pradeep C,03:13,Unknown,PM
+Shay,,System,APP  3:13 PM
+Looking into logs now,03:13,Unknown,
+Found these below error logs,03:13,Unknown,"app[checkout-service] [ERROR] - write() failed, Read-only filesystem\napp[checkout-service] Order submission failed for session_id=ae43f9 due to I/O error\napp[checkout-service] [ERROR] - Transaction commit failed, Read-only file system\n[ERROR] nginx[3245] - 502 Bad Gateway while accessing upstream checkout service\n[ERROR] nginx[3245] - 504 Gateway Timeout while accessing upstream checkout service"
+Found these below error logs,03:13,Unknown,The server is too slow and give up while responding back. I'm not sure why read-only errors are there\n
+Daniel,,System,APP  3:14 PM
+Daniel,,System,"Looking at the above logs, app looks fine. But system can't write new data. Errors suggests to be an infra component failure"
+Daniel,03:14,System,"Also checkout servers show CPU and memory limits exceeded alerts, this definitely looks bigger than just an app issue"
+Daniel,03:14,System,"app[checkout-service]: systemd[1][WARN] Resource usage threshold exceeded - CPU: 96%, Memory: 92%\n"
+Shay,,System,APP  3:14 PM
+Shay,,System,Could this be due to load or any changes ?
+Pradeep C,03:14,Unknown,"PM\nIt could be due to resource issue, please restart the pods\n"
+Daniel,,System,APP  3:15 PM
+Sure i can restart the pods now,03:15,Unknown,
+Pradeep C,03:15,Unknown,PM\nCheck from infra side @Tanya does anything consuming high resources\n
+Daniel,,System,APP  3:15 PM
+Tanya,,System,APP  3:15 PM
+Checking infra...,03:15,Unknown,"All four checkout servers are maxed out - CPU, memory, and disk I/O all spiking. No changes or deployments were done from platform side"
+Checking infra...,03:15,Unknown,(92 kB)\nhttps://i.ibb.co/SwdqW9vX/checkout-servers-spike-simultaneous.webp\n
+Checking infra...,03:16,Unknown,It doesn't looks like a load issue either. CPU and Memory spike is not matching with incoming traffic
+Checking infra...,03:16,Unknown,I'm seeing a running process called init_locker.sh eating up most of the CPU on the checkout server. That's not something we usually run. Something's suspicious here
+Checking infra...,03:16,Unknown,(12 kB)\nhttps://i.ibb.co/RtWsqrY/process-Running.webp\n
+Checking infra...,03:16,Unknown,This does look suspicious @Daniel\n\n
+Pradeep C,03:18,Unknown,PM\n@Shay @Daniel please check is it due to high load ?\n
+Daniel,,System,APP  3:19 PM
+I dont see the reason for having high load in the servers,03:19,Unknown,
+Pradeep C,03:19,Unknown,PM\n@Tanya what does the init.locker.sh do?
+Pradeep C,03:20,Unknown,Anyone here from SECOPS ??\n
+Tanya,,System,APP  3:20 PM
+Tanya,,System,"Im really not sure, for its definitely not our script"
+Tanya,03:20,System,
+Pradeep C,03:21,Unknown,PM\n@Daniel do you have any idea on that script ?\n
+Tanya,,System,APP  3:21 PM
+Daniel,,System,APP  3:21 PM
+Pradeep C,03:21,Unknown,"PM\nHi @Maya we have incident here, could you please look at it\n"
+Maya,,System,APP  3:21 PM
+Maya,,System,Let me check if there's anything suspicious
+Maya,03:21,System,Weird!! Security agent known as EDR(Endpoint Detection and Response) is missing from all 4 checkout servers. That's? concerning
+Maya,03:21,System,"EDR is basically our endpoint defense tool, it tracks unusual activity at the servers"
+Maya,03:21,System,"Also,I found an init_locker.sh script encrypting DB, app, and log files which is renaming the filename like below"
+Maya,03:21,System,
+Daniel,,System,APP  3:22 PM
+Daniel,,System,"this explains why there were errors in checkout logs saying write failed , read-only filesystem"
+Tanya,,System,APP  3:22 PM
+Tanya,,System,"Wait... there's a file here named HELP_ME_DECRYPT.txt. I opened it, appears a ransom note. This doesn't look good"
+Tanya,03:22,System,(27 kB)\nhttps://i.ibb.co/HDcr1Rzb/ransomnote.webp\n\n
+Maya,,System,APP  3:22 PM
+Maya,,System,Confirmed. This is a ransomware breach. @Pradeep C inform business about this
+Tanya,,System,APP  3:22 PM
+Tanya,,System,Shall i try killing this script ?
+Bob,,System,APP  3:22 PM
+Bob,,System,"Guys!!! User complaints are sky rocketing, its turning catastrophic!"
+Pradeep C,03:23,Unknown,PM\n@Tanya yes please\n
+Tanya,,System,APP  3:23 PM
+Tanya,,System,"Ok , killing the script now..."
+Tanya,03:24,System,"Tried killing the script, all checkout servers just rebooted with a ransom banner. New ransom note say: ""Interruption detected. Price doubled. Pay $10M in Bitcoin""\n\n"
+Pradeep C,03:24,Unknown,PM\n@Maya please involve your team here and ask them to work on it\n
+Maya,,System,APP  3:24 PM
+Maya,,System,"Killing the script could make things worse, higher ransom or losing data forever"
+Maya,03:25,System,"@Pradeep C before we do anything, I'd request everyone to please change their passwords"
+Maya,03:25,System,Also I'm removing everyone's access to servers - only I'll have control for now. Later we will reassess to do any activity further\n
+Daniel,,System,APP  3:25 PM
+Hamed,,System,APP  3:25 PM
+Hamed,,System,Updated. @Maya smart move by limiting server's access
+Shay,,System,APP  3:25 PM
+Bob,,System,APP  3:25 PM
+Tanya,,System,APP  3:25 PM
+All set,03:25,Unknown,"It's much worse now. Every file I check is encrypted, nothing can be opened or recovered.\n"
+Maya,,System,APP  3:25 PM
+Shay,,System,APP  3:25 PM
+Shay,,System,I'm seeing new errors on frontend now. How's it for you @Pradeep C ?
+Maya,,System,APP  3:25 PM
+Maya,,System,"Attention! when it comes to potential security breaches, it's important we don't discuss sensitive details here"
+Maya,03:25,System,I'm setting up private channel...
+Maya,03:25,System,"@Pradeep C before we move to private channel, can you check with business what's the plan - are we paying the ransom or moving with response?\n\n"
+Pradeep C,03:26,Unknown,PM
+We are not paying anything. Dont discuss this outside the business line.,03:27,Unknown,@Maya Cant we write a script or anything to reverse this issue and get it resolved\n
+Maya,,System,APP  3:28 PM
+No we will have to follow a specific protocol,03:28,Unknown,
+We will need to move to a private channel,03:28,Unknown,
+Pradeep C,03:28,Unknown,PM
+Maya,,System,APP  3:29 PM
+Channel has been created,03:31,Unknown,
+Bob,,System,APP  3:36 PM
+Bob,,System,"@Pradeep C user complaints are spiking. They're reporting the site is down, earlier it wasn't the case. What should I tell them now?"
+Pradeep C,03:37,Unknown,"PM\nBob we are rebooting the systems now, It will be Online soon\n"
+UptimeLabs,,System,APP  3:42 PM
+UptimeLabs,,System,:alarm_clock: - You have less than 5 minutes. You can type /help if you need any reminders.
+UptimeLabs,03:45,System,:alarm_clock: - You have less than 2 minutes. You can type /help if you need any reminders.\n
+Bob,,System,APP  3:47 PM
+Bob,,System,Getting a bunch of new complaints now. Users are neither able to see their return requests nor able to place new returns on the site
+Bob,03:47,System,
+UptimeLabs,,System,APP  3:47 PM
+UptimeLabs,,System,"Thank you for playing, We recommend that you take 5 minutes to go and get a drink or stretch your legs."
+UptimeLabs,,System,"Once you are back we ask that you complete this retrospective and feedback form, just hit I am ready when you want to start."
+UptimeLabs,,System,""""""""

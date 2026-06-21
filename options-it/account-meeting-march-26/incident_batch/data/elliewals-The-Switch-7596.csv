@@ -1,0 +1,167 @@
+datetime,player,channel,message
+2026-02-03 10:05:08,bez,online-boutique-7596,Hey team!:rocket: Can you believe it's been 8 fantastic years for Online Boutique?
+2026-02-03 10:05:12,bez,online-boutique-7596,"Before we dive into anniversary celebrations, let's give a warm welcome to Maya, our new Security Analyst. She's got 5 years of cybersecurity expertise under her belt! :clap: "
+2026-02-03 10:05:17,maya,online-boutique-7596,"Hi everyone! :raised_hand_with_fingers_splayed: Thrilled to be here, especially on such a special occasion. Let's make Online Boutique even successful and secure together!"
+2026-02-03 10:05:20,tinus,online-boutique-7596,"Welcome, Maya! Your experience will elevate our cybersecurity efforts."
+2026-02-03 10:05:24,tanya,online-boutique-7596,"Excited to have you, Maya! Bez has been very excited to have you on the team."
+2026-02-03 10:05:27,daniel,online-boutique-7596,"Impressive! Eager to learn from you, Maya."
+2026-02-03 10:05:31,shay,online-boutique-7596,":+1: Welcome Maya, pleasure meeting you."
+2026-02-03 10:05:34,bob,online-boutique-7596,Hi Maya! Your experience is top-notch. Cheers to you and to Online Boutique's 8-year anniversary! :partying_face: :tada:
+2026-02-03 10:05:37,maya,online-boutique-7596,Thanks for the warm welcome! Excited for the celebration and our anniversary party.
+2026-02-03 10:05:47,uptimelabs,online-boutique-7596,"Welcome to The Switch, the responsibility is on you to size up the problem.
+
+ *Access game links by pressing the Uptime Labs Logo in the top right of the screen*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin"
+2026-02-03 10:07:47,bez,online-boutique-7596,We are all so glad you have joined us Maya
+2026-02-03 10:07:49,tinus,online-boutique-7596,"Hold on, team. Quick check-in. Is anyone else experiencing internet problems or slow connectivity?"
+2026-02-03 10:07:52,shay,online-boutique-7596,"Internet's definitely sluggish, was loading up github and it took ages to load"
+2026-02-03 10:07:55,bez,online-boutique-7596,Perhaps it could be due to the increase of sales we have been having with this anniversary sale?
+2026-02-03 10:07:57,hamed,online-boutique-7596,"Hey team, we've seen some weird traffic from our data centre network in the last couple of days, it's been mostly minor but never as bad compared to now although"
+2026-02-03 10:08:01,tanya,online-boutique-7596,Hamed and I will have been monitoring outbound traffic. Checking for anomalies again.
+2026-02-03 10:08:08,daniel,online-boutique-7596,I will try to place an order and check the platform.
+2026-02-03 10:08:18,shay,online-boutique-7596,Just ran a test on my internet speed.
+2026-02-03 10:08:21,shay,online-boutique-7596,
+2026-02-03 10:08:48,PLAYER,online-boutique-7596,"Hi Team, I just placed an order and had no issues "
+2026-02-03 10:08:52,uptimelabs,online-boutique-7596,:star: Attempt to replicate the issue
+2026-02-03 10:09:00,daniel,online-boutique-7596,"Same here, nothing wrong on my end"
+2026-02-03 10:09:13,PLAYER,online-boutique-7596,@hamed has there been any reports from users experiencing slowness?
+2026-02-03 10:09:17,shay,online-boutique-7596,I'm in the office and the speed is awful
+2026-02-03 10:09:18,uptimelabs,online-boutique-7596,:star: Asking questions to validate impact of the problem
+2026-02-03 10:09:36,hamed,online-boutique-7596,I haven't heard anything in particular but @bob might know
+2026-02-03 10:09:56,PLAYER,online-boutique-7596,@daniel are you in the office testing?
+2026-02-03 10:10:09,tanya,online-boutique-7596,"I'm also in the office, I did think accessing online apps was a bit laggy but nothing major"
+2026-02-03 10:10:16,daniel,online-boutique-7596,Yes I am
+2026-02-03 10:10:28,PLAYER,online-boutique-7596,We need to determine if this is network related to our office
+2026-02-03 10:10:46,PLAYER,online-boutique-7596,@daniel @shay have any changes been made 
+2026-02-03 10:10:48,uptimelabs,online-boutique-7596,:star: Check changes done to the platform
+2026-02-03 10:11:01,PLAYER,online-boutique-7596,@bob please confirm if there are any users reporting issues
+2026-02-03 10:11:04,shay,online-boutique-7596,"There have been some changed, I'll send them your way"
+2026-02-03 10:11:16,bob,online-boutique-7596,"Got it, I'll gather reports now"
+2026-02-03 10:11:18,PLAYER,online-boutique-7596,User activity looks good 
+2026-02-03 10:11:50,shay,online-boutique-7596,Here you go: https://uptime-labs.atlassian.net/wiki/spaces/ULPUBLIC/pages/1113522209
+2026-02-03 10:12:01,PLAYER,online-boutique-7596,@tanya did you find any abnormalities?
+2026-02-03 10:12:05,bob,online-boutique-7596,"Sorry for the wait, we have a mixture of different reports"
+2026-02-03 10:12:06,PLAYER,online-boutique-7596,thanks shay 
+2026-02-03 10:12:26,tanya,online-boutique-7596,I need to keep investigating but nothing concrete yet
+2026-02-03 10:12:55,PLAYER,online-boutique-7596,@bob please confirm the reports so we can raise an incident 
+2026-02-03 10:12:57,bob,online-boutique-7596,"Some users are reporting slow load times and timeouts, others are complaining about the site taking too long to load between pages"
+2026-02-03 10:13:18,bob,online-boutique-7596,"However, we have reviews coming in as normal as though there's no issue at all"
+2026-02-03 10:13:41,tanya,online-boutique-7596,Ugh my local stack keeps timing out
+2026-02-03 10:14:03,PLAYER,online-boutique-7596,
+2026-02-03 10:14:03,uptimelabs,business-comms-7596,*Incident Number INC100076:* p2 some users experiencing slow load times and timeouts
+2026-02-03 10:14:51,PLAYER,business-comms-7596,"Some users are reporting slow load times and timeouts, others are reporting the site taking too long to load between pages
+However, we have reviews coming in as normal as though there's no issue at all"
+2026-02-03 10:14:53,bez,business-comms-7596,How long has this been happening for? Is there an impact on our sales?
+2026-02-03 10:14:55,uptimelabs,online-boutique-7596,:star: Qualify the problem
+2026-02-03 10:15:03,PLAYER,online-boutique-7596,@bob when was the first report 
+2026-02-03 10:15:26,PLAYER,business-comms-7596,Sales still look good 
+2026-02-03 10:15:37,bob,online-boutique-7596,I'll get the dates for you now
+2026-02-03 10:15:37,PLAYER,business-comms-7596,Confirming when users reported the issue
+2026-02-03 10:15:56,daniel,online-boutique-7596,Is this related to our anniversary sale?
+2026-02-03 10:16:03,bob,online-boutique-7596,Hmm weird...
+2026-02-03 10:16:37,bob,online-boutique-7596,"It looks like we have logged complaints from users with similar issue up to two weeks ago, with the volume of reports only increasing"
+2026-02-03 10:16:58,PLAYER,business-comms-7596,"Looks like we have logged complaints from users with similar issue up to two weeks ago, with the volume of reports only increasing"
+2026-02-03 10:17:12,uptimelabs,online-boutique-7596,:bulb: Regularly report on outstanding actions can keep people on track
+2026-02-03 10:17:22,PLAYER,online-boutique-7596,@hamed do we know if anything changed from 2 weeks ago 
+2026-02-03 10:17:37,PLAYER,online-boutique-7596,@daniel @shay @tanya were any changes you made from 2 weeks ago?
+2026-02-03 10:17:51,hamed,online-boutique-7596,Well we have been deploying changes to the platform over the last two weeks
+2026-02-03 10:18:12,hamed,online-boutique-7596,"Other than that, the only other thing that's been on our radar is the odd traffic from our data centres"
+2026-02-03 10:18:14,PLAYER,online-boutique-7596,can you confirm any specific changes that would be affecting the network speed
+2026-02-03 10:18:18,uptimelabs,online-boutique-7596,:star: Reviewed changes
+2026-02-03 10:18:25,daniel,online-boutique-7596,"Of course, we've been deploying new features non-stop"
+2026-02-03 10:18:29,PLAYER,online-boutique-7596,are we seeing an circuits down?
+2026-02-03 10:18:41,shay,online-boutique-7596,Yeah we need to figure out maybe if there's a service failure though
+2026-02-03 10:18:59,daniel,online-boutique-7596,Are you seeing errors in the logs?
+2026-02-03 10:19:02,PLAYER,online-boutique-7596,does the reports we are getting point to a particular service
+2026-02-03 10:19:07,PLAYER,online-boutique-7596,@shay please check the logs 
+2026-02-03 10:19:13,PLAYER,online-boutique-7596,and report back in 2 mins 
+2026-02-03 10:19:15,uptimelabs,online-boutique-7596,:star: Track actions and time box them
+2026-02-03 10:19:15,shay,online-boutique-7596,Okay I'll take a look
+2026-02-03 10:19:29,tanya,online-boutique-7596,"I have found something, There is a spike in outbound connections in the edge router and the origin Ip block 10.50.0.0/24. That Ip range is the same as the Ip block the frontend and payments are hosted on."
+2026-02-03 10:20:31,shay,online-boutique-7596,"I actually can't check, my connection is way too slow"
+2026-02-03 10:20:45,PLAYER,online-boutique-7596,Tanya can you explain what that means and how to resolve 
+2026-02-03 10:21:01,PLAYER,business-comms-7596,There is a spike in outbound connections in the edge router and the origin Ip block 10.50.0.0/24. That Ip range is the same as the Ip block the frontend and payments are hosted on. Still investigating
+2026-02-03 10:21:35,tanya,online-boutique-7596,This links back to the unusual traffic Hamed and I observed
+2026-02-03 10:21:37,PLAYER,online-boutique-7596,it still isnt affecting me when testing the website would it be related to different IPs
+2026-02-03 10:21:52,tanya,online-boutique-7596,"However, this issue seems to be security related"
+2026-02-03 10:22:07,hamed,online-boutique-7596,I suggest we bring in our new security analyst
+2026-02-03 10:22:12,PLAYER,online-boutique-7596,@maya welcome would you be able to take a look 
+2026-02-03 10:22:18,PLAYER,online-boutique-7596,and check the IPs
+2026-02-03 10:22:32,maya,online-boutique-7596,"Hey, I'll run a security scan now"
+2026-02-03 10:22:38,PLAYER,online-boutique-7596,Please report back in couple mins with your findings 
+2026-02-03 10:22:46,daniel,online-boutique-7596,I have been filtering through event types to see any lateral movements within the services but no indication of anything in our logs
+2026-02-03 10:22:47,PLAYER,online-boutique-7596,@bob any further reports 
+2026-02-03 10:23:01,PLAYER,business-comms-7596,Security are taking a look
+2026-02-03 10:23:14,bob,online-boutique-7596,"Nothing has changed since except the the volume, more people are complaining about the slowness and timeouts"
+2026-02-03 10:23:35,PLAYER,online-boutique-7596,I can see a spike in user activity 
+2026-02-03 10:23:38,uptimelabs,online-boutique-7596,:star: Use metrics as evidence
+2026-02-03 10:23:49,PLAYER,online-boutique-7596,the issue seems that more users on the site the slower it is 
+2026-02-03 10:23:58,uptimelabs,online-boutique-7596,:star: Form a working theory
+2026-02-03 10:24:06,PLAYER,online-boutique-7596,we need to get a resolution 
+2026-02-03 10:24:07,daniel,online-boutique-7596,Those load levels are within normal parameters
+2026-02-03 10:24:23,maya,online-boutique-7596,So I just ran a network security scan and our issues all seem to be relating to our network switch trying to figure out what exactly is happening
+2026-02-03 10:24:56,PLAYER,online-boutique-7596,thanks Maya please keep us updated with the issue of the network switch 
+2026-02-03 10:25:02,PLAYER,online-boutique-7596,would you recommend rebooting it?
+2026-02-03 10:25:20,PLAYER,business-comms-7596,Security team ran a network security scan and our issues all seem to be relating to our network switch
+2026-02-03 10:25:36,maya,online-boutique-7596,If it is the case of a vulnerable switch we could try restarting it
+2026-02-03 10:25:41,maya,online-boutique-7596,It could be a quick fix
+2026-02-03 10:25:50,PLAYER,online-boutique-7596,yes we need to get approval 
+2026-02-03 10:26:04,PLAYER,online-boutique-7596,@tinus are you happy for us to reboot switch to test?
+2026-02-03 10:26:17,tinus,online-boutique-7596,Have we confirmed that the switch is definitely compromised
+2026-02-03 10:26:42,PLAYER,online-boutique-7596,Maya confirmed from the scan its pointing to the switch 
+2026-02-03 10:26:50,PLAYER,online-boutique-7596,think it would be best to reboot it just to test 
+2026-02-03 10:27:03,tinus,online-boutique-7596,Who is investigating this? It would be wise to have the platforms team investigating with security
+2026-02-03 10:27:20,PLAYER,online-boutique-7596,@tanya @hamad can you please let us know your thoughts 
+2026-02-03 10:27:23,bez,business-comms-7596,Have we been breached? Is it hackers???
+2026-02-03 10:27:42,PLAYER,online-boutique-7596,@tinus Maya is looking from a network security stand point 
+2026-02-03 10:28:01,hamed,online-boutique-7596,The unusual traffic does lead me to suspect our switch is compromised
+2026-02-03 10:28:18,PLAYER,online-boutique-7596,@maya have we been compromised 
+2026-02-03 10:28:24,tanya,online-boutique-7596,I would need to formally investigate further with Maya to give a concrete answer
+2026-02-03 10:28:34,maya,online-boutique-7596,I'm currently checking...
+2026-02-03 10:28:37,PLAYER,online-boutique-7596,@tanya please proceed 
+2026-02-03 10:28:45,PLAYER,business-comms-7596,Security are checking now 
+2026-02-03 10:28:49,PLAYER,business-comms-7596,will report back 
+2026-02-03 10:29:04,tanya,online-boutique-7596,Proceed with investigating the network?
+2026-02-03 10:29:15,PLAYER,online-boutique-7596,Website has been lagging for some time I would like to start acting to rule out 
+2026-02-03 10:29:16,tanya,online-boutique-7596,"Sorry your instructions aren't very clear, it's confusing"
+2026-02-03 10:29:28,PLAYER,online-boutique-7596,please proceed to work with maya 
+2026-02-03 10:29:37,PLAYER,online-boutique-7596,i think we should reboot switch 
+2026-02-03 10:29:50,maya,online-boutique-7596,"My investigation into the network switch shows we had unpatched vulnerabilities, leaving it susceptible to known exploits. Attackers have exploited these vulnerabilities, leading to the compromise of the switch's integrity"
+2026-02-03 10:30:17,PLAYER,business-comms-7596,"investigation into the network switch shows we had unpatched vulnerabilities, leaving it susceptible to known exploits. Attackers have exploited these vulnerabilities, leading to the compromise of the switch's integrity"
+2026-02-03 10:30:20,tanya,online-boutique-7596,OOOh so the disruptions in outbound connections are affecting our internal company's users and the external global customer base
+2026-02-03 10:30:38,PLAYER,online-boutique-7596,@maya @tanya let me know what you recommend 
+2026-02-03 10:31:03,PLAYER,online-boutique-7596,We need to patch the vulnerabilites
+2026-02-03 10:31:05,maya,online-boutique-7596,Now that we know it's definitely compromised a quick fix would be the restart
+2026-02-03 10:31:14,PLAYER,online-boutique-7596,please restart maya 
+2026-02-03 10:31:24,PLAYER,online-boutique-7596,report back once is has been restarted 
+2026-02-03 10:31:27,PLAYER,online-boutique-7596,and we can test 
+2026-02-03 10:31:27,uptimelabs,online-boutique-7596,:star: Manage actions and timings
+2026-02-03 10:31:27,maya,online-boutique-7596,switch has been restarted
+2026-02-03 10:31:35,PLAYER,business-comms-7596,Switch has been restarted
+2026-02-03 10:31:36,shay,online-boutique-7596,Ill try to place an order and check we're still getting these issues
+2026-02-03 10:31:39,tanya,online-boutique-7596,Hopefully restarting was the correct solution
+2026-02-03 10:31:57,PLAYER,online-boutique-7596,I am getting this error 
+2026-02-03 10:31:57,shay,online-boutique-7596,"Ummm Guys, tried to place an order and now im getting errors on the product selection page"
+2026-02-03 10:32:00,shay,online-boutique-7596,Is anyone else getting the same?
+2026-02-03 10:32:02,bob,online-boutique-7596,"Getting a lot of new reports, people are no longer able to access the products page at all"
+2026-02-03 10:32:08,maya,online-boutique-7596,"Sorry guys was hoping the restart would work, trying to think of another solution but i'm not too familiar with the network infrastructure here at OB"
+2026-02-03 10:32:10,hamed,online-boutique-7596,No worries Maya I can send over the graph of the network infra if you wanna look at it
+2026-02-03 10:32:12,maya,online-boutique-7596,That would be perfect @hamed
+2026-02-03 10:32:15,hamed,online-boutique-7596,
+2026-02-03 10:32:20,maya,online-boutique-7596,"Looking at the diagram now, will need a moment to figure out what to do next"
+2026-02-03 10:32:24,maya,online-boutique-7596,Let me know if you have any suggestions in the mean time
+2026-02-03 10:32:27,shay,online-boutique-7596,If i remember correctly we do have recent changes involving the products page
+2026-02-03 10:32:52,PLAYER,online-boutique-7596,Website fully down 
+2026-02-03 10:33:05,PLAYER,online-boutique-7596,can we revert them changes shay 
+2026-02-03 10:33:06,uptimelabs,online-boutique-7596,"Drill Wrap-Up
+
+Thanks for playing! This session is now closed.
+
+Please return to your Uptime Labs tab to review your performance and complete the Retrospective & Feedback form.
+
+If you've already closed the tab, you can reopen the form using the button below."
+2026-02-03 10:33:08,uptimelabs,online-boutique-7596,:star: Restoration over root cause analysis
+2026-02-03 10:33:36,uptimelabs,online-boutique-7596,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/18/7596/feedback"

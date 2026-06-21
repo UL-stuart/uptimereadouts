@@ -1,0 +1,162 @@
+datetime,player,channel,message
+2026-02-24 10:02:19,bez,online-boutique-7807,Hey team!:rocket: Can you believe it's been 8 fantastic years for Online Boutique?
+2026-02-24 10:02:23,bez,online-boutique-7807,"Before we dive into anniversary celebrations, let's give a warm welcome to Maya, our new Security Analyst. She's got 5 years of cybersecurity expertise under her belt! :clap: "
+2026-02-24 10:02:28,maya,online-boutique-7807,"Hi everyone! :raised_hand_with_fingers_splayed: Thrilled to be here, especially on such a special occasion. Let's make Online Boutique even successful and secure together!"
+2026-02-24 10:02:31,tinus,online-boutique-7807,"Welcome, Maya! Your experience will elevate our cybersecurity efforts."
+2026-02-24 10:02:35,tanya,online-boutique-7807,"Excited to have you, Maya! Bez has been very excited to have you on the team."
+2026-02-24 10:02:38,daniel,online-boutique-7807,"Impressive! Eager to learn from you, Maya."
+2026-02-24 10:02:42,shay,online-boutique-7807,":+1: Welcome Maya, pleasure meeting you."
+2026-02-24 10:02:45,bob,online-boutique-7807,Hi Maya! Your experience is top-notch. Cheers to you and to Online Boutique's 8-year anniversary! :partying_face: :tada:
+2026-02-24 10:02:48,maya,online-boutique-7807,Thanks for the warm welcome! Excited for the celebration and our anniversary party.
+2026-02-24 10:02:58,uptimelabs,online-boutique-7807,"Welcome to The Switch, the responsibility is on you to size up the problem.
+
+ *Access game links by pressing the Uptime Labs Logo in the top right of the screen*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin"
+2026-02-24 10:04:52,bez,online-boutique-7807,We are all so glad you have joined us Maya
+2026-02-24 10:04:54,tinus,online-boutique-7807,"Hold on, team. Quick check-in. Is anyone else experiencing internet problems or slow connectivity?"
+2026-02-24 10:04:57,shay,online-boutique-7807,"Internet's definitely sluggish, was loading up github and it took ages to load"
+2026-02-24 10:05:00,bez,online-boutique-7807,Perhaps it could be due to the increase of sales we have been having with this anniversary sale?
+2026-02-24 10:05:02,hamed,online-boutique-7807,"Hey team, we've seen some weird traffic from our data centre network in the last couple of days, it's been mostly minor but never as bad compared to now although"
+2026-02-24 10:05:06,tanya,online-boutique-7807,Hamed and I will have been monitoring outbound traffic. Checking for anomalies again.
+2026-02-24 10:05:13,daniel,online-boutique-7807,I will try to place an order and check the platform.
+2026-02-24 10:05:22,PLAYER,online-boutique-7807,checking site and metrics
+2026-02-24 10:05:23,shay,online-boutique-7807,Just ran a test on my internet speed.
+2026-02-24 10:05:26,shay,online-boutique-7807,
+2026-02-24 10:06:48,daniel,online-boutique-7807,I was able to place an order just fine
+2026-02-24 10:07:00,PLAYER,online-boutique-7807,I can place order
+2026-02-24 10:07:04,uptimelabs,online-boutique-7807,:star: Attempt to replicate the issue
+2026-02-24 10:07:17,PLAYER,online-boutique-7807,Didn't observe any issues with metrics as well 
+2026-02-24 10:07:18,tanya,online-boutique-7807,Hmm the website keeps timing out on me
+2026-02-24 10:07:32,PLAYER,online-boutique-7807,Do we have customer compliants?
+2026-02-24 10:07:34,uptimelabs,online-boutique-7807,:star: Asking questions to validate impact of the problem
+2026-02-24 10:07:47,shay,online-boutique-7807,Bob would know
+2026-02-24 10:08:11,PLAYER,online-boutique-7807,Bob can you please check it 
+2026-02-24 10:08:20,PLAYER,online-boutique-7807,and if we do are they all coming from same country
+2026-02-24 10:08:23,bob,online-boutique-7807,"Hey sorry didn't see your message, I'll check now"
+2026-02-24 10:08:52,PLAYER,online-boutique-7807,Thanks Bob
+2026-02-24 10:09:26,bob,online-boutique-7807,"I have a lot of different reports coming in, they can be organised into three groups, users who can't access the site, users complaining about timeouts and then others who are completely fine"
+2026-02-24 10:09:37,PLAYER,online-boutique-7807,Still no issues seen on site 
+2026-02-24 10:09:44,bob,online-boutique-7807,The reports have no commonality in terms of region so consider this to be globally impacting
+2026-02-24 10:10:02,PLAYER,online-boutique-7807,Thanks I will open an incident 
+2026-02-24 10:10:41,bob,online-boutique-7807,The reports from users with timeouts and no site access are reaching 100+ reports and rising
+2026-02-24 10:10:49,PLAYER,online-boutique-7807,
+2026-02-24 10:10:49,uptimelabs,business-comms-7807,*Incident Number INC100033:* P3 possible network issues on site
+2026-02-24 10:11:11,PLAYER,business-comms-7807,Hello everyone we have increase number of odd reports from customers 
+2026-02-24 10:11:44,PLAYER,business-comms-7807,"Some customers can not access site and some of they report very slow loading, while some customer observed no issue, same as us "
+2026-02-24 10:11:47,uptimelabs,online-boutique-7807,:star: Qualify the problem
+2026-02-24 10:11:48,PLAYER,business-comms-7807,Issue is global 
+2026-02-24 10:12:10,bez,business-comms-7807,What's the impact on our revenue?
+2026-02-24 10:12:20,shay,online-boutique-7807,What can I help you with?
+2026-02-24 10:12:40,PLAYER,online-boutique-7807,Can we get list of recent changes please
+2026-02-24 10:12:45,uptimelabs,online-boutique-7807,:star: Check changes done to the platform
+2026-02-24 10:12:53,shay,online-boutique-7807,You got it boss!
+2026-02-24 10:13:00,shay,online-boutique-7807,Here you go: https://uptime-labs.atlassian.net/wiki/spaces/ULPUBLIC/pages/1113522209
+2026-02-24 10:13:10,PLAYER,business-comms-7807,"metric are also behaving strange, we see consistency but with minor drops for short time"
+2026-02-24 10:13:12,uptimelabs,online-boutique-7807,:star: Use metrics as evidence
+2026-02-24 10:13:15,PLAYER,business-comms-7807,engineers checking now 
+2026-02-24 10:14:05,daniel,online-boutique-7807,"I thought this issue was only isolated to our office, seems to be impacting users also"
+2026-02-24 10:14:08,PLAYER,online-boutique-7807,Shay what was done in  CHG89462
+2026-02-24 10:14:12,uptimelabs,online-boutique-7807,:star: Reviewed changes
+2026-02-24 10:14:21,shay,online-boutique-7807,Let me double check
+2026-02-24 10:14:25,PLAYER,online-boutique-7807,yes we have customer complaints over a world
+2026-02-24 10:14:33,PLAYER,online-boutique-7807,Bob when first customer reported issue?
+2026-02-24 10:14:39,PLAYER,online-boutique-7807,is it over 24h?
+2026-02-24 10:14:58,shay,online-boutique-7807,"Y'know the ""you may also like"" feature on the site? I was doing work on it"
+2026-02-24 10:15:14,bob,online-boutique-7807,I'll check that info for you now
+2026-02-24 10:15:49,PLAYER,online-boutique-7807,ohhh i see i will check now that part on site
+2026-02-24 10:15:51,uptimelabs,online-boutique-7807,:star: Reproduces the incident
+2026-02-24 10:16:00,bob,online-boutique-7807,"Yikes, looks like we had reports dating back to over two weeks ago with a few users complaining about timeouts and inaccessibility, the numbers have only gone up since then"
+2026-02-24 10:16:24,PLAYER,online-boutique-7807,"No issue reproduced on ""you may also like"" feature "
+2026-02-24 10:16:28,PLAYER,online-boutique-7807,works perfect
+2026-02-24 10:16:36,bob,online-boutique-7807,Also looks like if we compare the revenue over the last two weeks we've been down on average roughly 10%
+2026-02-24 10:16:52,PLAYER,online-boutique-7807,"Tanya what about CHG89692, i see frontend warning in metric periodically "
+2026-02-24 10:17:02,tanya,online-boutique-7807,I'll check now
+2026-02-24 10:17:35,tanya,online-boutique-7807,"The change itself deployed fine, my access to the site keeps timing out though"
+2026-02-24 10:17:54,uptimelabs,online-boutique-7807,":bulb: Form strategy for troubleshooting, use whole team to execute"
+2026-02-24 10:18:10,PLAYER,online-boutique-7807,I am checking longer timeframe metrics
+2026-02-24 10:18:32,PLAYER,online-boutique-7807,Tanya are you accessing via phone or desktop?
+2026-02-24 10:18:44,tanya,online-boutique-7807,Both
+2026-02-24 10:18:56,PLAYER,online-boutique-7807,from where?
+2026-02-24 10:18:57,tanya,online-boutique-7807,"Using both mobile data, and the company's intranet"
+2026-02-24 10:19:07,tanya,online-boutique-7807,I'm in the office with Shay and Daniel
+2026-02-24 10:19:17,PLAYER,business-comms-7807,It seems issue started weeks ago with slow increase 
+2026-02-24 10:19:19,tanya,online-boutique-7807,Also I think I've found something
+2026-02-24 10:19:21,PLAYER,business-comms-7807,we are checking further 
+2026-02-24 10:19:33,tanya,online-boutique-7807,There is a spike in outbound connections in the edge router and the origin ip block 10.50.0.0/24. That ip range is the same as the ip block the frontend and payments are hosted on
+2026-02-24 10:19:37,PLAYER,online-boutique-7807,Shat and Daniel do you have same issue?
+2026-02-24 10:19:56,daniel,online-boutique-7807,I have no problem at all
+2026-02-24 10:20:10,shay,online-boutique-7807,I don't have access to the site or to anything at all
+2026-02-24 10:20:20,shay,online-boutique-7807,No github or youtube :(
+2026-02-24 10:20:22,PLAYER,online-boutique-7807,"I see, ty "
+2026-02-24 10:20:25,PLAYER,online-boutique-7807,hahaahaha
+2026-02-24 10:20:57,tanya,online-boutique-7807,I suggest we sync up with Maya
+2026-02-24 10:21:04,PLAYER,online-boutique-7807,"Tanya what would be fastest way to address IP issues on your opinion, can we re-route?"
+2026-02-24 10:21:19,PLAYER,online-boutique-7807,"Good idea, Maya can you advise?"
+2026-02-24 10:21:23,PLAYER,online-boutique-7807,@maya 
+2026-02-24 10:21:29,maya,online-boutique-7807,Heyyy
+2026-02-24 10:21:36,maya,online-boutique-7807,I haven't been following the chat
+2026-02-24 10:21:42,maya,online-boutique-7807,What's happening?
+2026-02-24 10:21:49,PLAYER,online-boutique-7807,let me summarize for you 
+2026-02-24 10:22:34,PLAYER,online-boutique-7807,"Over a couple previous weeks, customers are reporting different kind of issues, over a time number of complaints increased, issues is not limited by country or device used "
+2026-02-24 10:22:52,PLAYER,online-boutique-7807,"People reporting slow site loading, while others can not access site at all "
+2026-02-24 10:22:59,PLAYER,online-boutique-7807,There is a spike in outbound connections in the edge router and the origin ip block 10.50.0.0/24. That ip range is the same as the ip block the frontend and payments are hosted on
+2026-02-24 10:23:05,PLAYER,online-boutique-7807,could you please check?
+2026-02-24 10:23:10,maya,online-boutique-7807,"That's most definitely suspicious, I'll run a security check right away"
+2026-02-24 10:23:33,tinus,online-boutique-7807,"Bez is worried about how the investigation is going, don't let him down team!"
+2026-02-24 10:24:02,PLAYER,online-boutique-7807,"We are checking, issue is ongoing for a while "
+2026-02-24 10:24:03,maya,online-boutique-7807,Just ran a network security scan and our issues all seem to be relating to our network switch trying to figure out what exactly.
+2026-02-24 10:24:16,PLAYER,online-boutique-7807,There is also drop in our revenue over last 2 weeks 
+2026-02-24 10:24:20,tanya,online-boutique-7807,I'll sync up with Maya's investigation
+2026-02-24 10:24:38,tinus,online-boutique-7807,Oh you should definitely report that to the business coms
+2026-02-24 10:24:42,PLAYER,online-boutique-7807,thanks Tanya and Maya plese keep us updated 
+2026-02-24 10:24:52,PLAYER,online-boutique-7807,can we re-route if is network issue 
+2026-02-24 10:25:03,PLAYER,business-comms-7807,we are checking now with network engineers 
+2026-02-24 10:25:11,PLAYER,business-comms-7807,it seems issue is related to network 
+2026-02-24 10:25:20,PLAYER,business-comms-7807,Maya and Tanye working together on it 
+2026-02-24 10:25:32,maya,online-boutique-7807,Our investigation uncovered a critical issue: the network switch was compromised due to unpatched vulnerabilities. We have identified a BotNet in the switch and its creating outbound connections to the outside. It creates a DDOS (Distributed Denial of Service) to attack an external party
+2026-02-24 10:25:36,tanya,online-boutique-7807,"The network switch had unpatched vulnerabilities, leaving it susceptible to known exploits. Attackers had exploited these vulnerabilities, leading to the compromise of the switch's integrity"
+2026-02-24 10:26:06,PLAYER,business-comms-7807,"Over a past 2 weeks, we observed significant drop in revenue. Customers reporting over a time issues with slow site, while other can not access it at all. Issue is not country or device related "
+2026-02-24 10:26:10,uptimelabs,online-boutique-7807,:star: Formally assign criticality level to the incident
+2026-02-24 10:26:18,maya,online-boutique-7807,"I needed to confirm that was definitely the cause of the issue, plus I'm unfamiliar with the architecture so I'm unsure if we even have a back-up switch"
+2026-02-24 10:26:36,maya,online-boutique-7807,We could try a restart?
+2026-02-24 10:26:41,PLAYER,online-boutique-7807,do we know from which IP is coming fromm? can we block it
+2026-02-24 10:27:00,PLAYER,online-boutique-7807,"got it, do we know someone who know that info?"
+2026-02-24 10:27:14,maya,online-boutique-7807,"That would take too long, It's hundreds of different IPs"
+2026-02-24 10:27:22,PLAYER,online-boutique-7807,"restart can not do harm as other suggestion, lets do restart first"
+2026-02-24 10:27:26,uptimelabs,online-boutique-7807,:star: Restoration over root cause analysis
+2026-02-24 10:27:36,PLAYER,business-comms-7807,It seems there is DDOS attack on our site 
+2026-02-24 10:27:42,PLAYER,business-comms-7807,we are trying to restart services 
+2026-02-24 10:27:46,maya,online-boutique-7807,switch has been restarted
+2026-02-24 10:27:55,shay,online-boutique-7807,Ill try to place an order and check we're still getting these issues
+2026-02-24 10:27:58,PLAYER,business-comms-7807,switch has been restarted
+2026-02-24 10:27:58,tanya,online-boutique-7807,Hopefully restarting was the correct solution
+2026-02-24 10:28:16,shay,online-boutique-7807,"Ummm Guys, tried to place an order and now im getting errors on the product selection page"
+2026-02-24 10:28:19,shay,online-boutique-7807,Is anyone else getting the same?
+2026-02-24 10:28:21,bob,online-boutique-7807,"Getting a lot of new reports, people are no longer able to access the products page at all"
+2026-02-24 10:28:22,PLAYER,online-boutique-7807,"checking metrics, lets wait few minutes and check with Bob if customers still report same issues "
+2026-02-24 10:28:26,uptimelabs,online-boutique-7807,:star: Manage actions and timings
+2026-02-24 10:28:27,maya,online-boutique-7807,"Sorry guys was hoping the restart would work, trying to think of another solution but i'm not too familiar with the network infrastructure here at OB"
+2026-02-24 10:28:29,hamed,online-boutique-7807,No worries Maya I can send over the graph of the network infra if you wanna look at it
+2026-02-24 10:28:31,PLAYER,online-boutique-7807,checking site
+2026-02-24 10:28:31,maya,online-boutique-7807,That would be perfect @hamed
+2026-02-24 10:28:35,hamed,online-boutique-7807,
+2026-02-24 10:28:40,maya,online-boutique-7807,"Looking at the diagram now, will need a moment to figure out what to do next"
+2026-02-24 10:28:44,maya,online-boutique-7807,Let me know if you have any suggestions in the mean time
+2026-02-24 10:28:50,shay,online-boutique-7807,If i remember correctly we do have recent changes involving the products page
+2026-02-24 10:28:56,maya,online-boutique-7807,Oh you mentioned rerouting earlier?
+2026-02-24 10:28:57,PLAYER,online-boutique-7807,now i can not acces site 
+2026-02-24 10:29:05,daniel,online-boutique-7807,Same for me also
+2026-02-24 10:29:44,PLAYER,online-boutique-7807,can someone provide list of changes done 2 weeks ago 
+2026-02-24 10:29:50,PLAYER,online-boutique-7807,yes Maya 
+2026-02-24 10:30:07,PLAYER,business-comms-7807,after restart site is no longer available we are checking further options with Maya and Hamad
+2026-02-24 10:30:11,uptimelabs,online-boutique-7807,"Drill Wrap-Up
+
+Thanks for playing! This session is now closed.
+
+Please return to your Uptime Labs tab to review your performance and complete the Retrospective & Feedback form.
+
+If you've already closed the tab, you can reopen the form using the button below."
+2026-02-24 10:30:33,uptimelabs,online-boutique-7807,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/18/7807/feedback"

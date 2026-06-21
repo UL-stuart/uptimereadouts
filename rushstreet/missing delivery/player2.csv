@@ -1,0 +1,125 @@
+index,datetime,player,channel,message
+0,19/11/2025 12:04,Shay,online-boutique-6827,30 mins into this promotional campaign and its already proving to be a great success
+1,19/11/2025 12:04,Tinus,online-boutique-6827,I'm seeing a lot of sales coming in
+2,19/11/2025 12:04,Tanya,online-boutique-6827,It was definitely a great idea offering a free tote for every $50 spent
+3,19/11/2025 12:04,Daniel,online-boutique-6827,People love free stuff
+4,19/11/2025 12:04,Tinus,online-boutique-6827,Sales are definitely looking good team. If we keep this up Ill treat the whole team to dinner next friday
+5,19/11/2025 12:04,Hamed,online-boutique-6827,In that case Im going to have my eyes glued to the monitoring services to make sure there are no hiccups
+6,19/11/2025 12:04,Tanya,online-boutique-6827,Yeah guys. Just be vigilant. Because theres such a high volume of sales something could easily go wrong
+7,19/11/2025 12:04,Tinus,online-boutique-6827,Remember everyone if theres anything unusual raise the flag immediately. Heres to a hitch-free sale!
+9,19/11/2025 12:06,player2,online-boutique-6827,Clicked Start button
+10,19/11/2025 12:06,Bob,online-boutique-6827,This is strange
+11,19/11/2025 12:06,Bob,online-boutique-6827,We're getting a few reports now regarding not receiving order confirmation emails
+12,19/11/2025 12:06,Tinus,online-boutique-6827,Hmm? that sounds strange. @player2 can you take point and start sizing this up?
+13,19/11/2025 12:06,player2,online-boutique-6827,Hello
+14,19/11/2025 12:06,player2,online-boutique-6827,How many reports are we receiving?
+16,19/11/2025 12:07,Bob,online-boutique-6827,I will gather reports
+17,19/11/2025 12:07,player2,online-boutique-6827,I can see that purchases are available am i correct that only confirmation emails are not coming in?
+18,19/11/2025 12:07,Bob,online-boutique-6827,Customers report not receiving email confirmation leading to confusion about whether the order has been placed and or if something went wrong
+19,19/11/2025 12:07,Bob,online-boutique-6827,Some customers complain that they have placed several orders by mistake due to not receiving a confirmation email
+20,19/11/2025 12:07,Shay,online-boutique-6827,I tried to place an order but it failed
+21,19/11/2025 12:08,player2,online-boutique-6827,I ll create an incident with SEV-3 impact due to purchases are coming through
+23,19/11/2025 12:08,player2,online-boutique-6827,Are we using any third party to get confirmation emails?
+24,19/11/2025 12:08,Shay,online-boutique-6827,Order is going through but not the confirmation email
+25,19/11/2025 12:08,player2,online-boutique-6827,create P3 Users are not receiving confirmation emails
+26,19/11/2025 12:08,player2,business-comms-6827,*Incident Number INC100069:* create P3 Users are not receiving confirmation emails
+30,19/11/2025 12:08,Bez,business-comms-6827,Saw the ticket pop up! Can you give me full business impact on this!?
+31,19/11/2025 12:09,Shay,online-boutique-6827,Not sure about this app completely
+32,19/11/2025 12:09,Shay,online-boutique-6827,Could it be happening due to any changes ?
+33,19/11/2025 12:09,player2,business-comms-6827,Hello we have created new incident where users re not receiving confirmation email. Everything else works purchases are going thorough
+34,19/11/2025 12:10,player2,online-boutique-6827,Not sure if the changes are the cause here who is handleing confirmation emails?
+35,19/11/2025 12:10,Shay,online-boutique-6827,Here's the detailed info on each of the changes made today
+38,19/11/2025 12:10,Shay,online-boutique-6827,Hope this helps: <https://uptime-labs.atlassian.net/wiki/external/ZWY2MzA0ZGFlMzFkNDU1NGI0MzY0NjRhNjI5NDgxM2U>
+39,19/11/2025 12:10,Bez,business-comms-6827,Do we know yet if this is a code issue from today's changes or something external?
+40,19/11/2025 12:10,Shay,online-boutique-6827,Daniel might be more helpful in this
+41,19/11/2025 12:10,player2,online-boutique-6827,Daniel are you able to advise?
+42,19/11/2025 12:11,Daniel,online-boutique-6827,I will look into the logs
+43,19/11/2025 12:11,Daniel,online-boutique-6827,I can see the following error in the email service logs
+44,19/11/2025 12:11,Daniel,online-boutique-6827,deployments
+45,19/11/2025 12:11,player2,online-boutique-6827,We have this change made today might this be cause?\n• *Change ID:* CHG89352\n    ◦ *Owner:* Daniel\n    ◦ *Service:* EmailService\n    ◦ *Environment:* PROD\n    ◦ *Version Deployed:* v0.8.0-13.0.0\n    ◦ *Time Of Change:* 5 minutes ago\n    ◦ *Description:* Production deployment – EmailService deployed in PROD with added email validation and improved formatting.
+46,19/11/2025 12:11,Daniel,online-boutique-6827,The logs show that the emails failed to send. Perhaps it's in a stuck process
+47,19/11/2025 12:11,Shay,online-boutique-6827,We could try a simple restart it might work
+48,19/11/2025 12:11,player2,online-boutique-6827,We can see that Amazon might be the cause shall we contact them?
+49,19/11/2025 12:12,Daniel,online-boutique-6827,This doesnt  look like a code issue. More of a infra related issue
+50,19/11/2025 12:12,player2,online-boutique-6827,quick summary:\n*Incident summary:* Customers were not receiving order confirmation emails during an ongoing promotional campaign. Orders were being successfully processed but email notifications were failing leading to customer confusion and some placing multiple orders by mistake.\n*Impact:* Affected customers did not receive confirmation emails causing uncertainty about order success and leading to duplicate order submissions. Sales were still processing so the impact was moderate (SEV-3).\n*Start date/time:* 19/11/2025 12:06 UTC\n*End date/time:* Not specified\n*Next steps:*\n• Confirm which service or third-party provider handles confirmation email delivery\n• Investigate whether recent platform changes affected the email sending process\n• Validate system logs to confirm that order placement events are triggering email notifications correctly\n• Implement monitoring or alerting for failed email sends to prevent recurrence
+51,19/11/2025 12:12,player2,business-comms-6827,quick summary on the incident:\n*Incident summary:* Customers were not receiving order confirmation emails during an ongoing promotional campaign. Orders were being successfully processed but email notifications were failing leading to customer confusion and some placing multiple orders by mistake.\n*Impact:* Affected customers did not receive confirmation emails causing uncertainty about order success and leading to duplicate order submissions. Sales were still processing so the impact was moderate (SEV-3).\n*Start date/time:* 19/11/2025 12:06 UTC\n*End date/time:* Not specified\n*Next steps:*\n• Confirm which service or third-party provider handles confirmation email delivery\n• Investigate whether recent platform changes affected the email sending process\n• Validate system logs to confirm that order placement events are triggering email notifications correctly\n• Implement monitoring or alerting for failed email sends to prevent recurrence
+52,19/11/2025 12:12,player2,business-comms-6827,We suspect something to do with amazon
+54,19/11/2025 12:12,Daniel,online-boutique-6827,We have amazon SES handling it
+55,19/11/2025 12:13,player2,online-boutique-6827,contacting amazon to ask if they are aware of the issue. we can try restard if it might help
+56,19/11/2025 12:13,Daniel,online-boutique-6827,Can we get to know at what time the customers have started to report this issue ?
+57,19/11/2025 12:13,player2,support-6827,"Hello,"
+58,19/11/2025 12:13,Daniel,online-boutique-6827,If its 3rd party related then we need to bring in Tanya from platforms
+59,19/11/2025 12:14,player2,support-6827,"WE are seeing some issues happening to our web store Online Boutique, where users are not receving confirmation emails. issue happened from 12:07 UTC"
+60,19/11/2025 12:14,player2,support-6827,Could anyone please investigate?
+61,19/11/2025 12:14,player2,online-boutique-6827,issue started happening from 12:07 UTC I also contacted the Amazon support
+62,19/11/2025 12:14,Support,support-6827,"Hello, thanks for reachig out to us. How can we help you today?"
+63,19/11/2025 12:14,Support,support-6827,"Before we can proceed, we'll need to confirm a few details:"
+64,19/11/2025 12:14,Support,support-6827,When did the issue start? \n What issue are you experiencing? \n What's your theory for why the platform is affected? \n What severity is this for your organisation?
+65,19/11/2025 12:15,Tanya,support-6827,@player2 can you compile the information for PCS
+66,19/11/2025 12:15,Tanya,online-boutique-6827,Proficient Cloud Services is our Managed Service Provider (MSP) for AWS. Whenever we've faced issues or needed service changes with AWS in the past we've routed our communications through them
+67,19/11/2025 12:15,Tanya,online-boutique-6827,@player2 In order to reach out to the PCS we have support channel can you raise the ticket with them meanwhile i will continue monitoring our systems
+68,19/11/2025 12:15,Daniel,online-boutique-6827,This looks like a email quota exhaustion
+69,19/11/2025 12:15,player2,business-comms-6827,We have contacted Amazon investigation ongoing
+70,19/11/2025 12:16,Tanya,online-boutique-6827,You're right Daniel. @player2 we need to get it raised. Provide the details in support chat to 3rd party
+71,19/11/2025 12:16,player2,online-boutique-6827,sure already done and information provided to Amazon
+72,19/11/2025 12:16,Support,support-6827,Thanks for clarifying. We'll escalate this to AWS on your behalf and request a temporary quota increase
+73,19/11/2025 12:16,Support,support-6827,AWS has acknowledged the case. They're currently reviewing the quota increase request. \n We've been assigned AWS Support Case ID: 271928921403. \n Estimated time to resolution: 1-2 hours
+74,19/11/2025 12:16,Bez,business-comms-6827,What's the ETA on PCS
+75,19/11/2025 12:16,Support,support-6827,We'll escalate again and mark it with higher urgency. Will keep you updated as soon as AWS confirms
+76,19/11/2025 12:16,player2,online-boutique-6827,We have amazon investigating their side information:\nAWS has acknowledged the case. They're currently reviewing the quota increase request.\n We've been assigned AWS Support Case ID: 271928921403.\n Estimated time to resolution: 1-2 hours
+77,19/11/2025 12:17,Tanya,online-boutique-6827,Great
+78,19/11/2025 12:17,player2,business-comms-6827,We have amazon investigating their side info:\nAWS has acknowledged the case. They're currently reviewing the quota increase request.\n We've been assigned AWS Support Case ID: 271928921403.\n Estimated time to resolution: 1-2 hours
+79,19/11/2025 12:17,Tanya,online-boutique-6827,hang on why this is too long. Press them to do it now
+80,19/11/2025 12:17,player2,support-6827,"Please do so, we need to get this fixed asap"
+81,19/11/2025 12:17,player2,support-6827,"Also, please provide updates on the incident"
+82,19/11/2025 12:17,Support,support-6827,AWS is quoting this  time
+83,19/11/2025 12:17,player2,online-boutique-6827,Already did lets wait for response they escalated it further
+84,19/11/2025 12:18,player2,business-comms-6827,We have pushed the escalation further so they already deal with this
+85,19/11/2025 12:18,Bez,business-comms-6827,Let me know if there is any blocker. Tinus could help to clear it out
+86,19/11/2025 12:18,player2,online-boutique-6827,latest update from AWS: We'll escalate again and mark it with higher urgency. Will keep you updated as soon as AWS confirms
+87,19/11/2025 12:18,player2,business-comms-6827,latest update from AWS: We'll escalate again and mark it with higher urgency. Will keep you updated as soon as AWS confirms
+88,19/11/2025 12:18,player2,support-6827,Do you need any help from our side?
+89,19/11/2025 12:18,player2,business-comms-6827,sure thanks
+90,19/11/2025 12:18,Support,support-6827,We tried to push them multiple times but they are saying the same ETA
+91,19/11/2025 12:19,Support,support-6827,"If possible, try escalating it from the managerial level"
+92,19/11/2025 12:19,player2,online-boutique-6827,Tinus could you please help with Amazon they are saying that the issue takes time are we able to hjelp them from our side?
+94,19/11/2025 12:19,Tinus,online-boutique-6827,That's too long. It should be a simple reconfiguration. Let me see if I can push for a quicker resolution
+95,19/11/2025 12:19,player2,support-6827,We  need to get this fixed ASAP
+96,19/11/2025 12:19,Tinus,online-boutique-6827,Okay my contact at AWS just pushed this through. We should see the quota raised in a few minutes
+97,19/11/2025 12:20,Bez,business-comms-6827,Okay but what's the plan to stop us from hitting this quota wall again next time?
+98,19/11/2025 12:20,Support,support-6827,We've just heard back from AWS. They've approved the quota increase request and expedited the change
+99,19/11/2025 12:20,Tanya,support-6827,"Great, when will the new quota take effect??"
+100,19/11/2025 12:20,player2,support-6827,Tinus contacted and should be escalated now
+101,19/11/2025 12:20,Support,support-6827,The change should be live within a few minutes. AWS confirmed the update has been applied to your SES account. You should see email sends starting to succeed again shortly
+102,19/11/2025 12:20,player2,online-boutique-6827,we got confirmation on fix: The change should be live within a few minutes. AWS confirmed the update has been applied to your SES account. You should see email sends starting to succeed again shortly
+103,19/11/2025 12:20,Tanya,online-boutique-6827,Got an update from PCS. AWS has approved and applied a temporary quota increase for SES in our region effective immediately so we should start seeing emails flow again within the next few minutes. \n Proficient Cloud Services will keep the case open for 24 hours in case of recurrence
+104,19/11/2025 12:20,Support,support-6827,Please let us know if you need anything else. We'll keep the case open for the next 24 hours in case of recurrence
+105,19/11/2025 12:20,player2,business-comms-6827,We got confirmation on fix. The change should be live within a few minutes. AWS confirmed the update has been applied to your SES account. You should see email sends starting to succeed again shortly
+106,19/11/2025 12:20,Tinus,online-boutique-6827,@player2 How are we looking now?
+108,19/11/2025 12:21,Bez,business-comms-6827,Much appreciated the good work on this
+109,19/11/2025 12:21,player2,online-boutique-6827,We can mark it as mitigated lets see if anything else happens
+110,19/11/2025 12:21,player2,online-boutique-6827,IM team will keep eye on the graphs
+111,19/11/2025 12:21,player2,business-comms-6827,WE will keep eye out on the graphs if the issue should reoccur
+112,19/11/2025 12:21,Bez,business-comms-6827,Have we checked this with customers ?
+113,19/11/2025 12:21,player2,support-6827,Thanks for the support!
+114,19/11/2025 12:22,player2,online-boutique-6827,Support are there any more complaints coming in?
+116,19/11/2025 12:22,player2,online-boutique-6827,Bob could you confirm if any player comlaints has been received?
+117,19/11/2025 12:22,Bob,online-boutique-6827,Confirmations are back again. No new reports
+118,19/11/2025 12:23,Daniel,online-boutique-6827,Shall we close the incident ?
+119,19/11/2025 12:23,player2,online-boutique-6827,not yet les keep tracking the metrixs
+120,19/11/2025 12:23,Bob,online-boutique-6827,That is a normal trend
+121,19/11/2025 12:23,player2,online-boutique-6827,thanks for confirming
+122,19/11/2025 12:24,player2,online-boutique-6827,in that case we can resolve the incident we will also keep eye on the graphs
+123,19/11/2025 12:24,Daniel,online-boutique-6827,Its happening because the stuck confirmations are getting processed
+124,19/11/2025 12:24,Bez,business-comms-6827,All sorted @player2?
+125,19/11/2025 12:25,player2,online-boutique-6827,*Incident summary:* Customers were not receiving order confirmation emails during an ongoing promotional campaign. Orders were being successfully processed but email notifications were failing leading to customer confusion and some placing multiple orders by mistake.\n*Impact:* Affected customers did not receive confirmation emails causing uncertainty about order success and leading to duplicate order submissions. Sales were still processing so the impact was moderate (SEV-3).\n*Start date/time:* 19/11/2025 12:06 UTC\n*End date/time:* 19/11/2025 12:20 UTC\nResolution: Amazon fixed the issue\nNext steps:\nkeep eye on the graphs to avoid reoccurance
+126,19/11/2025 12:25,Shay,online-boutique-6827,Phew! That was a close one. Thanks for the teamwork everyone.
+127,19/11/2025 12:25,Tanya,online-boutique-6827,Thanks to everyone for the quick actions and collaboration. Let's do a full post-incident review later to see what we can improve.
+128,19/11/2025 12:25,Bob,online-boutique-6827,Glad we got this resolved quickly. Let's keep an eye on things for the rest of the day.
+129,19/11/2025 12:25,player2,business-comms-6827,*Incident summary:* Customers were not receiving order confirmation emails during an ongoing promotional campaign. Orders were being successfully processed but email notifications were failing leading to customer confusion and some placing multiple orders by mistake.\n*Impact:* Affected customers did not receive confirmation emails causing uncertainty about order success and leading to duplicate order submissions. Sales were still processing so the impact was moderate (SEV-3).\n*Start date/time:* 19/11/2025 12:06 UTC\n*End date/time:* 19/11/2025 12:20 UTC\nResolution: Amazon fixed the issue\nNext steps:\nkeep eye on the graphs to avoid reoccurance
+130,19/11/2025 12:25,player2,business-comms-6827,all good
+131,19/11/2025 12:25,Tinus,online-boutique-6827,Great job team. I'll draft a summary of the incident and actions taken for our records.
+132,19/11/2025 12:25,Hamed,online-boutique-6827,Thanks everyone for the swift resolution. Let's ensure we have a backup plan for email delivery in future.
+133,19/11/2025 12:25,player2,business-comms-6827,no customer reports
+135,19/11/2025 12:25,Bez,business-comms-6827,Good work @player2
+136,19/11/2025 12:26,player2,online-boutique-6827,Clicked Start_feedback button\n

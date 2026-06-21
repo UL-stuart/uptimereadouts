@@ -1,0 +1,151 @@
+datetime,player,channel,message
+2025-08-07 11:51:13,Bez,online-boutique-5299,"Morning, team! Anyone else need a triple espresso today? [n/a - 0]"
+2025-08-07 11:51:22,Tinus,online-boutique-5299,"You're not the only one, Bez! The reports from last week are still giving me nightmares. [n/a - 0]"
+2025-08-07 11:51:32,Bob,online-boutique-5299,"Tell me about it, Tinus. [n/a - 0]"
+2025-08-07 11:51:35,Bob,online-boutique-5299,"But hey, at least it's sunny outside today. :sunrise: [n/a - 0]"
+2025-08-07 11:51:37,Bez,online-boutique-5299,"True, a little sunshine makes everything better. [n/a - 0]"
+2025-08-07 11:51:39,Bez,online-boutique-5299,"Also, I'm having my usual green smoothie. That's my secret energy booster. [n/a - 0]"
+2025-08-07 11:51:41,Daniel,online-boutique-5299,"Nice, Bez! I'll stick with my coffee though. [n/a - 0]"
+2025-08-07 11:51:42,Daniel,online-boutique-5299,Anyone else excited for the launch of the new BitCoin :coin: payment feature this week? [n/a - 0]
+2025-08-07 11:51:44,Tinus,online-boutique-5299,"Absolutely, Daniel! Been looking forward to it. [n/a - 0]"
+2025-08-07 11:51:46,Tinus,online-boutique-5299,"By the way, no spoilers, but did anyone catch the football game? Epic comeback! [n/a - 0]"
+2025-08-07 11:51:49,Shay,online-boutique-5299,I missed it! I was knee deep in a sci-fi novel. Anyone else into that? [n/a - 0]
+2025-08-07 11:51:57,Tanya,online-boutique-5299,"Oh, I love sci-fi! Can you share the name of the book, Shay? [n/a - 0]"
+2025-08-07 11:52:05,Daniel,online-boutique-5299,I've been reading a bit of sci-fi myself. [n/a - 0]
+2025-08-07 11:52:07,Daniel,online-boutique-5299,"Looking forward to sharing recommendations, Shay! [n/a - 0]"
+2025-08-07 11:52:11,Bez,online-boutique-5299,"There's always so much happening outside of work! Keep the energy :battery: going, team. [n/a - 0]"
+2025-08-07 11:52:14,Bez,online-boutique-5299,It's going to be another productive day. :raised_hands: [n/a - 0]
+2025-08-07 11:52:17,UptimeLabs,online-boutique-5299,Start lvl 8 [n/a - 0]
+2025-08-07 11:52:48,PLAYER,online-boutique-5299,Clicked Start button
+2025-08-07 11:52:51,Bob,online-boutique-5299,"Hey, we're getting reports of customers struggling to make purchases [n/a - 0]"
+2025-08-07 11:52:53,Bob,online-boutique-5299,@here Anyone else seeing this? [n/a - 0]
+2025-08-07 11:52:56,Tinus,online-boutique-5299,"Yes, I've noticed the same, @Bob . It seems like an error in the system [n/a - 0]"
+2025-08-07 11:52:59,Bez,online-boutique-5299,"Whatever it is, we need to sort it out quickly. [n/a - 0]"
+2025-08-07 11:53:01,Bez,online-boutique-5299,we need to step on it! before the social media backlash is turning into a storm. [n/a - 0]
+2025-08-07 11:53:05,Tinus,online-boutique-5299,"Who is handling incidents today? Please size up the issue, this is urgent [n/a - 0]"
+2025-08-07 11:53:27,PLAYER,online-boutique-5299,"Hi everyone, is the issue tied to a specific product, region etc, or is the issue all over the place? Im also trying to reproduce it from my end, anyone else can verify? [n/a - 0]"
+2025-08-07 11:53:32,Bob,online-boutique-5299,Let me run the reports for you [n/a - 0]
+2025-08-07 11:53:36,UptimeLabs,online-boutique-5299,:star: Asking questions to validate impact of the problem [n/a - 0]
+2025-08-07 11:53:36,UptimeLabs,online-boutique-5299,:star: Reproduces the incident [n/a - 0]
+2025-08-07 11:54:07,PLAYER,online-boutique-5299,"Thanks Bob, Im seeing 500 internal errors when trying to access the store, anyone else facing this issue, or is it a different one? [n/a - 0]"
+2025-08-07 11:54:16,Bob,online-boutique-5299,Initial response was teh clients was not able to check out using Bit coin [n/a - 0]
+2025-08-07 11:54:35,Bob,online-boutique-5299,"But after some time, all reports said they are gettign cehckout error during Payments page [n/a - 0]"
+2025-08-07 11:54:47,Bob,online-boutique-5299,and now the reports says they are not able to login to front end [n/a - 0]
+2025-08-07 11:54:57,PLAYER,online-boutique-5299,"Also I see multiple changes deployed into PROD today, Daniel, Shay and Tanya can you please review those changes ASAP? [n/a - 0]"
+2025-08-07 11:55:05,UptimeLabs,online-boutique-5299,:star: Form an effective investigation team [n/a - 0]
+2025-08-07 11:55:05,UptimeLabs,online-boutique-5299,:star: Reviewed changes [n/a - 0]
+2025-08-07 11:55:11,Shay,online-boutique-5299,There were multiple changes this morning - Which one do you want us to cehck [n/a - 0]
+2025-08-07 11:55:18,PLAYER,online-boutique-5299,"Okay, so the site seems to be hard down, so we should call this a P1 [n/a - 0]"
+2025-08-07 11:55:23,Daniel,online-boutique-5299,I made a change on Paymnets for Bit coin addition [n/a - 0]
+2025-08-07 11:55:39,PLAYER,business-comms-5299,Online Store not accessible SEV1 [n/a - 0]
+2025-08-07 11:55:39,PLAYER,business-comms-5299,*Incident Number INC100020:* Online Store not accessible SEV1 [n/a - 0]
+2025-08-07 11:55:39,UptimeLabs,online-boutique-5299,:star: Incident record created [n/a - 0]
+2025-08-07 11:55:41,UptimeLabs,online-boutique-5299,:star: Send first comms in first 5 minutes [n/a - 0]
+2025-08-07 11:55:43,Tanya,online-boutique-5299,Let me check my change [n/a - 0]
+2025-08-07 11:55:43,UptimeLabs,online-boutique-5299,:star: Formally assign criticality level to the incident [n/a - 0]
+2025-08-07 11:56:16,Tanya,online-boutique-5299,I see Cart service is throwing error after Payments change [n/a - 0]
+2025-08-07 11:56:29,Daniel,online-boutique-5299,I see a lot of Retry errors from Cart service [n/a - 0]
+2025-08-07 11:56:38,PLAYER,online-boutique-5299,"Thank you Tanya, Daniel please review your bitcoin change and Shay please review the following changes - CHG89771:EmailService:version 2.3 deployed:PROD [n/a - 0]"
+2025-08-07 11:56:47,Bez,business-comms-5299,whats the customer impact on this? [n/a - 0]
+2025-08-07 11:56:52,Daniel,online-boutique-5299,Looks like the clients retried multiple times [n/a - 0]
+2025-08-07 11:57:03,Daniel,online-boutique-5299,and that might have caused retry spikes on Cart service [n/a - 0]
+2025-08-07 11:57:19,Daniel,online-boutique-5299,and hence the payments have gone down completely [n/a - 0]
+2025-08-07 11:57:26,PLAYER,business-comms-5299,"Initial reports suggested that payment with bitcoin was not possible, after which the issue spread to checkout in general, and now the clients are facing front end errors when attempting to login to the store. The teams are reviewing the changes deployed to Prod today as we speak [n/a - 0]"
+2025-08-07 11:57:56,Bez,business-comms-5299,keep me updated on the findings of this investigation on changes [n/a - 0]
+2025-08-07 11:57:56,PLAYER,online-boutique-5299,"Thanks Daniel, so what would be the next step that we can do to mitigate this issue? Do you need any additional teams engaged? [n/a - 0]"
+2025-08-07 11:58:07,PLAYER,online-boutique-5299,and Bob can we please have the latest customer report numbers? [n/a - 0]
+2025-08-07 11:58:16,Daniel,online-boutique-5299,Need some one to check what happened with Redis app - i see the error as wel [n/a - 0]
+2025-08-07 11:58:37,PLAYER,online-boutique-5299,Do we need someone from the Redis side engaged? Who would be able to do that? [n/a - 0]
+2025-08-07 11:58:40,Daniel,online-boutique-5299,Cart service and redis cart is throwing error [n/a - 0]
+2025-08-07 11:58:42,UptimeLabs,online-boutique-5299,:star: Know your team and their roles [n/a - 0]
+2025-08-07 11:59:07,Bob,online-boutique-5299,We have more than 800_ reports - most of them are payments issues [n/a - 0]
+2025-08-07 11:59:42,PLAYER,online-boutique-5299,"Tanya and Daniel you have deployed the cart and cartredis changes today, could those have caused the issue? [n/a - 0]"
+2025-08-07 11:59:43,Tanya,online-boutique-5299,"Yes, let me check my change - I belive we will haev to revert Payments change [n/a - 0]"
+2025-08-07 11:59:55,PLAYER,online-boutique-5299,Thanks Tanya how long do you need to do that? [n/a - 0]
+2025-08-07 11:59:59,UptimeLabs,online-boutique-5299,:star: Manage actions and timings [n/a - 0]
+2025-08-07 12:00:01,Tanya,online-boutique-5299,Thats Dan's change [n/a - 0]
+2025-08-07 12:00:34,PLAYER,online-boutique-5299,"So to sum up, we believe that the payments change is causing todays issue. Daniel please review that change and revert if needed. Tanya and Shay please assist Daniel if he needs any help [n/a - 0]"
+2025-08-07 12:00:48,UptimeLabs,online-boutique-5299,:star: Form a working theory [n/a - 0]
+2025-08-07 12:00:48,UptimeLabs,online-boutique-5299,:star: Restoration over root cause analysis [n/a - 0]
+2025-08-07 12:00:52,Daniel,online-boutique-5299,The payments change is dependant on Cart service and Redis cart @Jernej [n/a - 0]
+2025-08-07 12:01:12,PLAYER,business-comms-5299,"Teams believe that the Payments change deployed this morning to include bitcoin payments is the cause of the issue, we are discussing a potential revert of that change. More than 800 customers have reported the issue [n/a - 0]"
+2025-08-07 12:01:21,Daniel,online-boutique-5299,There were multiple dependency on Payments change - Since Cart and redis was workign fine untill paymenst change was implemented [n/a - 0]
+2025-08-07 12:01:44,Daniel,online-boutique-5299,"If we revert Payments change - Please note, we will have to take out Bit coin as one of paymenst option [n/a - 0]"
+2025-08-07 12:01:56,Daniel,online-boutique-5299,Is that okay ? [n/a - 0]
+2025-08-07 12:02:31,UptimeLabs,online-boutique-5299,:star: Grounding [n/a - 0]
+2025-08-07 12:03:03,PLAYER,online-boutique-5299,"Is there any other way we can mitigate this issue, any other leads that we have? If not, I believe we should revert the change, to at least bring the site back up. Anyone else has any inputs or ideas? [n/a - 0]"
+2025-08-07 12:03:06,Daniel,online-boutique-5299,Payments change was addition of bitcoin - I hope Bez is okay with that [n/a - 0]
+2025-08-07 12:03:15,Tanya,online-boutique-5299,"Yes, we will have to first revert , Cart and Resi - Later we can revert Payments change [n/a - 0]"
+2025-08-07 12:03:20,Tanya,online-boutique-5299,We will have to revert [n/a - 0]
+2025-08-07 12:03:28,Bez,business-comms-5299,"800 customers, do we have the whole team working on a fix for this? [n/a - 0]"
+2025-08-07 12:03:32,PLAYER,business-comms-5299,"As discussed, if we revert the payment change, the bitcoin payment option will need to be removed. We are discussing further [n/a - 0]"
+2025-08-07 12:03:53,Bez,business-comms-5299,Why are we removing this new feature? [n/a - 0]
+2025-08-07 12:04:07,Bez,business-comms-5299,this is our new main selling point for getting new customers [n/a - 0]
+2025-08-07 12:04:19,Bez,business-comms-5299,is there a way we can keep this? [n/a - 0]
+2025-08-07 12:04:29,Daniel,online-boutique-5299,Shall we proceed with the plan @Jernej ? [n/a - 0]
+2025-08-07 12:04:37,PLAYER,online-boutique-5299,"Tinus and Hamed S we would ask for your input on this as well, is there any other solution we could try to mitigate this issue? [n/a - 0]"
+2025-08-07 12:04:42,UptimeLabs,online-boutique-5299,:star: Escalating when required [n/a - 0]
+2025-08-07 12:04:45,PLAYER,online-boutique-5299,Daniel lets wait for Tinus and Hameds input on this [n/a - 0]
+2025-08-07 12:04:51,Hamed,online-boutique-5299,I was following the chat - We will have to revert the change [n/a - 0]
+2025-08-07 12:04:54,Hamed,online-boutique-5299,there is no other option [n/a - 0]
+2025-08-07 12:05:00,PLAYER,business-comms-5299,"I have asked Tinus and Hamed for their advice on this, maybe they will have some additional ideas [n/a - 0]"
+2025-08-07 12:05:16,Tinus,online-boutique-5299,Lets fix teh bug and implement the Bit coin later- Lets have bisiness run now [n/a - 0]
+2025-08-07 12:05:29,Tinus,online-boutique-5299,Bit coin is rarely used as a payments option [n/a - 0]
+2025-08-07 12:05:40,PLAYER,online-boutique-5299,"Agreed, just wanted to make sure we covered all ground. Let me explain the situation to Bez, and then we can revert the change, give me a minute [n/a - 0]"
+2025-08-07 12:06:13,PLAYER,business-comms-5299,"Hi Bez, I have discussed with Hamed and Tinus and they both agree we should revert the change, and bring business back up. Bitcoin is rarely used as a payment method, so the priority should be to bring the website back up [n/a - 0]"
+2025-08-07 12:06:24,PLAYER,business-comms-5299,Are we good to ask the teams to revert the change? [n/a - 0]
+2025-08-07 12:06:30,Bob,online-boutique-5299,We are loosing money every minute [n/a - 0]
+2025-08-07 12:06:35,Bob,online-boutique-5299,any ETA please [n/a - 0]
+2025-08-07 12:06:56,PLAYER,business-comms-5299,Bez are we okay to let the teams revert? [n/a - 0]
+2025-08-07 12:06:56,Bez,business-comms-5299,Proceed [n/a - 0]
+2025-08-07 12:06:57,Bez,business-comms-5299,if this is the only way to resolve then yes [n/a - 0]
+2025-08-07 12:07:00,PLAYER,business-comms-5299,Thank you [n/a - 0]
+2025-08-07 12:07:21,PLAYER,online-boutique-5299,"Got the green light from Bez, Daniel Shay Tanya please go ahead and revert the necessary changes [n/a - 0]"
+2025-08-07 12:07:25,Tanya,online-boutique-5299,I will work on other 2 changes as wel [n/a - 0]
+2025-08-07 12:07:27,Daniel,online-boutique-5299,I will revert my change [n/a - 0]
+2025-08-07 12:07:38,PLAYER,business-comms-5299,Teams are in the process of reverting the changes [n/a - 0]
+2025-08-07 12:07:50,Daniel,online-boutique-5299,"Done, payments is reverted [n/a - 0]"
+2025-08-07 12:07:51,UptimeLabs,online-boutique-5299,:star: Send regular business comms [n/a - 0]
+2025-08-07 12:07:55,Tanya,online-boutique-5299,I am working on it [n/a - 0]
+2025-08-07 12:07:58,Tanya,online-boutique-5299,Done [n/a - 0]
+2025-08-07 12:08:02,PLAYER,online-boutique-5299,Thanks Daniel and Tanya [n/a - 0]
+2025-08-07 12:08:13,Tanya,online-boutique-5299,Rollbacks are completed [n/a - 0]
+2025-08-07 12:08:17,Daniel,online-boutique-5299,"Great, i've also restarted the frontend so the website should be working now [n/a - 0]"
+2025-08-07 12:08:24,PLAYER,online-boutique-5299,Can we please verify if the issue is fixed now? Bob can you reach out to customers? [n/a - 0]
+2025-08-07 12:08:30,UptimeLabs,online-boutique-5299,:star: Cross check resolution with stakeholders [n/a - 0]
+2025-08-07 12:08:30,UptimeLabs,online-boutique-5299,:star: Cross checking resolution with team [n/a - 0]
+2025-08-07 12:08:38,Bob,online-boutique-5299,Calls have definitely reduced [n/a - 0]
+2025-08-07 12:08:43,PLAYER,business-comms-5299,"Changes have been rolled back, validations are in progress [n/a - 0]"
+2025-08-07 12:08:49,Tinus,online-boutique-5299,@jernej Primcic can you confirm? [n/a - 0]
+2025-08-07 12:09:09,PLAYER,online-boutique-5299,Can someone please check on their end if they are able to access the website and place an order? [n/a - 0]
+2025-08-07 12:09:12,Bez,business-comms-5299,is it fixed? [n/a - 0]
+2025-08-07 12:09:37,PLAYER,business-comms-5299,"Customer calls have reduced, but we are still validating, allow us a few minutes [n/a - 0]"
+2025-08-07 12:09:37,Daniel,online-boutique-5299,I have verified [n/a - 0]
+2025-08-07 12:09:39,Daniel,online-boutique-5299,we are back [n/a - 0]
+2025-08-07 12:09:43,UptimeLabs,online-boutique-5299,:star: Confirm resolution with the business [n/a - 0]
+2025-08-07 12:09:45,Daniel,online-boutique-5299,but it may take sometime to reflect [n/a - 0]
+2025-08-07 12:09:59,Daniel,online-boutique-5299,Logs have gone down [n/a - 0]
+2025-08-07 12:10:04,Daniel,online-boutique-5299,i mean errors [n/a - 0]
+2025-08-07 12:10:06,PLAYER,online-boutique-5299,"Thanks Daniel, the monitoring also looks good now I assume, no additional errors? Daniel Shay [n/a - 0]"
+2025-08-07 12:10:14,Shay,online-boutique-5299,Looks green [n/a - 0]
+2025-08-07 12:10:20,PLAYER,business-comms-5299,"Looks like we are good Bez, the errors in the monitoring are also slowly going down [n/a - 0]"
+2025-08-07 12:10:21,Shay,online-boutique-5299,App health is looking good [n/a - 0]
+2025-08-07 12:10:30,Shay,online-boutique-5299,Did you check ? [n/a - 0]
+2025-08-07 12:10:40,PLAYER,online-boutique-5299,Bob can you get in touch with a couple of customers to make sure that its working fine for them now? [n/a - 0]
+2025-08-07 12:10:45,Bob,online-boutique-5299,"Yes, its positive - The customers are able to make payments [n/a - 0]"
+2025-08-07 12:11:03,PLAYER,online-boutique-5299,"I have also tried on my end, and its finally working\ [n/a - 0]"
+2025-08-07 12:11:04,UptimeLabs,online-boutique-5299,:star: Restoration over root cause analysis [n/a - 0]
+2025-08-07 12:11:05,Daniel,online-boutique-5299,It appears that everything has returned to its normal state [n/a - 0]
+2025-08-07 12:11:07,UptimeLabs,online-boutique-5299,:star: Validate the fix [n/a - 0]
+2025-08-07 12:11:08,Shay,online-boutique-5299,I was worried for a bit but everything looks good now. [n/a - 0]
+2025-08-07 12:11:11,PLAYER,online-boutique-5299,So I think we can call this mitigated [n/a - 0]
+2025-08-07 12:11:11,Bob,online-boutique-5299,"Great work, everyone! The payments issue has been resolved and customers can now check out smoothly [n/a - 0]"
+2025-08-07 12:11:16,Tanya,online-boutique-5299,Phew! Glad we got that sorted. Fantastic teamwork! [n/a - 0]
+2025-08-07 12:11:17,Tinus,online-boutique-5299,Absolutely! Proud to be a part of this team [n/a - 0]
+2025-08-07 12:11:18,Tinus,online-boutique-5299,Thank you @jernej Primcic for coordinating the rollback effectively [n/a - 0]
+2025-08-07 12:11:18,PLAYER,online-boutique-5299,Thanks everyone for your quick efforts [n/a - 0]
+2025-08-07 12:11:22,Bez,online-boutique-5299,"Brilliant job, team and @jernej Primcic! [n/a - 0]"
+2025-08-07 12:11:23,Bez,online-boutique-5299,"I've been monitoring the financial metrics, and they're already improving [n/a - 0]"
+2025-08-07 12:12:01,UptimeLabs,online-boutique-5299,Start level 8 retro and feedback [n/a - 0]
+2025-08-07 12:12:04,PLAYER,online-boutique-5299,Clicked Start_feedback button
+2025-08-07 12:13:27,UptimeLabs,online-boutique-5299,Submission successful [n/a - 0]

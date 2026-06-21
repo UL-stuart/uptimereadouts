@@ -1,0 +1,116 @@
+datetime,player,channel,diff,message
+04/03/2026 11:12,uptimelabs,online-boutique-7881,,"Welcome to Version Confusion, the responsibility is on you to size up the problem.
+
+? *Use `/help` at any time for a list of useful links and commands*
+ ? *Use `/incident` to create an incident record*
+
+Once youre ready just click start to begin"
+04/03/2026 11:14,tanya,online-boutique-7881,2.02,Hey guys im seeing an issue with the website loading slowly
+04/03/2026 11:14,tanya,online-boutique-7881,2.03,Anyone else experaning this?
+04/03/2026 11:14,shay,online-boutique-7881,2.07,No all ok for me
+04/03/2026 11:14,daniel,online-boutique-7881,2.08,No issue for me
+04/03/2026 11:14,daniel,online-boutique-7881,2.10,What browser and version of it are you using Tanya?
+04/03/2026 11:14,tanya,online-boutique-7881,2.13,Im using chrome and let me check the version
+04/03/2026 11:14,daniel,online-boutique-7881,2.17,Ok if it is V105.0 this is a recorded bug with a ticket in the backlog
+04/03/2026 11:14,tanya,online-boutique-7881,2.18,Yeah it is V105.0
+04/03/2026 11:14,tanya,online-boutique-7881,2.20,Should we not raise an incident for this? I know I can update the version and it will stop effecting me.
+04/03/2026 11:14,tanya,online-boutique-7881,2.23,But could this not be effecting customers?
+04/03/2026 11:14,daniel,online-boutique-7881,2.27,Had a look at the market share of people using this version it is only at 0.09%
+04/03/2026 11:14,tanya,online-boutique-7881,2.32,Still not sure if it should not be an incidnt. @vallabh.vyas-dominos.co.uk What do you think? 
+04/03/2026 11:15,PLAYER,online-boutique-7881,2.90,let me look into this @tanya 
+04/03/2026 11:15,PLAYER,online-boutique-7881,3.12,@bob  does any user reported about this issue?
+04/03/2026 11:15,uptimelabs,online-boutique-7881,3.15,:star: Asking questions to validate impact of the problem
+04/03/2026 11:15,bob,online-boutique-7881,3.23,Let me gather reports
+04/03/2026 11:15,PLAYER,online-boutique-7881,3.55,@tanya  is it just slowness. or you are not able to place orders also?
+04/03/2026 11:15,daniel,online-boutique-7881,3.63,Already there is a bug ticket and i'm sure this might not be a bigger issue as well
+04/03/2026 11:16,bob,online-boutique-7881,3.72,There are no immediate calls as such - But I know there were a few calls here and there from the last 2 weeks
+04/03/2026 11:16,daniel,online-boutique-7881,4.02,"Here is the bug ticket details : 
+Title  : Slow load times for users using V105.0 of chrome
+Description : User have reported the frontend as loading slowly and with quick look at there set up appears to be an issue with frontend for users using V105.0 of chrome.
+Reporter: User
+Components : OB-Frontend"
+04/03/2026 11:16,PLAYER,online-boutique-7881,4.22,@bob  could you please confirm its just slowness and not drop in orders
+04/03/2026 11:16,tanya,online-boutique-7881,4.37,For me orders are going well
+04/03/2026 11:16,bob,online-boutique-7881,4.62,Ohh the reports is actually showing that 20% of our customers are experiencing an issue where it is taking three times as long the website to load. Seeing a few timeouts occurring as well
+04/03/2026 11:17,shay,online-boutique-7881,4.85,"Here's the list of recent changes
+https://uptime-labs.atlassian.net/wiki/external/ZDQ1MTE3NWU5ZDYxNDA4MTkxZmM3ZGJmMGJhNmE1OTE"
+04/03/2026 11:17,PLAYER,online-boutique-7881,5.22,
+04/03/2026 11:17,uptimelabs,business-comms-7881,5.22,*Incident Number INC100099:* p3 Website loading slowly chrome  V105.0
+04/03/2026 11:17,uptimelabs,online-boutique-7881,5.22,:star: Incident record created
+04/03/2026 11:17,daniel,online-boutique-7881,5.30,Really dont think we need an incident. As I said we have a bug already and really need to focus on delivery of new features.
+04/03/2026 11:17,daniel,online-boutique-7881,5.32,I still dont think its worth investing our time into this
+04/03/2026 11:17,bez,business-comms-7881,5.60,Is it a global issue ?
+04/03/2026 11:18,PLAYER,business-comms-7881,6.20,@bez @tinus  just for you information. website is loading slowly in chrome browser  V105.0. there is no impact on orders. we are investigating. 
+04/03/2026 11:18,uptimelabs,online-boutique-7881,6.23,:star: Qualify the problem
+04/03/2026 11:18,PLAYER,business-comms-7881,6.42,there is already a bug ticket for the same. will update in next 5 minutes
+04/03/2026 11:18,uptimelabs,online-boutique-7881,6.45,:star: Track actions and time box them
+04/03/2026 11:19,bez,business-comms-7881,6.97,"If there is a bug ticket, then why hasn't it been actioned yet?"
+04/03/2026 11:19,PLAYER,online-boutique-7881,7.27,@daniel  but we need to see if there is any user impact. @bob  could you please confirm how many user has reported this issue. is it global or specific region
+04/03/2026 11:19,bob,online-boutique-7881,7.42,got some more data points . Can see that there has been a drop in sales of 10% compared to the average over a two week period
+04/03/2026 11:19,bob,online-boutique-7881,7.55,It is affecting customers globally. It is still limited to customers using Chrome
+04/03/2026 11:20,daniel,online-boutique-7881,7.80,@vallabh.vyas-dominos.co.uk do you think any deployment might be causing this issue ?
+04/03/2026 11:20,PLAYER,online-boutique-7881,8.42,@daniel  @bob  when this issue was first reported. before or after any deployment?
+04/03/2026 11:20,uptimelabs,online-boutique-7881,8.45,:star: Check changes done to the platform
+04/03/2026 11:20,daniel,online-boutique-7881,8.58,I'm not on v105 of Chrome. So for me the orders are working fine
+04/03/2026 11:21,bob,online-boutique-7881,8.72,Started around 2 weeks back
+04/03/2026 11:21,PLAYER,business-comms-7881,8.95,looking into this @bez there has been a drop in sales of 10% compared to the average over a two week period
+04/03/2026 11:21,uptimelabs,online-boutique-7881,9.02,:star: Use metrics as evidence
+04/03/2026 11:21,bob,online-boutique-7881,9.07,But initially only 2-3 users reported this. Thats when Daniel logged this as a bug ticket
+04/03/2026 11:21,PLAYER,online-boutique-7881,9.52,what was deployed that time @daniel  which could have impacted this?
+04/03/2026 11:22,PLAYER,business-comms-7881,9.72,next update in another 5 minutes.
+04/03/2026 11:22,daniel,online-boutique-7881,9.98,Around 2 weeks back we didn't do anything related to this version
+04/03/2026 11:22,PLAYER,online-boutique-7881,10.18,@daniel how much time it may take if we provide a hot fix?
+04/03/2026 11:22,daniel,online-boutique-7881,10.18,Maybe platform might have done something
+04/03/2026 11:22,daniel,online-boutique-7881,10.42,I think we can advice them to use other browser until we get to find some fix
+04/03/2026 11:23,PLAYER,online-boutique-7881,10.77,@tanya  @hamed any changes done to platform ?
+04/03/2026 11:23,PLAYER,online-boutique-7881,11.25,@daniel  how many day or hour it will take to provide fix?
+04/03/2026 11:23,uptimelabs,online-boutique-7881,11.28,:star: Manage actions and timings
+04/03/2026 11:23,hamed,online-boutique-7881,11.30,Tanya is in best position to look into this issue as its a P3. I'll assist in case of further escalation
+04/03/2026 11:23,tanya,online-boutique-7881,11.38,I can replicate the issue with v105
+04/03/2026 11:23,tanya,online-boutique-7881,11.52,i used a different browser and had no issues
+04/03/2026 11:23,tanya,online-boutique-7881,11.65,I'm checking this version of chrome right now
+04/03/2026 11:24,PLAYER,online-boutique-7881,11.90,@tanya any changes to platform before this issue was reported 2 weeks back
+04/03/2026 11:24,daniel,online-boutique-7881,12.08,Not sure on ETA for fix. I haven't had a look into this bug ticket
+04/03/2026 11:24,daniel,online-boutique-7881,12.22,As it was a low priority
+04/03/2026 11:24,tanya,online-boutique-7881,12.45,I don't think in that case any recent changes might be a concern
+04/03/2026 11:25,bez,business-comms-7881,12.82,Have you found any working theories ?
+04/03/2026 11:25,PLAYER,online-boutique-7881,12.95,so we have issue with specific chrome browser version and we have sales drop of 10% globally compared to last 2 weeks. and there were no code changes done.
+04/03/2026 11:25,tanya,online-boutique-7881,13.02,i think i found something
+04/03/2026 11:25,PLAYER,business-comms-7881,13.17,"@bez  Summary
+so we have issue with specific chrome browser version and we have sales drop of 10% globally compared to last 2 weeks. and there were no code changes done."
+04/03/2026 11:25,tanya,online-boutique-7881,13.18,the issue is not with Frontend but with an update made to the nginx web server version that does not support V105.0 of Chrome
+04/03/2026 11:25,tanya,online-boutique-7881,13.33,This matches the time of the first report
+04/03/2026 11:25,PLAYER,online-boutique-7881,13.55,@tanya  can you fix this ?
+04/03/2026 11:26,bob,online-boutique-7881,13.72,Do we have a workaround until you all work on fix ?
+04/03/2026 11:26,tanya,online-boutique-7881,13.90,We have 2 options to resolve this - change the nginx web server version back or add a patch. Either of these will resolve the incident
+04/03/2026 11:26,PLAYER,online-boutique-7881,14.52,@tanya  lets change the nginx web server version and add a patch
+04/03/2026 11:26,tanya,online-boutique-7881,14.55,Doing it now
+04/03/2026 11:27,PLAYER,business-comms-7881,15.15,@bez it seems ngnix server changes were deployed which has impacted this. will give update in next 5 minutes
+04/03/2026 11:27,bez,business-comms-7881,15.25,Do you have any ETA ?
+04/03/2026 11:27,tanya,online-boutique-7881,15.53,I have changed the version and added the patch. Should be good now
+04/03/2026 11:28,PLAYER,online-boutique-7881,15.97,@daniel  @tanya  could you test now on chrome and confirm
+04/03/2026 11:28,uptimelabs,online-boutique-7881,16.00,:star: Reproduces the incident
+04/03/2026 11:28,tanya,online-boutique-7881,16.03,Sure let me check my v105 now
+04/03/2026 11:28,daniel,online-boutique-7881,16.37,For me site works fine and no errors are there in logs
+04/03/2026 11:28,tanya,online-boutique-7881,16.43,I can access the site now easily
+04/03/2026 11:28,PLAYER,business-comms-7881,16.43,fix is applied @bez  we are testing the changes
+04/03/2026 11:29,PLAYER,online-boutique-7881,16.73,@bob  all good from customer side?
+04/03/2026 11:29,bez,business-comms-7881,16.82,"Ok great, confirm me again once you're confident"
+04/03/2026 11:29,PLAYER,business-comms-7881,16.98,site is working fine now @bez 
+04/03/2026 11:29,bob,online-boutique-7881,17.15,Checked with one of the user and he is able to see the site again
+04/03/2026 11:29,PLAYER,online-boutique-7881,17.23,@bob shall we close the incident?
+04/03/2026 11:29,bob,online-boutique-7881,17.33,Seems this fix worked afterall
+04/03/2026 11:29,bob,online-boutique-7881,17.45,Yes you can close it now
+04/03/2026 11:29,PLAYER,online-boutique-7881,17.50,let close the incident
+04/03/2026 11:29,tanya,online-boutique-7881,17.52,Hey @vallabh.vyas-dominos.co.uk I have just retried the website with V105.0 of chrome and it seems the fix worked
+04/03/2026 11:29,tinus,online-boutique-7881,17.55,Glad we created an incident for this. Need to review our training on when to create an incident or a bug but great work team.
+04/03/2026 11:29,daniel,online-boutique-7881,17.58,Sorry guys should have raised an incident when first discovered.
+04/03/2026 11:30,tinus,online-boutique-7881,17.75,We are all learning Daniel. We can carry the learnings foward
+04/03/2026 11:30,bob,online-boutique-7881,17.80,Just checked and it looks all good now team
+04/03/2026 11:30,tinus,online-boutique-7881,17.83,Lets continue monitoring this and we can have a great conversation during the PIR
+04/03/2026 11:30,uptimelabs,online-boutique-7881,18.20,"Thank you for playing Version Confusion, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit start when you are ready."
+04/03/2026 11:30,uptimelabs,online-boutique-7881,18.42,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/17/7881/feedback"
+04/03/2026 11:30,uptimelabs,online-boutique-7881,18.48,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/17/7881/feedback"

@@ -1,0 +1,103 @@
+datetime,player,channel,message
+2026-04-09 13:05:02,uptimelabs,online-boutique-8369,"Welcome to Version Confusion, the responsibility is on you to size up the problem.
+
+? *Use `/help` at any time for a list of useful links and commands*
+ ? *Use `/incident` to create an incident record*
+
+Once youre ready just click start to begin"
+2026-04-09 13:05:46,tanya,online-boutique-8369,Hey guys im seeing an issue with the website loading slowly
+2026-04-09 13:05:47,tanya,online-boutique-8369,Anyone else experaning this?
+2026-04-09 13:05:49,shay,online-boutique-8369,No all ok for me
+2026-04-09 13:05:50,daniel,online-boutique-8369,No issue for me
+2026-04-09 13:05:51,daniel,online-boutique-8369,What browser and version of it are you using Tanya?
+2026-04-09 13:05:53,tanya,online-boutique-8369,Im using chrome and let me check the version
+2026-04-09 13:05:55,daniel,online-boutique-8369,Ok if it is V105.0 this is a recorded bug with a ticket in the backlog
+2026-04-09 13:05:56,tanya,online-boutique-8369,Yeah it is V105.0
+2026-04-09 13:05:57,tanya,online-boutique-8369,Should we not raise an incident for this? I know I can update the version and it will stop effecting me.
+2026-04-09 13:05:59,tanya,online-boutique-8369,But could this not be effecting customers?
+2026-04-09 13:06:01,daniel,online-boutique-8369,Had a look at the market share of people using this version it is only at 0.09%
+2026-04-09 13:06:04,tanya,online-boutique-8369,Still not sure if it should not be an incidnt. @praveen.sadul-dominos.co.uk What do you think? 
+2026-04-09 13:06:32,PLAYER,online-boutique-8369,hi @bob  any user complaints ? 
+2026-04-09 13:06:36,uptimelabs,online-boutique-8369,:star: Asking questions to validate impact of the problem
+2026-04-09 13:06:42,bob,online-boutique-8369,I'll check now
+2026-04-09 13:07:19,bob,online-boutique-8369,There have been some reports over the last two weeks of users reporting slow loading times
+2026-04-09 13:07:34,bob,online-boutique-8369,I believe a ticket was created for this about two weeks ago
+2026-04-09 13:07:40,PLAYER,online-boutique-8369,
+2026-04-09 13:07:40,uptimelabs,business-comms-8369,*Incident Number INC1041:* P1 Website slow loading
+2026-04-09 13:07:40,uptimelabs,online-boutique-8369,:star: Incident record created
+2026-04-09 13:07:45,daniel,online-boutique-8369,Really dont think we need an incident. As I said we have a bug already and really need to focus on delivery of new features.
+2026-04-09 13:08:06,daniel,online-boutique-8369,We've had this on the backlog as a bug we shouldn't really be making a fuss
+2026-04-09 13:08:48,PLAYER,online-boutique-8369,Hi @daniel  webpage loading slow will impact business 
+2026-04-09 13:08:48,bob,online-boutique-8369,Ohh the reports is actually showing that 20% of our customers are experiencing an issue where it is taking three times as long the website to load. Seeing a few timeouts occurring as well
+2026-04-09 13:09:27,bez,business-comms-8369,What's the impact on revenue?
+2026-04-09 13:10:16,PLAYER,online-boutique-8369,Hi all can some send me recent changes ?
+2026-04-09 13:10:19,uptimelabs,online-boutique-8369,:star: Check changes done to the platform
+2026-04-09 13:10:26,shay,online-boutique-8369,Sure thing!
+2026-04-09 13:10:31,shay,online-boutique-8369,Here you go:https://uptime-labs.atlassian.net/wiki/external/ZDQ1MTE3NWU5ZDYxNDA4MTkxZmM3ZGJmMGJhNmE1OTE
+2026-04-09 13:11:09,bez,online-boutique-8369,"Do we know the impact of this issue, regional or global?"
+2026-04-09 13:11:29,uptimelabs,online-boutique-8369,:bulb: keep the business informed regularly
+2026-04-09 13:11:50,PLAYER,online-boutique-8369,Hi @bob  its regional impact ? also can you you help me impact ?
+2026-04-09 13:11:51,bez,online-boutique-8369,Please inform me via the business comms channel
+2026-04-09 13:12:04,bob,online-boutique-8369,I'll grab that info for you now...
+2026-04-09 13:12:41,PLAYER,business-comms-8369,Hi @bez   20% of our customers are experiencing an issue where it is taking three times as long the website to load. Seeing a few timeouts occurring as well
+2026-04-09 13:12:45,uptimelabs,online-boutique-8369,:star: Qualify the problem
+2026-04-09 13:12:45,bob,online-boutique-8369,This is a globally impacting issue with revenue being down by 10% over the last two weeks. It's also only being reported by users using chrome
+2026-04-09 13:12:57,PLAYER,business-comms-8369,we are working on it. will let you know impact soon
+2026-04-09 13:12:57,bob,online-boutique-8369,What should I advise our users to do in the meantime?
+2026-04-09 13:13:32,PLAYER,business-comms-8369,hi @bez  This is a globally impacting issue with revenue being down by 10% over the last two weeks. It's also only being reported by users using chrome
+2026-04-09 13:13:38,uptimelabs,online-boutique-8369,:star: Formally assign criticality level to the incident
+2026-04-09 13:14:14,PLAYER,online-boutique-8369,hi @daniel  is that front end change affecting this issue ?
+2026-04-09 13:14:18,uptimelabs,online-boutique-8369,:star: Reviewed changes
+2026-04-09 13:14:34,daniel,online-boutique-8369,"I'm not sure, I would need to start investigating"
+2026-04-09 13:15:15,tinus,online-boutique-8369,"We have a P1 Incident logged, let's make sure the team knows how urgent this incident is!!!"
+2026-04-09 13:15:38,PLAYER,online-boutique-8369,hi @daniel any idea what user base uses v105.0 ?
+2026-04-09 13:16:10,daniel,online-boutique-8369,For that specific version it's only like... 0.09%
+2026-04-09 13:16:55,bob,online-boutique-8369,"Users are not very happy, what should I tell them? A lot of people use chrome!"
+2026-04-09 13:16:56,PLAYER,online-boutique-8369,so 0.09 % user affecting the issue  ?
+2026-04-09 13:17:08,daniel,online-boutique-8369,Well for V105.0
+2026-04-09 13:17:25,PLAYER,online-boutique-8369,is only for chrome ? 
+2026-04-09 13:17:39,tanya,online-boutique-8369,Guys the impact is bigger than we thought
+2026-04-09 13:17:56,tanya,online-boutique-8369,It's impacting users using V105.0 Chrome AND older
+2026-04-09 13:18:03,PLAYER,online-boutique-8369,seem impact increasing  
+2026-04-09 13:18:20,shay,online-boutique-8369,"I use microsoft edge and it works fine for me, no timeouts"
+2026-04-09 13:18:30,PLAYER,online-boutique-8369,@tanya  can you help with version change please ?
+2026-04-09 13:19:05,tanya,online-boutique-8369,Can you be more specific in what you'd like me to do?
+2026-04-09 13:19:17,tanya,online-boutique-8369,I don't think we've figured out what's actually broken
+2026-04-09 13:19:19,PLAYER,online-boutique-8369,so its seem only chrome and V105.0 Chrome AND r older version affecting  
+2026-04-09 13:19:50,daniel,online-boutique-8369,It could be related to the recent frontend deployement
+2026-04-09 13:20:02,daniel,online-boutique-8369,We also deployed a change to frontend two weeks ago also
+2026-04-09 13:20:20,PLAYER,online-boutique-8369,Hi @daniel  what was changes related to version that related to front end ?
+2026-04-09 13:20:38,daniel,online-boutique-8369,Which change are you referring to?
+2026-04-09 13:20:47,PLAYER,online-boutique-8369,can you give me recent frontend deployement ?
+2026-04-09 13:21:05,daniel,online-boutique-8369,"Change ID: CHG89553
+
+Owner: Daniel
+
+Service: FrontEndService
+
+Environment: PROD
+
+Version: 0.5.0-14.2.1
+
+Time Of Change: 21 hours ago
+
+Description: Deployment of FrontEndService cleaning up repository by removing code/files that were no longer needed."
+2026-04-09 13:21:41,uptimelabs,online-boutique-8369,":bulb: Form strategy for troubleshooting, use whole team to execute"
+2026-04-09 13:22:12,tinus,online-boutique-8369,Have we got the whole team engaged with investigating?
+2026-04-09 13:22:25,PLAYER,online-boutique-8369,hi @hamed do you have idea about which changes affecting it ?
+2026-04-09 13:22:40,tinus,online-boutique-8369,@bez is needs answers for the shareholders
+2026-04-09 13:23:05,hamed,online-boutique-8369,"I'll need a high level summary of the situation, I was supporting a sales call prior to this"
+2026-04-09 13:23:34,hamed,online-boutique-8369,"I would like to add, what evidence have we got to support whatever's happening is change related"
+2026-04-09 13:23:34,PLAYER,online-boutique-8369,"Hi @tinus , we find out the issue we about to fix will inform you shortly  "
+2026-04-09 13:24:40,PLAYER,online-boutique-8369,hi @shay can you help with  last two weeks  changes ?
+2026-04-09 13:25:03,shay,online-boutique-8369,"The changes we deployed two weeks ago were: Change to frontend in Prod 
+
+Change to ad service in Prod"
+2026-04-09 13:25:26,shay,online-boutique-8369,I don't mind helping but... you need to be less vague
+2026-04-09 13:25:57,uptimelabs,online-boutique-8369,"Thank you for playing Version Confusion, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit start when you are ready."
+2026-04-09 13:26:03,PLAYER,online-boutique-8369,hi @daniel  its front end issue we have to revert changes - CHG89553
+2026-04-09 13:26:28,PLAYER,online-boutique-8369,can you please quickly recert CHG89553 please 
+2026-04-09 13:26:53,uptimelabs,online-boutique-8369,Thank you for playing! Please take a moment to fill in the feedback.
+2026-04-09 13:27:17,uptimelabs,online-boutique-8369,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/17/8369/feedback"

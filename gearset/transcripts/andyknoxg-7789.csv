@@ -1,0 +1,138 @@
+datetime,player,channel,message
+2026-02-20 15:23:02,uptimelabs,online-boutique-7789,"Welcome to Too Good To Be True, the responsibility is on you to size up the problem.
+
+ *Access game links by pressing the Uptime Labs Logo in the top right of the screen*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin"
+2026-02-20 15:27:25,PLAYER,online-boutique-7789,
+2026-02-20 15:27:25,uptimelabs,business-comms-7789,*Incident Number INC100025:* P1 Test Incident
+2026-02-20 15:28:23,tinus,online-boutique-7789,"Welcome @PLAYER, happy to have you on the team."
+2026-02-20 15:28:25,tinus,online-boutique-7789,@PLAYER is our new Incident Manager.
+2026-02-20 15:28:28,shay,online-boutique-7789,Welcome @PLAYER
+2026-02-20 15:28:31,PLAYER,online-boutique-7789,hi all!
+2026-02-20 15:28:32,daniel,online-boutique-7789,Nice to meet you @PLAYER
+2026-02-20 15:28:37,bob,online-boutique-7789,I may need your help straight away @PLAYER
+2026-02-20 15:28:42,bob,online-boutique-7789,There are a few strange customer reports with the helpdesk
+2026-02-20 15:28:42,PLAYER,online-boutique-7789,"what's wrong, Bob?"
+2026-02-20 15:28:46,bob,online-boutique-7789,"Apparently, the site is loading slowly"
+2026-02-20 15:28:50,bob,online-boutique-7789,And people are reporting that they can't make payments either
+2026-02-20 15:28:53,bob,online-boutique-7789,
+2026-02-20 15:28:55,PLAYER,online-boutique-7789,have you confirmed that yourself?
+2026-02-20 15:28:57,bob,online-boutique-7789,@PLAYER Can you check this?
+2026-02-20 15:29:01,bob,online-boutique-7789,Yes
+2026-02-20 15:29:09,tinus,online-boutique-7789,"Hi @Incident Manager, let's get this incident resolved quickly."
+2026-02-20 15:29:10,PLAYER,online-boutique-7789,"oh yes, I can see I'm getting a 502 as well"
+2026-02-20 15:29:12,bob,online-boutique-7789,i see the website dont load
+2026-02-20 15:29:13,uptimelabs,online-boutique-7789,:star: Ask team members to provide evidence of their assertions
+2026-02-20 15:29:20,bob,online-boutique-7789,"We're seeing over 400 customer reports in the last 10 minutes, all related to checkout failures globally and no successful orders coming through since the issue started a few minutes ago."
+2026-02-20 15:29:23,uptimelabs,online-boutique-7789,:star: Reproduces the incident
+2026-02-20 15:29:28,shay,online-boutique-7789,"For me, the site just keeps spinning and never loads past the homepage."
+2026-02-20 15:29:28,daniel,online-boutique-7789,I can't access the website at all from my end.
+2026-02-20 15:29:28,PLAYER,online-boutique-7789,are you seeing an error 502 on your end?
+2026-02-20 15:29:32,uptimelabs,online-boutique-7789,:star: Asking questions to validate impact of the problem
+2026-02-20 15:29:36,bob,online-boutique-7789,"Our monitoring shows a 100% failure rate on checkout transactions since the incident began, with error spikes matching the timing of customer reports."
+2026-02-20 15:29:44,tanya,online-boutique-7789,I'm also getting a 502 error when I try to access the frontend.
+2026-02-20 15:29:51,PLAYER,online-boutique-7789,I will take command here
+2026-02-20 15:29:55,uptimelabs,online-boutique-7789,:star: Take command
+2026-02-20 15:29:59,tinus,online-boutique-7789,"Thanks for taking charge, @Incident Manager—let's get this sorted as soon as possible."
+2026-02-20 15:30:31,PLAYER,online-boutique-7789,"let's get the right people involved - is @tanya, @hameed, @daniel available"
+2026-02-20 15:30:34,PLAYER,online-boutique-7789,I'll declare an incident
+2026-02-20 15:30:34,uptimelabs,online-boutique-7789,:bulb: Declare an incident.
+2026-02-20 15:30:41,tanya,online-boutique-7789,I'm here and ready to help with the investigation.
+2026-02-20 15:30:41,daniel,online-boutique-7789,I'm available and standing by to assist.
+2026-02-20 15:30:55,PLAYER,online-boutique-7789,sounds like everything is down so I'll declare a P1
+2026-02-20 15:30:56,tinus,online-boutique-7789,Good call—let us know what you need from us to move forward quickly.
+2026-02-20 15:31:05,bob,online-boutique-7789,"Agreed, this is impacting all users globally and no orders are processing at all."
+2026-02-20 15:31:16,PLAYER,online-boutique-7789,
+2026-02-20 15:31:16,uptimelabs,business-comms-7789,*Incident Number INC100055:* P1 website fully unavailable across all regions
+2026-02-20 15:31:20,tanya,online-boutique-7789,"Understood, treating this as a P1 and prioritizing all efforts accordingly."
+2026-02-20 15:31:48,PLAYER,online-boutique-7789,@daniel what changes have we shipped recently
+2026-02-20 15:31:50,shay,online-boutique-7789,"Give me a second, I'll get the detailed info on each of the changes made today"
+2026-02-20 15:31:52,uptimelabs,online-boutique-7789,:star: Check changes done to the platform
+2026-02-20 15:31:56,bez,business-comms-7789,thats  bad - how many customers haev reported till now ?
+2026-02-20 15:32:03,shay,online-boutique-7789,Hope this helps: https://uptime-labs.atlassian.net/wiki/external/ZmRkZTQ1ODg2M2U1NGM3NDk1ZjZhM2I3MWY0MTM5ODA
+2026-02-20 15:32:09,PLAYER,business-comms-7789,We're aware of the website being unavailable - will provide an update in 5 minutes when we've assessed the situation
+2026-02-20 15:32:18,uptimelabs,online-boutique-7789,:star: Track actions and time box them
+2026-02-20 15:32:18,uptimelabs,online-boutique-7789,:star: Formally assign criticality level to the incident
+2026-02-20 15:32:45,PLAYER,online-boutique-7789,@hamed can you check the logs to see if there's any information in there about what might be wrong?
+2026-02-20 15:32:47,daniel,online-boutique-7789,Let me check the logs.
+2026-02-20 15:32:49,uptimelabs,online-boutique-7789,:star: Facts over opinion
+2026-02-20 15:32:49,daniel,online-boutique-7789,"I see a lot of errors, most of them are context initialisation errors"
+2026-02-20 15:33:00,daniel,online-boutique-7789,![Error Logs](https://i.ibb.co/vv3Mv8Rr/Capture.webp)
+2026-02-20 15:33:08,tinus,online-boutique-7789,"I have a stakeholder meeting in 10 minutes, @PLAYER do you think this can be resolved by then?"
+2026-02-20 15:33:12,PLAYER,online-boutique-7789,@bob can you update the status page to inform customers we're aware of the incident and will update soon
+2026-02-20 15:33:15,bob,online-boutique-7789,Noted
+2026-02-20 15:33:25,PLAYER,online-boutique-7789,"@tinus, can you chat in the business comms channel?"
+2026-02-20 15:33:30,bob,online-boutique-7789,I'll update the status page right away to let customers know we're investigating the incident.
+2026-02-20 15:33:35,PLAYER,online-boutique-7789,unknown ETA at the moment
+2026-02-20 15:33:39,tinus,online-boutique-7789,"Absolutely, I'll update the business comms channel now and keep everyone informed."
+2026-02-20 15:33:39,tinus,business-comms-7789,"Sure, thanks @Andy"
+2026-02-20 15:33:46,hamed,online-boutique-7789,"Thanks for the update, let us know if you need any additional resources or support."
+2026-02-20 15:33:52,tinus,business-comms-7789,Do you think we can resolve this issue in next 10 minutes?
+2026-02-20 15:34:13,tinus,business-comms-7789,we haev a stake holders meet in next 10 minutes
+2026-02-20 15:34:14,PLAYER,online-boutique-7789,"@daniel, could that be caused by any of the recent changes that have gone out?"
+2026-02-20 15:34:18,uptimelabs,online-boutique-7789,:star: Reviewed changes
+2026-02-20 15:34:19,daniel,online-boutique-7789,"I deployed PaymentService version 1.3.5 about 45 minutes ago, but it only added unit tests and the timing doesn't quite match the incident."
+2026-02-20 15:35:17,PLAYER,online-boutique-7789,traffic appeared to drop off at 15:29
+2026-02-20 15:35:21,uptimelabs,online-boutique-7789,:star: Use metrics as evidence
+2026-02-20 15:35:24,bob,online-boutique-7789,"Our monitoring shows a sharp drop in successful transactions starting just over 15 minutes ago, with failures spiking globally at the same time."
+2026-02-20 15:35:48,PLAYER,online-boutique-7789,"okay, that coincides with one of the changes"
+2026-02-20 15:35:57,bob,online-boutique-7789,"Since the incident began, we've had over 400 customer reports and a 100% failure rate on all checkout attempts."
+2026-02-20 15:36:03,PLAYER,online-boutique-7789,"@daniel, would there be any issue reverting that change from 15 minutes ago"
+2026-02-20 15:36:05,uptimelabs,online-boutique-7789,:star: Restoration over root cause analysis
+2026-02-20 15:36:08,daniel,online-boutique-7789,"I'll roll back PaymentService to the previous version, but since my change only added unit tests and was deployed 45 minutes ago, I doubt it's the cause."
+2026-02-20 15:36:13,PLAYER,business-comms-7789,"400 impacted customers @bez so far, but looks like a full outage"
+2026-02-20 15:36:16,uptimelabs,online-boutique-7789,:star: Qualify the problem
+2026-02-20 15:36:35,PLAYER,business-comms-7789,"@tinus, we're going to attempt to revert a recent change, I'll update soon - if that fixes the issue then we might be availabel again in 10 minutes"
+2026-02-20 15:36:41,daniel,online-boutique-7789,You mean CHG89349? thats Shay's change
+2026-02-20 15:36:52,PLAYER,online-boutique-7789,"yes, Shay's change @daniel "
+2026-02-20 15:37:02,shay,online-boutique-7789,"I deployed FrontEndService version 10.1.2 to PROD about 15 minutes ago, which was mainly code cleanup and removing files and functions that appeared unused."
+2026-02-20 15:37:05,PLAYER,online-boutique-7789,@shay - do you think that change is safe to roll back and would it explain the issue we're seeing?
+2026-02-20 15:37:17,shay,online-boutique-7789,"I'm happy to roll back the FrontEndService change, and since it involved removing files and functions, it's possible something critical was accidentally deleted."
+2026-02-20 15:37:28,bob,online-boutique-7789,The customer complaints are increasing
+2026-02-20 15:37:30,bob,online-boutique-7789,ny ET A?
+2026-02-20 15:37:44,PLAYER,online-boutique-7789,"thanks Shay, please go ahead and revert the change"
+2026-02-20 15:37:50,shay,online-boutique-7789,I've never done a rollback in PROD before — can someone help me with the steps?
+2026-02-20 15:37:59,PLAYER,online-boutique-7789,"@daniel, can you help Shay out?"
+2026-02-20 15:37:59,daniel,online-boutique-7789,"I will help you, @Shay. Rolling back now"
+2026-02-20 15:38:05,shay,online-boutique-7789,CHG89349:Frontend:version 10.1.2 rollback:PROD:Shay
+2026-02-20 15:38:11,daniel,online-boutique-7789,Rollback complete. Can someone verify if the issue is resolved now?
+2026-02-20 15:38:11,tinus,business-comms-7789,Thanks
+2026-02-20 15:38:21,PLAYER,business-comms-7789,update: we're rolling back a change that we suspect might have caused the incident - update in 2 minutes
+2026-02-20 15:38:22,daniel,online-boutique-7789,I'm happy to help Shay with the rollback and can assist in verifying if the issue is resolved afterwards.
+2026-02-20 15:38:25,tinus,business-comms-7789,Keep me posted
+2026-02-20 15:39:14,PLAYER,online-boutique-7789,@bob can you verify if the issue is resolved?
+2026-02-20 15:39:16,bob,online-boutique-7789,The calls have definitely dropped
+2026-02-20 15:39:17,uptimelabs,online-boutique-7789,:star: Cross check resolution with stakeholders
+2026-02-20 15:39:19,bob,online-boutique-7789,Looking into it now... Metrics seem to be improving!
+2026-02-20 15:39:27,bob,online-boutique-7789,No more new calls
+2026-02-20 15:39:27,bob,online-boutique-7789,Customer payments appear to be back up and processing normally
+2026-02-20 15:39:37,PLAYER,online-boutique-7789,agreed on the metrics
+2026-02-20 15:39:42,tanya,online-boutique-7789,Would you like me to run a test transaction or check the logs to help confirm everything is working as expected?
+2026-02-20 15:39:44,PLAYER,online-boutique-7789,site is back up for me
+2026-02-20 15:39:49,PLAYER,online-boutique-7789,@tanya yes please
+2026-02-20 15:39:50,daniel,online-boutique-7789,Would you like me to run a test transaction or check internal metrics to help confirm the fix?
+2026-02-20 15:39:51,tanya,online-boutique-7789,I'll check the frontend service logs now.
+2026-02-20 15:39:58,shay,online-boutique-7789,I'll try again from my side.
+2026-02-20 15:40:01,tanya,online-boutique-7789,"Logs are looking clean, no more 504 errors."
+2026-02-20 15:40:08,shay,online-boutique-7789,My test payment went through successfully! Looks like we're back in business.
+2026-02-20 15:40:10,tinus,online-boutique-7789,We will have a Post-Incident Review later on to understand what happened
+2026-02-20 15:40:13,PLAYER,online-boutique-7789,anyone got any reason to think this isn't resolved?
+2026-02-20 15:40:15,uptimelabs,online-boutique-7789,:star: Cross checking resolution with team
+2026-02-20 15:40:19,tinus,online-boutique-7789,Excellent! Get me a full incident report by end of day
+2026-02-20 15:40:20,uptimelabs,online-boutique-7789,"Drill Wrap-Up
+
+Thanks for playing! This session is now closed.
+
+Please return to your Uptime Labs tab to review your performance and complete the Retrospective & Feedback form.
+
+If you've already closed the tab, you can reopen the form using the button below."
+2026-02-20 15:40:25,tanya,online-boutique-7789,Great work everyone - crisis averted!
+2026-02-20 15:40:27,PLAYER,business-comms-7789,@tinus looks like the revert worked and the site is back online
+2026-02-20 15:40:32,PLAYER,business-comms-7789,we'll continue monitoring
+2026-02-20 15:40:34,uptimelabs,online-boutique-7789,:star: Confirm resolution with the business
+2026-02-20 15:40:34,bez,business-comms-7789,"Great , much appreciate the quick turn around"
+2026-02-20 15:40:45,tinus,business-comms-7789,perfect
+2026-02-20 15:41:02,uptimelabs,online-boutique-7789,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/3/7789/feedback"

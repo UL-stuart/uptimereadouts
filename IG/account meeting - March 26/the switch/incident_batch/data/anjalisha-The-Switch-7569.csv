@@ -1,0 +1,178 @@
+datetime,player,channel,message
+2026-01-30 10:06:06,bez,online-boutique-7569,Hey team!:rocket: Can you believe it's been 8 fantastic years for Online Boutique?
+2026-01-30 10:06:10,bez,online-boutique-7569,"Before we dive into anniversary celebrations, let's give a warm welcome to Maya, our new Security Analyst. She's got 5 years of cybersecurity expertise under her belt! :clap: "
+2026-01-30 10:06:15,maya,online-boutique-7569,"Hi everyone! :raised_hand_with_fingers_splayed: Thrilled to be here, especially on such a special occasion. Let's make Online Boutique even successful and secure together!"
+2026-01-30 10:06:18,tinus,online-boutique-7569,"Welcome, Maya! Your experience will elevate our cybersecurity efforts."
+2026-01-30 10:06:22,tanya,online-boutique-7569,"Excited to have you, Maya! Bez has been very excited to have you on the team."
+2026-01-30 10:06:25,daniel,online-boutique-7569,"Impressive! Eager to learn from you, Maya."
+2026-01-30 10:06:29,shay,online-boutique-7569,":+1: Welcome Maya, pleasure meeting you."
+2026-01-30 10:06:32,bob,online-boutique-7569,Hi Maya! Your experience is top-notch. Cheers to you and to Online Boutique's 8-year anniversary! :partying_face: :tada:
+2026-01-30 10:06:35,maya,online-boutique-7569,Thanks for the warm welcome! Excited for the celebration and our anniversary party.
+2026-01-30 10:06:45,uptimelabs,online-boutique-7569,"Welcome to The Switch, the responsibility is on you to size up the problem.
+
+ *Access game links by pressing the Uptime Labs Logo in the top right of the screen*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin"
+2026-01-30 10:11:00,bez,online-boutique-7569,We are all so glad you have joined us Maya
+2026-01-30 10:11:02,tinus,online-boutique-7569,"Hold on, team. Quick check-in. Is anyone else experiencing internet problems or slow connectivity?"
+2026-01-30 10:11:05,shay,online-boutique-7569,"Internet's definitely sluggish, was loading up github and it took ages to load"
+2026-01-30 10:11:08,bez,online-boutique-7569,Perhaps it could be due to the increase of sales we have been having with this anniversary sale?
+2026-01-30 10:11:10,hamed,online-boutique-7569,"Hey team, we've seen some weird traffic from our data centre network in the last couple of days, it's been mostly minor but never as bad compared to now although"
+2026-01-30 10:11:14,tanya,online-boutique-7569,Hamed and I will have been monitoring outbound traffic. Checking for anomalies again.
+2026-01-30 10:11:21,daniel,online-boutique-7569,I will try to place an order and check the platform.
+2026-01-30 10:11:31,shay,online-boutique-7569,Just ran a test on my internet speed.
+2026-01-30 10:11:34,shay,online-boutique-7569,
+2026-01-30 10:12:16,PLAYER,online-boutique-7569,Is everyone facing slow connections? 
+2026-01-30 10:12:19,uptimelabs,online-boutique-7569,:star: Asking questions to validate impact of the problem
+2026-01-30 10:12:24,daniel,online-boutique-7569,Managed to place an order without any issues. Anyone else?
+2026-01-30 10:12:25,PLAYER,online-boutique-7569,i tried placing an order it is working for me
+2026-01-30 10:12:29,uptimelabs,online-boutique-7569,:star: Attempt to replicate the issue
+2026-01-30 10:12:44,daniel,online-boutique-7569,I don't have any issues with the internet
+2026-01-30 10:12:49,PLAYER,online-boutique-7569,me too
+2026-01-30 10:13:13,shay,online-boutique-7569,Can't access anything at the moment. Everything's taking too long to load
+2026-01-30 10:13:13,PLAYER,online-boutique-7569,@tanya @hamed any luck?
+2026-01-30 10:13:16,uptimelabs,online-boutique-7569,:star: Manage actions and timings
+2026-01-30 10:13:22,tanya,online-boutique-7569,Experiencing some minor connection issues.
+2026-01-30 10:13:32,shay,online-boutique-7569,Could be related to our anniversary sale?
+2026-01-30 10:13:57,tanya,online-boutique-7569,Currently checking everything
+2026-01-30 10:14:00,PLAYER,online-boutique-7569,@tanya what does it look like?
+2026-01-30 10:14:04,PLAYER,online-boutique-7569,"sure, keep us informed"
+2026-01-30 10:14:40,daniel,online-boutique-7569,"We made a few changes to the platform
+https://uptime-labs.atlassian.net/wiki/external/NGRkNTNhZDVjZDUyNDU5NDk2Yjg3NzcxMTE1YjkxOTA"
+2026-01-30 10:14:54,daniel,online-boutique-7569,Gonna throw this here if we suspect this to be change-related
+2026-01-30 10:15:20,hamed,online-boutique-7569,Noticing a spike in outbound connections. The IP range affected is the same as our frontend and payments
+2026-01-30 10:15:39,tanya,online-boutique-7569,"From the platform side, I don't see anything wrong"
+2026-01-30 10:16:06,tanya,online-boutique-7569,I will continue looking for patterns and anomalies
+2026-01-30 10:16:14,PLAYER,online-boutique-7569,@daniel no recent changes seems to be related to this kind of issues
+2026-01-30 10:16:43,daniel,online-boutique-7569,"I agree, I had a look as well, could be a network and platform layer issue"
+2026-01-30 10:16:52,uptimelabs,online-boutique-7569,:bulb: Who in the organisation can help you understand how customers are affected?
+2026-01-30 10:16:58,PLAYER,online-boutique-7569,there was changes to frontend and payments CHG89675 and CHG89692
+2026-01-30 10:17:09,uptimelabs,online-boutique-7569,:star: Check changes done to the platform
+2026-01-30 10:17:11,PLAYER,online-boutique-7569,can @daniel and @tanya check if it is change related?
+2026-01-30 10:17:15,uptimelabs,online-boutique-7569,:star: Reviewed changes
+2026-01-30 10:17:24,daniel,online-boutique-7569,On it
+2026-01-30 10:17:29,PLAYER,online-boutique-7569,@bob any reports from customers?
+2026-01-30 10:17:35,tanya,online-boutique-7569,"Sure, I will check the other change"
+2026-01-30 10:17:46,bob,online-boutique-7569,Gathering customer reports now
+2026-01-30 10:18:02,bob,online-boutique-7569,Reports from as far back as two weeks mention slow site performance and timeouts
+2026-01-30 10:18:05,bob,online-boutique-7569,"Some customers are placing orders without issues, while others report long load times"
+2026-01-30 10:18:19,bob,online-boutique-7569,"Issues reported by customers are widespread, not limited to any specific region"
+2026-01-30 10:18:39,uptimelabs,online-boutique-7569,:bulb: Declare an incident.
+2026-01-30 10:18:44,PLAYER,online-boutique-7569,
+2026-01-30 10:18:45,uptimelabs,business-comms-7569,*Incident Number INC100067:* SEV3 reports of long load times
+2026-01-30 10:18:59,tanya,online-boutique-7569,"I have checked the deployment, and nothing stands out"
+2026-01-30 10:19:09,PLAYER,business-comms-7569,"we have experienced long load times, we are still investigating the cause"
+2026-01-30 10:19:13,daniel,online-boutique-7569,"I have a similar story here, looks fine with me"
+2026-01-30 10:19:14,uptimelabs,online-boutique-7569,:star: Formally assign criticality level to the incident
+2026-01-30 10:19:14,uptimelabs,online-boutique-7569,:star: Qualify the problem
+2026-01-30 10:19:19,PLAYER,business-comms-7569,"[  
+3:48 PM](https://comms.prod.uptimelabs.io/ig-com/pl/gh6qwtn6o7g358weapq96kz3no)
+
+Some customers are placing orders without issues, while others report long load times
+
+[3:48 PM](https://comms.prod.uptimelabs.io/ig-com/pl/u8tfgd7dbtb388ceguq6utzbnc)
+
+Issues reported by customers are widespread, not limited to any specific region"
+2026-01-30 10:19:25,daniel,online-boutique-7569,Checking logs and services
+2026-01-30 10:19:53,PLAYER,online-boutique-7569,"As per bob, reports are coming since two weeks"
+2026-01-30 10:20:14,PLAYER,online-boutique-7569,@tanya any platforms change this past 2 weeks?
+2026-01-30 10:20:41,tanya,online-boutique-7569,Digging through the changes we made to the platform and network in the past 2 weeks
+2026-01-30 10:20:49,tanya,online-boutique-7569,I will report in a few
+2026-01-30 10:21:12,bez,business-comms-7569,Have we notified the customers about this?
+2026-01-30 10:21:31,PLAYER,online-boutique-7569,Can it be because our servers are not capable enough to handle huge traffic?
+2026-01-30 10:21:33,uptimelabs,online-boutique-7569,:star: Form a working theory
+2026-01-30 10:21:40,hamed,online-boutique-7569,Shay mentioned traffic. Has anyone looked into that?
+2026-01-30 10:22:11,hamed,online-boutique-7569,I was thinking along the same lines
+2026-01-30 10:23:01,hamed,online-boutique-7569,We can check the traffic and its legitimacy. That would be @maya
+2026-01-30 10:23:09,PLAYER,online-boutique-7569,@bob can we notify the customers about this? and keep them informed?
+2026-01-30 10:23:22,PLAYER,online-boutique-7569,@maya can you heck the traffic and its legitimacy
+2026-01-30 10:23:24,bob,online-boutique-7569,I will put a banner up. Do we have any particular message we want to send?
+2026-01-30 10:23:37,maya,online-boutique-7569,"Hey team, I will look into this now!"
+2026-01-30 10:24:05,PLAYER,online-boutique-7569,"just that high traffic, we are working to get it smoothened out."
+2026-01-30 10:24:08,tanya,online-boutique-7569,"I have gone through the changes we have made to the network layer, nothing stands out or could have affected our speed"
+2026-01-30 10:24:40,PLAYER,business-comms-7569,we are working to notify the users via banners
+2026-01-30 10:24:41,tinus,business-comms-7569,Do we have numbers on how this has affected our sales in the past 2 weeks?
+2026-01-30 10:24:56,PLAYER,online-boutique-7569,@bob Do we have numbers on how this has affected our sales in the past 2 weeks?
+2026-01-30 10:25:16,PLAYER,online-boutique-7569,@maya  any luck?
+2026-01-30 10:25:20,maya,online-boutique-7569,We have a spike in outbound calls
+2026-01-30 10:25:31,maya,online-boutique-7569,Security scan shows issues related to our network switch. Working on identifying the exact cause
+2026-01-30 10:25:47,bob,online-boutique-7569,Sales have declined by 8% in the past 2 weeks
+2026-01-30 10:25:55,PLAYER,business-comms-7569,Sales have declined by 8% in the past 2 weeks
+2026-01-30 10:26:03,maya,online-boutique-7569,"@Tanya and @Hamed, need your assistance in a detailed review"
+2026-01-30 10:26:25,daniel,online-boutique-7569,I will be on stand by but this doesn't look like an application-layer issue
+2026-01-30 10:26:37,PLAYER,online-boutique-7569,@tanya @hamed please help @maya to get this sorted out
+2026-01-30 10:27:08,tanya,online-boutique-7569,Reviewing the data as we speak
+2026-01-30 10:27:12,hamed,online-boutique-7569,"Found a critical issue. Our network switch was compromised due to unpatched vulnerabilities, leading to a BotNet creating DDOS attacks"
+2026-01-30 10:27:24,maya,online-boutique-7569,The network switch's vulnerabilities were exploited. We need to address this immediately
+2026-01-30 10:27:32,tanya,online-boutique-7569,The disruption affects both our internal and external users
+2026-01-30 10:27:42,PLAYER,online-boutique-7569,@hamed what are the actions to be taken now?
+2026-01-30 10:27:46,uptimelabs,online-boutique-7569,:star: Escalating when required
+2026-01-30 10:28:06,hamed,online-boutique-7569,"@maya, any suggestions?"
+2026-01-30 10:28:11,PLAYER,business-comms-7569,"We have identified the issue:
+Our network switch was compromised due to unpatched vulnerabilities, leading to a BotNet creating DDOS attacks"
+2026-01-30 10:28:31,maya,online-boutique-7569,"Suggesting a switch restart, this could help!"
+2026-01-30 10:28:42,PLAYER,business-comms-7569,We are finding the fix
+2026-01-30 10:28:59,bez,business-comms-7569,Do we have a clear timeline for when we expect this to be resolved?
+2026-01-30 10:29:04,PLAYER,online-boutique-7569,@maya any impact of restarting?
+2026-01-30 10:29:14,bob,online-boutique-7569,Should I tell anything to customers?
+2026-01-30 10:29:40,maya,online-boutique-7569,"It might not come back and there will be a downtime, we might look for an alternative solution"
+2026-01-30 10:29:56,hamed,online-boutique-7569,We can check the infra
+2026-01-30 10:30:02,PLAYER,online-boutique-7569,@hamed are we okay with the downtime?
+2026-01-30 10:30:07,hamed,online-boutique-7569,For an alternative solution
+2026-01-30 10:30:41,hamed,online-boutique-7569,If it'sa short duration than it's not an issue
+2026-01-30 10:30:47,PLAYER,online-boutique-7569,@maya please go ahead and restart
+2026-01-30 10:31:11,maya,online-boutique-7569,"Max 10 minutes, but there's a risk of it not coming back up"
+2026-01-30 10:31:23,maya,online-boutique-7569,switch has been restarted
+2026-01-30 10:31:27,PLAYER,online-boutique-7569,@tanya meanwhile can you check alternative solutions?
+2026-01-30 10:31:32,shay,online-boutique-7569,Ill try to place an order and check we're still getting these issues
+2026-01-30 10:31:33,tanya,online-boutique-7569,Sure
+2026-01-30 10:31:35,tanya,online-boutique-7569,Hopefully restarting was the correct solution
+2026-01-30 10:31:53,shay,online-boutique-7569,"Ummm Guys, tried to place an order and now im getting errors on the product selection page"
+2026-01-30 10:31:56,shay,online-boutique-7569,Is anyone else getting the same?
+2026-01-30 10:31:58,bob,online-boutique-7569,"Getting a lot of new reports, people are no longer able to access the products page at all"
+2026-01-30 10:32:04,maya,online-boutique-7569,"Sorry guys was hoping the restart would work, trying to think of another solution but i'm not too familiar with the network infrastructure here at OB"
+2026-01-30 10:32:06,hamed,online-boutique-7569,No worries Maya I can send over the graph of the network infra if you wanna look at it
+2026-01-30 10:32:08,PLAYER,online-boutique-7569,me too
+2026-01-30 10:32:08,maya,online-boutique-7569,That would be perfect @hamed
+2026-01-30 10:32:11,hamed,online-boutique-7569,
+2026-01-30 10:32:16,maya,online-boutique-7569,"Looking at the diagram now, will need a moment to figure out what to do next"
+2026-01-30 10:32:20,maya,online-boutique-7569,Let me know if you have any suggestions in the mean time
+2026-01-30 10:32:23,shay,online-boutique-7569,If i remember correctly we do have recent changes involving the products page
+2026-01-30 10:32:45,PLAYER,business-comms-7569,we restarted the switch but now the product page itself is throwing 500
+2026-01-30 10:33:03,tanya,online-boutique-7569,I can see that we have a redundant switch
+2026-01-30 10:33:29,tanya,online-boutique-7569,We could failover to the redundant switch
+2026-01-30 10:33:32,PLAYER,online-boutique-7569,how to get rid of redundant switch?
+2026-01-30 10:33:36,PLAYER,online-boutique-7569,please do so
+2026-01-30 10:33:51,PLAYER,online-boutique-7569,@daniel can this be related to your change? redundant switch
+2026-01-30 10:34:14,hamed,online-boutique-7569,A redundant switch would allow us to reroute the traffic and not usethe  compromised switch
+2026-01-30 10:34:24,daniel,online-boutique-7569,Checking the change now
+2026-01-30 10:34:29,maya,online-boutique-7569,That should work
+2026-01-30 10:34:38,PLAYER,online-boutique-7569,please try using the redundance switch
+2026-01-30 10:34:51,hamed,online-boutique-7569,Understood! Preparing to bypass the infected switch
+2026-01-30 10:35:07,bob,online-boutique-7569,What should we communicate to our customers?
+2026-01-30 10:35:23,PLAYER,business-comms-7569,"we have identified a redundant switch, trying to bypass the infected switch and use the other one"
+2026-01-30 10:35:24,hamed,online-boutique-7569,No impact observed on the redundant switch. Successfully bypassed the infected switch
+2026-01-30 10:35:32,maya,online-boutique-7569,the infected switch has been successfully changed over
+2026-01-30 10:35:35,hamed,online-boutique-7569,The Catalyst 9300 Series which is our infected switch has been swapped over to old but reliable (Cisco Catalyst 2960 Series)
+2026-01-30 10:35:42,tinus,online-boutique-7569,"Good job, can we confirm @anjali.sharma-ig.com?"
+2026-01-30 10:35:57,PLAYER,online-boutique-7569,products page is still not loading for me?
+2026-01-30 10:35:58,uptimelabs,online-boutique-7569,:star: Cross checking resolution with team
+2026-01-30 10:36:01,PLAYER,online-boutique-7569,can someone confirm?
+2026-01-30 10:36:10,shay,online-boutique-7569,Checking now
+2026-01-30 10:36:17,PLAYER,online-boutique-7569,@daniel any luck with the change?
+2026-01-30 10:36:19,uptimelabs,online-boutique-7569,"Drill Wrap-Up
+
+Thanks for playing! This session is now closed.
+
+Please return to your Uptime Labs tab to review your performance and complete the Retrospective & Feedback form.
+
+If you've already closed the tab, you can reopen the form using the button below."
+2026-01-30 10:36:32,shay,online-boutique-7569,It works for me
+2026-01-30 10:36:38,PLAYER,online-boutique-7569,yes it is working now
+2026-01-30 10:36:52,PLAYER,business-comms-7569,"this worked, site is back up"
+2026-01-30 10:36:53,daniel,online-boutique-7569,Looks like the issue was with the switch and not with the change
+2026-01-30 10:36:55,uptimelabs,online-boutique-7569,:star: Confirm resolution with the business
+2026-01-30 10:37:04,PLAYER,business-comms-7569,the incident is resolved
+2026-01-30 10:37:19,PLAYER,online-boutique-7569,"good job guys, incident is resolved"
+2026-01-30 10:37:24,bez,business-comms-7569,"Great job, thanks for the rapid solution"

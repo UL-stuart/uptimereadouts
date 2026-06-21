@@ -1,0 +1,132 @@
+datetime,player,channel,message
+26/09/2025 15:40,Maya,secure-channel,@Jamie Buchanan let's build the core response team here. I've already added myself. Who else should we pull in to keep it tight and efficient?
+26/09/2025 15:40,Maya,secure-channel,"I'd say one senior person each from security, platform, and engineering. Also add Tanya, tasks could be platform intensive"
+26/09/2025 15:41,Maya,secure-channel,Make sure to maintain the updates with the business
+26/09/2025 15:41,Jamie Buchanan,secure-channel,<@U06CA3MRAJF> please add <@U047N6LUYJX> <@U047KAE5JLV> <@U047N6LHU0K> <@U0480TP9ZA5>
+26/09/2025 15:41,Maya,secure-channel,Sure let me call me in
+26/09/2025 15:42,Hamed,secure-channel,I'm in
+26/09/2025 15:42,Daniel,secure-channel,Yes
+26/09/2025 15:42,Maya,secure-channel,Tinus is talking to Bez
+26/09/2025 15:43,Jamie Buchanan,secure-channel,<@U0480TP9ZA5> can you confirm all passwords have been changed please?
+26/09/2025 15:43,Hamed,secure-channel,Yes i can confirm its been changed
+26/09/2025 15:43,Jamie Buchanan,secure-channel,<@U047N6LUYJX> can you summarise blast radius of malware encryption?
+26/09/2025 15:43,Daniel,secure-channel,On my side as well
+26/09/2025 15:43,Tanya,secure-channel,Checking...
+26/09/2025 15:44,Jamie Buchanan,secure-channel,<@U0480TP9ZA5> does that include everyone? All passwords?
+26/09/2025 15:44,Tanya,secure-channel,"From what I'm seeing, the impact seems limited to the checkout servers. We haven't spotted similar symptoms on the others so far"
+26/09/2025 15:44,Maya,secure-channel,"Also, I checked. All other servers have security agents running and reporting normally. The only ones missing agents were the checkout servers - which feels a bit off"
+26/09/2025 15:44,Jamie Buchanan,secure-channel,<@U047N6LUYJX> are you confident in that status?
+26/09/2025 15:44,Hamed,secure-channel,"We have changed ours, and Maya has changed the elevated access"
+26/09/2025 15:44,Tanya,secure-channel,Yes i'm confident
+26/09/2025 15:46,Jamie Buchanan,secure-channel,So current thesis is that malware has somehow (as yet unknown vector) got on to Checkout service and because we had not security agents running it has infected server with ransomware encrypting data.
+26/09/2025 15:46,Hamed,secure-channel,Things are going out of hands. @Maya do we have any external support for these situations ?
+26/09/2025 15:46,Jamie Buchanan,secure-channel,<@U047KAE5JLV> what time will you join us?
+26/09/2025 15:47,Tinus,secure-channel,I'm up with Bez. He needs me there. Keep us updated in business chat
+26/09/2025 15:47,Maya,secure-channel,"Yes, we've got an IR(incident response) retainer with Cyvantics Security"
+26/09/2025 15:47,Maya,secure-channel,"Looped in Cyvantics Security - they're on their way now to take snapshots of the infected server and storage, followed by forensics on it"
+26/09/2025 15:47,Maya,secure-channel,"Meanwhile, I've got this from Cyvantics. @Jamie Buchanan, can you help track the steps and coordinate?"
+26/09/2025 15:47,Maya,secure-channel,<https://uptime-labs.atlassian.net/wiki/external/MThjMTk4ZDU5ODU0NGZmMWE1NzhmNGY0MDQwNWI1NTA>
+26/09/2025 15:48,Maya,secure-channel,"We've got isolation steps in the playbook, but before we dive in, can you paste that list here? I'll help team run through it"
+26/09/2025 15:48,Jamie Buchanan,secure-channel,"We need to identify:
+1. Vector of attack (<@U06CA3MRAJF> how do you think the malware came in ?)
+2. How do we rebuild Chcekout service cleanly with security agent? (<@U0480TP9ZA5> thoughts?)"
+26/09/2025 15:48,Maya,secure-channel,I've got Cyvantics to check the vector. They are doing forensics on it
+26/09/2025 15:49,Hamed,secure-channel,We will go as per the playbook
+26/09/2025 15:49,Jamie Buchanan,secure-channel,"<@U06CA3MRAJF> here is list for isolation please go ahead
+
+Steps for Isolation:
+
+
+Steps to be done, mentioned along with the *owning* team
+1. Disconnect the infected server -&gt; Platforms 
+2. Cut off infrastructure traffic -&gt; Platforms
+3. Disconnect DB &amp; freeze backup -&gt; Application
+4. Detach from Shared Resource -&gt; Platforms
+5. Take snapshots (Disk &amp; Memory) -&gt; Ask team
+6. Kill suspicious process or activity -&gt; Platforms
+"
+26/09/2025 15:49,Maya,secure-channel,"I've given write access to Tanya, Hamed, Daniel, and myself"
+26/09/2025 15:49,Tanya,secure-channel,Disconnecting the checkout servers from the infra now
+26/09/2025 15:49,Daniel,secure-channel,I'm on it. Disconnecting DB access for checkout and checking if scheduled backups exist
+26/09/2025 15:49,Hamed,secure-channel,I'll verify if any shared storage is still attached to the checkout DB
+26/09/2025 15:50,Daniel,secure-channel,"Step 3 done, DB connection to checkout is now cut"
+26/09/2025 15:50,Tanya,secure-channel,"Step 1 done, Checkout servers are now fully disconnected. Moving to isolate the infra from all external traffic"
+26/09/2025 15:50,Hamed,secure-channel,"Step 4 confirmed, No shared storage attached to checkout, which makes sense since checkout has its standalone storage"
+26/09/2025 15:50,Tanya,secure-channel,"Step 2 completed, Infra is now fully cut off from the outside world. That means the website will remain completely down until we recover"
+26/09/2025 15:50,Maya,secure-channel,"Step 5 done, Cyvantics has completed taking snapshots of the checkout servers and database. They've now moved on to forensics. @Hamed, we're good to kill the script now"
+26/09/2025 15:50,Hamed,secure-channel,"Step 6 done, The Script has been killed. @Jamie Buchanan let us know and double-check if anything else is pending on our side"
+26/09/2025 15:52,Jamie Buchanan,secure-channel,<@U06CA3MRAJF> are you happy to move to restoration steps? Do we need to do anything with Standalone storage?
+26/09/2025 15:52,Maya,secure-channel,"Yes, we must have a backup. Platform team can confirm us"
+26/09/2025 15:53,Hamed,secure-channel,"Correct, we do have backup which only runs at 2AM. Latest is yesterday's. We'll lose today's orders"
+26/09/2025 15:53,Maya,secure-channel,Isolation is complete. We're good to move toward restoration using the backup storage now
+26/09/2025 15:53,Maya,secure-channel,@Jamie Buchanan could you please confirm with business before moving forward on this
+26/09/2025 15:53,Maya,secure-channel,I've called in @Bob to the channel
+26/09/2025 15:53,Bob,secure-channel,"@Jamie Buchanan, I hear you need my help, what exactly should I look into?"
+26/09/2025 15:53,Bob,secure-channel,"With the sale starting today, the potential loss is significant - around $180k"
+26/09/2025 15:53,Jamie Buchanan,secure-channel,<@U0480TP9ZA5> how do we rebuild with the security agent included? Is it present on the servers in UAT?
+26/09/2025 15:54,Hamed,secure-channel,UAT servers looks good to me
+26/09/2025 15:54,Jamie Buchanan,secure-channel,<@U047N91SRH8> we need to restore from backup to resume sales but doing so will lose todays orders? Thoughts?
+26/09/2025 15:54,Bob,secure-channel,Are we good with business on this loss of $180k worth of orders ?
+26/09/2025 15:55,Bob,secure-channel,Guys fast
+26/09/2025 15:55,Bob,secure-channel,It has already gone worst
+26/09/2025 15:56,Jamie Buchanan,secure-channel,<@U047N91SRH8> explain more?
+26/09/2025 15:56,Bob,secure-channel,49% users reporting issues
+26/09/2025 15:56,Jamie Buchanan,secure-channel,<@U0480TP9ZA5> go ahead with restoration <@U047N90R8KU> agrees
+26/09/2025 15:56,Hamed,secure-channel,Lets move forward
+26/09/2025 15:56,Maya,secure-channel,"Thanks for the go-ahead. @Jamie Buchanan, please track all restoration steps"
+26/09/2025 15:57,Maya,secure-channel,I'm now validating the backup storage to ensure it's safe
+26/09/2025 15:57,Hamed,secure-channel,"I'm provisioning new checkout servers, will update once ready"
+26/09/2025 15:57,Maya,secure-channel,"Backup is clean and safe. @Hamed, you can start rebuilding checkout from backup storage"
+26/09/2025 15:57,Hamed,secure-channel,"Thanks, Maya. New servers are ready. I'll start rebuilding now using backup storage"
+26/09/2025 15:57,Jamie Buchanan,secure-channel,"<@U06CA3MRAJF>
+
+Steps for Restoration:
+Steps to be done, mentioned along with the owning team
+
+Validate backups → Security
+
+Wipe infected systems → Platforms
+
+Rebuild from clean backup → Platforms
+
+Re-enable security agent on the servers → Security
+
+Reconnect traffic to services and monitor → Platforms"
+26/09/2025 15:57,Hamed,secure-channel,Rebuild completed
+26/09/2025 15:57,Maya,secure-channel,I've enabled the security agents (EDR) on checkout servers
+26/09/2025 15:57,Daniel,secure-channel,I'll monitor application health once services are restored
+26/09/2025 15:57,Maya,secure-channel," @Jamie Buchanan , can you confirm all tasks are wrapped up and we are good to bring the traffic back? Just want to be sure, as this is the final restoration step before we move"
+26/09/2025 15:58,Maya,secure-channel,"As per me, it should be good"
+26/09/2025 15:58,Jamie Buchanan,secure-channel,"<@U06CA3MRAJF> Have we done the following exactly ?
+
+Steps for Isolation:
+
+
+Steps to be done, mentioned along with the *owning* team
+1. Disconnect the infected server -&gt; Platforms 
+2. Cut off infrastructure traffic -&gt; Platforms
+3. Disconnect DB &amp; freeze backup -&gt; Application
+4. Detach from Shared Resource -&gt; Platforms
+5. Take snapshots (Disk &amp; Memory) -&gt; Ask team
+6. Kill suspicious process or activity -&gt; Platforms
+"
+26/09/2025 15:58,Maya,secure-channel,Yes
+26/09/2025 15:58,Tanya,secure-channel,Thanks for the go ahead. Bringing up network traffic in progress...
+26/09/2025 15:58,Tanya,secure-channel,Restoration completed
+26/09/2025 15:59,Bob,secure-channel,Wait!! getting a bunch of new complaints now. Users are neither able to see their return requests nor able to place new returns on the site
+26/09/2025 15:59,Jamie Buchanan,secure-channel,<@U047N91SRH8> confirm purchases?
+26/09/2025 15:59,Maya,secure-channel,"Yeah, that's probably the missing today's checkout data. Anyone who ordered or returned something during that time won't see it - makes sense since we restored from the yesterday's backup"
+26/09/2025 15:59,Tanya,secure-channel,"Tough, but expected :)"
+26/09/2025 15:59,Bob,secure-channel,What should I tell them? They are asking for refunds
+26/09/2025 15:59,Bob,secure-channel,New orders are coming in
+26/09/2025 15:59,Jamie Buchanan,secure-channel,<@U047N91SRH8> ask <@U047N90R8KU>
+26/09/2025 16:00,Maya,secure-channel,@Jamie Buchanan I've received the forensics report from Cyvantics Security
+26/09/2025 16:00,Maya,secure-channel,forensics
+26/09/2025 16:00,Bob,secure-channel,Bez has given go ahead for refunds and $10 vouchers
+26/09/2025 16:00,Maya,secure-channel,"Also, I just finished combing through Shay's mailbox. There's something important here, I found two emails from what looks like our monitoring vendor - ClearTech"
+26/09/2025 16:00,Maya,secure-channel,phished_email
+26/09/2025 16:00,Maya,secure-channel,"We will take this forward in PIR , for now website is restored"
+26/09/2025 16:00,Maya,secure-channel,"Alright, since everything's back up and stable, we can now move back to the main #online-boutique channel. No further actions left here"
+26/09/2025 16:01,Jamie Buchanan,secure-channel,<@U047N6LHU0K> can you do security training for your team please as per <@U06CA3MRAJF>’s inform on the vector of attack
+26/09/2025 16:01,Daniel,secure-channel,Sure i'll take care of it
+26/09/2025 16:01,Maya,secure-channel,I'll roll out the campaign

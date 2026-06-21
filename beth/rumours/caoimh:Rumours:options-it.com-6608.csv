@@ -1,0 +1,115 @@
+datetime,player,channel,message
+2025-11-05 11:03:13,tinus,online-boutique-6608,"Hi team, let's have a mood check send an emoji to describe your mood"
+2025-11-05 11:03:17,tinus,online-boutique-6608,"I'll go first, :thumbsup:"
+2025-11-05 11:03:23,tanya,online-boutique-6608,:thumbsup:
+2025-11-05 11:03:25,tinus,online-boutique-6608,I'm excited about showing off all your hard work at todays stakeholder meeting
+2025-11-05 11:03:28,daniel,online-boutique-6608,":skull: knackered, had a few too many late nights this week"
+2025-11-05 11:03:31,shay,online-boutique-6608,:rainbow:
+2025-11-05 11:03:34,hamed,online-boutique-6608,living the dream :smile:
+2025-11-05 11:03:38,bez,online-boutique-6608,:smirk: im excited to see the show too
+2025-11-05 11:03:40,tinus,online-boutique-6608,shouldn't you be prepping for the meeting 
+2025-11-05 11:03:43,bez,online-boutique-6608,:sweat_smile: i am indeed I'll leave you lot to it
+2025-11-05 11:03:45,shay,online-boutique-6608,hang in there @daniel its gonne be the weekend sooner or later :joy:
+2025-11-05 11:03:48,tinus,online-boutique-6608,I should get on with my prep too have a good day team
+2025-11-05 11:03:49,daniel,online-boutique-6608,@shay strict diet of energy drink for me today lol
+2025-11-05 11:03:52,daniel,online-boutique-6608,hope the presentation goes well @tinus
+2025-11-05 11:03:54,tanya,online-boutique-6608,:raised_hands:
+2025-11-05 11:04:10,UptimeLabs,online-boutique-6608,"Welcome to Rumours, remember communication is key to diagnose the problem.
+
+ *Use `/help` at any time for a list of useful links and commands*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin Start button"
+2025-11-05 11:10:46,PLAYER,online-boutique-6608,Clicked undefined button
+2025-11-05 11:10:58,PLAYER,online-boutique-6608,Clicked Start button
+2025-11-05 11:10:58,UptimeLabs,online-boutique-6608,":alarm_clock: - You have 20 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-11-05 11:11:01,tinus,online-boutique-6608,"Hey team, I'm texting from the board room - kinda embarrassing but in my demo to the board, I tried to add a pair of Aviator sunglasses to the shopping cart and I got a ?http 500?"
+2025-11-05 11:11:03,tinus,online-boutique-6608,"I've bought some time but need this be able to do this demo if we can lets get this sorted in the next 20 minutes.
+"
+2025-11-05 11:11:05,tinus,online-boutique-6608,Metrics
+2025-11-05 11:11:08,tanya,online-boutique-6608,"uh oh, those Aviators are top sellers due to the new Top Gun movie...It's size up the issue time Caoimhe Kelly"
+2025-11-05 11:11:11,shay,online-boutique-6608,Come on this can't be happening!
+2025-11-05 11:11:13,tinus,online-boutique-6608,"I'm in this meeting so, wont be able to help but I trust that you all can get this fixed asap, just @ me if you need anything"
+2025-11-05 11:11:16,shay,online-boutique-6608,ok looking into this now
+2025-11-05 11:11:36,PLAYER,online-boutique-6608,can we confirm if this is effecting everyone?
+2025-11-05 11:11:44,UptimeLabs,online-boutique-6608,:star: Asking questions to validate impact of the problem
+2025-11-05 11:11:49,PLAYER,online-boutique-6608,Clicked org button
+2025-11-05 11:11:57,PLAYER,online-boutique-6608,Bob
+2025-11-05 11:12:06,Bob,online-boutique-6608,"Sure, give me few min"
+2025-11-05 11:12:23,Bob,online-boutique-6608,"But I dont think so, as everything was quite"
+2025-11-05 11:12:30,PLAYER,online-boutique-6608,yeah I can check out okay
+2025-11-05 11:12:42,UptimeLabs,online-boutique-6608,:star: Attempt to replicate the issue
+2025-11-05 11:12:48,PLAYER,online-boutique-6608,Shay find anything?
+2025-11-05 11:12:50,Shay,online-boutique-6608,I tried to purchase and had no issue.
+2025-11-05 11:12:52,UptimeLabs,online-boutique-6608,:star: Manage actions and timings
+2025-11-05 11:13:06,PLAYER,online-boutique-6608,Tinus how are you doing this demo
+2025-11-05 11:13:16,PLAYER,online-boutique-6608,as the issue is not happening for anyone else
+2025-11-05 11:13:28,Tinus,online-boutique-6608,I have a meeting in 10 minutes
+2025-11-05 11:14:00,Shay,online-boutique-6608,There were a couple of deployment made earlier today perhaps one of those could lead to this issue <https://uptime-labs.atlassian.net/wiki/spaces/ULPUBLIC/pages/1113292847/Rumours+-+Change+Request+Logs>
+2025-11-05 11:14:07,PLAYER,online-boutique-6608,Tanya could you help check
+2025-11-05 11:14:29,Bob,online-boutique-6608,No reports from customers
+2025-11-05 11:14:44,PLAYER,online-boutique-6608,Shay Daniel can we narrow down this issue
+2025-11-05 11:14:50,Bob,online-boutique-6608,"As I said, The phone's silent
+No calls from any customer"
+2025-11-05 11:14:50,PLAYER,online-boutique-6608,is it with checkout service?
+2025-11-05 11:15:19,UptimeLabs,online-boutique-6608,:bulb: Declare an incident.
+2025-11-05 11:15:34,PLAYER,online-boutique-6608,local issue with checkout service
+2025-11-05 11:15:34,PLAYER,business-comms-6608,*Incident Number INC100049:* local issue with checkout service
+2025-11-05 11:15:34,UptimeLabs,online-boutique-6608,:star: Incident record created
+2025-11-05 11:15:36,UptimeLabs,online-boutique-6608,:star: Send first comms in first 5 minutes
+2025-11-05 11:15:40,UptimeLabs,online-boutique-6608,:star: Qualify the problem
+2025-11-05 11:15:42,Tinus,online-boutique-6608,"Can you get this resolved quick please
+This is important demo for us"
+2025-11-05 11:15:56,PLAYER,business-comms-6608,"looking into this, appears to be a local issue with checkout"
+2025-11-05 11:16:11,Tanya,online-boutique-6608,Checked network and everything seems fine from our end
+2025-11-05 11:16:36,PLAYER,online-boutique-6608,Tanya Shay Daniel can we go through the change request logs - would any of these effect it?
+2025-11-05 11:16:44,UptimeLabs,online-boutique-6608,:star: Reviewed changes
+2025-11-05 11:16:56,Bez,business-comms-6608,"This is very important meeting, we need to fix the issue asap"
+2025-11-05 11:17:31,PLAYER,business-comms-6608,Bez we're on it
+2025-11-05 11:17:43,Daniel,online-boutique-6608,I have checked and no issue found
+2025-11-05 11:17:45,PLAYER,online-boutique-6608,Hamed can you take a look please
+2025-11-05 11:17:59,Shay,online-boutique-6608,I don't see any issue in logs as well
+2025-11-05 11:18:11,PLAYER,online-boutique-6608,Hamed Tanya any on your end
+2025-11-05 11:18:29,Hamed,online-boutique-6608,let me check
+2025-11-05 11:18:49,Hamed,online-boutique-6608,Is it only Tinus who has the problem?
+2025-11-05 11:18:52,PLAYER,online-boutique-6608,could not retrieve product - what would this error message usually indicate?
+2025-11-05 11:19:07,PLAYER,online-boutique-6608,yes only Tinus
+2025-11-05 11:19:16,PLAYER,online-boutique-6608,Tinus can you confirm how you are accessing this
+2025-11-05 11:19:16,Hamed,online-boutique-6608,"Because, I am able to place an order"
+2025-11-05 11:19:40,Tinus,online-boutique-6608,I am using my computer
+2025-11-05 11:20:03,PLAYER,online-boutique-6608,Maya could you check also please
+2025-11-05 11:20:04,Hamed,online-boutique-6608,"I see something weird in the screenshot shared by Tinus
+
+product/OLJCESPC7Z, The product ID in Tinus screen shot is different than what we have in PROD"
+2025-11-05 11:20:13,PLAYER,online-boutique-6608,would there be any blocks on Tinus computer?
+2025-11-05 11:20:35,Maya,online-boutique-6608,No problem with security. I will check again
+2025-11-05 11:20:47,PLAYER,online-boutique-6608,Daniel Shay why would product ID be different for Tinus?
+2025-11-05 11:21:17,Bob,online-boutique-6608,Still no customer report
+2025-11-05 11:21:30,PLAYER,online-boutique-6608,can we confirm with Tinus what version he is using
+2025-11-05 11:21:35,Hamed,online-boutique-6608,Looks like this issue is due to Tinus only
+2025-11-05 11:21:53,PLAYER,online-boutique-6608,Tinus please confirm the link you are using with the team
+2025-11-05 11:22:11,PLAYER,business-comms-6608,"issue effecting Tinus, working on it"
+2025-11-05 11:22:19,Tanya,online-boutique-6608,Can you ask him to try it from his mobile?
+2025-11-05 11:22:48,PLAYER,online-boutique-6608,Tinus are you able to access on different devices? eg mobile
+2025-11-05 11:22:50,Hamed,online-boutique-6608,"Looks like this issue is due to Tinus local machine - Do you think if its local cache ?
+The product id is from UAT - If Tinus was testing anything in UAT, likely its cached."
+2025-11-05 11:23:11,Tinus,online-boutique-6608,Yes my phone is fine but cant present from my phone
+2025-11-05 11:23:14,PLAYER,online-boutique-6608,Shay Daniel can we get cache cleared for Tinus
+2025-11-05 11:23:23,Tinus,online-boutique-6608,"I am so stress, is there any ETA?"
+2025-11-05 11:23:35,PLAYER,online-boutique-6608,Tinus please clear cache on PC
+2025-11-05 11:23:42,PLAYER,online-boutique-6608,this should resolve
+2025-11-05 11:23:58,Daniel,online-boutique-6608,It is local to his machine we should ask him
+2025-11-05 11:24:10,PLAYER,online-boutique-6608,Tinus please clear
+2025-11-05 11:24:16,Tinus,online-boutique-6608,"Really, Ok"
+2025-11-05 11:24:28,tinus,online-boutique-6608,Damn! thats it
+2025-11-05 11:24:30,PLAYER,online-boutique-6608,let us know
+2025-11-05 11:24:30,tinus,online-boutique-6608,"Great Ive got to do my presentation now, thanks for figuring this out so quickly. @daniel @shay can you look in to a cache busting solution?"
+2025-11-05 11:24:32,shay,online-boutique-6608,it was the cache! sure we can do that
+2025-11-05 11:24:34,daniel,online-boutique-6608,"no worries boss, at least its not a significat issue"
+2025-11-05 11:24:35,daniel,online-boutique-6608,good luck with the presentation!
+2025-11-05 11:24:36,tanya,online-boutique-6608,yes good luck @tinus
+2025-11-05 11:24:38,shay,online-boutique-6608,good luck @tinus!
+2025-11-05 11:24:49,UptimeLabs,online-boutique-6608,"Thank you for playing, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit I am ready when you want to start. I am ready button"
+2025-11-05 11:24:51,PLAYER,online-boutique-6608,Clicked Start_feedback button
+2025-11-05 11:25:28,UptimeLabs,online-boutique-6608,Submission successful

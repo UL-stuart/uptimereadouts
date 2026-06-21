@@ -1,0 +1,85 @@
+datetime,player,channel,message
+2025-08-28 13:11:59,UptimeLabs,online-boutique-5547,Start lvl 29
+2025-08-28 13:13:17,PLAYER,online-boutique-5547,Clicked org button
+2025-08-28 13:13:46,PLAYER,online-boutique-5547,Clicked undefined button
+2025-08-28 13:13:51,PLAYER,online-boutique-5547,Clicked undefined button
+2025-08-28 13:16:15,PLAYER,business-comms-5547,Slow connection P1
+2025-08-28 13:16:15,PLAYER,business-comms-5547,*Incident Number INC100049:* Slow connection P1
+2025-08-28 13:17:49,PLAYER,online-boutique-5547,Clicked Start button
+2025-08-28 13:17:49,UptimeLabs,online-boutique-5547,":alarm_clock: - You have 25 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-08-28 13:17:50,Tinus,online-boutique-5547,"Welcome our new IM @Amy Jeanes, Happy to have you in the team. Hope you get comfortable with everyone"
+2025-08-28 13:17:55,Shay,online-boutique-5547,Welcome @Amy Jeanes
+2025-08-28 13:18:00,Daniel,online-boutique-5547,Nice to meet you @Amy Jeanes
+2025-08-28 13:18:10,Bob,online-boutique-5547,There are a few strange customer reports with the helpdesk
+2025-08-28 13:18:14,Bob,online-boutique-5547,"Apparently, the site is loading slowly"
+2025-08-28 13:18:18,Bob,online-boutique-5547,People are reporting that they can't make payments either
+2025-08-28 13:18:21,Bob,online-boutique-5547,customer_reports
+2025-08-28 13:18:25,Bob,online-boutique-5547,@Amy Jeanes Can you check this?
+2025-08-28 13:19:20,PLAYER,online-boutique-5547,Clicked org button
+2025-08-28 13:19:27,UptimeLabs,online-boutique-5547,:bulb: Hint: Understand the problem by reproducing it
+2025-08-28 13:19:58,PLAYER,online-boutique-5547,Daniel it looks like it might have started after a recent deployment of v4.3?
+2025-08-28 13:20:07,UptimeLabs,online-boutique-5547,:star: Reviewed changes
+2025-08-28 13:20:17,PLAYER,online-boutique-5547,Bob do you have any more info from customers?
+2025-08-28 13:20:22,Bob,online-boutique-5547,Let me gather the information for you
+2025-08-28 13:20:27,Bob,online-boutique-5547,There are more than 300 customer reports till now
+2025-08-28 13:20:29,UptimeLabs,online-boutique-5547,:star: Asking questions to validate impact of the problem
+2025-08-28 13:20:34,Bob,online-boutique-5547,"Calls are from every region, likely to be Global"
+2025-08-28 13:20:40,Bob,online-boutique-5547,There's a bunch of messages coming in. A few people saying they can't do anything on the site
+2025-08-28 13:20:45,Bob,online-boutique-5547,Let me know if you need more information
+2025-08-28 13:20:56,Daniel,online-boutique-5547,Below are the changes implemented this morning
+2025-08-28 13:20:58,PLAYER,online-boutique-5547,it looks like we're seeing 502 errors on the site
+2025-08-28 13:21:01,Daniel,online-boutique-5547,deployments
+2025-08-28 13:21:04,Daniel,online-boutique-5547,"If you want more information, check out Incident Manager dashboard for more details: <https://grafana.prod.uptimelabs.io/d/aOf5yan4z/incident-management>"
+2025-08-28 13:21:15,UptimeLabs,online-boutique-5547,:star: Reproduces the incident
+2025-08-28 13:21:28,PLAYER,online-boutique-5547,Shay can you tell me about the front end service change
+2025-08-28 13:21:28,Shay,online-boutique-5547,Looking into this and trying to replicate the issue
+2025-08-28 13:21:30,Daniel,online-boutique-5547,I am able to replicate the issue. Checking the logs now
+2025-08-28 13:21:33,Daniel,online-boutique-5547,"I see a lot of errors, most of them are context initialisation errors "
+2025-08-28 13:21:37,Daniel,online-boutique-5547,Logs
+2025-08-28 13:21:39,Shay,online-boutique-5547,Yes replicated the issue and even i'm seeing similar errors in frontend logs
+2025-08-28 13:21:43,Bez,business-comms-5547,"I have a stake holders meet in next 10 minutes, @Amy Jeanes do you think this can be resolved by then? "
+2025-08-28 13:22:13,PLAYER,business-comms-5547,Site down 502 P1
+2025-08-28 13:22:13,PLAYER,business-comms-5547,*Incident Number INC100019:* Site down 502 P1
+2025-08-28 13:22:14,UptimeLabs,online-boutique-5547,:star: Incident record created
+2025-08-28 13:22:16,UptimeLabs,online-boutique-5547,:star: Send first comms in first 5 minutes
+2025-08-28 13:22:18,UptimeLabs,online-boutique-5547,:star: Formally assign criticality level to the incident
+2025-08-28 13:22:19,Bez,business-comms-5547,How many customers are affected? Are the reports coming in from all regions?
+2025-08-28 13:22:53,PLAYER,business-comms-5547,We have seen more than 300 customer reports and from all regions
+2025-08-28 13:23:08,PLAYER,business-comms-5547,Hopefully we can resolve quickly as we have identified the issue
+2025-08-28 13:23:48,PLAYER,online-boutique-5547,Tanya can you look into the configuration please
+2025-08-28 13:23:56,Tanya,online-boutique-5547,There are no alerts on the Infrastructure. I did see a few errors on the frontend apps
+2025-08-28 13:24:02,Tanya,online-boutique-5547,This looks to me like an issue in the frontend pod
+2025-08-28 13:24:45,PLAYER,online-boutique-5547,"All requests have gone to zero now, the entire site is down for everyone"
+2025-08-28 13:24:54,UptimeLabs,online-boutique-5547,:star: Qualify the problem
+2025-08-28 13:26:05,PLAYER,online-boutique-5547,Daniel Shay can you review deployment CFH89349
+2025-08-28 13:26:14,Daniel,online-boutique-5547,A Frontend change caused by change CHG89349 has brought down the Frontend pods
+2025-08-28 13:26:20,Shay,online-boutique-5547,But this functionally worked when I tested
+2025-08-28 13:26:25,Daniel,online-boutique-5547,"Even if it worked in your test environment, something's behaving differently in prod, maybe a config mismatch or unhandled edge case"
+2025-08-28 13:26:28,Bez,business-comms-5547,Can you give a quick update on the status?
+2025-08-28 13:27:03,PLAYER,online-boutique-5547,Can we look at the configuration given the logs talking about missing config file
+2025-08-28 13:27:54,PLAYER,online-boutique-5547,Shay can we rollback this change to restore functionality please
+2025-08-28 13:27:58,Shay,online-boutique-5547,"Sorry, I've never done a rollback in PROD before, can someone help me with the steps?"
+2025-08-28 13:27:59,UptimeLabs,online-boutique-5547,:star: Restoration over root cause analysis
+2025-08-28 13:28:11,PLAYER,online-boutique-5547,Daniel please help Shay
+2025-08-28 13:28:28,Daniel,online-boutique-5547,"I will help you, @Shay. Rolling back now"
+2025-08-28 13:28:42,PLAYER,business-comms-5547,"We are rolling back the change now, standby"
+2025-08-28 13:28:43,Daniel,online-boutique-5547,I have rollbacked Frontend:version to 10.1.0 to more stable version. Can somebody verify?
+2025-08-28 13:28:46,UptimeLabs,online-boutique-5547,"To 'verify' that the resolution has worked and to close the incident you must: 
+--Validate the fix yourself or with the team:white_check_mark: 
+--Cross check resolution with Customer Support:white_check_mark: 
+--Confirm resolution in the 'Business-comms' channel:white_check_mark: "
+2025-08-28 13:28:58,Bob,online-boutique-5547,"Customers are able to place the orders, complaint calls have reduced as well."
+2025-08-28 13:29:11,PLAYER,online-boutique-5547,It looks like it works to me too
+2025-08-28 13:29:17,UptimeLabs,online-boutique-5547,:star: Validate the fix
+2025-08-28 13:29:30,PLAYER,business-comms-5547,Customer support and myself have verified that the site is working again
+2025-08-28 13:29:37,UptimeLabs,online-boutique-5547,:star: Confirm resolution with the business
+2025-08-28 13:30:07,PLAYER,online-boutique-5547,Okay we can resolve the incident for now
+2025-08-28 13:30:13,Daniel,online-boutique-5547,It's definitely working again!
+2025-08-28 13:30:18,Shay,online-boutique-5547,Wow that was intense!
+2025-08-28 13:30:20,Bez,business-comms-5547,Thanks! for resolving it quickly
+2025-08-28 13:30:23,Hamed,online-boutique-5547,Good job guys
+2025-08-28 13:30:27,Tinus,online-boutique-5547,Yes well done! that could have gone much worse so props to everyone
+2025-08-28 13:30:31,Tinus,online-boutique-5547,We will have a Post-Incident Review (PIR) to understand what happened
+2025-08-28 13:30:42,UptimeLabs,online-boutique-5547,Start retro and feedback
+2025-08-28 13:31:57,PLAYER,online-boutique-5547,Clicked Start_feedback button
+2025-08-28 13:33:53,UptimeLabs,online-boutique-5547,Submission successful

@@ -1,0 +1,45 @@
+# macOS / filesystem noise
+.DS_Store
+._*
+.Spotlight-V100/
+.Trashes/
+
+# Editor and IDE state
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Node dependencies and build output
+node_modules/
+dist/
+build/
+.next/
+.cache/
+
+# Logs and runtime artifacts
+*.log
+logs/
+tmp/
+temp/
+
+# Local secrets and machine-specific config
+.env
+.env.*
+!.env.example
+
+# Office and export scratch files
+~$*
+*.tmp
+*.bak

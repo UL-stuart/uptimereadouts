@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Incident Radar Session Charts</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --ink: #18202b;
+      --muted: #5c6675;
+      --line: #d8dde6;
+      --header: #eef2f7;
+      --accent: #0f766e;
+      --accent-fill: rgba(15, 118, 110, 0.18);
+      --accent-line: #0f766e;
+      --ring: #d7dee8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.45;
+    }
+    main {
+      width: min(1840px, calc(100vw - 32px));
+      margin: 0 auto;
+      padding: 28px 0 44px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+    .subhead {
+      margin: 0 0 18px;
+      color: var(--muted);
+      max-width: 960px;
+    }
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .legend span strong { color: var(--ink); }
+    .table-wrap {
+      overflow-x: auto;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 1580px;
+    }
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: 10px 12px;
+      vertical-align: middle;
+      font-size: 13px;
+    }
+    th {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      background: var(--header);
+      color: #263142;
+      text-align: left;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    tbody tr:nth-child(even) { background: #fbfcfe; }
+    tbody tr:hover { background: #f2f7f6; }
+    td.rank, td.score, td.avg {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+    td.rank { color: var(--muted); width: 44px; }
+    td.session {
+      min-width: 252px;
+      font-weight: 650;
+    }
+    td.session a {
+      color: #0b5f86;
+      text-decoration: none;
+    }
+    td.session a:hover { text-decoration: underline; }
+    td.chart-cell {
+      width: 176px;
+      text-align: center;
+      padding: 6px 10px;
+    }
+    td.text-cell {
+      min-width: 260px;
+      max-width: 340px;
+      color: #374151;
+    }
+    .radar {
+      display: block;
+      margin: 0 auto;
+    }
+    .ring {
+      fill: none;
+      stroke: var(--ring);
+      stroke-width: 1;
+    }
+    .spoke {
+      stroke: #e3e8ef;
+      stroke-width: 1;
+    }
+    .score-area {
+      fill: var(--accent-fill);
+      stroke: none;
+    }
+    .score-line {
+      fill: none;
+      stroke: var(--accent-line);
+      stroke-width: 2.2;
+      stroke-linejoin: round;
+    }
+    .vertex {
+      fill: var(--accent);
+      stroke: #ffffff;
+      stroke-width: 1;
+    }
+    .axis-label {
+      fill: var(--muted);
+      font-size: 10px;
+      font-weight: 650;
+    }
+    @media (max-width: 760px) {
+      main { width: calc(100vw - 20px); padding-top: 18px; }
+      h1 { font-size: 23px; }
+      .subhead { font-size: 14px; }
+      th, td { padding: 8px 10px; }
+    }
+    @media print {
+      body { background: #ffffff; }
+      main { width: 100%; padding: 0; }
+      .table-wrap { border: 0; overflow: visible; }
+      th { position: static; }
+      table { min-width: 0; }
+      td.text-cell { max-width: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Incident Radar Session Charts</h1>
+    <p class="subhead">Session results parsed from <code>output/summary.md</code>, ordered by average score from highest to lowest. Each radar chart plots the six scored incident-command dimensions on a 1-5 scale.</p>
+    <div class="legend" aria-label="Radar chart legend">
+      <span><strong>Sense</strong> Sensemaking</span>
+      <span><strong>Coord</strong> Coordination</span>
+      <span><strong>Decision</strong> Decision-Making</span>
+      <span><strong>Comms</strong> Communication</span>
+      <span><strong>Adapt</strong> Adaptive Capacity</span>
+      <span><strong>Life</strong> Lifecycle</span>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Session</th>
+            <th>Player</th>
+            <th>Sensemaking</th>
+            <th>Coordination</th>
+            <th>Decision-Making</th>
+            <th>Communication</th>
+            <th>Adaptive Capacity</th>
+            <th>Lifecycle</th>
+            <th>Average</th>
+            <th>Radar</th>
+            <th>Main Strength</th>
+            <th>Main Gap</th>
+          </tr>
+        </thead>
+        <tbody>
+      <tr>
+        <td class="rank">1</td>
+        <td class="session"><a href="./angads:Bezs-Beatles-Day!-7842.md">angads:Bezs-Beatles-Day!-7842</a></td>
+        <td>angads</td>
+        <td class="score">4</td><td class="score">4</td><td class="score">3</td><td class="score">4</td><td class="score">4</td><td class="score">4</td>
+        <td class="avg">3.83</td>
+        <td class="chart-cell"><svg class="radar" width="154" height="154" viewBox="0 0 154 154" role="img" aria-label="Radar chart for angads:Bezs-Beatles-Day!-7842 scores">
+    <title>angads:Bezs-Beatles-Day!-7842 score radar</title>
+    <polygon class="ring" points="77.0,62.8 85.0,67.4 85.0,76.6 77.0,81.2 69.0,76.6 69.0,67.4"></polygon><polygon class="ring" points="77.0,53.6 92.9,62.8 92.9,81.2 77.0,90.4 61.1,81.2 61.1,62.8"></polygon><polygon class="ring" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 53.1,85.8 53.1,58.2"></polygon><polygon class="ring" points="77.0,35.2 108.9,53.6 108.9,90.4 77.0,108.8 45.1,90.4 45.1,53.6"></polygon><polygon class="ring" points="77.0,26.0 116.8,49.0 116.8,95.0 77.0,118.0 37.2,95.0 37.2,49.0"></polygon>
+    <line class="spoke" x1="77" y1="72" x2="77.0" y2="26.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="49.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="77.0" y2="118.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="49.0"></line>
+    <polygon class="score-area" points="77.0,35.2 108.9,53.6 100.9,85.8 77.0,108.8 45.1,90.4 45.1,53.6"></polygon>
+    <polyline class="score-line" points="77.0,35.2 108.9,53.6 100.9,85.8 77.0,108.8 45.1,90.4 45.1,53.6 77.0,35.2"></polyline>
+    <circle class="vertex" cx="77.0" cy="35.2" r="2.4"><title>Sensemaking: 4</title></circle><circle class="vertex" cx="108.9" cy="53.6" r="2.4"><title>Coordination: 4</title></circle><circle class="vertex" cx="100.9" cy="85.8" r="2.4"><title>Decision-Making: 3</title></circle><circle class="vertex" cx="77.0" cy="108.8" r="2.4"><title>Communication: 4</title></circle><circle class="vertex" cx="45.1" cy="90.4" r="2.4"><title>Adaptive Capacity: 4</title></circle><circle class="vertex" cx="45.1" cy="53.6" r="2.4"><title>Lifecycle: 4</title></circle>
+    <text class="axis-label" x="77.0" y="12.0" text-anchor="middle">Sense</text><text class="axis-label" x="132.4" y="44.0" text-anchor="middle">Coord</text><text class="axis-label" x="132.4" y="108.0" text-anchor="middle">Decision</text><text class="axis-label" x="77.0" y="140.0" text-anchor="middle">Comms</text><text class="axis-label" x="21.6" y="108.0" text-anchor="middle">Adapt</text><text class="axis-label" x="21.6" y="44.0" text-anchor="middle">Life</text>
+  </svg></td>
+        <td class="text-cell">strong framed sensemaking, proactive business updates, and effective pivoting after failed mitigation</td>
+        <td class="text-cell">impact quantification and explicit decision trade-offs were still incomplete</td>
+      </tr>
+
+      <tr>
+        <td class="rank">2</td>
+        <td class="session"><a href="./sakibm:Bezs-Beatles-Day!-8254.md">sakibm:Bezs-Beatles-Day!-8254</a></td>
+        <td>sakibm</td>
+        <td class="score">4</td><td class="score">4</td><td class="score">4</td><td class="score">3</td><td class="score">4</td><td class="score">4</td>
+        <td class="avg">3.83</td>
+        <td class="chart-cell"><svg class="radar" width="154" height="154" viewBox="0 0 154 154" role="img" aria-label="Radar chart for sakibm:Bezs-Beatles-Day!-8254 scores">
+    <title>sakibm:Bezs-Beatles-Day!-8254 score radar</title>
+    <polygon class="ring" points="77.0,62.8 85.0,67.4 85.0,76.6 77.0,81.2 69.0,76.6 69.0,67.4"></polygon><polygon class="ring" points="77.0,53.6 92.9,62.8 92.9,81.2 77.0,90.4 61.1,81.2 61.1,62.8"></polygon><polygon class="ring" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 53.1,85.8 53.1,58.2"></polygon><polygon class="ring" points="77.0,35.2 108.9,53.6 108.9,90.4 77.0,108.8 45.1,90.4 45.1,53.6"></polygon><polygon class="ring" points="77.0,26.0 116.8,49.0 116.8,95.0 77.0,118.0 37.2,95.0 37.2,49.0"></polygon>
+    <line class="spoke" x1="77" y1="72" x2="77.0" y2="26.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="49.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="77.0" y2="118.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="49.0"></line>
+    <polygon class="score-area" points="77.0,35.2 108.9,53.6 108.9,90.4 77.0,99.6 45.1,90.4 45.1,53.6"></polygon>
+    <polyline class="score-line" points="77.0,35.2 108.9,53.6 108.9,90.4 77.0,99.6 45.1,90.4 45.1,53.6 77.0,35.2"></polyline>
+    <circle class="vertex" cx="77.0" cy="35.2" r="2.4"><title>Sensemaking: 4</title></circle><circle class="vertex" cx="108.9" cy="53.6" r="2.4"><title>Coordination: 4</title></circle><circle class="vertex" cx="108.9" cy="90.4" r="2.4"><title>Decision-Making: 4</title></circle><circle class="vertex" cx="77.0" cy="99.6" r="2.4"><title>Communication: 3</title></circle><circle class="vertex" cx="45.1" cy="90.4" r="2.4"><title>Adaptive Capacity: 4</title></circle><circle class="vertex" cx="45.1" cy="53.6" r="2.4"><title>Lifecycle: 4</title></circle>
+    <text class="axis-label" x="77.0" y="12.0" text-anchor="middle">Sense</text><text class="axis-label" x="132.4" y="44.0" text-anchor="middle">Coord</text><text class="axis-label" x="132.4" y="108.0" text-anchor="middle">Decision</text><text class="axis-label" x="77.0" y="140.0" text-anchor="middle">Comms</text><text class="axis-label" x="21.6" y="108.0" text-anchor="middle">Adapt</text><text class="axis-label" x="21.6" y="44.0" text-anchor="middle">Life</text>
+  </svg></td>
+        <td class="text-cell">strong practical sensemaking and restoration leadership after the first rollback failed</td>
+        <td class="text-cell">communication and contingency planning could be more explicit despite timely, honest updates</td>
+      </tr>
+
+      <tr>
+        <td class="rank">3</td>
+        <td class="session"><a href="./manujg:Bezs-Beatles-Day!-7996.md">manujg:Bezs-Beatles-Day!-7996</a></td>
+        <td>manujg</td>
+        <td class="score">4</td><td class="score">4</td><td class="score">3</td><td class="score">3</td><td class="score">4</td><td class="score">4</td>
+        <td class="avg">3.67</td>
+        <td class="chart-cell"><svg class="radar" width="154" height="154" viewBox="0 0 154 154" role="img" aria-label="Radar chart for manujg:Bezs-Beatles-Day!-7996 scores">
+    <title>manujg:Bezs-Beatles-Day!-7996 score radar</title>
+    <polygon class="ring" points="77.0,62.8 85.0,67.4 85.0,76.6 77.0,81.2 69.0,76.6 69.0,67.4"></polygon><polygon class="ring" points="77.0,53.6 92.9,62.8 92.9,81.2 77.0,90.4 61.1,81.2 61.1,62.8"></polygon><polygon class="ring" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 53.1,85.8 53.1,58.2"></polygon><polygon class="ring" points="77.0,35.2 108.9,53.6 108.9,90.4 77.0,108.8 45.1,90.4 45.1,53.6"></polygon><polygon class="ring" points="77.0,26.0 116.8,49.0 116.8,95.0 77.0,118.0 37.2,95.0 37.2,49.0"></polygon>
+    <line class="spoke" x1="77" y1="72" x2="77.0" y2="26.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="49.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="77.0" y2="118.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="49.0"></line>
+    <polygon class="score-area" points="77.0,35.2 108.9,53.6 100.9,85.8 77.0,99.6 45.1,90.4 45.1,53.6"></polygon>
+    <polyline class="score-line" points="77.0,35.2 108.9,53.6 100.9,85.8 77.0,99.6 45.1,90.4 45.1,53.6 77.0,35.2"></polyline>
+    <circle class="vertex" cx="77.0" cy="35.2" r="2.4"><title>Sensemaking: 4</title></circle><circle class="vertex" cx="108.9" cy="53.6" r="2.4"><title>Coordination: 4</title></circle><circle class="vertex" cx="100.9" cy="85.8" r="2.4"><title>Decision-Making: 3</title></circle><circle class="vertex" cx="77.0" cy="99.6" r="2.4"><title>Communication: 3</title></circle><circle class="vertex" cx="45.1" cy="90.4" r="2.4"><title>Adaptive Capacity: 4</title></circle><circle class="vertex" cx="45.1" cy="53.6" r="2.4"><title>Lifecycle: 4</title></circle>
+    <text class="axis-label" x="77.0" y="12.0" text-anchor="middle">Sense</text><text class="axis-label" x="132.4" y="44.0" text-anchor="middle">Coord</text><text class="axis-label" x="132.4" y="108.0" text-anchor="middle">Decision</text><text class="axis-label" x="77.0" y="140.0" text-anchor="middle">Comms</text><text class="axis-label" x="21.6" y="108.0" text-anchor="middle">Adapt</text><text class="axis-label" x="21.6" y="44.0" text-anchor="middle">Life</text>
+  </svg></td>
+        <td class="text-cell">strong initial frame-building and data seeking across symptom confirmation, regional scope, and change history</td>
+        <td class="text-cell">decision rationale, trade-offs, and fallback criteria needed to be made more explicit</td>
+      </tr>
+
+      <tr>
+        <td class="rank">4</td>
+        <td class="session"><a href="./mayank:Bezs-Beatles-Day!-7959.md">mayank:Bezs-Beatles-Day!-7959</a></td>
+        <td>mayank</td>
+        <td class="score">4</td><td class="score">4</td><td class="score">3</td><td class="score">3</td><td class="score">4</td><td class="score">4</td>
+        <td class="avg">3.67</td>
+        <td class="chart-cell"><svg class="radar" width="154" height="154" viewBox="0 0 154 154" role="img" aria-label="Radar chart for mayank:Bezs-Beatles-Day!-7959 scores">
+    <title>mayank:Bezs-Beatles-Day!-7959 score radar</title>
+    <polygon class="ring" points="77.0,62.8 85.0,67.4 85.0,76.6 77.0,81.2 69.0,76.6 69.0,67.4"></polygon><polygon class="ring" points="77.0,53.6 92.9,62.8 92.9,81.2 77.0,90.4 61.1,81.2 61.1,62.8"></polygon><polygon class="ring" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 53.1,85.8 53.1,58.2"></polygon><polygon class="ring" points="77.0,35.2 108.9,53.6 108.9,90.4 77.0,108.8 45.1,90.4 45.1,53.6"></polygon><polygon class="ring" points="77.0,26.0 116.8,49.0 116.8,95.0 77.0,118.0 37.2,95.0 37.2,49.0"></polygon>
+    <line class="spoke" x1="77" y1="72" x2="77.0" y2="26.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="49.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="77.0" y2="118.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="49.0"></line>
+    <polygon class="score-area" points="77.0,35.2 108.9,53.6 100.9,85.8 77.0,99.6 45.1,90.4 45.1,53.6"></polygon>
+    <polyline class="score-line" points="77.0,35.2 108.9,53.6 100.9,85.8 77.0,99.6 45.1,90.4 45.1,53.6 77.0,35.2"></polyline>
+    <circle class="vertex" cx="77.0" cy="35.2" r="2.4"><title>Sensemaking: 4</title></circle><circle class="vertex" cx="108.9" cy="53.6" r="2.4"><title>Coordination: 4</title></circle><circle class="vertex" cx="100.9" cy="85.8" r="2.4"><title>Decision-Making: 3</title></circle><circle class="vertex" cx="77.0" cy="99.6" r="2.4"><title>Communication: 3</title></circle><circle class="vertex" cx="45.1" cy="90.4" r="2.4"><title>Adaptive Capacity: 4</title></circle><circle class="vertex" cx="45.1" cy="53.6" r="2.4"><title>Lifecycle: 4</title></circle>
+    <text class="axis-label" x="77.0" y="12.0" text-anchor="middle">Sense</text><text class="axis-label" x="132.4" y="44.0" text-anchor="middle">Coord</text><text class="axis-label" x="132.4" y="108.0" text-anchor="middle">Decision</text><text class="axis-label" x="77.0" y="140.0" text-anchor="middle">Comms</text><text class="axis-label" x="21.6" y="108.0" text-anchor="middle">Adapt</text><text class="axis-label" x="21.6" y="44.0" text-anchor="middle">Life</text>
+  </svg></td>
+        <td class="text-cell">adaptive sensemaking through directed, context-aware questions: once the first rollback failed, he narrowed the...</td>
+        <td class="text-cell">stakeholder communication: Bez repeatedly asked for customer/order counts, revenue impact, and ETA, and those...</td>
+      </tr>
+
+      <tr>
+        <td class="rank">5</td>
+        <td class="session"><a href="./nikhil:Bezs-Beatles-Day!-8510.md">nikhil:Bezs-Beatles-Day!-8510</a></td>
+        <td>nikhil</td>
+        <td class="score">4</td><td class="score">4</td><td class="score">3</td><td class="score">3</td><td class="score">4</td><td class="score">4</td>
+        <td class="avg">3.67</td>
+        <td class="chart-cell"><svg class="radar" width="154" height="154" viewBox="0 0 154 154" role="img" aria-label="Radar chart for nikhil:Bezs-Beatles-Day!-8510 scores">
+    <title>nikhil:Bezs-Beatles-Day!-8510 score radar</title>
+    <polygon class="ring" points="77.0,62.8 85.0,67.4 85.0,76.6 77.0,81.2 69.0,76.6 69.0,67.4"></polygon><polygon class="ring" points="77.0,53.6 92.9,62.8 92.9,81.2 77.0,90.4 61.1,81.2 61.1,62.8"></polygon><polygon class="ring" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 53.1,85.8 53.1,58.2"></polygon><polygon class="ring" points="77.0,35.2 108.9,53.6 108.9,90.4 77.0,108.8 45.1,90.4 45.1,53.6"></polygon><polygon class="ring" points="77.0,26.0 116.8,49.0 116.8,95.0 77.0,118.0 37.2,95.0 37.2,49.0"></polygon>
+    <line class="spoke" x1="77" y1="72" x2="77.0" y2="26.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="49.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="77.0" y2="118.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="49.0"></line>
+    <polygon class="score-area" points="77.0,35.2 108.9,53.6 100.9,85.8 77.0,99.6 45.1,90.4 45.1,53.6"></polygon>
+    <polyline class="score-line" points="77.0,35.2 108.9,53.6 100.9,85.8 77.0,99.6 45.1,90.4 45.1,53.6 77.0,35.2"></polyline>
+    <circle class="vertex" cx="77.0" cy="35.2" r="2.4"><title>Sensemaking: 4</title></circle><circle class="vertex" cx="108.9" cy="53.6" r="2.4"><title>Coordination: 4</title></circle><circle class="vertex" cx="100.9" cy="85.8" r="2.4"><title>Decision-Making: 3</title></circle><circle class="vertex" cx="77.0" cy="99.6" r="2.4"><title>Communication: 3</title></circle><circle class="vertex" cx="45.1" cy="90.4" r="2.4"><title>Adaptive Capacity: 4</title></circle><circle class="vertex" cx="45.1" cy="53.6" r="2.4"><title>Lifecycle: 4</title></circle>
+    <text class="axis-label" x="77.0" y="12.0" text-anchor="middle">Sense</text><text class="axis-label" x="132.4" y="44.0" text-anchor="middle">Coord</text><text class="axis-label" x="132.4" y="108.0" text-anchor="middle">Decision</text><text class="axis-label" x="77.0" y="140.0" text-anchor="middle">Comms</text><text class="axis-label" x="21.6" y="108.0" text-anchor="middle">Adapt</text><text class="axis-label" x="21.6" y="44.0" text-anchor="middle">Life</text>
+  </svg></td>
+        <td class="text-cell">coordinated diagnostic narrowing: he kept multiple responders engaged and drove the team from vague checkout...</td>
+        <td class="text-cell">calibrated synthesis: he rarely broadcast a crisp evolving mental model and leaned into the Bitcoin-change...</td>
+      </tr>
+
+      <tr>
+        <td class="rank">6</td>
+        <td class="session"><a href="./prasha:Bezs-Beatles-Day!-8257.md">prasha:Bezs-Beatles-Day!-8257</a></td>
+        <td>prasha</td>
+        <td class="score">3</td><td class="score">4</td><td class="score">4</td><td class="score">3</td><td class="score">4</td><td class="score">4</td>
+        <td class="avg">3.67</td>
+        <td class="chart-cell"><svg class="radar" width="154" height="154" viewBox="0 0 154 154" role="img" aria-label="Radar chart for prasha:Bezs-Beatles-Day!-8257 scores">
+    <title>prasha:Bezs-Beatles-Day!-8257 score radar</title>
+    <polygon class="ring" points="77.0,62.8 85.0,67.4 85.0,76.6 77.0,81.2 69.0,76.6 69.0,67.4"></polygon><polygon class="ring" points="77.0,53.6 92.9,62.8 92.9,81.2 77.0,90.4 61.1,81.2 61.1,62.8"></polygon><polygon class="ring" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 53.1,85.8 53.1,58.2"></polygon><polygon class="ring" points="77.0,35.2 108.9,53.6 108.9,90.4 77.0,108.8 45.1,90.4 45.1,53.6"></polygon><polygon class="ring" points="77.0,26.0 116.8,49.0 116.8,95.0 77.0,118.0 37.2,95.0 37.2,49.0"></polygon>
+    <line class="spoke" x1="77" y1="72" x2="77.0" y2="26.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="49.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="77.0" y2="118.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="49.0"></line>
+    <polygon class="score-area" points="77.0,44.4 108.9,53.6 108.9,90.4 77.0,99.6 45.1,90.4 45.1,53.6"></polygon>
+    <polyline class="score-line" points="77.0,44.4 108.9,53.6 108.9,90.4 77.0,99.6 45.1,90.4 45.1,53.6 77.0,44.4"></polyline>
+    <circle class="vertex" cx="77.0" cy="44.4" r="2.4"><title>Sensemaking: 3</title></circle><circle class="vertex" cx="108.9" cy="53.6" r="2.4"><title>Coordination: 4</title></circle><circle class="vertex" cx="108.9" cy="90.4" r="2.4"><title>Decision-Making: 4</title></circle><circle class="vertex" cx="77.0" cy="99.6" r="2.4"><title>Communication: 3</title></circle><circle class="vertex" cx="45.1" cy="90.4" r="2.4"><title>Adaptive Capacity: 4</title></circle><circle class="vertex" cx="45.1" cy="53.6" r="2.4"><title>Lifecycle: 4</title></circle>
+    <text class="axis-label" x="77.0" y="12.0" text-anchor="middle">Sense</text><text class="axis-label" x="132.4" y="44.0" text-anchor="middle">Coord</text><text class="axis-label" x="132.4" y="108.0" text-anchor="middle">Decision</text><text class="axis-label" x="77.0" y="140.0" text-anchor="middle">Comms</text><text class="axis-label" x="21.6" y="108.0" text-anchor="middle">Adapt</text><text class="axis-label" x="21.6" y="44.0" text-anchor="middle">Life</text>
+  </svg></td>
+        <td class="text-cell">strong role-directed coordination and decisive restoration-oriented action</td>
+        <td class="text-cell">sensemaking would benefit from clearer shared framing and broader testing of competing hypotheses</td>
+      </tr>
+
+      <tr>
+        <td class="rank">7</td>
+        <td class="session"><a href="./chauha:Bezs-Beatles-Day!-8261.md">chauha:Bezs-Beatles-Day!-8261</a></td>
+        <td>chauha</td>
+        <td class="score">3</td><td class="score">4</td><td class="score">3</td><td class="score">3</td><td class="score">4</td><td class="score">4</td>
+        <td class="avg">3.50</td>
+        <td class="chart-cell"><svg class="radar" width="154" height="154" viewBox="0 0 154 154" role="img" aria-label="Radar chart for chauha:Bezs-Beatles-Day!-8261 scores">
+    <title>chauha:Bezs-Beatles-Day!-8261 score radar</title>
+    <polygon class="ring" points="77.0,62.8 85.0,67.4 85.0,76.6 77.0,81.2 69.0,76.6 69.0,67.4"></polygon><polygon class="ring" points="77.0,53.6 92.9,62.8 92.9,81.2 77.0,90.4 61.1,81.2 61.1,62.8"></polygon><polygon class="ring" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 53.1,85.8 53.1,58.2"></polygon><polygon class="ring" points="77.0,35.2 108.9,53.6 108.9,90.4 77.0,108.8 45.1,90.4 45.1,53.6"></polygon><polygon class="ring" points="77.0,26.0 116.8,49.0 116.8,95.0 77.0,118.0 37.2,95.0 37.2,49.0"></polygon>
+    <line class="spoke" x1="77" y1="72" x2="77.0" y2="26.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="49.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="77.0" y2="118.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="49.0"></line>
+    <polygon class="score-area" points="77.0,44.4 108.9,53.6 100.9,85.8 77.0,99.6 45.1,90.4 45.1,53.6"></polygon>
+    <polyline class="score-line" points="77.0,44.4 108.9,53.6 100.9,85.8 77.0,99.6 45.1,90.4 45.1,53.6 77.0,44.4"></polyline>
+    <circle class="vertex" cx="77.0" cy="44.4" r="2.4"><title>Sensemaking: 3</title></circle><circle class="vertex" cx="108.9" cy="53.6" r="2.4"><title>Coordination: 4</title></circle><circle class="vertex" cx="100.9" cy="85.8" r="2.4"><title>Decision-Making: 3</title></circle><circle class="vertex" cx="77.0" cy="99.6" r="2.4"><title>Communication: 3</title></circle><circle class="vertex" cx="45.1" cy="90.4" r="2.4"><title>Adaptive Capacity: 4</title></circle><circle class="vertex" cx="45.1" cy="53.6" r="2.4"><title>Lifecycle: 4</title></circle>
+    <text class="axis-label" x="77.0" y="12.0" text-anchor="middle">Sense</text><text class="axis-label" x="132.4" y="44.0" text-anchor="middle">Coord</text><text class="axis-label" x="132.4" y="108.0" text-anchor="middle">Decision</text><text class="axis-label" x="77.0" y="140.0" text-anchor="middle">Comms</text><text class="axis-label" x="21.6" y="108.0" text-anchor="middle">Adapt</text><text class="axis-label" x="21.6" y="44.0" text-anchor="middle">Life</text>
+  </svg></td>
+        <td class="text-cell">strong coordination and lifecycle execution through named responders, rollback, and post-restoration validation</td>
+        <td class="text-cell">working hypothesis and trade-offs were mostly implicit rather than narrated to the team</td>
+      </tr>
+
+      <tr>
+        <td class="rank">8</td>
+        <td class="session"><a href="./nilotp:Bezs-Beatles-Day!-8563.md">nilotp:Bezs-Beatles-Day!-8563</a></td>
+        <td>nilotp</td>
+        <td class="score">3</td><td class="score">4</td><td class="score">3</td><td class="score">3</td><td class="score">4</td><td class="score">4</td>
+        <td class="avg">3.50</td>
+        <td class="chart-cell"><svg class="radar" width="154" height="154" viewBox="0 0 154 154" role="img" aria-label="Radar chart for nilotp:Bezs-Beatles-Day!-8563 scores">
+    <title>nilotp:Bezs-Beatles-Day!-8563 score radar</title>
+    <polygon class="ring" points="77.0,62.8 85.0,67.4 85.0,76.6 77.0,81.2 69.0,76.6 69.0,67.4"></polygon><polygon class="ring" points="77.0,53.6 92.9,62.8 92.9,81.2 77.0,90.4 61.1,81.2 61.1,62.8"></polygon><polygon class="ring" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 53.1,85.8 53.1,58.2"></polygon><polygon class="ring" points="77.0,35.2 108.9,53.6 108.9,90.4 77.0,108.8 45.1,90.4 45.1,53.6"></polygon><polygon class="ring" points="77.0,26.0 116.8,49.0 116.8,95.0 77.0,118.0 37.2,95.0 37.2,49.0"></polygon>
+    <line class="spoke" x1="77" y1="72" x2="77.0" y2="26.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="49.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="77.0" y2="118.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="49.0"></line>
+    <polygon class="score-area" points="77.0,44.4 108.9,53.6 100.9,85.8 77.0,99.6 45.1,90.4 45.1,53.6"></polygon>
+    <polyline class="score-line" points="77.0,44.4 108.9,53.6 100.9,85.8 77.0,99.6 45.1,90.4 45.1,53.6 77.0,44.4"></polyline>
+    <circle class="vertex" cx="77.0" cy="44.4" r="2.4"><title>Sensemaking: 3</title></circle><circle class="vertex" cx="108.9" cy="53.6" r="2.4"><title>Coordination: 4</title></circle><circle class="vertex" cx="100.9" cy="85.8" r="2.4"><title>Decision-Making: 3</title></circle><circle class="vertex" cx="77.0" cy="99.6" r="2.4"><title>Communication: 3</title></circle><circle class="vertex" cx="45.1" cy="90.4" r="2.4"><title>Adaptive Capacity: 4</title></circle><circle class="vertex" cx="45.1" cy="53.6" r="2.4"><title>Lifecycle: 4</title></circle>
+    <text class="axis-label" x="77.0" y="12.0" text-anchor="middle">Sense</text><text class="axis-label" x="132.4" y="44.0" text-anchor="middle">Coord</text><text class="axis-label" x="132.4" y="108.0" text-anchor="middle">Decision</text><text class="axis-label" x="77.0" y="140.0" text-anchor="middle">Comms</text><text class="axis-label" x="21.6" y="108.0" text-anchor="middle">Adapt</text><text class="axis-label" x="21.6" y="44.0" text-anchor="middle">Life</text>
+  </svg></td>
+        <td class="text-cell">coordination through named delegation: they quickly pulled Bob, Daniel, Tanya, Shay, and Hamed into distinct...</td>
+        <td class="text-cell">weak explicit sensemaking: they collected evidence but did not consistently broadcast a clear evolving incident...</td>
+      </tr>
+
+      <tr>
+        <td class="rank">9</td>
+        <td class="session"><a href="./divyan:Bezs-Beatles-Day!-8279.md">divyan:Bezs-Beatles-Day!-8279</a></td>
+        <td>divyan</td>
+        <td class="score">3</td><td class="score">3</td><td class="score">4</td><td class="score">3</td><td class="score">3</td><td class="score">4</td>
+        <td class="avg">3.33</td>
+        <td class="chart-cell"><svg class="radar" width="154" height="154" viewBox="0 0 154 154" role="img" aria-label="Radar chart for divyan:Bezs-Beatles-Day!-8279 scores">
+    <title>divyan:Bezs-Beatles-Day!-8279 score radar</title>
+    <polygon class="ring" points="77.0,62.8 85.0,67.4 85.0,76.6 77.0,81.2 69.0,76.6 69.0,67.4"></polygon><polygon class="ring" points="77.0,53.6 92.9,62.8 92.9,81.2 77.0,90.4 61.1,81.2 61.1,62.8"></polygon><polygon class="ring" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 53.1,85.8 53.1,58.2"></polygon><polygon class="ring" points="77.0,35.2 108.9,53.6 108.9,90.4 77.0,108.8 45.1,90.4 45.1,53.6"></polygon><polygon class="ring" points="77.0,26.0 116.8,49.0 116.8,95.0 77.0,118.0 37.2,95.0 37.2,49.0"></polygon>
+    <line class="spoke" x1="77" y1="72" x2="77.0" y2="26.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="49.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="77.0" y2="118.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="49.0"></line>
+    <polygon class="score-area" points="77.0,44.4 100.9,58.2 108.9,90.4 77.0,99.6 53.1,85.8 45.1,53.6"></polygon>
+    <polyline class="score-line" points="77.0,44.4 100.9,58.2 108.9,90.4 77.0,99.6 53.1,85.8 45.1,53.6 77.0,44.4"></polyline>
+    <circle class="vertex" cx="77.0" cy="44.4" r="2.4"><title>Sensemaking: 3</title></circle><circle class="vertex" cx="100.9" cy="58.2" r="2.4"><title>Coordination: 3</title></circle><circle class="vertex" cx="108.9" cy="90.4" r="2.4"><title>Decision-Making: 4</title></circle><circle class="vertex" cx="77.0" cy="99.6" r="2.4"><title>Communication: 3</title></circle><circle class="vertex" cx="53.1" cy="85.8" r="2.4"><title>Adaptive Capacity: 3</title></circle><circle class="vertex" cx="45.1" cy="53.6" r="2.4"><title>Lifecycle: 4</title></circle>
+    <text class="axis-label" x="77.0" y="12.0" text-anchor="middle">Sense</text><text class="axis-label" x="132.4" y="44.0" text-anchor="middle">Coord</text><text class="axis-label" x="132.4" y="108.0" text-anchor="middle">Decision</text><text class="axis-label" x="77.0" y="140.0" text-anchor="middle">Comms</text><text class="axis-label" x="21.6" y="108.0" text-anchor="middle">Adapt</text><text class="axis-label" x="21.6" y="44.0" text-anchor="middle">Life</text>
+  </svg></td>
+        <td class="text-cell">a restoration-focused bias for action: once the incident reached all-region, 100% payment failure, he pushed...</td>
+        <td class="text-cell">weak shared sensemaking structure</td>
+      </tr>
+
+      <tr>
+        <td class="rank">10</td>
+        <td class="session"><a href="./sameer:Bezs-Beatles-Day!-8399.md">sameer:Bezs-Beatles-Day!-8399</a></td>
+        <td>sameer</td>
+        <td class="score">3</td><td class="score">4</td><td class="score">3</td><td class="score">3</td><td class="score">3</td><td class="score">4</td>
+        <td class="avg">3.33</td>
+        <td class="chart-cell"><svg class="radar" width="154" height="154" viewBox="0 0 154 154" role="img" aria-label="Radar chart for sameer:Bezs-Beatles-Day!-8399 scores">
+    <title>sameer:Bezs-Beatles-Day!-8399 score radar</title>
+    <polygon class="ring" points="77.0,62.8 85.0,67.4 85.0,76.6 77.0,81.2 69.0,76.6 69.0,67.4"></polygon><polygon class="ring" points="77.0,53.6 92.9,62.8 92.9,81.2 77.0,90.4 61.1,81.2 61.1,62.8"></polygon><polygon class="ring" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 53.1,85.8 53.1,58.2"></polygon><polygon class="ring" points="77.0,35.2 108.9,53.6 108.9,90.4 77.0,108.8 45.1,90.4 45.1,53.6"></polygon><polygon class="ring" points="77.0,26.0 116.8,49.0 116.8,95.0 77.0,118.0 37.2,95.0 37.2,49.0"></polygon>
+    <line class="spoke" x1="77" y1="72" x2="77.0" y2="26.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="49.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="77.0" y2="118.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="49.0"></line>
+    <polygon class="score-area" points="77.0,44.4 108.9,53.6 100.9,85.8 77.0,99.6 53.1,85.8 45.1,53.6"></polygon>
+    <polyline class="score-line" points="77.0,44.4 108.9,53.6 100.9,85.8 77.0,99.6 53.1,85.8 45.1,53.6 77.0,44.4"></polyline>
+    <circle class="vertex" cx="77.0" cy="44.4" r="2.4"><title>Sensemaking: 3</title></circle><circle class="vertex" cx="108.9" cy="53.6" r="2.4"><title>Coordination: 4</title></circle><circle class="vertex" cx="100.9" cy="85.8" r="2.4"><title>Decision-Making: 3</title></circle><circle class="vertex" cx="77.0" cy="99.6" r="2.4"><title>Communication: 3</title></circle><circle class="vertex" cx="53.1" cy="85.8" r="2.4"><title>Adaptive Capacity: 3</title></circle><circle class="vertex" cx="45.1" cy="53.6" r="2.4"><title>Lifecycle: 4</title></circle>
+    <text class="axis-label" x="77.0" y="12.0" text-anchor="middle">Sense</text><text class="axis-label" x="132.4" y="44.0" text-anchor="middle">Coord</text><text class="axis-label" x="132.4" y="108.0" text-anchor="middle">Decision</text><text class="axis-label" x="77.0" y="140.0" text-anchor="middle">Comms</text><text class="axis-label" x="21.6" y="108.0" text-anchor="middle">Adapt</text><text class="axis-label" x="21.6" y="44.0" text-anchor="middle">Life</text>
+  </svg></td>
+        <td class="text-cell">good coordination through named responders and practical convergence on the effective rollback</td>
+        <td class="text-cell">sensemaking and plan changes were mostly implicit, with limited stated decision rationale</td>
+      </tr>
+
+      <tr>
+        <td class="rank">11</td>
+        <td class="session"><a href="./bhavia:Bezs-Beatles-Day!-8358.md">bhavia:Bezs-Beatles-Day!-8358</a></td>
+        <td>bhavia</td>
+        <td class="score">3</td><td class="score">3</td><td class="score">3</td><td class="score">3</td><td class="score">3</td><td class="score">4</td>
+        <td class="avg">3.17</td>
+        <td class="chart-cell"><svg class="radar" width="154" height="154" viewBox="0 0 154 154" role="img" aria-label="Radar chart for bhavia:Bezs-Beatles-Day!-8358 scores">
+    <title>bhavia:Bezs-Beatles-Day!-8358 score radar</title>
+    <polygon class="ring" points="77.0,62.8 85.0,67.4 85.0,76.6 77.0,81.2 69.0,76.6 69.0,67.4"></polygon><polygon class="ring" points="77.0,53.6 92.9,62.8 92.9,81.2 77.0,90.4 61.1,81.2 61.1,62.8"></polygon><polygon class="ring" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 53.1,85.8 53.1,58.2"></polygon><polygon class="ring" points="77.0,35.2 108.9,53.6 108.9,90.4 77.0,108.8 45.1,90.4 45.1,53.6"></polygon><polygon class="ring" points="77.0,26.0 116.8,49.0 116.8,95.0 77.0,118.0 37.2,95.0 37.2,49.0"></polygon>
+    <line class="spoke" x1="77" y1="72" x2="77.0" y2="26.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="49.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="77.0" y2="118.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="49.0"></line>
+    <polygon class="score-area" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 53.1,85.8 45.1,53.6"></polygon>
+    <polyline class="score-line" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 53.1,85.8 45.1,53.6 77.0,44.4"></polyline>
+    <circle class="vertex" cx="77.0" cy="44.4" r="2.4"><title>Sensemaking: 3</title></circle><circle class="vertex" cx="100.9" cy="58.2" r="2.4"><title>Coordination: 3</title></circle><circle class="vertex" cx="100.9" cy="85.8" r="2.4"><title>Decision-Making: 3</title></circle><circle class="vertex" cx="77.0" cy="99.6" r="2.4"><title>Communication: 3</title></circle><circle class="vertex" cx="53.1" cy="85.8" r="2.4"><title>Adaptive Capacity: 3</title></circle><circle class="vertex" cx="45.1" cy="53.6" r="2.4"><title>Lifecycle: 4</title></circle>
+    <text class="axis-label" x="77.0" y="12.0" text-anchor="middle">Sense</text><text class="axis-label" x="132.4" y="44.0" text-anchor="middle">Coord</text><text class="axis-label" x="132.4" y="108.0" text-anchor="middle">Decision</text><text class="axis-label" x="77.0" y="140.0" text-anchor="middle">Comms</text><text class="axis-label" x="21.6" y="108.0" text-anchor="middle">Adapt</text><text class="axis-label" x="21.6" y="44.0" text-anchor="middle">Life</text>
+  </svg></td>
+        <td class="text-cell">solid lifecycle coverage, including incident record/severity, scope checks, and closure after restoration evidence</td>
+        <td class="text-cell">mental model updates and reframing after failed mitigation were only partly explicit</td>
+      </tr>
+
+      <tr>
+        <td class="rank">12</td>
+        <td class="session"><a href="./chaksh:Bezs-Beatles-Day!-8596.md">chaksh:Bezs-Beatles-Day!-8596</a></td>
+        <td>chaksh</td>
+        <td class="score">3</td><td class="score">3</td><td class="score">3</td><td class="score">3</td><td class="score">4</td><td class="score">3</td>
+        <td class="avg">3.17</td>
+        <td class="chart-cell"><svg class="radar" width="154" height="154" viewBox="0 0 154 154" role="img" aria-label="Radar chart for chaksh:Bezs-Beatles-Day!-8596 scores">
+    <title>chaksh:Bezs-Beatles-Day!-8596 score radar</title>
+    <polygon class="ring" points="77.0,62.8 85.0,67.4 85.0,76.6 77.0,81.2 69.0,76.6 69.0,67.4"></polygon><polygon class="ring" points="77.0,53.6 92.9,62.8 92.9,81.2 77.0,90.4 61.1,81.2 61.1,62.8"></polygon><polygon class="ring" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 53.1,85.8 53.1,58.2"></polygon><polygon class="ring" points="77.0,35.2 108.9,53.6 108.9,90.4 77.0,108.8 45.1,90.4 45.1,53.6"></polygon><polygon class="ring" points="77.0,26.0 116.8,49.0 116.8,95.0 77.0,118.0 37.2,95.0 37.2,49.0"></polygon>
+    <line class="spoke" x1="77" y1="72" x2="77.0" y2="26.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="49.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="77.0" y2="118.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="49.0"></line>
+    <polygon class="score-area" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 45.1,90.4 53.1,58.2"></polygon>
+    <polyline class="score-line" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 45.1,90.4 53.1,58.2 77.0,44.4"></polyline>
+    <circle class="vertex" cx="77.0" cy="44.4" r="2.4"><title>Sensemaking: 3</title></circle><circle class="vertex" cx="100.9" cy="58.2" r="2.4"><title>Coordination: 3</title></circle><circle class="vertex" cx="100.9" cy="85.8" r="2.4"><title>Decision-Making: 3</title></circle><circle class="vertex" cx="77.0" cy="99.6" r="2.4"><title>Communication: 3</title></circle><circle class="vertex" cx="45.1" cy="90.4" r="2.4"><title>Adaptive Capacity: 4</title></circle><circle class="vertex" cx="53.1" cy="58.2" r="2.4"><title>Lifecycle: 3</title></circle>
+    <text class="axis-label" x="77.0" y="12.0" text-anchor="middle">Sense</text><text class="axis-label" x="132.4" y="44.0" text-anchor="middle">Coord</text><text class="axis-label" x="132.4" y="108.0" text-anchor="middle">Decision</text><text class="axis-label" x="77.0" y="140.0" text-anchor="middle">Comms</text><text class="axis-label" x="21.6" y="108.0" text-anchor="middle">Adapt</text><text class="axis-label" x="21.6" y="44.0" text-anchor="middle">Life</text>
+  </svg></td>
+        <td class="text-cell">adaptive restoration: once the initial rollback failed, they kept searching recent changes and eventually...</td>
+        <td class="text-cell">weak explicit sensemaking structure: they asked useful questions, but rarely narrated the current hypothesis,...</td>
+      </tr>
+
+      <tr>
+        <td class="rank">13</td>
+        <td class="session"><a href="./jaykab:Bezs-Beatles-Day!-8451.md">jaykab:Bezs-Beatles-Day!-8451</a></td>
+        <td>jaykab</td>
+        <td class="score">3</td><td class="score">3</td><td class="score">3</td><td class="score">3</td><td class="score">3</td><td class="score">4</td>
+        <td class="avg">3.17</td>
+        <td class="chart-cell"><svg class="radar" width="154" height="154" viewBox="0 0 154 154" role="img" aria-label="Radar chart for jaykab:Bezs-Beatles-Day!-8451 scores">
+    <title>jaykab:Bezs-Beatles-Day!-8451 score radar</title>
+    <polygon class="ring" points="77.0,62.8 85.0,67.4 85.0,76.6 77.0,81.2 69.0,76.6 69.0,67.4"></polygon><polygon class="ring" points="77.0,53.6 92.9,62.8 92.9,81.2 77.0,90.4 61.1,81.2 61.1,62.8"></polygon><polygon class="ring" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 53.1,85.8 53.1,58.2"></polygon><polygon class="ring" points="77.0,35.2 108.9,53.6 108.9,90.4 77.0,108.8 45.1,90.4 45.1,53.6"></polygon><polygon class="ring" points="77.0,26.0 116.8,49.0 116.8,95.0 77.0,118.0 37.2,95.0 37.2,49.0"></polygon>
+    <line class="spoke" x1="77" y1="72" x2="77.0" y2="26.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="49.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="77.0" y2="118.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="49.0"></line>
+    <polygon class="score-area" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 53.1,85.8 45.1,53.6"></polygon>
+    <polyline class="score-line" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 53.1,85.8 45.1,53.6 77.0,44.4"></polyline>
+    <circle class="vertex" cx="77.0" cy="44.4" r="2.4"><title>Sensemaking: 3</title></circle><circle class="vertex" cx="100.9" cy="58.2" r="2.4"><title>Coordination: 3</title></circle><circle class="vertex" cx="100.9" cy="85.8" r="2.4"><title>Decision-Making: 3</title></circle><circle class="vertex" cx="77.0" cy="99.6" r="2.4"><title>Communication: 3</title></circle><circle class="vertex" cx="53.1" cy="85.8" r="2.4"><title>Adaptive Capacity: 3</title></circle><circle class="vertex" cx="45.1" cy="53.6" r="2.4"><title>Lifecycle: 4</title></circle>
+    <text class="axis-label" x="77.0" y="12.0" text-anchor="middle">Sense</text><text class="axis-label" x="132.4" y="44.0" text-anchor="middle">Coord</text><text class="axis-label" x="132.4" y="108.0" text-anchor="middle">Decision</text><text class="axis-label" x="77.0" y="140.0" text-anchor="middle">Comms</text><text class="axis-label" x="21.6" y="108.0" text-anchor="middle">Adapt</text><text class="axis-label" x="21.6" y="44.0" text-anchor="middle">Life</text>
+  </svg></td>
+        <td class="text-cell">pragmatic coordination around restoration: they repeatedly assigned named responders to check changes, roll back...</td>
+        <td class="text-cell">weak explicit sensemaking and stakeholder cadence: the team and business got fragments of the model rather than a...</td>
+      </tr>
+
+      <tr>
+        <td class="rank">14</td>
+        <td class="session"><a href="./kumarg:Bezs-Beatles-Day!-7906.md">kumarg:Bezs-Beatles-Day!-7906</a></td>
+        <td>kumarg</td>
+        <td class="score">3</td><td class="score">3</td><td class="score">3</td><td class="score">3</td><td class="score">3</td><td class="score">4</td>
+        <td class="avg">3.17</td>
+        <td class="chart-cell"><svg class="radar" width="154" height="154" viewBox="0 0 154 154" role="img" aria-label="Radar chart for kumarg:Bezs-Beatles-Day!-7906 scores">
+    <title>kumarg:Bezs-Beatles-Day!-7906 score radar</title>
+    <polygon class="ring" points="77.0,62.8 85.0,67.4 85.0,76.6 77.0,81.2 69.0,76.6 69.0,67.4"></polygon><polygon class="ring" points="77.0,53.6 92.9,62.8 92.9,81.2 77.0,90.4 61.1,81.2 61.1,62.8"></polygon><polygon class="ring" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 53.1,85.8 53.1,58.2"></polygon><polygon class="ring" points="77.0,35.2 108.9,53.6 108.9,90.4 77.0,108.8 45.1,90.4 45.1,53.6"></polygon><polygon class="ring" points="77.0,26.0 116.8,49.0 116.8,95.0 77.0,118.0 37.2,95.0 37.2,49.0"></polygon>
+    <line class="spoke" x1="77" y1="72" x2="77.0" y2="26.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="49.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="77.0" y2="118.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="49.0"></line>
+    <polygon class="score-area" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 53.1,85.8 45.1,53.6"></polygon>
+    <polyline class="score-line" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 53.1,85.8 45.1,53.6 77.0,44.4"></polyline>
+    <circle class="vertex" cx="77.0" cy="44.4" r="2.4"><title>Sensemaking: 3</title></circle><circle class="vertex" cx="100.9" cy="58.2" r="2.4"><title>Coordination: 3</title></circle><circle class="vertex" cx="100.9" cy="85.8" r="2.4"><title>Decision-Making: 3</title></circle><circle class="vertex" cx="77.0" cy="99.6" r="2.4"><title>Communication: 3</title></circle><circle class="vertex" cx="53.1" cy="85.8" r="2.4"><title>Adaptive Capacity: 3</title></circle><circle class="vertex" cx="45.1" cy="53.6" r="2.4"><title>Lifecycle: 4</title></circle>
+    <text class="axis-label" x="77.0" y="12.0" text-anchor="middle">Sense</text><text class="axis-label" x="132.4" y="44.0" text-anchor="middle">Coord</text><text class="axis-label" x="132.4" y="108.0" text-anchor="middle">Decision</text><text class="axis-label" x="77.0" y="140.0" text-anchor="middle">Comms</text><text class="axis-label" x="21.6" y="108.0" text-anchor="middle">Adapt</text><text class="axis-label" x="21.6" y="44.0" text-anchor="middle">Life</text>
+  </svg></td>
+        <td class="text-cell">practical coordination under pressure: he brought Daniel, Hamed, Tanya, Shay, and Bob into the response and kept...</td>
+        <td class="text-cell">weak explicit sensemaking: the team rarely heard a clear hypothesis, decision rationale, or contingency plan,...</td>
+      </tr>
+
+      <tr>
+        <td class="rank">15</td>
+        <td class="session"><a href="./nishan:Bezs-Beatles-Day!-7827.md">nishan:Bezs-Beatles-Day!-7827</a></td>
+        <td>nishan</td>
+        <td class="score">3</td><td class="score">3</td><td class="score">3</td><td class="score">3</td><td class="score">3</td><td class="score">4</td>
+        <td class="avg">3.17</td>
+        <td class="chart-cell"><svg class="radar" width="154" height="154" viewBox="0 0 154 154" role="img" aria-label="Radar chart for nishan:Bezs-Beatles-Day!-7827 scores">
+    <title>nishan:Bezs-Beatles-Day!-7827 score radar</title>
+    <polygon class="ring" points="77.0,62.8 85.0,67.4 85.0,76.6 77.0,81.2 69.0,76.6 69.0,67.4"></polygon><polygon class="ring" points="77.0,53.6 92.9,62.8 92.9,81.2 77.0,90.4 61.1,81.2 61.1,62.8"></polygon><polygon class="ring" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 53.1,85.8 53.1,58.2"></polygon><polygon class="ring" points="77.0,35.2 108.9,53.6 108.9,90.4 77.0,108.8 45.1,90.4 45.1,53.6"></polygon><polygon class="ring" points="77.0,26.0 116.8,49.0 116.8,95.0 77.0,118.0 37.2,95.0 37.2,49.0"></polygon>
+    <line class="spoke" x1="77" y1="72" x2="77.0" y2="26.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="49.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="77.0" y2="118.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="49.0"></line>
+    <polygon class="score-area" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 53.1,85.8 45.1,53.6"></polygon>
+    <polyline class="score-line" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 53.1,85.8 45.1,53.6 77.0,44.4"></polyline>
+    <circle class="vertex" cx="77.0" cy="44.4" r="2.4"><title>Sensemaking: 3</title></circle><circle class="vertex" cx="100.9" cy="58.2" r="2.4"><title>Coordination: 3</title></circle><circle class="vertex" cx="100.9" cy="85.8" r="2.4"><title>Decision-Making: 3</title></circle><circle class="vertex" cx="77.0" cy="99.6" r="2.4"><title>Communication: 3</title></circle><circle class="vertex" cx="53.1" cy="85.8" r="2.4"><title>Adaptive Capacity: 3</title></circle><circle class="vertex" cx="45.1" cy="53.6" r="2.4"><title>Lifecycle: 4</title></circle>
+    <text class="axis-label" x="77.0" y="12.0" text-anchor="middle">Sense</text><text class="axis-label" x="132.4" y="44.0" text-anchor="middle">Coord</text><text class="axis-label" x="132.4" y="108.0" text-anchor="middle">Decision</text><text class="axis-label" x="77.0" y="140.0" text-anchor="middle">Comms</text><text class="axis-label" x="21.6" y="108.0" text-anchor="middle">Adapt</text><text class="axis-label" x="21.6" y="44.0" text-anchor="middle">Life</text>
+  </svg></td>
+        <td class="text-cell">good lifecycle basics through incident/severity, scope checks, and closure after restoration evidence</td>
+        <td class="text-cell">sensemaking stayed implicit, with limited shared hypothesis or explicit reframing</td>
+      </tr>
+
+      <tr>
+        <td class="rank">16</td>
+        <td class="session"><a href="./raunak:Bezs-Beatles-Day!-8574.md">raunak:Bezs-Beatles-Day!-8574</a></td>
+        <td>raunak</td>
+        <td class="score">3</td><td class="score">3</td><td class="score">3</td><td class="score">3</td><td class="score">4</td><td class="score">3</td>
+        <td class="avg">3.17</td>
+        <td class="chart-cell"><svg class="radar" width="154" height="154" viewBox="0 0 154 154" role="img" aria-label="Radar chart for raunak:Bezs-Beatles-Day!-8574 scores">
+    <title>raunak:Bezs-Beatles-Day!-8574 score radar</title>
+    <polygon class="ring" points="77.0,62.8 85.0,67.4 85.0,76.6 77.0,81.2 69.0,76.6 69.0,67.4"></polygon><polygon class="ring" points="77.0,53.6 92.9,62.8 92.9,81.2 77.0,90.4 61.1,81.2 61.1,62.8"></polygon><polygon class="ring" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 53.1,85.8 53.1,58.2"></polygon><polygon class="ring" points="77.0,35.2 108.9,53.6 108.9,90.4 77.0,108.8 45.1,90.4 45.1,53.6"></polygon><polygon class="ring" points="77.0,26.0 116.8,49.0 116.8,95.0 77.0,118.0 37.2,95.0 37.2,49.0"></polygon>
+    <line class="spoke" x1="77" y1="72" x2="77.0" y2="26.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="49.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="77.0" y2="118.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="49.0"></line>
+    <polygon class="score-area" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 45.1,90.4 53.1,58.2"></polygon>
+    <polyline class="score-line" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 45.1,90.4 53.1,58.2 77.0,44.4"></polyline>
+    <circle class="vertex" cx="77.0" cy="44.4" r="2.4"><title>Sensemaking: 3</title></circle><circle class="vertex" cx="100.9" cy="58.2" r="2.4"><title>Coordination: 3</title></circle><circle class="vertex" cx="100.9" cy="85.8" r="2.4"><title>Decision-Making: 3</title></circle><circle class="vertex" cx="77.0" cy="99.6" r="2.4"><title>Communication: 3</title></circle><circle class="vertex" cx="45.1" cy="90.4" r="2.4"><title>Adaptive Capacity: 4</title></circle><circle class="vertex" cx="53.1" cy="58.2" r="2.4"><title>Lifecycle: 3</title></circle>
+    <text class="axis-label" x="77.0" y="12.0" text-anchor="middle">Sense</text><text class="axis-label" x="132.4" y="44.0" text-anchor="middle">Coord</text><text class="axis-label" x="132.4" y="108.0" text-anchor="middle">Decision</text><text class="axis-label" x="77.0" y="140.0" text-anchor="middle">Comms</text><text class="axis-label" x="21.6" y="108.0" text-anchor="middle">Adapt</text><text class="axis-label" x="21.6" y="44.0" text-anchor="middle">Life</text>
+  </svg></td>
+        <td class="text-cell">narrowing the incident quickly from generic checkout trouble to GBP card-payment failure and acting decisively to...</td>
+        <td class="text-cell">making the team&#39;s shared mental model explicit: he asked useful questions, but rarely narrated what he believed...</td>
+      </tr>
+
+      <tr>
+        <td class="rank">17</td>
+        <td class="session"><a href="./aniket:Bezs-Beatles-Day!-8761.md">aniket:Bezs-Beatles-Day!-8761</a></td>
+        <td>aniket</td>
+        <td class="score">3</td><td class="score">3</td><td class="score">3</td><td class="score">3</td><td class="score">3</td><td class="score">3</td>
+        <td class="avg">3.00</td>
+        <td class="chart-cell"><svg class="radar" width="154" height="154" viewBox="0 0 154 154" role="img" aria-label="Radar chart for aniket:Bezs-Beatles-Day!-8761 scores">
+    <title>aniket:Bezs-Beatles-Day!-8761 score radar</title>
+    <polygon class="ring" points="77.0,62.8 85.0,67.4 85.0,76.6 77.0,81.2 69.0,76.6 69.0,67.4"></polygon><polygon class="ring" points="77.0,53.6 92.9,62.8 92.9,81.2 77.0,90.4 61.1,81.2 61.1,62.8"></polygon><polygon class="ring" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 53.1,85.8 53.1,58.2"></polygon><polygon class="ring" points="77.0,35.2 108.9,53.6 108.9,90.4 77.0,108.8 45.1,90.4 45.1,53.6"></polygon><polygon class="ring" points="77.0,26.0 116.8,49.0 116.8,95.0 77.0,118.0 37.2,95.0 37.2,49.0"></polygon>
+    <line class="spoke" x1="77" y1="72" x2="77.0" y2="26.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="49.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="77.0" y2="118.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="49.0"></line>
+    <polygon class="score-area" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 53.1,85.8 53.1,58.2"></polygon>
+    <polyline class="score-line" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 53.1,85.8 53.1,58.2 77.0,44.4"></polyline>
+    <circle class="vertex" cx="77.0" cy="44.4" r="2.4"><title>Sensemaking: 3</title></circle><circle class="vertex" cx="100.9" cy="58.2" r="2.4"><title>Coordination: 3</title></circle><circle class="vertex" cx="100.9" cy="85.8" r="2.4"><title>Decision-Making: 3</title></circle><circle class="vertex" cx="77.0" cy="99.6" r="2.4"><title>Communication: 3</title></circle><circle class="vertex" cx="53.1" cy="85.8" r="2.4"><title>Adaptive Capacity: 3</title></circle><circle class="vertex" cx="53.1" cy="58.2" r="2.4"><title>Lifecycle: 3</title></circle>
+    <text class="axis-label" x="77.0" y="12.0" text-anchor="middle">Sense</text><text class="axis-label" x="132.4" y="44.0" text-anchor="middle">Coord</text><text class="axis-label" x="132.4" y="108.0" text-anchor="middle">Decision</text><text class="axis-label" x="77.0" y="140.0" text-anchor="middle">Comms</text><text class="axis-label" x="21.6" y="108.0" text-anchor="middle">Adapt</text><text class="axis-label" x="21.6" y="44.0" text-anchor="middle">Life</text>
+  </svg></td>
+        <td class="text-cell">decisive restoration-oriented action: once he associated the failure with recent changes, he converted that...</td>
+        <td class="text-cell">calibrated sensemaking under contradiction</td>
+      </tr>
+
+      <tr>
+        <td class="rank">18</td>
+        <td class="session"><a href="./girish:Bezs-Beatles-Day!-8464.md">girish:Bezs-Beatles-Day!-8464</a></td>
+        <td>girish</td>
+        <td class="score">3</td><td class="score">3</td><td class="score">3</td><td class="score">3</td><td class="score">4</td><td class="score">2</td>
+        <td class="avg">3.00</td>
+        <td class="chart-cell"><svg class="radar" width="154" height="154" viewBox="0 0 154 154" role="img" aria-label="Radar chart for girish:Bezs-Beatles-Day!-8464 scores">
+    <title>girish:Bezs-Beatles-Day!-8464 score radar</title>
+    <polygon class="ring" points="77.0,62.8 85.0,67.4 85.0,76.6 77.0,81.2 69.0,76.6 69.0,67.4"></polygon><polygon class="ring" points="77.0,53.6 92.9,62.8 92.9,81.2 77.0,90.4 61.1,81.2 61.1,62.8"></polygon><polygon class="ring" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 53.1,85.8 53.1,58.2"></polygon><polygon class="ring" points="77.0,35.2 108.9,53.6 108.9,90.4 77.0,108.8 45.1,90.4 45.1,53.6"></polygon><polygon class="ring" points="77.0,26.0 116.8,49.0 116.8,95.0 77.0,118.0 37.2,95.0 37.2,49.0"></polygon>
+    <line class="spoke" x1="77" y1="72" x2="77.0" y2="26.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="49.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="77.0" y2="118.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="49.0"></line>
+    <polygon class="score-area" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 45.1,90.4 61.1,62.8"></polygon>
+    <polyline class="score-line" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 45.1,90.4 61.1,62.8 77.0,44.4"></polyline>
+    <circle class="vertex" cx="77.0" cy="44.4" r="2.4"><title>Sensemaking: 3</title></circle><circle class="vertex" cx="100.9" cy="58.2" r="2.4"><title>Coordination: 3</title></circle><circle class="vertex" cx="100.9" cy="85.8" r="2.4"><title>Decision-Making: 3</title></circle><circle class="vertex" cx="77.0" cy="99.6" r="2.4"><title>Communication: 3</title></circle><circle class="vertex" cx="45.1" cy="90.4" r="2.4"><title>Adaptive Capacity: 4</title></circle><circle class="vertex" cx="61.1" cy="62.8" r="2.4"><title>Lifecycle: 2</title></circle>
+    <text class="axis-label" x="77.0" y="12.0" text-anchor="middle">Sense</text><text class="axis-label" x="132.4" y="44.0" text-anchor="middle">Coord</text><text class="axis-label" x="132.4" y="108.0" text-anchor="middle">Decision</text><text class="axis-label" x="77.0" y="140.0" text-anchor="middle">Comms</text><text class="axis-label" x="21.6" y="108.0" text-anchor="middle">Adapt</text><text class="axis-label" x="21.6" y="44.0" text-anchor="middle">Life</text>
+  </svg></td>
+        <td class="text-cell">adaptive response after the first mitigation failed, eventually pivoting toward the effective payment-service...</td>
+        <td class="text-cell">incident lifecycle management was weak, especially formal closure and quantified stakeholder impact</td>
+      </tr>
+
+      <tr>
+        <td class="rank">19</td>
+        <td class="session"><a href="./raviki:Bezs-Beatles-Day!-8527.md">raviki:Bezs-Beatles-Day!-8527</a></td>
+        <td>raviki</td>
+        <td class="score">3</td><td class="score">3</td><td class="score">3</td><td class="score">3</td><td class="score">3</td><td class="score">3</td>
+        <td class="avg">3.00</td>
+        <td class="chart-cell"><svg class="radar" width="154" height="154" viewBox="0 0 154 154" role="img" aria-label="Radar chart for raviki:Bezs-Beatles-Day!-8527 scores">
+    <title>raviki:Bezs-Beatles-Day!-8527 score radar</title>
+    <polygon class="ring" points="77.0,62.8 85.0,67.4 85.0,76.6 77.0,81.2 69.0,76.6 69.0,67.4"></polygon><polygon class="ring" points="77.0,53.6 92.9,62.8 92.9,81.2 77.0,90.4 61.1,81.2 61.1,62.8"></polygon><polygon class="ring" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 53.1,85.8 53.1,58.2"></polygon><polygon class="ring" points="77.0,35.2 108.9,53.6 108.9,90.4 77.0,108.8 45.1,90.4 45.1,53.6"></polygon><polygon class="ring" points="77.0,26.0 116.8,49.0 116.8,95.0 77.0,118.0 37.2,95.0 37.2,49.0"></polygon>
+    <line class="spoke" x1="77" y1="72" x2="77.0" y2="26.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="49.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="77.0" y2="118.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="49.0"></line>
+    <polygon class="score-area" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 53.1,85.8 53.1,58.2"></polygon>
+    <polyline class="score-line" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 53.1,85.8 53.1,58.2 77.0,44.4"></polyline>
+    <circle class="vertex" cx="77.0" cy="44.4" r="2.4"><title>Sensemaking: 3</title></circle><circle class="vertex" cx="100.9" cy="58.2" r="2.4"><title>Coordination: 3</title></circle><circle class="vertex" cx="100.9" cy="85.8" r="2.4"><title>Decision-Making: 3</title></circle><circle class="vertex" cx="77.0" cy="99.6" r="2.4"><title>Communication: 3</title></circle><circle class="vertex" cx="53.1" cy="85.8" r="2.4"><title>Adaptive Capacity: 3</title></circle><circle class="vertex" cx="53.1" cy="58.2" r="2.4"><title>Lifecycle: 3</title></circle>
+    <text class="axis-label" x="77.0" y="12.0" text-anchor="middle">Sense</text><text class="axis-label" x="132.4" y="44.0" text-anchor="middle">Coord</text><text class="axis-label" x="132.4" y="108.0" text-anchor="middle">Decision</text><text class="axis-label" x="77.0" y="140.0" text-anchor="middle">Comms</text><text class="axis-label" x="21.6" y="108.0" text-anchor="middle">Adapt</text><text class="axis-label" x="21.6" y="44.0" text-anchor="middle">Life</text>
+  </svg></td>
+        <td class="text-cell">a practical restoration mindset: they used metrics, checked recent changes, asked for evidence, and moved toward...</td>
+        <td class="text-cell">command structure: roles, cadence, verification criteria, and stakeholder impact quantification were not made...</td>
+      </tr>
+
+      <tr>
+        <td class="rank">20</td>
+        <td class="session"><a href="./akshat:Bezs-Beatles-Day!-8561.md">akshat:Bezs-Beatles-Day!-8561</a></td>
+        <td>akshat</td>
+        <td class="score">3</td><td class="score">3</td><td class="score">3</td><td class="score">2</td><td class="score">3</td><td class="score">3</td>
+        <td class="avg">2.83</td>
+        <td class="chart-cell"><svg class="radar" width="154" height="154" viewBox="0 0 154 154" role="img" aria-label="Radar chart for akshat:Bezs-Beatles-Day!-8561 scores">
+    <title>akshat:Bezs-Beatles-Day!-8561 score radar</title>
+    <polygon class="ring" points="77.0,62.8 85.0,67.4 85.0,76.6 77.0,81.2 69.0,76.6 69.0,67.4"></polygon><polygon class="ring" points="77.0,53.6 92.9,62.8 92.9,81.2 77.0,90.4 61.1,81.2 61.1,62.8"></polygon><polygon class="ring" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 53.1,85.8 53.1,58.2"></polygon><polygon class="ring" points="77.0,35.2 108.9,53.6 108.9,90.4 77.0,108.8 45.1,90.4 45.1,53.6"></polygon><polygon class="ring" points="77.0,26.0 116.8,49.0 116.8,95.0 77.0,118.0 37.2,95.0 37.2,49.0"></polygon>
+    <line class="spoke" x1="77" y1="72" x2="77.0" y2="26.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="49.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="77.0" y2="118.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="49.0"></line>
+    <polygon class="score-area" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,90.4 53.1,85.8 53.1,58.2"></polygon>
+    <polyline class="score-line" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,90.4 53.1,85.8 53.1,58.2 77.0,44.4"></polyline>
+    <circle class="vertex" cx="77.0" cy="44.4" r="2.4"><title>Sensemaking: 3</title></circle><circle class="vertex" cx="100.9" cy="58.2" r="2.4"><title>Coordination: 3</title></circle><circle class="vertex" cx="100.9" cy="85.8" r="2.4"><title>Decision-Making: 3</title></circle><circle class="vertex" cx="77.0" cy="90.4" r="2.4"><title>Communication: 2</title></circle><circle class="vertex" cx="53.1" cy="85.8" r="2.4"><title>Adaptive Capacity: 3</title></circle><circle class="vertex" cx="53.1" cy="58.2" r="2.4"><title>Lifecycle: 3</title></circle>
+    <text class="axis-label" x="77.0" y="12.0" text-anchor="middle">Sense</text><text class="axis-label" x="132.4" y="44.0" text-anchor="middle">Coord</text><text class="axis-label" x="132.4" y="108.0" text-anchor="middle">Decision</text><text class="axis-label" x="77.0" y="140.0" text-anchor="middle">Comms</text><text class="axis-label" x="21.6" y="108.0" text-anchor="middle">Adapt</text><text class="axis-label" x="21.6" y="44.0" text-anchor="middle">Life</text>
+  </svg></td>
+        <td class="text-cell">restoration-oriented coordination: he quickly asked about affected regions, checked recent changes, and drove...</td>
+        <td class="text-cell">communication quality, especially failure to maintain a shared incident narrative and to answer business-impact...</td>
+      </tr>
+
+      <tr>
+        <td class="rank">21</td>
+        <td class="session"><a href="./divyan:Bezs-Beatles-Day!-8457.md">divyan:Bezs-Beatles-Day!-8457</a></td>
+        <td>divyan</td>
+        <td class="score">3</td><td class="score">3</td><td class="score">3</td><td class="score">2</td><td class="score">4</td><td class="score">2</td>
+        <td class="avg">2.83</td>
+        <td class="chart-cell"><svg class="radar" width="154" height="154" viewBox="0 0 154 154" role="img" aria-label="Radar chart for divyan:Bezs-Beatles-Day!-8457 scores">
+    <title>divyan:Bezs-Beatles-Day!-8457 score radar</title>
+    <polygon class="ring" points="77.0,62.8 85.0,67.4 85.0,76.6 77.0,81.2 69.0,76.6 69.0,67.4"></polygon><polygon class="ring" points="77.0,53.6 92.9,62.8 92.9,81.2 77.0,90.4 61.1,81.2 61.1,62.8"></polygon><polygon class="ring" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 53.1,85.8 53.1,58.2"></polygon><polygon class="ring" points="77.0,35.2 108.9,53.6 108.9,90.4 77.0,108.8 45.1,90.4 45.1,53.6"></polygon><polygon class="ring" points="77.0,26.0 116.8,49.0 116.8,95.0 77.0,118.0 37.2,95.0 37.2,49.0"></polygon>
+    <line class="spoke" x1="77" y1="72" x2="77.0" y2="26.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="49.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="77.0" y2="118.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="49.0"></line>
+    <polygon class="score-area" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,90.4 45.1,90.4 61.1,62.8"></polygon>
+    <polyline class="score-line" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,90.4 45.1,90.4 61.1,62.8 77.0,44.4"></polyline>
+    <circle class="vertex" cx="77.0" cy="44.4" r="2.4"><title>Sensemaking: 3</title></circle><circle class="vertex" cx="100.9" cy="58.2" r="2.4"><title>Coordination: 3</title></circle><circle class="vertex" cx="100.9" cy="85.8" r="2.4"><title>Decision-Making: 3</title></circle><circle class="vertex" cx="77.0" cy="90.4" r="2.4"><title>Communication: 2</title></circle><circle class="vertex" cx="45.1" cy="90.4" r="2.4"><title>Adaptive Capacity: 4</title></circle><circle class="vertex" cx="61.1" cy="62.8" r="2.4"><title>Lifecycle: 2</title></circle>
+    <text class="axis-label" x="77.0" y="12.0" text-anchor="middle">Sense</text><text class="axis-label" x="132.4" y="44.0" text-anchor="middle">Coord</text><text class="axis-label" x="132.4" y="108.0" text-anchor="middle">Decision</text><text class="axis-label" x="77.0" y="140.0" text-anchor="middle">Comms</text><text class="axis-label" x="21.6" y="108.0" text-anchor="middle">Adapt</text><text class="axis-label" x="21.6" y="44.0" text-anchor="middle">Life</text>
+  </svg></td>
+        <td class="text-cell">pragmatic restoration under pressure: he quickly scoped impact, used named responders, and kept pushing through...</td>
+        <td class="text-cell">communication structure, especially the absence of business-comms updates, explicit cadence, and clear shared...</td>
+      </tr>
+
+      <tr>
+        <td class="rank">22</td>
+        <td class="session"><a href="./kalpja:Bezs-Beatles-Day!-8345.md">kalpja:Bezs-Beatles-Day!-8345</a></td>
+        <td>kalpja</td>
+        <td class="score">2</td><td class="score">3</td><td class="score">3</td><td class="score">2</td><td class="score">3</td><td class="score">4</td>
+        <td class="avg">2.83</td>
+        <td class="chart-cell"><svg class="radar" width="154" height="154" viewBox="0 0 154 154" role="img" aria-label="Radar chart for kalpja:Bezs-Beatles-Day!-8345 scores">
+    <title>kalpja:Bezs-Beatles-Day!-8345 score radar</title>
+    <polygon class="ring" points="77.0,62.8 85.0,67.4 85.0,76.6 77.0,81.2 69.0,76.6 69.0,67.4"></polygon><polygon class="ring" points="77.0,53.6 92.9,62.8 92.9,81.2 77.0,90.4 61.1,81.2 61.1,62.8"></polygon><polygon class="ring" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 53.1,85.8 53.1,58.2"></polygon><polygon class="ring" points="77.0,35.2 108.9,53.6 108.9,90.4 77.0,108.8 45.1,90.4 45.1,53.6"></polygon><polygon class="ring" points="77.0,26.0 116.8,49.0 116.8,95.0 77.0,118.0 37.2,95.0 37.2,49.0"></polygon>
+    <line class="spoke" x1="77" y1="72" x2="77.0" y2="26.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="49.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="77.0" y2="118.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="49.0"></line>
+    <polygon class="score-area" points="77.0,53.6 100.9,58.2 100.9,85.8 77.0,90.4 53.1,85.8 45.1,53.6"></polygon>
+    <polyline class="score-line" points="77.0,53.6 100.9,58.2 100.9,85.8 77.0,90.4 53.1,85.8 45.1,53.6 77.0,53.6"></polyline>
+    <circle class="vertex" cx="77.0" cy="53.6" r="2.4"><title>Sensemaking: 2</title></circle><circle class="vertex" cx="100.9" cy="58.2" r="2.4"><title>Coordination: 3</title></circle><circle class="vertex" cx="100.9" cy="85.8" r="2.4"><title>Decision-Making: 3</title></circle><circle class="vertex" cx="77.0" cy="90.4" r="2.4"><title>Communication: 2</title></circle><circle class="vertex" cx="53.1" cy="85.8" r="2.4"><title>Adaptive Capacity: 3</title></circle><circle class="vertex" cx="45.1" cy="53.6" r="2.4"><title>Lifecycle: 4</title></circle>
+    <text class="axis-label" x="77.0" y="12.0" text-anchor="middle">Sense</text><text class="axis-label" x="132.4" y="44.0" text-anchor="middle">Coord</text><text class="axis-label" x="132.4" y="108.0" text-anchor="middle">Decision</text><text class="axis-label" x="77.0" y="140.0" text-anchor="middle">Comms</text><text class="axis-label" x="21.6" y="108.0" text-anchor="middle">Adapt</text><text class="axis-label" x="21.6" y="44.0" text-anchor="middle">Life</text>
+  </svg></td>
+        <td class="text-cell">pragmatic coordination around restoration: they quickly engaged Daniel, pushed rollback, and later verified...</td>
+        <td class="text-cell">shared sensemaking and stakeholder communication</td>
+      </tr>
+
+      <tr>
+        <td class="rank">23</td>
+        <td class="session"><a href="./kumara:Bezs-Beatles-Day!-8085.md">kumara:Bezs-Beatles-Day!-8085</a></td>
+        <td>kumara</td>
+        <td class="score">3</td><td class="score">3</td><td class="score">3</td><td class="score">2</td><td class="score">3</td><td class="score">3</td>
+        <td class="avg">2.83</td>
+        <td class="chart-cell"><svg class="radar" width="154" height="154" viewBox="0 0 154 154" role="img" aria-label="Radar chart for kumara:Bezs-Beatles-Day!-8085 scores">
+    <title>kumara:Bezs-Beatles-Day!-8085 score radar</title>
+    <polygon class="ring" points="77.0,62.8 85.0,67.4 85.0,76.6 77.0,81.2 69.0,76.6 69.0,67.4"></polygon><polygon class="ring" points="77.0,53.6 92.9,62.8 92.9,81.2 77.0,90.4 61.1,81.2 61.1,62.8"></polygon><polygon class="ring" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 53.1,85.8 53.1,58.2"></polygon><polygon class="ring" points="77.0,35.2 108.9,53.6 108.9,90.4 77.0,108.8 45.1,90.4 45.1,53.6"></polygon><polygon class="ring" points="77.0,26.0 116.8,49.0 116.8,95.0 77.0,118.0 37.2,95.0 37.2,49.0"></polygon>
+    <line class="spoke" x1="77" y1="72" x2="77.0" y2="26.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="49.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="77.0" y2="118.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="49.0"></line>
+    <polygon class="score-area" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,90.4 53.1,85.8 53.1,58.2"></polygon>
+    <polyline class="score-line" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,90.4 53.1,85.8 53.1,58.2 77.0,44.4"></polyline>
+    <circle class="vertex" cx="77.0" cy="44.4" r="2.4"><title>Sensemaking: 3</title></circle><circle class="vertex" cx="100.9" cy="58.2" r="2.4"><title>Coordination: 3</title></circle><circle class="vertex" cx="100.9" cy="85.8" r="2.4"><title>Decision-Making: 3</title></circle><circle class="vertex" cx="77.0" cy="90.4" r="2.4"><title>Communication: 2</title></circle><circle class="vertex" cx="53.1" cy="85.8" r="2.4"><title>Adaptive Capacity: 3</title></circle><circle class="vertex" cx="53.1" cy="58.2" r="2.4"><title>Lifecycle: 3</title></circle>
+    <text class="axis-label" x="77.0" y="12.0" text-anchor="middle">Sense</text><text class="axis-label" x="132.4" y="44.0" text-anchor="middle">Coord</text><text class="axis-label" x="132.4" y="108.0" text-anchor="middle">Decision</text><text class="axis-label" x="77.0" y="140.0" text-anchor="middle">Comms</text><text class="axis-label" x="21.6" y="108.0" text-anchor="middle">Adapt</text><text class="axis-label" x="21.6" y="44.0" text-anchor="middle">Life</text>
+  </svg></td>
+        <td class="text-cell">a pragmatic restoration focus: once the payment service and recent-change signals converged, he pushed for...</td>
+        <td class="text-cell">command structure and communication cadence</td>
+      </tr>
+
+      <tr>
+        <td class="rank">24</td>
+        <td class="session"><a href="./vivekg:Bezs-Beatles-Day!-8105.md">vivekg:Bezs-Beatles-Day!-8105</a></td>
+        <td>vivekg</td>
+        <td class="score">3</td><td class="score">3</td><td class="score">3</td><td class="score">2</td><td class="score">4</td><td class="score">2</td>
+        <td class="avg">2.83</td>
+        <td class="chart-cell"><svg class="radar" width="154" height="154" viewBox="0 0 154 154" role="img" aria-label="Radar chart for vivekg:Bezs-Beatles-Day!-8105 scores">
+    <title>vivekg:Bezs-Beatles-Day!-8105 score radar</title>
+    <polygon class="ring" points="77.0,62.8 85.0,67.4 85.0,76.6 77.0,81.2 69.0,76.6 69.0,67.4"></polygon><polygon class="ring" points="77.0,53.6 92.9,62.8 92.9,81.2 77.0,90.4 61.1,81.2 61.1,62.8"></polygon><polygon class="ring" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,99.6 53.1,85.8 53.1,58.2"></polygon><polygon class="ring" points="77.0,35.2 108.9,53.6 108.9,90.4 77.0,108.8 45.1,90.4 45.1,53.6"></polygon><polygon class="ring" points="77.0,26.0 116.8,49.0 116.8,95.0 77.0,118.0 37.2,95.0 37.2,49.0"></polygon>
+    <line class="spoke" x1="77" y1="72" x2="77.0" y2="26.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="49.0"></line><line class="spoke" x1="77" y1="72" x2="116.8" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="77.0" y2="118.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="95.0"></line><line class="spoke" x1="77" y1="72" x2="37.2" y2="49.0"></line>
+    <polygon class="score-area" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,90.4 45.1,90.4 61.1,62.8"></polygon>
+    <polyline class="score-line" points="77.0,44.4 100.9,58.2 100.9,85.8 77.0,90.4 45.1,90.4 61.1,62.8 77.0,44.4"></polyline>
+    <circle class="vertex" cx="77.0" cy="44.4" r="2.4"><title>Sensemaking: 3</title></circle><circle class="vertex" cx="100.9" cy="58.2" r="2.4"><title>Coordination: 3</title></circle><circle class="vertex" cx="100.9" cy="85.8" r="2.4"><title>Decision-Making: 3</title></circle><circle class="vertex" cx="77.0" cy="90.4" r="2.4"><title>Communication: 2</title></circle><circle class="vertex" cx="45.1" cy="90.4" r="2.4"><title>Adaptive Capacity: 4</title></circle><circle class="vertex" cx="61.1" cy="62.8" r="2.4"><title>Lifecycle: 2</title></circle>
+    <text class="axis-label" x="77.0" y="12.0" text-anchor="middle">Sense</text><text class="axis-label" x="132.4" y="44.0" text-anchor="middle">Coord</text><text class="axis-label" x="132.4" y="108.0" text-anchor="middle">Decision</text><text class="axis-label" x="77.0" y="140.0" text-anchor="middle">Comms</text><text class="axis-label" x="21.6" y="108.0" text-anchor="middle">Adapt</text><text class="axis-label" x="21.6" y="44.0" text-anchor="middle">Life</text>
+  </svg></td>
+        <td class="text-cell">pragmatic coordination under pressure: he named responders, issued concrete actions, and pivoted quickly once the...</td>
+        <td class="text-cell">weak shared sensemaking and stakeholder communication</td>
+      </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>

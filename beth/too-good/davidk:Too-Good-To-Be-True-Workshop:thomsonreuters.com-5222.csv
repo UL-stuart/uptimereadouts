@@ -1,0 +1,105 @@
+datetime,player,channel,message
+2025-07-31 09:26:16,UptimeLabs,online-boutique-5222,Start lvl 29 [n/a - 0]
+2025-07-31 09:27:57,PLAYER,online-boutique-5222,Clicked undefined button
+2025-07-31 09:28:04,PLAYER,online-boutique-5222,Clicked org button
+2025-07-31 09:28:08,PLAYER,online-boutique-5222,Clicked undefined button
+2025-07-31 09:30:21,PLAYER,business-comms-5222,*Incident Number INC100099:* test [n/a - 0]
+2025-07-31 09:31:31,PLAYER,online-boutique-5222,Clicked Start button
+2025-07-31 09:31:31,UptimeLabs,online-boutique-5222,":alarm_clock: - You have 25 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders. [n/a - 0]"
+2025-07-31 09:31:31,Tinus,online-boutique-5222,"Welcome our new IM @David Knapman, Happy to have you in the team. Hope you get comfortable with everyone [n/a - 0]"
+2025-07-31 09:31:37,Shay,online-boutique-5222,Welcome @David Knapman [n/a - 0]
+2025-07-31 09:31:41,Daniel,online-boutique-5222,Nice to meet you @David Knapman [n/a - 0]
+2025-07-31 09:31:50,PLAYER,online-boutique-5222,Hi all [n/a - 0]
+2025-07-31 09:31:52,Bob,online-boutique-5222,There are a few strange customer reports with the helpdesk [n/a - 0]
+2025-07-31 09:31:56,Bob,online-boutique-5222,"Apparently, the site is loading slowly [n/a - 0]"
+2025-07-31 09:32:00,Bob,online-boutique-5222,People are reporting that they can't make payments either [n/a - 0]
+2025-07-31 09:32:02,PLAYER,online-boutique-5222,Any specifics? [n/a - 0]
+2025-07-31 09:32:03,Bob,online-boutique-5222,customer_reports [n/a - 0]
+2025-07-31 09:32:07,Bob,online-boutique-5222,@David Knapman Can you check this? [n/a - 0]
+2025-07-31 09:32:29,PLAYER,business-comms-5222,*Incident Number INC100079:* Site-loading-slow [n/a - 0]
+2025-07-31 09:32:30,UptimeLabs,online-boutique-5222,:star: Incident record created [n/a - 0]
+2025-07-31 09:32:32,UptimeLabs,online-boutique-5222,:star: Send first comms in first 5 minutes [n/a - 0]
+2025-07-31 09:32:35,Bez,business-comms-5222,How many customers are affected? Are the reports coming in from all regions? [n/a - 0]
+2025-07-31 09:32:40,Daniel,online-boutique-5222,Let’s check if this is affecting users directly — maybe Bob from Support has more context? [n/a - 0]
+2025-07-31 09:32:53,PLAYER,online-boutique-5222,"Bob What regions, how many customers? [n/a - 0]"
+2025-07-31 09:32:57,Bob,online-boutique-5222,Let me gather the information for you [n/a - 0]
+2025-07-31 09:32:58,UptimeLabs,online-boutique-5222,:star: Asking questions to validate impact of the problem [n/a - 0]
+2025-07-31 09:33:02,Bob,online-boutique-5222,There are more than 300 customer reports till now [n/a - 0]
+2025-07-31 09:33:09,Bob,online-boutique-5222,"Calls are from every region, likely to be Global [n/a - 0]"
+2025-07-31 09:33:15,Bob,online-boutique-5222,There's a bunch of messages coming in. A few people saying they can't do anything on the site [n/a - 0]
+2025-07-31 09:33:20,Bob,online-boutique-5222,Let me know if you need more information [n/a - 0]
+2025-07-31 09:33:24,PLAYER,online-boutique-5222,"Daniel
+Looks like the user activity has gone to 0 [n/a - 0]"
+2025-07-31 09:33:29,UptimeLabs,online-boutique-5222,:star: Use metrics as evidence [n/a - 0]
+2025-07-31 09:34:07,PLAYER,online-boutique-5222,Daniel What was CHG89349 for? Could it be the cause? [n/a - 0]
+2025-07-31 09:34:13,UptimeLabs,online-boutique-5222,:star: Check changes done to the platform [n/a - 0]
+2025-07-31 09:34:22,Daniel,online-boutique-5222,It could be. For this i have to check the logs [n/a - 0]
+2025-07-31 09:34:31,Shay,online-boutique-5222,I will check check my changes [n/a - 0]
+2025-07-31 09:34:33,Daniel,online-boutique-5222,I am able to replicate the issue. Checking the logs now [n/a - 0]
+2025-07-31 09:34:36,Daniel,online-boutique-5222,"I see a lot of errors, most of them are context initialisation errors  [n/a - 0]"
+2025-07-31 09:34:41,Daniel,online-boutique-5222,Logs [n/a - 0]
+2025-07-31 09:34:46,Bez,business-comms-5222,"I have a stake holders meet in next 10 minutes, @David Knapman do you think this can be resolved by then?  [n/a - 0]"
+2025-07-31 09:35:08,PLAYER,online-boutique-5222,"Yeah I see similar things, cart service health stuck checking [n/a - 0]"
+2025-07-31 09:35:12,UptimeLabs,online-boutique-5222,:bulb: Hint: keep the business informed regularly [n/a - 0]
+2025-07-31 09:35:13,UptimeLabs,online-boutique-5222,:star: Reproduces the incident [n/a - 0]
+2025-07-31 09:35:31,PLAYER,business-comms-5222,Looks like all regions are affected [n/a - 0]
+2025-07-31 09:35:39,PLAYER,business-comms-5222,At least 300 reports so far [n/a - 0]
+2025-07-31 09:35:42,Bez,business-comms-5222,What's happening? I am seeing so many reports on our social media handle [n/a - 0]
+2025-07-31 09:36:14,PLAYER,online-boutique-5222,Daniel Shay Any ideas what might be causing that? [n/a - 0]
+2025-07-31 09:36:15,Daniel,online-boutique-5222,Have you checked the website? [n/a - 0]
+2025-07-31 09:36:27,PLAYER,online-boutique-5222,Yeah I'm getting 502 [n/a - 0]
+2025-07-31 09:36:49,PLAYER,business-comms-5222,"We are currently down, investigating further [n/a - 0]"
+2025-07-31 09:36:53,Shay,online-boutique-5222,Same [n/a - 0]
+2025-07-31 09:37:05,Daniel,online-boutique-5222,You're right. It looks more like something went wrong with the frontend change [n/a - 0]
+2025-07-31 09:37:25,PLAYER,online-boutique-5222,Shall we roll back to CHG8934? [n/a - 0]
+2025-07-31 09:37:30,UptimeLabs,online-boutique-5222,:star: Restoration over root cause analysis [n/a - 0]
+2025-07-31 09:37:43,PLAYER,online-boutique-5222,Or rather roll back the latest changes [n/a - 0]
+2025-07-31 09:38:03,Daniel,online-boutique-5222,"Let me look more closely into what Shay has done in this, and accordingly, we can decide to rollback or do a small fix to roll forward [n/a - 0]"
+2025-07-31 09:38:27,Bez,business-comms-5222,Why it is taking too long? [n/a - 0]
+2025-07-31 09:38:35,PLAYER,online-boutique-5222,"I don't think we have time for that, let's try and get back up and running [n/a - 0]"
+2025-07-31 09:38:39,Bez,business-comms-5222,The website being down is a big thing for us [n/a - 0]
+2025-07-31 09:38:45,Daniel,online-boutique-5222,A Frontend change caused by change CHG89349 has brought down the Frontend pods [n/a - 0]
+2025-07-31 09:38:51,Shay,online-boutique-5222,But this functionally worked when I tested [n/a - 0]
+2025-07-31 09:38:56,Daniel,online-boutique-5222,"Even if it worked in your test environment, something's behaving differently in prod, maybe a config mismatch or unhandled edge case [n/a - 0]"
+2025-07-31 09:38:59,Bez,business-comms-5222,Can you give a quick update on the status? [n/a - 0]
+2025-07-31 09:39:03,PLAYER,online-boutique-5222,Rollback CHG89349 [n/a - 0]
+2025-07-31 09:39:24,Daniel,online-boutique-5222,Shay could you please rollback your change now [n/a - 0]
+2025-07-31 09:39:26,PLAYER,business-comms-5222,"We think we've identified the cause, we're going to do a rollback now to see if that fixes it [n/a - 0]"
+2025-07-31 09:39:32,Shay,online-boutique-5222,"Sorry, I've never done a rollback in PROD before, can someone help me with the steps? [n/a - 0]"
+2025-07-31 09:39:37,Daniel,online-boutique-5222,"I will help you, @Shay. Rolling back now [n/a - 0]"
+2025-07-31 09:39:55,Daniel,online-boutique-5222,I have rollbacked Frontend:version to 10.1.0 to more stable version. Can somebody verify? [n/a - 0]
+2025-07-31 09:39:58,UptimeLabs,online-boutique-5222,"To 'verify' that the resolution has worked and to close the incident you must: 
+--Validate the fix yourself or with the team:white_check_mark: 
+--Cross check resolution with Customer Support:white_check_mark: 
+--Confirm resolution in the 'Business-comms' channel:white_check_mark:  [n/a - 0]"
+2025-07-31 09:40:08,Bez,business-comms-5222,"Where exactly is the issue? With every minute down, we are losing reputation as well [n/a - 0]"
+2025-07-31 09:40:11,PLAYER,online-boutique-5222,Daniel Shay Can you test the site [n/a - 0]
+2025-07-31 09:40:17,UptimeLabs,online-boutique-5222,:star: Cross checking resolution with team [n/a - 0]
+2025-07-31 09:40:28,PLAYER,online-boutique-5222,Daniel Can you monitor the logs [n/a - 0]
+2025-07-31 09:40:40,PLAYER,business-comms-5222,"Roll back complete, checking if it's resolved now [n/a - 0]"
+2025-07-31 09:40:42,Shay,online-boutique-5222,Yes website is back again [n/a - 0]
+2025-07-31 09:40:50,Daniel,online-boutique-5222,Sure [n/a - 0]
+2025-07-31 09:40:59,UptimeLabs,online-boutique-5222,:bulb: Cross check resolution with stakeholders [n/a - 0]
+2025-07-31 09:41:07,PLAYER,online-boutique-5222,Yeah I'm seeing it's back for me [n/a - 0]
+2025-07-31 09:41:12,UptimeLabs,online-boutique-5222,:star: Validate the fix [n/a - 0]
+2025-07-31 09:41:15,PLAYER,online-boutique-5222,Bob Anything from the customer side? [n/a - 0]
+2025-07-31 09:41:24,PLAYER,online-boutique-5222,We appear to be back up and running [n/a - 0]
+2025-07-31 09:41:27,Bez,business-comms-5222,Please update me once you're sure [n/a - 0]
+2025-07-31 09:41:48,Bob,online-boutique-5222,Metrics are going up and no reports in last minute [n/a - 0]
+2025-07-31 09:42:10,PLAYER,online-boutique-5222,Daniel Anything wrong with the logs? [n/a - 0]
+2025-07-31 09:42:17,PLAYER,online-boutique-5222,Or do we think we're resolved? [n/a - 0]
+2025-07-31 09:42:19,Daniel,online-boutique-5222,Logs are looking normal and healthy after rollback [n/a - 0]
+2025-07-31 09:42:32,PLAYER,online-boutique-5222,Perfect thank you [n/a - 0]
+2025-07-31 09:42:50,Daniel,online-boutique-5222,Can we consider the incident closed now? [n/a - 0]
+2025-07-31 09:43:03,Daniel,online-boutique-5222,It's definitely working again! [n/a - 0]
+2025-07-31 09:43:05,PLAYER,online-boutique-5222,"Yes, just giving an update to the business coms [n/a - 0]"
+2025-07-31 09:43:08,Shay,online-boutique-5222,Wow that was intense! [n/a - 0]
+2025-07-31 09:43:10,Bez,business-comms-5222,Thanks! for resolving it quickly [n/a - 0]
+2025-07-31 09:43:13,Hamed,online-boutique-5222,Good job guys [n/a - 0]
+2025-07-31 09:43:17,Tinus,online-boutique-5222,Yes well done! that could have gone much worse so props to everyone [n/a - 0]
+2025-07-31 09:43:17,PLAYER,business-comms-5222,"Bez We are back up, we're seeing no customer reports of issues and the site is loading acrros all regions [n/a - 0]"
+2025-07-31 09:43:21,Tinus,online-boutique-5222,We will have a Post-Incident Review (PIR) to understand what happened [n/a - 0]
+2025-07-31 09:43:23,UptimeLabs,online-boutique-5222,:star: Confirm resolution with the business [n/a - 0]
+2025-07-31 09:43:31,UptimeLabs,online-boutique-5222,Start retro and feedback [n/a - 0]
+2025-07-31 09:43:56,PLAYER,online-boutique-5222,Clicked Start_feedback button
+2025-07-31 09:45:45,UptimeLabs,online-boutique-5222,Submission successful [n/a - 0]

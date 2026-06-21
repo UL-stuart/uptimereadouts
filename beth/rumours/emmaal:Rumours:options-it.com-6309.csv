@@ -1,0 +1,119 @@
+datetime,player,channel,message
+2025-10-15 12:03:10,tinus,online-boutique-6309,"Hi team, let's have a mood check send an emoji to describe your mood"
+2025-10-15 12:03:14,tinus,online-boutique-6309,"I'll go first, :thumbsup:"
+2025-10-15 12:03:20,tanya,online-boutique-6309,:thumbsup:
+2025-10-15 12:03:22,tinus,online-boutique-6309,I'm excited about showing off all your hard work at todays stakeholder meeting
+2025-10-15 12:03:25,daniel,online-boutique-6309,":skull: knackered, had a few too many late nights this week"
+2025-10-15 12:03:28,shay,online-boutique-6309,:rainbow:
+2025-10-15 12:03:31,hamed,online-boutique-6309,living the dream :smile:
+2025-10-15 12:03:35,bez,online-boutique-6309,:smirk: im excited to see the show too
+2025-10-15 12:03:37,tinus,online-boutique-6309,shouldn't you be prepping for the meeting 
+2025-10-15 12:03:40,bez,online-boutique-6309,:sweat_smile: i am indeed I'll leave you lot to it
+2025-10-15 12:03:42,shay,online-boutique-6309,hang in there @daniel its gonne be the weekend sooner or later :joy:
+2025-10-15 12:03:45,tinus,online-boutique-6309,I should get on with my prep too have a good day team
+2025-10-15 12:03:46,daniel,online-boutique-6309,@shay strict diet of energy drink for me today lol
+2025-10-15 12:03:49,daniel,online-boutique-6309,hope the presentation goes well @tinus
+2025-10-15 12:03:51,tanya,online-boutique-6309,:raised_hands:
+2025-10-15 12:04:07,UptimeLabs,online-boutique-6309,"Welcome to Rumours, remember communication is key to diagnose the problem.
+
+ *Use `/help` at any time for a list of useful links and commands*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin Start button"
+2025-10-15 12:04:40,PLAYER,online-boutique-6309,Clicked org button
+2025-10-15 12:05:58,PLAYER,online-boutique-6309,Clicked Start button
+2025-10-15 12:05:58,UptimeLabs,online-boutique-6309,":alarm_clock: - You have 20 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-10-15 12:06:01,tinus,online-boutique-6309,"Hey team, I'm texting from the board room - kinda embarrassing but in my demo to the board, I tried to add a pair of Aviator sunglasses to the shopping cart and I got a ?http 500?"
+2025-10-15 12:06:03,tinus,online-boutique-6309,"I've bought some time but need this be able to do this demo if we can lets get this sorted in the next 20 minutes.
+"
+2025-10-15 12:06:06,tinus,online-boutique-6309,Metrics
+2025-10-15 12:06:08,tanya,online-boutique-6309,"uh oh, those Aviators are top sellers due to the new Top Gun movie...It's size up the issue time Emma Allsopp"
+2025-10-15 12:06:11,shay,online-boutique-6309,Come on this can't be happening!
+2025-10-15 12:06:13,tinus,online-boutique-6309,"I'm in this meeting so, wont be able to help but I trust that you all can get this fixed asap, just @ me if you need anything"
+2025-10-15 12:06:16,shay,online-boutique-6309,ok looking into this now
+2025-10-15 12:06:44,PLAYER,online-boutique-6309,Hi Bob are we hearing complaints from customers?
+2025-10-15 12:06:51,Bez,online-boutique-6309,This is an important demo to investors
+2025-10-15 12:06:52,UptimeLabs,online-boutique-6309,:star: Asking questions to validate impact of the problem
+2025-10-15 12:06:58,Bob,online-boutique-6309,I'll check now
+2025-10-15 12:07:13,PLAYER,online-boutique-6309,Hi tested adding the sunglasses and it worked okay?
+2025-10-15 12:07:20,PLAYER,online-boutique-6309,can someone ese try to test this?
+2025-10-15 12:07:20,UptimeLabs,online-boutique-6309,:star: Attempt to replicate the issue
+2025-10-15 12:07:26,Bez,online-boutique-6309,Our quarterly goals depend on this meeting going well
+2025-10-15 12:07:28,UptimeLabs,online-boutique-6309,:star: Reproduces the incident
+2025-10-15 12:07:35,Bob,online-boutique-6309,I'm not getting any complaints from users
+2025-10-15 12:07:39,Shay,online-boutique-6309,Same here
+2025-10-15 12:07:51,Shay,online-boutique-6309,I added a bunch of stuff and they all checked out fine
+2025-10-15 12:07:59,PLAYER,online-boutique-6309,Thanks shay
+2025-10-15 12:08:03,Shay,online-boutique-6309,(I hope I get reimbursed lol)
+2025-10-15 12:08:11,PLAYER,online-boutique-6309,Tanya can you also please check if you can add items to check out?
+2025-10-15 12:08:17,Tanya,online-boutique-6309,I'll try now
+2025-10-15 12:08:31,Shay,online-boutique-6309,I can share the deployment list if that'll help
+2025-10-15 12:08:46,PLAYER,online-boutique-6309,yes please shay
+2025-10-15 12:08:48,Shay,online-boutique-6309,<https://uptime-labs.atlassian.net/wiki/spaces/ULPUBLIC/pages/1113292847>
+2025-10-15 12:08:53,Tanya,online-boutique-6309,All good on my end
+2025-10-15 12:09:13,Tinus,online-boutique-6309,Any luck guys I'm sweating over here
+2025-10-15 12:09:23,Tinus,online-boutique-6309,I can only stall for so long
+2025-10-15 12:09:45,PLAYER,business-comms-6309,"Tinus having an issue in meeting room adding items to cart, everyone else on team can add items fine and no complaints from customers"
+2025-10-15 12:09:51,UptimeLabs,online-boutique-6309,:star: Formally assign criticality level to the incident
+2025-10-15 12:09:53,PLAYER,business-comms-6309,issue seem to be limited to tinus
+2025-10-15 12:09:59,UptimeLabs,online-boutique-6309,:star: Qualify the problem
+2025-10-15 12:10:14,PLAYER,online-boutique-6309,- low severity - tinus cannot add items to cart
+2025-10-15 12:10:14,PLAYER,business-comms-6309,*Incident Number INC100047:* - low severity - tinus cannot add items to cart
+2025-10-15 12:10:14,UptimeLabs,online-boutique-6309,:star: Incident record created
+2025-10-15 12:10:16,UptimeLabs,online-boutique-6309,:star: Send first comms in first 5 minutes
+2025-10-15 12:10:37,Tanya,online-boutique-6309,Good shout making a ticket
+2025-10-15 12:10:44,PLAYER,online-boutique-6309,"Tinus we are not seeing any issues and can add items perfectly, can you check you are connected to wifi?"
+2025-10-15 12:10:48,Tanya,online-boutique-6309,Especially with the impact this might have on the business
+2025-10-15 12:10:55,PLAYER,online-boutique-6309,Bob any issues on customer side?
+2025-10-15 12:11:02,Tinus,online-boutique-6309,I'm connected to the internet
+2025-10-15 12:11:05,Tinus,online-boutique-6309,It worked earlier
+2025-10-15 12:11:13,Tinus,online-boutique-6309,AND it works on my phone
+2025-10-15 12:11:22,PLAYER,online-boutique-6309,Tinus are you using a personal laptop Maya is there a reason sec might be stopping this
+2025-10-15 12:11:25,Tinus,online-boutique-6309,I can share my URL if that helps
+2025-10-15 12:11:34,PLAYER,online-boutique-6309,appears to be a device issue Tinus yes please share url
+2025-10-15 12:11:39,Maya,online-boutique-6309,I'll run a check now to rule it out
+2025-10-15 12:11:51,Tinus,online-boutique-6309,<https://hipster-vtubggfb7juh7jlgwbkls4a.proxy.prod.uptimelabs.io/>
+2025-10-15 12:11:56,PLAYER,business-comms-6309,Issue appears to be limited to one device as Tinus can successfully add items on phone
+2025-10-15 12:12:13,Maya,online-boutique-6309,it's a company issued laptop but there's no restrictions placed on the device
+2025-10-15 12:12:24,PLAYER,online-boutique-6309,Thanks maya
+2025-10-15 12:12:28,Tanya,online-boutique-6309,That link works fine for me
+2025-10-15 12:12:32,PLAYER,online-boutique-6309,Tinus try using <https://hipster.prod.uptimelabs.io/cart>
+2025-10-15 12:12:58,Tinus,online-boutique-6309,Yes boss!
+2025-10-15 12:13:07,PLAYER,online-boutique-6309,Daniel do you have any ideas what this may be?
+2025-10-15 12:13:15,Tinus,online-boutique-6309,Still the same error
+2025-10-15 12:13:31,Daniel,online-boutique-6309,Hmm let's think for a moment - we know it's single user correct?
+2025-10-15 12:13:34,PLAYER,online-boutique-6309,Tinus can you restart you laptop please
+2025-10-15 12:13:44,PLAYER,online-boutique-6309,just happening to tinus and on one device
+2025-10-15 12:13:47,Tinus,online-boutique-6309,"Yeah one sec, trying now"
+2025-10-15 12:14:02,PLAYER,online-boutique-6309,issue localised to his laptop as he can add items to cart on his phone
+2025-10-15 12:14:05,PLAYER,online-boutique-6309,thanks tinus
+2025-10-15 12:14:21,PLAYER,online-boutique-6309,Bob have we heard of any customers having issues?
+2025-10-15 12:14:23,Daniel,online-boutique-6309,Have we tried clearing the cache? Since he mentioned it worked earlier
+2025-10-15 12:14:30,Bob,online-boutique-6309,No complaints to report
+2025-10-15 12:14:36,PLAYER,online-boutique-6309,Thanks bob
+2025-10-15 12:14:46,Tinus,online-boutique-6309,Computer restarted - still seeing the error
+2025-10-15 12:14:54,PLAYER,online-boutique-6309,Tinus once your laptop is back on can you clear your cache?
+2025-10-15 12:15:00,Bez,online-boutique-6309,we need to get our man back in action
+2025-10-15 12:15:06,PLAYER,business-comms-6309,Still no issues to report on customer side
+2025-10-15 12:15:14,Tinus,online-boutique-6309,I'll try it now one sec...
+2025-10-15 12:15:16,PLAYER,business-comms-6309,Issue localised to Tinus' laptop
+2025-10-15 12:15:20,PLAYER,online-boutique-6309,thanks
+2025-10-15 12:15:35,Tinus,online-boutique-6309,"Just to check, it definitely isn't change related"
+2025-10-15 12:15:44,Tinus,online-boutique-6309,It seems too easy
+2025-10-15 12:15:55,UptimeLabs,online-boutique-6309,:bulb: Use metrics as evidence
+2025-10-15 12:16:31,PLAYER,online-boutique-6309,I would suggest it is a localised issue
+2025-10-15 12:16:36,PLAYER,online-boutique-6309,on your laptop
+2025-10-15 12:16:44,Tinus,online-boutique-6309,"Oh, I see, let me try your suggestion"
+2025-10-15 12:16:56,tinus,online-boutique-6309,Damn! thats it
+2025-10-15 12:16:58,tinus,online-boutique-6309,"Great Ive got to do my presentation now, thanks for figuring this out so quickly. @daniel @shay can you look in to a cache busting solution?"
+2025-10-15 12:17:00,shay,online-boutique-6309,it was the cache! sure we can do that
+2025-10-15 12:17:02,daniel,online-boutique-6309,"no worries boss, at least its not a significat issue"
+2025-10-15 12:17:03,daniel,online-boutique-6309,good luck with the presentation!
+2025-10-15 12:17:04,tanya,online-boutique-6309,yes good luck @tinus
+2025-10-15 12:17:06,shay,online-boutique-6309,good luck @tinus!
+2025-10-15 12:17:10,PLAYER,online-boutique-6309,thanks guys!
+2025-10-15 12:17:18,UptimeLabs,online-boutique-6309,"Thank you for playing, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit I am ready when you want to start. I am ready button"
+2025-10-15 12:17:20,PLAYER,business-comms-6309,Issue resolved by clearing cache
+2025-10-15 12:17:25,PLAYER,online-boutique-6309,Clicked Start_feedback button
+2025-10-15 12:20:56,UptimeLabs,online-boutique-6309,Submission successful

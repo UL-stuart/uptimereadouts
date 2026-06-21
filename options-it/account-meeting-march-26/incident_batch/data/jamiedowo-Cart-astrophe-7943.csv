@@ -1,0 +1,206 @@
+datetime,player,channel,message
+2026-03-10 10:02:12,shay,online-boutique-7943,"Hey guys, hope you are all having a good day. just wondering if anyone would like suport on anything?"
+2026-03-10 10:02:15,daniel,online-boutique-7943,All good for now Shay. Why dont you take this time to have a look at the docs I sent to you could be a good time to upskill
+2026-03-10 10:02:17,shay,online-boutique-7943,"Good idea, thanks Daniel."
+2026-03-10 10:02:20,uptimelabs,online-boutique-7943,"Welcome to Cart-astrophe, the responsibility is on you to size up the problem.
+
+? *Use `/help` at any time for a list of useful links and commands*
+ ? *Use `/incident` to create an incident record*
+
+Once youre ready just click start to begin"
+2026-03-10 10:03:21,bob,online-boutique-7943,"Team, we have a situation. Customers are reporting the are not able to place orders."
+2026-03-10 10:03:26,shay,online-boutique-7943,Guess I will have to hold off on that reading
+2026-03-10 10:03:31,tinus,online-boutique-7943,"Yes Shay and team please make resloving this your top piroity, hopefuly we can reslove it quickly"
+2026-03-10 10:03:34,daniel,online-boutique-7943,We will get on it Tinus.
+2026-03-10 10:03:37,bob,online-boutique-7943,Ok have more detail one of the customers. They said they were putting stuff in the cart when it started to load very slowly and now the whole website is broken.
+2026-03-10 10:03:38,bob,online-boutique-7943,hope this helps.
+2026-03-10 10:03:41,tinus,online-boutique-7943,"@jamie.dow-options-it.com, as please work with the team and try and reslove this asap."
+2026-03-10 10:04:08,PLAYER,online-boutique-7943,"Hi guys - Looking at this right now. I am able to recreate the issue from my side too, i see the below error when i click on an item:
+
+rpc error: code = Unavailable desc = connection error: desc = ""transport: Error while dialing: dial tcp 172.20.112.56:7070: connect: connection refused""
+could not retrieve cart
+main.(*frontendServer).productHandler
+	/src/handlers.go:167
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2220
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/go/pkg/mod/github.com/gorilla/mux@v1.8.1/mux.go:212
+main.(*logHandler).ServeHTTP
+	/src/middleware.go:82
+main.main.ensureSessionID.func4
+	/src/middleware.go:109
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2220
+go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*middleware).serveHTTP
+	/go/pkg/mod/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.60.0/handler.go:179
+go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.NewMiddleware.func1.1
+	/go/pkg/mod/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.60.0/handler.go:67
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2220
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:3210
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:2092
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700"
+2026-03-10 10:04:29,shay,online-boutique-7943,Its happening for me aswell
+2026-03-10 10:04:53,PLAYER,online-boutique-7943,"@hamed - I can see the error message in the logs shows ""172.20.112.56:7070: connect: connection refused"" which means the connection is reaching a server, but is being actively refused - Can you provide some more information on what service/server is 172.20.112.56:7070 and investigate  "
+2026-03-10 10:04:56,uptimelabs,online-boutique-7943,:star: Facts over opinion
+2026-03-10 10:05:33,PLAYER,business-comms-7943,
+2026-03-10 10:05:33,uptimelabs,business-comms-7943,"*Incident Number INC100040:* Opening a SEV1 case due to multiple reports of users being unable to place orders on the website. Looking at this urgently, updates to follow in the next 5 minutes or sooner"
+2026-03-10 10:05:33,uptimelabs,online-boutique-7943,:star: Incident record created
+2026-03-10 10:05:59,PLAYER,online-boutique-7943,@tanya - Can you send me the most recent change logs please
+2026-03-10 10:06:00,uptimelabs,online-boutique-7943,:star: Check changes done to the platform
+2026-03-10 10:06:05,hamed,online-boutique-7943,"can you escalate through tanya first, im dealing with a client call in 2 mins"
+2026-03-10 10:06:20,shay,online-boutique-7943,"I have the change logs, 1 second"
+2026-03-10 10:06:30,PLAYER,online-boutique-7943,"Looking at the Grafana logs, orders stopped on the website at 10:04 today"
+2026-03-10 10:06:30,shay,online-boutique-7943,https://uptime-labs.atlassian.net/wiki/external/YjIzNTVmM2U0NGU5NGI1MmI1OGEyMDM5MmQ4ZmViNzE
+2026-03-10 10:06:33,uptimelabs,online-boutique-7943,:star: Qualify the problem
+2026-03-10 10:06:33,uptimelabs,online-boutique-7943,:star: Use metrics as evidence
+2026-03-10 10:06:47,bez,business-comms-7943,whats the customer impact?
+2026-03-10 10:07:09,PLAYER,online-boutique-7943,@tanya - Can you please provide more information on the 172.20.112.56:7070 service. Please respond urgently 
+2026-03-10 10:07:32,shay,online-boutique-7943,I havent heard from tanya for the past few hours
+2026-03-10 10:07:32,PLAYER,online-boutique-7943,"@hamed - This is a serious P1 affecting multiple clients, can you please prioritize this major incident "
+2026-03-10 10:07:34,uptimelabs,online-boutique-7943,:star: Escalating when required
+2026-03-10 10:07:56,shay,online-boutique-7943,we were meant to sync on my recent change but she never showed up
+2026-03-10 10:08:08,PLAYER,online-boutique-7943,@hamed  I will escalate to Tinus in the next minute if you do not confirm 
+2026-03-10 10:08:12,uptimelabs,online-boutique-7943,:star: Track actions and time box them
+2026-03-10 10:08:30,PLAYER,online-boutique-7943,@shay - Can you call Tanya's mobile please and try contact her urgently 
+2026-03-10 10:08:36,hamed,online-boutique-7943,Give me a second to reshedule this call and i will be with you in 1 min
+2026-03-10 10:08:47,PLAYER,online-boutique-7943,@bob - Can you confirm if this is impacting all users globally 
+2026-03-10 10:08:48,shay,online-boutique-7943,Yes i will contact her now
+2026-03-10 10:08:49,uptimelabs,online-boutique-7943,:star: Asking questions to validate impact of the problem
+2026-03-10 10:09:05,PLAYER,online-boutique-7943,Thanks @hamed 
+2026-03-10 10:09:09,bob,online-boutique-7943,From the looks of things this is impacting users globally
+2026-03-10 10:09:25,PLAYER,business-comms-7943,This is impacting all users globally from ordering items on the website 
+2026-03-10 10:09:28,uptimelabs,online-boutique-7943,:star: Formally assign criticality level to the incident
+2026-03-10 10:09:31,hamed,online-boutique-7943,"Ok thats sorted, how can i help? what do we know?"
+2026-03-10 10:10:00,shay,online-boutique-7943,"no response from her personal number, i cant get in contact with her"
+2026-03-10 10:10:18,PLAYER,online-boutique-7943,@hamed - I want you to provide more information on what server/service resides on the 72.20.112.56:7070 network
+2026-03-10 10:10:40,hamed,online-boutique-7943,i will take a look into this now
+2026-03-10 10:10:47,PLAYER,online-boutique-7943,"The error message says ""CONNECTION REFUSED"" which means the server is refusing the connection, so this is typically a host issue. i need you to look at the 72.20.112.56:7070 server "
+2026-03-10 10:10:49,uptimelabs,online-boutique-7943,:star: Form an effective investigation team
+2026-03-10 10:11:00,PLAYER,business-comms-7943,Hamad is looking at the server now
+2026-03-10 10:11:11,PLAYER,online-boutique-7943,@shay - Any news from Tanya?
+2026-03-10 10:11:14,uptimelabs,online-boutique-7943,:star: Manage actions and timings
+2026-03-10 10:11:23,hamed,online-boutique-7943,"Leads me to think this is a frontend issue,  i will confirm"
+2026-03-10 10:11:35,shay,online-boutique-7943,no i cant get her on the phone
+2026-03-10 10:11:54,bez,business-comms-7943,"this isnt good, do we have any theories on whats causing this?"
+2026-03-10 10:11:56,PLAYER,online-boutique-7943,"I suspect the issue is related to the below change as the error message says ""could not retrieve cart"" 
+
+Change ID: CHG89350
+
+Owner: Tanya
+
+Service: CartService
+
+Environment: PROD
+
+Version: 5.2
+
+Time Of Change: 1 hour 29 minutes ago
+
+Description: CartService new updates to cart management logic and backend database queries. Also improves cart stability issues."
+2026-03-10 10:12:00,uptimelabs,online-boutique-7943,:star: Form a working theory
+2026-03-10 10:12:28,PLAYER,online-boutique-7943,"@hamed - Can you roll back this change on Tanya's behalf asap? As she is not contactable, we are unable to validate the full scope of the change and her post checks"
+2026-03-10 10:12:31,uptimelabs,online-boutique-7943,:star: Restoration over root cause analysis
+2026-03-10 10:12:31,uptimelabs,online-boutique-7943,:star: Take command
+2026-03-10 10:12:51,PLAYER,online-boutique-7943,So i think it's safer to roll back the change - There is no guarantee that we will be able to contact her if she is not responding to our calls 
+2026-03-10 10:12:58,hamed,online-boutique-7943,i think this may be a frontend issue
+2026-03-10 10:13:14,hamed,online-boutique-7943,"i can rollback the cart service, it is connected to the frontend so it could be the issue"
+2026-03-10 10:13:21,PLAYER,business-comms-7943,"We suspect a recent change made to the cart service could be the cause. We are unable to contact the engineer who pushed this change, so can't confirm the validations teps"
+2026-03-10 10:13:25,uptimelabs,online-boutique-7943,:star: Reviewed changes
+2026-03-10 10:13:39,PLAYER,online-boutique-7943,Let's roll back Tanya's change in the next 30 seconds - I approve this 
+2026-03-10 10:13:58,hamed,online-boutique-7943,Sure i will rollback her change now
+2026-03-10 10:14:07,PLAYER,online-boutique-7943,Thank you. Please confirm once done. 
+2026-03-10 10:14:24,PLAYER,business-comms-7943,We are rolling back the recent change. Update to follow.
+2026-03-10 10:15:17,PLAYER,online-boutique-7943,Any update @hamed ?
+2026-03-10 10:15:17,hamed,online-boutique-7943,rollback is complete
+2026-03-10 10:15:25,PLAYER,online-boutique-7943,Thanks - Can you please do your own validations
+2026-03-10 10:15:35,hamed,online-boutique-7943,there doesnt seem to be any change
+2026-03-10 10:16:03,PLAYER,online-boutique-7943,That is confirmed 
+2026-03-10 10:16:19,PLAYER,online-boutique-7943,"@shay - I see your recent change made to the below, can you please review your change
+
+Change ID: CHG89351
+
+Owner: Shay
+
+Service: FrontEndService
+
+Environment: PROD
+
+Version: 5.5
+
+Time Of Change: 1 hour 30 minutes ago
+
+Description: (Missing description)"
+2026-03-10 10:16:28,shay,online-boutique-7943,i will review now
+2026-03-10 10:16:33,PLAYER,online-boutique-7943,"The error logs show ""main.(*frontendServer).productHandler"" so this is my concern "
+2026-03-10 10:17:06,PLAYER,online-boutique-7943,@hamed how are your checks of the 172.20.112.56:7070 server going? We really need you to validate those details in the next 30 seconds
+2026-03-10 10:17:07,shay,online-boutique-7943,"Tanya gave me code to change the ‘Cart_Update’ function within my frontend change, this is what we were meant to sync on as im not familiar with the code she gave"
+2026-03-10 10:17:23,PLAYER,online-boutique-7943,"@shay In that case, let's roll back your change as we can not contact her"
+2026-03-10 10:17:32,shay,online-boutique-7943,Rolling back CHG89351:FrontEndService now... 
+2026-03-10 10:17:39,PLAYER,business-comms-7943,"Roll back complete, but we continue to see issues. We are looking at other recent changes. Updates to follow. "
+2026-03-10 10:17:46,PLAYER,online-boutique-7943,Please confirm once done.
+2026-03-10 10:17:52,shay,online-boutique-7943,Rollback is complete
+2026-03-10 10:18:08,PLAYER,online-boutique-7943,Please validate
+2026-03-10 10:18:17,hamed,online-boutique-7943,"I'm monitoring the dashboards and i can see issues with the cart redis now, im looking into this"
+2026-03-10 10:18:32,PLAYER,online-boutique-7943,"Ok, i see a new error now ""502 Bad Gateway
+nginx/1.29.5"""
+2026-03-10 10:18:35,uptimelabs,online-boutique-7943,:star: Reproduces the incident
+2026-03-10 10:18:42,PLAYER,online-boutique-7943,@hamed - Please confirm your findings in the next minute
+2026-03-10 10:18:43,shay,online-boutique-7943,yes seems that cart redis is impacted
+2026-03-10 10:19:07,daniel,online-boutique-7943,I have helped tanya on redis before i can take a look
+2026-03-10 10:19:11,hamed,online-boutique-7943,thankls daniel
+2026-03-10 10:19:15,PLAYER,online-boutique-7943,"@hamed - Can we roll back that change?
+
+Change ID: CHG89349
+
+Owner: Tanya
+
+Service: RedisCache
+
+Environment: PROD
+
+Version: 3.6
+
+Time Of Change: 1 hour 29 minutes ago
+
+Description: Deployment of RedisCache including caching adjustments to support new cart logic.
+
+"
+2026-03-10 10:19:29,PLAYER,online-boutique-7943,@hamed please roll back the change now - i approve this
+2026-03-10 10:19:39,PLAYER,business-comms-7943,We continue to review the recent changes
+2026-03-10 10:19:57,daniel,online-boutique-7943,"Ok i see the issue, the cart update function shay was talking about must have been important to the cart redis and service, so this explains why it is down now"
+2026-03-10 10:20:22,daniel,online-boutique-7943,"we needed to rollback both changes in cart service and redis before rolling back frontend, i can get on that now"
+2026-03-10 10:20:24,PLAYER,online-boutique-7943,"Ok, let's roll back all related changes made for this update - @hamed can you please process this"
+2026-03-10 10:20:35,PLAYER,online-boutique-7943,Please update me in the next 30 seconds
+2026-03-10 10:20:37,daniel,online-boutique-7943,working on that now
+2026-03-10 10:20:46,hamed,online-boutique-7943,i will work with daniel
+2026-03-10 10:20:53,PLAYER,online-boutique-7943,"Please, keep me updated."
+2026-03-10 10:21:04,daniel,online-boutique-7943,Changes have been sucessfully rolledback
+2026-03-10 10:21:05,PLAYER,business-comms-7943,Hamad and Daniel are working together to roll back related changes made today
+2026-03-10 10:21:08,tinus,online-boutique-7943,Are we sure its fixed?
+2026-03-10 10:21:11,tinus,online-boutique-7943,@jamie.dow-options-it.com what do you think?
+2026-03-10 10:21:26,PLAYER,online-boutique-7943,It appears broken to me - Can you validate
+2026-03-10 10:21:42,PLAYER,online-boutique-7943,I see the same issue 
+2026-03-10 10:21:59,daniel,online-boutique-7943,let me refresh the services
+2026-03-10 10:22:10,daniel,online-boutique-7943,that should be us
+2026-03-10 10:22:24,PLAYER,online-boutique-7943,Issue looks resolved
+2026-03-10 10:22:28,PLAYER,online-boutique-7943,@bob 
+2026-03-10 10:22:30,PLAYER,online-boutique-7943,@bob
+2026-03-10 10:22:32,hamed,online-boutique-7943,Yes i can confirm there are no more issues on my end
+2026-03-10 10:22:35,bob,online-boutique-7943,nice
+2026-03-10 10:22:37,PLAYER,online-boutique-7943,please validate with customer reports
+2026-03-10 10:22:39,uptimelabs,online-boutique-7943,:star: Cross check resolution with stakeholders
+2026-03-10 10:22:45,bob,online-boutique-7943,i will put out a message asking them now
+2026-03-10 10:22:55,PLAYER,business-comms-7943,"This issue is now resolved, the recent changes were rolled back and we restarted the services "
+2026-03-10 10:22:57,uptimelabs,online-boutique-7943,:star: Confirm resolution with the business
+2026-03-10 10:23:02,bob,online-boutique-7943,"i can see the sales coming through, and customers are saying they have no issues"
+2026-03-10 10:23:08,bez,online-boutique-7943,Great work guys
+2026-03-10 10:23:11,PLAYER,online-boutique-7943,Looks fixed now
+2026-03-10 10:23:13,tinus,online-boutique-7943,Yeah guys great team effort
+2026-03-10 10:23:21,uptimelabs,online-boutique-7943,"Thank you for playing Cart-astrophe, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit start when you are ready."
+2026-03-10 10:23:33,uptimelabs,online-boutique-7943,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/9/7943/feedback"

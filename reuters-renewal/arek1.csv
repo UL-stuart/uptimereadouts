@@ -1,0 +1,86 @@
+index,datetime,player,channel,message
+0,2025-05-27 14:06:11,Bez,incident-4361,Hey everyone. I'm pumped today about our flash sale
+1,2025-05-27 14:06:17,Bez,incident-4361,You know it's been 53 years since the Beatles released Abbey Road right? My favourite album
+2,2025-05-27 14:06:22,Tanya,incident-4361,53 years already?? Wow that makes me feel old...
+3,2025-05-27 14:06:27,Bez,incident-4361,Indeed! We're celebrating today by promoting a flash sale on retro items from 1969
+4,2025-05-27 14:06:33,Bez,incident-4361,I re-watched Paul McCartney's Glastonbury set last night to get in the mood!
+6,2025-05-27 14:08:10,arek.jadwiszczak676,business-comms-4361,"*Incident Number INC100076:* test sev1"
+7,2025-05-27 14:09:29,PLAYER,incident-4361,Clicked undefined button
+8,2025-05-27 14:09:35,PLAYER,incident-4361,Clicked org button
+9,2025-05-27 14:11:36,PLAYER,incident-4361,Clicked Start button
+11,2025-05-27 14:11:37,Tinus,incident-4361,That sounds great Bez. Huge Beatles fan myself here
+12,2025-05-27 14:11:42,Tinus,incident-4361,We've just deployed a couple of changes into prod earlier but we should be all good
+13,2025-05-27 14:11:47,Tinus,incident-4361,We're a step closer to allowing folks to pay for items from the 1960s with Bitcoin thanks to Daniel!
+14,2025-05-27 14:11:50,Daniel,incident-4361,Think of it like time travelling!
+15,2025-05-27 14:11:54,Bez,incident-4361,Wow good work Daniel! Looking forward to seeing it in action in prod
+16,2025-05-27 14:11:58,Tinus,incident-4361,How's the test-driven development going?
+17,2025-05-27 14:12:03,Daniel,incident-4361,TDDs going well. We are as solid as a rock! Though don't ask me what the Liskov Substitution Principle is...
+18,2025-05-27 14:12:10,Shay,incident-4361,"erm - funny you should say that Daniel, I'm just testing my checkout service change in prod and I can't complete the payment - something's up"
+19,2025-05-27 14:12:17,Shay,incident-4361,"I hope my checkout service change is all good. Can someone check its not just me? And before you ask, yes I've cleared my cookies"
+20,2025-05-27 14:12:23,Tanya,incident-4361,Sorry Daniel it's not looking good on my end either
+21,2025-05-27 14:12:26,Tinus,incident-4361,Uh oh...here we go again
+22,2025-05-27 14:12:30,Tinus,incident-4361,"@Arek  Jadwiszczak can you ""Size up the Issue"" please and keep us informed"
+23,2025-05-27 14:12:32,Bob,incident-4361,From what I can see it looks like we are still getting orders through
+24,2025-05-27 14:12:32,PLAYER,incident-4361,Hello all major incident management here
+25,2025-05-27 14:12:40,Daniel,incident-4361,"It can't be payments service, the new code shouldn't be invoked yet"
+26,2025-05-27 14:12:46,Daniel,incident-4361,@Arek  Jadwiszczak it's worth having a look at the checkout service change first
+27,2025-05-27 14:12:51,Shay,incident-4361,@Arek  Jadwiszczak what should I look at first?
+28,2025-05-27 14:13:09,Bez,incident-4361,Get this sorted ASAP!!!
+29,2025-05-27 14:13:16,PLAYER,incident-4361,What were these? deployed a couple of changes into prod earlier
+30,2025-05-27 14:13:17,Daniel,incident-4361,@Bob it could be UK only issue? I can also see orders coming through
+31,2025-05-27 14:13:56,PLAYER,incident-4361,Tinus what were these? deployed a couple of changes into prod earlier
+34,2025-05-27 14:14:19,Daniel,incident-4361,"There were few deplyments on Prod this morning, One of checkout, Payments and ad service"
+35,2025-05-27 14:14:39,Tinus,incident-4361,Can you check with people who deployed it ?\\
+37,2025-05-27 14:15:14,PLAYER,incident-4361,Daniel what was done with this change: One of checkout?
+38,2025-05-27 14:15:21,PLAYER,incident-4361,And can it be reverted
+39,2025-05-27 14:15:24,Daniel,incident-4361,"I am a bit confused, do we know what's the impact of the issue ?"
+40,2025-05-27 14:15:29,Daniel,incident-4361,Do you see the issue Arek ?
+41,2025-05-27 14:16:37,Daniel,incident-4361,Can you create an incident @Arek - I need it to login to servers
+43,2025-05-27 14:16:47,PLAYER,incident-4361,"Daniel no i dont see the problem yet, that is why i am trying to find out what was done with the change: One of checkout who can tell me this>"
+44,2025-05-27 14:17:33,Bob,incident-4361,Hi Arek - There are a lot of reports that Uk is unable to complete payments - can you check it asap ?
+45,2025-05-27 14:17:48,Daniel,incident-4361,"Check out change was done by Shay - @Shay, can you check it"
+46,2025-05-27 14:17:54,Shay,incident-4361,"Yes, i am on it"
+47,2025-05-27 14:18:26,PLAYER,incident-4361,Clicked org button
+48,2025-05-27 14:18:31,Shay,incident-4361,I see a lot of errors from payments app - The errors started after payments change
+49,2025-05-27 14:19:36,Bob,incident-4361,"Arek , are you there?"
+50,2025-05-27 14:19:44,PLAYER,incident-4361,Shay can the change be reverted? One of checkout
+51,2025-05-27 14:19:51,PLAYER,incident-4361,Bob yes
+52,2025-05-27 14:20:10,PLAYER,incident-4361,Shay? can you answer please?
+54,2025-05-27 14:20:26,Shay,incident-4361,"If you insist, let me rollback Checkout change - but i think its payments issue"
+55,2025-05-27 14:20:31,Shay,incident-4361,Rolling back the change now
+56,2025-05-27 14:20:49,Bob,incident-4361,Any ETA for resolution ?
+57,2025-05-27 14:21:00,PLAYER,incident-4361,Shay i meant the Payments change rollback that
+58,2025-05-27 14:21:03,Shay,incident-4361,I have rolled back the change - i still see same errors
+59,2025-05-27 14:21:10,Bez,business-comms-4361,"Is there an incident?"
+60,2025-05-27 14:21:21,Shay,incident-4361,Payments change was done by Dan -
+61,2025-05-27 14:21:21,Bez,business-comms-4361,"Do we have a ticket for it?"
+63,2025-05-27 14:21:56,PLAYER,incident-4361,Dan Dickinson Can you join the call please
+64,2025-05-27 14:22:17,Daniel,incident-4361,Hi Arek
+65,2025-05-27 14:22:20,PLAYER,incident-4361,Dan Dickinson can you rollback Payments change
+66,2025-05-27 14:22:34,Daniel,incident-4361,What's the issue?
+67,2025-05-27 14:22:44,Daniel,incident-4361,i have done all test cases and it was alright
+69,2025-05-27 14:22:59,Daniel,incident-4361,more over my new code shouldn't be invoked yet
+70,2025-05-27 14:23:13,Daniel,incident-4361,Do we have an incident ?
+71,2025-05-27 14:23:16,arek.jadwiszczak676,business-comms-4361,"*Incident Number INC100066:* Payments not getting through"
+75,2025-05-27 14:23:49,arek.jadwiszczak676,business-comms-4361,"*Incident Number INC100093:* Sev 1"
+77,2025-05-27 14:24:46,PLAYER,business-comms-4361,"/ incident *INC100066 sev 1*"
+78,2025-05-27 14:24:46,Bez,business-comms-4361,"Is this a global issue?"
+79,2025-05-27 14:25:07,PLAYER,business-comms-4361,"Bez seems to only be for UK"
+80,2025-05-27 14:25:25,PLAYER,business-comms-4361,"Bez *INC100066*"
+82,2025-05-27 14:27:01,Tanya,incident-4361,I see payments app ha sissues after the change
+83,2025-05-27 14:27:16,Tanya,incident-4361,we should rollback the change immediately
+84,2025-05-27 14:27:34,Daniel,incident-4361,"Well, i don't think so"
+86,2025-05-27 14:27:43,PLAYER,incident-4361,Dan Dickinson have you rolled back the Payment change as i have asked? are you able to?
+88,2025-05-27 14:28:06,Daniel,incident-4361,"do  you insist me to roll back ? as i said, payments shouldn't be th eproblem"
+89,2025-05-27 14:28:18,Daniel,incident-4361,but i will roll back since you are asking me to
+90,2025-05-27 14:28:37,PLAYER,incident-4361,Daniel then what is the problem according to you?
+91,2025-05-27 14:28:47,Daniel,incident-4361,Rolling back the change now
+92,2025-05-27 14:29:01,PLAYER,incident-4361,Daniel stop
+94,2025-05-27 14:29:05,Daniel,incident-4361,Issue may be on dependant service
+95,2025-05-27 14:29:33,Tanya,incident-4361,"It's the payments app , i can see payments is down after Dan's change"
+97,2025-05-27 14:29:48,Shay,incident-4361,I see paymnets isn't responding to any system calls
+98,2025-05-27 14:29:54,PLAYER,incident-4361,Daniel can you provide me with evidentce that the issue is not with they payments
+99,2025-05-27 14:29:57,Tanya,incident-4361,we should roll back Payments change
+100,2025-05-27 14:30:10,Daniel,incident-4361,I don't see one
+101,2025-05-27 14:30:28,Daniel,incident-4361,lets roll back
+103,2025-05-27 14:37:41,PLAYER,incident-4361,Clicked Start_feedback button\n

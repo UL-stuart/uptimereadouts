@@ -1,0 +1,78 @@
+datetime,player,channel,message
+2025-10-08 13:33:16,tinus,online-boutique-6226,"Hi team, let's have a mood check send an emoji to describe your mood"
+2025-10-08 13:33:20,tinus,online-boutique-6226,"I'll go first, :thumbsup:"
+2025-10-08 13:33:26,tanya,online-boutique-6226,:thumbsup:
+2025-10-08 13:33:28,tinus,online-boutique-6226,I'm excited about showing off all your hard work at todays stakeholder meeting
+2025-10-08 13:33:31,daniel,online-boutique-6226,":skull: knackered, had a few too many late nights this week"
+2025-10-08 13:33:34,shay,online-boutique-6226,:rainbow:
+2025-10-08 13:33:38,hamed,online-boutique-6226,living the dream :smile:
+2025-10-08 13:33:41,bez,online-boutique-6226,:smirk: im excited to see the show too
+2025-10-08 13:33:43,tinus,online-boutique-6226,shouldn't you be prepping for the meeting 
+2025-10-08 13:33:47,bez,online-boutique-6226,:sweat_smile: i am indeed I'll leave you lot to it
+2025-10-08 13:33:49,shay,online-boutique-6226,hang in there @daniel its gonne be the weekend sooner or later :joy:
+2025-10-08 13:33:52,tinus,online-boutique-6226,I should get on with my prep too have a good day team
+2025-10-08 13:33:53,daniel,online-boutique-6226,@shay strict diet of energy drink for me today lol
+2025-10-08 13:33:56,daniel,online-boutique-6226,hope the presentation goes well @tinus
+2025-10-08 13:33:58,tanya,online-boutique-6226,:raised_hands:
+2025-10-08 13:34:13,UptimeLabs,online-boutique-6226,"Welcome to Rumours, remember communication is key to diagnose the problem.
+
+ *Use `/help` at any time for a list of useful links and commands*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin Start button"
+2025-10-08 13:35:35,PLAYER,online-boutique-6226,Clicked Start button
+2025-10-08 13:35:35,UptimeLabs,online-boutique-6226,":alarm_clock: - You have 20 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-10-08 13:35:38,tinus,online-boutique-6226,"Hey team, I'm texting from the board room - kinda embarrassing but in my demo to the board, I tried to add a pair of Aviator sunglasses to the shopping cart and I got a ?http 500?"
+2025-10-08 13:35:40,tinus,online-boutique-6226,"I've bought some time but need this be able to do this demo if we can lets get this sorted in the next 20 minutes.
+"
+2025-10-08 13:35:42,tinus,online-boutique-6226,Metrics
+2025-10-08 13:35:46,tanya,online-boutique-6226,"uh oh, those Aviators are top sellers due to the new Top Gun movie...It's size up the issue time Praveen Sadul"
+2025-10-08 13:35:48,shay,online-boutique-6226,Come on this can't be happening!
+2025-10-08 13:35:50,tinus,online-boutique-6226,"I'm in this meeting so, wont be able to help but I trust that you all can get this fixed asap, just @ me if you need anything"
+2025-10-08 13:35:53,shay,online-boutique-6226,ok looking into this now
+2025-10-08 13:36:32,Shay,online-boutique-6226,"I placed an order for the glasses, no issues"
+2025-10-08 13:37:05,Bez,online-boutique-6226,We need to get Tinus back in action - this meeting impacts our next round of investment
+2025-10-08 13:37:18,Tinus,online-boutique-6226,I'll try stalling
+2025-10-08 13:38:04,UptimeLabs,online-boutique-6226,:bulb: Hint: Who in the organisation can help you understand how customers are affected?
+2025-10-08 13:38:57,Tinus,online-boutique-6226,Any fixes yet?
+2025-10-08 13:40:22,Tinus,online-boutique-6226,Is anyone working on the issue?
+2025-10-08 13:41:14,PLAYER,online-boutique-6226,Hi Tinus checking on it . can you please let me know its prod env ?
+2025-10-08 13:41:40,Tinus,online-boutique-6226,I'm just searching our website on my laptop to demo the site
+2025-10-08 13:41:45,Tinus,online-boutique-6226,"All I know is when I click add to cart I get the above error regardless of product, users must be flooding us with reports not?"
+2025-10-08 13:42:09,Tinus,online-boutique-6226,here's the URL: <https://hipster-v4zjquvraaydeuyqqrpeb2k.proxy.prod.uptimelabs.io/>
+2025-10-08 13:42:18,PLAYER,online-boutique-6226,I am checking costumers impact also
+2025-10-08 13:43:32,PLAYER,online-boutique-6226,Hi Bob can we know any customer impact or any customer complains ?
+2025-10-08 13:43:34,Bez,online-boutique-6226,What's the latest - the business comms channel is very quiet - I have worried shareholders
+2025-10-08 13:43:48,Bob,online-boutique-6226,I'll compile my reports now...
+2025-10-08 13:44:23,Bob,online-boutique-6226,No user complaints on my end - do the metrics suggest otherwise?
+2025-10-08 13:44:56,Bez,online-boutique-6226,We don't even have a ticket?! This demo flopping will cause us to miss our quarterly financial targets!!!
+2025-10-08 13:45:38,UptimeLabs,online-boutique-6226,":bulb: Hint: Form strategy for troubleshooting, use whole team to execute"
+2025-10-08 13:46:09,Tinus,online-boutique-6226,Any solutions yet? I don't know how much longer I can stall
+2025-10-08 13:48:15,PLAYER,business-comms-6226,incident P2 adding a pair of Aviator sunglasses to the shopping cart giving error
+2025-10-08 13:48:20,UptimeLabs,online-boutique-6226,:star: Incident record created
+2025-10-08 13:48:21,UptimeLabs,online-boutique-6226,:star: Formally assign criticality level to the incident
+2025-10-08 13:48:24,UptimeLabs,online-boutique-6226,:star: Formally assign criticality level to the incident
+2025-10-08 13:50:08,PLAYER,online-boutique-6226,"hi Tinus will analyzing issue.. we don't see  user complaints, i am able to add pair of aviator in shopping cart .. we are analyzing issue"
+2025-10-08 13:50:16,UptimeLabs,online-boutique-6226,:star: Attempt to replicate the issue
+2025-10-08 13:50:23,Tinus,online-boutique-6226,Have we got the team online to investigate what could be happening on my end?
+2025-10-08 13:50:53,Shay,online-boutique-6226,"I can help! I see the incident ticket now, i didn't realise this was still ongoing"
+2025-10-08 13:51:24,Shay,online-boutique-6226,Daniel and Tanya should also be online also if you need more seniors
+2025-10-08 13:51:32,PLAYER,online-boutique-6226,hi Tinus can you please try once again ?
+2025-10-08 13:51:37,UptimeLabs,online-boutique-6226,:alarm_clock: - You have less than 4 minutes. You can type `/help` if you need any reminders.
+2025-10-08 13:51:50,Tinus,online-boutique-6226,Still getting an error
+2025-10-08 13:52:10,PLAYER,online-boutique-6226,Hi Daniel can you please see if there any shopping cart service issues ?
+2025-10-08 13:52:17,UptimeLabs,online-boutique-6226,:star: Reproduces the incident
+2025-10-08 13:52:43,Daniel,online-boutique-6226,"Order confirmations graph hasn't dropped since Tinus reported the issue, are we treating this as single user or multi user"
+2025-10-08 13:52:56,Daniel,online-boutique-6226,Is we had a failure in our cart service it would have a wider impact
+2025-10-08 13:53:23,Daniel,online-boutique-6226,Also logs look clear and the checkout service is performing as normal
+2025-10-08 13:53:27,PLAYER,online-boutique-6226,Hi Tinus can you please use - <https://hipster.prod.uptimelabs.io/>
+2025-10-08 13:53:35,Tinus,online-boutique-6226,Okay trying now...
+2025-10-08 13:53:37,UptimeLabs,online-boutique-6226,:alarm_clock: - You have less than 2 minutes. You can type `/help` if you need any reminders.
+2025-10-08 13:53:53,Tinus,online-boutique-6226,No luck - still the same error
+2025-10-08 13:54:06,Tinus,online-boutique-6226,"I have no issues on my phone, just my computer"
+2025-10-08 13:54:15,Tinus,online-boutique-6226,Which worked fine earlier today
+2025-10-08 13:55:09,PLAYER,online-boutique-6226,hi Shay Daniel any changes done recently ?
+2025-10-08 13:55:17,Shay,online-boutique-6226,Here's the list: <https://uptime-labs.atlassian.net/wiki/spaces/ULPUBLIC/pages/1113292847>
+2025-10-08 13:55:47,UptimeLabs,online-boutique-6226,"Thank you for playing, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit I am ready when you want to start. I am ready button"
+2025-10-08 13:56:15,PLAYER,online-boutique-6226,Clicked Start_feedback button

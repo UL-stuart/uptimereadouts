@@ -1,0 +1,157 @@
+datetime,player,channel,message
+2025-11-18 12:10:03,Bez,online-boutique-6809,Hey team!:rocket: Can you believe it's been 8 fantastic years for Online Boutique?
+2025-11-18 12:10:07,Bez,online-boutique-6809,"Before we dive into anniversary celebrations, let's give a warm welcome to Maya, our new Security Analyst. She's got 5 years of cybersecurity expertise under her belt! :clap: "
+2025-11-18 12:10:12,Maya,online-boutique-6809,"Hi everyone! :raised_hand_with_fingers_splayed: Thrilled to be here, especially on such a special occasion. Let's make Online Boutique even successful and secure together!"
+2025-11-18 12:10:15,Tinus,online-boutique-6809,"Welcome, Maya! Your experience will elevate our cybersecurity efforts."
+2025-11-18 12:10:19,Tanya,online-boutique-6809,"Excited to have you, Maya! Bez has been very excited to have you on the team."
+2025-11-18 12:10:22,Daniel,online-boutique-6809,"Impressive! Eager to learn from you, Maya."
+2025-11-18 12:10:26,Shay,online-boutique-6809,":+1: Welcome Maya, pleasure meeting you."
+2025-11-18 12:10:29,Bob,online-boutique-6809,Hi Maya! Your experience is top-notch. Cheers to you and to Online Boutique's 8-year anniversary! :partying_face: :tada:
+2025-11-18 12:10:33,Maya,online-boutique-6809,Thanks for the warm welcome! Excited for the celebration and our anniversary party.
+2025-11-18 12:10:43,UptimeLabs,online-boutique-6809,"Welcome to The Switch, the responsibility is on you to size up the problem.
+
+? *Use `/help` at any time for a list of useful links and commands*
+ ? *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin Start button"
+2025-11-18 12:11:16,PLAYER,online-boutique-6809,Clicked undefined button
+2025-11-18 12:11:17,PLAYER,online-boutique-6809,Clicked undefined button
+2025-11-18 12:11:20,PLAYER,online-boutique-6809,Clicked org button
+2025-11-18 12:11:41,PLAYER,online-boutique-6809,Clicked Start button
+2025-11-18 12:11:41,UptimeLabs,online-boutique-6809,":alarm_clock: - You have 25 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-11-18 12:11:42,Bez,online-boutique-6809,We are all so glad you have joined us Maya
+2025-11-18 12:11:44,Tinus,online-boutique-6809,"Hold on, team. Quick check-in. Is anyone else experiencing internet problems or slow connectivity?"
+2025-11-18 12:11:47,Shay,online-boutique-6809,"Internet's definitely sluggish, was loading up github and it took ages to load"
+2025-11-18 12:11:50,Bez,online-boutique-6809,Perhaps it could be due to the increase of sales we have been having with this anniversary sale?
+2025-11-18 12:11:52,Hamed,online-boutique-6809,"Hey team, we've seen some weird traffic from our data centre network in the last couple of days, it's been mostly minor but never as bad compared to now although"
+2025-11-18 12:11:57,Tanya,online-boutique-6809,Hamed and I will have been monitoring outbound traffic. Checking for anomalies again.
+2025-11-18 12:12:03,Daniel,online-boutique-6809,I will try to place an order and check the platform.
+2025-11-18 12:12:13,Shay,online-boutique-6809,Just ran a test on my internet speed.
+2025-11-18 12:12:16,Shay,online-boutique-6809,Internet Speed Test
+2025-11-18 12:12:42,PLAYER,online-boutique-6809,Bob What is scope of impact and regions affected?
+2025-11-18 12:12:44,Daniel,online-boutique-6809,For me its working fine
+2025-11-18 12:12:49,UptimeLabs,online-boutique-6809,:star: Asking questions to validate impact of the problem
+2025-11-18 12:12:51,Bob,online-boutique-6809,Sure let me check
+2025-11-18 12:13:15,Bob,online-boutique-6809,"Some customers are placing orders without issues, while others report long load times"
+2025-11-18 12:13:25,Bob,online-boutique-6809,"Issues reported by customers are widespread, not limited to any specific region"
+2025-11-18 12:14:04,Bez,business-comms-6809,Whats going on ? I've heard few people are experiencing some issue on the website
+2025-11-18 12:14:22,Bez,business-comms-6809,Is it an internal issue or its impacting customers as well ?
+2025-11-18 12:14:51,PLAYER,online-boutique-6809,"Shay, Daniel, Tanya check your recent changes, please."
+2025-11-18 12:14:56,UptimeLabs,online-boutique-6809,:star: Reviewed changes
+2025-11-18 12:14:59,UptimeLabs,online-boutique-6809,:star: Form an effective investigation team
+2025-11-18 12:15:13,Shay,online-boutique-6809,Here are the list of changes : <https://uptime-labs.atlassian.net/wiki/external/NGRkNTNhZDVjZDUyNDU5NDk2Yjg3NzcxMTE1YjkxOTA>
+2025-11-18 12:15:18,PLAYER,online-boutique-6809,Maya can check from security pov
+2025-11-18 12:15:22,UptimeLabs,online-boutique-6809,:star: Know your team and their roles
+2025-11-18 12:15:35,Tanya,online-boutique-6809,I'm experiencing slow loading times
+2025-11-18 12:16:08,Shay,online-boutique-6809,"I'm not even able to open up github, internal links"
+2025-11-18 12:16:31,Maya,online-boutique-6809,Why do you think it could be a security issue ?
+2025-11-18 12:16:43,Maya,online-boutique-6809,This looks like a network issue
+2025-11-18 12:17:09,Daniel,online-boutique-6809,Do we know the issue start time ?
+2025-11-18 12:17:11,PLAYER,online-boutique-6809,Tanya Can we bring in network team
+2025-11-18 12:17:19,Tanya,online-boutique-6809,I'm on it
+2025-11-18 12:17:43,PLAYER,online-boutique-6809,Maya just wanted to cover all grounds
+2025-11-18 12:17:53,Tanya,online-boutique-6809,There is a spike in outbound connections in the edge router and the origin IP block 10.50.0.0/24. That IP range is the same as the IP block the frontend and payments are hosted on
+2025-11-18 12:18:17,Maya,online-boutique-6809,Ok i'll check my dashboard
+2025-11-18 12:18:23,PLAYER,online-boutique-6809,Shay and Daniel in the mean time try coordinate and try to pin point issue by back tracking
+2025-11-18 12:18:46,Daniel,online-boutique-6809,Can we get to know since when customers are experiencing the longer loading times ?
+2025-11-18 12:18:58,PLAYER,online-boutique-6809,Summary: There is a spike in outbound connections in the edge router and the origin IP block 10.50.0.0/24. That IP range is the same as the IP block the frontend and payments are hosted on
+2025-11-18 12:19:02,UptimeLabs,online-boutique-6809,:star: Qualify the problem
+2025-11-18 12:19:09,PLAYER,business-comms-6809,Summar as of now: There is a spike in outbound connections in the edge router and the origin IP block 10.50.0.0/24. That IP range is the same as the IP block the frontend and payments are hosted on
+2025-11-18 12:19:20,Daniel,online-boutique-6809,So that we can verify if its due to change or actually infra level issue
+2025-11-18 12:19:36,PLAYER,business-comms-6809,"Bez team is working on pin pointing the issue, will keep you updated"
+2025-11-18 12:19:39,Bez,business-comms-6809,How many reports have we received so far ?
+2025-11-18 12:20:08,PLAYER,online-boutique-6809,Bob how many reports so for?
+2025-11-18 12:20:26,Bob,online-boutique-6809,130+ reports and this spike has started 2 weeks back
+2025-11-18 12:20:36,PLAYER,business-comms-6809,130+ reports and this spike has started 2 weeks back
+2025-11-18 12:20:47,Bob,online-boutique-6809,Though it was not many in the beginning
+2025-11-18 12:20:52,Daniel,online-boutique-6809,"We are seeing the drop in response time over the last 2 week , today it spiked up a lot"
+2025-11-18 12:21:07,PLAYER,online-boutique-6809,Shay check from changes pov and Tanya please check from infra pov
+2025-11-18 12:21:39,PLAYER,online-boutique-6809,Daniel you do you and try to figure out
+2025-11-18 12:21:46,Maya,online-boutique-6809,I'm not seeing any alert on my dashboard. Except for the fact why we have sudden spike in outbound connections
+2025-11-18 12:22:04,Shay,online-boutique-6809,I dont think change will be causing it
+2025-11-18 12:22:18,Shay,online-boutique-6809,Since the issue started 2 weeks back
+2025-11-18 12:22:46,Tinus,business-comms-6809,Why there is a spike from this IP range ?
+2025-11-18 12:23:14,PLAYER,online-boutique-6809,network issue sev3
+2025-11-18 12:23:14,PLAYER,business-comms-6809,*Incident Number INC100046:* network issue sev3
+2025-11-18 12:23:18,Maya,online-boutique-6809,Security scan shows issues related to our network switch. Working on identifying the exact cause
+2025-11-18 12:23:55,PLAYER,business-comms-6809,Security scan shows issues related to our network switch. Working on identifying the exact cause
+2025-11-18 12:24:04,Tanya,online-boutique-6809,I've checked the network provider and its all good
+2025-11-18 12:24:29,PLAYER,online-boutique-6809,"Maya Good catch, let's keep digging"
+2025-11-18 12:24:29,Tanya,online-boutique-6809,I'm seeing spike from the switch as well
+2025-11-18 12:24:46,PLAYER,online-boutique-6809,"Good work guys, keep digging in"
+2025-11-18 12:24:55,Maya,online-boutique-6809,I'm not entirely sure with this switch component
+2025-11-18 12:25:25,PLAYER,online-boutique-6809,"Summary as now: Seems to an issue with ""The Switch"""
+2025-11-18 12:25:30,PLAYER,business-comms-6809,"Summary as now: Seems to an issue with ""The Switch"""
+2025-11-18 12:25:40,Tanya,online-boutique-6809,Can we get Hamed on this
+2025-11-18 12:26:02,PLAYER,online-boutique-6809,Hamed S Can you please provide a hand here!
+2025-11-18 12:26:13,Hamed,online-boutique-6809,Ok i'm caught up. Seeing the summaries so far
+2025-11-18 12:26:31,Hamed,online-boutique-6809,I'm closing deep into the switch now
+2025-11-18 12:26:48,Maya,online-boutique-6809,I'm looking along with Hamed
+2025-11-18 12:27:05,Hamed,online-boutique-6809,Our investigation uncovered a critical issue: the network switch was compromised due to unpatched vulnerabilities. We have identified a BotNet in the switch and it's creating outbound connections to the outside
+2025-11-18 12:27:20,Maya,online-boutique-6809,"Found a critical issue. Our network switch was compromised due to unpatched vulnerabilities, leading to a BotNet creating DDOS attacks"
+2025-11-18 12:27:27,PLAYER,business-comms-6809,Summary as of now: Our investigation uncovered a critical issue: the network switch was compromised due to unpatched vulnerabilities. We have identified a BotNet in the switch and it's creating outbound connections to the outside
+2025-11-18 12:27:44,Bez,business-comms-6809,Is this a breach ?
+2025-11-18 12:27:59,PLAYER,online-boutique-6809,Can we fix immediately or we need time to fix this??
+2025-11-18 12:28:09,PLAYER,online-boutique-6809,Hamed S and Maya??
+2025-11-18 12:28:19,Maya,online-boutique-6809,We can try doing the restart
+2025-11-18 12:28:33,PLAYER,online-boutique-6809,"Cool, fingers crossed!!"
+2025-11-18 12:28:38,Maya,online-boutique-6809,"Though , i'm not sure if it will fix the issue"
+2025-11-18 12:29:32,PLAYER,online-boutique-6809,Hamed let's have back solution ready to follow up if restart doesn't work
+2025-11-18 12:29:36,UptimeLabs,online-boutique-6809,:star: Restoration over root cause analysis
+2025-11-18 12:29:42,Hamed,online-boutique-6809,Hang on!! Restart isn't advisable. In case of BotNet induced DDoS it might not work
+2025-11-18 12:29:51,Maya,online-boutique-6809,Your right restarting the switch isnt the best option as it might intruduce some more issues
+2025-11-18 12:29:56,Maya,online-boutique-6809,Trying to think of another solution but i'm not too familiar with the network infrastructure here at OB
+2025-11-18 12:30:01,Hamed,online-boutique-6809,No worries Maya I can send over the graph of the network infra if you wanna look at it
+2025-11-18 12:30:06,Maya,online-boutique-6809,That would be perfect @hamed
+2025-11-18 12:30:09,Hamed,online-boutique-6809,Network Diagram
+2025-11-18 12:30:13,Maya,online-boutique-6809,"Looking at the diagram now, will need a moment to figure out what to do next"
+2025-11-18 12:30:16,Maya,online-boutique-6809,Let me know if you have any suggestions in the mean time
+2025-11-18 12:30:31,Bez,business-comms-6809,Have we made sure to inform about this to Bob?
+2025-11-18 12:30:56,Bez,business-comms-6809,This info of getting DDoS attack shouldn't be conveyed to users
+2025-11-18 12:31:15,PLAYER,online-boutique-6809,"Summary as of now: Our network switch was compromised due to unpatched vulnerabilities, leading to a BotNet creating DDOS attacks
+Maya and Hamed working together for a fix"
+2025-11-18 12:31:22,PLAYER,business-comms-6809,"Summary as of now: Our network switch was compromised due to unpatched vulnerabilities, leading to a BotNet creating DDOS attacks
+Maya and Hamed working together for a fix"
+2025-11-18 12:31:39,Bez,business-comms-6809,"Great, keep me posted"
+2025-11-18 12:31:54,PLAYER,online-boutique-6809,Bob Please make sure This info of getting DDoS attack shouldn't be conveyed to users
+2025-11-18 12:32:16,Bob,online-boutique-6809,Sure i'll keep it very abstract on a high level
+2025-11-18 12:32:23,Hamed,online-boutique-6809,There is a redundant switch. We can try to failover on that
+2025-11-18 12:32:34,PLAYER,online-boutique-6809,increasing the sev level to 2
+2025-11-18 12:32:42,UptimeLabs,online-boutique-6809,:alarm_clock: - You have less than 4 minutes. You can type `/help` if you need any reminders.
+2025-11-18 12:32:43,Hamed,online-boutique-6809,Yes please
+2025-11-18 12:33:05,Maya,online-boutique-6809,You're right. We need to stop that switch and bring up a redundant one
+2025-11-18 12:34:18,PLAYER,online-boutique-6809,network issue  - to - the switch issue sev2
+2025-11-18 12:34:18,PLAYER,business-comms-6809,*Incident Number INC100036:* network issue  - to - the switch issue sev2
+2025-11-18 12:34:23,UptimeLabs,online-boutique-6809,:star: Formally assign criticality level to the incident
+2025-11-18 12:34:38,Hamed,online-boutique-6809,@Akshay Tilak shall we do the failover to redundant switch ?
+2025-11-18 12:34:43,UptimeLabs,online-boutique-6809,:alarm_clock: - You have less than 2 minutes. You can type `/help` if you need any reminders.
+2025-11-18 12:34:50,PLAYER,online-boutique-6809,Yes
+2025-11-18 12:35:06,Hamed,online-boutique-6809,In progress
+2025-11-18 12:35:18,Bez,business-comms-6809,Whats the ETA for the fix ?
+2025-11-18 12:35:25,Maya,online-boutique-6809,the infected switch has been successfully changed over
+2025-11-18 12:35:28,Hamed,online-boutique-6809,The Catalyst 9300 Series which is our infected switch has been swapped over to old but reliable (Cisco Catalyst 2960 Series)
+2025-11-18 12:35:28,PLAYER,online-boutique-6809,Summary as now: doing the failover to redundant switch - inProgress
+2025-11-18 12:35:35,Tinus,online-boutique-6809,"Good job, can we confirm @Akshay Tilak?"
+2025-11-18 12:35:40,PLAYER,business-comms-6809,Summary as now: doing the failover to redundant switch - inProgress
+2025-11-18 12:36:02,PLAYER,online-boutique-6809,Bob Can youu check any reports now?
+2025-11-18 12:36:04,Bob,online-boutique-6809,Reports have stopped now
+2025-11-18 12:36:06,Shay,online-boutique-6809,I'm able to open the links
+2025-11-18 12:36:09,UptimeLabs,online-boutique-6809,:star: Cross check resolution with stakeholders
+2025-11-18 12:36:12,PLAYER,online-boutique-6809,Great work guys
+2025-11-18 12:36:16,Tanya,online-boutique-6809,"Cheers, everyone! Resolving these network issues added a bit of spice to our celebration"
+2025-11-18 12:36:18,Tinus,online-boutique-6809,Good job team! We managed to keep the anniversary vibe alive despite the detour.
+2025-11-18 12:36:21,Hamed,online-boutique-6809,High-fives all around!  I will take out that faulty switch as soon as possible.
+2025-11-18 12:36:21,PLAYER,business-comms-6809,Issue seems to be resolved
+2025-11-18 12:36:26,Shay,online-boutique-6809,The website's performance is looking solid again 
+2025-11-18 12:36:27,UptimeLabs,online-boutique-6809,:star: Confirm resolution with the business
+2025-11-18 12:36:30,Daniel,online-boutique-6809,The anniversary orders are flowing smoothly now. No hiccups on the code side.
+2025-11-18 12:36:33,Bob,online-boutique-6809,"Our customers are back to enjoying the celebration. Happy customers, happy anniversary!"
+2025-11-18 12:36:35,PLAYER,online-boutique-6809,Thank you all
+2025-11-18 12:36:36,Maya,online-boutique-6809,Really great job @Akshay Tilak.
+2025-11-18 12:36:39,Bez,online-boutique-6809,Special congratulations to our Incident Manager for steering the ship with finesse and to Maya for your help identifying the faulty switch. Cheers to a remarkable team! :tada:
+2025-11-18 12:36:40,PLAYER,online-boutique-6809,Have a great time
+2025-11-18 12:36:42,Bez,business-comms-6809,Great @Akshay Tilak
+2025-11-18 12:37:01,UptimeLabs,online-boutique-6809,"Thank you for playing The Switch, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit start when you are ready. I am ready button"
+2025-11-18 12:37:32,PLAYER,online-boutique-6809,Clicked Start_feedback button
+2025-11-18 12:39:02,UptimeLabs,online-boutique-6809,Submission successful

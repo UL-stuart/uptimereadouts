@@ -1,0 +1,107 @@
+datetime,player,channel,message
+2025-09-18 09:03:43,tinus,online-boutique-5830,"Hi team, let's have a mood check send an emoji to describe your mood"
+2025-09-18 09:03:47,tinus,online-boutique-5830,"I'll go first, :thumbsup:"
+2025-09-18 09:03:53,tanya,online-boutique-5830,:thumbsup:
+2025-09-18 09:03:55,tinus,online-boutique-5830,I'm excited about showing off all your hard work at todays stakeholder meeting
+2025-09-18 09:03:58,daniel,online-boutique-5830,":skull: knackered, had a few too many late nights this week"
+2025-09-18 09:04:02,shay,online-boutique-5830,:rainbow:
+2025-09-18 09:04:04,hamed,online-boutique-5830,living the dream :smile:
+2025-09-18 09:04:09,bez,online-boutique-5830,:smirk: im excited to see the show too
+2025-09-18 09:04:11,tinus,online-boutique-5830,shouldn't you be prepping for the meeting 
+2025-09-18 09:04:14,bez,online-boutique-5830,:sweat_smile: i am indeed I'll leave you lot to it
+2025-09-18 09:04:16,shay,online-boutique-5830,hang in there @daniel its gonne be the weekend sooner or later :joy:
+2025-09-18 09:04:19,tinus,online-boutique-5830,I should get on with my prep too have a good day team
+2025-09-18 09:04:20,daniel,online-boutique-5830,@shay strict diet of energy drink for me today lol
+2025-09-18 09:04:23,daniel,online-boutique-5830,hope the presentation goes well @tinus
+2025-09-18 09:04:25,tanya,online-boutique-5830,:raised_hands:
+2025-09-18 09:04:41,UptimeLabs,online-boutique-5830,"Welcome to Rumours, remember communication is key to diagnose the problem.
+
+ *Use `/help` at any time for a list of useful links and commands*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin Start button"
+2025-09-18 09:05:14,PLAYER,online-boutique-5830,Clicked org button
+2025-09-18 09:05:21,PLAYER,online-boutique-5830,Clicked undefined button
+2025-09-18 09:05:28,PLAYER,online-boutique-5830,Clicked undefined button
+2025-09-18 09:07:38,PLAYER,online-boutique-5830,Clicked Start button
+2025-09-18 09:07:39,UptimeLabs,online-boutique-5830,":alarm_clock: - You have 20 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-09-18 09:07:42,tinus,online-boutique-5830,"Hey team, I'm texting from the board room - kinda embarrassing but in my demo to the board, I tried to add a pair of Aviator sunglasses to the shopping cart and I got a ?http 500?"
+2025-09-18 09:07:44,tinus,online-boutique-5830,"I've bought some time but need this be able to do this demo if we can lets get this sorted in the next 20 minutes.
+"
+2025-09-18 09:07:46,tinus,online-boutique-5830,Metrics
+2025-09-18 09:07:49,tanya,online-boutique-5830,"uh oh, those Aviators are top sellers due to the new Top Gun movie...It's size up the issue time Latif Khan"
+2025-09-18 09:07:52,shay,online-boutique-5830,Come on this can't be happening!
+2025-09-18 09:07:54,tinus,online-boutique-5830,"I'm in this meeting so, wont be able to help but I trust that you all can get this fixed asap, just @ me if you need anything"
+2025-09-18 09:07:57,shay,online-boutique-5830,ok looking into this now
+2025-09-18 09:08:26,PLAYER,online-boutique-5830,Can we investigate is this hardware or software issue
+2025-09-18 09:08:48,PLAYER,online-boutique-5830,"Can we raise a P1, Need this resolved asap"
+2025-09-18 09:08:50,Shay,online-boutique-5830,I tried replicating it but i'm able to place orders
+2025-09-18 09:09:25,Shay,online-boutique-5830,<https://uptime-labs.atlassian.net/wiki/spaces/ULPUBLIC/pages/1113292847/Rumours+-+Change+Request+Logs>
+2025-09-18 09:09:27,PLAYER,online-boutique-5830,Shay so it is an internal network issue
+2025-09-18 09:09:32,Shay,online-boutique-5830,These are the list of changes we had today
+2025-09-18 09:09:55,PLAYER,online-boutique-5830,Shay share list of changes made today
+2025-09-18 09:09:58,Shay,online-boutique-5830,We can confirm if it is internal or not by asking Bob
+2025-09-18 09:10:02,UptimeLabs,online-boutique-5830,:star: Check changes done to the platform
+2025-09-18 09:10:23,PLAYER,online-boutique-5830,Bob do you have an reported issues from customers
+2025-09-18 09:10:28,Shay,online-boutique-5830,Let's confirm if any complaints are similar to what TInus is reporting
+2025-09-18 09:10:30,UptimeLabs,online-boutique-5830,:star: Asking questions to validate impact of the problem
+2025-09-18 09:10:35,Bob,online-boutique-5830,Checking
+2025-09-18 09:10:50,PLAYER,online-boutique-5830,@hamad please check network issues  internal
+2025-09-18 09:10:58,UptimeLabs,online-boutique-5830,:star: Escalating when required
+2025-09-18 09:11:07,Bez,business-comms-5830,What's going on ? I hear Tinus is having issues
+2025-09-18 09:11:26,Hamed,online-boutique-5830,Have we raised an incident for this?
+2025-09-18 09:11:33,PLAYER,business-comms-5830,We are investigatigating P1 issue - at the moment internal issue
+2025-09-18 09:11:37,Bob,online-boutique-5830,There are no user complaints
+2025-09-18 09:11:41,UptimeLabs,online-boutique-5830,:star: Formally assign criticality level to the incident
+2025-09-18 09:12:18,PLAYER,online-boutique-5830,"@hamad P1 incident raised, can we investigate network, internal.  Not impacting customers"
+2025-09-18 09:12:20,Tinus,online-boutique-5830,"Guys , its not looking good to me"
+2025-09-18 09:12:36,PLAYER,online-boutique-5830,P1 incident raised
+2025-09-18 09:12:37,Tinus,online-boutique-5830,I'm in a conference hall for the demo to potential investors
+2025-09-18 09:12:44,Tinus,online-boutique-5830,It'll start in next 15 mins
+2025-09-18 09:12:58,Hamed,online-boutique-5830,"Sure , checking on this"
+2025-09-18 09:13:29,Hamed,online-boutique-5830,"Network looks good to me , Even the applications are good"
+2025-09-18 09:13:35,PLAYER,online-boutique-5830,"Maya do we have an security breaches, Any dos attacks?"
+2025-09-18 09:13:56,Hamed,online-boutique-5830,I think its just Tinus having issues
+2025-09-18 09:14:04,Maya,online-boutique-5830,Let me check.
+2025-09-18 09:14:23,Maya,online-boutique-5830,But to confirm you if we have any security attack then it will show an impact on our backend
+2025-09-18 09:14:34,PLAYER,online-boutique-5830,"Tinus seems to be isolated to you, can you try a different network or VPN?"
+2025-09-18 09:14:42,UptimeLabs,online-boutique-5830,:star: Reproduces the incident
+2025-09-18 09:14:51,Maya,online-boutique-5830,I checked security logs. There is nothing abnormal detected
+2025-09-18 09:15:05,Tinus,online-boutique-5830,Trying to switch another network
+2025-09-18 09:15:23,Tinus,online-boutique-5830,Still it persists
+2025-09-18 09:15:36,Hamed,online-boutique-5830,Tinus should be trying to access the site from the browser on his computer. Perhaps it’s a local issue?
+2025-09-18 09:15:57,Tinus,online-boutique-5830,* I’m going to dip in and out of this channel for im speaking to some clients
+2025-09-18 09:16:13,PLAYER,online-boutique-5830,"Tinus, try accessing via another device"
+2025-09-18 09:16:17,Bez,business-comms-5830,Have we got it resolved for him ?
+2025-09-18 09:16:34,Tinus,online-boutique-5830,I tried on my phone and its accesible
+2025-09-18 09:16:49,PLAYER,online-boutique-5830,"Tinus Have you performed hardware checks, Power and ethernet checks"
+2025-09-18 09:16:51,Tinus,online-boutique-5830,But i'll be doing demo with my laptop
+2025-09-18 09:17:03,Tinus,online-boutique-5830,All other sites are opening fine
+2025-09-18 09:17:15,Tinus,online-boutique-5830,I did a speed test as well
+2025-09-18 09:17:36,Hamed,online-boutique-5830,"Hang on  , could it be browser specific"
+2025-09-18 09:17:42,PLAYER,online-boutique-5830,@hamad do we have any firewall issues
+2025-09-18 09:17:45,Hamed,online-boutique-5830,I see one issue
+2025-09-18 09:17:53,Hamed,online-boutique-5830,I see Product ID from Tinus screenshot is different than PROD
+2025-09-18 09:18:15,Hamed,online-boutique-5830,OLJCESPC7Z this is what we have in PROD  but in Tinus's screenshot its OLJCESPC7D
+2025-09-18 09:18:20,PLAYER,online-boutique-5830,"@hamad can this be resolved asap, we will pick up RCA later"
+2025-09-18 09:18:27,UptimeLabs,online-boutique-5830,:star: Restoration over root cause analysis
+2025-09-18 09:19:00,PLAYER,business-comms-5830,Identified Cause and now implementing fix
+2025-09-18 09:19:01,Hamed,online-boutique-5830,I'd suggest him to try clearing his cache and cookies once
+2025-09-18 09:19:27,PLAYER,online-boutique-5830,Tinus clear cache and cookies. then retry
+2025-09-18 09:19:42,Tinus,online-boutique-5830,Doing it
+2025-09-18 09:19:56,Tinus,online-boutique-5830,Yeah its working again
+2025-09-18 09:20:25,PLAYER,business-comms-5830,Issue resolved - P1 Closed
+2025-09-18 09:20:28,PLAYER,online-boutique-5830,great resolved.
+2025-09-18 09:20:31,PLAYER,online-boutique-5830,Issue resolved - P1 Closed
+2025-09-18 09:20:38,tinus,online-boutique-5830,Damn! thats it
+2025-09-18 09:20:40,tinus,online-boutique-5830,"Great Ive got to do my presentation now, thanks for figuring this out so quickly. @daniel @shay can you look in to a cache busting solution?"
+2025-09-18 09:20:42,shay,online-boutique-5830,it was the cache! sure we can do that
+2025-09-18 09:20:44,daniel,online-boutique-5830,"no worries boss, at least its not a significat issue"
+2025-09-18 09:20:45,daniel,online-boutique-5830,good luck with the presentation!
+2025-09-18 09:20:46,tanya,online-boutique-5830,yes good luck @tinus
+2025-09-18 09:20:49,shay,online-boutique-5830,good luck @tinus!
+2025-09-18 09:21:00,UptimeLabs,online-boutique-5830,"Thank you for playing, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit I am ready when you want to start. I am ready button"
+2025-09-18 09:21:01,PLAYER,online-boutique-5830,"great work team, well done"
+2025-09-18 09:21:33,PLAYER,online-boutique-5830,Clicked Start_feedback button
+2025-09-18 09:22:30,UptimeLabs,online-boutique-5830,Submission successful

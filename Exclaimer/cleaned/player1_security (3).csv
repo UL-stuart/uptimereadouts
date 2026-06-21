@@ -1,0 +1,86 @@
+index,datetime,player,channel,message
+0,2025-09-29 13:22:51,Maya,private-comms-5986,@Graham De Souza let's build the core response team here. I've already added myself. Who else should we pull in to keep it tight and efficient?
+1,2025-09-29 13:22:55,Maya,private-comms-5986,"I'd say one senior person each from security, platform, and engineering. Also add Tanya, tasks could be platform intensive"
+2,2025-09-29 13:24:09,graham.desouza,private-comms-5986,@Tanya @Daniel @Tinus
+3,2025-09-29 13:24:54,Maya,private-comms-5986,"We should invite @hamed aswell, i think he will be a great help"
+4,2025-09-29 13:25:03,graham.desouza,private-comms-5986,@Maya Has the ransomware been contained?
+5,2025-09-29 13:25:09,graham.desouza,private-comms-5986,@Hamed
+6,2025-09-29 13:26:02,Maya,private-comms-5986,"we will work on containing it now, i didn't want to talk about in open channel as ii didn't know if the attackers  could see it"
+7,2025-09-29 13:26:08,Hamed,private-comms-5986,Things are going out of hands. @Maya do we have any external support for these situations?
+8,2025-09-29 13:26:23,graham.desouza,private-comms-5986,@Maya Do we need to request assistance from Cyvantics Security?
+9,2025-09-29 13:26:34,Maya,private-comms-5986,"Yes, we've got an IR(incident response) retainer with Cyvantics Security"
+10,2025-09-29 13:26:48,Maya,private-comms-5986,"Looped in Cyvantics Security - they're on their way now to take snapshots of the infected server and storage, followed by forensics on it"
+11,2025-09-29 13:26:59,Maya,private-comms-5986,"Meanwhile, I've got this from Cyvantics. @Graham De Souza, can you help track the steps and coordinate?"
+12,2025-09-29 13:27:00,Maya,private-comms-5986,<https://uptime-labs.atlassian.net/wiki/external/MThjMTk4ZDU5ODU0NGZmMWE1NzhmNGY0MDQwNWI1NTA>
+13,2025-09-29 13:27:06,Maya,private-comms-5986,"We've got isolation steps in the playbook, but before we dive in, can you paste that list here? I'll help team run through it"
+14,2025-09-29 13:28:37,graham.desouza,private-comms-5986,"ISOLATION:
+
+Disconnect infected server – Immediately block all traffic to and from the compromised server. Isolate it from the network and any shared systems to stop the ransomware from spreading further. This is your first and fastest containment move.
+
+Cut off infrastructure traffic – Halt all inbound and outbound network access across the infrastructure if needed. This creates a hard boundary for the attack, buying time to investigate. It may temporarily impact services, but it’s safer than letting the malware move.
+
+Disconnect DB &amp; freeze backup – Stop all application-level connections to the database. Pause or disable automated backup jobs to prevent infected or encrypted data from overwriting clean backups. Protecting clean copies is critical for recovery.
+
+Detach from shared resources – If the infected server is connected to shared storage, NAS(Network attached storage), or databases, detach it immediately. Ransomware often tries to encrypt anything it can access, so this step prevents collateral damage.
+
+Take snapshot (disk &amp; memory) – Before making any changes, capture a complete disk image and memory snapshot. This is essential for forensic investigation, legal purposes, and possible decryption. Once altered, evidence can’t be recovered.
+
+Kill suspicious processes – After you’ve taken snapshots, terminate the ransomware or malicious processes. This stops further encryption or damage, but killing processes too early can trigger irreversible encryption — timing matters.
+
+
+
+RESTORATION:
+
+Validate backups – Check all saved copies of your data to make sure they’re not infected by the attack. Only use backups from before the attack started.
+
+Wipe infected systems – Completely erase (format) any computers or servers that were hit by the attack so no harmful files remain.
+
+Rebuild from clean backup – Use the safe backup you found earlier to put the system back the way it was before the attack.
+
+Re-enable security tools on servers – Before putting the systems back on the network, reinstall antivirus, firewalls, and other security software so they’re protected.
+
+Reconnect traffic to services and monitor – Turn the systems back on, let users connect again, and keep a close eye for anything suspicious."
+15,2025-09-29 13:28:58,Maya,private-comms-5986,do you want me to continue with the isolation?
+16,2025-09-29 13:29:56,graham.desouza,private-comms-5986,"@Maya Yes, continue with isolation. Do you need any assistance from Tanya?"
+17,2025-09-29 13:30:14,Maya,private-comms-5986,"I've given write access to Tanya, Hamed, Daniel, and myself"
+18,2025-09-29 13:30:18,Tanya,private-comms-5986,Disconnecting the checkout servers from the infra now
+19,2025-09-29 13:30:20,Daniel,private-comms-5986,I'm on it. Disconnecting DB access for checkout and checking if scheduled backups exist
+20,2025-09-29 13:30:22,Hamed,private-comms-5986,I'll verify if any shared storage is still attached to the checkout DB
+21,2025-09-29 13:30:34,Daniel,private-comms-5986,"Step 3 done, DB connection to checkout is now cut"
+22,2025-09-29 13:30:37,Tanya,private-comms-5986,"Step 1 done, Checkout servers are now fully disconnected. Moving to isolate the infra from all external traffic"
+23,2025-09-29 13:30:39,Hamed,private-comms-5986,"Step 4 confirmed, No shared storage attached to checkout, which makes sense since checkout has its standalone storage"
+24,2025-09-29 13:30:44,Tanya,private-comms-5986,"Step 2 completed, Infra is now fully cut off from the outside world. That means the website will remain completely down until we recover"
+25,2025-09-29 13:30:49,Maya,private-comms-5986,"Step 5 done, Cyvantics has completed taking snapshots of the checkout servers and database. They've now moved on to forensics. @Hamed, we're good to kill the script now"
+26,2025-09-29 13:30:59,Hamed,private-comms-5986,"Step 6 done, The Script has been killed. @Graham De Souza let us know and double-check if anything else is pending on our side"
+27,2025-09-29 13:32:40,graham.desouza,private-comms-5986,"@Hamed and @Maya Can I get confirmation of which services are affected, to report back to the business?"
+28,2025-09-29 13:32:45,Tanya,private-comms-5986,Checking...
+29,2025-09-29 13:32:55,Tanya,private-comms-5986,"From what I'm seeing, the impact seems limited to the checkout servers. We haven't spotted similar symptoms on the others so far"
+30,2025-09-29 13:33:01,Maya,private-comms-5986,"Also, I checked. All other servers have security agents running and reporting normally. The only ones missing agents were the checkout servers - which feels a bit off"
+31,2025-09-29 13:35:25,Hamed,private-comms-5986,Maya do we have any backups we can fall-back on?
+32,2025-09-29 13:35:40,Maya,private-comms-5986,"Yes, we must have a backup. Platform team can confirm us"
+33,2025-09-29 13:35:48,Hamed,private-comms-5986,"Correct, we do have backup which only runs at 2AM. Latest is yesterday's. We'll lose today's orders"
+34,2025-09-29 13:35:51,Maya,private-comms-5986,Isolation is complete. We're good to move toward restoration using the backup storage now
+35,2025-09-29 13:35:55,Maya,private-comms-5986,@Graham De Souza could you please confirm with business before moving forward on this
+36,2025-09-29 13:36:03,Maya,private-comms-5986,I've called in @Bob to the channel
+37,2025-09-29 13:36:11,Bob,private-comms-5986,"@Graham De Souza, I hear you need my help, what exactly should I look into?"
+38,2025-09-29 13:36:26,Bob,private-comms-5986,"With the sale starting today, the potential loss is significant - around $180k"
+39,2025-09-29 13:36:41,graham.desouza,private-comms-5986,@Hamed Looks like all the isolation steps are complete
+40,2025-09-29 13:37:28,Hamed,private-comms-5986,yes the first steps have been taken to resolve this issue
+41,2025-09-29 13:38:19,Hamed,private-comms-5986,what do you suggest we do now?
+42,2025-09-29 13:39:55,graham.desouza,private-comms-5986,@Bob Bez is clear that we should not pay the ransom. The ransom is also more than $180k. Is the business happy for us to proceed with restoring from backup in order to restore service as soon as possible?
+43,2025-09-29 13:40:12,Bob,private-comms-5986,"Im not sure if they are ok with it, im not in business comms can you ask them please"
+44,2025-09-29 13:40:34,Maya,private-comms-5986,yes we need to check with the business
+45,2025-09-29 13:42:39,graham.desouza,private-comms-5986,"@Hamed Proceed with restoring from backup, as our insurance will cover the loss of revenue."
+46,2025-09-29 13:42:45,Maya,private-comms-5986,"Thanks for the go-ahead. @Graham De Souza, please track all restoration steps"
+47,2025-09-29 13:42:54,Maya,private-comms-5986,I'm now validating the backup storage to ensure it's safe
+48,2025-09-29 13:42:57,Hamed,private-comms-5986,"I'm provisioning new checkout servers, will update once ready"
+49,2025-09-29 13:43:04,Maya,private-comms-5986,"Backup is clean and safe. @Hamed, you can start rebuilding checkout from backup storage"
+50,2025-09-29 13:43:07,Hamed,private-comms-5986,"Thanks, Maya. New servers are ready. I'll start rebuilding now using backup storage"
+51,2025-09-29 13:43:14,Hamed,private-comms-5986,Rebuild completed
+52,2025-09-29 13:43:18,Maya,private-comms-5986,I've enabled the security agents (EDR) on checkout servers
+53,2025-09-29 13:43:21,Daniel,private-comms-5986,I'll monitor application health once services are restored
+54,2025-09-29 13:43:25,Maya,private-comms-5986," @Graham De Souza , can you confirm all tasks are wrapped up and we are good to bring the traffic back? Just want to be sure, as this is the final restoration step before we move"
+55,2025-09-29 13:43:56,graham.desouza,private-comms-5986,@Maya All tasks appear to be completed
+56,2025-09-29 13:44:32,Maya,private-comms-5986,shall we go ahead with the plan?
+57,2025-09-29 13:44:40,graham.desouza,private-comms-5986,@Maya You can bring the traffic back
+58,2025-09-29 13:47:12,UptimeLabs,private-comms-5986,archived the channel

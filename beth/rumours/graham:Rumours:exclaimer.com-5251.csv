@@ -1,0 +1,99 @@
+datetime,player,channel,message
+2025-08-04 13:02:01,tinus,online-boutique-5251,"Hi team, let's have a mood check send an emoji to describe your mood [n/a - 0]"
+2025-08-04 13:02:06,tinus,online-boutique-5251,"I'll go first, :thumbsup: [n/a - 0]"
+2025-08-04 13:02:12,tanya,online-boutique-5251,:thumbsup: [n/a - 0]
+2025-08-04 13:02:14,tinus,online-boutique-5251,I'm excited about showing off all your hard work at todays stakeholder meeting [n/a - 0]
+2025-08-04 13:02:17,daniel,online-boutique-5251,":skull: knackered, had a few too many late nights this week [n/a - 0]"
+2025-08-04 13:02:20,shay,online-boutique-5251,:rainbow: [n/a - 0]
+2025-08-04 13:02:23,hamed,online-boutique-5251,living the dream :smile: [n/a - 0]
+2025-08-04 13:02:27,bez,online-boutique-5251,:smirk: im excited to see the show too [n/a - 0]
+2025-08-04 13:02:29,tinus,online-boutique-5251,shouldn't you be prepping for the meeting  [n/a - 0]
+2025-08-04 13:02:32,bez,online-boutique-5251,:sweat_smile: i am indeed I'll leave you lot to it [n/a - 0]
+2025-08-04 13:02:34,shay,online-boutique-5251,hang in there @daniel its gonne be the weekend sooner or later :joy: [n/a - 0]
+2025-08-04 13:02:37,tinus,online-boutique-5251,I should get on with my prep too have a good day team [n/a - 0]
+2025-08-04 13:02:38,daniel,online-boutique-5251,@shay strict diet of energy drink for me today lol [n/a - 0]
+2025-08-04 13:02:41,daniel,online-boutique-5251,hope the presentation goes well @tinus [n/a - 0]
+2025-08-04 13:02:43,tanya,online-boutique-5251,:raised_hands: [n/a - 0]
+2025-08-04 13:02:58,UptimeLabs,online-boutique-5251,Level 7 start button [n/a - 0]
+2025-08-04 13:04:06,PLAYER,online-boutique-5251,Clicked Start button
+2025-08-04 13:04:06,UptimeLabs,online-boutique-5251,":alarm_clock: - You have 20 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders. [n/a - 0]"
+2025-08-04 13:04:09,tinus,online-boutique-5251,"Hey team, I'm texting from the board room - kinda embarrassing but in my demo to the board, I tried to add a pair of Aviator sunglasses to the shopping cart and I got a ?http 500? [n/a - 0]"
+2025-08-04 13:04:11,tinus,online-boutique-5251,"I've bought some time but need this be able to do this demo if we can lets get this sorted in the next 20 minutes.
+ [n/a - 0]"
+2025-08-04 13:04:14,tinus,online-boutique-5251,500 screenshot [n/a - 0]
+2025-08-04 13:04:16,tanya,online-boutique-5251,"uh oh, those Aviators are top sellers due to the new Top Gun movie...It's size up the issue time Graham De Souza [n/a - 0]"
+2025-08-04 13:04:19,shay,online-boutique-5251,Come on this can't be happening! [n/a - 0]
+2025-08-04 13:04:21,tinus,online-boutique-5251,"I'm in this meeting so, wont be able to help but I trust that you all can get this fixed asap, just @ me if you need anything [n/a - 0]"
+2025-08-04 13:04:24,shay,online-boutique-5251,ok looking into this now [n/a - 0]
+2025-08-04 13:05:35,PLAYER,online-boutique-5251,Tinus Which environment are you using for the demo? [n/a - 0]
+2025-08-04 13:06:22,Tinus,online-boutique-5251,Its in the production environment [n/a - 0]
+2025-08-04 13:08:00,PLAYER,online-boutique-5251,"Shay Daniel Tanya I have been unable to reproduce the issue, could either of you confirm if you get the same issue? [n/a - 0]"
+2025-08-04 13:08:05,UptimeLabs,online-boutique-5251,:star: Attempt to replicate the issue [n/a - 0]
+2025-08-04 13:08:07,Daniel,online-boutique-5251,on it [n/a - 0]
+2025-08-04 13:08:07,Shay,online-boutique-5251,i will try now [n/a - 0]
+2025-08-04 13:08:25,Daniel,online-boutique-5251,I see no issue with the site [n/a - 0]
+2025-08-04 13:08:30,Shay,online-boutique-5251,no im unable to see the issue on the platform [n/a - 0]
+2025-08-04 13:08:54,Tinus,online-boutique-5251,"Its not just the sunglasses, it seems to be all products [n/a - 0]"
+2025-08-04 13:09:03,PLAYER,online-boutique-5251,Bob Have there been any customer reports of issues when purchasing Aviator sunglasses? [n/a - 0]
+2025-08-04 13:09:06,Tinus,online-boutique-5251,can we get this investigated quick plaese [n/a - 0]
+2025-08-04 13:09:10,UptimeLabs,online-boutique-5251,:star: Asking questions to validate impact of the problem [n/a - 0]
+2025-08-04 13:09:16,Bob,online-boutique-5251,let me take a look into the reports [n/a - 0]
+2025-08-04 13:09:40,Bob,online-boutique-5251,"Seems like there is no reports, i will put out a message to a few customers if they are having any issues with the site today [n/a - 0]"
+2025-08-04 13:10:08,UptimeLabs,online-boutique-5251,:bulb: Hint: Declare an incident. [n/a - 0]
+2025-08-04 13:10:09,PLAYER,online-boutique-5251,Tinus We have been unable to reproduce this issue in production [n/a - 0]
+2025-08-04 13:10:31,PLAYER,online-boutique-5251,Clicked undefined button
+2025-08-04 13:10:41,Tinus,online-boutique-5251,am i the only one with this issue? [n/a - 0]
+2025-08-04 13:11:34,PLAYER,business-comms-5251,*Incident Number INC100090:* sev-3 demo of purchases failing [n/a - 0]
+2025-08-04 13:11:35,UptimeLabs,online-boutique-5251,:star: Incident record created [n/a - 0]
+2025-08-04 13:11:37,UptimeLabs,online-boutique-5251,:star: Send first comms in first 5 minutes [n/a - 0]
+2025-08-04 13:12:14,UptimeLabs,online-boutique-5251,:star: Formally assign criticality level to the incident [n/a - 0]
+2025-08-04 13:12:23,Bez,business-comms-5251,whats the customer impact? [n/a - 0]
+2025-08-04 13:12:41,Tinus,online-boutique-5251,why dont we have any investigations on going? [n/a - 0]
+2025-08-04 13:13:03,Tinus,online-boutique-5251,the chat is empty and we have a chance to lose this important client [n/a - 0]
+2025-08-04 13:13:13,Tinus,online-boutique-5251,get started please [n/a - 0]
+2025-08-04 13:13:15,PLAYER,online-boutique-5251,"Hamed we could do with some help identifying what might be causing the issues Tinus is seeing, could you assist us further? [n/a - 0]"
+2025-08-04 13:13:22,UptimeLabs,online-boutique-5251,:star: Escalating when required [n/a - 0]
+2025-08-04 13:13:29,Hamed,online-boutique-5251,what seems to be the issue? [n/a - 0]
+2025-08-04 13:13:42,PLAYER,online-boutique-5251,Tinus We are currently investigating the cause [n/a - 0]
+2025-08-04 13:14:00,Hamed,online-boutique-5251,what investigations have we done so far? [n/a - 0]
+2025-08-04 13:14:10,Hamed,online-boutique-5251,just need caught up here [n/a - 0]
+2025-08-04 13:15:34,PLAYER,online-boutique-5251,"Hamed Tinus is trying to demo something, but the website is returning an error when trying to check out items on the website. We have been unable to reproduce the issue internally and there have been no customer reports of this happening. [n/a - 0]"
+2025-08-04 13:16:08,PLAYER,business-comms-5251,Bez There does not appear to be any customer impact at this time. [n/a - 0]
+2025-08-04 13:16:39,Hamed,online-boutique-5251,"seems like tinus is the only one with the  issue, to be sure I'm going to check the platform logs and see if there are any errors in the logs [n/a - 0]"
+2025-08-04 13:17:04,Tinus,online-boutique-5251,do we have a solution yet? [n/a - 0]
+2025-08-04 13:17:34,Hamed,online-boutique-5251,"Not seeing any logs to indicate this is happening to anyone else, seems like it is related to tinus's device, what do you think? [n/a - 0]"
+2025-08-04 13:18:23,Tinus,online-boutique-5251,well is there a fix to this then? [n/a - 0]
+2025-08-04 13:18:32,PLAYER,online-boutique-5251,Hamed agree that this appears to be specific to Tinus's device. [n/a - 0]
+2025-08-04 13:19:10,Tinus,online-boutique-5251,@graham how do you suggest we fix my device then? I'm out of office so no one can get here in time [n/a - 0]
+2025-08-04 13:19:37,Bez,business-comms-5251,how is this investigation going? have we got a fix or are we close to one? [n/a - 0]
+2025-08-04 13:19:52,Bez,business-comms-5251,"tinus is in an important meeting with a customer, we need to make this sale [n/a - 0]"
+2025-08-04 13:19:57,UptimeLabs,online-boutique-5251,:bulb: Hint: keep the business informed regularly [n/a - 0]
+2025-08-04 13:20:07,UptimeLabs,online-boutique-5251,:alarm_clock: - You have less than 4 minutes. You can type `/help` if you need any reminders. [n/a - 0]
+2025-08-04 13:20:11,UptimeLabs,online-boutique-5251,:bulb: Form a working theory and try to validate or invalidate it [n/a - 0]
+2025-08-04 13:20:21,PLAYER,online-boutique-5251,Hamed Is it possible to connect to Tinus’s device remotely? [n/a - 0]
+2025-08-04 13:20:50,Hamed,online-boutique-5251,"no im pretty sure tinus took his personal laptop, it doesn't have the software for me to take over [n/a - 0]"
+2025-08-04 13:21:03,PLAYER,business-comms-5251,Bez We are currently exploring option to resolve the issues with Tinus' device. [n/a - 0]
+2025-08-04 13:21:09,Tinus,online-boutique-5251,"i can try some suggestions, just please give me any solution to this [n/a - 0]"
+2025-08-04 13:21:29,Tinus,online-boutique-5251,This investigation has been open for nearly 20 minutes and we have gotten nowhere [n/a - 0]
+2025-08-04 13:21:41,Tinus,online-boutique-5251,"@graham i need a fox, what do you have? [n/a - 0]"
+2025-08-04 13:21:45,Tinus,online-boutique-5251,fix* [n/a - 0]
+2025-08-04 13:22:00,PLAYER,online-boutique-5251,Hamed Can you work with Tinus to troubleshoot the issues with his device? [n/a - 0]
+2025-08-04 13:22:05,UptimeLabs,online-boutique-5251,:star: Know your team and their roles [n/a - 0]
+2025-08-04 13:22:07,UptimeLabs,online-boutique-5251,:alarm_clock: - You have less than 2 minutes. You can type `/help` if you need any reminders. [n/a - 0]
+2025-08-04 13:22:21,Hamed,online-boutique-5251,"troubleshooting is a good idea, we can run basic troubleshooting like clearing cache and restarting his device as a start [n/a - 0]"
+2025-08-04 13:22:26,Tinus,online-boutique-5251,i will restart now [n/a - 0]
+2025-08-04 13:22:57,Hamed,online-boutique-5251,"this will rule out any client-side issues, this is more off a help desk issue from what I make of it [n/a - 0]"
+2025-08-04 13:23:10,Tinus,online-boutique-5251,"restart didnt work, clearing cache now [n/a - 0]"
+2025-08-04 13:23:31,tinus,online-boutique-5251,Damn! thats it [n/a - 0]
+2025-08-04 13:23:33,tinus,online-boutique-5251,"Great Ive got to do my presentation now, thanks for figuring this out so quickly. @daniel @shay can you look in to a cache busting solution? [n/a - 0]"
+2025-08-04 13:23:35,shay,online-boutique-5251,it was the cache! sure we can do that [n/a - 0]
+2025-08-04 13:23:37,daniel,online-boutique-5251,"no worries boss, at least its not a significat issue [n/a - 0]"
+2025-08-04 13:23:38,daniel,online-boutique-5251,good luck with the presentation! [n/a - 0]
+2025-08-04 13:23:39,tanya,online-boutique-5251,yes good luck @tinus [n/a - 0]
+2025-08-04 13:23:41,UptimeLabs,online-boutique-5251,:star: Restoration over root cause analysis [n/a - 0]
+2025-08-04 13:23:41,shay,online-boutique-5251,good luck @tinus! [n/a - 0]
+2025-08-04 13:23:52,Bez,business-comms-5251,in what way [n/a - 0]
+2025-08-04 13:23:52,UptimeLabs,online-boutique-5251,Start retro and feedback [n/a - 0]
+2025-08-04 13:24:02,PLAYER,online-boutique-5251,Clicked Start_feedback button
+2025-08-04 13:26:44,UptimeLabs,online-boutique-5251,Submission successful [n/a - 0]
+2025-08-04 13:26:44,UptimeLabs,online-boutique-5251,:star: Take command [n/a - 0]

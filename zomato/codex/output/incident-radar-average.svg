@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="1040" viewBox="0 0 1040 1040" role="img" aria-labelledby="title desc">
+  <title id="title">Incident Radar Cohort Average Scores</title>
+  <desc id="desc">Radar chart showing average cohort scores for sense-making, coordination, decision-making, communication, adaptive capacity, and life cycle on a one to five scale.</desc>
+  <style>
+    .bg { fill: #f7f8fa; }
+    .title { fill: #18202b; font-family: Inter, Arial, sans-serif; font-size: 32px; font-weight: 750; }
+    .subtitle { fill: #5c6675; font-family: Inter, Arial, sans-serif; font-size: 17px; }
+    .ring { fill: none; stroke: #d7dee8; stroke-width: 1.2; }
+    .spoke { stroke: #e1e7ef; stroke-width: 1.2; }
+    .ring-label { fill: #7a8493; font-family: Inter, Arial, sans-serif; font-size: 12px; }
+    .axis-label { fill: #263142; font-family: Inter, Arial, sans-serif; font-size: 18px; font-weight: 750; }
+    .score-area { fill: rgba(15, 118, 110, 0.22); stroke: none; }
+    .score-line { fill: none; stroke: #0f766e; stroke-width: 4; stroke-linejoin: round; }
+    .vertex { fill: #0f766e; stroke: #ffffff; stroke-width: 2; }
+    .value-label { fill: #0b5f56; font-family: Inter, Arial, sans-serif; font-size: 13px; font-weight: 750; paint-order: stroke; stroke: #f7f8fa; stroke-width: 5; stroke-linejoin: round; }
+    .legend-panel { fill: #ffffff; stroke: #d8dde6; stroke-width: 1; }
+    .legend-heading { fill: #18202b; font-family: Inter, Arial, sans-serif; font-size: 17px; font-weight: 750; }
+    .legend-item { fill: #374151; font-family: Inter, Arial, sans-serif; font-size: 16px; }
+    .legend-name { font-weight: 650; }
+    .legend-value { fill: #0b5f56; font-weight: 750; }
+  </style>
+  <rect class="bg" width="100%" height="100%" />
+  <text class="title" x="56" y="58">Incident Radar Cohort Average Scores</text>
+  <text class="subtitle" x="56" y="96">Average scores parsed from output/summary.md, scale 1-5</text>
+  <g aria-label="Average score radar chart">
+      <polygon class="ring" points="520.0,352.0 552.9,371.0 552.9,409.0 520.0,428.0 487.1,409.0 487.1,371.0" />
+      <text class="ring-label" x="528" y="356.0">1</text>
+      <polygon class="ring" points="520.0,314.0 585.8,352.0 585.8,428.0 520.0,466.0 454.2,428.0 454.2,352.0" />
+      <text class="ring-label" x="528" y="318.0">2</text>
+      <polygon class="ring" points="520.0,276.0 618.7,333.0 618.7,447.0 520.0,504.0 421.3,447.0 421.3,333.0" />
+      <text class="ring-label" x="528" y="280.0">3</text>
+      <polygon class="ring" points="520.0,238.0 651.6,314.0 651.6,466.0 520.0,542.0 388.4,466.0 388.4,314.0" />
+      <text class="ring-label" x="528" y="242.0">4</text>
+      <polygon class="ring" points="520.0,200.0 684.5,295.0 684.5,485.0 520.0,580.0 355.5,485.0 355.5,295.0" />
+      <text class="ring-label" x="528" y="204.0">5</text>
+      <line class="spoke" x1="520" y1="390" x2="520.0" y2="200.0" />
+      <line class="spoke" x1="520" y1="390" x2="684.5" y2="295.0" />
+      <line class="spoke" x1="520" y1="390" x2="684.5" y2="485.0" />
+      <line class="spoke" x1="520" y1="390" x2="520.0" y2="580.0" />
+      <line class="spoke" x1="520" y1="390" x2="355.5" y2="485.0" />
+      <line class="spoke" x1="520" y1="390" x2="355.5" y2="295.0" />
+      <polygon class="score-area" points="520.0,269.5 631.2,325.8 623.0,449.5 520.0,497.5 403.5,457.3 404.8,323.5" />
+      <polyline class="score-line" points="520.0,269.5 631.2,325.8 623.0,449.5 520.0,497.5 403.5,457.3 404.8,323.5 520.0,269.5" />
+      <circle class="vertex" cx="520.0" cy="269.5" r="5" />
+      <text class="value-label" x="520.0" y="254.5" text-anchor="middle">3.17</text>
+      <circle class="vertex" cx="631.2" cy="325.8" r="5" />
+      <text class="value-label" x="645.2" y="316.8" text-anchor="start">3.38</text>
+      <circle class="vertex" cx="623.0" cy="449.5" r="5" />
+      <text class="value-label" x="637.0" y="458.5" text-anchor="start">3.13</text>
+      <circle class="vertex" cx="520.0" cy="497.5" r="5" />
+      <text class="value-label" x="520.0" y="522.5" text-anchor="middle">2.83</text>
+      <circle class="vertex" cx="403.5" cy="457.3" r="5" />
+      <text class="value-label" x="389.5" y="466.3" text-anchor="end">3.54</text>
+      <circle class="vertex" cx="404.8" cy="323.5" r="5" />
+      <text class="value-label" x="390.8" y="314.5" text-anchor="end">3.50</text>
+      <text class="axis-label" x="520.0" y="108.0" text-anchor="middle">Sense-making</text>
+      <text class="axis-label" x="776.8" y="264.0" text-anchor="start">Coordination</text>
+      <text class="axis-label" x="776.8" y="532.0" text-anchor="start">Decision-making</text>
+      <text class="axis-label" x="520.0" y="696.0" text-anchor="middle">Communication</text>
+      <text class="axis-label" x="263.2" y="532.0" text-anchor="end">Adaptive capacity</text>
+      <text class="axis-label" x="263.2" y="264.0" text-anchor="end">Life cycle</text>
+  </g>
+  <g aria-label="Average score values">
+    <rect class="legend-panel" x="56" y="804" width="680" height="150" rx="10" />
+    <text class="legend-heading" x="72" y="828">Average scores</text>
+    <text class="legend-item" x="72" y="848"><tspan class="legend-name">Sense-making</tspan><tspan class="legend-value"> 3.17</tspan></text>
+    <text class="legend-item" x="72" y="882"><tspan class="legend-name">Coordination</tspan><tspan class="legend-value"> 3.38</tspan></text>
+    <text class="legend-item" x="72" y="916"><tspan class="legend-name">Decision-making</tspan><tspan class="legend-value"> 3.13</tspan></text>
+    <text class="legend-item" x="392" y="848"><tspan class="legend-name">Communication</tspan><tspan class="legend-value"> 2.83</tspan></text>
+    <text class="legend-item" x="392" y="882"><tspan class="legend-name">Adaptive capacity</tspan><tspan class="legend-value"> 3.54</tspan></text>
+    <text class="legend-item" x="392" y="916"><tspan class="legend-name">Life cycle</tspan><tspan class="legend-value"> 3.50</tspan></text>
+  </g>
+</svg>

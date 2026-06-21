@@ -1,0 +1,125 @@
+datetime,player,channel,message
+2025-10-27 14:02:06,Bez,online-boutique-6462,"Morning, team! Anyone else need a triple espresso today?"
+2025-10-27 14:02:15,Tinus,online-boutique-6462,"You're not the only one, Bez! The reports from last week are still giving me nightmares."
+2025-10-27 14:02:25,Bob,online-boutique-6462,"Tell me about it, Tinus."
+2025-10-27 14:02:28,Bob,online-boutique-6462,"But hey, at least it's sunny outside today. :sunrise:"
+2025-10-27 14:02:30,Bez,online-boutique-6462,"True, a little sunshine makes everything better."
+2025-10-27 14:02:32,Bez,online-boutique-6462,"Also, I'm having my usual green smoothie. That's my secret energy booster."
+2025-10-27 14:02:34,Daniel,online-boutique-6462,"Nice, Bez! I'll stick with my coffee though."
+2025-10-27 14:02:35,Daniel,online-boutique-6462,Anyone else excited for the launch of the new BitCoin :coin: payment feature this week?
+2025-10-27 14:02:37,Tinus,online-boutique-6462,"Absolutely, Daniel! Been looking forward to it."
+2025-10-27 14:02:39,Tinus,online-boutique-6462,"By the way, no spoilers, but did anyone catch the football game? Epic comeback!"
+2025-10-27 14:02:42,Shay,online-boutique-6462,I missed it! I was knee deep in a sci-fi novel. Anyone else into that?
+2025-10-27 14:02:50,Tanya,online-boutique-6462,"Oh, I love sci-fi! Can you share the name of the book, Shay?"
+2025-10-27 14:02:58,Daniel,online-boutique-6462,I've been reading a bit of sci-fi myself.
+2025-10-27 14:03:00,Daniel,online-boutique-6462,"Looking forward to sharing recommendations, Shay!"
+2025-10-27 14:03:04,Bez,online-boutique-6462,"There's always so much happening outside of work! Keep the energy :battery: going, team."
+2025-10-27 14:03:07,Bez,online-boutique-6462,It's going to be another productive day. :raised_hands:
+2025-10-27 14:03:10,UptimeLabs,online-boutique-6462,"Welcome to The Chain, the responsibility is on you to size up the problem.
+
+? *Use `/help` at any time for a list of useful links and commands*
+ ? *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin Start button"
+2025-10-27 14:03:58,PLAYER,online-boutique-6462,Clicked Start button
+2025-10-27 14:03:58,UptimeLabs,online-boutique-6462,":alarm_clock: - You have 25 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-10-27 14:03:59,Bob,online-boutique-6462,"Hey, we're getting reports of customers struggling to make purchases"
+2025-10-27 14:04:01,Bob,online-boutique-6462,@here Anyone else seeing this?
+2025-10-27 14:04:04,Tinus,online-boutique-6462,"Yes, I've noticed the same, @Bob . It seems like an error in the system"
+2025-10-27 14:04:07,Bez,online-boutique-6462,"Whatever it is, we need to sort it out quickly."
+2025-10-27 14:04:09,Bez,online-boutique-6462,we need to step on it! before the social media backlash is turning into a storm.
+2025-10-27 14:04:13,Tinus,online-boutique-6462,"Who is handling incidents today? Please size up the issue, this is urgent"
+2025-10-27 14:04:34,PLAYER,online-boutique-6462,Bob Can you confirm if this is affecting customers in all regions?
+2025-10-27 14:04:41,UptimeLabs,online-boutique-6462,:star: Asking questions to validate impact of the problem
+2025-10-27 14:05:01,Bob,online-boutique-6462,sure let me take a look into the reports for you now
+2025-10-27 14:05:03,PLAYER,online-boutique-6462,Tinus I am handling incidents today
+2025-10-27 14:05:37,PLAYER,online-boutique-6462,Daniel Can you investigate these errors being reported?
+2025-10-27 14:05:46,Bob,online-boutique-6462,"From the looks of it, this issue is only being reported on withing the whole of the EU"
+2025-10-27 14:05:58,Daniel,online-boutique-6462,Yes i can take a look into the logs for you now
+2025-10-27 14:06:44,PLAYER,online-boutique-6462,Sev-2 Customers in EU unable to make payments
+2025-10-27 14:06:44,UptimeLabs,online-boutique-6462,:star: Incident record created
+2025-10-27 14:06:45,PLAYER,business-comms-6462,*Incident Number INC100099:* Sev-2 Customers in EU unable to make payments
+2025-10-27 14:06:46,UptimeLabs,online-boutique-6462,:star: Send first comms in first 5 minutes
+2025-10-27 14:06:50,UptimeLabs,online-boutique-6462,:star: Qualify the problem
+2025-10-27 14:07:56,Daniel,online-boutique-6462,"It seems there are errors in a few services, payments and in cart service"
+2025-10-27 14:07:59,PLAYER,online-boutique-6462,Tanya Can you investigate if there are any infrastructure issues that could be contributing to this issue?
+2025-10-27 14:08:03,UptimeLabs,online-boutique-6462,:star: Form an effective investigation team
+2025-10-27 14:08:17,Daniel,online-boutique-6462,i could restart the cart service and see if this fixes things?
+2025-10-27 14:08:43,Tanya,online-boutique-6462,it seems like payment service is causing a lot of issues from what i see
+2025-10-27 14:08:56,PLAYER,business-comms-6462,We are just confirming if this is application or infrastructure related and will report back with any further updates as information becomes available.
+2025-10-27 14:08:59,Bez,business-comms-6462,ok lets get all hands on this
+2025-10-27 14:09:16,Bez,business-comms-6462,"keep me updated with any new developments, investors will be asking"
+2025-10-27 14:09:41,Bob,online-boutique-6462,"customers aren't happy, they are asking for an eta on when this will be fixed"
+2025-10-27 14:10:00,PLAYER,online-boutique-6462,Daniel and Tanya can you work together to resolve this issue?
+2025-10-27 14:10:21,Tanya,online-boutique-6462,i think we should take a look into the changes to see if any recent deployments are impacting this
+2025-10-27 14:10:37,Daniel,online-boutique-6462,"good idea, i will go and grab the document with all the recent deployments"
+2025-10-27 14:11:09,Daniel,online-boutique-6462,"Here we go:
+<https://uptime-labs.atlassian.net/wiki/spaces/ULPUBLIC/pages/1114341391>"
+2025-10-27 14:11:33,PLAYER,online-boutique-6462,Bob please advise customer that we are aware of the issue and are investigating how we can resolve it.
+2025-10-27 14:12:03,Tanya,online-boutique-6462,"there is a lot of changes made today, Graham can you take a look at these aswell, we need your insite on what you think this could be"
+2025-10-27 14:12:10,Daniel,online-boutique-6462,i will check them aswell
+2025-10-27 14:13:43,Tanya,online-boutique-6462,"daniel i see you made a change to payment service, what's this about ?"
+2025-10-27 14:13:48,PLAYER,online-boutique-6462,Tanya and Daniel Could this be related to the redis deployment that went out before the PaymentService?
+2025-10-27 14:13:52,UptimeLabs,online-boutique-6462,:star: Reviewed changes
+2025-10-27 14:14:02,Tanya,online-boutique-6462,let me check the redis change
+2025-10-27 14:14:17,Daniel,online-boutique-6462,its Bitcoin payment handling and transaction logging updates
+2025-10-27 14:14:27,Bez,business-comms-6462,how are we holding up?
+2025-10-27 14:14:39,UptimeLabs,online-boutique-6462,:bulb: keep the business informed regularly
+2025-10-27 14:15:10,PLAYER,online-boutique-6462,Bob Can you confirm what payment method customer are using when the failures occur?
+2025-10-27 14:15:17,Tanya,online-boutique-6462,"this redis change doesnt seem to be throwing up any errors, we should look into the payment change, its logs seems to be where this is originating from"
+2025-10-27 14:15:39,Bob,online-boutique-6462,"within the EU it seems to be impacting all users, i doubt all them are using bitcoin"
+2025-10-27 14:16:01,PLAYER,business-comms-6462,We believe this could be related to some recent deployments and are just trying to rule out which deployments could have caused the issue.
+2025-10-27 14:16:03,Tanya,online-boutique-6462,"its possible daniels change had broken all of payment service within the EU, daniel care to weigh in"
+2025-10-27 14:16:30,Daniel,online-boutique-6462,"Yes now that i think of it the bitcoin change is only deployed for the EU, this has to be the issue"
+2025-10-27 14:16:50,Tanya,online-boutique-6462,that would explain the errors in other services as they are connected
+2025-10-27 14:16:52,PLAYER,online-boutique-6462,Daniel Can your rollback your changes to see if that resolves the issue?
+2025-10-27 14:16:56,UptimeLabs,online-boutique-6462,:star: Restoration over root cause analysis
+2025-10-27 14:17:02,Tanya,online-boutique-6462,and why all of payment service is down
+2025-10-27 14:17:26,Daniel,online-boutique-6462,"Understood, I'll proceed with rolling back the payment service"
+2025-10-27 14:17:46,Daniel,online-boutique-6462,payment service rollback is complete
+2025-10-27 14:17:48,PLAYER,online-boutique-6462,Bob please advise customers we have identified the cause of the issue and are working to restore service as soon as possible
+2025-10-27 14:17:56,UptimeLabs,online-boutique-6462,:star: Know your team and their roles
+2025-10-27 14:18:01,Hamed,online-boutique-6462,This is not good. Something is broken after the payment rollback
+2025-10-27 14:18:26,Bob,online-boutique-6462,"not looking good, this issue seems to be global now"
+2025-10-27 14:18:37,Bob,online-boutique-6462,putting out a message to respond now
+2025-10-27 14:18:54,Bez,business-comms-6462,"social media is blowing up, has this gotten worse?"
+2025-10-27 14:19:09,PLAYER,online-boutique-6462,Hamed can you provide further details so that Daniel and Tanya can investigate further?
+2025-10-27 14:19:17,Daniel,online-boutique-6462,"not sure what has made this worse, there are no error in payment service now"
+2025-10-27 14:19:25,Hamed,online-boutique-6462,let me and tanya look into this
+2025-10-27 14:19:27,Tanya,online-boutique-6462,on it
+2025-10-27 14:20:16,Hamed,online-boutique-6462,ok it seem that the cart redis and service are dependant on the payments change
+2025-10-27 14:20:17,PLAYER,business-comms-6462,This incident is now a sev-1 as this affecting all customers globally.
+2025-10-27 14:20:20,UptimeLabs,online-boutique-6462,:star: Formally assign criticality level to the incident
+2025-10-27 14:20:27,Hamed,online-boutique-6462,daniel overlooked this detail when rolling back the change
+2025-10-27 14:20:34,Daniel,online-boutique-6462,"my bad, what can we do now?"
+2025-10-27 14:21:32,PLAYER,online-boutique-6462,Hamed could this be resolved by rolling back changes to those services too?
+2025-10-27 14:21:37,UptimeLabs,online-boutique-6462,:star: Form a working theory
+2025-10-27 14:21:50,Hamed,online-boutique-6462,"Yes, we will need to rollback the remaining 2 deployments and potentially restart the services yes"
+2025-10-27 14:22:37,PLAYER,online-boutique-6462,Daniel and Tanya please start rolling back those deployments and restart the services
+2025-10-27 14:22:40,Daniel,online-boutique-6462,on it
+2025-10-27 14:22:44,Tanya,online-boutique-6462,i will help daniel
+2025-10-27 14:22:51,UptimeLabs,online-boutique-6462,:star: Take command
+2025-10-27 14:23:05,Tanya,online-boutique-6462,Rollbacks are completed
+2025-10-27 14:23:09,Daniel,online-boutique-6462,"Great, i've also restarted the frontend so the website should be working now"
+2025-10-27 14:23:41,Tinus,online-boutique-6462,@graham.desouza can you confirm?
+2025-10-27 14:23:54,PLAYER,business-comms-6462,We have started rolling back 2 other services and expect to restore service shortly.
+2025-10-27 14:24:02,UptimeLabs,online-boutique-6462,:star: Confirm resolution with the business
+2025-10-27 14:25:00,UptimeLabs,online-boutique-6462,:alarm_clock: - You have less than 4 minutes. You can type `/help` if you need any reminders.
+2025-10-27 14:25:04,PLAYER,online-boutique-6462,Tinus The website still displays an error message when trying to checkout and item
+2025-10-27 14:25:42,Daniel,online-boutique-6462,"frontend has been restarted, took a second there"
+2025-10-27 14:25:50,Daniel,online-boutique-6462,let me take a look at the site now
+2025-10-27 14:26:10,Bez,business-comms-6462,lets hope this works
+2025-10-27 14:26:18,PLAYER,online-boutique-6462,Tinus the checout is working again
+2025-10-27 14:26:32,PLAYER,business-comms-6462,The website appears to be working again
+2025-10-27 14:26:34,Daniel,online-boutique-6462,It appears that everything has returned to its normal state
+2025-10-27 14:26:36,Shay,online-boutique-6462,I was worried for a bit but everything looks good now.
+2025-10-27 14:26:39,Bob,online-boutique-6462,"Great work, everyone! The payments issue has been resolved and customers can now check out smoothly"
+2025-10-27 14:26:44,Tanya,online-boutique-6462,Phew! Glad we got that sorted. Fantastic teamwork!
+2025-10-27 14:26:45,Tinus,online-boutique-6462,Absolutely! Proud to be a part of this team
+2025-10-27 14:26:46,Tinus,online-boutique-6462,Thank you @graham.desouza for coordinating the rollback effectively
+2025-10-27 14:26:50,Bez,online-boutique-6462,"Brilliant job, team and @graham.desouza!"
+2025-10-27 14:26:51,Bez,online-boutique-6462,"I've been monitoring the financial metrics, and they're already improving"
+2025-10-27 14:27:29,UptimeLabs,online-boutique-6462,"Thank you for playing The Chain, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit start when you are ready. I am ready button"
+2025-10-27 14:27:34,PLAYER,online-boutique-6462,Clicked Start_feedback button
+2025-10-27 14:29:21,UptimeLabs,online-boutique-6462,Submission successful

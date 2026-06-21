@@ -1,0 +1,30 @@
+"player","session_id","session_start","name","level","GUOT","feedback1","feedback2","count(ps.player) over(partition by ps.player)"
+aho271@bloomberg.net,7592,"2026-02-03 07:51:38",Bezs Beatles Day!,5,,,,1
+cflounders@bloomberg.net,7513,"2026-01-23 09:59:57",Too Good To Be True Workshop,29,"8",na,na,2
+cflounders@bloomberg.net,7717,"2026-02-13 09:51:44",Discount Disaster Workshop,26,"5",This needs to have Bloomberg eng context to be valuable for our incident needs but could be useful,This needs to have Bloomberg eng context to be valuable for our incident needs but could be useful,2
+eschulman6@bloomberg.net,7879,"2026-03-04 10:11:34",DEFCON 1,30,,,,5
+eschulman6@bloomberg.net,7725,"2026-02-13 16:08:06",The Unknown Unknown,33,,,,5
+eschulman6@bloomberg.net,7663,"2026-02-06 18:40:07",DEFCON 1,30,"10",Role of insurance in a ransomware incident.,"Tandem activity from business, technical and confidential side chat.",5
+eschulman6@bloomberg.net,7610,"2026-02-03 20:04:54",Discount Disaster Workshop,26,"10",-,Possibility of a DoS attack within the game.   More variables.,5
+eschulman6@bloomberg.net,7550,"2026-01-28 15:47:28",Too Good To Be True Workshop,29,"10",-,Run of the mill outage -  good LLM work.,5
+kdanjo@bloomberg.net,7618,"2026-02-04 13:09:47",Bezs Beatles Day!,5,,,,3
+kdanjo@bloomberg.net,7835,"2026-02-27 08:38:33",Bezs Beatles Day!,5,"9",good,good,3
+kdanjo@bloomberg.net,7530,"2026-01-27 07:33:38",Bezs Beatles Day!,5,"8","That it's important to take charge and make decisions, but at the same time to maintain good relationship with stakeholders so you can work together. Would be great if there is any particular feedback about the communication style that I've used.","As a someone new to Incident Management, I am always surprised at the pace of how things move. It's great to be able to practice this.",3
+lspesshardt@bloomberg.net,7587,"2026-02-02 13:18:27",Bezs Beatles Day! Workshop,31,"10",Keeping track of people's roles and names better would have made it easier to manage this incident. Also being more forceful with the engineer who ultimately rolled back their change could have made the resolution smoother.,"Surprisingly stressful even though I knew it's not a real issue! Having to keep on top of the various technical resources, the customer experience as well the demanding CEO.",6
+lspesshardt@bloomberg.net,7840,"2026-02-27 10:32:44",Discount Disaster,36,,,,6
+lspesshardt@bloomberg.net,7805,"2026-02-24 09:16:12",Discount Disaster,36,,,,6
+lspesshardt@bloomberg.net,7804,"2026-02-24 08:55:00",Discount Disaster Workshop,26,,,,6
+lspesshardt@bloomberg.net,7798,"2026-02-23 13:24:12",Discount Disaster Workshop,26,,,,6
+lspesshardt@bloomberg.net,7788,"2026-02-20 14:26:07",Bezs Beatles Day!,5,,,,6
+s.sasi@bloomberg.net,7480,"2026-01-21 10:48:12",Too Good To Be True Workshop,29,,,,2
+s.sasi@bloomberg.net,7542,"2026-01-28 10:39:18",Discount Disaster Workshop,26,"10",NA,NA,2
+stuck2@bloomberg.net,7785,"2026-02-20 11:47:36",The Unknown Unknown,33,,,,4
+stuck2@bloomberg.net,7517,"2026-01-23 11:21:55",Too Good To Be True Workshop,29,,,,4
+stuck2@bloomberg.net,7572,"2026-01-30 11:11:49",Discount Disaster Workshop,26,"8",In retrospect given the high severity of this incident pulling in all hands irrespective of role would have been preferable rather than taking the journey towards getting security involved after the DOS realisation.,I don't know that I would class anything as surprising as I expect there to be unknowns in any incident.  I am not experienced directly with client facing web development so aspects of the technical domain are less familiar to me.,4
+stuck2@bloomberg.net,7868,"2026-03-03 11:05:22",DEFCON 1,30,,,,4
+utopkara@bloomberg.net,7656,"2026-02-06 13:12:56",Discount Disaster Workshop,26,"6","This exercise made me realize the importance of bringing in all hands on deck during high impact events, like the sales campaign that was happening, and ask for all eyeballs during an outage, because the signal for the source of issue could come from anywhere.
+
+I did anticipate that the issue was a security issue because of the way the problem was set up. It would have been more realistic if there were no hints of the source of the issue.","The fact that the clue about the abnormal traffic came from Bob was interesting. I would have expected the engineering side would have come up with the first clues.
+This probably shows that the dashboards were not built to capture DDOS attacks.",3
+utopkara@bloomberg.net,7846,"2026-02-27 13:26:05",The Unknown Unknown,33,,,,3
+utopkara@bloomberg.net,7576,"2026-01-30 13:34:22",Too Good To Be True Workshop,29,"6",This was a good learning experience for the tools available towards incident management inside the simulation environment.,That the characters were responsive to my notes was surprising. Nice experience overall.,3

@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"/Users/smrimell/.claude/plugins/cache/claude-plugins-official/skill-creator/unknown/skills/incident-readout\")",
+      "Read(//Users/smrimell/.claude/plugins/cache/claude-plugins-official/skill-creator/unknown/skills/**)",
+      "Bash(python -m scripts.package_skill incident-readout)",
+      "Bash(python /Users/smrimell/.claude/plugins/cache/claude-plugins-official/skill-creator/unknown/scripts/package_skill.py incident-readout)",
+      "Bash(python skill-creator/scripts/package_skill.py incident-readout)",
+      "Bash(python3 skill-creator/scripts/package_skill.py incident-readout)",
+      "Bash(python3 -m scripts.package_skill skills/incident-readout)",
+      "Bash(python3 -m scripts.package_skill ../incident-readout)",
+      "Bash(pyenv shell *)"
+    ]
+  }
+}

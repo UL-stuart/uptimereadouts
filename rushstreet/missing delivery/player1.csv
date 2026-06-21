@@ -1,0 +1,146 @@
+index,datetime,player,channel,message
+0,18/11/2025 10:04,Shay,online-boutique-6804,30 mins into this promotional campaign and its already proving to be a great success
+1,18/11/2025 10:04,Bez,online-boutique-6804,I'm seeing a lot of sales coming in
+2,18/11/2025 10:04,Tanya,online-boutique-6804,It was definitely a great idea offering a free tote for every $50 spent
+3,18/11/2025 10:04,Daniel,online-boutique-6804,People love free stuff
+4,18/11/2025 10:05,Bez,online-boutique-6804,Sales are definitely looking good team. If we keep this up Ill treat the whole team to dinner next friday
+5,18/11/2025 10:05,Hamed,online-boutique-6804,In that case Im going to have my eyes glued to the monitoring services to make sure there are no hiccups
+6,18/11/2025 10:05,Tanya,online-boutique-6804,Yeah guys. Just be vigilant. Because theres such a high volume of sales something could easily go wrong
+7,18/11/2025 10:05,Tinus,online-boutique-6804,Remember everyone if theres anything unusual raise the flag immediately. Heres to a hitch-free sale!
+9,18/11/2025 10:06,player1,online-boutique-6804,Clicked Start button
+11,18/11/2025 10:06,Bob,online-boutique-6804,Team we have a situation. Customers are reporting they arent receiving confirmation emails.
+12,18/11/2025 10:06,Shay,online-boutique-6804,That is not good
+13,18/11/2025 10:06,Tanya,online-boutique-6804,I knew things were too good to be true
+14,18/11/2025 10:06,Tinus,online-boutique-6804,We need to get those emails sent out as quickly as possible
+15,18/11/2025 10:06,player1,online-boutique-6804,Confirmation emails about free gift or what or order?
+16,18/11/2025 10:06,Daniel,online-boutique-6804,Im checking our email service logs now. Hold on...
+17,18/11/2025 10:06,Tanya,online-boutique-6804,And Ill check to see if the problem is platform related
+18,18/11/2025 10:06,Bob,online-boutique-6804,Its the orders
+19,18/11/2025 10:06,Bez,online-boutique-6804,As well as impacting our sales this will impact the trust customers have in us. Lets get this incident fixed ASAP
+20,18/11/2025 10:07,Bob,online-boutique-6804,player1 please guide us through the next steps. We need to act fast and resolve this.
+21,18/11/2025 10:07,player1,online-boutique-6804,i will try to reproduce issue
+23,18/11/2025 10:08,player1,online-boutique-6804,i will open a incident
+24,18/11/2025 10:08,Bob,online-boutique-6804,Did you see th eissue player1 ?
+25,18/11/2025 10:08,player1,online-boutique-6804,no email confirmation received P2
+27,18/11/2025 10:08,player1,business-comms-6804,*Incident Number INC100039:* no email confirmation received P2
+28,18/11/2025 10:08,player1,online-boutique-6804,yes
+30,18/11/2025 10:08,player1,online-boutique-6804,can we get a list of recent changes please?
+32,18/11/2025 10:09,player1,business-comms-6804,Hello we are having issues with customers recieving confirmation mail after order
+33,18/11/2025 10:09,Shay,online-boutique-6804,<https://uptime-labs.atlassian.net/wiki/spaces/ULPUBLIC/pages/1113423897/Missing+Delivery+-+Change+Request+Logs>
+34,18/11/2025 10:09,player1,business-comms-6804,we are working on resolution
+35,18/11/2025 10:09,player1,business-comms-6804,and will provide updates ASAP
+36,18/11/2025 10:09,player1,online-boutique-6804,thank you
+37,18/11/2025 10:09,Bez,business-comms-6804,Are th eorders being placed?
+38,18/11/2025 10:09,Bez,business-comms-6804,Is this affecting our orders?
+39,18/11/2025 10:10,player1,online-boutique-6804,Daniel can you explain and check this change CHG89352
+40,18/11/2025 10:10,player1,online-boutique-6804,what was done here?
+42,18/11/2025 10:10,Daniel,online-boutique-6804,Checking
+43,18/11/2025 10:10,Daniel,online-boutique-6804,I see a lot of errors on Email service
+44,18/11/2025 10:11,player1,business-comms-6804,yes
+45,18/11/2025 10:11,player1,business-comms-6804,its affecting all customers
+46,18/11/2025 10:11,Daniel,online-boutique-6804,But i dont see any issues with Change
+47,18/11/2025 10:11,player1,business-comms-6804,we are checking with engineers
+48,18/11/2025 10:11,Daniel,online-boutique-6804,The errors and Change is not matching
+49,18/11/2025 10:11,player1,online-boutique-6804,okay can you explain what was changed there?
+50,18/11/2025 10:11,Daniel,online-boutique-6804,Its a minir change to add few new services
+51,18/11/2025 10:11,Daniel,online-boutique-6804,"[ERROR] [ses-email-sender] [Thread-12] Failed to send email via Amazon SES\nTraceback (most recent call last):\n  File ""/app/email_sender.py"" line 87 in send_email\n    response = ses_client.send_email(\n      Source=source_email\n      Destination={'ToAddresses': [recipient_email]}\n      Message={\n        'Subject': {'Data': subject}\n        'Body': {'Text': {'Data': body_text}}\n      }\n    )\n  File ""/usr/local/lib/python3.8/site-packages/botocore/client.py"" line 357 in _api_call\n    return self._make_api_call(operation_name kwargs)\n  File ""/usr/local/lib/python3.8/site-packages/botocore/client.py"" line 676 in _make_api_call\n    raise error_class(parsed_response operation_name)\nbotocore.exceptions.EndpointConnectionError: Could not connect to the endpoint URL: ""<https://email.us-west-2.amazonaws.com>""\n[INFO] [ses-email-sender] [Thread-12] Retrying in 5 seconds...\n[ERROR] [ses-email-sender]"
+53,18/11/2025 10:12,Bez,business-comms-6804,Is this a global issue
+54,18/11/2025 10:12,player1,online-boutique-6804,does this affect all customers?
+56,18/11/2025 10:12,player1,online-boutique-6804,this error looks related to recent change Daniel
+57,18/11/2025 10:12,Bob,online-boutique-6804,Yes but Customers have only started reporting issues (with not receiving emails) 30 mins after the sale began
+58,18/11/2025 10:12,player1,online-boutique-6804,Tanya any news from you?
+60,18/11/2025 10:13,Tanya,online-boutique-6804,Checking
+61,18/11/2025 10:13,Tanya,online-boutique-6804,Email service is throwing errors
+62,18/11/2025 10:13,Daniel,online-boutique-6804,I can roll bakc my change
+63,18/11/2025 10:13,player1,online-boutique-6804,Daniel can you revert changes in CHG89352
+64,18/11/2025 10:13,Tanya,online-boutique-6804,If issues started 30 mins after the sale went live and sales are at unprecedented high - with new emails now being rejected... could this be a bottleneck issue?
+65,18/11/2025 10:13,player1,online-boutique-6804,please
+67,18/11/2025 10:13,Daniel,online-boutique-6804,On it
+68,18/11/2025 10:14,player1,business-comms-6804,issue is with email services
+69,18/11/2025 10:14,Daniel,online-boutique-6804,I have rolled back my change
+70,18/11/2025 10:14,player1,business-comms-6804,we are reverting previous change
+71,18/11/2025 10:14,Daniel,online-boutique-6804,Can you p
+72,18/11/2025 10:14,player1,online-boutique-6804,thank you checking
+73,18/11/2025 10:14,player1,online-boutique-6804,metrics still shows drop
+74,18/11/2025 10:14,Shay,online-boutique-6804,i did try to place orders
+76,18/11/2025 10:14,Shay,online-boutique-6804,I am getting errors after placing deal
+78,18/11/2025 10:15,player1,online-boutique-6804,checking \\
+79,18/11/2025 10:15,Daniel,online-boutique-6804,I don't think this is due to any change
+80,18/11/2025 10:15,player1,online-boutique-6804,i can place order
+81,18/11/2025 10:15,player1,online-boutique-6804,Daniel this change is also new CHG89355
+83,18/11/2025 10:15,player1,online-boutique-6804,and happened after we put sales
+84,18/11/2025 10:15,player1,online-boutique-6804,can you check this ticket?
+85,18/11/2025 10:15,Daniel,online-boutique-6804,Looking at that log message I'm thinking the daily sending quota has been exceeded leading Amazon SES (who manage our email sending service) to regulate and restrict them
+86,18/11/2025 10:16,Bez,business-comms-6804,What's the latest ? do we know what's causing the issue
+87,18/11/2025 10:16,player1,online-boutique-6804,got it who can contact Amazon?
+88,18/11/2025 10:16,Daniel,online-boutique-6804,Tanya
+89,18/11/2025 10:16,player1,online-boutique-6804,is it possible to reduce the load ?
+90,18/11/2025 10:16,Tanya,online-boutique-6804,Proficient Cloud Services is our Managed Service Provider (MSP) for AWS. Whenever we've faced issues or needed service changes with AWS in the past we've routed our communications through them
+91,18/11/2025 10:16,player1,online-boutique-6804,Tanya could you contact AWS?
+92,18/11/2025 10:17,player1,online-boutique-6804,and explain them issue
+93,18/11/2025 10:17,player1,business-comms-6804,we are contacting AWS
+94,18/11/2025 10:17,player1,business-comms-6804,issue lies with Amazon services they are blocking us when there is overload
+95,18/11/2025 10:17,player1,business-comms-6804,working on resolution
+96,18/11/2025 10:17,Tanya,online-boutique-6804,I can dial PCS who is our third party cloud service provider they will in turn reach out to AWS
+97,18/11/2025 10:17,player1,online-boutique-6804,thank you
+98,18/11/2025 10:17,player1,online-boutique-6804,please do
+99,18/11/2025 10:17,player1,online-boutique-6804,metrics are still bad
+100,18/11/2025 10:17,Bez,business-comms-6804,Okay - Let Tinus know if you need any help
+101,18/11/2025 10:17,Tanya,online-boutique-6804,On it
+102,18/11/2025 10:18,player1,online-boutique-6804,issue started at 11:06
+103,18/11/2025 10:18,Tanya,online-boutique-6804,AWS Support Case ID: 271928921403 has been raised
+104,18/11/2025 10:18,player1,business-comms-6804,thank you
+105,18/11/2025 10:18,Bob,online-boutique-6804,Whats the latest ?
+106,18/11/2025 10:19,Bez,business-comms-6804,Do we have an ETA?
+107,18/11/2025 10:19,player1,business-comms-6804,not yet
+108,18/11/2025 10:19,player1,online-boutique-6804,thank you
+109,18/11/2025 10:19,player1,online-boutique-6804,can maybe someone escalate to AWS to get priority Tinus maybe?
+114,18/11/2025 10:19,Tanya,online-boutique-6804,The ETA is 60 minutes
+115,18/11/2025 10:20,player1,business-comms-6804,ETA IS 60 minutes
+116,18/11/2025 10:20,player1,online-boutique-6804,can someone escalate we don't have 60 minutes
+117,18/11/2025 10:20,Bez,business-comms-6804,Thats not acceptable
+118,18/11/2025 10:20,Bez,business-comms-6804,Can you talk to TInus. tag him
+119,18/11/2025 10:20,player1,business-comms-6804,yes
+120,18/11/2025 10:20,player1,business-comms-6804,we did
+121,18/11/2025 10:20,player1,online-boutique-6804,Tinus can you please escalate this issue to AWS\\
+122,18/11/2025 10:20,Tinus,online-boutique-6804,That is  to long it should be a simple reconfiguration let me ring my contact
+123,18/11/2025 10:21,player1,online-boutique-6804,60 minutes is too much time
+124,18/11/2025 10:21,player1,online-boutique-6804,thank you very much
+125,18/11/2025 10:21,Tinus,online-boutique-6804,can you quickly summarize the issue for me
+126,18/11/2025 10:21,player1,business-comms-6804,Tinus is escalating to AWS
+127,18/11/2025 10:21,player1,business-comms-6804,we are trying to get better ETA \\
+128,18/11/2025 10:21,Bez,business-comms-6804,Thanks
+129,18/11/2025 10:21,player1,online-boutique-6804,yes ofc
+130,18/11/2025 10:23,Tinus,online-boutique-6804,I am waiting
+131,18/11/2025 10:24,Tinus,online-boutique-6804,Do you have a screen shot of the error ? and what do you think i sthe reason ?
+132,18/11/2025 10:24,player1,online-boutique-6804,Summary: Starting from 11/18/2025 at 11:06 EST metrics observed drop to 0. Shortly after customers startted reporting issues they arent receiving confirmation emails.\nFurther investigation confirmed issue is with daily sending quota has been exceeded leading Amazon SES (who manage our email sending service) to regulate and restrict them.
+133,18/11/2025 10:24,Daniel,online-boutique-6804,Tinus we need the AWS to extend the Email service quota
+134,18/11/2025 10:24,player1,online-boutique-6804,roficient Cloud Services is our Managed Service Provider (MSP) for AWS. Whenever we've faced issues or needed service changes with AWS in the past we've routed our communications through them
+135,18/11/2025 10:24,Tinus,online-boutique-6804,OK on call now
+136,18/11/2025 10:24,player1,online-boutique-6804,thank you\\
+137,18/11/2025 10:24,Tinus,online-boutique-6804,They are extending the quota
+138,18/11/2025 10:25,player1,business-comms-6804,Tinus is on call with AWS
+139,18/11/2025 10:25,Daniel,online-boutique-6804,logs for email service are looking healthier
+140,18/11/2025 10:25,player1,business-comms-6804,they are changing configuration
+141,18/11/2025 10:25,player1,online-boutique-6804,checking
+142,18/11/2025 10:25,Tinus,online-boutique-6804,Are we sure its fixed?
+143,18/11/2025 10:25,Tinus,online-boutique-6804,player1  what do you think?
+144,18/11/2025 10:25,Tinus,online-boutique-6804,It's done - please check
+145,18/11/2025 10:25,player1,online-boutique-6804,metrics are recovering
+146,18/11/2025 10:26,player1,online-boutique-6804,Bob are we still receiving customers complaints?
+147,18/11/2025 10:26,Tinus,online-boutique-6804,can you check in the platform - if we are still geting error messages
+148,18/11/2025 10:26,player1,business-comms-6804,Issue is resolved
+150,18/11/2025 10:26,player1,business-comms-6804,Orders are coming in
+152,18/11/2025 10:26,Bob,online-boutique-6804,Its positive - Customers can place orders
+153,18/11/2025 10:26,player1,online-boutique-6804,No errors appearing
+155,18/11/2025 10:26,Bez,online-boutique-6804,Who knew free totes could cause such havoc?
+156,18/11/2025 10:26,Tinus,online-boutique-6804,Definitely not me
+157,18/11/2025 10:27,Bez,online-boutique-6804,player1  Good job saving the day - looks like friday dinner is back on!
+158,18/11/2025 10:27,Bob,online-boutique-6804,Thanks Marija
+159,18/11/2025 10:27,player1,online-boutique-6804,Pleasure
+160,18/11/2025 10:27,player1,online-boutique-6804,thank you to
+162,18/11/2025 10:27,player1,online-boutique-6804,i will resolve incident shortly
+163,18/11/2025 10:27,Bez,business-comms-6804,Much appreciate this quick response
+164,18/11/2025 10:27,player1,online-boutique-6804,Clicked Start_feedback button
+165,18/11/2025 10:27,player1,business-comms-6804,welcome
+166,18/11/2025 10:27,player1,online-boutique-6804,Clicked Start_feedback button\n

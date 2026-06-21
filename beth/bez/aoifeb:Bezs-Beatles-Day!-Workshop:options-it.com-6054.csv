@@ -1,0 +1,105 @@
+datetime,player,channel,message
+2025-10-02 09:54:18,Tinus,online-boutique-6054,Hey everyone. I'm pumped today about our flash sale
+2025-10-02 09:54:22,Tinus,online-boutique-6054,You know it's been 53 years since the Beatles released Abbey Road right? My favourite album
+2025-10-02 09:54:26,Tanya,online-boutique-6054,53 years already?? Wow that makes me feel old...
+2025-10-02 09:54:29,Tinus,online-boutique-6054,Indeed! We're celebrating today by promoting a flash sale on retro items from 1969
+2025-10-02 09:54:32,UptimeLabs,online-boutique-6054,"Welcome to Bez's Beatles day, the responsibility is on you to size up the problem.
+
+ *Use `/help` at any time for a list of useful links and commands*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin Start button"
+2025-10-02 09:55:07,PLAYER,online-boutique-6054,Clicked undefined button
+2025-10-02 09:55:19,PLAYER,online-boutique-6054,Clicked org button
+2025-10-02 09:55:40,PLAYER,online-boutique-6054,Clicked undefined button
+2025-10-02 09:55:42,PLAYER,online-boutique-6054,Clicked undefined button
+2025-10-02 09:56:52,PLAYER,online-boutique-6054,Clicked Start button
+2025-10-02 09:56:57,PLAYER,online-boutique-6054,Clicked Start button
+2025-10-02 09:56:57,Tinus,online-boutique-6054,We're a step closer to allowing folks to pay for items from the 1960s with Bitcoin thanks to Daniel!
+2025-10-02 09:57:00,Daniel,online-boutique-6054,Think of it like time travelling!
+2025-10-02 09:57:04,Tinus,online-boutique-6054,Wow good work Daniel! Looking forward to seeing it in action in prod
+2025-10-02 09:57:12,Shay,online-boutique-6054,"erm - funny you should say that Daniel, I'm just testing my checkout service change in prod and I can't complete the payment - something's up"
+2025-10-02 09:57:14,PLAYER,online-boutique-6054,When was this set up? thank you!
+2025-10-02 09:57:18,Tanya,online-boutique-6054,Sorry Daniel it's not looking good on my end either
+2025-10-02 09:57:24,Tinus,online-boutique-6054,Uh oh...here we go again
+2025-10-02 09:57:30,Tinus,online-boutique-6054,"@Aoife Breen can you ""Size up the Issue"" please and keep us informed"
+2025-10-02 09:57:35,Shay,online-boutique-6054,@Aoife Breen it's worth having a look at the changes made earlier today first
+2025-10-02 09:57:45,Tinus,online-boutique-6054,Get this sorted ASAP!!!
+2025-10-02 09:57:49,PLAYER,online-boutique-6054,"Daniel this could cause major issues, please review the change and roll back immediately if required. I am testing on my side now"
+2025-10-02 09:57:58,Shay,online-boutique-6054,When i click the place order button I get an error... anyone else?
+2025-10-02 09:58:01,UptimeLabs,online-boutique-6054,:star: Restoration over root cause analysis
+2025-10-02 09:58:01,UptimeLabs,online-boutique-6054,:star: Reproduces the incident
+2025-10-02 09:58:01,UptimeLabs,online-boutique-6054,:star: Reviewed changes
+2025-10-02 09:58:18,Daniel,online-boutique-6054,You think it's my change causing the problem?
+2025-10-02 09:58:26,Daniel,online-boutique-6054,We haven't even done an investigation
+2025-10-02 09:58:44,Daniel,online-boutique-6054,Also Shay was testing his change when he found the issue so...
+2025-10-02 09:59:12,PLAYER,online-boutique-6054,what changes were made today? can someone provide a list please?
+2025-10-02 09:59:20,UptimeLabs,online-boutique-6054,:star: Check changes done to the platform
+2025-10-02 09:59:28,Shay,online-boutique-6054,Here's the detailed info on each of the changes made today
+2025-10-02 09:59:31,Shay,online-boutique-6054,Hope this helps:<https://uptime-labs.atlassian.net/wiki/spaces/ULPUBLIC/pages/1049559041/Bez+s+Beatles+day+Change+Request+logs>
+2025-10-02 10:00:30,PLAYER,business-comms-6054,incident - Payment issues Sev1
+2025-10-02 10:00:50,UptimeLabs,online-boutique-6054,:star: Incident record created
+2025-10-02 10:00:55,UptimeLabs,online-boutique-6054,:star: Formally assign criticality level to the incident
+2025-10-02 10:01:17,Shay,online-boutique-6054,I will start with checking logs
+2025-10-02 10:01:19,Daniel,online-boutique-6054,Let me take a look as well
+2025-10-02 10:01:29,Shay,online-boutique-6054,The checkout service logs are healthy and are working as intended
+2025-10-02 10:01:31,PLAYER,online-boutique-6054,"Shay I can see your checkout changes were made in prod, please review these also in case related"
+2025-10-02 10:01:31,Daniel,online-boutique-6054,Could it be your checkout change again @Shay? It broke the platform last week!
+2025-10-02 10:01:32,Bez,business-comms-6054,Any updates on the investigation?
+2025-10-02 10:01:37,Shay,online-boutique-6054,Please don't remind me @Daniel :cold_face: 
+2025-10-02 10:01:45,Shay,online-boutique-6054,The checkout service logs are healthy and the service is working as intended
+2025-10-02 10:01:50,PLAYER,online-boutique-6054,"The main issue is with payment, Daniel only your change was made in prod not UAT like Shay"
+2025-10-02 10:01:58,PLAYER,online-boutique-6054,Please rollback
+2025-10-02 10:02:08,Daniel,online-boutique-6054,"Honestly, I don't think this is coming from my change. The Bitcoin feature isn't even active yet, and the frontend hasn't been updated"
+2025-10-02 10:02:12,Daniel,online-boutique-6054,Could this be load-related? It's a flash sale after all
+2025-10-02 10:02:15,Bez,business-comms-6054,Have we figured out the root cause yet?
+2025-10-02 10:02:17,PLAYER,business-comms-6054,"Issue is with payment service, a change was made this morning, investigating rollback options"
+2025-10-02 10:02:28,Bez,online-boutique-6054,Have we got an idea on the customer impact?
+2025-10-02 10:03:08,PLAYER,online-boutique-6054,However orders per minute have decreased
+2025-10-02 10:03:18,UptimeLabs,online-boutique-6054,:star: Qualify the problem
+2025-10-02 10:03:18,UptimeLabs,online-boutique-6054,:star: Use metrics as evidence
+2025-10-02 10:03:28,PLAYER,online-boutique-6054,Bob have customers flagged this via media platforms?
+2025-10-02 10:03:31,Bez,online-boutique-6054,Good stuff - Update in here when we have established if this is a global issue
+2025-10-02 10:03:33,PLAYER,online-boutique-6054,can we get comms out please?
+2025-10-02 10:03:38,UptimeLabs,online-boutique-6054,:star: Asking questions to validate impact of the problem
+2025-10-02 10:03:50,Bob,online-boutique-6054,On it
+2025-10-02 10:04:01,PLAYER,online-boutique-6054,Daniel all evidence points towards this being related to change CHG89362
+2025-10-02 10:04:06,Bob,online-boutique-6054,Any thing you want me to say in particular - or just calm the masses
+2025-10-02 10:04:11,UptimeLabs,online-boutique-6054,:star: Facts over opinion
+2025-10-02 10:04:30,Daniel,online-boutique-6054,We don't even know what region this is impacting
+2025-10-02 10:04:33,PLAYER,online-boutique-6054,Calm the masses for now please - are there customer reports already?? from which regions?
+2025-10-02 10:04:39,Daniel,online-boutique-6054,It could just be a local office issue
+2025-10-02 10:04:52,Bob,online-boutique-6054,"Sure, let me look at my reports"
+2025-10-02 10:04:59,Bob,online-boutique-6054,"It's bad. We've started getting tickets from the EU region, customers saying they can't complete purchases, they get to the payment screen, but it fails to process"
+2025-10-02 10:05:04,Bob,online-boutique-6054,No new orders have been processed in the UK region for the last 10 minutes
+2025-10-02 10:05:07,Bob,online-boutique-6054,"UK is our biggest market, accounting for 35% of our user base"
+2025-10-02 10:05:10,Bob,online-boutique-6054,"We've received over 380+ complaints in that time period, all with the same failure symptoms"
+2025-10-02 10:05:13,Bob,online-boutique-6054,"Social media is picking up on it too, mentions on Twitter and Reddit saying 'Checkout is broken'"
+2025-10-02 10:05:15,PLAYER,business-comms-6054,EU and UK impacted so far
+2025-10-02 10:05:23,Bob,online-boutique-6054,We're not seeing the issue outside the UK.  Other regions seem to be unaffected
+2025-10-02 10:05:24,Bez,business-comms-6054,How is our customers doing? Let's put out a post letting them know we are investigating
+2025-10-02 10:05:43,PLAYER,online-boutique-6054,"SEV1 incident - please treat accordingly, Bob please ensure customers are aware we are working on this"
+2025-10-02 10:05:53,UptimeLabs,online-boutique-6054,:star: Take command
+2025-10-02 10:05:54,Bob,online-boutique-6054,Yes Boss
+2025-10-02 10:06:17,PLAYER,online-boutique-6054,"Daniel please check your work this morning on the payment service, Shay also worked on this but in UAT it shouldn't cause a prod issue"
+2025-10-02 10:06:29,Daniel,online-boutique-6054,"I'm 100% confident on my change, still not happy with the rollback"
+2025-10-02 10:06:47,PLAYER,online-boutique-6054,Tanya - may you also double check CHG89350 to rule out this causing problems
+2025-10-02 10:06:58,Daniel,online-boutique-6054,Rolling back CHG89362 now....
+2025-10-02 10:07:02,Bob,online-boutique-6054,"Folks are not happy out there, they really want their watches"
+2025-10-02 10:07:08,Daniel,online-boutique-6054,The payment change has been successfully rolled back
+2025-10-02 10:07:16,PLAYER,online-boutique-6054,testing
+2025-10-02 10:07:16,Daniel,online-boutique-6054,"Sorry, I missed some common library dependencies that probably caused the issue"
+2025-10-02 10:07:17,Tanya,online-boutique-6054,Shall I wait until the rollback has been completed?
+2025-10-02 10:07:33,PLAYER,online-boutique-6054,Daniel thanks! it looks better now
+2025-10-02 10:07:50,Daniel,online-boutique-6054,Sorry I was over confident
+2025-10-02 10:07:58,PLAYER,business-comms-6054,"Services have been restored post rollback, Bob informed customers and can now confirm it is resolved"
+2025-10-02 10:08:13,PLAYER,online-boutique-6054,next time we need to verify these changes in UAT before rolling out to Prod
+2025-10-02 10:08:23,PLAYER,online-boutique-6054,Tanya ok for now thanks!
+2025-10-02 10:08:28,Shay,online-boutique-6054,Looks like everything's working from the frontend and checkout side again
+2025-10-02 10:08:33,Shay,online-boutique-6054,Happy to confirm it's resolved on our end
+2025-10-02 10:08:34,PLAYER,online-boutique-6054,Daniel please let customers know everything is now back to normal
+2025-10-02 10:08:41,UptimeLabs,online-boutique-6054,"Thank you for playing, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit I am ready when you want to start. I am ready button"
+2025-10-02 10:08:43,PLAYER,online-boutique-6054,Bob ^ apologies
+2025-10-02 10:08:54,PLAYER,online-boutique-6054,Clicked Start_feedback button
+2025-10-02 10:19:14,PLAYER,online-boutique-6054,Clicked Start_feedback button

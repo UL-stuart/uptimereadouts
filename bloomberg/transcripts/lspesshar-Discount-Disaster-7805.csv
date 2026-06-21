@@ -1,0 +1,173 @@
+datetime,player,channel,message
+2026-02-24 09:16:16,bez,online-boutique-7805,Can you believe it? That influencer photoshoot is blowing up! We're making waves all over social media.
+2026-02-24 09:16:20,bob,online-boutique-7805,
+2026-02-24 09:16:26,bez,online-boutique-7805,Our watches and loafers are all over everyone's feeds 
+2026-02-24 09:16:30,bob,online-boutique-7805,You're telling me? My inbox is packed with customer queries 
+2026-02-24 09:16:37,uptimelabs,online-boutique-7805,"Welcome to Discount Disaster, the responsibility is on you to size up the problem.
+
+ *Access game links by pressing the Uptime Labs Logo in the top right of the screen* 
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin"
+2026-02-24 09:16:46,daniel,online-boutique-7805,"Yeah, I'm seeing it, traffic's surging. But nothing we didn't anticipate for"
+2026-02-24 09:16:52,hamed,online-boutique-7805,Good. We've optimised the backend for this kind of spike
+2026-02-24 09:16:56,maya,online-boutique-7805,"Let's hope it's all human traffic, these AI agents nowadays are scraping the whole internet"
+2026-02-24 09:17:01,shay,online-boutique-7805,I'll keep eyes on the dashboard. We're running at nearly 80% capacity right now for all the user actvity our platform can handle
+2026-02-24 09:17:05,bez,online-boutique-7805,It's all good. People are scrambling to get their hands on our products. That viral post is gold
+2026-02-24 09:17:08,daniel,online-boutique-7805,We're inching closer to max capacity. We're at 95% load now
+2026-02-24 09:17:14,shay,online-boutique-7805,I just refreshed the website and it's now taking ages to load
+2026-02-24 09:17:19,shay,online-boutique-7805,Is this just on my end?
+2026-02-24 09:19:05,PLAYER,online-boutique-7805,I cant load it too
+2026-02-24 09:19:06,uptimelabs,online-boutique-7805,:star: Reproduces the incident
+2026-02-24 09:19:09,daniel,online-boutique-7805,I just checked again and I can't access the site either.
+2026-02-24 09:19:09,shay,online-boutique-7805,"Same here, the website is still stuck loading for me."
+2026-02-24 09:19:31,PLAYER,online-boutique-7805,Order confirmations and order numbers are down to close to 0
+2026-02-24 09:19:33,uptimelabs,online-boutique-7805,:star: Qualify the problem
+2026-02-24 09:19:35,bob,online-boutique-7805,"We're seeing a sharp drop in successful order confirmations—down to just 2 in the last 10 minutes, with over 1000 customer reports of issues globally, especially from the UK and USA; see the evidence here: ![Reports](https://i.ibb.co/7csQGjg/Lvl-26-reports-2.webp)."
+2026-02-24 09:19:59,PLAYER,online-boutique-7805,Looks like Orders in UK are high
+2026-02-24 09:20:05,bob,online-boutique-7805,"Actually, order completions in the UK have dropped by over 90% in the last 30 minutes, and most of our customer complaints are coming from the UK and USA."
+2026-02-24 09:20:12,PLAYER,online-boutique-7805,ok
+2026-02-24 09:20:16,PLAYER,online-boutique-7805,Sounds like a Sev-1
+2026-02-24 09:20:21,tinus,online-boutique-7805,Let's keep focused and get a clear picture of the impact so we can resolve this quickly.
+2026-02-24 09:20:32,bob,online-boutique-7805,"Agreed, with over 1000 global reports and a $15,000 estimated loss so far, this meets Sev-1 criteria."
+2026-02-24 09:20:36,PLAYER,online-boutique-7805,
+2026-02-24 09:20:36,uptimelabs,business-comms-7805,*Incident Number INC10009:* Log Sev-1
+2026-02-24 09:20:38,tinus,online-boutique-7805,Thanks for escalating—let's prioritize restoring service and keep leadership updated.
+2026-02-24 09:20:39,bez,business-comms-7805,Acknowledged. Specify which regions are affected and provide the number of impacted customers or orders. I need clarity on business impact immediately.
+2026-02-24 09:20:51,PLAYER,online-boutique-7805,Any recent releases?
+2026-02-24 09:20:53,uptimelabs,online-boutique-7805,:star: Check changes done to the platform
+2026-02-24 09:20:58,shay,online-boutique-7805,"Give me a second, I'll get the detailed info on each of the changes made today."
+2026-02-24 09:21:03,shay,online-boutique-7805,Hope this helps: https://uptime-labs.atlassian.net/wiki/external/YmMxM2RhNDA1YWY0NGZmY2E0NzJmN2M5YWJmOGRhOGM
+2026-02-24 09:21:16,PLAYER,online-boutique-7805,Is the frontend up?
+2026-02-24 09:21:24,daniel,online-boutique-7805,"No, the frontend is currently down and not responding to requests."
+2026-02-24 09:21:40,PLAYER,online-boutique-7805,Can we restart the frontend?
+2026-02-24 09:21:49,daniel,online-boutique-7805,"I can restart the frontend service now, but just to note, the deployment timestamp doesn't match when the issues started."
+2026-02-24 09:22:05,PLAYER,online-boutique-7805,Any downside to bouncing frontend?
+2026-02-24 09:22:14,daniel,online-boutique-7805,"Restarting the frontend might cause a brief outage for any users who are still connected, but since it's already down, the risk is minimal."
+2026-02-24 09:22:27,PLAYER,online-boutique-7805,Ok lets do it
+2026-02-24 09:22:35,daniel,online-boutique-7805,Restarting the frontend service now—I'll update once it's back up.
+2026-02-24 09:22:48,PLAYER,online-boutique-7805,Whats the ETA for restart
+2026-02-24 09:22:58,daniel,online-boutique-7805,"Restarting the frontend now, I'll let you know when it's done."
+2026-02-24 09:23:19,daniel,online-boutique-7805,Frontend service restart is complete—let me know if you see any changes on your end.
+2026-02-24 09:23:30,PLAYER,online-boutique-7805,Still down for me
+2026-02-24 09:23:39,daniel,online-boutique-7805,"The frontend restart is complete, but I'm still seeing errors and the site isn't loading for me either."
+2026-02-24 09:24:31,PLAYER,online-boutique-7805,"I see recent changes to Productcatalogservice, FrontEndService, AdService, PaymentService on PROD"
+2026-02-24 09:24:42,daniel,online-boutique-7805,"Yes, I deployed Frontend Service version 3.1.4 to PROD about 3 hours ago, but the deployment timestamp doesn't match when the crash started."
+2026-02-24 09:24:42,shay,online-boutique-7805,"I pushed a minor config update to AdService (version 2.3.1) about 4 hours ago, but let me know if you want me to roll it back."
+2026-02-24 09:25:09,PLAYER,online-boutique-7805,Lets roll back the change on frontend service
+2026-02-24 09:25:13,uptimelabs,online-boutique-7805,:star: Restoration over root cause analysis
+2026-02-24 09:25:17,daniel,online-boutique-7805,"Rolling back the Frontend Service now, but I still think the deployment timing doesn't match the incident start."
+2026-02-24 09:26:34,PLAYER,online-boutique-7805,
+2026-02-24 09:26:34,uptimelabs,business-comms-7805,*Incident Number INC100088:* rolling back frontend service
+2026-02-24 09:26:36,bez,business-comms-7805,"Noted. Which regions are impacted, and how many customers or orders are currently affected? I need concrete figures on the business impact."
+2026-02-24 09:26:38,shay,online-boutique-7805,"Let us know if you want to try rolling back any other recent changes, but I agree the frontend deployment timing seems off."
+2026-02-24 09:27:00,PLAYER,online-boutique-7805,
+2026-02-24 09:27:00,uptimelabs,business-comms-7805,*Incident Number INC10007:* restarted front end at 9:22
+2026-02-24 09:27:01,daniel,online-boutique-7805,Frontend Service rollback is in progress—I'll confirm once it's complete.
+2026-02-24 09:27:33,PLAYER,online-boutique-7805,Frontend also interacts with Adservice. Lets roll back that as well
+2026-02-24 09:27:40,shay,online-boutique-7805,"Rolling back AdService now, but it's a minor config update and seems unlikely to be the cause."
+2026-02-24 09:27:52,PLAYER,online-boutique-7805,
+2026-02-24 09:27:52,uptimelabs,business-comms-7805,*Incident Number INC100024:* Rolling back adservice
+2026-02-24 09:27:54,shay,online-boutique-7805,AdService rollback is in progress—I'll update once it's done.
+2026-02-24 09:28:17,PLAYER,online-boutique-7805,@daniel DO any of these changes look relevant to the issue at this point?
+2026-02-24 09:28:19,uptimelabs,online-boutique-7805,:star: Reviewed changes
+2026-02-24 09:28:24,daniel,online-boutique-7805,"At this point, none of the recent changes—including my own—seem to directly align with the timing or symptoms of the incident."
+2026-02-24 09:28:29,PLAYER,online-boutique-7805,ok
+2026-02-24 09:28:40,tinus,online-boutique-7805,Let's keep pushing to get the site back up—let me know if you need any executive support.
+2026-02-24 09:28:42,bez,business-comms-7805,"I need specifics: which regions are experiencing issues, and how many customers or orders are impacted right now? Is there any revenue loss at this moment?"
+2026-02-24 09:29:18,PLAYER,online-boutique-7805,Can we put up a banner in the site saying we have issues ongoing
+2026-02-24 09:29:27,PLAYER,online-boutique-7805,To notify client
+2026-02-24 09:29:29,daniel,online-boutique-7805,"Putting up the banner now, give me a moment."
+2026-02-24 09:29:40,bob,online-boutique-7805,I'll notify the client now and report back shortly.
+2026-02-24 09:29:49,daniel,online-boutique-7805,Banner notifying users of ongoing issues is now live on the site.
+2026-02-24 09:30:01,bob,online-boutique-7805,I've notified the client about the ongoing incident and confirmed that they are aware of the current global impact.
+2026-02-24 09:30:32,PLAYER,online-boutique-7805,There are brief upticks in order numbers when we restart. Does the restart lead to some orders going through?
+2026-02-24 09:30:34,uptimelabs,online-boutique-7805,:star: Form a working theory
+2026-02-24 09:30:36,bob,online-boutique-7805,"Yes, after each restart we see a short spike in successful orders, but it quickly drops off again—here's the evidence: ![Reports](https://i.ibb.co/7csQGjg/Lvl-26-reports-2.webp)."
+2026-02-24 09:30:53,PLAYER,online-boutique-7805,@daniel Any clues based on that?
+2026-02-24 09:31:05,daniel,online-boutique-7805,"The brief uptick suggests restarts temporarily clear whatever is blocking transactions, but the underlying issue returns quickly—so it's likely not a permanent fix."
+2026-02-24 09:31:20,PLAYER,online-boutique-7805,Have the rollbacks completed?
+2026-02-24 09:31:23,uptimelabs,online-boutique-7805,:star: Manage actions and timings
+2026-02-24 09:31:28,daniel,online-boutique-7805,The Frontend Service rollback has completed.
+2026-02-24 09:31:28,shay,online-boutique-7805,AdService rollback is also complete.
+2026-02-24 09:31:42,PLAYER,online-boutique-7805,Any restarts needed for the rollbacks to be effective?
+2026-02-24 09:31:50,daniel,online-boutique-7805,A restart of the Frontend Service is recommended to ensure the rollback takes full effect.
+2026-02-24 09:31:59,PLAYER,online-boutique-7805,
+2026-02-24 09:31:59,uptimelabs,business-comms-7805,*Incident Number INC100053:* rollback to adservice and frontendservice completed
+2026-02-24 09:32:01,bez,business-comms-7805,Confirm whether revenue is flowing again and if all affected customers can now complete their orders. I still need numbers on the impact and the regions involved.
+2026-02-24 09:32:03,shay,online-boutique-7805,I'll restart AdService as well to make sure the rollback is fully applied.
+2026-02-24 09:32:15,PLAYER,online-boutique-7805,please go ahead with restarts
+2026-02-24 09:32:27,shay,online-boutique-7805,AdService is being restarted—I'll confirm once it's back up.
+2026-02-24 09:32:27,daniel,online-boutique-7805,Restarting the Frontend Service now as requested.
+2026-02-24 09:32:32,PLAYER,online-boutique-7805,Please go ahead
+2026-02-24 09:32:44,daniel,online-boutique-7805,Frontend Service has restarted and is back online.
+2026-02-24 09:32:44,shay,online-boutique-7805,AdService restart is complete and the service is running normally.
+2026-02-24 09:33:14,PLAYER,online-boutique-7805,Still down for me. Would clearing cache help?
+2026-02-24 09:33:24,daniel,online-boutique-7805,"Clearing the cache might help if the issue is related to stale assets, but based on what we're seeing, I doubt it will resolve the core problem."
+2026-02-24 09:33:48,PLAYER,online-boutique-7805,I've cleared browser cache but still see the issue
+2026-02-24 09:33:58,daniel,online-boutique-7805,"Thanks for confirming—since clearing the cache didn't help, the issue is likely server-side and not related to client-side caching."
+2026-02-24 09:34:02,PLAYER,online-boutique-7805,Lets rollback all releases from today
+2026-02-24 09:34:10,tanya,online-boutique-7805,"Rolling back PaymentService to the previous stable version now, though it's been stable for hours."
+2026-02-24 09:34:10,hamed,online-boutique-7805,"I'll initiate rollback of ProductCatalogue, but I still believe it's unlikely to be the cause."
+2026-02-24 09:35:01,PLAYER,online-boutique-7805,Any errors seen on either of these services?
+2026-02-24 09:35:04,uptimelabs,online-boutique-7805,:star: Asking questions to validate impact of the problem
+2026-02-24 09:35:05,shay,online-boutique-7805,I'm seeing a lot of errors in the logs.
+2026-02-24 09:35:10,shay,online-boutique-7805,"I see a high number of rest-call errors like http429, http503 and 504s."
+2026-02-24 09:35:18,shay,online-boutique-7805,```ERROR: GET /api/GetInfo HTTP/1.1 429 200 - Mozilla/5.0```
+2026-02-24 09:35:26,daniel,online-boutique-7805,"Seeing frontend errors as well: ```[error] 12345#12345: *98765 limiting requests, exceeded 10 requests per second for client 149.34.52.176```"
+2026-02-24 09:36:06,PLAYER,online-boutique-7805,I see an improvement in order numbers
+2026-02-24 09:36:15,PLAYER,online-boutique-7805,But keeps dropping
+2026-02-24 09:36:17,bob,online-boutique-7805,"Yes, order success rates are climbing back to normal levels globally."
+2026-02-24 09:36:17,tanya,online-boutique-7805,That's great news—I'll continue monitoring the platform for stability.
+2026-02-24 09:36:25,bob,online-boutique-7805,Order rates are fluctuating and not holding steady at normal levels yet.
+2026-02-24 09:37:03,PLAYER,online-boutique-7805,Can we have a breakup by country again
+2026-02-24 09:37:08,bob,online-boutique-7805,"Currently, the UK and USA remain the most impacted regions, with 600+ reports from the UK and 400+ from the USA, but we are still seeing reports globally—see this evidence: ![Reports](https://i.ibb.co/7csQGjg/Lvl-26-reports-2.webp)."
+2026-02-24 09:37:48,PLAYER,online-boutique-7805,@tanya @hamed WHats the status of the rollbackcs?
+2026-02-24 09:37:56,hamed,online-boutique-7805,"ProductCatalogue rollback finished successfully, monitoring for any changes."
+2026-02-24 09:37:56,tanya,online-boutique-7805,PaymentService rollback is complete and the service is stable.
+2026-02-24 09:38:11,PLAYER,online-boutique-7805,Do we need another restart of frontendservice?
+2026-02-24 09:38:20,daniel,online-boutique-7805,"I don't see any improvement from the previous restart, but I can restart FrontendService again if you want."
+2026-02-24 09:38:38,PLAYER,online-boutique-7805,
+2026-02-24 09:38:38,uptimelabs,business-comms-7805,*Incident Number INC100095:* ProductCatalogue and Paymentservice rolled back
+2026-02-24 09:38:39,shay,online-boutique-7805,"Let me know if you want me to restart AdService again as well, but so far the logs look unchanged."
+2026-02-24 09:38:41,bez,business-comms-7805,"Has this rollback restored full purchasing capability for all users? I need confirmation that revenue is no longer at risk, along with details on which regions and how many customers were affected."
+2026-02-24 09:39:08,PLAYER,business-comms-7805,No the orders are still getting dropped
+2026-02-24 09:39:19,PLAYER,business-comms-7805,We still have customer reports of issues
+2026-02-24 09:39:47,PLAYER,online-boutique-7805,yes restart both
+2026-02-24 09:39:55,shay,online-boutique-7805,"Restarting AdService as requested, will update when it's running again."
+2026-02-24 09:39:55,daniel,online-boutique-7805,Restarting FrontendService now—I'll confirm once it's back online.
+2026-02-24 09:40:40,bez,business-comms-7805,Understood. Quantify the current impact—how many orders are failing and in which regions? Are we actively losing revenue right now? I need an ETA for resolution.
+2026-02-24 09:40:55,PLAYER,online-boutique-7805,Any services that are continuing to show the error?
+2026-02-24 09:40:59,daniel,online-boutique-7805,"Yes, I'm still seeing 429 and 503 errors in the logs for FrontendService and AdService after the restarts."
+2026-02-24 09:41:19,PLAYER,business-comms-7805,
+2026-02-24 09:41:22,uptimelabs,business-comms-7805,"We're seeing order failures across UK and Western Europe. Approximately 2,500 orders have failed in the last 30 minutes. Revenue loss is estimated at £75,000 so far. Engineering is working on a fix, ETA is 20 minutes."
+2026-02-24 09:41:38,PLAYER,business-comms-7805,No ETA at the moment
+2026-02-24 09:42:07,PLAYER,online-boutique-7805,Any other service that could be restarted at this time?
+2026-02-24 09:42:16,daniel,online-boutique-7805,"RecommendationService is also showing intermittent 503 errors, so a restart there might be worth trying."
+2026-02-24 09:42:42,PLAYER,online-boutique-7805,Lets try it
+2026-02-24 09:42:52,daniel,online-boutique-7805,Restarting RecommendationService now—I'll let you know what I find.
+2026-02-24 09:43:07,daniel,online-boutique-7805,"Daniel: RecommendationService has been restarted, but I'm still seeing error code 503 in the logs after the restart."
+2026-02-24 09:43:09,PLAYER,online-boutique-7805,I see recommendationservice interacts directly with frontend
+2026-02-24 09:43:17,daniel,online-boutique-7805,"That's correct, RecommendationService provides product suggestions directly to FrontendService via API calls."
+2026-02-24 09:43:21,bez,business-comms-7805,Not acceptable. I need continuous updates on progress and a revised ETA as soon as possible. Keep me informed of any changes in impact or scope.
+2026-02-24 09:43:24,PLAYER,online-boutique-7805,Any recent changes to recommendationservice
+2026-02-24 09:43:30,tanya,online-boutique-7805,There have been no recent deployments or config changes to RecommendationService according to the change log.
+2026-02-24 09:44:01,PLAYER,online-boutique-7805,Could anything in UAT environment be impacting PROD?
+2026-02-24 09:44:10,daniel,online-boutique-7805,The UAT load tests are running in a separate environment and should not impact PROD at all.
+2026-02-24 09:44:51,PLAYER,online-boutique-7805,No errors on currency service and email service?
+2026-02-24 09:44:56,daniel,online-boutique-7805,"That's right, there are no error codes or unusual logs for CurrencyService or EmailService at this time."
+2026-02-24 09:45:11,PLAYER,online-boutique-7805,how about shipping service?
+2026-02-24 09:45:19,daniel,online-boutique-7805,ShippingService is showing normal operation with no recent errors in the logs.
+2026-02-24 09:45:51,PLAYER,online-boutique-7805,Do we know which service could be the primary cause?
+2026-02-24 09:45:59,daniel,online-boutique-7805,"Based on the error logs, FrontendService and AdService are showing the most persistent issues, but we can't confirm a single primary cause yet."
+2026-02-24 09:46:39,PLAYER,online-boutique-7805,The issues started at 6:37 approximately. ANy changes that happened aaround then
+2026-02-24 09:46:46,daniel,online-boutique-7805,"My FrontendService deployment was about 3 hours ago, which doesn't match the 6:37 incident start time."
+2026-02-24 09:46:55,uptimelabs,online-boutique-7805,"Drill Wrap-Up
+
+Thanks for playing! This session is now closed.
+
+Please return to your Uptime Labs tab to review your performance and complete the Retrospective & Feedback form.
+
+If you've already closed the tab, you can reopen the form using the button below."
+2026-02-24 09:47:09,uptimelabs,online-boutique-7805,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/36/7805/feedback"

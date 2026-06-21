@@ -1,0 +1,178 @@
+datetime,player,channel,message
+2025-08-12 09:15:39,Bez,online-boutique-5335,"Morning, team! Anyone else need a triple espresso today?"
+2025-08-12 09:15:48,Tinus,online-boutique-5335,"You're not the only one, Bez! The reports from last week are still giving me nightmares."
+2025-08-12 09:15:58,Bob,online-boutique-5335,"Tell me about it, Tinus."
+2025-08-12 09:16:01,Bob,online-boutique-5335,"But hey, at least it's sunny outside today. :sunrise:"
+2025-08-12 09:16:03,Bez,online-boutique-5335,"True, a little sunshine makes everything better."
+2025-08-12 09:16:05,Bez,online-boutique-5335,"Also, I'm having my usual green smoothie. That's my secret energy booster."
+2025-08-12 09:16:07,Daniel,online-boutique-5335,"Nice, Bez! I'll stick with my coffee though."
+2025-08-12 09:16:08,Daniel,online-boutique-5335,Anyone else excited for the launch of the new BitCoin :coin: payment feature this week?
+2025-08-12 09:16:10,Tinus,online-boutique-5335,"Absolutely, Daniel! Been looking forward to it."
+2025-08-12 09:16:12,Tinus,online-boutique-5335,"By the way, no spoilers, but did anyone catch the football game? Epic comeback!"
+2025-08-12 09:16:15,Shay,online-boutique-5335,I missed it! I was knee deep in a sci-fi novel. Anyone else into that?
+2025-08-12 09:16:23,Tanya,online-boutique-5335,"Oh, I love sci-fi! Can you share the name of the book, Shay?"
+2025-08-12 09:16:31,Daniel,online-boutique-5335,I've been reading a bit of sci-fi myself.
+2025-08-12 09:16:33,Daniel,online-boutique-5335,"Looking forward to sharing recommendations, Shay!"
+2025-08-12 09:16:37,Bez,online-boutique-5335,"There's always so much happening outside of work! Keep the energy :battery: going, team."
+2025-08-12 09:16:40,Bez,online-boutique-5335,It's going to be another productive day. :raised_hands:
+2025-08-12 09:16:43,UptimeLabs,online-boutique-5335,Start lvl 8
+2025-08-12 09:17:34,PLAYER,online-boutique-5335,Clicked Start button
+2025-08-12 09:17:36,UptimeLabs,online-boutique-5335,":alarm_clock: - You have 25 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-08-12 09:17:36,Bob,online-boutique-5335,"Hey, we're getting reports of customers struggling to make purchases"
+2025-08-12 09:17:38,Bob,online-boutique-5335,@here Anyone else seeing this?
+2025-08-12 09:17:41,Tinus,online-boutique-5335,"Yes, I've noticed the same, @Bob . It seems like an error in the system"
+2025-08-12 09:17:44,Bez,online-boutique-5335,"Whatever it is, we need to sort it out quickly."
+2025-08-12 09:17:46,Bez,online-boutique-5335,we need to step on it! before the social media backlash is turning into a storm.
+2025-08-12 09:17:50,Tinus,online-boutique-5335,"Who is handling incidents today? Please size up the issue, this is urgent"
+2025-08-12 09:18:11,PLAYER,online-boutique-5335,Hi - I'll start looking into this urgently. Can we get some information on exactly what the users are reporting?
+2025-08-12 09:18:24,Bob,online-boutique-5335,I'll take a look
+2025-08-12 09:18:40,UptimeLabs,online-boutique-5335,:star: Asking questions to validate impact of the problem
+2025-08-12 09:18:57,Bob,online-boutique-5335,"I have complaints from users that they're unable to access the site, 500 errors"
+2025-08-12 09:18:58,PLAYER,online-boutique-5335,"I'm able to recreate the issue on my side - When i click on an item it returns the following error
+
+*HTTP Status:* 500 Internal Server Error
+```rpc error: code = Unavailable desc = connection error: desc = ""transport: Error while dialing: dial tcp 172.20.132.21:7070: connect: connection refused""
+could not retrieve cart
+main.(*frontendServer).productHandler
+	/src/handlers.go:167
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2220
+<http://github.com/gorilla/mux.(*Router).ServeHTTP|github.com/gorilla/mux.(*Router).ServeHTTP>
+	/go/pkg/mod/github.com/gorilla/mux@v1.8.1/mux.go:212
+main.(*logHandler).ServeHTTP
+	/src/middleware.go:82
+main.main.ensureSessionID.func4
+	/src/middleware.go:109
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2220
+<http://go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*middleware).serveHTTP|go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*middleware).serveHTTP>
+	/go/pkg/mod/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.60.0/handler.go:179
+<http://go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.NewMiddleware.func1.1|go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.NewMiddleware.func1.1>
+	/go/pkg/mod/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.60.0/handler.go:67
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2220
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:3210
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:2092
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700```
+"
+2025-08-12 09:19:09,UptimeLabs,online-boutique-5335,:star: Reproduces the incident
+2025-08-12 09:19:10,PLAYER,online-boutique-5335,Can everyone else please confirm you see the same error message
+2025-08-12 09:19:11,Bob,online-boutique-5335,But they we're initially saying they couldn't make payments
+2025-08-12 09:19:20,Shay,online-boutique-5335,I'll try one moment
+2025-08-12 09:19:43,Shay,online-boutique-5335,Same for me
+2025-08-12 09:20:07,PLAYER,online-boutique-5335,"Ok, as it's affecting multiple people from different internet source networks this seems to be a SEV1 incident"
+2025-08-12 09:20:14,UptimeLabs,online-boutique-5335,:star: Qualify the problem
+2025-08-12 09:20:34,PLAYER,business-comms-5335,SEV1 Opening a SEV1 as we have multiple reports of users being unable to purchase items on the website. We're looking into this urgently
+2025-08-12 09:20:34,PLAYER,business-comms-5335,*Incident Number INC100039:* SEV1 Opening a SEV1 as we have multiple reports of users being unable to purchase items on the website. We're looking into this urgently
+2025-08-12 09:20:35,UptimeLabs,online-boutique-5335,:star: Incident record created
+2025-08-12 09:20:37,UptimeLabs,online-boutique-5335,:star: Send first comms in first 5 minutes
+2025-08-12 09:20:40,UptimeLabs,online-boutique-5335,:star: Formally assign criticality level to the incident
+2025-08-12 09:20:45,PLAYER,online-boutique-5335,Let's review any recent changes
+2025-08-12 09:20:51,UptimeLabs,online-boutique-5335,:star: Reviewed changes
+2025-08-12 09:21:07,Shay,online-boutique-5335,What can I do to help!
+2025-08-12 09:22:03,PLAYER,online-boutique-5335,"The error seems speciifc to the ""CART SERVICE"" We can see the destination server is refusing the connection. See logs:
+
+```could not retrieve cart
+onnection refused""```
+"
+2025-08-12 09:22:12,UptimeLabs,online-boutique-5335,:star: Facts over opinion
+2025-08-12 09:22:48,PLAYER,online-boutique-5335,"Tanya - I see you pushed a change to PROD earlier to the CART service ""CHG89777:CartRedis:version 4.2 deployed:PROD:Tanya"""
+2025-08-12 09:22:50,Shay,online-boutique-5335,I can check if there's any related deployments
+2025-08-12 09:22:54,UptimeLabs,online-boutique-5335,:star: Check changes done to the platform
+2025-08-12 09:22:57,PLAYER,online-boutique-5335,Tanya - Can you please review your change
+2025-08-12 09:23:08,Tanya,online-boutique-5335,"Hi yes, online now, I'll review"
+2025-08-12 09:23:48,Shay,online-boutique-5335,It looks like the pod for cart service is down
+2025-08-12 09:23:48,Bez,business-comms-5335,are we completely down? why the sev 1?
+2025-08-12 09:24:12,Tanya,online-boutique-5335,I was just about to say
+2025-08-12 09:24:24,PLAYER,online-boutique-5335,"Daniel - I see you pushed a change to the cart service in PROD today too ""CHG89777:CartService:version 3.2 deployed:PROD:Daniel B"""
+2025-08-12 09:24:28,PLAYER,online-boutique-5335,Can you please review your change
+2025-08-12 09:24:29,Tanya,online-boutique-5335,We can either rollback my change if it's impacting or just try restarting the service
+2025-08-12 09:25:33,Tanya,online-boutique-5335,Whoops I'm getting this confused with my cart redis change
+2025-08-12 09:25:47,Daniel,online-boutique-5335,I'll take a look
+2025-08-12 09:25:49,PLAYER,online-boutique-5335,Let's roll back the changes we've made to the cart service today Tanya Daniel
+2025-08-12 09:25:54,Daniel,online-boutique-5335,What do you think is happening?
+2025-08-12 09:25:55,UptimeLabs,online-boutique-5335,:star: Restoration over root cause analysis
+2025-08-12 09:26:23,PLAYER,online-boutique-5335,Daniel The logs suggest the destination server 172.20.132.21 is refusing the connection on port 7070
+2025-08-12 09:26:34,PLAYER,online-boutique-5335,We need someone to review the services on this host
+2025-08-12 09:26:57,Daniel,online-boutique-5335,"It was my change to the cart service, want me to try a quick restart first before investigating"
+2025-08-12 09:27:13,PLAYER,online-boutique-5335,Bob- Do you have a record of the first customer report of the issue?
+2025-08-12 09:27:35,PLAYER,online-boutique-5335,Daniel- Let's rolll back your change and restart the services on the destination server
+2025-08-12 09:27:45,Tanya,online-boutique-5335,It's not a networking issue I just ran an internal check
+2025-08-12 09:27:53,Bob,online-boutique-5335,I'll check my records
+2025-08-12 09:28:00,PLAYER,business-comms-5335,We have multiple reports of people being unable to purchase items on the website. It's impacting a wide number of people over the internet
+2025-08-12 09:28:35,PLAYER,online-boutique-5335,Let's roll back the changes please Tanya and Daniel then we will review the health
+2025-08-12 09:28:57,Daniel,online-boutique-5335,"Just to clarify we're referring to the cart service change, I'll roll back when you say"
+2025-08-12 09:29:02,PLAYER,online-boutique-5335,Tinus who is best placed to review the application services on the 172.20.132.21 server?
+2025-08-12 09:29:09,UptimeLabs,online-boutique-5335,:star: Know your team and their roles
+2025-08-12 09:29:15,PLAYER,online-boutique-5335,Daniel - Please go ahead
+2025-08-12 09:29:15,Tinus,online-boutique-5335,It's Tanya
+2025-08-12 09:29:19,PLAYER,online-boutique-5335,Tanya hold for now
+2025-08-12 09:29:28,Daniel,online-boutique-5335,Restarting now...
+2025-08-12 09:29:30,Bez,business-comms-5335,just checked and our order confirmations have completely flatlined! whats the plan?
+2025-08-12 09:29:34,Tanya,online-boutique-5335,Okay
+2025-08-12 09:29:35,PLAYER,online-boutique-5335,"Tanya in the meantime, please check the application services on the destination server"
+2025-08-12 09:29:51,Tanya,online-boutique-5335,I'll run another check
+2025-08-12 09:29:56,Bez,business-comms-5335,can I get an ETA for the fix?
+2025-08-12 09:30:01,PLAYER,online-boutique-5335,"""connection refused"" means the traffic is reaching the server, but the host is refusing the connection on port 7070"
+2025-08-12 09:30:04,Daniel,online-boutique-5335,Rollback has been complete
+2025-08-12 09:30:31,UptimeLabs,online-boutique-5335,:bulb: Hint: Avoid distractions
+2025-08-12 09:30:43,Tinus,online-boutique-5335,I think we're looking in the wrong direction team
+2025-08-12 09:30:44,PLAYER,online-boutique-5335,"Ok, it looks like the front-end is now down, can you confirm you see the same Daniel ?"
+2025-08-12 09:31:01,PLAYER,online-boutique-5335,Tinus why do you think that?
+2025-08-12 09:31:02,Daniel,online-boutique-5335,The frontend has always been down?
+2025-08-12 09:31:22,Daniel,online-boutique-5335,Can you describe what you're seeing
+2025-08-12 09:31:28,UptimeLabs,online-boutique-5335,:bulb: Hint: Communicate clearly and frequently
+2025-08-12 09:31:30,Shay,online-boutique-5335,What's going on!?
+2025-08-12 09:31:47,PLAYER,online-boutique-5335,"When we started looking at the issue, the problem was with the cart service, but now the front end is not showing any items"
+2025-08-12 09:31:58,PLAYER,online-boutique-5335,So the issue has got worse...
+2025-08-12 09:32:23,Tinus,online-boutique-5335,Tanya confirmed apps were fine twice and also customer's initial symptoms are something to account for
+2025-08-12 09:32:34,PLAYER,business-comms-5335,"We continue to see issues on the website, it appears the front-end webiste is not loading correctly. No ETA as of now, but we will keep you updated"
+2025-08-12 09:33:35,Daniel,online-boutique-5335,I was unable to access the site from the beginning
+2025-08-12 09:34:15,PLAYER,online-boutique-5335,Tanya  Please confirm what you're seeing on the server 172.20.132.21:7070:
+2025-08-12 09:34:15,Daniel,online-boutique-5335,I do get the same error you shared
+2025-08-12 09:34:31,PLAYER,online-boutique-5335,"Tinus - Can you please step in to help Tanya on this please, this is very urgent"
+2025-08-12 09:34:35,UptimeLabs,online-boutique-5335,:star: Escalating when required
+2025-08-12 09:34:55,Tinus,online-boutique-5335,Is Hamed unavailable?
+2025-08-12 09:35:23,PLAYER,online-boutique-5335,Hamed S - Can you please step in here to help Tanya on the destination server review please
+2025-08-12 09:35:25,Tanya,online-boutique-5335,Everything is fine from a networking perspective
+2025-08-12 09:35:41,Hamed,online-boutique-5335,Can you give me a high level summary of the ongoing issue?
+2025-08-12 09:35:48,PLAYER,online-boutique-5335,"But what about the application services, CONNECTION REFUSED means the network traffic is fine, but the server is refusing the connection, this is a server specific issue"
+2025-08-12 09:35:56,Tanya,online-boutique-5335,Bob said customers first said they couldn't make any payments
+2025-08-12 09:36:12,Tanya,online-boutique-5335,Now most of them probably all can't access the site
+2025-08-12 09:36:33,PLAYER,online-boutique-5335,"Hamed S - The server is essentially unavailable for multiple users from different source networks, we recieve the same error saying the destination server is refusing the connnection."
+2025-08-12 09:37:12,PLAYER,online-boutique-5335,"Tanya has validated the network health, but we due to the error message we're getting, i believe the issue is with the destination server application services, specific on port 7070"
+2025-08-12 09:37:19,UptimeLabs,online-boutique-5335,:star: Form a working theory
+2025-08-12 09:37:24,PLAYER,online-boutique-5335,Can someone please login to the server and confirm we are listening on port 7070
+2025-08-12 09:37:35,Hamed,online-boutique-5335,I'll take a look and investigate this route
+2025-08-12 09:37:50,UptimeLabs,online-boutique-5335,:bulb: Facts over opinion
+2025-08-12 09:37:50,PLAYER,business-comms-5335,We continue to investigate urgently. More updates to follow.
+2025-08-12 09:38:36,UptimeLabs,online-boutique-5335,:alarm_clock: - You have less than 4 minutes. You can type `/help` if you need any reminders.
+2025-08-12 09:38:47,Daniel,online-boutique-5335,I think I found the problem
+2025-08-12 09:38:49,Bez,business-comms-5335,keep me updated
+2025-08-12 09:38:53,PLAYER,online-boutique-5335,Daniel what are you seeing?
+2025-08-12 09:39:10,PLAYER,business-comms-5335,Will do. We are working on this urgently.
+2025-08-12 09:39:26,Daniel,online-boutique-5335,I deployed a change to our payment service to implement bitcoin but I think it's failed
+2025-08-12 09:39:36,PLAYER,online-boutique-5335,Daniel let's roll back the change urgently
+2025-08-12 09:39:51,PLAYER,online-boutique-5335,Is it this change? 172.20.132.21:7070:
+2025-08-12 09:39:55,PLAYER,online-boutique-5335,CHG89770:CheckoutService:version 5.1 deployed:PROD:Daniel B
+2025-08-12 09:40:29,Daniel,online-boutique-5335,"Causing the problems we're experiencing, I think the spike in retries has led to several service failures"
+2025-08-12 09:40:36,UptimeLabs,online-boutique-5335,:alarm_clock: - You have less than 2 minutes. You can type `/help` if you need any reminders.
+2025-08-12 09:40:42,PLAYER,online-boutique-5335,"Ok, let's roll back your change urgently"
+2025-08-12 09:40:48,PLAYER,online-boutique-5335,Please do this right now
+2025-08-12 09:41:13,Daniel,online-boutique-5335,"CHG89778 My change to payments, My first deployment today but there might be some dependant changes"
+2025-08-12 09:41:30,Daniel,online-boutique-5335,I haven't had time to investigate if there are any dependencies
+2025-08-12 09:41:33,PLAYER,online-boutique-5335,Let's roll back your changes 1 by 1
+2025-08-12 09:41:44,PLAYER,online-boutique-5335,Let's start with your first change - CHG89770:CheckoutService:version 5.1 deployed:PROD:Daniel B
+2025-08-12 09:42:04,PLAYER,online-boutique-5335,Let's then test
+2025-08-12 09:42:16,Daniel,online-boutique-5335,Checkout?
+2025-08-12 09:42:22,PLAYER,online-boutique-5335,CHG89770:CheckoutService:version 5.1 deployed:PROD:Daniel B
+2025-08-12 09:42:30,Daniel,online-boutique-5335,Okay if you insist
+2025-08-12 09:42:31,PLAYER,online-boutique-5335,"Let's do this, you already rolled back CHG89777:CartService:version 3.2 deployed:PROD:Daniel B"
+2025-08-12 09:42:58,Daniel,online-boutique-5335,I'll rollback checkout now
+2025-08-12 09:43:08,PLAYER,online-boutique-5335,"Ok same error, can you confirm?"
+2025-08-12 09:43:11,UptimeLabs,online-boutique-5335,Start level 8 retro and feedback
+2025-08-12 09:43:40,PLAYER,online-boutique-5335,Clicked Start_feedback button
+2025-08-12 09:45:23,UptimeLabs,online-boutique-5335,Submission successful

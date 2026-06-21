@@ -1,0 +1,171 @@
+datetime,player,channel,message
+2025-08-29 10:10:22,Bez,online-boutique-5562,"Morning, team! Anyone else need a triple espresso today?"
+2025-08-29 10:10:31,Tinus,online-boutique-5562,"You're not the only one, Bez! The reports from last week are still giving me nightmares."
+2025-08-29 10:10:41,Bob,online-boutique-5562,"Tell me about it, Tinus."
+2025-08-29 10:10:44,Bob,online-boutique-5562,"But hey, at least it's sunny outside today. :sunrise:"
+2025-08-29 10:10:46,Bez,online-boutique-5562,"True, a little sunshine makes everything better."
+2025-08-29 10:10:48,Bez,online-boutique-5562,"Also, I'm having my usual green smoothie. That's my secret energy booster."
+2025-08-29 10:10:50,Daniel,online-boutique-5562,"Nice, Bez! I'll stick with my coffee though."
+2025-08-29 10:10:51,Daniel,online-boutique-5562,Anyone else excited for the launch of the new BitCoin :coin: payment feature this week?
+2025-08-29 10:10:53,Tinus,online-boutique-5562,"Absolutely, Daniel! Been looking forward to it."
+2025-08-29 10:10:55,Tinus,online-boutique-5562,"By the way, no spoilers, but did anyone catch the football game? Epic comeback!"
+2025-08-29 10:10:58,Shay,online-boutique-5562,I missed it! I was knee deep in a sci-fi novel. Anyone else into that?
+2025-08-29 10:11:06,Tanya,online-boutique-5562,"Oh, I love sci-fi! Can you share the name of the book, Shay?"
+2025-08-29 10:11:14,Daniel,online-boutique-5562,I've been reading a bit of sci-fi myself.
+2025-08-29 10:11:16,Daniel,online-boutique-5562,"Looking forward to sharing recommendations, Shay!"
+2025-08-29 10:11:20,Bez,online-boutique-5562,"There's always so much happening outside of work! Keep the energy :battery: going, team."
+2025-08-29 10:11:23,Bez,online-boutique-5562,It's going to be another productive day. :raised_hands:
+2025-08-29 10:11:26,UptimeLabs,online-boutique-5562,Start lvl 8
+2025-08-29 10:15:34,PLAYER,online-boutique-5562,Clicked Start button
+2025-08-29 10:15:35,UptimeLabs,online-boutique-5562,":alarm_clock: - You have 25 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-08-29 10:15:36,Bob,online-boutique-5562,"Hey, we're getting reports of customers struggling to make purchases"
+2025-08-29 10:15:38,Bob,online-boutique-5562,@here Anyone else seeing this?
+2025-08-29 10:15:41,Tinus,online-boutique-5562,"Yes, I've noticed the same, @Bob . It seems like an error in the system"
+2025-08-29 10:15:44,Bez,online-boutique-5562,"Whatever it is, we need to sort it out quickly."
+2025-08-29 10:15:46,Bez,online-boutique-5562,we need to step on it! before the social media backlash is turning into a storm.
+2025-08-29 10:15:50,Tinus,online-boutique-5562,"Who is handling incidents today? Please size up the issue, this is urgent"
+2025-08-29 10:16:08,PLAYER,online-boutique-5562,"I am as well, getting this error message:
+Uh, oh!
+Something has failed. Below are some details for debugging.
+*HTTP Status:* 500 Internal Server Error
+```rpc error: code = Unavailable desc = connection error: desc = ""transport: Error while dialing: dial tcp 172.20.250.238:7070: connect: connection refused""
+could not retrieve cart
+main.(*frontendServer).productHandler
+	/src/handlers.go:167
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2220
+<http://github.com/gorilla/mux.(*Router).ServeHTTP|github.com/gorilla/mux.(*Router).ServeHTTP>
+	/go/pkg/mod/github.com/gorilla/mux@v1.8.1/mux.go:212
+main.(*logHandler).ServeHTTP
+	/src/middleware.go:82
+main.main.ensureSessionID.func4
+	/src/middleware.go:109
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2220
+<http://go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*middleware).serveHTTP|go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*middleware).serveHTTP>
+	/go/pkg/mod/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.60.0/handler.go:179
+<http://go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.NewMiddleware.func1.1|go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.NewMiddleware.func1.1>
+	/go/pkg/mod/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.60.0/handler.go:67
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/go/src/net/http/server.go:2220
+net/http.serverHandler.ServeHTTP
+	/usr/local/go/src/net/http/server.go:3210
+net/http.(*conn).serve
+	/usr/local/go/src/net/http/server.go:2092
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1700```
+"
+2025-08-29 10:16:29,UptimeLabs,online-boutique-5562,:star: Reproduces the incident
+2025-08-29 10:16:42,PLAYER,online-boutique-5562,Daniel Shay have any changes been made recently
+2025-08-29 10:16:49,UptimeLabs,online-boutique-5562,:star: Check changes done to the platform
+2025-08-29 10:16:52,Shay,online-boutique-5562,"Yes there were a few, let me check"
+2025-08-29 10:17:09,PLAYER,online-boutique-5562,Bob is this all customers or only ones in a certain area
+2025-08-29 10:17:17,UptimeLabs,online-boutique-5562,:star: Asking questions to validate impact of the problem
+2025-08-29 10:17:18,Daniel,online-boutique-5562,"This is a document detailing the latest deployments: 
+<https://uptime-labs.atlassian.net/wiki/spaces/ULPUBLIC/pages/1114341391/The+Chain+-+Change+Request+Logs>"
+2025-08-29 10:17:38,Bob,online-boutique-5562,"Having a look at reports now, will get back to you soon"
+2025-08-29 10:18:09,PLAYER,online-boutique-5562,"When i click on the item I get the above error, dont even make it to checkout, Shay Daniel can you help me review the logs please"
+2025-08-29 10:18:14,Shay,online-boutique-5562,Yeah I'm getting the same issue on my end too
+2025-08-29 10:18:19,UptimeLabs,online-boutique-5562,:star: Reviewed changes
+2025-08-29 10:18:25,PLAYER,online-boutique-5562,Bob could you also confirm what time the issue started
+2025-08-29 10:18:35,UptimeLabs,online-boutique-5562,:star: Facts over opinion
+2025-08-29 10:19:05,Daniel,online-boutique-5562,I'll take a look at the logs now
+2025-08-29 10:19:14,Bob,online-boutique-5562,So far all reports are coming from the EU region
+2025-08-29 10:19:32,PLAYER,online-boutique-5562,"Shay Daniel Tanya i am seeing alot of PROD changes coming fromuse, could use have a look please?"
+2025-08-29 10:19:50,PLAYER,online-boutique-5562,"Thanks Bob, roughly what time did they reports start"
+2025-08-29 10:20:05,Bob,online-boutique-5562,"It looks like first reports started around 2 hours ago, however this was only affecting customers paying with bitcoin"
+2025-08-29 10:20:26,Bob,online-boutique-5562,It seems the problem has escalated since then
+2025-08-29 10:20:32,PLAYER,online-boutique-5562,Clicked undefined button
+2025-08-29 10:20:44,Tanya,online-boutique-5562,Will do
+2025-08-29 10:20:56,PLAYER,business-comms-5562,"Severity 2, no users in EU can currently purchase items"
+2025-08-29 10:20:56,PLAYER,business-comms-5562,"*Incident Number INC100099:* Severity 2, no users in EU can currently purchase items"
+2025-08-29 10:20:56,UptimeLabs,online-boutique-5562,:star: Incident record created
+2025-08-29 10:20:58,UptimeLabs,online-boutique-5562,:star: Send first comms in first 5 minutes
+2025-08-29 10:21:03,UptimeLabs,online-boutique-5562,:star: Formally assign criticality level to the incident
+2025-08-29 10:21:23,Daniel,online-boutique-5562,"I had made a change to payment service, I'll check the status of that"
+2025-08-29 10:21:57,Bez,business-comms-5562,No EU users? I think this warrants a SEV 1
+2025-08-29 10:22:14,PLAYER,online-boutique-5562,Hamed Tinus could you guys also help review these changes today?
+2025-08-29 10:22:25,Hamed,online-boutique-5562,Yeah sure let me take a look
+2025-08-29 10:22:37,PLAYER,business-comms-5562,sev 1
+2025-08-29 10:22:37,PLAYER,business-comms-5562,*Incident Number INC10009:* sev 1
+2025-08-29 10:22:53,Tanya,online-boutique-5562,It looks like @Daniel's change had subsequent deployments to redis-cart and cart service
+2025-08-29 10:23:06,PLAYER,business-comms-5562,"there have been multiple changes made to the PROD environment today, working with the team to review these"
+2025-08-29 10:23:32,Daniel,online-boutique-5562,Do you want me to try rolling back payments service?
+2025-08-29 10:23:34,PLAYER,online-boutique-5562,Do we think it would be worth rolling back?
+2025-08-29 10:23:40,PLAYER,online-boutique-5562,yes please daniel
+2025-08-29 10:23:46,UptimeLabs,online-boutique-5562,:star: Restoration over root cause analysis
+2025-08-29 10:23:50,PLAYER,online-boutique-5562,let us know once completed
+2025-08-29 10:24:14,PLAYER,online-boutique-5562,Bob any more reports from other users?
+2025-08-29 10:24:20,Tanya,online-boutique-5562,Are you sure we want to proceed? Looks like we had some dependent changes
+2025-08-29 10:24:30,Daniel,online-boutique-5562,We can always rule this out
+2025-08-29 10:25:06,Bob,online-boutique-5562,"Yes still getting more reports, same issue as previous"
+2025-08-29 10:25:23,Bez,business-comms-5562,Who is investigating the issue?
+2025-08-29 10:25:46,PLAYER,online-boutique-5562,Hamed S Tinus have you had the chance to review?
+2025-08-29 10:26:23,Hamed,online-boutique-5562,"I can see cart service and redis-cart are down, looks like these may have been due to @Daniel's change"
+2025-08-29 10:26:43,PLAYER,business-comms-5562,"currently Tanya and Daniel, have escalated to Hamid and Tinus"
+2025-08-29 10:27:07,Hamed,online-boutique-5562,His deployment resulted in two subsequent deployments. The deployments themselves were successful but we're now seeing issues with both cart and redis
+2025-08-29 10:27:15,PLAYER,online-boutique-5562,Tanya would this cause any issues to any other enviroments if this rolled back
+2025-08-29 10:27:31,Tanya,online-boutique-5562,I'll check
+2025-08-29 10:28:09,Tanya,online-boutique-5562,I'm not sure how it will affect the subsequent changes. I can do a deep analysis but that will take some time. For now shall we try rolling back payments?
+2025-08-29 10:28:40,PLAYER,online-boutique-5562,yes can we try roll back please
+2025-08-29 10:29:01,Daniel,online-boutique-5562,"Understood, I'll proceed with rolling back the payment service"
+2025-08-29 10:29:13,PLAYER,online-boutique-5562,"Tanya can you double check this, Daniel can you please rollback"
+2025-08-29 10:29:21,UptimeLabs,online-boutique-5562,:star: Form an effective investigation team
+2025-08-29 10:29:21,Daniel,online-boutique-5562,payment service rollback is complete
+2025-08-29 10:29:27,Tanya,online-boutique-5562,Sure
+2025-08-29 10:29:36,Hamed,online-boutique-5562,This is not good. Something is broken after the payment rollback
+2025-08-29 10:29:47,Bez,business-comms-5562,Do we have an ETA on the fix?
+2025-08-29 10:30:13,PLAYER,online-boutique-5562,what are you seeing Hamed S
+2025-08-29 10:30:18,PLAYER,online-boutique-5562,what issues
+2025-08-29 10:30:49,PLAYER,business-comms-5562,"daniel has rolled back a change made earlier, has not fixed, will update asap"
+2025-08-29 10:30:52,Hamed,online-boutique-5562,"@Daniel's change was just affecting payments in EU, but it has since brought down cart and redis globally"
+2025-08-29 10:31:10,Bob,online-boutique-5562,"That's right, I'm seeing reports coming from all regions now"
+2025-08-29 10:31:22,Hamed,online-boutique-5562,I suggest we rollback the changes in order of deployment
+2025-08-29 10:31:39,Hamed,online-boutique-5562,"We can start with the two dependent changes, and then payments"
+2025-08-29 10:31:45,PLAYER,online-boutique-5562,Bob said earlier this has always been an issue
+2025-08-29 10:31:52,PLAYER,online-boutique-5562,did you bob?
+2025-08-29 10:32:11,PLAYER,online-boutique-5562,Tinus could you please assist in looking into this please?
+2025-08-29 10:32:12,Bob,online-boutique-5562,"Yes, it was only affecting EU customers prior"
+2025-08-29 10:32:17,UptimeLabs,online-boutique-5562,:star: Escalating when required
+2025-08-29 10:32:23,PLAYER,online-boutique-5562,Tanya any update?
+2025-08-29 10:32:29,UptimeLabs,online-boutique-5562,:star: Manage actions and timings
+2025-08-29 10:32:33,Bob,online-boutique-5562,"It seems to be affecting our global market now, we must've missed something with the rollback"
+2025-08-29 10:32:59,Tanya,online-boutique-5562,"I agree with @Hamed, if we rollback changes in reverse order of deployment, we should mitigate any dependencies"
+2025-08-29 10:33:21,PLAYER,online-boutique-5562,can we complete that please Daniel?
+2025-08-29 10:33:44,Daniel,online-boutique-5562,"Sure, which services shall I rollback first?"
+2025-08-29 10:33:55,PLAYER,business-comms-5562,"The roll back earlier has cause an issue globally, now waorking to rollback changes in reverse order of deployment, we should mitigate any dependencies"
+2025-08-29 10:34:24,PLAYER,online-boutique-5562,Hamed S Tanya what do you guys think daniel should roll back first&gt;?
+2025-08-29 10:34:48,Hamed,online-boutique-5562,"Let's start with the two subsequent deployments - redis-cart first, then cart servicd"
+2025-08-29 10:35:05,PLAYER,online-boutique-5562,Daniel you good to go ahead with that?
+2025-08-29 10:35:10,Daniel,online-boutique-5562,Okay I'll proceed with rolling back redis-cart
+2025-08-29 10:35:41,Daniel,online-boutique-5562,Rollback complete
+2025-08-29 10:35:53,Bez,business-comms-5562,What's our restoration plan now?
+2025-08-29 10:36:02,PLAYER,online-boutique-5562,can everyone test please Bob any reposrts from users?
+2025-08-29 10:36:20,Bob,online-boutique-5562,Still user reports coming through
+2025-08-29 10:36:31,Daniel,online-boutique-5562,"I'll rollback cart service now, @Ciara?"
+2025-08-29 10:36:36,UptimeLabs,online-boutique-5562,:alarm_clock: - You have less than 4 minutes. You can type `/help` if you need any reminders.
+2025-08-29 10:36:36,PLAYER,online-boutique-5562,Daniel yes please
+2025-08-29 10:37:13,Daniel,online-boutique-5562,Complete
+2025-08-29 10:37:26,PLAYER,online-boutique-5562,Bob any update?
+2025-08-29 10:37:26,Tanya,online-boutique-5562,Rollbacks are completed
+2025-08-29 10:37:30,Daniel,online-boutique-5562,"Great, i've also restarted the frontend so the website should be working now"
+2025-08-29 10:37:41,Bob,online-boutique-5562,Let me check
+2025-08-29 10:37:57,PLAYER,online-boutique-5562,im having no issues
+2025-08-29 10:37:58,Bob,online-boutique-5562,"No more reports coming through, I think that did it!"
+2025-08-29 10:38:02,Tinus,online-boutique-5562,@Ciara Scullion can you confirm?
+2025-08-29 10:38:13,PLAYER,business-comms-5562,"issue resovled, rollbacked all changes"
+2025-08-29 10:38:13,Bob,online-boutique-5562,User activity is rising again
+2025-08-29 10:38:20,UptimeLabs,online-boutique-5562,:star: Confirm resolution with the business
+2025-08-29 10:38:27,UptimeLabs,online-boutique-5562,:star: Validate the fix
+2025-08-29 10:38:33,Daniel,online-boutique-5562,It appears that everything has returned to its normal state
+2025-08-29 10:38:34,Shay,online-boutique-5562,I was worried for a bit but everything looks good now.
+2025-08-29 10:38:37,Bob,online-boutique-5562,"Great work, everyone! The payments issue has been resolved and customers can now check out smoothly"
+2025-08-29 10:38:38,UptimeLabs,online-boutique-5562,:star: Cross check resolution with stakeholders
+2025-08-29 10:38:42,Tanya,online-boutique-5562,Phew! Glad we got that sorted. Fantastic teamwork!
+2025-08-29 10:38:43,Tinus,online-boutique-5562,Absolutely! Proud to be a part of this team
+2025-08-29 10:38:44,Tinus,online-boutique-5562,Thank you @Ciara Scullion for coordinating the rollback effectively
+2025-08-29 10:38:48,Bez,online-boutique-5562,"Brilliant job, team and @Ciara Scullion!"
+2025-08-29 10:38:49,Bez,online-boutique-5562,"I've been monitoring the financial metrics, and they're already improving"
+2025-08-29 10:39:28,UptimeLabs,online-boutique-5562,Start level 8 retro and feedback
+2025-08-29 10:39:42,PLAYER,online-boutique-5562,Clicked Start_feedback button
+2025-08-29 10:41:01,UptimeLabs,online-boutique-5562,Submission successful

@@ -1,0 +1,101 @@
+datetime,player,channel,message
+2026-01-23 11:21:56,uptimelabs,online-boutique-7517,"Welcome to Too Good To Be True, the responsibility is on you to size up the problem.
+
+ *Access game links by pressing the Uptime Labs Logo in the top right of the screen*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin"
+2026-01-23 11:30:29,tinus,online-boutique-7517,"Welcome our new IM @stuck2-bloomberg.net, Happy to have you in the team. Hope you get comfortable with everyone"
+2026-01-23 11:30:34,shay,online-boutique-7517,Welcome @stuck2-bloomberg.net
+2026-01-23 11:30:39,daniel,online-boutique-7517,Nice to meet you @stuck2-bloomberg.net
+2026-01-23 11:30:49,bob,online-boutique-7517,There are a few strange customer reports with the helpdesk
+2026-01-23 11:30:53,bob,online-boutique-7517,"Apparently, the site is loading slowly"
+2026-01-23 11:30:55,PLAYER,online-boutique-7517,"Thanks all, looking forward to working with everyone."
+2026-01-23 11:30:57,bob,online-boutique-7517,People are reporting that they can't make payments either
+2026-01-23 11:31:00,bob,online-boutique-7517,
+2026-01-23 11:31:04,bob,online-boutique-7517,@stuck2-bloomberg.net Can you check this?
+2026-01-23 11:31:43,PLAYER,online-boutique-7517,"@bob acknowledged, I will take the lead on this"
+2026-01-23 11:31:45,uptimelabs,online-boutique-7517,:star: Take command
+2026-01-23 11:32:11,PLAYER,online-boutique-7517,Do we have a count of how many reports have come in?
+2026-01-23 11:32:15,uptimelabs,online-boutique-7517,:star: Asking questions to validate impact of the problem
+2026-01-23 11:33:02,bob,online-boutique-7517,Let me gather the information for you
+2026-01-23 11:33:07,bob,online-boutique-7517,There are more than 300 customer reports till now
+2026-01-23 11:33:14,bob,online-boutique-7517,"Calls are from every region, likely to be Global"
+2026-01-23 11:33:20,bob,online-boutique-7517,There's a bunch of messages coming in. A few people saying they can't do anything on the site
+2026-01-23 11:33:25,bob,online-boutique-7517,Let me know if you need more information
+2026-01-23 11:33:34,PLAYER,online-boutique-7517,"I am seeing ""502 Bad Gateway"" on the website myself"
+2026-01-23 11:33:42,uptimelabs,online-boutique-7517,:star: Reproduces the incident
+2026-01-23 11:33:44,PLAYER,online-boutique-7517,let's get the frontend team on
+2026-01-23 11:33:53,shay,online-boutique-7517,on it
+2026-01-23 11:34:18,PLAYER,online-boutique-7517,thanks @shay
+2026-01-23 11:34:29,PLAYER,online-boutique-7517,have we rolled out any new code today?
+2026-01-23 11:34:33,shay,online-boutique-7517,Looking into this and trying to replicate the issue
+2026-01-23 11:34:34,uptimelabs,online-boutique-7517,:star: Check changes done to the platform
+2026-01-23 11:34:36,daniel,online-boutique-7517,I am able to replicate the issue. Checking the logs now
+2026-01-23 11:34:39,daniel,online-boutique-7517,"I see a lot of errors, most of them are context initialisation errors "
+2026-01-23 11:34:43,daniel,online-boutique-7517,
+2026-01-23 11:34:45,shay,online-boutique-7517,Yes replicated the issue and even i'm seeing similar errors in frontend logs
+2026-01-23 11:34:49,bez,business-comms-7517,"I have a stake holders meet in next 10 minutes, @stuck2-bloomberg.net do you think this can be resolved by then? "
+2026-01-23 11:34:58,daniel,online-boutique-7517,Below are the changes implemented this morning
+2026-01-23 11:35:03,daniel,online-boutique-7517,
+2026-01-23 11:35:06,daniel,online-boutique-7517,"If you want more information, checkout the change details : https://uptime-labs.atlassian.net/wiki/external/ZmRkZTQ1ODg2M2U1NGM3NDk1ZjZhM2I3MWY0MTM5ODA "
+2026-01-23 11:35:08,PLAYER,online-boutique-7517,do we have an accurate time when the first errors occurred?
+2026-01-23 11:35:10,uptimelabs,online-boutique-7517,:star: Facts over opinion
+2026-01-23 11:35:36,bob,online-boutique-7517,reports just started a few mins back
+2026-01-23 11:36:22,PLAYER,online-boutique-7517,so Tanya had a rollout 5 minutes ago
+2026-01-23 11:36:31,PLAYER,online-boutique-7517,is that safe to rollback while we are investigating?
+2026-01-23 11:36:40,PLAYER,online-boutique-7517,Change ID: CHG89350
+2026-01-23 11:36:53,PLAYER,online-boutique-7517,@tanya ?
+2026-01-23 11:36:55,tanya,online-boutique-7517,There are no alerts on the Infrastructure. I did see a few errors on the frontend apps
+2026-01-23 11:37:01,tanya,online-boutique-7517,This looks to me like an issue in the frontend pod
+2026-01-23 11:37:04,PLAYER,online-boutique-7517,thanks
+2026-01-23 11:37:17,hamed,online-boutique-7517,"I did follow the chat, I could see the issue started exactly at the time when the change was implemented on the frontend"
+2026-01-23 11:37:17,PLAYER,online-boutique-7517,so the frontend change was 15 min ago
+2026-01-23 11:37:24,hamed,online-boutique-7517,Did we test the change in the UAT environment before implementation
+2026-01-23 11:37:52,PLAYER,online-boutique-7517,can we roll it back even if the time doesn't exactly align to see if that was the culprit?
+2026-01-23 11:37:55,daniel,online-boutique-7517,A Frontend change caused by change CHG89349 has brought down the Frontend pods
+2026-01-23 11:37:56,uptimelabs,online-boutique-7517,:star: Restoration over root cause analysis
+2026-01-23 11:38:01,shay,online-boutique-7517,But this functionally worked when I tested
+2026-01-23 11:38:04,PLAYER,online-boutique-7517,@shay Change ID: CHG89349
+2026-01-23 11:38:06,daniel,online-boutique-7517,"Even if it worked in your test environment, something's behaving differently in prod, maybe a config mismatch or unhandled edge case"
+2026-01-23 11:38:09,bez,business-comms-7517,Can you give a quick update on the status?
+2026-01-23 11:38:17,shay,online-boutique-7517,let check
+2026-01-23 11:38:25,PLAYER,online-boutique-7517,we can review the test env vs prod after we restore service
+2026-01-23 11:38:35,daniel,online-boutique-7517,"yes, makes sense"
+2026-01-23 11:38:43,daniel,online-boutique-7517,"We should revert the frontend change as early as possible, I have verified that other changes are good"
+2026-01-23 11:38:49,daniel,online-boutique-7517,"@stuck2-bloomberg.net It's your call, Shall we revert it?"
+2026-01-23 11:38:55,PLAYER,business-comms-7517,Hi @bez we are actively looking into it
+2026-01-23 11:39:14,shay,online-boutique-7517,"Sorry, I've never done a rollback in PROD before, can someone help me with the steps?"
+2026-01-23 11:39:16,PLAYER,business-comms-7517,we are investigating rolling back a change now
+2026-01-23 11:39:34,PLAYER,online-boutique-7517,"@daniel, can you take over the rollback please"
+2026-01-23 11:39:44,daniel,online-boutique-7517,"I will help you, @Shay. Rolling back now"
+2026-01-23 11:39:57,PLAYER,online-boutique-7517,"at the moment restoration of service is of the essence, we can walk through in a training style after"
+2026-01-23 11:39:59,daniel,online-boutique-7517,I have rollbacked Frontend:version to 10.1.0 to more stable version. Can somebody verify?
+2026-01-23 11:40:02,uptimelabs,online-boutique-7517,"To verify resolution and close incident:
+--Validate fix with team:white_check_mark:
+--Check with Customer Support:white_check_mark:
+--Confirm in 'Business-comms':white_check_mark:"
+2026-01-23 11:40:14,bob,online-boutique-7517,"Customers are able to place the orders, complaint calls have reduced as well."
+2026-01-23 11:40:15,PLAYER,online-boutique-7517,I see the page now
+2026-01-23 11:40:18,uptimelabs,online-boutique-7517,:star: Validate the fix
+2026-01-23 11:40:26,PLAYER,online-boutique-7517,thanks @bob for the end user confirmation
+2026-01-23 11:40:32,PLAYER,business-comms-7517,we should be back now
+2026-01-23 11:40:34,uptimelabs,online-boutique-7517,:star: Confirm resolution with the business
+2026-01-23 11:40:39,bob,online-boutique-7517,checking
+2026-01-23 11:40:48,PLAYER,business-comms-7517,@bez
+2026-01-23 11:41:04,PLAYER,business-comms-7517,we will hold a review to improve rollouts going forward
+2026-01-23 11:41:23,daniel,online-boutique-7517,It's definitely working again!
+2026-01-23 11:41:28,shay,online-boutique-7517,Wow that was intense!
+2026-01-23 11:41:30,bez,business-comms-7517,Thanks! for resolving it quickly
+2026-01-23 11:41:33,hamed,online-boutique-7517,Good job guys
+2026-01-23 11:41:37,tinus,online-boutique-7517,Yes well done! that could have gone much worse so props to everyone
+2026-01-23 11:41:41,tinus,online-boutique-7517,We will have a Post-Incident Review (PIR) to understand what happened
+2026-01-23 11:41:51,PLAYER,online-boutique-7517,Thanks all for your prompt attention
+2026-01-23 11:41:52,uptimelabs,online-boutique-7517,"Drill Wrap-Up
+
+Thanks for playing! This session is now closed.
+
+Please return to your Uptime Labs tab to review your performance and complete the Retrospective & Feedback form.
+
+If you've already closed the tab, you can reopen the form using the button below."
+2026-01-23 11:42:59,PLAYER,online-boutique-7517,@stuck2-bloomberg.net can you rejoin the zoom?

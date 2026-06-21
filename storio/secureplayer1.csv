@@ -1,0 +1,112 @@
+"datetime","player","message"
+"29/09/2025 13:30:51","Maya","@Martijn Mol let's build the core response team here. I've already added myself. Who else should we pull in to keep it tight and efficient?"
+"29/09/2025 13:30:55","Maya","I'd say one senior person each from security, platform, and engineering. Also add Tanya, tasks could be platform intensive"
+"29/09/2025 13:31:44","Martijn Mol","message from Tinus: We've got Cyvantics Security on retainer in case we'll need extra support"
+"29/09/2025 13:31:53","Martijn Mol","put in Hamed"
+"29/09/2025 13:31:57","Martijn Mol","and Tinus"
+"29/09/2025 13:32:17","Martijn Mol","Tanya, and Daniel"
+"29/09/2025 13:32:17","Maya","Yes, we've got an IR(incident response) retainer with Cyvantics Security"
+"29/09/2025 13:32:29","Maya","I've called in Daniel, Hamed and Tanya"
+"29/09/2025 13:32:32","Maya","Looped in Cyvantics Security - they're on their way now to take snapshots of the infected server and storage, followed by forensics on it"
+"29/09/2025 13:32:42","Maya","Meanwhile, I've got this from Cyvantics. @Martijn Mol, can you help track the steps and coordinate?"
+"29/09/2025 13:32:44","Maya","<https://uptime-labs.atlassian.net/wiki/external/MThjMTk4ZDU5ODU0NGZmMWE1NzhmNGY0MDQwNWI1NTA>"
+"29/09/2025 13:32:49","Martijn Mol","sure"
+"29/09/2025 13:32:49","Maya","We've got isolation steps in the playbook, but before we dive in, can you paste that list here? I'll help team run through it"
+"29/09/2025 13:32:54","Tinus","I'll be with Bez"
+"29/09/2025 13:33:08","Martijn Mol","1. Disconnect the infected server -&gt; Platforms 
+"
+"29/09/2025 13:33:13","Martijn Mol","Steps for Isolation:
+
+
+Steps to be done, mentioned along with the *owning* team
+1. Disconnect the infected server -&gt; Platforms 
+2. Cut off infrastructure traffic -&gt; Platforms
+3. Disconnect DB &amp; freeze backup -&gt; Application
+4. Detach from Shared Resource -&gt; Platforms
+5. Take snapshots (Disk &amp; Memory) -&gt; Ask team
+6. Kill suspicious process or activity -&gt; Platforms
+"
+"29/09/2025 13:33:31","Maya","I've given write access to Tanya, Hamed, Daniel, and myself"
+"29/09/2025 13:33:35","Tanya","Disconnecting the checkout servers from the infra now"
+"29/09/2025 13:33:37","Daniel","I'm on it. Disconnecting DB access for checkout and checking if scheduled backups exist"
+"29/09/2025 13:33:39","Hamed","I'll verify if any shared storage is still attached to the checkout DB"
+"29/09/2025 13:33:51","Daniel","Step 3 done, DB connection to checkout is now cut"
+"29/09/2025 13:33:53","Tanya","Step 1 done, Checkout servers are now fully disconnected. Moving to isolate the infra from all external traffic"
+"29/09/2025 13:33:54","Tinus","I'll be with Bez. Keep me updated in business chat"
+"29/09/2025 13:33:55","Hamed","Step 4 confirmed, No shared storage attached to checkout, which makes sense since checkout has its standalone storage"
+"29/09/2025 13:34:01","Tanya","Step 2 completed, Infra is now fully cut off from the outside world. That means the website will remain completely down until we recover"
+"29/09/2025 13:34:07","Maya","Step 5 done, Cyvantics has completed taking snapshots of the checkout servers and database. They've now moved on to forensics. @Hamed, we're good to kill the script now"
+"29/09/2025 13:34:16","Hamed","Step 6 done, The Script has been killed. @Martijn Mol let us know and double-check if anything else is pending on our side"
+"29/09/2025 13:34:56","Martijn Mol","This was it for isolation, now up to restoration:"
+"29/09/2025 13:34:59","Martijn Mol","1. Validate backups → Security
+2. Wipe infected systems → Platforms
+3. Rebuild from clean backup → Platforms
+4. Re-enable security agent on the servers → Security
+5. Reconnect traffic to services and monitor → Platforms
+"
+"29/09/2025 13:35:13","Maya","Yes, we must have a backup. Platform team can confirm us"
+"29/09/2025 13:35:22","Hamed","Correct, we do have backup which only runs at 2AM. Latest is yesterday's. We'll lose today's orders"
+"29/09/2025 13:35:25","Maya","Isolation is complete. We're good to move toward restoration using the backup storage now"
+"29/09/2025 13:35:28","Maya","@Martijn Mol could you please confirm with business before moving forward on this"
+"29/09/2025 13:35:37","Maya","I've called in @Bob to the channel"
+"29/09/2025 13:35:45","Bob","@Martijn Mol, I hear you need my help, what exactly should I look into?"
+"29/09/2025 13:35:51","Martijn Mol","just checking <@U0480TP9ZA5>, you killed the process right?
+&gt; *Kill suspicious processes* – After you’ve taken snapshots, terminate the ransomware or malicious processes. This stops further encryption or damage, but killing processes too early can trigger irreversible encryption — timing matters."
+"29/09/2025 13:36:00","Bob","With the sale starting today, the potential loss is significant - around $180k"
+"29/09/2025 13:36:07","Hamed","Yes , i've killed it"
+"29/09/2025 13:36:48","Martijn Mol","<@U06CA3MRAJF>, why do I need to confirm with the business? what is the risk?"
+"29/09/2025 13:37:20","Maya","It's a financial loss. I feel it's important to let business know about this"
+"29/09/2025 13:37:28","Maya","Its a financial loss"
+"29/09/2025 13:39:04","Martijn Mol","<@U06CA3MRAJF>, are we sure it is only checkout?"
+"29/09/2025 13:39:25","Tanya","Checking..."
+"29/09/2025 13:39:34","Maya","Let me double check"
+"29/09/2025 13:39:34","Tanya","From what I'm seeing, the impact seems limited to the checkout servers. We haven't spotted similar symptoms on the others so far"
+"29/09/2025 13:39:40","Maya","Also, I checked. All other servers have security agents running and reporting normally. The only ones missing agents were the checkout servers - which feels a bit off"
+"29/09/2025 13:40:52","Martijn Mol","""In that case, we can proceed with the restoration from backup - it's our best option right now"""
+"29/09/2025 13:41:04","Martijn Mol","We have green light, <@U06CA3MRAJF> can you coordinate the restore?"
+"29/09/2025 13:41:10","Martijn Mol","1. Validate backups → Security
+2. Wipe infected systems → Platforms
+3. Rebuild from clean backup → Platforms
+4. Re-enable security agent on the servers → Security
+5. Reconnect traffic to services and monitor → Platforms
+"
+"29/09/2025 13:41:14","Maya","Thanks for the go-ahead. @Martijn Mol, please track all restoration steps"
+"29/09/2025 13:41:23","Maya","I'm now validating the backup storage to ensure it's safe"
+"29/09/2025 13:41:26","Hamed","I'm provisioning new checkout servers, will update once ready"
+"29/09/2025 13:41:32","Maya","Backup is clean and safe. @Hamed, you can start rebuilding checkout from backup storage"
+"29/09/2025 13:41:36","Hamed","Thanks, Maya. New servers are ready. I'll start rebuilding now using backup storage"
+"29/09/2025 13:41:43","Hamed","Rebuild completed"
+"29/09/2025 13:41:47","Maya","I've enabled the security agents (EDR) on checkout servers"
+"29/09/2025 13:41:49","Martijn Mol","did we do step 2?"
+"29/09/2025 13:41:50","Daniel","I'll monitor application health once services are restored"
+"29/09/2025 13:41:53","Maya"," @Martijn Mol , can you confirm all tasks are wrapped up and we are good to bring the traffic back? Just want to be sure, as this is the final restoration step before we move"
+"29/09/2025 13:42:18","Martijn Mol","Did someone do ""Wipe infected systems → Platforms""?"
+"29/09/2025 13:42:37","Martijn Mol","<@U0480TP9ZA5>?"
+"29/09/2025 13:42:53","Hamed","Yes i've done it"
+"29/09/2025 13:43:13","Martijn Mol","1. perfect, then all good. <@U06CA3MRAJF>, can you Reconnect traffic to services and monitor → Platforms
+2. 
+"
+"29/09/2025 13:43:17","Maya","Are we good?"
+"29/09/2025 13:43:21","Martijn Mol","yes"
+"29/09/2025 13:43:31","Maya","Tanya will help us out in this"
+"29/09/2025 13:43:35","Tanya","Thanks for the go ahead. Bringing up network traffic in progress..."
+"29/09/2025 13:43:54","Tanya","Restoration completed"
+"29/09/2025 13:44:19","Bob","Wait!! getting a bunch of new complaints now. Users are neither able to see their return requests nor able to place new returns on the site"
+"29/09/2025 13:44:22","Martijn Mol","I can load the website, can someone confirm that the website is running again?"
+"29/09/2025 13:44:26","Maya","Yeah, that's probably the missing today's checkout data. Anyone who ordered or returned something during that time won't see it - makes sense since we restored from the yesterday's backup"
+"29/09/2025 13:44:28","Tanya","Tough, but expected :)"
+"29/09/2025 13:44:29","Bob","What should I tell them? They are asking for refunds"
+"29/09/2025 13:44:35","Hamed","I can confirm that the orders are going now"
+"29/09/2025 13:44:45","Daniel","Even for me, orders are going"
+"29/09/2025 13:46:09","Martijn Mol","Thanks all, we are not out of the clear yet"
+"29/09/2025 13:46:21","Maya","@Martijn Mol I've received the forensics report from Cyvantics Security"
+"29/09/2025 13:46:24","Maya","forensics"
+"29/09/2025 13:46:25","Martijn Mol","<@U06CA3MRAJF> can you do another scan to make sure we are really not infected anymore?"
+"29/09/2025 13:46:41","Maya","Also, I just finished combing through Shay's mailbox. There's something important here, I found two emails from what looks like our monitoring vendor - ClearTech"
+"29/09/2025 13:46:43","Maya","phished_email"
+"29/09/2025 13:46:55","Maya","I'm checking my dashboard, so far it looks good to me"
+"29/09/2025 13:47:01","Maya","We will take this forward in PIR , for now website is restored"
+"29/09/2025 13:47:11","Maya","Alright, since everything's back up and stable, we can now move back to the main #online-boutique channel. No further actions left here"
+"29/09/2025 13:47:24","Bob","What should I say to customers?"
+"29/09/2025 13:47:25","Martijn Mol","<@U047N91SRH8> you can say website restored, but there's an issue with few orders. We'll refund them, and customers will get a $10 gift voucher as an apology"
+"29/09/2025 13:47:39","Bob","Thanks"

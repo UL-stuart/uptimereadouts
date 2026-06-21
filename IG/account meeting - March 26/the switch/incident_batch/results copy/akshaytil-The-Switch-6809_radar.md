@@ -1,0 +1,9 @@
+# akshaytil-The-Switch-6809.csv
+
+| Expertise | Score | Evidence | Notes |
+|-----------|-------|----------|-------|
+| Incident Mechanics | 5 | "*Incident Number INC100046:* network issue sev3"; "network issue  - to - the switch issue sev2"; "Issue seems to be resolved"; [Maya]: "the infected switch has been successfully changed over" | Incident record created with severity; severity raised; closure declared after restoration evidence. |
+| External Comms | 4 | "Summary as of now: Our investigation uncovered a critical issue: the network switch was compromised..."; "Bez team is working on pin pointing the issue, will keep you updated"; "130+ reports and this spike has started 2 weeks back" | Frequent updates in business-comms; no explicit cadence or structured template; also guided customer messaging internally. |
+| Internal Comms | 5 | "Shay, Daniel, Tanya check your recent changes, please."; "Maya can check from security pov"; "Hamed S Can you please provide a hand here!" | Recruited by name, delegated clearly, sought signals and cross-checks; calm/polite; no explicit timeboxing. |
+| Identify Scope | 5 | "Bob What is scope of impact and regions affected?"; "Bob how many reports so for?"; "Summary: There is a spike in outbound connections in the edge router and the origin IP block 10.50.0.0/24." | Drove scoping (global vs regional), quantified impact via reports, articulated concrete symptoms; relied on team for replication. |
+| Commanding the Incident | 5 | "Tanya Can we bring in network team"; "Shay check from changes pov and Tanya please check from infra pov"; "increasing the sev level to 2"; [Hamed]: "shall we do the failover to redundant switch ?" → "Yes" | Acted as de facto IC, made clear decisions (severity raise, failover approval), prioritized restoration over RCA, confident direction. |

@@ -1,0 +1,112 @@
+datetime,player,channel,message
+2025-07-16 12:03:35,tinus,online-boutique-5019,"Hi team, let's have a mood check send an emoji to describe your mood [n/a - 0]"
+2025-07-16 12:03:39,tinus,online-boutique-5019,"I'll go first, :thumbsup: [n/a - 0]"
+2025-07-16 12:03:45,tanya,online-boutique-5019,:thumbsup: [n/a - 0]
+2025-07-16 12:03:47,tinus,online-boutique-5019,I'm excited about showing off all your hard work at todays stakeholder meeting [n/a - 0]
+2025-07-16 12:03:50,daniel,online-boutique-5019,":skull: knackered, had a few too many late nights this week [n/a - 0]"
+2025-07-16 12:03:54,shay,online-boutique-5019,:rainbow: [n/a - 0]
+2025-07-16 12:03:57,hamed,online-boutique-5019,living the dream :smile: [n/a - 0]
+2025-07-16 12:04:01,bez,online-boutique-5019,:smirk: im excited to see the show too [n/a - 0]
+2025-07-16 12:04:03,tinus,online-boutique-5019,shouldn't you be prepping for the meeting  [n/a - 0]
+2025-07-16 12:04:06,bez,online-boutique-5019,:sweat_smile: i am indeed I'll leave you lot to it [n/a - 0]
+2025-07-16 12:04:08,shay,online-boutique-5019,hang in there @daniel its gonne be the weekend sooner or later :joy: [n/a - 0]
+2025-07-16 12:04:11,tinus,online-boutique-5019,I should get on with my prep too have a good day team [n/a - 0]
+2025-07-16 12:04:12,daniel,online-boutique-5019,@shay strict diet of energy drink for me today lol [n/a - 0]
+2025-07-16 12:04:15,daniel,online-boutique-5019,hope the presentation goes well @tinus [n/a - 0]
+2025-07-16 12:04:17,tanya,online-boutique-5019,:raised_hands: [n/a - 0]
+2025-07-16 12:04:32,UptimeLabs,online-boutique-5019,Level 7 start button [n/a - 0]
+2025-07-16 12:05:08,PLAYER,online-boutique-5019,Clicked Start button
+2025-07-16 12:05:09,UptimeLabs,online-boutique-5019,":alarm_clock: - You have 20 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders. [n/a - 0]"
+2025-07-16 12:05:12,tinus,online-boutique-5019,"Hey team, I'm texting from the board room - kinda embarrassing but in my demo to the board, I tried to add a pair of Aviator sunglasses to the shopping cart and I got a ?http 500? [n/a - 0]"
+2025-07-16 12:05:14,tinus,online-boutique-5019,"I've bought some time but need this be able to do this demo if we can lets get this sorted in the next 20 minutes.
+ [n/a - 0]"
+2025-07-16 12:05:17,tinus,online-boutique-5019,500 screenshot [n/a - 0]
+2025-07-16 12:05:19,tanya,online-boutique-5019,"uh oh, those Aviators are top sellers due to the new Top Gun movie...It's size up the issue time Jessica Light [n/a - 0]"
+2025-07-16 12:05:22,shay,online-boutique-5019,Come on this can't be happening! [n/a - 0]
+2025-07-16 12:05:24,tinus,online-boutique-5019,"I'm in this meeting so, wont be able to help but I trust that you all can get this fixed asap, just @ me if you need anything [n/a - 0]"
+2025-07-16 12:05:27,shay,online-boutique-5019,ok looking into this now [n/a - 0]
+2025-07-16 12:05:55,PLAYER,online-boutique-5019,Hi Bob can we get a view of if this is impacting all customers and where ? [L7_incident_scope - 0.46]
+2025-07-16 12:05:57,Bob,online-boutique-5019,Checking reports now! [n/a - 0]
+2025-07-16 12:06:00,UptimeLabs,online-boutique-5019,:star: Asking questions to validate impact of the problem [n/a - 0]
+2025-07-16 12:06:13,PLAYER,online-boutique-5019,Trying to replicate now. Tanya can you test as well [L7_incident_scope - 0.49]
+2025-07-16 12:06:15,Shay,online-boutique-5019,I will see if I can replicate this [n/a - 0]
+2025-07-16 12:06:27,Bob,online-boutique-5019,None of my reports indicate anything is wrong [n/a - 0]
+2025-07-16 12:06:33,Tanya,online-boutique-5019,Sure [n/a - 0]
+2025-07-16 12:06:46,Shay,online-boutique-5019,I was able to place an order with no problems [n/a - 0]
+2025-07-16 12:06:49,Tanya,online-boutique-5019,Same here [n/a - 0]
+2025-07-16 12:07:00,UptimeLabs,online-boutique-5019,:star: Attempt to replicate the issue [n/a - 0]
+2025-07-16 12:07:10,PLAYER,online-boutique-5019,No issues my side [FALLBACKINTENT - 0.78]
+2025-07-16 12:07:13,Shay,online-boutique-5019,I know there were a few deployments [n/a - 0]
+2025-07-16 12:07:19,Shay,online-boutique-5019,could be a change related issue [n/a - 0]
+2025-07-16 12:07:33,PLAYER,online-boutique-5019,Tinus can you refresh and try again? just to confirm? [L7_incident_scope - 0.84]
+2025-07-16 12:07:52,Tinus,online-boutique-5019,"I have, still no luck! [n/a - 0]"
+2025-07-16 12:08:01,PLAYER,online-boutique-5019,Daniel and Shay can you get me list of recent deployments. I'll check the dashboard [L7_incident_scope - 0.44]
+2025-07-16 12:08:04,Shay,online-boutique-5019,Sure [n/a - 0]
+2025-07-16 12:08:37,Shay,online-boutique-5019,"Ad service, payments, and checkout. The rest is UAT [n/a - 0]"
+2025-07-16 12:08:49,UptimeLabs,online-boutique-5019,:star: Form an effective investigation team [n/a - 0]
+2025-07-16 12:08:52,UptimeLabs,online-boutique-5019,:bulb: Hint: Declare an incident. [n/a - 0]
+2025-07-16 12:09:17,Daniel,online-boutique-5019,"I agree with Shay, I think UAT changes wouldn't affect PROD! [n/a - 0]"
+2025-07-16 12:09:28,Tanya,online-boutique-5019,Checking logs to see if there is anything there [n/a - 0]
+2025-07-16 12:09:43,PLAYER,business-comms-5019,*Incident Number INC10004:* Sev3 Unable to add sunglasses to cart [n/a - 0]
+2025-07-16 12:09:43,UptimeLabs,online-boutique-5019,:star: Incident record created [n/a - 0]
+2025-07-16 12:09:45,UptimeLabs,online-boutique-5019,:star: Send first comms in first 5 minutes [n/a - 0]
+2025-07-16 12:10:08,UptimeLabs,online-boutique-5019,:star: Formally assign criticality level to the incident [n/a - 0]
+2025-07-16 12:10:21,Shay,online-boutique-5019,Should we start with reviewing changes? [n/a - 0]
+2025-07-16 12:10:35,Tanya,online-boutique-5019,"Logs are clean, don't see any issues with any services [n/a - 0]"
+2025-07-16 12:10:40,PLAYER,business-comms-5019,"Hi all, Tinus has reported an issue adding sunglasses to his cart during a demo. No customer reports yet and no drop off in orders in the dashboard. Seems isolated [L7_incident_scope - 0.73]"
+2025-07-16 12:10:54,Daniel,online-boutique-5019,"I have checked the services, and everything looks fine on my side [n/a - 0]"
+2025-07-16 12:11:16,Daniel,online-boutique-5019,So is this just affecting one user? [n/a - 0]
+2025-07-16 12:11:21,PLAYER,online-boutique-5019,This appears to be an isolated incident. Think we need to understand more about what Tinus is doing. Can you walk us through step by step? [FALLBACKINTENT - 0.79]
+2025-07-16 12:11:23,Shay,online-boutique-5019,So not change related issue? [n/a - 0]
+2025-07-16 12:11:37,Bez,business-comms-5019,Is this regional? [n/a - 0]
+2025-07-16 12:11:46,PLAYER,online-boutique-5019,Don't believe this is change related at this point seems isolated to Tinus [L7_incident_scope - 0.88]
+2025-07-16 12:11:55,Daniel,online-boutique-5019,So just Tinus [n/a - 0]
+2025-07-16 12:12:05,UptimeLabs,online-boutique-5019,:star: Qualify the problem [n/a - 0]
+2025-07-16 12:12:51,Daniel,online-boutique-5019,I will try to inspect his error message to see if there is anything odd <https://content.prod.uptimelabs.io/wp-content/uploads/2022/11/image.png> [n/a - 0]
+2025-07-16 12:12:53,PLAYER,business-comms-5019,Bob has said no incidents have been raised by customers yet so this appears to just be an issue for Titus [L7_incident_severity - 0.55]
+2025-07-16 12:12:56,PLAYER,business-comms-5019,Tinus [L7_incident_scope - 0.91]
+2025-07-16 12:13:20,Tanya,online-boutique-5019,It could be a local issue with the machine or the browser [n/a - 0]
+2025-07-16 12:13:29,PLAYER,online-boutique-5019,Thanks Daniel out of curiosity can we see if this is happening in UAT? [L7_incident_scope - 0.51]
+2025-07-16 12:13:56,Daniel,online-boutique-5019,I can see that the product ID that Tinus uses doesn't match with the current one we have in the database [n/a - 0]
+2025-07-16 12:14:07,Tanya,online-boutique-5019,I will check that [n/a - 0]
+2025-07-16 12:14:15,PLAYER,online-boutique-5019,Agree Tanya think this will either be machine or browser base. [L7_incident_scope - 0.54]
+2025-07-16 12:14:17,UptimeLabs,online-boutique-5019,:star: Reviewed changes [n/a - 0]
+2025-07-16 12:14:35,UptimeLabs,online-boutique-5019,:bulb: Form a working theory and try to validate or invalidate it [n/a - 0]
+2025-07-16 12:14:49,PLAYER,online-boutique-5019,Product id in prod appears to be OLJCESPC7Z [L7_incident_scope - 0.58]
+2025-07-16 12:15:00,Bez,business-comms-5019,We need to get this sorted as soon as possible as this meeting is crucial [n/a - 0]
+2025-07-16 12:15:00,PLAYER,online-boutique-5019,What url are you going to Tinus? [L7_incident_scope - 0.88]
+2025-07-16 12:15:22,PLAYER,business-comms-5019,"We are all on it, will resolve asap [L7_incident_scope - 0.57]"
+2025-07-16 12:15:43,Tinus,online-boutique-5019,I was just trying to add a pair of glasses to the shopping cart and got a page not found error. The same way I would if I were a customer [n/a - 0]
+2025-07-16 12:16:18,PLAYER,online-boutique-5019,Can you go to the sunglasses page and copy the url into the chat for us please Tinus? [L7_incident_scope - 0.76]
+2025-07-16 12:16:49,Daniel,online-boutique-5019,Could it be that Tinus was working on something on his local machine [n/a - 0]
+2025-07-16 12:16:55,Tanya,online-boutique-5019,UAT is fine btw [n/a - 0]
+2025-07-16 12:17:24,Tinus,online-boutique-5019,<https://hipster-vbzzifcxvf3ovnfmaafiqya.proxy.prod.uptimelabs.io/product/OLJCESPC7T> [n/a - 0]
+2025-07-16 12:17:53,PLAYER,online-boutique-5019,"Think you are looking at the wrong url, please use <https://hipster.prod.uptimelabs.io/> Tinus [L7_incident_scope - 0.77]"
+2025-07-16 12:18:07,PLAYER,online-boutique-5019,That looks like a local machine url [L7_incident_scope - 0.44]
+2025-07-16 12:18:14,Tinus,online-boutique-5019,Same error even with the other URL [n/a - 0]
+2025-07-16 12:18:32,UptimeLabs,online-boutique-5019,:star: Send regular business comms [n/a - 0]
+2025-07-16 12:18:56,PLAYER,online-boutique-5019,The product code is still wrong maybe. Try <https://hipster.prod.uptimelabs.io/product/OLJCESPC7Z> Tinus [FALLBACKINTENT - 0.79]
+2025-07-16 12:19:09,Tanya,online-boutique-5019,I suspect this could be a cache issue [n/a - 0]
+2025-07-16 12:19:37,Tanya,online-boutique-5019,@Tinus were you doing any dev work before demo? [n/a - 0]
+2025-07-16 12:19:52,Tinus,online-boutique-5019,"Still no luck, and yes @Tanya [n/a - 0]"
+2025-07-16 12:20:18,PLAYER,online-boutique-5019,Good idea Tanya Please clear cache cntl + shift + delete Tinus [L7_incident_scope - 0.81]
+2025-07-16 12:20:21,PLAYER,online-boutique-5019,And then try again [L7_incident_severity - 0.53]
+2025-07-16 12:20:26,Tinus,online-boutique-5019,I will try it now! [n/a - 0]
+2025-07-16 12:20:34,UptimeLabs,online-boutique-5019,:star: Take command [n/a - 0]
+2025-07-16 12:20:56,Tinus,online-boutique-5019,clearing cache [n/a - 0]
+2025-07-16 12:21:06,tinus,online-boutique-5019,Damn! thats it [n/a - 0]
+2025-07-16 12:21:08,tinus,online-boutique-5019,"Great Ive got to do my presentation now, thanks for figuring this out so quickly. @daniel @shay can you look in to a cache busting solution? [n/a - 0]"
+2025-07-16 12:21:10,shay,online-boutique-5019,it was the cache! sure we can do that [n/a - 0]
+2025-07-16 12:21:12,daniel,online-boutique-5019,"no worries boss, at least its not a significat issue [n/a - 0]"
+2025-07-16 12:21:14,daniel,online-boutique-5019,good luck with the presentation! [n/a - 0]
+2025-07-16 12:21:15,tanya,online-boutique-5019,yes good luck @tinus [n/a - 0]
+2025-07-16 12:21:17,shay,online-boutique-5019,good luck @tinus! [n/a - 0]
+2025-07-16 12:21:19,PLAYER,business-comms-5019,We think it is a local machine issue and are getting Tinus to clear cache now [L7_incident_scope - 0.84]
+2025-07-16 12:21:28,UptimeLabs,online-boutique-5019,Start retro and feedback [n/a - 0]
+2025-07-16 12:21:40,PLAYER,online-boutique-5019,Clicked Start_feedback button
+2025-07-16 12:21:43,UptimeLabs,online-boutique-5019,:bulb: Hint: Confirm resolution with the business [n/a - 0]
+2025-07-16 12:22:04,PLAYER,business-comms-5019,"Incident resolved, Tinus is sorted for the demo again [L7_incident_scope - 0.84]"
+2025-07-16 12:22:06,UptimeLabs,online-boutique-5019,:star: Confirm resolution with the business [n/a - 0]
+2025-07-16 12:22:08,UptimeLabs,online-boutique-5019,:star: Validate the fix [n/a - 0]
+2025-07-16 12:22:43,PLAYER,online-boutique-5019,Clicked Start_feedback button
+2025-07-16 12:25:20,UptimeLabs,online-boutique-5019,Submission successful [n/a - 0]

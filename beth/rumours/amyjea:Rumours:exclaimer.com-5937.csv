@@ -1,0 +1,110 @@
+datetime,player,channel,message
+2025-09-25 13:04:58,tinus,online-boutique-5937,"Hi team, let's have a mood check send an emoji to describe your mood"
+2025-09-25 13:05:02,tinus,online-boutique-5937,"I'll go first, :thumbsup:"
+2025-09-25 13:05:08,tanya,online-boutique-5937,:thumbsup:
+2025-09-25 13:05:10,tinus,online-boutique-5937,I'm excited about showing off all your hard work at todays stakeholder meeting
+2025-09-25 13:05:13,daniel,online-boutique-5937,":skull: knackered, had a few too many late nights this week"
+2025-09-25 13:05:16,shay,online-boutique-5937,:rainbow:
+2025-09-25 13:05:19,hamed,online-boutique-5937,living the dream :smile:
+2025-09-25 13:05:23,bez,online-boutique-5937,:smirk: im excited to see the show too
+2025-09-25 13:05:25,tinus,online-boutique-5937,shouldn't you be prepping for the meeting 
+2025-09-25 13:05:28,bez,online-boutique-5937,:sweat_smile: i am indeed I'll leave you lot to it
+2025-09-25 13:05:30,shay,online-boutique-5937,hang in there @daniel its gonne be the weekend sooner or later :joy:
+2025-09-25 13:05:33,tinus,online-boutique-5937,I should get on with my prep too have a good day team
+2025-09-25 13:05:34,daniel,online-boutique-5937,@shay strict diet of energy drink for me today lol
+2025-09-25 13:05:37,daniel,online-boutique-5937,hope the presentation goes well @tinus
+2025-09-25 13:05:39,tanya,online-boutique-5937,:raised_hands:
+2025-09-25 13:05:55,UptimeLabs,online-boutique-5937,"Welcome to Rumours, remember communication is key to diagnose the problem.
+
+ *Use `/help` at any time for a list of useful links and commands*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin Start button"
+2025-09-25 13:06:13,PLAYER,online-boutique-5937,Clicked Start button
+2025-09-25 13:06:14,UptimeLabs,online-boutique-5937,":alarm_clock: - You have 20 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-09-25 13:06:17,tinus,online-boutique-5937,"Hey team, I'm texting from the board room - kinda embarrassing but in my demo to the board, I tried to add a pair of Aviator sunglasses to the shopping cart and I got a ?http 500?"
+2025-09-25 13:06:19,tinus,online-boutique-5937,"I've bought some time but need this be able to do this demo if we can lets get this sorted in the next 20 minutes.
+"
+2025-09-25 13:06:21,tinus,online-boutique-5937,Metrics
+2025-09-25 13:06:24,tanya,online-boutique-5937,"uh oh, those Aviators are top sellers due to the new Top Gun movie...It's size up the issue time Amy Jeanes"
+2025-09-25 13:06:27,shay,online-boutique-5937,Come on this can't be happening!
+2025-09-25 13:06:29,tinus,online-boutique-5937,"I'm in this meeting so, wont be able to help but I trust that you all can get this fixed asap, just @ me if you need anything"
+2025-09-25 13:06:32,shay,online-boutique-5937,ok looking into this now
+2025-09-25 13:07:07,PLAYER,online-boutique-5937,I was just able to order some sunglasses myself so it might not be a total outage
+2025-09-25 13:07:17,UptimeLabs,online-boutique-5937,:star: Attempt to replicate the issue
+2025-09-25 13:07:18,Shay,online-boutique-5937,"Yeah same here, not able to replicate on my end"
+2025-09-25 13:08:02,PLAYER,online-boutique-5937,Tinus can you tell us exactly what steps you took to recreate this problem
+2025-09-25 13:08:08,UptimeLabs,online-boutique-5937,:star: Ask team members to provide evidence of their assertions
+2025-09-25 13:08:15,Tinus,online-boutique-5937,I just tried to place an order for those aviators
+2025-09-25 13:08:19,Tinus,online-boutique-5937,and ran into that error
+2025-09-25 13:08:43,PLAYER,online-boutique-5937,"Tinus how many did you order, anything else in your cart, language settings etc? anything that might be different"
+2025-09-25 13:08:49,Tinus,online-boutique-5937,"I'm able to buy time for now and move on, but let's get this sorted. I won't be the most responsive"
+2025-09-25 13:08:53,UptimeLabs,online-boutique-5937,:star: Asking questions to validate impact of the problem
+2025-09-25 13:09:01,Tinus,online-boutique-5937,"Just one, everything else was the same"
+2025-09-25 13:09:24,Bez,business-comms-5937,"Hey, what's going on. Tinus just told me he's facing an issue in the board meeting"
+2025-09-25 13:09:30,Bez,business-comms-5937,Is this an incident?
+2025-09-25 13:09:35,PLAYER,online-boutique-5937,Bob are you hearing any reports of errors from customers?
+2025-09-25 13:09:50,Bob,online-boutique-5937,"No, I haven't received any reports on this so far"
+2025-09-25 13:09:55,PLAYER,online-boutique-5937,the grafana monitoring is also not showing any issues here
+2025-09-25 13:10:01,UptimeLabs,online-boutique-5937,:star: Use metrics as evidence
+2025-09-25 13:10:11,Bob,online-boutique-5937,"Yeah, it may just be on Tinus' end"
+2025-09-25 13:10:25,PLAYER,business-comms-5937,Potentially but we're unable to replicate the issue so far and no customers are reporting anything
+2025-09-25 13:10:35,PLAYER,business-comms-5937,and all of our monitoring looks normal
+2025-09-25 13:10:41,Shay,online-boutique-5937,Is it worth looking at the recent deployments? Do you think any of those could be responsible?
+2025-09-25 13:11:01,PLAYER,online-boutique-5937,potentially yes Shay what deployments have happened recently
+2025-09-25 13:11:07,UptimeLabs,online-boutique-5937,:star: Check changes done to the platform
+2025-09-25 13:11:11,Bez,business-comms-5937,"Okay, this is still high stakes though. Not a good look in front of our shareholders"
+2025-09-25 13:11:20,Shay,online-boutique-5937,Let me check
+2025-09-25 13:11:58,Shay,online-boutique-5937,"CHG89359:PaymentService:version 1.6 deployed:PROD:Daniel
+CHG89358:CheckoutService:version 4.6 deployed:PROD:Shay
+CHG89360:AdService:version 8.4 deployed:PROD:Tanya"
+2025-09-25 13:12:19,Shay,online-boutique-5937,These were pushed in the past hour
+2025-09-25 13:12:23,PLAYER,online-boutique-5937,can anyone else recreate this problem?
+2025-09-25 13:12:31,UptimeLabs,online-boutique-5937,:star: Reproduces the incident
+2025-09-25 13:12:32,Daniel,online-boutique-5937,No I'm not able to
+2025-09-25 13:12:35,Tanya,online-boutique-5937,Nor me...
+2025-09-25 13:12:43,PLAYER,business-comms-5937,Okay i will declare an incident but the scope of it is currently unknown
+2025-09-25 13:12:52,UptimeLabs,online-boutique-5937,:star: Formally assign criticality level to the incident
+2025-09-25 13:13:14,PLAYER,business-comms-5937,SEV-3 Unable to add sunglasses to basket for some users
+2025-09-25 13:13:14,PLAYER,business-comms-5937,*Incident Number INC100098:* SEV-3 Unable to add sunglasses to basket for some users
+2025-09-25 13:13:19,Daniel,online-boutique-5937,What's our current theory?
+2025-09-25 13:13:38,UptimeLabs,online-boutique-5937,:star: Incident record created
+2025-09-25 13:13:41,PLAYER,online-boutique-5937,"Not sure, but we could try rolling back the change to the checkout service?"
+2025-09-25 13:13:49,UptimeLabs,online-boutique-5937,:star: Restoration over root cause analysis
+2025-09-25 13:13:55,Shay,online-boutique-5937,Could be worth a go
+2025-09-25 13:14:11,Tanya,online-boutique-5937,Is it only affecting the aviators product though?
+2025-09-25 13:14:27,Shay,online-boutique-5937,"Looks safe to rollback, shall I try that?"
+2025-09-25 13:14:27,PLAYER,online-boutique-5937,Tinus does this happen for other products or just the aviators
+2025-09-25 13:14:49,Tinus,online-boutique-5937,"Just the aviators, I've been able to demo the other products okay"
+2025-09-25 13:14:54,PLAYER,online-boutique-5937,Shay okay go for it
+2025-09-25 13:15:23,Tinus,online-boutique-5937,I've moved on from it but let's get this fixed before the end of the meeting ideally. I have 10 mins to go
+2025-09-25 13:15:27,Shay,online-boutique-5937,On it
+2025-09-25 13:15:32,PLAYER,business-comms-5937,"It seems to only be the aviators as far as we can see, we are rolling back a change in the checkout service to attempt to restore"
+2025-09-25 13:15:51,Shay,online-boutique-5937,Rollback complete
+2025-09-25 13:16:07,PLAYER,online-boutique-5937,Tinus how is it now
+2025-09-25 13:16:21,Tinus,online-boutique-5937,Still not working for me...
+2025-09-25 13:16:39,Daniel,online-boutique-5937,Why would it only be affecting him? What's different with his setup compared to everyone else's?
+2025-09-25 13:17:07,PLAYER,online-boutique-5937,"Tinus where exactly did you run into this error, during what step? can you walk us through exactly the steps you took"
+2025-09-25 13:17:13,UptimeLabs,online-boutique-5937,:star: Facts over opinion
+2025-09-25 13:17:30,Bob,online-boutique-5937,"I just went onto the product page, added aviators to basket, checked out, then got that error"
+2025-09-25 13:18:31,PLAYER,online-boutique-5937,"the error is saying it can't find a product id, maybe it's a cache error on the browser? Tinus try clearing browser cache and trying again"
+2025-09-25 13:18:51,Daniel,online-boutique-5937,I notice the product id on his message is different to what is showing on mine
+2025-09-25 13:18:59,Tinus,online-boutique-5937,Could be worth a shot
+2025-09-25 13:19:45,Daniel,online-boutique-5937,"His reads #OLJCESPC7D, whereas for me it shows #OLJCESPC7Z"
+2025-09-25 13:19:59,Daniel,online-boutique-5937,Could definitely be a caching issue
+2025-09-25 13:20:05,Tinus,online-boutique-5937,"One sec, let me try"
+2025-09-25 13:20:21,PLAYER,online-boutique-5937,"I can also see this error being logged: {""error"":""failed to complete the order: rpc error: code = Internal desc = failed to charge card: could not charge the card: rpc error: code = Code(400) desc = Sorry, we cannot process visa_electron credit cards. Only VISA or MasterCard is accepted."",""http.req.id"":""0a890b83-5977-4d92-be85-6ed56c060e68"",""http.req.method"":""POST"",""http.req.path"":""/cart/checkout"",""message"":""request error"",""session"":""9ec53919-f006-47ac-95c5-26d864843f40"",""severity"":""error"",""timestamp"":""2025-09-25T13:15:58.874559176Z""}"
+2025-09-25 13:20:39,PLAYER,online-boutique-5937,But that might be unrelated if it's erroring when adding to the basket
+2025-09-25 13:20:56,Daniel,online-boutique-5937,"Hmm, yeah worth keeping track of that, not sure if it is related"
+2025-09-25 13:21:04,Tinus,online-boutique-5937,Okay I've just cleared my cache
+2025-09-25 13:21:32,PLAYER,online-boutique-5937,Tinus okay and try again?
+2025-09-25 13:21:55,Tinus,online-boutique-5937,Damn that's it!
+2025-09-25 13:22:03,PLAYER,business-comms-5937,we rolled back the change but still seeing the error - we think it might be a caching error on Tinus' end
+2025-09-25 13:22:07,Tinus,online-boutique-5937,Thank you for finding that
+2025-09-25 13:22:10,PLAYER,business-comms-5937,and  yes indeed it was!
+2025-09-25 13:22:22,PLAYER,online-boutique-5937,Okay so we're all good?
+2025-09-25 13:22:25,Daniel,online-boutique-5937,Good find!
+2025-09-25 13:22:37,Tinus,online-boutique-5937,"Yeah we're good, thanks again!"
+2025-09-25 13:22:42,PLAYER,business-comms-5937,Incident is resolved now - caching issue on Tinus' end
+2025-09-25 13:22:50,Bez,business-comms-5937,"Brilliant, thanks for identifying that"
+2025-09-25 13:23:04,Daniel,online-boutique-5937,Good luck with the rest of the presentation Tinus!

@@ -1,0 +1,62 @@
+datetime,player,channel,message
+2026-02-20 14:26:08,tinus,online-boutique-7788,Hey everyone. I'm pumped today about our flash sale
+2026-02-20 14:26:14,tinus,online-boutique-7788,You know it's been 56 years since the Beatles released Abbey Road right? My favourite album
+2026-02-20 14:26:19,tanya,online-boutique-7788,56 years already?? Wow that makes me feel old...
+2026-02-20 14:26:24,tinus,online-boutique-7788,Indeed! We're celebrating today by promoting a flash sale on retro items from 1969
+2026-02-20 14:26:32,uptimelabs,online-boutique-7788,"Welcome to Bezs Beatles Day, remember communication is key to diagnose the problem.
+
+ *Access game links by pressing the Uptime Labs Logo in the top right of the screen*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin"
+2026-02-20 14:26:42,tinus,online-boutique-7788,We're a step closer to allowing folks to pay for items from the 1960s with Bitcoin thanks to Daniel!
+2026-02-20 14:26:48,daniel,online-boutique-7788,Think of it like time travelling!
+2026-02-20 14:26:53,hamed,online-boutique-7788,Wow good work Daniel! Looking forward to seeing it in action in prod
+2026-02-20 14:26:59,hamed,online-boutique-7788,How's the test-driven development going?
+2026-02-20 14:27:04,daniel,online-boutique-7788,TDDs going well. We are as solid as a rock! Though don't ask me what the Liskov Substitution Principle is...
+2026-02-20 14:27:11,shay,online-boutique-7788,"erm - funny you should say that Daniel, I'm just testing my checkout service change in prod and I can't complete the payment - something's up"
+2026-02-20 14:27:18,shay,online-boutique-7788,"I hope my checkout service change is all good. Can someone check its not just me? And before you ask, yes I've cleared my cookies"
+2026-02-20 14:27:24,tanya,online-boutique-7788,Sorry Daniel it's not looking good on my end either
+2026-02-20 14:27:27,tinus,online-boutique-7788,Uh oh...here we go again
+2026-02-20 14:27:31,tinus,online-boutique-7788,"@lspesshardt-bloomberg.net can you ""Size up the Issue"" please and keep us informed"
+2026-02-20 14:27:33,bob,online-boutique-7788,From what I can see it looks like we are still getting orders through
+2026-02-20 14:27:38,tinus,online-boutique-7788,Get this sorted ASAP!!!
+2026-02-20 14:27:56,PLAYER,online-boutique-7788,@bob can you confirm if customers are complaining?
+2026-02-20 14:27:58,uptimelabs,online-boutique-7788,:star: Asking questions to validate impact of the problem
+2026-02-20 14:28:01,bob,online-boutique-7788,"Yes, we're seeing a significant spike in customer complaints about failed payments, with about 40% of transactions failing during checkout in the last few minutes."
+2026-02-20 14:28:18,PLAYER,online-boutique-7788,@shay what are the logs showing?
+2026-02-20 14:28:23,tanya,online-boutique-7788,"Just got a message from my cousin in London, she can't buy any of the new Beatles merch either. Says her payment failed."
+2026-02-20 14:28:41,bob,online-boutique-7788,I'm noticing the failures seem concentrated in Europe. Looks like the UK is particularly affected.
+2026-02-20 14:28:54,shay,online-boutique-7788,I will start checking the logs now
+2026-02-20 14:28:58,daniel,online-boutique-7788,Could it be your checkout change again @Shay? It broke the platform last week!
+2026-02-20 14:29:08,shay,online-boutique-7788,The checkout service logs are healthy and the service is working as intended
+2026-02-20 14:29:19,shay,online-boutique-7788,"I see 504 HTTP errors in the payment service, which means the application is failing to serve the requests"
+2026-02-20 14:29:29,PLAYER,online-boutique-7788,i can recreate too
+2026-02-20 14:29:31,uptimelabs,online-boutique-7788,:star: Reproduces the incident
+2026-02-20 14:29:45,shay,online-boutique-7788,A 504 error indicates the payment service is timing out or not responding to upstream requests.
+2026-02-20 14:29:45,daniel,online-boutique-7788,"If we're seeing 504s from the payment service, we should check for downstream dependencies or network issues affecting its availability."
+2026-02-20 14:30:03,PLAYER,online-boutique-7788,@shay any recent changes from your side?
+2026-02-20 14:30:06,uptimelabs,online-boutique-7788,:star: Check changes done to the platform
+2026-02-20 14:30:09,shay,online-boutique-7788,"Give me a second, I'll get the detailed info on each of the changes made today"
+2026-02-20 14:30:20,shay,online-boutique-7788,Hope this helps: https://uptime-labs.atlassian.net/wiki/external/OGU1YjE2MmE4ZmI4NGFkMjgzNzEwZGVkYjlmNzgwNWY
+2026-02-20 14:30:33,tinus,online-boutique-7788,Any updates on the investigation?
+2026-02-20 14:30:48,PLAYER,online-boutique-7788,@daniel can yo ucheck your changes too?
+2026-02-20 14:30:51,uptimelabs,online-boutique-7788,:star: Reviewed changes
+2026-02-20 14:30:57,daniel,online-boutique-7788,"My PaymentService change was deployed 5 minutes ago, but the new Bitcoin code isn't being called yet and all my tests passed, so I don't see any errors on my end."
+2026-02-20 14:31:19,PLAYER,online-boutique-7788,@bob how customer complaints?
+2026-02-20 14:31:27,bob,online-boutique-7788,"Customer complaints about failed payments remain high, with the UK failure rate still at 100% and zero successful transactions in the last 10 minutes."
+2026-02-20 14:31:32,PLAYER,online-boutique-7788,I'm going to declare a major incident
+2026-02-20 14:31:34,PLAYER,online-boutique-7788,
+2026-02-20 14:31:34,uptimelabs,business-comms-7788,*Incident Number INC100087:* SEV1 500 error we are investigating
+2026-02-20 14:31:38,tinus,online-boutique-7788,"Understood, please keep leadership updated with regular status reports and escalate if you need additional resources."
+2026-02-20 14:31:42,bob,online-boutique-7788,I've notified the customer support team to prepare for increased inquiries and will continue to monitor transaction metrics closely.
+2026-02-20 14:31:54,PLAYER,business-comms-7788,@bez currently investigating issues with customer check outs
+2026-02-20 14:31:57,uptimelabs,online-boutique-7788,:star: Qualify the problem
+2026-02-20 14:32:06,PLAYER,business-comms-7788,high rate of errors being observed
+2026-02-20 14:46:50,uptimelabs,online-boutique-7788,"Drill Wrap-Up
+
+Thanks for playing! This session is now closed.
+
+Please return to your Uptime Labs tab to review your performance and complete the Retrospective & Feedback form.
+
+If you've already closed the tab, you can reopen the form using the button below."

@@ -1,0 +1,97 @@
+datetime,player,channel,message
+2025-08-28 14:33:50,tinus,online-boutique-5552,"Hi team, let's have a mood check send an emoji to describe your mood"
+2025-08-28 14:33:54,tinus,online-boutique-5552,"I'll go first, :thumbsup:"
+2025-08-28 14:33:59,tanya,online-boutique-5552,:thumbsup:
+2025-08-28 14:34:02,tinus,online-boutique-5552,I'm excited about showing off all your hard work at todays stakeholder meeting
+2025-08-28 14:34:05,daniel,online-boutique-5552,":skull: knackered, had a few too many late nights this week"
+2025-08-28 14:34:08,shay,online-boutique-5552,:rainbow:
+2025-08-28 14:34:11,hamed,online-boutique-5552,living the dream :smile:
+2025-08-28 14:34:15,bez,online-boutique-5552,:smirk: im excited to see the show too
+2025-08-28 14:34:17,tinus,online-boutique-5552,shouldn't you be prepping for the meeting 
+2025-08-28 14:34:20,bez,online-boutique-5552,:sweat_smile: i am indeed I'll leave you lot to it
+2025-08-28 14:34:22,shay,online-boutique-5552,hang in there @daniel its gonne be the weekend sooner or later :joy:
+2025-08-28 14:34:25,tinus,online-boutique-5552,I should get on with my prep too have a good day team
+2025-08-28 14:34:26,daniel,online-boutique-5552,@shay strict diet of energy drink for me today lol
+2025-08-28 14:34:29,daniel,online-boutique-5552,hope the presentation goes well @tinus
+2025-08-28 14:34:31,tanya,online-boutique-5552,:raised_hands:
+2025-08-28 14:34:45,PLAYER,online-boutique-5552,Clicked undefined button
+2025-08-28 14:34:46,UptimeLabs,online-boutique-5552,Level 7 start button
+2025-08-28 14:34:59,PLAYER,online-boutique-5552,Clicked org button
+2025-08-28 14:35:03,PLAYER,online-boutique-5552,Clicked undefined button
+2025-08-28 14:36:09,PLAYER,online-boutique-5552,Clicked Start button
+2025-08-28 14:36:10,UptimeLabs,online-boutique-5552,":alarm_clock: - You have 20 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-08-28 14:36:13,tinus,online-boutique-5552,"Hey team, I'm texting from the board room - kinda embarrassing but in my demo to the board, I tried to add a pair of Aviator sunglasses to the shopping cart and I got a ?http 500?"
+2025-08-28 14:36:15,tinus,online-boutique-5552,"I've bought some time but need this be able to do this demo if we can lets get this sorted in the next 20 minutes.
+"
+2025-08-28 14:36:17,tinus,online-boutique-5552,500 screenshot
+2025-08-28 14:36:20,tanya,online-boutique-5552,"uh oh, those Aviators are top sellers due to the new Top Gun movie...It's size up the issue time Ehsaan Gaffar"
+2025-08-28 14:36:23,shay,online-boutique-5552,Come on this can't be happening!
+2025-08-28 14:36:25,tinus,online-boutique-5552,"I'm in this meeting so, wont be able to help but I trust that you all can get this fixed asap, just @ me if you need anything"
+2025-08-28 14:36:28,shay,online-boutique-5552,ok looking into this now
+2025-08-28 14:36:30,PLAYER,online-boutique-5552,ok ill take a look
+2025-08-28 14:37:03,PLAYER,online-boutique-5552,"Tinus it seems to be working for me, ill try once again"
+2025-08-28 14:37:09,UptimeLabs,online-boutique-5552,:star: Attempt to replicate the issue
+2025-08-28 14:37:11,Shay,online-boutique-5552,I was able to place an order without any trouble. Anyone else?
+2025-08-28 14:37:31,PLAYER,online-boutique-5552,Shay i could too
+2025-08-28 14:37:36,PLAYER,online-boutique-5552,Tinus can you try once more?
+2025-08-28 14:37:37,Shay,online-boutique-5552,Hmm....
+2025-08-28 14:38:11,Tinus,online-boutique-5552,Still doesn't work. Can't talk too much. I will stall as much as I can but get it fixed ASAP!
+2025-08-28 14:38:34,PLAYER,online-boutique-5552,okay ill post an incident as it looks localised if we can purchase but tinus cant
+2025-08-28 14:38:46,UptimeLabs,online-boutique-5552,:star: Qualify the problem
+2025-08-28 14:38:50,PLAYER,business-comms-5552,cannot buy sunglasses p2
+2025-08-28 14:38:50,PLAYER,business-comms-5552,*Incident Number INC100090:* cannot buy sunglasses p2
+2025-08-28 14:38:51,UptimeLabs,online-boutique-5552,:star: Incident record created
+2025-08-28 14:38:51,UptimeLabs,online-boutique-5552,:bulb: Hint: how many users are affected? does this rule out possible causes?
+2025-08-28 14:38:53,UptimeLabs,online-boutique-5552,:star: Send first comms in first 5 minutes
+2025-08-28 14:38:58,UptimeLabs,online-boutique-5552,:star: Formally assign criticality level to the incident
+2025-08-28 14:39:09,PLAYER,online-boutique-5552,Tanya can you see anything on your end for this issue?
+2025-08-28 14:39:14,Shay,online-boutique-5552,I wonder if any customers are affected by this
+2025-08-28 14:39:20,Tanya,online-boutique-5552,Checking now
+2025-08-28 14:39:30,Shay,online-boutique-5552,Could it be a change related issue?
+2025-08-28 14:39:37,PLAYER,online-boutique-5552,Bob has anyone else reported this?
+2025-08-28 14:39:43,UptimeLabs,online-boutique-5552,:star: Asking questions to validate impact of the problem
+2025-08-28 14:39:52,Bez,business-comms-5552,Is this a local or global issue?
+2025-08-28 14:40:02,Bob,online-boutique-5552,Checking reports now
+2025-08-28 14:40:33,Bob,online-boutique-5552,No reports regarding any system or product degradation. Everything looks fine on paper
+2025-08-28 14:40:43,PLAYER,online-boutique-5552,Daniel has there been any changes recently that could affect the db?
+2025-08-28 14:40:51,UptimeLabs,online-boutique-5552,:star: Check changes done to the platform
+2025-08-28 14:40:58,Tanya,online-boutique-5552,No alerts on infra and resource utilization is looking fine too
+2025-08-28 14:41:04,Daniel,online-boutique-5552,Checking now
+2025-08-28 14:41:17,PLAYER,business-comms-5552,"Bez thats what were trying to find out, it seems local to just Tinus, as no users have reported this issue"
+2025-08-28 14:41:33,Shay,online-boutique-5552,"BTW, here's the list of changes <https://uptime-labs.atlassian.net/wiki/spaces/ULPUBLIC/pages/1113292847/Rumours+-+Change+Request+Logs>"
+2025-08-28 14:42:15,PLAYER,online-boutique-5552,Daniel is it possible that tinus is using the wrong environment for his demo?
+2025-08-28 14:42:17,Daniel,online-boutique-5552,"The only one i can think is checkout, if the flow is somehow broken"
+2025-08-28 14:42:37,Daniel,online-boutique-5552,"@Tinus, are you using Prod for Demo?"
+2025-08-28 14:42:54,PLAYER,online-boutique-5552,Tinus you might be using uat
+2025-08-28 14:43:10,Tinus,online-boutique-5552,I'm using Prod as if I was an ordinary customer. I haven't done anything extra
+2025-08-28 14:44:15,PLAYER,online-boutique-5552,Shay have your changes to prod checkout service propagated to all regions?
+2025-08-28 14:44:15,Bez,business-comms-5552,We need to get this fixed asap as the meeting is very important for us
+2025-08-28 14:44:21,UptimeLabs,online-boutique-5552,:star: Reviewed changes
+2025-08-28 14:44:23,Daniel,online-boutique-5552,I don't think this is a change-related issue.  No errors in logs and all services are healthy
+2025-08-28 14:44:47,Shay,online-boutique-5552,"Yeah, but it shouldn't break anything"
+2025-08-28 14:44:52,PLAYER,business-comms-5552,Bez were working on trying to figure out why this issue is only affecting tinus
+2025-08-28 14:45:16,Tanya,online-boutique-5552,"I think Dan could be right, this could be a local issue"
+2025-08-28 14:45:38,Daniel,online-boutique-5552,I can see that item that Tinus is trying to add doesn't match the catalogue
+2025-08-28 14:45:52,Daniel,online-boutique-5552,"you can try it as well, you will get the same error"
+2025-08-28 14:46:37,PLAYER,online-boutique-5552,"Daniel i cant see the aviators, only normal sunglasses, is it possible that tinus is connected to the wrong db?"
+2025-08-28 14:46:46,UptimeLabs,online-boutique-5552,:star: Form a working theory
+2025-08-28 14:47:16,Daniel,online-boutique-5552,Very possible that Tinus was working on his PC earlier and now has some issues
+2025-08-28 14:47:29,PLAYER,business-comms-5552,"Bez this is not affecting customers, only tinus it looks like so im lowering the incident to p3"
+2025-08-28 14:47:54,PLAYER,online-boutique-5552,Tinus can you try a different device?
+2025-08-28 14:47:58,Tanya,online-boutique-5552,"If that's the case it could be a PC, browser or cache issue"
+2025-08-28 14:48:18,PLAYER,online-boutique-5552,Tinus if its faster try clearing cache and using private browsing
+2025-08-28 14:48:20,Tinus,online-boutique-5552,It works on the phone but i can't run the Demo from it
+2025-08-28 14:48:29,Tanya,online-boutique-5552,Good shout!
+2025-08-28 14:48:44,PLAYER,online-boutique-5552,Tinus in addition if that doesnt work try a different browser
+2025-08-28 14:48:46,Tinus,online-boutique-5552,I will try clearing my cache now.
+2025-08-28 14:49:13,tinus,online-boutique-5552,Damn! thats it
+2025-08-28 14:49:15,tinus,online-boutique-5552,"Great Ive got to do my presentation now, thanks for figuring this out so quickly. @daniel @shay can you look in to a cache busting solution?"
+2025-08-28 14:49:17,shay,online-boutique-5552,it was the cache! sure we can do that
+2025-08-28 14:49:19,daniel,online-boutique-5552,"no worries boss, at least its not a significat issue"
+2025-08-28 14:49:20,daniel,online-boutique-5552,good luck with the presentation!
+2025-08-28 14:49:21,tanya,online-boutique-5552,yes good luck @tinus
+2025-08-28 14:49:23,shay,online-boutique-5552,good luck @tinus!
+2025-08-28 14:49:34,UptimeLabs,online-boutique-5552,Start retro and feedback
+2025-08-28 14:49:36,PLAYER,online-boutique-5552,great confirmed i think we can close this incident then
+2025-08-28 14:49:52,PLAYER,online-boutique-5552,Clicked Start_feedback button
+2025-08-28 14:51:02,UptimeLabs,online-boutique-5552,Submission successful

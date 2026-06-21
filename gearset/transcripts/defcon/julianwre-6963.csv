@@ -1,0 +1,277 @@
+datetime,player,channel,message
+2025-11-28 15:27:43,Bez,online-boutique-6963,"What a day! Our Grand Summer Sale kicked off this morning at 10, and the response has been insane. Can't believe we're already 5 hours in"
+2025-11-28 15:27:45,Bob,online-boutique-6963,"Totally! Just checked the dashboard, we've already crossed $160k+ in revenue :money_mouth_face: . The sale energy is next level!"
+2025-11-28 15:27:48,Tinus,online-boutique-6963,"That's fantastic, but hey, this is just the beginning. Three days to go... I'm keeping my fingers crossed :crossed_fingers:"
+2025-11-28 15:27:51,Bez,online-boutique-6963,"Seeing so many people shopping on a holiday, it feels satisfying. Exactly the momentum we were hoping for"
+2025-11-28 15:27:53,UptimeLabs,online-boutique-6963,"Welcome to DEFCON 1, are you perpared for the challenge?.
+
+ *Use `/help` at any time for a list of useful links and commands*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin Start button"
+2025-11-28 15:30:23,PLAYER,online-boutique-6963,Clicked Start button
+2025-11-28 15:30:24,UptimeLabs,online-boutique-6963,":alarm_clock: - You have 40 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-11-28 15:30:25,Shay,online-boutique-6963,"Not this time!, I just got a few alerts mentioning severe errors popping up in PROD"
+2025-11-28 15:30:28,Bob,online-boutique-6963,Weird... a few users just complained they are unable to complete their orders. Feels... off..
+2025-11-28 15:30:38,PLAYER,online-boutique-6963,I am incident command. I am in control
+2025-11-28 15:30:46,Shay,online-boutique-6963,Again i've got an alert in PROD
+2025-11-28 15:30:52,PLAYER,online-boutique-6963,What alert have you seen?
+2025-11-28 15:31:13,Shay,online-boutique-6963,Have to check more into logs
+2025-11-28 15:31:15,PLAYER,online-boutique-6963,Bob can you give us some examples of user complaints?
+2025-11-28 15:31:21,Bob,online-boutique-6963,"Sure, let me look at my reports"
+2025-11-28 15:31:36,Bob,online-boutique-6963,Here are some of the complaints we've received in the last few minutes. It's coming all across the globe 
+2025-11-28 15:31:36,PLAYER,online-boutique-6963,Thanks
+2025-11-28 15:31:38,Bob,online-boutique-6963,"Germany - ""I added items to my cart, clicked checkout, and it just kept spinning. Then it dumped me back to an empty cart"""
+2025-11-28 15:31:40,Bob,online-boutique-6963,"USA - ""Order failed twice, and now the cart is empty. I refreshed, but now the site is laggy"""
+2025-11-28 15:31:42,Bob,online-boutique-6963,"Japan - ""Got to checkout, then error 502. Tried again - cart gone"""
+2025-11-28 15:31:44,Bob,online-boutique-6963,"To sum it all, we have got 240+ reports globally"
+2025-11-28 15:31:46,Bob,online-boutique-6963,Metrics
+2025-11-28 15:31:57,PLAYER,online-boutique-6963,When did this start happening Bob?
+2025-11-28 15:32:16,PLAYER,online-boutique-6963,Shay please link me to the alert you are seeing?
+2025-11-28 15:32:24,Bob,online-boutique-6963,Since last 10 mins
+2025-11-28 15:32:41,PLAYER,online-boutique-6963,Clicked org button
+2025-11-28 15:32:42,PLAYER,online-boutique-6963,"SEV1 240+ customers are raising issues, starting in the last 10 minutes"
+2025-11-28 15:32:42,PLAYER,business-comms-6963,"*Incident Number INC10008:* SEV1 240+ customers are raising issues, starting in the last 10 minutes"
+2025-11-28 15:32:42,UptimeLabs,online-boutique-6963,:star: Incident record created
+2025-11-28 15:32:44,UptimeLabs,online-boutique-6963,:star: Send first comms in first 5 minutes
+2025-11-28 15:32:47,Bez,business-comms-6963,"I'm seeing some posts on social media about issues with our platform, is this a regional issue or hitting customers globally?"
+2025-11-28 15:32:52,Shay,online-boutique-6963,Looking into logs now
+2025-11-28 15:33:00,PLAYER,online-boutique-6963,Daniel what have we released recently?
+2025-11-28 15:33:01,Bez,business-comms-6963,Customers have gone outrageous. #OBFail and #OBStealsSale are trending with frustrated posts. We're getting hammered online! Where are we @julian.wreford? 
+2025-11-28 15:33:06,Shay,online-boutique-6963,Found these below error logs
+2025-11-28 15:33:07,Shay,online-boutique-6963,"```
+app[checkout-service] [ERROR] - write() failed, Read-only filesystem
+app[checkout-service] Order submission failed for session_id=ae43f9 due to I/O error
+app[checkout-service] [ERROR] - Transaction commit failed, Read-only file system
+[ERROR] nginx[3245] - 502 Bad Gateway while accessing upstream checkout service
+[ERROR] nginx[3245] - 504 Gateway Timeout while accessing upstream checkout service```"
+2025-11-28 15:33:11,Shay,online-boutique-6963,The server is too slow and give up while responding back. I'm not sure why read-only errors are there
+2025-11-28 15:33:23,PLAYER,business-comms-6963,"Looks global, we have reports from USA, Germany and Japan"
+2025-11-28 15:33:29,Daniel,online-boutique-6963,"Looking at the above logs, app looks fine. But system can't write new data. Errors suggests to be an infra component failure"
+2025-11-28 15:33:31,PLAYER,online-boutique-6963,Shay have we recently shipped a change to the checkout service?
+2025-11-28 15:33:36,Daniel,online-boutique-6963,"Also checkout servers show CPU and memory limits exceeded alerts, this definitely looks bigger than just an app issue"
+2025-11-28 15:33:38,Daniel,online-boutique-6963,"```app[checkout-service]: systemd[1][WARN] Resource usage threshold exceeded - CPU: 96%, Memory: 92%```"
+2025-11-28 15:33:46,Shay,online-boutique-6963,Could this be due to load or any changes ?
+2025-11-28 15:33:49,Daniel,online-boutique-6963,Here are the changes : <https://uptime-labs.atlassian.net/wiki/external/YzYwYTAxNWQzOTI0NDYzOWI1MjkxNTI2YmVmMjUyZDE>
+2025-11-28 15:33:53,PLAYER,online-boutique-6963,Which infrastructure components could be having problem? The reddis cache?
+2025-11-28 15:34:26,Shay,online-boutique-6963,Not that I remember about checkout changes recently
+2025-11-28 15:34:51,Shay,online-boutique-6963,"For checking infra, we must bring in someone from platforms"
+2025-11-28 15:34:58,PLAYER,online-boutique-6963,What are the metrics looking like?
+2025-11-28 15:35:21,Shay,online-boutique-6963,Can we get Tanya to look into infra metrics  please ?
+2025-11-28 15:35:53,PLAYER,online-boutique-6963,Tanya can you look at the infra metrics please?
+2025-11-28 15:36:00,Tanya,online-boutique-6963,Checking infra...
+2025-11-28 15:36:15,Tanya,online-boutique-6963,"All four checkout servers are maxed out - CPU, memory, and disk I/O all spiking. No changes or deployments were done from platform side"
+2025-11-28 15:36:18,Tanya,online-boutique-6963,ServerMetrics
+2025-11-28 15:36:30,Tanya,online-boutique-6963,It doesn't looks like a load issue either. CPU and Memory spike is not matching with incoming traffic
+2025-11-28 15:36:39,PLAYER,online-boutique-6963,Has there been an increase in requests to the checkout servers?
+2025-11-28 15:36:40,Tanya,online-boutique-6963,I'm seeing a running process called init_locker.sh eating up most of the CPU on the checkout server. That's not something we usually run. Something's suspicious here
+2025-11-28 15:36:43,Tanya,online-boutique-6963,ProcessRunning
+2025-11-28 15:36:59,PLAYER,online-boutique-6963,"That does sound suspicious, can you try to kill it?"
+2025-11-28 15:37:11,Shay,online-boutique-6963,@julian.wreford have you looked at the website ? I'm getting empty cart at the end while placing an order
+2025-11-28 15:37:12,PLAYER,online-boutique-6963,Could this be a ransomware attack?
+2025-11-28 15:37:29,Tanya,online-boutique-6963,Maya could help us in this area
+2025-11-28 15:37:45,Tanya,online-boutique-6963,This goes to security issue as its very suspicious
+2025-11-28 15:37:45,PLAYER,online-boutique-6963,"Maya it looks like we might have a security issue here, please could you look at where this shell script has come from?"
+2025-11-28 15:37:49,Maya,online-boutique-6963,Let me check if there's anything suspicious
+2025-11-28 15:37:55,PLAYER,online-boutique-6963,Thank you Maya
+2025-11-28 15:38:00,Bez,business-comms-6963,"Got an email claiming responsibility by ""BlackCrow Group"" and demanding payment of $5M in crypto. Honestly, I get these hoax emails all the time, so I'm not buying it"
+2025-11-28 15:38:04,Maya,online-boutique-6963,Weird!! Security agent known as EDR(Endpoint Detection and Response) is missing from all 4 checkout servers. That's? concerning
+2025-11-28 15:38:06,Maya,online-boutique-6963,"```EDR is basically our endpoint defense tool, it tracks unusual activity at the servers```"
+2025-11-28 15:38:07,Maya,online-boutique-6963,"Also,I found an init_locker.sh script encrypting DB, app, and log files which is renaming the filename like below"
+2025-11-28 15:38:09,Maya,online-boutique-6963,"```
+order_log_2025-06-01.locked
+session_state.tmp.locked```"
+2025-11-28 15:38:13,PLAYER,online-boutique-6963,Tanya could we terminate that process?
+2025-11-28 15:38:16,Daniel,online-boutique-6963,"this explains why there were errors in checkout logs saying write failed , read-only filesystem"
+2025-11-28 15:38:21,Tanya,online-boutique-6963,"Wait... there's a file here named HELP_ME_DECRYPT.txt. I opened it, appears a ransom note. This doesn't look good"
+2025-11-28 15:38:24,Tanya,online-boutique-6963,help_me_decrypt
+2025-11-28 15:38:31,Maya,online-boutique-6963,Confirmed. This is a ransomware breach. @julian.wreford inform business about this
+2025-11-28 15:38:39,Tanya,online-boutique-6963,Shall i try killing this script ?
+2025-11-28 15:38:39,PLAYER,online-boutique-6963,Oli Lane please tell the business
+2025-11-28 15:38:43,Bob,online-boutique-6963,"Guys!!! User complaints are sky rocketing, its turning catastrophic!"
+2025-11-28 15:38:55,PLAYER,business-comms-6963,"Bez we are seeing suspicious activity on our checkout service, we believe that ransom attack might be real"
+2025-11-28 15:39:14,Bez,business-comms-6963,Wait! you're telling me this is an actual ransomware hit?
+2025-11-28 15:39:15,PLAYER,online-boutique-6963,Bob please display a status page to inform users we are aware of the issue and investigating as a priority. DO NOT mention security issue
+2025-11-28 15:39:25,Bob,online-boutique-6963,Sure
+2025-11-28 15:39:29,Bez,business-comms-6963,"Alright, tell everyone, no one says a single thing outside online-boutique! I don't care who's asking, not a word until we know exactly what's going on!"
+2025-11-28 15:39:40,Bob,online-boutique-6963,I'll keep it high level
+2025-11-28 15:39:48,Tanya,online-boutique-6963,Shall i kill the process ?
+2025-11-28 15:39:57,PLAYER,online-boutique-6963,Yes please Tanya
+2025-11-28 15:39:59,Tanya,online-boutique-6963,"Ok , killing the script now..."
+2025-11-28 15:40:10,Tanya,online-boutique-6963,"Tried killing the script, all checkout servers just rebooted with a ransom banner. New ransom note say: ""Interruption detected. Price doubled. Pay $10M in Bitcoin"" "
+2025-11-28 15:40:18,PLAYER,online-boutique-6963,Do we know what data they have encrypted?
+2025-11-28 15:40:20,Bez,business-comms-6963,"Just got another ransom email, says we tried to interfere and now the price doubled. Was something stupid done on our side? "
+2025-11-28 15:40:33,PLAYER,online-boutique-6963,Exec team want nobody to talk about this publicly until we know what's going on
+2025-11-28 15:40:43,PLAYER,online-boutique-6963,How have they got into our system Maya? You mentioned something about EDR
+2025-11-28 15:41:02,PLAYER,business-comms-6963,Bez we tried to kill the script that was encrypting our files.
+2025-11-28 15:41:05,Daniel,online-boutique-6963,This service holds orders data and customer's PII as well
+2025-11-28 15:41:11,PLAYER,online-boutique-6963,Thanks Daniel
+2025-11-28 15:41:29,PLAYER,online-boutique-6963,Tanya could you look into why the EDR isn't running on those endpoints?
+2025-11-28 15:41:38,Maya,online-boutique-6963,I'll try to look into how they came but right now we should think of isolating first
+2025-11-28 15:41:49,Maya,online-boutique-6963,"Killing the script could make things worse, higher ransom or losing data forever"
+2025-11-28 15:41:54,Bez,business-comms-6963,This is nightmare! @julian.wreford where are we right now?
+2025-11-28 15:41:55,Maya,online-boutique-6963,"@julian.wreford before we do anything, I'd request everyone to please change their passwords"
+2025-11-28 15:41:59,Maya,online-boutique-6963,Also I'm removing everyone's access to servers - only I'll have control for now. Later we will reassess to do any activity further
+2025-11-28 15:41:59,PLAYER,online-boutique-6963,"Yes lets look at isolating, how would you isolate if not killing the script?"
+2025-11-28 15:42:04,Daniel,online-boutique-6963,Done on my end
+2025-11-28 15:42:07,Hamed,online-boutique-6963,Updated. @Maya smart move by limiting server's access
+2025-11-28 15:42:10,Shay,online-boutique-6963,Password updated
+2025-11-28 15:42:13,Bob,online-boutique-6963,Changed mine too. Better safe than sorry
+2025-11-28 15:42:13,PLAYER,online-boutique-6963,Thanks Maya
+2025-11-28 15:42:17,Tanya,online-boutique-6963,All set
+2025-11-28 15:42:24,Tanya,online-boutique-6963,"It's much worse now. Every file I check is encrypted, nothing can be opened or recovered."
+2025-11-28 15:42:28,Shay,online-boutique-6963,I'm seeing new errors on frontend now. How's it for you @julian.wreford ?
+2025-11-28 15:42:39,Maya,online-boutique-6963,"Attention! when it comes to potential security breaches, it's important we don't discuss sensitive details here"
+2025-11-28 15:42:44,Maya,online-boutique-6963,I'm setting up private channel...
+2025-11-28 15:42:49,Maya,online-boutique-6963,"@julian.wreford before we move to private channel, can you check with business what's the plan - are we paying the ransom or moving with response?"
+2025-11-28 15:42:50,PLAYER,business-comms-6963,We are limiting access and rotating passwords. All files seem to be encrypted.
+2025-11-28 15:43:11,Maya,online-boutique-6963,"We have a 3rd party incident retainer for such situations. Meanwhile, please check the decision on payment by the business"
+2025-11-28 15:43:19,PLAYER,online-boutique-6963,"Maya that sounds like a smart move, please include Oli and I in the private channel"
+2025-11-28 15:43:21,Bez,business-comms-6963,Are we seeing any data theft ?
+2025-11-28 15:43:23,PLAYER,business-comms-6963,"What's the plan here, are we paying the ransom or moving on with trying to recover the system?"
+2025-11-28 15:43:36,Maya,online-boutique-6963,Sure i'll do it. Creating it...
+2025-11-28 15:43:44,Bez,business-comms-6963,"Not in favor of paying. Ethically, it sets the wrong example and there's no real guarantee we'll get anything back"
+2025-11-28 15:43:46,Tinus,business-comms-6963,"Agree. Also, just to be clear - we don't need to alert the ICO(Information Commissioner's Office) right this second. We've got up to 72 hours, but that depends on how serious this really is"
+2025-11-28 15:43:50,PLAYER,online-boutique-6963,Can we shut down the checkout servers completely? Not just terminate the script?
+2025-11-28 15:44:03,Maya,private-comms-6963,@julian.wreford let's build the core response team here. I've already added myself. Who else should we pull in to keep it tight and efficient?
+2025-11-28 15:44:07,Maya,private-comms-6963,"I'd say one senior person each from security, platform, and engineering. Also add Tanya, tasks could be platform intensive"
+2025-11-28 15:44:11,Bez,business-comms-6963,@Tinus do you think this is something we should loop in any cyber security agency for?
+2025-11-28 15:44:14,Tinus,business-comms-6963,"If it looks like a complete lock-out, I'd say yes"
+2025-11-28 15:44:17,Tinus,business-comms-6963,"We've got Cyvantics Security on retainer - just in case this gets out of hand. @julian.wreford, ask Maya to reach out if needed"
+2025-11-28 15:44:22,PLAYER,private-comms-6963,"Oli Lane, Daniel and CEO"
+2025-11-28 15:44:22,Maya,online-boutique-6963,I'm in private channel now
+2025-11-28 15:44:27,PLAYER,business-comms-6963,Maya is already involved in the response
+2025-11-28 15:44:31,PLAYER,private-comms-6963,Tanya and Hamed S
+2025-11-28 15:44:36,Maya,private-comms-6963,"We need Daniel , Hamed and Tanya as well"
+2025-11-28 15:44:46,Maya,private-comms-6963,Perfect
+2025-11-28 15:44:53,PLAYER,private-comms-6963,The business doesn't want to pay the ransom
+2025-11-28 15:45:03,Maya,private-comms-6963,"Yes, we've got an IR(incident response) retainer with Cyvantics Security"
+2025-11-28 15:45:07,PLAYER,private-comms-6963,"Great, are we still seeing issues now that we have locked down connections?"
+2025-11-28 15:45:16,Bez,business-comms-6963,@julian.wreford I need a clear answer from the team. What exactly is affected right now?
+2025-11-28 15:45:18,Maya,private-comms-6963,"Looped in Cyvantics Security - they're on their way now to take snapshots of the infected server and storage, followed by forensics on it"
+2025-11-28 15:45:19,Tinus,business-comms-6963,"You're right. We need clear facts - which systems are locked, which are safe"
+2025-11-28 15:45:19,Maya,private-comms-6963,Good decision on not paying the ransom by the business
+2025-11-28 15:45:23,PLAYER,private-comms-6963,"Lets focus on getting it isolated, and then bring in Cyvantics ASAP"
+2025-11-28 15:45:28,Maya,private-comms-6963,"Meanwhile, I've got this from Cyvantics. @julian.wreford, can you help track the steps and coordinate?"
+2025-11-28 15:45:30,Maya,private-comms-6963,<https://uptime-labs.atlassian.net/wiki/external/MThjMTk4ZDU5ODU0NGZmMWE1NzhmNGY0MDQwNWI1NTA>
+2025-11-28 15:45:35,Maya,private-comms-6963,"We've got isolation steps in the playbook, but before we dive in, can you paste that list here? I'll help team run through it"
+2025-11-28 15:45:55,PLAYER,private-comms-6963,"Steps for Isolation:
+
+
+Steps to be done, mentioned along with the *owning* team
+1. Disconnect the infected server -&gt; Platforms 
+2. Cut off infrastructure traffic -&gt; Platforms
+3. Disconnect DB &amp; freeze backup -&gt; Application
+4. Detach from Shared Resource -&gt; Platforms
+5. Take snapshots (Disk &amp; Memory) -&gt; Ask team
+6. Kill suspicious process or activity -&gt; Platforms
+"
+2025-11-28 15:46:02,Maya,private-comms-6963,"I've given write access to Tanya, Hamed, Daniel, and myself"
+2025-11-28 15:46:03,Bob,online-boutique-6963,"@julian.wreford user complaints are spiking. They're reporting the site is down, earlier it wasn't the case. What should I tell them now?"
+2025-11-28 15:46:06,Tanya,private-comms-6963,Disconnecting the checkout servers from the infra now
+2025-11-28 15:46:07,PLAYER,private-comms-6963,"What's our current status? Which systems are locked down, which are affected, which are safe?"
+2025-11-28 15:46:08,Daniel,private-comms-6963,I'm on it. Disconnecting DB access for checkout and checking if scheduled backups exist
+2025-11-28 15:46:10,Hamed,private-comms-6963,I'll verify if any shared storage is still attached to the checkout DB
+2025-11-28 15:46:22,Daniel,private-comms-6963,"Step 3 done, DB connection to checkout is now cut"
+2025-11-28 15:46:24,Tanya,private-comms-6963,"Step 1 done, Checkout servers are now fully disconnected. Moving to isolate the infra from all external traffic"
+2025-11-28 15:46:26,Hamed,private-comms-6963,"Step 4 confirmed, No shared storage attached to checkout, which makes sense since checkout has its standalone storage"
+2025-11-28 15:46:32,Tanya,private-comms-6963,"Step 2 completed, Infra is now fully cut off from the outside world. That means the website will remain completely down until we recover"
+2025-11-28 15:46:32,Bez,business-comms-6963,Are we seeing any data exfiltration?
+2025-11-28 15:46:37,Maya,private-comms-6963,"Step 5 done, Cyvantics has completed taking snapshots of the checkout servers and database. They've now moved on to forensics. @Hamed, we're good to kill the script now"
+2025-11-28 15:46:40,Bez,business-comms-6963,Do we have any backup storage? Maybe we can try restoring from that
+2025-11-28 15:46:46,PLAYER,private-comms-6963,That leaves step 6
+2025-11-28 15:46:47,Hamed,private-comms-6963,"Step 6 done, The Script has been killed. @julian.wreford let us know and double-check if anything else is pending on our side"
+2025-11-28 15:46:53,Tinus,business-comms-6963,Do we know the blast radius ?
+2025-11-28 15:47:09,PLAYER,private-comms-6963,Tanya has the process been terminated successfully and is the CPU down?
+2025-11-28 15:47:11,Hamed,private-comms-6963,Done
+2025-11-28 15:47:20,PLAYER,private-comms-6963,Do we have any evidence of data exflitration?
+2025-11-28 15:47:30,Tanya,private-comms-6963,Yes the systems have been brought down
+2025-11-28 15:47:41,Tanya,private-comms-6963,Checking...
+2025-11-28 15:47:48,PLAYER,online-boutique-6963,Bob please keep the same status page. We are activiely working on the issue but don't want to disclose security issue until we know the blast radius
+2025-11-28 15:47:50,Tanya,private-comms-6963,"From what I'm seeing, the impact seems limited to the checkout servers. We haven't spotted similar symptoms on the others so far"
+2025-11-28 15:47:56,Maya,private-comms-6963,"Also, I checked. All other servers have security agents running and reporting normally. The only ones missing agents were the checkout servers - which feels a bit off"
+2025-11-28 15:48:28,PLAYER,private-comms-6963,Lets focus on data restoration first
+2025-11-28 15:48:40,PLAYER,private-comms-6963,"Playbook for that is:
+Steps for Restoration:
+
+
+Steps to be done, mentioned along with the *owning* team
+1. Validate backups → Security
+2. Wipe infected systems → Platforms
+3. Rebuild from clean backup → Platforms
+4. Re-enable security agent on the servers → Security
+5. Reconnect traffic to services and monitor → Platforms
+"
+2025-11-28 15:48:42,PLAYER,business-comms-6963,We are checking for data exflitration. We are looking into data restoration options too.
+2025-11-28 15:48:54,PLAYER,private-comms-6963,"Lets only do 1,2 and 3 first"
+2025-11-28 15:49:06,PLAYER,private-comms-6963,Then we can consider 4 and 5 once we've investigated the security agents
+2025-11-28 15:49:08,Maya,private-comms-6963,"I've got a partial information from Cyvantics that NO data were transferred and they were just able to encrypt the data. Luckily, we brought down the networks quickly"
+2025-11-28 15:49:22,Maya,private-comms-6963,"Thanks for the go-ahead. @julian.wreford, please track all restoration steps"
+2025-11-28 15:49:31,Maya,private-comms-6963,I'm now validating the backup storage to ensure it's safe
+2025-11-28 15:49:34,Hamed,private-comms-6963,"I'm provisioning new checkout servers, will update once ready"
+2025-11-28 15:49:40,Maya,private-comms-6963,"Backup is clean and safe. @Hamed, you can start rebuilding checkout from backup storage"
+2025-11-28 15:49:44,Hamed,private-comms-6963,"Thanks, Maya. New servers are ready. I'll start rebuilding now using backup storage"
+2025-11-28 15:49:50,PLAYER,business-comms-6963,We have confirmation there was no exfiltration of data
+2025-11-28 15:49:51,Hamed,private-comms-6963,Rebuild completed
+2025-11-28 15:49:55,Maya,private-comms-6963,I've enabled the security agents (EDR) on checkout servers
+2025-11-28 15:49:58,Daniel,private-comms-6963,I'll monitor application health once services are restored
+2025-11-28 15:50:01,Maya,private-comms-6963,"@julian.wreford , can you confirm all tasks are wrapped up and we are good to bring the traffic back? Just want to be sure, as this is the final restoration step before we move"
+2025-11-28 15:50:09,PLAYER,private-comms-6963,Not yet
+2025-11-28 15:50:10,Bez,business-comms-6963,There are few rumours coming up from media that we have been hacked. Make sure nobody says anything. I'll get my PR team activated
+2025-11-28 15:50:22,PLAYER,private-comms-6963,I haven't seen any confirmation that have done step 2
+2025-11-28 15:50:30,PLAYER,private-comms-6963,Hamed S did you do step 2 in the plan?
+2025-11-28 15:50:46,Tinus,business-comms-6963,"Its good that there was no data theft. Otherwise, we would have seen a lot of fines by the regulatory bodies"
+2025-11-28 15:50:56,PLAYER,business-comms-6963,We have been able to recover the data and we are working on restoring service.
+2025-11-28 15:51:04,Hamed,private-comms-6963,Yes it has been wiped off
+2025-11-28 15:51:20,Hamed,private-comms-6963,"Sorry, forgot to mention it here"
+2025-11-28 15:51:27,PLAYER,private-comms-6963,Maya was there anything obvious that suggested why the EDR was disabled?
+2025-11-28 15:51:48,Maya,private-comms-6963,Wait we have got a problem
+2025-11-28 15:51:58,PLAYER,private-comms-6963,What is the problem Maya?
+2025-11-28 15:52:20,Hamed,private-comms-6963,we do have backup which only runs at 2AM. Latest is yesterday's. We'll lose today''s orders
+2025-11-28 15:52:50,Maya,private-comms-6963,I contacted Bob and he's saying somewhere around $180k worth of orders will be lost
+2025-11-28 15:53:25,PLAYER,business-comms-6963,Unfortunately the backup only runs at 2am so we've probably lost today's orders. We think that's $180k's worth Bez
+2025-11-28 15:53:28,PLAYER,private-comms-6963,I don't see that as a reason to not bring the service back up
+2025-11-28 15:53:33,Maya,private-comms-6963,Lets bring up the traffic. It should be a concern with business now
+2025-11-28 15:53:40,PLAYER,private-comms-6963,Agreed
+2025-11-28 15:53:41,Tanya,private-comms-6963,Thanks for the go ahead. Bringing up network traffic in progress...
+2025-11-28 15:53:53,PLAYER,private-comms-6963,Daniel please monitor traffic numbers
+2025-11-28 15:54:00,Tanya,private-comms-6963,Restoration completed
+2025-11-28 15:54:07,PLAYER,private-comms-6963,Maya can you keep an eye that we don't see the hack start again
+2025-11-28 15:54:25,Bob,private-comms-6963,Wait!! getting a bunch of new complaints now. Users are neither able to see their return requests nor able to place new returns on the site
+2025-11-28 15:54:32,Maya,private-comms-6963,"Yeah, that's probably the missing today's checkout data. Anyone who ordered or returned something during that time won't see it - makes sense since we restored from the yesterday's backup"
+2025-11-28 15:54:33,Bez,business-comms-6963,"Keeping it high-level, just say website restored, but there's an issue with few orders. We'll refund them, and customers will get a $10 gift voucher as an apology"
+2025-11-28 15:54:34,Tanya,private-comms-6963,"Tough, but expected :)"
+2025-11-28 15:54:35,Bob,private-comms-6963,What should I tell them? They are asking for refunds
+2025-11-28 15:54:47,Maya,private-comms-6963,@julian.wreford I've received the forensics report from Cyvantics Security
+2025-11-28 15:54:50,Maya,private-comms-6963,forensics
+2025-11-28 15:54:50,PLAYER,private-comms-6963,Hamed S are there any other methods of data restoration? Could we get user emails from the logs to figure out who has a missing order?
+2025-11-28 15:55:03,Maya,private-comms-6963,Can you see the website is back again ? @julian.wreford
+2025-11-28 15:55:07,Maya,private-comms-6963,"Also, I just finished combing through Shay's mailbox. There's something important here, I found two emails from what looks like our monitoring vendor - ClearTech"
+2025-11-28 15:55:07,PLAYER,private-comms-6963,"Bob Keeping it high-level, just say website restored, but there's an issue with few orders. We'll refund them, and customers will get a $10 gift voucher as an apology"
+2025-11-28 15:55:09,Maya,private-comms-6963,phished_email
+2025-11-28 15:55:27,Maya,private-comms-6963,"We will take this forward in PIR , for now website is restored"
+2025-11-28 15:55:30,Hamed,private-comms-6963,Data can be restored but it will take days to clean them up and reinstate them again. We will work on this later
+2025-11-28 15:55:37,Maya,private-comms-6963,"Alright, since everything's back up and stable, we can now move back to the main #online-boutique channel. No further actions left here"
+2025-11-28 15:55:37,PLAYER,online-boutique-6963,"Bob Keeping it high-level, just say website restored, but there's an issue with few orders. We'll refund them, and customers will get a $10 gift voucher as an apology"
+2025-11-28 15:55:46,Bob,private-comms-6963,Thanks @julian.wreford
+2025-11-28 15:55:47,Maya,online-boutique-6963,Do we go ahead and mark this incident as closed?
+2025-11-28 15:56:05,PLAYER,online-boutique-6963,"Not yet, I'd like to see if we can do anything for the customers who's orders we lost"
+2025-11-28 15:56:11,Bob,online-boutique-6963,I've told my team to communicate the same to customers
+2025-11-28 15:56:41,PLAYER,online-boutique-6963,Hamed S you said that there was a method of data restoration but it would take days. Why is that?
+2025-11-28 15:57:07,Hamed,online-boutique-6963,Because its an infected data
+2025-11-28 15:57:30,Hamed,online-boutique-6963,Its recoverable. But decrypting them all will take longer
+2025-11-28 15:57:51,Hamed,online-boutique-6963,I can see that all the servers are running in a healthy state now
+2025-11-28 15:58:03,PLAYER,online-boutique-6963,Bob we should update the status page to say that things are in working order but that orders made today have been lost. Refer them back to the gift cards
+2025-11-28 15:58:14,Maya,online-boutique-6963,Nothing concerning so far in my dashboard
+2025-11-28 15:58:24,Bob,online-boutique-6963,"Sure @julian.wreford, i'll do it"
+2025-11-28 15:58:35,PLAYER,online-boutique-6963,Incident resolved
+2025-11-28 15:58:41,Bez,business-comms-6963,"Since services are restored, I'm heading to speak with compliance and the regulators. Thankfully, no data was leaked, that helps"
+2025-11-28 15:58:42,Tanya,online-boutique-6963,That was intense. We've never been this close to total loss before. We got lucky
+2025-11-28 15:58:44,Tinus,business-comms-6963,I'm on my way to the ICO (Information Commissioner's Office - UK) office now. I'll get the formal report rolling - that's required for the insurance claim. Keep monitoring in the meantime
+2025-11-28 15:58:45,Daniel,online-boutique-6963,"Systems are calm now, but that feeling earlier... not something I want to go through again"
+2025-11-28 15:58:48,Bob,online-boutique-6963,One small slip caused a major breach. We need better awareness to prevent this in future
+2025-11-28 15:58:50,Tinus,online-boutique-6963,This could've gone way worse. Appreciate how quickly and cleanly you handled it
+2025-11-28 15:58:54,Bez,online-boutique-6963,"Not every day we survive an attack like this. You made the right calls, fast. Great job, @julian.wreford - that's how we bounce back"
+2025-11-28 15:59:01,UptimeLabs,online-boutique-6963,"Thank you for playing, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit I am ready when you want to start. I am ready button"
+2025-11-28 16:09:06,PLAYER,online-boutique-6963,Clicked Start_feedback button

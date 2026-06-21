@@ -1,0 +1,101 @@
+datetime,player,channel,message
+2025-08-21 10:06:17,tinus,online-boutique-5481,"Hi team, let's have a mood check send an emoji to describe your mood"
+2025-08-21 10:06:21,tinus,online-boutique-5481,"I'll go first, :thumbsup:"
+2025-08-21 10:06:27,tanya,online-boutique-5481,:thumbsup:
+2025-08-21 10:06:29,tinus,online-boutique-5481,I'm excited about showing off all your hard work at todays stakeholder meeting
+2025-08-21 10:06:32,daniel,online-boutique-5481,":skull: knackered, had a few too many late nights this week"
+2025-08-21 10:06:35,shay,online-boutique-5481,:rainbow:
+2025-08-21 10:06:38,hamed,online-boutique-5481,living the dream :smile:
+2025-08-21 10:06:42,bez,online-boutique-5481,:smirk: im excited to see the show too
+2025-08-21 10:06:44,tinus,online-boutique-5481,shouldn't you be prepping for the meeting 
+2025-08-21 10:06:47,bez,online-boutique-5481,:sweat_smile: i am indeed I'll leave you lot to it
+2025-08-21 10:06:49,shay,online-boutique-5481,hang in there @daniel its gonne be the weekend sooner or later :joy:
+2025-08-21 10:06:52,tinus,online-boutique-5481,I should get on with my prep too have a good day team
+2025-08-21 10:06:53,daniel,online-boutique-5481,@shay strict diet of energy drink for me today lol
+2025-08-21 10:06:56,daniel,online-boutique-5481,hope the presentation goes well @tinus
+2025-08-21 10:06:58,tanya,online-boutique-5481,:raised_hands:
+2025-08-21 10:07:10,PLAYER,online-boutique-5481,Clicked undefined button
+2025-08-21 10:07:13,PLAYER,online-boutique-5481,Clicked org button
+2025-08-21 10:07:14,UptimeLabs,online-boutique-5481,Level 7 start button
+2025-08-21 10:07:16,PLAYER,online-boutique-5481,Clicked undefined button
+2025-08-21 10:09:29,PLAYER,online-boutique-5481,Clicked Start button
+2025-08-21 10:09:30,UptimeLabs,online-boutique-5481,":alarm_clock: - You have 20 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-08-21 10:09:33,tinus,online-boutique-5481,"Hey team, I'm texting from the board room - kinda embarrassing but in my demo to the board, I tried to add a pair of Aviator sunglasses to the shopping cart and I got a ?http 500?"
+2025-08-21 10:09:35,tinus,online-boutique-5481,"I've bought some time but need this be able to do this demo if we can lets get this sorted in the next 20 minutes.
+"
+2025-08-21 10:09:37,tinus,online-boutique-5481,500 screenshot
+2025-08-21 10:09:40,tanya,online-boutique-5481,"uh oh, those Aviators are top sellers due to the new Top Gun movie...It's size up the issue time Hamish Dewar"
+2025-08-21 10:09:43,shay,online-boutique-5481,Come on this can't be happening!
+2025-08-21 10:09:45,tinus,online-boutique-5481,"I'm in this meeting so, wont be able to help but I trust that you all can get this fixed asap, just @ me if you need anything"
+2025-08-21 10:09:48,shay,online-boutique-5481,ok looking into this now
+2025-08-21 10:09:52,PLAYER,online-boutique-5481,Taking a look
+2025-08-21 10:10:26,PLAYER,online-boutique-5481,I seem to be able to add them to my cart just fine
+2025-08-21 10:10:35,UptimeLabs,online-boutique-5481,:star: Attempt to replicate the issue
+2025-08-21 10:10:38,PLAYER,online-boutique-5481,Bob Do we have any customer reports about the sunglasses?
+2025-08-21 10:10:47,UptimeLabs,online-boutique-5481,:star: Asking questions to validate impact of the problem
+2025-08-21 10:10:55,Bob,online-boutique-5481,Checking reports now...
+2025-08-21 10:11:15,Shay,online-boutique-5481,We do have recent changes made to the platform
+2025-08-21 10:11:38,Bob,online-boutique-5481,"No, im not seeing any reports on the sunglasses"
+2025-08-21 10:11:58,PLAYER,online-boutique-5481,Daniel are you browsing to the production version of the website?
+2025-08-21 10:12:07,UptimeLabs,online-boutique-5481,:star: Reproduces the incident
+2025-08-21 10:12:09,Bob,online-boutique-5481,I will keep you updated if i see anything
+2025-08-21 10:12:20,Daniel,online-boutique-5481,I am yes
+2025-08-21 10:12:26,PLAYER,online-boutique-5481,Daniel Shay Tanya I'm presuming this would be an issue with the product catalogue service if anything?
+2025-08-21 10:12:31,Daniel,online-boutique-5481,Would you like me to try the UAT?
+2025-08-21 10:12:40,PLAYER,online-boutique-5481,"Yeah, give that a go"
+2025-08-21 10:12:54,Tanya,online-boutique-5481,"It could be @Hamish, shall i take a look at the change?"
+2025-08-21 10:13:05,PLAYER,online-boutique-5481,Yes please
+2025-08-21 10:13:12,Daniel,online-boutique-5481,Trying to replicate in UAT now
+2025-08-21 10:13:32,Daniel,online-boutique-5481,"Nope, website looks good to me"
+2025-08-21 10:14:03,PLAYER,online-boutique-5481,Has anyone else been able to replicate it other than you Daniel? Could it be some kind of cache or cookies issue?
+2025-08-21 10:14:15,Tanya,online-boutique-5481,Hasn't been a change to the service since over a month
+2025-08-21 10:14:15,PLAYER,online-boutique-5481,Shay did you have any luck replicating the issue?
+2025-08-21 10:14:21,UptimeLabs,online-boutique-5481,:star: Manage actions and timings
+2025-08-21 10:14:36,Tanya,online-boutique-5481,I will check logs now for that service
+2025-08-21 10:14:49,Shay,online-boutique-5481,"Been trying to, but i cant"
+2025-08-21 10:15:11,Tinus,online-boutique-5481,Has the issue been fixed yet?
+2025-08-21 10:15:13,PLAYER,online-boutique-5481,Bob still no customer reports?
+2025-08-21 10:15:21,Tinus,online-boutique-5481,Got to deliver this demo very soon
+2025-08-21 10:15:31,Bob,online-boutique-5481,Still no reports
+2025-08-21 10:15:40,PLAYER,online-boutique-5481,Tinus are you able to see if you can reproduce the issue? Could have just been an issue locally for Daniel
+2025-08-21 10:16:10,Daniel,online-boutique-5481,I was never getting the issue
+2025-08-21 10:16:11,PLAYER,business-comms-5481,Unable to checkout with aviator sunglasses 500 error SEV-4
+2025-08-21 10:16:11,PLAYER,business-comms-5481,*Incident Number INC100072:* Unable to checkout with aviator sunglasses 500 error SEV-4
+2025-08-21 10:16:11,UptimeLabs,online-boutique-5481,:star: Incident record created
+2025-08-21 10:16:13,UptimeLabs,online-boutique-5481,:star: Send first comms in first 5 minutes
+2025-08-21 10:16:16,Daniel,online-boutique-5481,it was @Tinus
+2025-08-21 10:16:19,UptimeLabs,online-boutique-5481,:star: Formally assign criticality level to the incident
+2025-08-21 10:16:21,PLAYER,online-boutique-5481,"Ah, I see"
+2025-08-21 10:16:33,Daniel,online-boutique-5481,<https://uptimelabs-metaverse.slack.com/archives/C09BBV14CG5/p1755770973255459>
+2025-08-21 10:16:50,PLAYER,online-boutique-5481,"Sorry, Tinus are you definitely browsing to the prod version of the site?"
+2025-08-21 10:16:56,UptimeLabs,online-boutique-5481,:star: Facts over opinion
+2025-08-21 10:17:01,Tinus,online-boutique-5481,I am yes
+2025-08-21 10:17:20,PLAYER,online-boutique-5481,"could you try resetting your cache and cookies to see if that solves the problem? Also, which region are you browsing in?"
+2025-08-21 10:17:20,Bez,business-comms-5481,This demo is a big deal are we sure its a sev4?
+2025-08-21 10:17:30,Bez,business-comms-5481,Please keep me updated on the investigation
+2025-08-21 10:17:53,Tinus,online-boutique-5481,Im in the UK
+2025-08-21 10:17:58,PLAYER,business-comms-5481,"We haven't been able to reproduce the issue, so it might be localised to one user currently. If we see a greater impact I will update the severity"
+2025-08-21 10:18:02,Tinus,online-boutique-5481,Sorry got a few clients i need to speak to
+2025-08-21 10:18:20,Tinus,online-boutique-5481,let me know the solution when i return
+2025-08-21 10:18:41,PLAYER,online-boutique-5481,Tinus could you try reproducing in UAT?
+2025-08-21 10:18:53,Bez,business-comms-5481,Im with Tinus at the demo
+2025-08-21 10:19:02,PLAYER,online-boutique-5481,If you don't have the issue in UAT it could be worth using that for the demo instead
+2025-08-21 10:19:04,Bez,business-comms-5481,Let me know if you need anything
+2025-08-21 10:19:10,PLAYER,online-boutique-5481,Just while we try to work out the issue
+2025-08-21 10:19:30,Tinus,online-boutique-5481,Sorry im back now
+2025-08-21 10:19:42,PLAYER,business-comms-5481,"Would it be possible for you to try browsing to the site to see if you have the same issue Bez? If not, it might be worth you leading the demo from your machine"
+2025-08-21 10:19:46,Tinus,online-boutique-5481,I need to use the PROD version
+2025-08-21 10:19:53,Tinus,online-boutique-5481,All my data is saved on it
+2025-08-21 10:20:08,PLAYER,online-boutique-5481,Did you try clearing your cache and cookies? Or using a different browser?
+2025-08-21 10:20:25,Tinus,online-boutique-5481,Sure i can try clear my cache
+2025-08-21 10:20:48,Tinus,online-boutique-5481,Im using other tabs as well on chrome so i need to use it
+2025-08-21 10:21:01,tinus,online-boutique-5481,Damn! thats it
+2025-08-21 10:21:03,tinus,online-boutique-5481,"Great Ive got to do my presentation now, thanks for figuring this out so quickly. @daniel @shay can you look in to a cache busting solution?"
+2025-08-21 10:21:05,shay,online-boutique-5481,it was the cache! sure we can do that
+2025-08-21 10:21:07,daniel,online-boutique-5481,"no worries boss, at least its not a significat issue"
+2025-08-21 10:21:09,daniel,online-boutique-5481,good luck with the presentation!
+2025-08-21 10:21:09,tanya,online-boutique-5481,yes good luck @tinus
+2025-08-21 10:21:11,shay,online-boutique-5481,good luck @tinus!
+2025-08-21 10:21:23,UptimeLabs,online-boutique-5481,Start retro and feedback
+2025-08-21 10:21:27,PLAYER,online-boutique-5481,Clicked Start_feedback button
+2025-08-21 10:22:30,UptimeLabs,online-boutique-5481,Submission successful

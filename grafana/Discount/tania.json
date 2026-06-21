@@ -1,0 +1,34 @@
+{
+  "output": {
+    "learning_outcomes_achieved": [
+      [
+        "Size Up",
+        "Fluent",
+        "You quickly recognised the website was down and classified the event as P1, immediately checking its global impact by asking Bob about the reach and compiling customer impact data. You then communicated the scope and severity to the business comms channel before conducting deeper investigation. This sequence showed a clear, assertive approach to situational awareness."
+      ],
+      [
+        "Differentiate Legitimate Load vs Security Threat",
+        "Fluent",
+        "You directly questioned whether the traffic was abnormal or malicious, requested confirmation of expected vs actual request rates, and highlighted concerns about suspicious patterns. You communicated these suspicions clearly to both technical and business channels, grounding them in error logs and abnormal metrics."
+      ],
+      [
+        "Diagnose",
+        "Fluent",
+        "You requested diagnostic information from multiple team members regarding infrastructure and application behaviour, reviewed and referenced error logs provided, explicitly confirmed the incident as security-related, engaged security expertise, and requested actionable information to validate conclusions."
+      ],
+      [
+        "Mitigation",
+        "Fluent",
+        "You requested guidance from security, asked about and directed the blocking of the malicious IP, sought confirmation of service restoration from several participants, and acknowledged system recovery explicitly. You also noted follow-up technical action to further safeguard against similar attacks."
+      ],
+      [
+        "Security Protocol and Stakeholder Constraints",
+        "Fluent",
+        "You engaged both security and compliance roles, proactively involved business and compliance in communications, and addressed internal and external communication strategies. You coordinated stakeholder communications and reinforced internal handling protocols."
+      ]
+    ],
+    "feedback": "Correctness: Your responses were clear and free from major grammar, spelling, and punctuation errors, making your communication direct and effective. Clarity: You used concise questions and instructions, which enhanced the team's ability to follow the conversation and coordinate responses. Engagement: Your interactions kept team members involved and focused, and your check-ins with business/compliance channels were timely and well-phrased. Delivery: You maintained a constructive tone and used inclusive language to encourage collaborative diagnosis, action, and resolution, effectively fostering shared understanding and momentum.",
+    "did_well": "You systematically coordinated the incident response and encouraged the team to share real time evidence, while maintaining cross-channel communications. Your directness in ascertaining global impact, probing for potential malicious activity, and validating both the diagnosis and resolution created strong situational clarity. Involving relevant stakeholders, including compliance and security, and confirming the restoration steps showed effective orchestration. Continue this practice of explicit, stepwise engagement and cross-functional communication.",
+    "room_for_improvement": "In future scenarios, you might consider briefly summarising the remediation process and next steps post-incident for all involved channels, ensuring lessons and action items are plainly captured for the entire group. Additionally, seeking input from stakeholders on their perspective of the incident impact, and explicitly affirming when communication hand-offs (such as to compliance) are complete, could further strengthen clarity and shared understanding. Encouraging brief post-incident reflection from the team can also help gather collective learning and identify areas for future resilience."
+  }
+}

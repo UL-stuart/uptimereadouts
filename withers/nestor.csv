@@ -1,0 +1,229 @@
+datetime,player,channel,message
+2026-03-03 09:23:51,bez,online-boutique-7864,"What a day! Our Grand Summer Sale kicked off this morning at 10, and the response has been insane. Can't believe we're already 5 hours in"
+2026-03-03 09:23:53,bob,online-boutique-7864,"Totally! Just checked the dashboard, we've already crossed $160k+ in revenue :money_mouth_face: . The sale energy is next level!"
+2026-03-03 09:23:56,tinus,online-boutique-7864,"That's fantastic, but hey, this is just the beginning. Three days to go... I'm keeping my fingers crossed :crossed_fingers:"
+2026-03-03 09:23:59,bez,online-boutique-7864,"Seeing so many people shopping on a holiday, it feels satisfying. Exactly the momentum we were hoping for"
+2026-03-03 09:24:01,uptimelabs,online-boutique-7864,"Welcome to DEFCON 1, are you prepared for the challenge?.
+
+ *Access game links by pressing the Uptime Labs Logo in the top right of the screen*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin"
+2026-03-03 09:28:07,PLAYER,online-boutique-7864,@jeff.wong-withersworld 
+2026-03-03 09:29:14,PLAYER,online-boutique-7864,@jamie.mardell-withersw 
+2026-03-03 09:31:12,PLAYER,business-comms-7864,@PLAYER 
+2026-03-03 09:31:44,shay,online-boutique-7864,"Not this time!, I just got a few alerts mentioning severe errors popping up in PROD"
+2026-03-03 09:31:47,bob,online-boutique-7864,Weird... a few users just complained they are unable to complete their orders. Feels... off..
+2026-03-03 09:33:01,bob,online-boutique-7864,Reports are climbing @PLAYER
+2026-03-03 09:33:44,shay,online-boutique-7864,I'm getting resource exhaustion alerts again and again in PROD
+2026-03-03 09:34:22,PLAYER,online-boutique-7864,"Hi Bob, are we getting reports of error message?"
+2026-03-03 09:34:26,uptimelabs,online-boutique-7864,:star: Asking questions to validate impact of the problem
+2026-03-03 09:34:31,bob,online-boutique-7864,"Sure, let me look at my reports"
+2026-03-03 09:34:46,bob,online-boutique-7864,Here are some of the complaints we've received in the last few minutes. It's coming all across the globe 
+2026-03-03 09:34:48,bob,online-boutique-7864,"Germany - ""I added items to my cart, clicked checkout, and it just kept spinning. Then it dumped me back to an empty cart"""
+2026-03-03 09:34:50,bob,online-boutique-7864,"USA - ""Order failed twice, and now the cart is empty. I refreshed, but now the site is laggy"""
+2026-03-03 09:34:52,bob,online-boutique-7864,"Japan - ""Got to checkout, then error 502. Tried again - cart gone"""
+2026-03-03 09:34:54,bob,online-boutique-7864,"To sum it all, we have got 240+ reports globally"
+2026-03-03 09:34:56,bob,online-boutique-7864,
+2026-03-03 09:35:04,PLAYER,online-boutique-7864,When was the first report of the issue?
+2026-03-03 09:35:15,bob,online-boutique-7864,Around 20 mins back
+2026-03-03 09:35:23,PLAYER,online-boutique-7864,Apps team - was there any change implemented in the last 15 minutes?
+2026-03-03 09:35:26,uptimelabs,online-boutique-7864,:star: Check changes done to the platform
+2026-03-03 09:35:29,shay,online-boutique-7864,Here is the list of latest deployments : https://uptime-labs.atlassian.net/wiki/external/YzYwYTAxNWQzOTI0NDYzOWI1MjkxNTI2YmVmMjUyZDE 
+2026-03-03 09:35:34,PLAYER,online-boutique-7864,anything you can see from your side?
+2026-03-03 09:36:08,shay,online-boutique-7864,Alerts are around Checkout app - lots of timeouts and out of memory
+2026-03-03 09:36:13,shay,online-boutique-7864,"For further clarity, looking into logs now"
+2026-03-03 09:36:17,daniel,online-boutique-7864,I'll help Shay as well
+2026-03-03 09:36:18,bez,business-comms-7864,Customers have gone outrageous. #OBFail and #OBStealsSale are trending with frustrated posts. We're getting hammered online! Where are we @PLAYER? 
+2026-03-03 09:36:23,shay,online-boutique-7864,Found these below error logs
+2026-03-03 09:36:24,shay,online-boutique-7864,"```
+app[checkout-service] [ERROR] - write() failed, Read-only filesystem
+app[checkout-service] Order submission failed for session_id=ae43f9 due to I/O error
+app[checkout-service] [ERROR] - Transaction commit failed, Read-only file system
+[ERROR] nginx[3245] - 502 Bad Gateway while accessing upstream checkout service
+[ERROR] nginx[3245] - 504 Gateway Timeout while accessing upstream checkout service```"
+2026-03-03 09:36:28,shay,online-boutique-7864,The server is too slow and give up while responding back. I'm not sure why read-only errors are there
+2026-03-03 09:36:46,daniel,online-boutique-7864,"Looking at the above logs, app looks fine. But system can't write new data. Errors suggests to be an infra component failure"
+2026-03-03 09:36:53,daniel,online-boutique-7864,"Also checkout servers show CPU and memory limits exceeded alerts, this definitely looks bigger than just an app issue"
+2026-03-03 09:36:55,daniel,online-boutique-7864,"```app[checkout-service]: systemd[1][WARN] Resource usage threshold exceeded - CPU: 96%, Memory: 92%```"
+2026-03-03 09:37:03,shay,online-boutique-7864,Could this be due to load or any changes ?
+2026-03-03 09:37:08,daniel,online-boutique-7864,@PLAYER let us know if you would like us to rollback any changes ?
+2026-03-03 09:37:40,daniel,online-boutique-7864,This is the current state of metrics in Grafana : https://i.ibb.co/p688rcbw/Screenshot-2026-03-03-at-9-37-04-AM.png
+2026-03-03 09:41:01,daniel,online-boutique-7864,I think this is platform issue
+2026-03-03 09:41:37,daniel,online-boutique-7864,All the errors in the checkout app suggest an issue with infra
+2026-03-03 09:42:58,bez,business-comms-7864,I need an update right now. I can see alot of users are taking out their frustration via social media
+2026-03-03 09:43:22,bez,business-comms-7864,Team get on top of this issue asap
+2026-03-03 09:43:34,PLAYER,online-boutique-7864,Hi Bob - could you kindly post comms for users so they know that we are having issues please?
+2026-03-03 09:43:36,uptimelabs,online-boutique-7864,:star: Know your team and their roles
+2026-03-03 09:43:57,bob,online-boutique-7864,Sure i can do it
+2026-03-03 09:44:15,bob,online-boutique-7864,Will keep the users informed on a potential issue at the backend
+2026-03-03 09:44:32,PLAYER,business-comms-7864,"Hi Bez, we are aware of an issue and have the team investigating this at this moment in time"
+2026-03-03 09:44:46,PLAYER,online-boutique-7864,"Hi Hamed, could you kindly join this channel please?"
+2026-03-03 09:44:49,uptimelabs,online-boutique-7864,:star: Escalating when required
+2026-03-03 09:45:07,hamed,online-boutique-7864,"Hey @PLAYER , i'll get Tanya to look into this"
+2026-03-03 09:45:23,tanya,online-boutique-7864,Checking infra...
+2026-03-03 09:45:38,PLAYER,online-boutique-7864,"Hi Bob, have you raised a Major Incident?"
+2026-03-03 09:45:44,hamed,online-boutique-7864,Helping Tanya along with her infra investigation
+2026-03-03 09:45:53,tanya,online-boutique-7864,"All four checkout servers are maxed out - CPU, memory, and disk I/O all spiking. No changes or deployments were done from platform side"
+2026-03-03 09:45:58,tanya,online-boutique-7864,
+2026-03-03 09:46:11,bob,online-boutique-7864,"Could you please raise one by typing ""/incident severity short-description"""
+2026-03-03 09:46:13,tanya,online-boutique-7864,Looks like all checkout servers are under huge load . CPU and Memory has spiked up a lot
+2026-03-03 09:46:18,tanya,online-boutique-7864,Shall we try adding more resources to checkout app ?
+2026-03-03 09:46:44,PLAYER,online-boutique-7864,is the issue impacting all users?
+2026-03-03 09:46:45,bob,online-boutique-7864,I'm keeping all the users informed. A huge volume of  incoming complaints
+2026-03-03 09:46:53,uptimelabs,online-boutique-7864,:bulb: Declare an incident.
+2026-03-03 09:46:54,PLAYER,online-boutique-7864,"Bob, have we establish that?"
+2026-03-03 09:47:36,PLAYER,online-boutique-7864,"Hamed, are you able to advise on Tanya's question?"
+2026-03-03 09:47:37,bez,business-comms-7864,How many complaints have we got so far?
+2026-03-03 09:47:54,bob,online-boutique-7864,What should be the severity for this issue ?
+2026-03-03 09:48:13,PLAYER,online-boutique-7864,"Bob, have we established that this impacts all users?"
+2026-03-03 09:48:25,hamed,online-boutique-7864,I can definitely see there is a resource spike across all 4 boxes of the checkout app
+2026-03-03 09:49:01,hamed,online-boutique-7864,We need to investigate more. This looks very abnormal to me. Haven't seen such spike with normal traffic
+2026-03-03 09:49:17,PLAYER,online-boutique-7864,Is the issue happening when checking out? or the portal is completely down. 
+2026-03-03 09:49:44,bob,online-boutique-7864,Only when users are trying to check out their items in cart
+2026-03-03 09:50:08,hamed,online-boutique-7864,Can we get Maya to check security as well
+2026-03-03 09:50:25,tanya,online-boutique-7864,There is a process here I do not recognise - consuming max CPU. Not something we run from platform side
+2026-03-03 09:50:33,tanya,online-boutique-7864,https://assets.prod.uptimelabs.io/drill-assets/30/process-Running.webp
+2026-03-03 09:50:41,tanya,online-boutique-7864,Thats definitely suspicious to me. @Hamed do you recognise this?
+2026-03-03 09:50:49,hamed,online-boutique-7864,Never seen it. Not something from platform side
+2026-03-03 09:51:18,bez,business-comms-7864,Where are we right now ? I need an update. Board members are seeking for updates
+2026-03-03 09:51:53,maya,online-boutique-7864,let me do a quick check on our security systems
+2026-03-03 09:52:03,maya,online-boutique-7864,Ok I went through our SIEM. No security alerts firing. This looks more like a platform capacity issue
+2026-03-03 09:52:28,tanya,online-boutique-7864,@Maya Something is off with these metrics and I cannot explain it with a normal infra failure
+2026-03-03 09:52:50,tanya,online-boutique-7864,See this script
+2026-03-03 09:53:26,PLAYER,online-boutique-7864,
+2026-03-03 09:53:26,uptimelabs,business-comms-7864,*Incident Number INC100076:* P1 Unable to checkout from the Online Boutique portal
+2026-03-03 09:53:26,uptimelabs,online-boutique-7864,:star: Incident record created
+2026-03-03 09:53:28,uptimelabs,online-boutique-7864,:star: Send first comms in first 5 minutes
+2026-03-03 09:53:31,bez,business-comms-7864,"I'm seeing some posts on social media about issues with our platform, is this a regional issue or hitting customers globally?"
+2026-03-03 09:54:18,tanya,online-boutique-7864,@PLAYER Maya should look more in depth into security side
+2026-03-03 09:54:56,PLAYER,online-boutique-7864,"Hi Bob, can you please publish comms for users?"
+2026-03-03 09:55:00,PLAYER,business-comms-7864,This is hitting users globally
+2026-03-03 09:55:02,uptimelabs,online-boutique-7864,:star: Qualify the problem
+2026-03-03 09:55:22,bob,online-boutique-7864,I'm handling customer comms. Dont worry about it. I'll keep you updated time to time about users reports
+2026-03-03 09:55:45,hamed,online-boutique-7864,I'd request Maya to look more into security again
+2026-03-03 09:56:08,hamed,online-boutique-7864,@PLAYER we have never seen init_locker.sh script in our services  - consuming all our resources
+2026-03-03 09:56:11,PLAYER,online-boutique-7864,"Bob, can we have an updated customer report of logged issues please"
+2026-03-03 09:56:40,bob,online-boutique-7864,There are 300+ reports right now from all across the globe
+2026-03-03 09:56:54,PLAYER,business-comms-7864,We have had 300 reports from users
+2026-03-03 09:57:04,bob,online-boutique-7864,All of them are complaining about same issue while doing checkout
+2026-03-03 09:57:23,PLAYER,business-comms-7864,All complaining the same issue regarding checking out
+2026-03-03 09:57:25,daniel,online-boutique-7864,Lets get @maya to look into security fast
+2026-03-03 09:57:31,maya,online-boutique-7864,Looping back in after seeing Tanya's message. Let me go much deeper this time. Give me a few minutes
+2026-03-03 09:57:39,PLAYER,online-boutique-7864,"@maya , any update on the security side?"
+2026-03-03 09:57:41,uptimelabs,online-boutique-7864,:star: Manage actions and timings
+2026-03-03 09:57:48,PLAYER,online-boutique-7864,"Hamed, what triggers these activities? Are these expected?"
+2026-03-03 09:57:54,maya,online-boutique-7864,Checking
+2026-03-03 09:58:01,maya,online-boutique-7864,"OK I was wrong. EDR agent is completely gone from all four checkout servers ? binary itself removed, not stopped. Nothing fired on SIEM. Detection was blind, it looked like a platform issue"
+2026-03-03 09:58:05,maya,online-boutique-7864,"```EDR is basically our endpoint defense tool, it tracks unusual activity at the servers```"
+2026-03-03 09:58:12,hamed,online-boutique-7864,This looks like some malicious behaviour. We never do such activities
+2026-03-03 09:58:21,maya,online-boutique-7864,Also found this. @Tanya as you mentioned - this init_locker.sh script actively renaming files across the checkout servers
+2026-03-03 09:58:22,maya,online-boutique-7864,"```
+order_log_2025-06-01.locked
+session_state.tmp.locked```"
+2026-03-03 09:58:29,daniel,online-boutique-7864,That explains everything ? the write failed and read-only filesystem errors. Something was encrypting files as the app was trying to write to them
+2026-03-03 09:58:34,tanya,online-boutique-7864,"Wait... while you were checking that, I found something on the server. There is a file named HELP_ME_DECRYPT.txt sitting in /var/www/html/. That name is not normal"
+2026-03-03 09:58:36,tanya,online-boutique-7864,
+2026-03-03 09:58:36,bez,business-comms-7864,"Got an email claiming responsibility by ""BlackCrow Group"" and demanding payment of $5M in crypto. Honestly, I get these hoax emails all the time, so I'm not buying it"
+2026-03-03 09:58:40,tanya,online-boutique-7864,I think this is a ransom note
+2026-03-03 09:58:44,maya,online-boutique-7864,The attacker removed EDR first specifically so our SIEM would stay blind. This was designed to look like an infra issue. That is a deliberate tactic
+2026-03-03 09:58:49,maya,online-boutique-7864,Confirmed. This is a ransomware breach. @PLAYER inform business about this. I'm checking further...
+2026-03-03 09:58:50,tanya,online-boutique-7864,Shall I try killing this script ?
+2026-03-03 09:58:54,bob,online-boutique-7864,"Guys!!! User complaints are sky rocketing, its turning catastrophic!"
+2026-03-03 09:59:00,shay,online-boutique-7864,"We must get this script killed asap, might help in stabilising the systems instantly"
+2026-03-03 09:59:27,tanya,online-boutique-7864,Shall i delete the process ?
+2026-03-03 10:00:06,maya,online-boutique-7864,"Killing the script could make things worse, higher ransom or losing data forever"
+2026-03-03 10:00:11,bez,business-comms-7864,This is nightmare! @PLAYER where are we right now?
+2026-03-03 10:00:12,maya,online-boutique-7864,"@PLAYER before we do anything, I'd request everyone to please change their passwords"
+2026-03-03 10:00:16,maya,online-boutique-7864,Also I'm removing everyone's access to servers - only I'll have control for now. Later we will reassess to do any activity further
+2026-03-03 10:00:21,daniel,online-boutique-7864,Done on my end
+2026-03-03 10:00:24,hamed,online-boutique-7864,Updated. @Maya smart move by limiting server's access
+2026-03-03 10:00:27,shay,online-boutique-7864,Password updated
+2026-03-03 10:00:30,bob,online-boutique-7864,Changed mine too. Better safe than sorry
+2026-03-03 10:00:34,tanya,online-boutique-7864,All set
+2026-03-03 10:00:41,tanya,online-boutique-7864,"It's much worse now. Every file I check is encrypted, nothing can be opened or recovered."
+2026-03-03 10:00:45,shay,online-boutique-7864,I'm seeing new errors on frontend now. How's it for you @PLAYER ?
+2026-03-03 10:00:45,bez,business-comms-7864,Heard from Tinus that we are being attacked
+2026-03-03 10:00:56,maya,online-boutique-7864,"Attention! when it comes to potential security breaches, it's important we don't discuss sensitive details here"
+2026-03-03 10:01:01,maya,online-boutique-7864,I'm setting up private channel...
+2026-03-03 10:01:02,bez,business-comms-7864,@Jamie whats the update where are we right now ? Do you have all the support ?
+2026-03-03 10:01:06,maya,online-boutique-7864,"@PLAYER before we move to private channel, can you check with business what's the plan - are we paying the ransom or moving with response?"
+2026-03-03 10:03:19,maya,online-boutique-7864,Have we got business on this ? Are we paying or moving with response ?
+2026-03-03 10:05:10,PLAYER,business-comms-7864,This email is relevant as it looks like we have ransomware on our systems. Do not ignore it Bez. We need to get @tinus involved for his opinion asap
+2026-03-03 10:05:21,bez,business-comms-7864,"Not in favor of paying. Ethically, it sets the wrong example and there's no real guarantee we'll get anything back"
+2026-03-03 10:05:23,tinus,business-comms-7864,"Agree. Also, just to be clear - we don't need to alert the ICO(Information Commissioner's Office) right this second. We've got up to 72 hours, but that depends on how serious this really is"
+2026-03-03 10:05:32,tinus,business-comms-7864,Move with the response. We are not paying
+2026-03-03 10:05:41,maya,private-comms-7864,@PLAYER let's build the core response team here. I've already added myself. Who else should we pull in to keep it tight and efficient?
+2026-03-03 10:05:45,maya,private-comms-7864,"I'd say one senior person each from security, platform, and engineering. Also add Tanya, tasks could be platform intensive"
+2026-03-03 10:05:49,bez,business-comms-7864,@Tinus do you think this is something we should loop in any cyber security agency for?
+2026-03-03 10:05:52,tinus,business-comms-7864,"If it looks like a complete lock-out, I'd say yes"
+2026-03-03 10:05:55,tinus,business-comms-7864,"We've got Cyvantics Security on retainer - just in case this gets out of hand. @PLAYER, ask Maya to reach out if needed"
+2026-03-03 10:06:28,PLAYER,private-comms-7864,@PLAYER 
+2026-03-03 10:06:30,daniel,private-comms-7864,I'm in
+2026-03-03 10:06:32,PLAYER,private-comms-7864,@PLAYER 
+2026-03-03 10:06:37,hamed,private-comms-7864,Lets fight this
+2026-03-03 10:06:47,tanya,private-comms-7864,I'm in as well
+2026-03-03 10:07:07,PLAYER,online-boutique-7864,@maya are you in conversation with Tinus?
+2026-03-03 10:07:08,maya,private-comms-7864,"Yes, we've got an IR(incident response) retainer with Cyvantics Security"
+2026-03-03 10:07:21,bez,business-comms-7864,@PLAYER I need a clear answer from the team. What exactly is affected right now?
+2026-03-03 10:07:23,maya,private-comms-7864,"Looped in Cyvantics Security - they're on their way now to take snapshots of the infected server and storage, followed by forensics on it"
+2026-03-03 10:07:24,tinus,business-comms-7864,"You're right. We need clear facts - which systems are locked, which are safe"
+2026-03-03 10:07:33,maya,private-comms-7864,"Meanwhile, I've got this from Cyvantics. @PLAYER, can you help track the steps and coordinate?"
+2026-03-03 10:07:35,maya,private-comms-7864,https://uptime-labs.atlassian.net/wiki/external/MThjMTk4ZDU5ODU0NGZmMWE1NzhmNGY0MDQwNWI1NTA
+2026-03-03 10:07:41,maya,private-comms-7864,"We've got isolation steps in the playbook, but before we dive in, can you paste that list here? I'll help team run through it"
+2026-03-03 10:08:39,hamed,private-comms-7864,Hey team we need to move faster . We all are here to run the steps from the playbook. I request IM team to track and get us a business go-ahead on critical points
+2026-03-03 10:09:43,maya,private-comms-7864,"I've given write access to Tanya, Hamed, Daniel, and myself"
+2026-03-03 10:09:44,bob,online-boutique-7864,"@PLAYER user complaints are spiking. They're reporting the site is down, earlier it wasn't the case. What should I tell them now?"
+2026-03-03 10:09:47,tanya,private-comms-7864,Disconnecting the checkout servers from the infra now
+2026-03-03 10:09:49,daniel,private-comms-7864,I'm on it. Disconnecting DB access for checkout and checking if scheduled backups exist
+2026-03-03 10:09:51,hamed,private-comms-7864,I'll verify if any shared storage is still attached to the checkout DB
+2026-03-03 10:10:03,daniel,private-comms-7864,"Step 3 done, DB connection to checkout is now cut"
+2026-03-03 10:10:05,tanya,private-comms-7864,"Step 1 done, Checkout servers are now fully disconnected. Moving to isolate the infra from all external traffic"
+2026-03-03 10:10:07,hamed,private-comms-7864,"Step 4 confirmed, No shared storage attached to checkout, which makes sense since checkout has its standalone storage"
+2026-03-03 10:10:13,tanya,private-comms-7864,"Step 2 completed, Infra is now fully cut off from the outside world. That means the website will remain completely down until we recover"
+2026-03-03 10:10:14,maya,private-comms-7864,Isolation has been done
+2026-03-03 10:10:18,maya,private-comms-7864,"Step 5 done, Cyvantics has completed taking snapshots of the checkout servers and database. They've now moved on to forensics. @Hamed, we're good to kill the script now"
+2026-03-03 10:10:21,bez,business-comms-7864,Do we have any backup storage? Maybe we can try restoring from that
+2026-03-03 10:10:23,hamed,private-comms-7864,"For the restoration, we do have backup which only runs at 2AM. Latest is yesterday's. Unfortunately, we'll lose today's orders"
+2026-03-03 10:10:28,hamed,private-comms-7864,"Step 6 done, The Script has been killed. @PLAYER let us know and double-check if anything else is pending on our side"
+2026-03-03 10:10:29,maya,private-comms-7864,I've got Bob in the discussion so he can confirm the approximate loss in order value
+2026-03-03 10:10:36,PLAYER,private-comms-7864,What should we be telling our users?
+2026-03-03 10:10:49,bob,private-comms-7864,"With the sale starting today, the potential loss is significant, approx. around $180k"
+2026-03-03 10:10:49,PLAYER,private-comms-7864,Tinus - please advise 
+2026-03-03 10:10:52,maya,private-comms-7864,Do not say anything about security issue
+2026-03-03 10:10:53,maya,private-comms-7864,@PLAYER could you please confirm this order loss with business before moving forward on this 
+2026-03-03 10:10:56,PLAYER,online-boutique-7864,"As an update, we are accutely aware that this is a ransomware situation. We have the security team investigating this as a matter of urgency and we will update this group as soon as we are aware of any further information.  @bob, please make sure the users are aware we are investigating the situation, but DO NOT mention the ransomware situation"
+2026-03-03 10:11:00,uptimelabs,online-boutique-7864,:star: Form an effective investigation team
+2026-03-03 10:11:00,uptimelabs,online-boutique-7864,:star: Take command
+2026-03-03 10:11:08,tinus,private-comms-7864,I'll handle the compliance. Never mention security issue
+2026-03-03 10:11:16,tinus,private-comms-7864,Lets move
+2026-03-03 10:11:24,maya,private-comms-7864,"Thanks for the go-ahead. @PLAYER, please track all restoration steps"
+2026-03-03 10:11:30,tanya,private-comms-7864,Thanks for the go ahead. Bringing up network traffic in progress...
+2026-03-03 10:11:33,maya,private-comms-7864,I'm now validating the backup storage to ensure it's safe
+2026-03-03 10:11:36,hamed,private-comms-7864,"I'm provisioning new checkout servers, will update once ready"
+2026-03-03 10:11:42,maya,private-comms-7864,"Backup is clean and safe. @Hamed, you can start rebuilding checkout from backup storage"
+2026-03-03 10:11:52,uptimelabs,online-boutique-7864,"Drill Wrap-Up
+
+Thanks for playing! This session is now closed.
+
+Please return to your Uptime Labs tab to review your performance and complete the Retrospective & Feedback form.
+
+If you've already closed the tab, you can reopen the form using the button below."
+2026-03-03 10:11:53,hamed,private-comms-7864,Rebuild completed
+2026-03-03 10:11:57,maya,private-comms-7864,I've enabled the security agents (EDR) on checkout servers
+2026-03-03 10:12:00,daniel,private-comms-7864,I'll monitor application health once services are restored
+2026-03-03 10:12:03,maya,private-comms-7864,"@PLAYER , can you confirm all tasks are wrapped up and we are good to bring the traffic back? Just want to be sure, as this is the final restoration step before we move"
+2026-03-03 10:12:08,bob,online-boutique-7864,Sure i'll not mention anything about security
+2026-03-03 10:12:14,bob,private-comms-7864,Wait!! getting a bunch of new complaints now. Users are neither able to see their return requests nor able to place new returns on the site
+2026-03-03 10:12:21,maya,private-comms-7864,We are back online
+2026-03-03 10:12:21,maya,private-comms-7864,"Yeah, that's probably the missing today's checkout data. Anyone who ordered or returned something during that time won't see it - makes sense since we restored from the yesterday's backup"
+2026-03-03 10:12:23,tanya,private-comms-7864,"Tough, but expected :)"
+2026-03-03 10:12:24,bob,private-comms-7864,What should I tell them? They are asking for refunds
+2026-03-03 10:12:27,PLAYER,business-comms-7864,"Users are experiencing issues during checkout due to resource saturation across all four checkout servers. CPU, memory, and disk I/O are maxed out simultaneously, resulting in degraded performance and failed checkout attempts.
+There have been no recent changes or deployments from the platform or application teams, and no known configuration changes that would explain the sudden load or behaviour. The issue appears to be security-related and our security team is on this issue. We have also informed our users about the issue. "
+2026-03-03 10:12:31,uptimelabs,online-boutique-7864,:star: Confirm resolution with the business
+2026-03-03 10:12:36,maya,private-comms-7864,Here is the forensic report i have received from Cyvantics : https://i.ibb.co/KcsMfXMT/CONFIDENTIAL-Forensic-Report-page-0001.jpg
+2026-03-03 10:15:12,uptimelabs,online-boutique-7864,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/30/7864/feedback"
+2026-03-03 10:15:39,uptimelabs,online-boutique-7864,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/30/7864/feedback"

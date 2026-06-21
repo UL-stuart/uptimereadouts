@@ -1,0 +1,98 @@
+datetime,player,channel,message
+2025-09-11 14:02:53,tinus,online-boutique-5729,"Hi team, let's have a mood check send an emoji to describe your mood"
+2025-09-11 14:02:57,tinus,online-boutique-5729,"I'll go first, :thumbsup:"
+2025-09-11 14:03:03,tanya,online-boutique-5729,:thumbsup:
+2025-09-11 14:03:05,tinus,online-boutique-5729,I'm excited about showing off all your hard work at todays stakeholder meeting
+2025-09-11 14:03:08,daniel,online-boutique-5729,":skull: knackered, had a few too many late nights this week"
+2025-09-11 14:03:11,shay,online-boutique-5729,:rainbow:
+2025-09-11 14:03:14,hamed,online-boutique-5729,living the dream :smile:
+2025-09-11 14:03:18,bez,online-boutique-5729,:smirk: im excited to see the show too
+2025-09-11 14:03:20,tinus,online-boutique-5729,shouldn't you be prepping for the meeting 
+2025-09-11 14:03:23,bez,online-boutique-5729,:sweat_smile: i am indeed I'll leave you lot to it
+2025-09-11 14:03:25,shay,online-boutique-5729,hang in there @daniel its gonne be the weekend sooner or later :joy:
+2025-09-11 14:03:28,tinus,online-boutique-5729,I should get on with my prep too have a good day team
+2025-09-11 14:03:29,daniel,online-boutique-5729,@shay strict diet of energy drink for me today lol
+2025-09-11 14:03:32,daniel,online-boutique-5729,hope the presentation goes well @tinus
+2025-09-11 14:03:34,tanya,online-boutique-5729,:raised_hands:
+2025-09-11 14:03:50,UptimeLabs,online-boutique-5729,"Welcome to Rumours, remember communication is key to diagnose the problem.
+
+ *Use `/help` at any time for a list of useful links and commands*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin Start button"
+2025-09-11 14:06:32,PLAYER,online-boutique-5729,Clicked Start button
+2025-09-11 14:06:33,UptimeLabs,online-boutique-5729,":alarm_clock: - You have 20 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-09-11 14:06:35,tinus,online-boutique-5729,"Hey team, I'm texting from the board room - kinda embarrassing but in my demo to the board, I tried to add a pair of Aviator sunglasses to the shopping cart and I got a ?http 500?"
+2025-09-11 14:06:37,tinus,online-boutique-5729,"I've bought some time but need this be able to do this demo if we can lets get this sorted in the next 20 minutes.
+"
+2025-09-11 14:06:40,tinus,online-boutique-5729,Metrics
+2025-09-11 14:06:42,tanya,online-boutique-5729,"uh oh, those Aviators are top sellers due to the new Top Gun movie...It's size up the issue time Karl Smith"
+2025-09-11 14:06:45,shay,online-boutique-5729,Come on this can't be happening!
+2025-09-11 14:06:47,tinus,online-boutique-5729,"I'm in this meeting so, wont be able to help but I trust that you all can get this fixed asap, just @ me if you need anything"
+2025-09-11 14:06:50,shay,online-boutique-5729,ok looking into this now
+2025-09-11 14:08:05,PLAYER,online-boutique-5729,Im not able to reproduce this issue at the moment
+2025-09-11 14:08:10,PLAYER,online-boutique-5729,IS anyone else able to?
+2025-09-11 14:08:12,Daniel,online-boutique-5729,"No nor me, checked out aviators with no problem"
+2025-09-11 14:08:13,UptimeLabs,online-boutique-5729,:star: Attempt to replicate the issue
+2025-09-11 14:08:31,Shay,online-boutique-5729,I can't replicate either
+2025-09-11 14:08:53,PLAYER,online-boutique-5729,Tinus is the issue still occurring for you?
+2025-09-11 14:09:08,Tinus,online-boutique-5729,"Yes, it's only throwing the error for the aviators"
+2025-09-11 14:09:17,Tinus,online-boutique-5729,Just trying to buy time at the moment so I won't be the most responsive
+2025-09-11 14:09:36,PLAYER,online-boutique-5729,Same issue from another device?
+2025-09-11 14:09:43,UptimeLabs,online-boutique-5729,:star: Asking questions to validate impact of the problem
+2025-09-11 14:10:02,Tinus,online-boutique-5729,I can try. Currently got my laptop hooked up for the presentation so it will be difficult
+2025-09-11 14:10:16,Tinus,online-boutique-5729,"Everything else is the same - same account, same device"
+2025-09-11 14:10:23,PLAYER,online-boutique-5729,What about in another browser?
+2025-09-11 14:10:30,UptimeLabs,online-boutique-5729,:star: Reproduces the incident
+2025-09-11 14:10:35,Daniel,online-boutique-5729,Is this affecting customers?
+2025-09-11 14:10:47,Tinus,online-boutique-5729,I'm using Chrome like usual
+2025-09-11 14:10:54,PLAYER,online-boutique-5729,Bob is there any customer impact?
+2025-09-11 14:11:00,Tinus,online-boutique-5729,Never had this issue before
+2025-09-11 14:11:07,PLAYER,online-boutique-5729,Daniel is there any errors logged when Tinus reproduces the issue?
+2025-09-11 14:11:15,Bob,online-boutique-5729,"Haven't received any reports so far, will continue monitoring"
+2025-09-11 14:11:16,UptimeLabs,online-boutique-5729,:star: Facts over opinion
+2025-09-11 14:11:25,Daniel,online-boutique-5729,Let me investigate
+2025-09-11 14:11:37,Shay,online-boutique-5729,"There were a few changes recently, could any of those be responsible?"
+2025-09-11 14:12:33,Bez,business-comms-5729,"Hey guys, Tinus has reported he's facing an issue in a shareholder presentation. Is this an on-going incident?"
+2025-09-11 14:12:53,PLAYER,online-boutique-5729,Daniel anything ?
+2025-09-11 14:13:02,Daniel,online-boutique-5729,No not seeing any errors
+2025-09-11 14:13:14,Daniel,online-boutique-5729,However I notice that his product number differs from mine
+2025-09-11 14:13:54,Daniel,online-boutique-5729,"It should be #OLJCESPC7Z, his error message shows #OLJCESPC7D"
+2025-09-11 14:13:59,PLAYER,business-comms-5729,\incident Reports of 500 internal error when adding some items to the shopping basket sev3
+2025-09-11 14:14:17,PLAYER,business-comms-5729,Reports of 500 internal error when adding some items to the shopping basket sev3
+2025-09-11 14:14:17,PLAYER,business-comms-5729,*Incident Number INC100033:* Reports of 500 internal error when adding some items to the shopping basket sev3
+2025-09-11 14:14:18,UptimeLabs,online-boutique-5729,:star: Incident record created
+2025-09-11 14:14:19,UptimeLabs,online-boutique-5729,:star: Send first comms in first 5 minutes
+2025-09-11 14:14:23,UptimeLabs,online-boutique-5729,:star: Formally assign criticality level to the incident
+2025-09-11 14:14:46,PLAYER,online-boutique-5729,Daniel Shay could this be fall out from the recent changes?
+2025-09-11 14:14:53,UptimeLabs,online-boutique-5729,:star: Reviewed changes
+2025-09-11 14:15:04,Daniel,online-boutique-5729,The only service I suspect could be responsible is product catalogue
+2025-09-11 14:15:12,Daniel,online-boutique-5729,But no changes were made to that recently
+2025-09-11 14:15:40,Bez,business-comms-5729,So is this affecting any customers?
+2025-09-11 14:16:08,PLAYER,online-boutique-5729,Daniel Lets revert the change please to see if that resolve the issue
+2025-09-11 14:16:15,UptimeLabs,online-boutique-5729,:star: Restoration over root cause analysis
+2025-09-11 14:16:23,Daniel,online-boutique-5729,There weren't any recent changes to product catalogue
+2025-09-11 14:16:38,Daniel,online-boutique-5729,"Only payments, adservice and checkout service"
+2025-09-11 14:16:50,PLAYER,business-comms-5729,Update: Engineers are investing. No customer reports received so far
+2025-09-11 14:17:01,Tanya,online-boutique-5729,"Although our changes will affect all users at once, this just seems to be affecting @Tinus"
+2025-09-11 14:17:47,Tinus,online-boutique-5729,"Anything you want me to try team? I've been able to move it but still, it's not a good look in front of the board"
+2025-09-11 14:18:28,PLAYER,online-boutique-5729,Daniel Was the change to production or test?
+2025-09-11 14:18:37,Daniel,online-boutique-5729,Those changes were to production
+2025-09-11 14:18:44,PLAYER,online-boutique-5729,Is Tinus use the production site?
+2025-09-11 14:18:56,Tanya,online-boutique-5729,Why would Tinus' product number be different to ours?
+2025-09-11 14:19:05,Tinus,online-boutique-5729,Yes I'm using the production site
+2025-09-11 14:19:46,PLAYER,online-boutique-5729,Tinus if you clear browser cache does that resolve the issue?
+2025-09-11 14:19:54,Tinus,online-boutique-5729,I'll give it a go
+2025-09-11 14:20:15,tinus,online-boutique-5729,Damn! thats it
+2025-09-11 14:20:17,tinus,online-boutique-5729,"Great Ive got to do my presentation now, thanks for figuring this out so quickly. @daniel @shay can you look in to a cache busting solution?"
+2025-09-11 14:20:19,shay,online-boutique-5729,it was the cache! sure we can do that
+2025-09-11 14:20:21,daniel,online-boutique-5729,"no worries boss, at least its not a significat issue"
+2025-09-11 14:20:22,daniel,online-boutique-5729,good luck with the presentation!
+2025-09-11 14:20:23,tanya,online-boutique-5729,yes good luck @tinus
+2025-09-11 14:20:25,shay,online-boutique-5729,good luck @tinus!
+2025-09-11 14:20:36,UptimeLabs,online-boutique-5729,"Thank you for playing, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit I am ready when you want to start. I am ready button"
+2025-09-11 14:21:01,PLAYER,business-comms-5729,Update Issue was a localized problem. Resolved after clearing local browser cache
+2025-09-11 14:21:08,UptimeLabs,online-boutique-5729,:star: Confirm resolution with the business
+2025-09-11 14:21:12,PLAYER,online-boutique-5729,Clicked Start_feedback button
+2025-09-11 14:22:22,UptimeLabs,online-boutique-5729,Submission successful

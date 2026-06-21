@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swimlane Timeline with D3</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --panel: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --grid: #cbd5e1;
+      --lane: #e2e8f0;
+      --axis: #334155;
+      --tooltip-bg: rgba(15, 23, 42, 0.96);
+      --tooltip-text: #f8fafc;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .wrap {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      line-height: 1.2;
+    }
+
+    .subtitle {
+      margin: 0 0 20px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .card {
+      background: var(--panel);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      padding: 20px;
+      overflow: hidden;
+    }
+
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 16px;
+      margin: 0 0 16px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .legend-item {
+      display: inline-flex;
+      align-items: flex-start;
+      gap: 8px;
+      white-space: normal;
+      line-height: 1.25;
+    }
+
+    .legend-swatch {
+      width: 12px;
+      height: 12px;
+      border-radius: 999px;
+      flex: 0 0 auto;
+    }
+
+    svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .lane-line {
+      stroke: var(--lane);
+      stroke-width: 1.5;
+    }
+
+    .axis path,
+    .axis line {
+      stroke: var(--axis);
+    }
+
+    .axis text {
+      fill: var(--muted);
+      font-size: 12px;
+    }
+
+    .grid line {
+      stroke: var(--grid);
+      stroke-dasharray: 3 4;
+      opacity: 0.85;
+    }
+
+    .grid path {
+      display: none;
+    }
+
+    .participant-label {
+      font-size: 13px;
+      fill: var(--text);
+      font-weight: 600;
+    }
+
+    .event-point {
+      stroke: white;
+      stroke-width: 2;
+      cursor: pointer;
+    }
+
+    .event-label {
+      font-size: 9px;
+      fill: var(--muted);
+    }
+
+    .connector {
+      fill: none;
+      stroke-width: 2;
+      opacity: 0.65;
+    }
+
+    .tooltip {
+      position: fixed;
+      pointer-events: none;
+      background: var(--tooltip-bg);
+      color: var(--tooltip-text);
+      padding: 10px 12px;
+      border-radius: 12px;
+      font-size: 12px;
+      line-height: 1.45;
+      box-shadow: 0 12px 30px rgba(2, 6, 23, 0.35);
+      opacity: 0;
+      transform: translateY(4px);
+      transition: opacity 120ms ease, transform 120ms ease;
+      max-width: 280px;
+      z-index: 10;
+    }
+
+    .tooltip.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .note {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Swimlane Timeline</h1>
+    <p class="subtitle">D3-based swimlane view of incident events by participant. Hover a point to see the exact event and timing.</p>
+
+    <div class="card">
+      <div style="display:grid;grid-template-columns:minmax(220px,280px) 1fr;gap:18px;align-items:start;">
+        <div>
+          <div id="legend" class="legend" style="display:flex;flex-direction:column;gap:8px;margin:0;"></div>
+        </div>
+        
+      </div>
+      <div id="chart"></div>
+      <div class="note">Missing values are omitted, so only observed events are plotted for each participant.</div>
+    </div>
+  </div>
+
+  <div id="tooltip" class="tooltip"></div>
+
+  <script>
+    const participants = [
+      "Aashish",
+      "Akshay",
+      "Anjali",
+      "Avinash",
+      "Harsh",
+      "Kshitij",
+      "Melvin",
+      "Shreya",
+      "Suraj",
+      "Vivek"
+    ];
+
+    const events = [
+      "Issue Reproduction",
+      "Incident Raised",
+      "Checks Recent Changes",
+      "First Business Comms",
+      "Scope & Impact Sizing",
+      "Network Layer Identification",
+      "Security Breach Diagnosis",
+      "Intervention Decision: Restart Switch",
+      "Intervention Decision: Failover to Redundant Switch",
+      "Resolution"
+    ];
+
+    const rawData = {
+      "Aashish": [null, 2, 5, 3, 5, 7, 14, null, 15, 19],
+      "Akshay": [null, null, 3, 7, 1, 6, 15, null, 18, 24],
+      "Anjali": [1, 8, 5, 8, 6, 14, 16, 20, null, 24],
+      "Avinash": [null, 3, 10, 5, 1, 13, 14, null, 18, 22],
+      "Harsh": [2, 5, 10, 6, 3, 9, 16, null, 19, 21],
+      "Kshitij": [1, null, 4, 7, 2, 7, 12, 13, 21, 22],
+      "Melvin": [null, null, 4, 3, 1, 11, 12, null, 15, 19],
+      "Shreya": [1, 4, 2, 5, 1, 11, 13, null, 16, 20],
+      "Suraj": [1, 4, 5, 5, 2, 14, 15, null, 17, 24],
+      "Vivek": [2, null, null, 8, 2, 6, 7, null, 11, 14]
+    };
+
+    const palette = d3.schemeTableau10;
+    const eventColor = d3.scaleOrdinal()
+      .domain(events)
+      .range(events.map((_, i) => palette[i % palette.length]));
+
+    const flattened = participants.flatMap(participant =>
+      events.map((event, i) => ({
+        participant,
+        event,
+        time: rawData[participant][i]
+      })).filter(d => d.time != null)
+    );
+
+    const maxTime = d3.max(flattened, d => d.time);
+
+    const margin = { top: 20, right: 40, bottom: 50, left: 170 };
+    const laneHeight = 78;
+    const width = 1200;
+    const height = margin.top + margin.bottom + participants.length * laneHeight;
+    const innerWidth = width - margin.left - margin.right;
+    const innerHeight = height - margin.top - margin.bottom;
+
+    const svg = d3.select("#chart")
+      .append("svg")
+      .attr("viewBox", `0 0 ${width} ${height}`)
+      .attr("role", "img")
+      .attr("aria-label", "Swimlane timeline of incident events by participant");
+
+    const g = svg.append("g")
+      .attr("transform", `translate(${margin.left},${margin.top})`);
+
+    const x = d3.scaleLinear()
+      .domain([0, maxTime + 1])
+      .range([0, innerWidth]);
+
+    const y = d3.scalePoint()
+      .domain(participants)
+      .range([0, innerHeight])
+      .padding(0.6);
+
+    const xGrid = d3.axisBottom(x)
+      .ticks(maxTime + 1)
+      .tickSize(innerHeight)
+      .tickFormat("");
+
+    g.append("g")
+      .attr("class", "grid")
+      .attr("transform", `translate(0,0)`)
+      .call(xGrid);
+
+    g.selectAll(".lane-line")
+      .data(participants)
+      .join("line")
+      .attr("class", "lane-line")
+      .attr("x1", 0)
+      .attr("x2", innerWidth)
+      .attr("y1", d => y(d))
+      .attr("y2", d => y(d));
+
+    g.append("g")
+      .attr("class", "axis")
+      .attr("transform", `translate(0,${innerHeight})`)
+      .call(d3.axisBottom(x).ticks(maxTime + 1).tickFormat(d => `T+${d}`));
+
+    g.append("text")
+      .attr("x", innerWidth / 2)
+      .attr("y", innerHeight + 42)
+      .attr("text-anchor", "middle")
+      .attr("fill", "#475569")
+      .attr("font-size", 13)
+      .text("Time since T₀ (minutes)");
+
+    g.selectAll(".participant-label")
+      .data(participants)
+      .join("text")
+      .attr("class", "participant-label")
+      .attr("x", -16)
+      .attr("y", d => y(d))
+      .attr("text-anchor", "end")
+      .attr("dominant-baseline", "middle")
+      .text(d => d);
+
+    const line = d3.line()
+      .x(d => x(d.time))
+      .y(d => y(d.participant));
+
+    const participantSeries = participants.map(participant => ({
+      participant,
+      values: flattened.filter(d => d.participant === participant).sort((a, b) => a.time - b.time)
+    }));
+
+    g.selectAll(".connector")
+      .data(participantSeries)
+      .join("path")
+      .attr("class", "connector")
+      .attr("stroke", "#94a3b8")
+      .attr("d", d => line(d.values));
+
+    const tooltip = d3.select("#tooltip");
+
+    const showTooltip = (event, d) => {
+      tooltip
+        .classed("visible", true)
+        .html(`
+          <strong>${d.participant}</strong><br>
+          ${d.event}<br>
+          <strong>T+${d.time}</strong>
+        `)
+        .style("left", `${event.clientX + 14}px`)
+        .style("top", `${event.clientY + 14}px`);
+    };
+
+    const moveTooltip = (event) => {
+      tooltip
+        .style("left", `${event.clientX + 14}px`)
+        .style("top", `${event.clientY + 14}px`);
+    };
+
+    const hideTooltip = () => tooltip.classed("visible", false);
+
+    g.selectAll(".event-point")
+      .data(flattened)
+      .join("circle")
+      .attr("class", "event-point")
+      .attr("cx", d => x(d.time))
+      .attr("cy", d => y(d.participant))
+      .attr("r", 7)
+      .attr("fill", d => eventColor(d.event))
+      .on("mouseenter", showTooltip)
+      .on("mousemove", moveTooltip)
+      .on("mouseleave", hideTooltip);
+
+    // Smart label placement (above/below with collision avoidance per lane)
+    const participantEventMeta = new Map();
+    participants.forEach(participant => {
+      const values = flattened
+        .filter(d => d.participant === participant)
+        .sort((a, b) => a.time - b.time);
+      participantEventMeta.set(participant, {
+        firstKey: values.length ? `${values[0].event}__${values[0].time}` : null,
+        lastKey: values.length ? `${values[values.length - 1].event}__${values[values.length - 1].time}` : null
+      });
+    });
+
+    const laneLastLabelX = new Map();
+
+    g.selectAll(".event-label")
+      .data(flattened)
+      .join("text")
+      .attr("class", "event-label")
+      .attr("text-anchor", "middle")
+      .each(function(d) {
+        const currentX = x(d.time);
+        const lastX = laneLastLabelX.get(d.participant) ?? -Infinity;
+        const placeBelow = (currentX - lastX) < 80;
+        const yOffset = placeBelow ? 18 : -12;
+
+        const meta = participantEventMeta.get(d.participant);
+        const key = `${d.event}__${d.time}`;
+        const legendIndex = events.indexOf(d.event) + 1;
+        const labelText = (key === meta.firstKey || key === meta.lastKey) ? d.event : String(legendIndex);
+
+        d3.select(this)
+          .attr("x", currentX)
+          .attr("y", y(d.participant) + yOffset)
+          .text(labelText);
+
+        laneLastLabelX.set(d.participant, currentX);
+      });
+
+    const legend = d3.select("#legend");
+    const legendItems = legend.selectAll(".legend-item")
+      .data(events)
+      .join("div")
+      .attr("class", "legend-item");
+
+    legendItems.append("span")
+      .attr("class", "legend-swatch")
+      .style("background", d => eventColor(d));
+
+    legendItems.append("span")
+      .text((d, i) => `${i + 1}. ${d}`);
+  </script>
+</body>
+</html>

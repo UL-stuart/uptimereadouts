@@ -1,0 +1,81 @@
+datetime,player,channel,message
+2025-07-24 14:09:22,UptimeLabs,online-boutique-5145,Start lvl 29 [n/a - 0]
+2025-07-24 14:11:18,PLAYER,online-boutique-5145,Clicked undefined button
+2025-07-24 14:11:28,PLAYER,online-boutique-5145,Clicked org button
+2025-07-24 14:11:36,PLAYER,online-boutique-5145,Clicked undefined button
+2025-07-24 14:13:46,PLAYER,business-comms-5145,*Incident Number INC100070:* test sev1 [n/a - 0]
+2025-07-24 14:15:00,PLAYER,online-boutique-5145,Clicked Start button
+2025-07-24 14:15:02,Tinus,online-boutique-5145,"Welcome our new IM @Tolu Abraham-Brown, Happy to have you in the team. Hope you get comfortable with everyone [n/a - 0]"
+2025-07-24 14:15:02,UptimeLabs,online-boutique-5145,":alarm_clock: - You have 25 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders. [n/a - 0]"
+2025-07-24 14:15:07,Shay,online-boutique-5145,Welcome @Tolu Abraham-Brown [n/a - 0]
+2025-07-24 14:15:12,Daniel,online-boutique-5145,Nice to meet you @Tolu Abraham-Brown [n/a - 0]
+2025-07-24 14:15:22,Bob,online-boutique-5145,There are a few strange customer reports with the helpdesk [n/a - 0]
+2025-07-24 14:15:26,Bob,online-boutique-5145,"Apparently, the site is loading slowly [n/a - 0]"
+2025-07-24 14:15:30,Bob,online-boutique-5145,People are reporting that they can't make payments either [n/a - 0]
+2025-07-24 14:15:33,Bob,online-boutique-5145,customer_reports [n/a - 0]
+2025-07-24 14:15:37,Bob,online-boutique-5145,@Tolu Abraham-Brown Can you check this? [n/a - 0]
+2025-07-24 14:16:34,Shay,online-boutique-5145,Let’s check if this is affecting users directly — maybe Bob from Support has more context? [n/a - 0]
+2025-07-24 14:18:16,PLAYER,online-boutique-5145,The website is down and the platform team will have a look [n/a - 0]
+2025-07-24 14:18:43,UptimeLabs,online-boutique-5145,:bulb: Hint: Declare an incident. [n/a - 0]
+2025-07-24 14:19:28,UptimeLabs,online-boutique-5145,:star: Reproduces the incident [n/a - 0]
+2025-07-24 14:19:43,PLAYER,business-comms-5145,*Incident Number INC100044:* website is down sev1 [n/a - 0]
+2025-07-24 14:19:43,UptimeLabs,online-boutique-5145,:star: Incident record created [n/a - 0]
+2025-07-24 14:19:45,UptimeLabs,online-boutique-5145,:star: Send first comms in first 5 minutes [n/a - 0]
+2025-07-24 14:19:48,Bez,business-comms-5145,How many customers are affected? Are the reports coming in from all regions? [n/a - 0]
+2025-07-24 14:20:04,PLAYER,online-boutique-5145,Bob what is the severity of the incident? [n/a - 0]
+2025-07-24 14:20:10,UptimeLabs,online-boutique-5145,:star: Asking questions to validate impact of the problem [n/a - 0]
+2025-07-24 14:20:14,Bez,business-comms-5145,What is the impact? [n/a - 0]
+2025-07-24 14:20:53,Bob,online-boutique-5145,Let me gather the information for you [n/a - 0]
+2025-07-24 14:20:58,Bob,online-boutique-5145,There are more than 300 customer reports till now [n/a - 0]
+2025-07-24 14:21:05,Bob,online-boutique-5145,"Calls are from every region, likely to be Global [n/a - 0]"
+2025-07-24 14:21:09,PLAYER,online-boutique-5145,Tanya can you please help look into this issue [n/a - 0]
+2025-07-24 14:21:11,Bob,online-boutique-5145,There's a bunch of messages coming in. A few people saying they can't do anything on the site [n/a - 0]
+2025-07-24 14:21:16,Bob,online-boutique-5145,Let me know if you need more information [n/a - 0]
+2025-07-24 14:21:32,Tanya,online-boutique-5145,There are no alerts on the Infrastructure. I did see a few errors on the frontend apps [n/a - 0]
+2025-07-24 14:21:38,Tanya,online-boutique-5145,This looks to me like an issue in the frontend pod [n/a - 0]
+2025-07-24 14:21:48,Daniel,online-boutique-5145,Below are the changes implemented this morning [n/a - 0]
+2025-07-24 14:21:53,Daniel,online-boutique-5145,deployments [n/a - 0]
+2025-07-24 14:21:56,Daniel,online-boutique-5145,"If you want more information, check out Incident Manager dashboard for more details: <https://grafana.prod.uptimelabs.io/d/aOf5yan4z/incident-management> [n/a - 0]"
+2025-07-24 14:22:17,PLAYER,online-boutique-5145,"Shay looks like a change was made on the frontend, can you look into this issue [n/a - 0]"
+2025-07-24 14:22:24,UptimeLabs,online-boutique-5145,:star: Check changes done to the platform [n/a - 0]
+2025-07-24 14:22:58,Shay,online-boutique-5145,I will check check my changes [n/a - 0]
+2025-07-24 14:23:00,Daniel,online-boutique-5145,I am able to replicate the issue. Checking the logs now [n/a - 0]
+2025-07-24 14:23:03,Daniel,online-boutique-5145,"I see a lot of errors, most of them are context initialisation errors  [n/a - 0]"
+2025-07-24 14:23:04,PLAYER,business-comms-5145,Over 300 customers affected and this is a global issue [n/a - 0]
+2025-07-24 14:23:07,Daniel,online-boutique-5145,Logs [n/a - 0]
+2025-07-24 14:23:13,PLAYER,business-comms-5145,It is sev1 [n/a - 0]
+2025-07-24 14:23:13,Bez,business-comms-5145,"I have a stake holders meet in next 10 minutes, @Tolu Abraham-Brown do you think this can be resolved by then?  [n/a - 0]"
+2025-07-24 14:23:36,PLAYER,business-comms-5145,we will look into resoving asap [n/a - 0]
+2025-07-24 14:24:01,Daniel,online-boutique-5145,"I have verified Payments change (CHG89347), there are no errors and the service is up and healthy [n/a - 0]"
+2025-07-24 14:24:06,Daniel,online-boutique-5145,"Checkout service change(CHG89350) is in UAT, so not affecting PROD. But I see a few errors from Frontend pods [n/a - 0]"
+2025-07-24 14:24:12,Daniel,online-boutique-5145,All the errors started right after the change (CHG89349) on the Frontend [n/a - 0]
+2025-07-24 14:24:15,Shay,online-boutique-5145,My change is safe to rollback and has no dependenices [n/a - 0]
+2025-07-24 14:24:17,Bob,online-boutique-5145,The customer complaints are rising. @Tolu Abraham-Brown Do we have an ETA for resolution? [n/a - 0]
+2025-07-24 14:24:19,Bez,business-comms-5145,What is the latest on this? [n/a - 0]
+2025-07-24 14:24:21,PLAYER,online-boutique-5145,Can we fix the frontend pods [n/a - 0]
+2025-07-24 14:24:23,Daniel,online-boutique-5145,A Frontend change caused by change CHG89349 has brought down the Frontend pods [n/a - 0]
+2025-07-24 14:24:29,Shay,online-boutique-5145,But this functionally worked when I tested [n/a - 0]
+2025-07-24 14:24:34,Daniel,online-boutique-5145,"Even if it worked in your test environment, something's behaving differently in prod, maybe a config mismatch or unhandled edge case [n/a - 0]"
+2025-07-24 14:24:36,PLAYER,online-boutique-5145,Shay please rollback the changes [n/a - 0]
+2025-07-24 14:24:37,Bez,business-comms-5145,Can you give a quick update on the status? [n/a - 0]
+2025-07-24 14:24:41,UptimeLabs,online-boutique-5145,:star: Restoration over root cause analysis [n/a - 0]
+2025-07-24 14:25:10,PLAYER,business-comms-5145,We are rolling backj previous changes [n/a - 0]
+2025-07-24 14:25:28,Shay,online-boutique-5145,"Sorry, I've never done a rollback in PROD before, can someone help me with the steps? [n/a - 0]"
+2025-07-24 14:25:33,Daniel,online-boutique-5145,"I will help you, @Shay. Rolling back now [n/a - 0]"
+2025-07-24 14:25:44,PLAYER,online-boutique-5145,Daniel can you please help [n/a - 0]
+2025-07-24 14:25:51,Daniel,online-boutique-5145,I have rollbacked Frontend:version to 10.1.0 to more stable version. Can somebody verify? [n/a - 0]
+2025-07-24 14:25:54,UptimeLabs,online-boutique-5145,"To 'verify' that the resolution has worked and to close the incident you must: 
+--Validate the fix yourself or with the team:white_check_mark: 
+--Cross check resolution with Customer Support:white_check_mark: 
+--Confirm resolution in the 'Business-comms' channel:white_check_mark:  [n/a - 0]"
+2025-07-24 14:26:09,Daniel,online-boutique-5145,It's definitely working again! [n/a - 0]
+2025-07-24 14:26:09,PLAYER,online-boutique-5145,The website is back up and running [n/a - 0]
+2025-07-24 14:26:14,Shay,online-boutique-5145,Wow that was intense! [n/a - 0]
+2025-07-24 14:26:16,Bez,business-comms-5145,Thanks! for resolving it quickly [n/a - 0]
+2025-07-24 14:26:19,Hamed,online-boutique-5145,Good job guys [n/a - 0]
+2025-07-24 14:26:22,PLAYER,business-comms-5145,The website is up and running [n/a - 0]
+2025-07-24 14:26:23,Tinus,online-boutique-5145,Yes well done! that could have gone much worse so props to everyone [n/a - 0]
+2025-07-24 14:26:27,Tinus,online-boutique-5145,We will have a Post-Incident Review (PIR) to understand what happened [n/a - 0]
+2025-07-24 14:26:37,UptimeLabs,online-boutique-5145,Start retro and feedback [n/a - 0]
+2025-07-24 14:27:30,PLAYER,online-boutique-5145,Clicked Start_feedback button
+2025-07-24 14:28:39,UptimeLabs,online-boutique-5145,Submission successful [n/a - 0]

@@ -1,0 +1,122 @@
+datetime,player,channel,message
+2025-08-19 16:02:59,tinus,online-boutique-5439,"Hi team, let's have a mood check send an emoji to describe your mood"
+2025-08-19 16:03:03,tinus,online-boutique-5439,"I'll go first, :thumbsup:"
+2025-08-19 16:03:09,tanya,online-boutique-5439,:thumbsup:
+2025-08-19 16:03:11,tinus,online-boutique-5439,I'm excited about showing off all your hard work at todays stakeholder meeting
+2025-08-19 16:03:14,daniel,online-boutique-5439,":skull: knackered, had a few too many late nights this week"
+2025-08-19 16:03:17,shay,online-boutique-5439,:rainbow:
+2025-08-19 16:03:20,hamed,online-boutique-5439,living the dream :smile:
+2025-08-19 16:03:24,bez,online-boutique-5439,:smirk: im excited to see the show too
+2025-08-19 16:03:26,tinus,online-boutique-5439,shouldn't you be prepping for the meeting 
+2025-08-19 16:03:29,bez,online-boutique-5439,:sweat_smile: i am indeed I'll leave you lot to it
+2025-08-19 16:03:31,shay,online-boutique-5439,hang in there @daniel its gonne be the weekend sooner or later :joy:
+2025-08-19 16:03:34,tinus,online-boutique-5439,I should get on with my prep too have a good day team
+2025-08-19 16:03:36,daniel,online-boutique-5439,@shay strict diet of energy drink for me today lol
+2025-08-19 16:03:38,daniel,online-boutique-5439,hope the presentation goes well @tinus
+2025-08-19 16:03:41,tanya,online-boutique-5439,:raised_hands:
+2025-08-19 16:03:56,UptimeLabs,online-boutique-5439,Level 7 start button
+2025-08-19 16:08:23,PLAYER,online-boutique-5439,Clicked Start button
+2025-08-19 16:08:24,UptimeLabs,online-boutique-5439,":alarm_clock: - You have 20 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-08-19 16:08:27,tinus,online-boutique-5439,"Hey team, I'm texting from the board room - kinda embarrassing but in my demo to the board, I tried to add a pair of Aviator sunglasses to the shopping cart and I got a ?http 500?"
+2025-08-19 16:08:29,tinus,online-boutique-5439,"I've bought some time but need this be able to do this demo if we can lets get this sorted in the next 20 minutes.
+"
+2025-08-19 16:08:32,tinus,online-boutique-5439,500 screenshot
+2025-08-19 16:08:34,tanya,online-boutique-5439,"uh oh, those Aviators are top sellers due to the new Top Gun movie...It's size up the issue time Luis Tineo"
+2025-08-19 16:08:37,shay,online-boutique-5439,Come on this can't be happening!
+2025-08-19 16:08:39,tinus,online-boutique-5439,"I'm in this meeting so, wont be able to help but I trust that you all can get this fixed asap, just @ me if you need anything"
+2025-08-19 16:08:42,shay,online-boutique-5439,ok looking into this now
+2025-08-19 16:09:14,Shay,online-boutique-5439,I can access the website
+2025-08-19 16:09:51,PLAYER,online-boutique-5439,"Shay, Daniel, Tanya I see changes from you in the dash. Please confirm if  those are not related to this issue"
+2025-08-19 16:09:58,UptimeLabs,online-boutique-5439,:star: Reviewed changes
+2025-08-19 16:10:05,Tinus,online-boutique-5439,I'm trying to stall for time - any solution would be appreciated
+2025-08-19 16:10:15,Daniel,online-boutique-5439,I'll take look
+2025-08-19 16:10:23,Tanya,online-boutique-5439,I'll have a look too
+2025-08-19 16:10:44,Daniel,online-boutique-5439,Do we have an incident - I don't see a ticket
+2025-08-19 16:10:53,PLAYER,online-boutique-5439,How many customers are impacted?
+2025-08-19 16:10:59,UptimeLabs,online-boutique-5439,:star: Asking questions to validate impact of the problem
+2025-08-19 16:11:08,PLAYER,online-boutique-5439,Clicked org button
+2025-08-19 16:11:21,Bob,online-boutique-5439,I can help with that
+2025-08-19 16:11:27,Bob,online-boutique-5439,I'll check reports now
+2025-08-19 16:12:04,Tanya,online-boutique-5439,"I have an adservice change, I can see the ads on the site, I don't think it's related to Tinus's issue"
+2025-08-19 16:12:07,PLAYER,online-boutique-5439,"I can add the glasses and check out,"
+2025-08-19 16:12:11,Bob,online-boutique-5439,Nothing to report here
+2025-08-19 16:12:15,UptimeLabs,online-boutique-5439,:star: Attempt to replicate the issue
+2025-08-19 16:12:46,PLAYER,online-boutique-5439,"Tanya, can you safely revert your change just in case?"
+2025-08-19 16:12:52,UptimeLabs,online-boutique-5439,:star: Restoration over root cause analysis
+2025-08-19 16:12:53,Daniel,online-boutique-5439,My change to payment service is looking healthy - order confirmations are up
+2025-08-19 16:13:02,PLAYER,business-comms-5439,sev 1
+2025-08-19 16:13:03,PLAYER,business-comms-5439,*Incident Number INC100012:* sev 1
+2025-08-19 16:13:03,UptimeLabs,online-boutique-5439,:star: Incident record created
+2025-08-19 16:13:04,UptimeLabs,online-boutique-5439,:star: Send first comms in first 5 minutes
+2025-08-19 16:13:06,Tanya,online-boutique-5439,Are you unable to see the ads on the site?
+2025-08-19 16:13:09,UptimeLabs,online-boutique-5439,:star: Formally assign criticality level to the incident
+2025-08-19 16:13:29,Tanya,online-boutique-5439,I don't see why we should rollback changes if there's no problem
+2025-08-19 16:13:39,PLAYER,online-boutique-5439,Tanya dont see the adds
+2025-08-19 16:13:43,Bez,business-comms-5439,SEV 1!? What's going on?
+2025-08-19 16:14:14,Tanya,online-boutique-5439,When you select a product a pink banner should appear at the bottom of the site
+2025-08-19 16:14:57,PLAYER,online-boutique-5439,"I cannot reproduce the issue, anyone else can?"
+2025-08-19 16:14:59,Tanya,online-boutique-5439,Also I think we need some clarity on the issue here
+2025-08-19 16:15:13,Tanya,online-boutique-5439,otherwise I'll return working on my critical path feature
+2025-08-19 16:15:14,PLAYER,online-boutique-5439,"not getting any 500 errors, what else can we check from our side?"
+2025-08-19 16:15:43,Tinus,online-boutique-5439,"Any luck guys, I can't stall forever"
+2025-08-19 16:15:51,Daniel,online-boutique-5439,What do we know so far?
+2025-08-19 16:16:01,UptimeLabs,online-boutique-5439,:bulb: Hint: keep the business informed regularly
+2025-08-19 16:16:18,PLAYER,online-boutique-5439,Clicked org button
+2025-08-19 16:16:42,Bez,business-comms-5439,Will this impact Tinus's demo?
+2025-08-19 16:16:57,PLAYER,business-comms-5439,"We are checking an issue reported by Tinus, but we cannot reproduce the issue he reported"
+2025-08-19 16:17:01,PLAYER,business-comms-5439,we are checking
+2025-08-19 16:17:18,Bez,business-comms-5439,Have we any reports from customers?
+2025-08-19 16:17:48,PLAYER,online-boutique-5439,"Hamed S Any help you can provide, all looks good from my end, but Tinus can add a  product to his cart, Sunglasses"
+2025-08-19 16:18:10,Hamed,online-boutique-5439,"Hi I'm online now, Is this a sev 1?"
+2025-08-19 16:18:11,PLAYER,business-comms-5439,No customer reports
+2025-08-19 16:18:38,Hamed,online-boutique-5439,I just need some clarity on that assessment and a quick brief on what you know so far
+2025-08-19 16:18:40,PLAYER,online-boutique-5439,Not necessarily I can downgrade if we in fact see the impact is less
+2025-08-19 16:18:51,Hamed,online-boutique-5439,Have users reported issues?
+2025-08-19 16:19:47,PLAYER,business-comms-5439,I'm downgrading severity to sev 3
+2025-08-19 16:20:12,PLAYER,business-comms-5439,"no customer reports, no issue from our side, still working to get Tinus up and running ASAP"
+2025-08-19 16:20:16,Hamed,online-boutique-5439,"it sounds like this might be a single user problem, do you agree?"
+2025-08-19 16:20:36,PLAYER,online-boutique-5439,"I tend to agree, how can we help Tinus?"
+2025-08-19 16:20:40,Bez,business-comms-5439,Okay at least it's not customer impacting - we need to get him back in action soon though
+2025-08-19 16:20:46,PLAYER,online-boutique-5439,restart his PC? chec his network?
+2025-08-19 16:20:54,PLAYER,business-comms-5439,On it
+2025-08-19 16:21:10,Hamed,online-boutique-5439,"Let's start from what we know, He can't add sunglasses and he shared the error he received"
+2025-08-19 16:21:19,PLAYER,online-boutique-5439,yes 500 error
+2025-08-19 16:21:27,UptimeLabs,online-boutique-5439,:star: Reproduces the incident
+2025-08-19 16:21:31,Hamed,online-boutique-5439,Have you asked the team to cross reference the product ID in the catalogue?
+2025-08-19 16:21:49,PLAYER,online-boutique-5439,"No, what will that show?"
+2025-08-19 16:22:13,Hamed,online-boutique-5439,"Just to make sure everything checks out, i remember Tinus mentioned something about testing a while ago"
+2025-08-19 16:22:32,Shay,online-boutique-5439,I was able to add sunglasses and check out!
+2025-08-19 16:22:33,PLAYER,online-boutique-5439,"Team, can you cross-reference Tinus product number the product ID in the catalog"
+2025-08-19 16:22:39,Daniel,online-boutique-5439,I'll assist
+2025-08-19 16:22:54,PLAYER,online-boutique-5439,Thanks Dan
+2025-08-19 16:23:19,PLAYER,business-comms-5439,This might be a wrong product number issue
+2025-08-19 16:23:20,Daniel,online-boutique-5439,"God spot Hamed, the product ID in error message isn't the same as the product ID for this item"
+2025-08-19 16:23:27,Daniel,online-boutique-5439,It looks like a testing ID
+2025-08-19 16:24:08,PLAYER,online-boutique-5439,"Tinus, the product number you are adding to your cart is not the one from the catalog, but a test ID"
+2025-08-19 16:24:25,UptimeLabs,online-boutique-5439,:alarm_clock: - You have less than 4 minutes. You can type `/help` if you need any reminders.
+2025-08-19 16:24:27,PLAYER,online-boutique-5439,perhaps you are using a wrong link to the page?
+2025-08-19 16:24:37,Tinus,online-boutique-5439,"Oh you're right, I was working on a new feature locally before this demo..."
+2025-08-19 16:24:46,Tinus,online-boutique-5439,<https://hipster-v4q2r4ymboz65w6hy8mq1ub.proxy.prod.uptimelabs.io/product/66VCHSJNUP>
+2025-08-19 16:24:55,Tinus,online-boutique-5439,This is my URL
+2025-08-19 16:25:05,PLAYER,online-boutique-5439,Tinus <https://hipster.prod.uptimelabs.io/product/OLJCESPC7Z> this is the likn to the right product
+2025-08-19 16:25:22,PLAYER,online-boutique-5439,please check and let us know
+2025-08-19 16:25:41,Tinus,online-boutique-5439,It doesn't work when I use that link either
+2025-08-19 16:26:10,PLAYER,online-boutique-5439,"wow that is weird, Hamed any ideas?"
+2025-08-19 16:26:15,PLAYER,online-boutique-5439,you are the man1
+2025-08-19 16:26:25,UptimeLabs,online-boutique-5439,:alarm_clock: - You have less than 2 minutes. You can type `/help` if you need any reminders.
+2025-08-19 16:26:36,Hamed,online-boutique-5439,"It could be a simple cache issue, has he cleared it since testing?"
+2025-08-19 16:26:53,Hamed,online-boutique-5439,Or have we asked him to?
+2025-08-19 16:26:56,PLAYER,online-boutique-5439,"Tinus, can you clear your cache?"
+2025-08-19 16:27:04,Tinus,online-boutique-5439,Lets see...
+2025-08-19 16:27:16,tinus,online-boutique-5439,Damn! thats it
+2025-08-19 16:27:18,tinus,online-boutique-5439,"Great Ive got to do my presentation now, thanks for figuring this out so quickly. @daniel @shay can you look in to a cache busting solution?"
+2025-08-19 16:27:20,shay,online-boutique-5439,it was the cache! sure we can do that
+2025-08-19 16:27:22,daniel,online-boutique-5439,"no worries boss, at least its not a significat issue"
+2025-08-19 16:27:23,daniel,online-boutique-5439,good luck with the presentation!
+2025-08-19 16:27:24,tanya,online-boutique-5439,yes good luck @tinus
+2025-08-19 16:27:26,shay,online-boutique-5439,good luck @tinus!
+2025-08-19 16:27:38,UptimeLabs,online-boutique-5439,Start retro and feedback
+2025-08-19 16:27:48,PLAYER,online-boutique-5439,"Nice! Hamed S you saved the day buddy, the donuts are on me!"
+2025-08-19 16:27:54,PLAYER,online-boutique-5439,Clicked Start_feedback button
+2025-08-19 16:28:00,Hamed,online-boutique-5439,Can't wait
+2025-08-19 16:29:28,UptimeLabs,online-boutique-5439,Submission successful

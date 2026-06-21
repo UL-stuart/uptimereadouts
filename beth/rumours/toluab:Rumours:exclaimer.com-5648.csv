@@ -1,0 +1,90 @@
+datetime,player,channel,message
+2025-09-04 14:02:33,tinus,online-boutique-5648,"Hi team, let's have a mood check send an emoji to describe your mood"
+2025-09-04 14:02:37,tinus,online-boutique-5648,"I'll go first, :thumbsup:"
+2025-09-04 14:02:43,tanya,online-boutique-5648,:thumbsup:
+2025-09-04 14:02:45,tinus,online-boutique-5648,I'm excited about showing off all your hard work at todays stakeholder meeting
+2025-09-04 14:02:48,daniel,online-boutique-5648,":skull: knackered, had a few too many late nights this week"
+2025-09-04 14:02:51,shay,online-boutique-5648,:rainbow:
+2025-09-04 14:02:54,hamed,online-boutique-5648,living the dream :smile:
+2025-09-04 14:02:58,bez,online-boutique-5648,:smirk: im excited to see the show too
+2025-09-04 14:03:00,tinus,online-boutique-5648,shouldn't you be prepping for the meeting 
+2025-09-04 14:03:03,bez,online-boutique-5648,:sweat_smile: i am indeed I'll leave you lot to it
+2025-09-04 14:03:05,shay,online-boutique-5648,hang in there @daniel its gonne be the weekend sooner or later :joy:
+2025-09-04 14:03:08,tinus,online-boutique-5648,I should get on with my prep too have a good day team
+2025-09-04 14:03:09,daniel,online-boutique-5648,@shay strict diet of energy drink for me today lol
+2025-09-04 14:03:12,daniel,online-boutique-5648,hope the presentation goes well @tinus
+2025-09-04 14:03:14,tanya,online-boutique-5648,:raised_hands:
+2025-09-04 14:03:29,UptimeLabs,online-boutique-5648,Level 7 start button
+2025-09-04 14:04:17,PLAYER,online-boutique-5648,Clicked Start button
+2025-09-04 14:04:18,UptimeLabs,online-boutique-5648,":alarm_clock: - You have 20 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-09-04 14:04:21,tinus,online-boutique-5648,"Hey team, I'm texting from the board room - kinda embarrassing but in my demo to the board, I tried to add a pair of Aviator sunglasses to the shopping cart and I got a ?http 500?"
+2025-09-04 14:04:23,tinus,online-boutique-5648,"I've bought some time but need this be able to do this demo if we can lets get this sorted in the next 20 minutes.
+"
+2025-09-04 14:04:28,tanya,online-boutique-5648,"uh oh, those Aviators are top sellers due to the new Top Gun movie...It's size up the issue time Tolu Abraham-Brown"
+2025-09-04 14:04:32,shay,online-boutique-5648,Come on this can't be happening!
+2025-09-04 14:04:33,tinus,online-boutique-5648,"I'm in this meeting so, wont be able to help but I trust that you all can get this fixed asap, just @ me if you need anything"
+2025-09-04 14:04:36,shay,online-boutique-5648,ok looking into this now
+2025-09-04 14:04:40,PLAYER,online-boutique-5648,Having a look now
+2025-09-04 14:05:38,PLAYER,online-boutique-5648,It looks to be working for me Shay have you found any issue?
+2025-09-04 14:05:45,Shay,online-boutique-5648,I was also able to place an order
+2025-09-04 14:05:46,UptimeLabs,online-boutique-5648,:star: Attempt to replicate the issue
+2025-09-04 14:06:06,Shay,online-boutique-5648,perhaps other users have the issue
+2025-09-04 14:06:16,PLAYER,online-boutique-5648,Bob are customers having issues with this?
+2025-09-04 14:06:24,Bob,online-boutique-5648,"Hey team, checking reports now"
+2025-09-04 14:06:27,UptimeLabs,online-boutique-5648,:star: Asking questions to validate impact of the problem
+2025-09-04 14:06:53,Bob,online-boutique-5648,"No issue reported, so far, everything looks smooth"
+2025-09-04 14:07:07,Shay,online-boutique-5648,could it be a change-related issue?
+2025-09-04 14:07:23,PLAYER,online-boutique-5648,I will have a look at the logs Shay
+2025-09-04 14:07:30,Shay,online-boutique-5648,btw here is the list of all changes made today <https://uptime-labs.atlassian.net/wiki/spaces/ULPUBLIC/pages/1113292847/Rumours+-+Change+Request+Logs>
+2025-09-04 14:07:41,Shay,online-boutique-5648,I will do the same
+2025-09-04 14:07:57,UptimeLabs,online-boutique-5648,:bulb: Declare an incident.
+2025-09-04 14:08:45,PLAYER,business-comms-5648,HTTP 500 error while trying to add sunglasses to cart Sev3
+2025-09-04 14:08:46,PLAYER,business-comms-5648,*Incident Number INC100022:* HTTP 500 error while trying to add sunglasses to cart Sev3
+2025-09-04 14:08:46,UptimeLabs,online-boutique-5648,:star: Incident record created
+2025-09-04 14:08:48,UptimeLabs,online-boutique-5648,:star: Send first comms in first 5 minutes
+2025-09-04 14:08:52,UptimeLabs,online-boutique-5648,:star: Formally assign criticality level to the incident
+2025-09-04 14:09:37,PLAYER,business-comms-5648,Tinus is getting a 500 error when he is trying to add aviator sunglasses to his cart. We are having a look at sorting this issue out now
+2025-09-04 14:09:39,Shay,online-boutique-5648,"Logs look healthy, and all the services work as intended"
+2025-09-04 14:09:40,Tinus,online-boutique-5648,"Any luck guys? I will try to stall as much as I can, but I don't have forever"
+2025-09-04 14:09:44,UptimeLabs,online-boutique-5648,:bulb: Form an effective investigation team
+2025-09-04 14:09:57,PLAYER,online-boutique-5648,Shay Tanya can we have a look
+2025-09-04 14:10:08,Bez,business-comms-5648,How many users is this affecting?
+2025-09-04 14:10:20,Daniel,online-boutique-5648,Checking services
+2025-09-04 14:10:28,Tanya,online-boutique-5648,I will check th infra
+2025-09-04 14:10:41,PLAYER,business-comms-5648,No external users according to bob
+2025-09-04 14:10:55,Daniel,online-boutique-5648,"As shay said everything looks healthy, no errors no alerts"
+2025-09-04 14:10:56,PLAYER,online-boutique-5648,Tinus we are investigating this now
+2025-09-04 14:11:13,PLAYER,online-boutique-5648,Tinus can you refresh your screen and try again
+2025-09-04 14:11:15,Tanya,online-boutique-5648,"No issues with infra, network also looks good"
+2025-09-04 14:11:31,Tinus,online-boutique-5648,Issue still there
+2025-09-04 14:11:48,Daniel,online-boutique-5648,So what do we know? is this affecting only one user or set?
+2025-09-04 14:11:55,PLAYER,online-boutique-5648,Can you clear your browser cache Tinus
+2025-09-04 14:12:02,PLAYER,online-boutique-5648,Daniel just Tinus
+2025-09-04 14:12:32,Tinus,online-boutique-5648,I will try that in a minute but I'm open to other suggestions as well
+2025-09-04 14:12:57,Bez,business-comms-5648,"Tinus meeting is very important, we need to get this fixed asap"
+2025-09-04 14:13:15,Daniel,online-boutique-5648,"Good shout, it could be a cache or local issue, pehaps with pc"
+2025-09-04 14:13:27,PLAYER,online-boutique-5648,Shay Daniel do we know of anything else that could be causing tinus issue?
+2025-09-04 14:13:53,Shay,online-boutique-5648,Could be permissions but very unlikely
+2025-09-04 14:14:11,PLAYER,business-comms-5648,We are working on this
+2025-09-04 14:14:20,Tinus,online-boutique-5648,"Clearing cache now, fingers crossed"
+2025-09-04 14:14:26,PLAYER,online-boutique-5648,Shay can we check tinus [ermissions
+2025-09-04 14:14:31,Shay,online-boutique-5648,@tanya
+2025-09-04 14:14:34,Tanya,online-boutique-5648,I will check
+2025-09-04 14:15:00,Tanya,online-boutique-5648,His permissions look fine
+2025-09-04 14:15:08,tinus,online-boutique-5648,Damn! thats it
+2025-09-04 14:15:10,tinus,online-boutique-5648,"Great Ive got to do my presentation now, thanks for figuring this out so quickly. @daniel @shay can you look in to a cache busting solution?"
+2025-09-04 14:15:12,shay,online-boutique-5648,it was the cache! sure we can do that
+2025-09-04 14:15:14,daniel,online-boutique-5648,"no worries boss, at least its not a significat issue"
+2025-09-04 14:15:15,daniel,online-boutique-5648,good luck with the presentation!
+2025-09-04 14:15:16,tanya,online-boutique-5648,yes good luck @tinus
+2025-09-04 14:15:18,shay,online-boutique-5648,good luck @tinus!
+2025-09-04 14:15:30,UptimeLabs,online-boutique-5648,Start retro and feedback
+2025-09-04 14:15:31,PLAYER,online-boutique-5648,good luck Tinus
+2025-09-04 14:15:33,PLAYER,online-boutique-5648,Clicked Start_feedback button
+2025-09-04 14:15:46,UptimeLabs,online-boutique-5648,:bulb: Confirm resolution with the business
+2025-09-04 14:16:01,PLAYER,online-boutique-5648,This issue is now sorted
+2025-09-04 14:16:09,PLAYER,business-comms-5648,This issue is now sorted
+2025-09-04 14:16:15,PLAYER,online-boutique-5648,Clicked Start_feedback button
+2025-09-04 14:16:23,UptimeLabs,online-boutique-5648,:star: Confirm resolution with the business
+2025-09-04 14:16:30,UptimeLabs,online-boutique-5648,:star: Validate the fix
+2025-09-04 14:17:22,UptimeLabs,online-boutique-5648,Submission successful

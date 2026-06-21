@@ -1,0 +1,175 @@
+datetime,player,channel,message
+2026-03-05 11:38:39,bez,online-boutique-7888,Hey team!:rocket: Can you believe it's been 8 fantastic years for Online Boutique?
+2026-03-05 11:38:43,bez,online-boutique-7888,"Before we dive into anniversary celebrations, let's give a warm welcome to Maya, our new Security Analyst. She's got 5 years of cybersecurity expertise under her belt! :clap: "
+2026-03-05 11:38:48,maya,online-boutique-7888,"Hi everyone! :raised_hand_with_fingers_splayed: Thrilled to be here, especially on such a special occasion. Let's make Online Boutique even successful and secure together!"
+2026-03-05 11:38:51,tinus,online-boutique-7888,"Welcome, Maya! Your experience will elevate our cybersecurity efforts."
+2026-03-05 11:38:55,tanya,online-boutique-7888,"Excited to have you, Maya! Bez has been very excited to have you on the team."
+2026-03-05 11:38:58,daniel,online-boutique-7888,"Impressive! Eager to learn from you, Maya."
+2026-03-05 11:39:02,shay,online-boutique-7888,":+1: Welcome Maya, pleasure meeting you."
+2026-03-05 11:39:05,bob,online-boutique-7888,Hi Maya! Your experience is top-notch. Cheers to you and to Online Boutique's 8-year anniversary! :partying_face: :tada:
+2026-03-05 11:39:08,maya,online-boutique-7888,Thanks for the warm welcome! Excited for the celebration and our anniversary party.
+2026-03-05 11:39:18,uptimelabs,online-boutique-7888,"Welcome to The Switch, the responsibility is on you to size up the problem.
+
+ *Access game links by pressing the Uptime Labs Logo in the top right of the screen*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin"
+2026-03-05 11:40:39,bez,online-boutique-7888,We are all so glad you have joined us Maya
+2026-03-05 11:40:41,tinus,online-boutique-7888,"Hold on, team. Quick check-in. Is anyone else experiencing internet problems or slow connectivity?"
+2026-03-05 11:40:44,shay,online-boutique-7888,"Internet's definitely sluggish, was loading up github and it took ages to load"
+2026-03-05 11:40:47,bez,online-boutique-7888,Perhaps it could be due to the increase of sales we have been having with this anniversary sale?
+2026-03-05 11:40:49,hamed,online-boutique-7888,"Hey team, we've seen some weird traffic from our data centre network in the last couple of days, it's been mostly minor but never as bad compared to now although"
+2026-03-05 11:40:53,tanya,online-boutique-7888,Hamed and I will have been monitoring outbound traffic. Checking for anomalies again.
+2026-03-05 11:41:00,daniel,online-boutique-7888,I will try to place an order and check the platform.
+2026-03-05 11:41:10,shay,online-boutique-7888,Just ran a test on my internet speed.
+2026-03-05 11:41:13,shay,online-boutique-7888,
+2026-03-05 11:41:47,PLAYER,online-boutique-7888,"Hey Guys, That seems very low"
+2026-03-05 11:42:01,shay,online-boutique-7888,Can't access anything at the moment. Everything's taking too long to load
+2026-03-05 11:42:10,PLAYER,online-boutique-7888,@daniel  Do you see a ny ossues while trying to place the order ?
+2026-03-05 11:42:13,uptimelabs,online-boutique-7888,:star: Reproduces the incident
+2026-03-05 11:42:19,daniel,online-boutique-7888,"I was able to place an order, anyone else?"
+2026-03-05 11:42:43,daniel,online-boutique-7888,Not experiencing any issues from my side
+2026-03-05 11:43:34,PLAYER,online-boutique-7888,\Create an incident - Network Degradation 
+2026-03-05 11:43:34,uptimelabs,online-boutique-7888,/incident descr sev
+2026-03-05 11:44:15,shay,online-boutique-7888,Could be related to our anniversary sale?
+2026-03-05 11:44:30,PLAYER,online-boutique-7888,"Hey @tanya Are you seeing anything from the logs, seems we have slow network "
+2026-03-05 11:44:43,bez,business-comms-7888,Seen a ticket popping up. Is this affecting our sales?
+2026-03-05 11:44:50,PLAYER,online-boutique-7888,Hope we are not seeing any issues with sales 
+2026-03-05 11:44:56,PLAYER,online-boutique-7888,someone please confirm 
+2026-03-05 11:44:57,tanya,online-boutique-7888,Checking from my end
+2026-03-05 11:45:22,tanya,online-boutique-7888,Experiencing some minor connection issues myself. I will come back to you in a few
+2026-03-05 11:45:33,bob,online-boutique-7888,Checking reports
+2026-03-05 11:45:34,PLAYER,online-boutique-7888,"ALso any update on this what posted by Hameed "" we've seen some weird traffic from our data centre network"" ? @tanya "
+2026-03-05 11:45:37,uptimelabs,online-boutique-7888,:star: Manage actions and timings
+2026-03-05 11:45:53,shay,online-boutique-7888,Perhaps a change related issue?
+2026-03-05 11:46:03,bob,online-boutique-7888,Reports from as far back as two weeks mention slow site performance and timeouts
+2026-03-05 11:46:07,PLAYER,business-comms-7888,"Nothing major that have been reported, except afew netwoek issues which identified internally. "
+2026-03-05 11:46:12,PLAYER,business-comms-7888,Checking for further insight s
+2026-03-05 11:46:12,uptimelabs,online-boutique-7888,:star: Qualify the problem
+2026-03-05 11:46:13,bob,online-boutique-7888,"Some customers are placing orders without issues, while others report long load times"
+2026-03-05 11:46:22,bob,online-boutique-7888,Looks like this is also affecting customers
+2026-03-05 11:46:44,tanya,online-boutique-7888,Noticing a spike in outbound connections. The IP range affected is the same as our frontend and payments.
+2026-03-05 11:46:51,PLAYER,business-comms-7888,Just recevied a few reports that customers facing slowness while placing the orders 
+2026-03-05 11:46:55,uptimelabs,online-boutique-7888,:star: Formally assign criticality level to the incident
+2026-03-05 11:47:18,PLAYER,online-boutique-7888,upgrade the INC priority to Sev2 as its impacted the order placing 
+2026-03-05 11:47:21,shay,online-boutique-7888,"We made a few changes to the site, just gonna share them here just in case
+https://uptime-labs.atlassian.net/wiki/external/NGRkNTNhZDVjZDUyNDU5NDk2Yjg3NzcxMTE1YjkxOTA"
+2026-03-05 11:47:41,PLAYER,online-boutique-7888,@tanya  Can we check if anything suspecious from those inbound IP range ?
+2026-03-05 11:47:47,daniel,online-boutique-7888,"It's strange that it's spiking outbound, not inbound"
+2026-03-05 11:48:15,tanya,online-boutique-7888,"That's coming from our services, but that is strange"
+2026-03-05 11:48:49,bez,business-comms-7888,Do we know if this is affecting all markets or just a subsection?
+2026-03-05 11:49:03,PLAYER,online-boutique-7888,Do we know what are those services creating spike ?
+2026-03-05 11:49:07,uptimelabs,online-boutique-7888,:star: Asking questions to validate impact of the problem
+2026-03-05 11:49:15,PLAYER,online-boutique-7888,@bob  Do we know since when the issues observed?
+2026-03-05 11:49:29,tanya,online-boutique-7888,Our frontend and payments
+2026-03-05 11:49:36,PLAYER,business-comms-7888,Checking on that 
+2026-03-05 11:49:54,bob,online-boutique-7888,"Issues reported by customers are widespread, not limited to any specific region, and have been observed for the past 2 weeks"
+2026-03-05 11:49:59,PLAYER,online-boutique-7888,@bob  Also wanted to know if its affected all markets or anything specific
+2026-03-05 11:50:21,PLAYER,business-comms-7888,"Issues reported by customers are widespread, not limited to any specific region,"
+2026-03-05 11:51:02,PLAYER,online-boutique-7888,CHG89692 - CHG89675
+2026-03-05 11:51:05,uptimelabs,online-boutique-7888,:star: Check changes done to the platform
+2026-03-05 11:51:15,PLAYER,online-boutique-7888,These are the changes we rolled out on Payment and services
+2026-03-05 11:51:17,tanya,online-boutique-7888,It's potentially worth checking out the legitimacy of the traffic
+2026-03-05 11:51:30,PLAYER,online-boutique-7888,@daniel  and @tanya  Can we check those ?
+2026-03-05 11:51:40,daniel,online-boutique-7888,That would be @maya
+2026-03-05 11:52:07,PLAYER,online-boutique-7888,"Hey @maya  We have a situation with spike in traffic, could you please check "
+2026-03-05 11:52:12,maya,online-boutique-7888,checking
+2026-03-05 11:52:23,PLAYER,online-boutique-7888,Taniya can help you with any other details
+2026-03-05 11:52:35,tanya,online-boutique-7888,"Sure, what would you like me to do?"
+2026-03-05 11:52:43,PLAYER,business-comms-7888,We have enaged the Cyber team to check further on their side 
+2026-03-05 11:53:04,PLAYER,online-boutique-7888,Have we have verified the changes mentioned above If that cause anything ?
+2026-03-05 11:53:07,uptimelabs,online-boutique-7888,:star: Reviewed changes
+2026-03-05 11:53:15,tanya,online-boutique-7888,"Understood, I will work on that"
+2026-03-05 11:53:19,daniel,online-boutique-7888,I will assist
+2026-03-05 11:53:25,maya,online-boutique-7888,Security scan shows issues related to our network switch. Working on identifying the exact cause
+2026-03-05 11:53:28,PLAYER,online-boutique-7888,@bob  How about the volumes of customer reporing ?
+2026-03-05 11:53:54,bob,online-boutique-7888,"So far, 339 reports over the two weeks"
+2026-03-05 11:54:14,PLAYER,online-boutique-7888,hope its all for sloweness and no failures of order prcoessing
+2026-03-05 11:54:16,bob,online-boutique-7888,The trend was slowly building over a long period of time hence why it was neglected!
+2026-03-05 11:54:37,maya,online-boutique-7888,"Found a critical issue. Our network switch was compromised due to unpatched vulnerabilities, leading to a BotNet creating DDOS attacks"
+2026-03-05 11:54:40,PLAYER,online-boutique-7888,"Is there any changes around the network switches, I cant see any from the list provided "
+2026-03-05 11:54:46,tanya,online-boutique-7888,No issues found with changes
+2026-03-05 11:54:59,tanya,online-boutique-7888,timing also doesn't match os issue start time
+2026-03-05 11:55:09,maya,online-boutique-7888,The network switch's vulnerabilities were exploited. We need to address this immediately.
+2026-03-05 11:55:17,PLAYER,online-boutique-7888,@hamed  Can you confirm on the recent changes on network side ?
+2026-03-05 11:55:31,bez,business-comms-7888,"Keep me in the loop, fingers crossed nothing major!"
+2026-03-05 11:55:38,PLAYER,online-boutique-7888,What should be the suggestions @maya ?
+2026-03-05 11:55:46,tinus,business-comms-7888,Have we got comms out to customers?
+2026-03-05 11:56:07,PLAYER,business-comms-7888,We just figured out some issues withoin out netwoek switches and team working on that 
+2026-03-05 11:56:08,hamed,online-boutique-7888,Nothing major wasn't deployed recently
+2026-03-05 11:56:25,PLAYER,online-boutique-7888,better to get a list of the same @hamed 
+2026-03-05 11:56:33,hamed,online-boutique-7888,mayas msg explains why the disruption affects both our internal and external users
+2026-03-05 11:56:55,hamed,online-boutique-7888,"Sure, I will compile a list in a few minutes"
+2026-03-05 11:57:02,PLAYER,online-boutique-7888,@maya  Do we have an alternative switch to divert the traffic ?
+2026-03-05 11:57:11,maya,online-boutique-7888,Suggesting a switch restart in the meantime
+2026-03-05 11:57:32,PLAYER,online-boutique-7888,@bob  May be better to put a banner on the page regarding the slowness in the application
+2026-03-05 11:57:45,hamed,online-boutique-7888,A switch restart might be risky
+2026-03-05 11:57:54,PLAYER,business-comms-7888,Regarding the banner in the page for notifying the customers have been taike care 
+2026-03-05 11:57:56,bob,online-boutique-7888,Sure I will send out the comms
+2026-03-05 11:58:12,maya,online-boutique-7888,I would need to check that with infra team
+2026-03-05 11:58:15,PLAYER,online-boutique-7888,@hamed  Is there any reduntancy for this switch ?
+2026-03-05 11:58:27,maya,online-boutique-7888,Your right restarting the switch isnt the best option as it might intruduce some more issues
+2026-03-05 11:58:32,maya,online-boutique-7888,Trying to think of another solution but i'm not too familiar with the network infrastructure here at OB
+2026-03-05 11:58:37,hamed,online-boutique-7888,No worries Maya I can send over the graph of the network infra if you wanna look at it
+2026-03-05 11:58:42,maya,online-boutique-7888,That would be perfect @hamed
+2026-03-05 11:58:45,hamed,online-boutique-7888,
+2026-03-05 11:58:49,maya,online-boutique-7888,"Looking at the diagram now, will need a moment to figure out what to do next"
+2026-03-05 11:58:52,maya,online-boutique-7888,Let me know if you have any suggestions in the mean time
+2026-03-05 11:59:08,hamed,online-boutique-7888,"Yes, as you can see from the graph, we have aredundant switch"
+2026-03-05 11:59:18,PLAYER,online-boutique-7888,Copying @tinus  For better visibility and help in case 
+2026-03-05 11:59:21,uptimelabs,online-boutique-7888,:star: Escalating when required
+2026-03-05 11:59:39,bob,online-boutique-7888,Do I tell customers about the attack?
+2026-03-05 11:59:47,PLAYER,online-boutique-7888,Can we move the traffic to the alternative Switch if that helps ? 
+2026-03-05 11:59:58,hamed,online-boutique-7888,We  can failover to a redundant switch
+2026-03-05 12:00:11,hamed,online-boutique-7888,"Indeed, happy to proceed?"
+2026-03-05 12:00:12,PLAYER,online-boutique-7888,"@bob  Its not an attacj, just post about the slowness and mentioned teams are working on it "
+2026-03-05 12:00:25,daniel,online-boutique-7888,Assuming I'm not needed here
+2026-03-05 12:00:27,PLAYER,online-boutique-7888,@hamed  Hope that failover will not create any outage 
+2026-03-05 12:00:54,hamed,online-boutique-7888,There will be a small downtown before the loadbalancer pick up the traffic
+2026-03-05 12:00:57,PLAYER,business-comms-7888,Team working on failing over the affected switch to another one
+2026-03-05 12:01:02,hamed,online-boutique-7888,but if shouldn't be any more thatn 2-3 mins
+2026-03-05 12:01:36,PLAYER,online-boutique-7888,"That should be fine than these many reports from the clients, still @@tinus  please confirm "
+2026-03-05 12:01:46,PLAYER,online-boutique-7888,@bob  Please confiorm on the status page 
+2026-03-05 12:01:53,tinus,online-boutique-7888,"Go ahead, restoration over anything else"
+2026-03-05 12:01:56,hamed,online-boutique-7888,Preparing to bypass the infected switch
+2026-03-05 12:02:14,hamed,online-boutique-7888,No impact observed on the redundant switch. Successfully bypassed the infected switch
+2026-03-05 12:02:21,PLAYER,online-boutique-7888,also lets take that fully out of the network 
+2026-03-05 12:02:23,maya,online-boutique-7888,the infected switch has been successfully changed over
+2026-03-05 12:02:26,hamed,online-boutique-7888,The Catalyst 9300 Series which is our infected switch has been swapped over to old but reliable (Cisco Catalyst 2960 Series)
+2026-03-05 12:02:33,tinus,online-boutique-7888,"Good job, can we confirm @avinash.krishnankv-ig.com?"
+2026-03-05 12:02:45,tanya,online-boutique-7888,I will take care of that next
+2026-03-05 12:02:51,PLAYER,online-boutique-7888,@maya  are you seeing any changes in the logs now ?
+2026-03-05 12:02:56,uptimelabs,online-boutique-7888,:star: Cross checking resolution with team
+2026-03-05 12:03:04,PLAYER,online-boutique-7888,@tanya  please confirm from your side as well
+2026-03-05 12:03:12,maya,online-boutique-7888,Looks like the spike has flattened
+2026-03-05 12:03:18,PLAYER,online-boutique-7888,@bob  still waiting hear from your
+2026-03-05 12:03:22,PLAYER,online-boutique-7888,side*
+2026-03-05 12:03:27,maya,online-boutique-7888,Not seeing anything else alarming on the site or dashboards
+2026-03-05 12:03:38,bob,online-boutique-7888,Reports and tickets are going down
+2026-03-05 12:03:48,PLAYER,online-boutique-7888,"how about the internal network speed, can someone check and confirm "
+2026-03-05 12:03:49,bob,online-boutique-7888,Sales are slowly climbing up
+2026-03-05 12:03:54,shay,online-boutique-7888,On it
+2026-03-05 12:04:05,PLAYER,business-comms-7888,The failover comepleted and there are no issues observed so far 
+2026-03-05 12:04:06,shay,online-boutique-7888,"This thing is fast, I was able to place an order"
+2026-03-05 12:04:09,uptimelabs,online-boutique-7888,:star: Confirm resolution with the business
+2026-03-05 12:04:12,PLAYER,business-comms-7888,We have less reports from the customer side as well
+2026-03-05 12:04:17,tanya,online-boutique-7888,"Cheers, everyone! Resolving these network issues added a bit of spice to our celebration"
+2026-03-05 12:04:19,tinus,online-boutique-7888,Good job team! We managed to keep the anniversary vibe alive despite the detour.
+2026-03-05 12:04:22,hamed,online-boutique-7888,High-fives all around!  I will take out that faulty switch as soon as possible.
+2026-03-05 12:04:27,shay,online-boutique-7888,The website's performance is looking solid again 
+2026-03-05 12:04:29,PLAYER,online-boutique-7888,Thank you all
+2026-03-05 12:04:31,daniel,online-boutique-7888,The anniversary orders are flowing smoothly now. No hiccups on the code side.
+2026-03-05 12:04:34,bob,online-boutique-7888,"Our customers are back to enjoying the celebration. Happy customers, happy anniversary!"
+2026-03-05 12:04:37,maya,online-boutique-7888,Really great job @avinash.krishnankv-ig.com.
+2026-03-05 12:04:40,bez,online-boutique-7888,Special congratulations to our Incident Manager for steering the ship with finesse and to Maya for your help identifying the faulty switch. Cheers to a remarkable team! :tada:
+2026-03-05 12:04:41,PLAYER,online-boutique-7888,Lets investigate further on the infected switch with the help of vendor 
+2026-03-05 12:04:58,PLAYER,online-boutique-7888,Thank you all!
+2026-03-05 12:05:01,uptimelabs,online-boutique-7888,"Drill Wrap-Up
+
+Thanks for playing! This session is now closed.
+
+Please return to your Uptime Labs tab to review your performance and complete the Retrospective & Feedback form.
+
+If you've already closed the tab, you can reopen the form using the button below."
+2026-03-05 12:05:07,uptimelabs,online-boutique-7888,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/18/7888/feedback"

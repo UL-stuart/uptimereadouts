@@ -1,0 +1,179 @@
+datetime,player,channel,message
+2025-08-15 15:30:20,Bez,online-boutique-5403,"Morning, team! Anyone else need a triple espresso today?"
+2025-08-15 15:30:29,Tinus,online-boutique-5403,"You're not the only one, Bez! The reports from last week are still giving me nightmares."
+2025-08-15 15:30:39,Bob,online-boutique-5403,"Tell me about it, Tinus."
+2025-08-15 15:30:43,Bob,online-boutique-5403,"But hey, at least it's sunny outside today. :sunrise:"
+2025-08-15 15:30:45,Bez,online-boutique-5403,"True, a little sunshine makes everything better."
+2025-08-15 15:30:47,Bez,online-boutique-5403,"Also, I'm having my usual green smoothie. That's my secret energy booster."
+2025-08-15 15:30:49,Daniel,online-boutique-5403,"Nice, Bez! I'll stick with my coffee though."
+2025-08-15 15:30:50,Daniel,online-boutique-5403,Anyone else excited for the launch of the new BitCoin :coin: payment feature this week?
+2025-08-15 15:30:52,Tinus,online-boutique-5403,"Absolutely, Daniel! Been looking forward to it."
+2025-08-15 15:30:54,Tinus,online-boutique-5403,"By the way, no spoilers, but did anyone catch the football game? Epic comeback!"
+2025-08-15 15:30:57,Shay,online-boutique-5403,I missed it! I was knee deep in a sci-fi novel. Anyone else into that?
+2025-08-15 15:31:05,Tanya,online-boutique-5403,"Oh, I love sci-fi! Can you share the name of the book, Shay?"
+2025-08-15 15:31:13,Daniel,online-boutique-5403,I've been reading a bit of sci-fi myself.
+2025-08-15 15:31:15,Daniel,online-boutique-5403,"Looking forward to sharing recommendations, Shay!"
+2025-08-15 15:31:19,Bez,online-boutique-5403,"There's always so much happening outside of work! Keep the energy :battery: going, team."
+2025-08-15 15:31:22,Bez,online-boutique-5403,It's going to be another productive day. :raised_hands:
+2025-08-15 15:31:25,UptimeLabs,online-boutique-5403,Start lvl 8
+2025-08-15 15:33:08,PLAYER,online-boutique-5403,Clicked Start button
+2025-08-15 15:33:09,UptimeLabs,online-boutique-5403,":alarm_clock: - You have 25 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-08-15 15:33:10,Bob,online-boutique-5403,"Hey, we're getting reports of customers struggling to make purchases"
+2025-08-15 15:33:12,Bob,online-boutique-5403,@here Anyone else seeing this?
+2025-08-15 15:33:15,Tinus,online-boutique-5403,"Yes, I've noticed the same, @Bob . It seems like an error in the system"
+2025-08-15 15:33:18,Bez,online-boutique-5403,"Whatever it is, we need to sort it out quickly."
+2025-08-15 15:33:20,Bez,online-boutique-5403,we need to step on it! before the social media backlash is turning into a storm.
+2025-08-15 15:33:25,Tinus,online-boutique-5403,"Who is handling incidents today? Please size up the issue, this is urgent"
+2025-08-15 15:33:29,PLAYER,online-boutique-5403,im here
+2025-08-15 15:33:34,PLAYER,online-boutique-5403,how many clients are reporting this? Bob
+2025-08-15 15:33:45,Bob,online-boutique-5403,let me take a look into this now
+2025-08-15 15:33:45,UptimeLabs,online-boutique-5403,:star: Asking questions to validate impact of the problem
+2025-08-15 15:33:50,PLAYER,online-boutique-5403,is it a global issue or a specific country or region?
+2025-08-15 15:34:20,PLAYER,online-boutique-5403,Daniel can you start checking the health of the change CHG89770
+2025-08-15 15:34:24,Bob,online-boutique-5403,"liiks like there are 300 reports on this issue at the moment, and looks like its impacting all the EU region"
+2025-08-15 15:34:28,UptimeLabs,online-boutique-5403,:star: Reviewed changes
+2025-08-15 15:34:48,PLAYER,online-boutique-5403,also check the payment service CHG89778
+2025-08-15 15:34:51,Daniel,online-boutique-5403,sure looking into that checkout change now
+2025-08-15 15:34:56,UptimeLabs,online-boutique-5403,:star: Check changes done to the platform
+2025-08-15 15:35:02,Daniel,online-boutique-5403,i will check it after this one
+2025-08-15 15:35:06,PLAYER,online-boutique-5403,qould we consider the EU region critical?
+2025-08-15 15:35:31,PLAYER,online-boutique-5403,please check both changes Daniel take your time to make sure they're fine
+2025-08-15 15:35:40,Bob,online-boutique-5403,the eu is our largest market
+2025-08-15 15:35:44,PLAYER,online-boutique-5403,ok
+2025-08-15 15:35:51,Bob,online-boutique-5403,the UK is included in this and it alone is 45% of the market
+2025-08-15 15:35:59,PLAYER,business-comms-5403,bitcoin payment checkout service down Sev1
+2025-08-15 15:35:59,PLAYER,business-comms-5403,*Incident Number INC100012:* bitcoin payment checkout service down Sev1
+2025-08-15 15:35:59,UptimeLabs,online-boutique-5403,:star: Incident record created
+2025-08-15 15:36:01,Bob,online-boutique-5403,eo makes up for 65% total
+2025-08-15 15:36:01,UptimeLabs,online-boutique-5403,:star: Send first comms in first 5 minutes
+2025-08-15 15:36:05,UptimeLabs,online-boutique-5403,:star: Formally assign criticality level to the incident
+2025-08-15 15:36:22,Daniel,online-boutique-5403,"checkout change is ok, im going to look into the payments change now"
+2025-08-15 15:36:26,Bez,business-comms-5403,What's the customer impact?
+2025-08-15 15:36:29,PLAYER,online-boutique-5403,sure
+2025-08-15 15:36:45,PLAYER,online-boutique-5403,@tan
+2025-08-15 15:36:59,PLAYER,online-boutique-5403,Tanya can you check this change please? CHG89777
+2025-08-15 15:37:04,PLAYER,online-boutique-5403,see if its doing something wrong
+2025-08-15 15:37:13,Tanya,online-boutique-5403,sure looking into the cart changes now
+2025-08-15 15:37:44,PLAYER,online-boutique-5403,btw looking into the cart my self when I click on a product it straight forward sends some connection error
+2025-08-15 15:37:51,UptimeLabs,online-boutique-5403,:star: Reproduces the incident
+2025-08-15 15:37:53,PLAYER,online-boutique-5403,can everyone test and try to purchase something on the boutique
+2025-08-15 15:37:55,Daniel,online-boutique-5403,"im seeing errors in the payment logs, let me see if this is related to the change I made"
+2025-08-15 15:38:02,Shay,online-boutique-5403,i will try
+2025-08-15 15:38:13,PLAYER,online-boutique-5403,"```rpc error: code = Unavailable desc = connection error: desc = ""transport: Error while dialing: dial tcp 172.20.196.171:7070: connect: connection refused""```
+"
+2025-08-15 15:38:22,Shay,online-boutique-5403,"im getting a 500 error on this, cant purchase anything on the site"
+2025-08-15 15:38:31,PLAYER,online-boutique-5403,double check this change CHG89777
+2025-08-15 15:38:38,PLAYER,online-boutique-5403,we need network team too
+2025-08-15 15:38:41,Tanya,online-boutique-5403,"not seeing any issues with he cart services, they are in the green atm"
+2025-08-15 15:39:05,Daniel,online-boutique-5403,"i think this is related ot the payment change, when it was deployed the error started, the bitcoin feature must be causing issues"
+2025-08-15 15:39:18,Daniel,online-boutique-5403,not sure if i can come up with a  quick fix for this
+2025-08-15 15:39:26,PLAYER,online-boutique-5403,we can escalate for help
+2025-08-15 15:39:29,PLAYER,online-boutique-5403,who do you need?
+2025-08-15 15:39:49,PLAYER,online-boutique-5403,this is the change? 2025-08-15 07:03:10DanielPRODCHG89778
+2025-08-15 15:39:52,UptimeLabs,online-boutique-5403,:bulb: keep the business informed regularly
+2025-08-15 15:40:15,PLAYER,business-comms-5403,"Hi sorry, the whole EU region cant make purchases"
+2025-08-15 15:40:19,Daniel,online-boutique-5403,"Realistically i dont see a fix in the near future, a rollback should resolve this. even with hamed on it will take too long"
+2025-08-15 15:40:23,PLAYER,business-comms-5403,we have all the teams looking into this right now
+2025-08-15 15:40:32,PLAYER,business-comms-5403,might be the payment service when bitcin went live
+2025-08-15 15:40:56,PLAYER,online-boutique-5403,the rollback will take too long?
+2025-08-15 15:40:56,Daniel,online-boutique-5403,its your call
+2025-08-15 15:41:05,Daniel,online-boutique-5403,oh a rollback will be fast
+2025-08-15 15:41:12,Daniel,online-boutique-5403,1-2 mins
+2025-08-15 15:41:18,Daniel,online-boutique-5403,Should i go for it?
+2025-08-15 15:41:20,Bez,business-comms-5403,Is this affecting sales?
+2025-08-15 15:41:22,PLAYER,online-boutique-5403,no
+2025-08-15 15:41:29,PLAYER,online-boutique-5403,can we have network team please first check on this? transport: Error while dialing: dial tcp 172.20.196.171:7070: connect: connection refused
+2025-08-15 15:41:35,PLAYER,online-boutique-5403,whos here from network team?
+2025-08-15 15:41:36,UptimeLabs,online-boutique-5403,:star: Know your team and their roles
+2025-08-15 15:41:40,Tanya,online-boutique-5403,yes i will get them to check all network connections now
+2025-08-15 15:41:46,PLAYER,online-boutique-5403,pleas do asap
+2025-08-15 15:41:50,Tanya,online-boutique-5403,in contact now
+2025-08-15 15:42:01,Tanya,online-boutique-5403,they are scanning servers now
+2025-08-15 15:42:22,PLAYER,online-boutique-5403,update us as soon as they update you
+2025-08-15 15:42:22,Tanya,online-boutique-5403,they arent seeing any issues on thier end
+2025-08-15 15:42:28,PLAYER,business-comms-5403,1 min
+2025-08-15 15:42:35,Tanya,online-boutique-5403,people are connected to the platform fine
+2025-08-15 15:42:43,PLAYER,online-boutique-5403,Bob how is this affecting sales right now? are we losing revenue? approx how much?
+2025-08-15 15:42:48,Tanya,online-boutique-5403,and payments are coming in through outside of the eu
+2025-08-15 15:43:03,Bob,online-boutique-5403,we are losing $650 a minute
+2025-08-15 15:43:07,Bob,online-boutique-5403,on average
+2025-08-15 15:43:17,PLAYER,business-comms-5403,according to Bob we are losing $650 a minute
+2025-08-15 15:43:22,Bob,online-boutique-5403,thats all the EU revenue
+2025-08-15 15:43:27,PLAYER,online-boutique-5403,How can we check the frontend?
+2025-08-15 15:43:40,Daniel,online-boutique-5403,if the network is ok am i rolling back this change?
+2025-08-15 15:43:43,PLAYER,online-boutique-5403,"if network is fine, before rolling the payment service we need to check the frontend app"
+2025-08-15 15:43:53,Tanya,online-boutique-5403,what checks?
+2025-08-15 15:44:03,Tanya,online-boutique-5403,im lookin in the logs in no errors are in frontend
+2025-08-15 15:44:10,PLAYER,online-boutique-5403,rolling back might cause something else we need to be sure its not something else
+2025-08-15 15:44:26,Daniel,online-boutique-5403,what do you mean cause something else?
+2025-08-15 15:44:34,Daniel,online-boutique-5403,like another incident?
+2025-08-15 15:44:51,PLAYER,online-boutique-5403,just to cover all bases can you check this change? CHG89771
+2025-08-15 15:44:58,PLAYER,online-boutique-5403,see if its no doing something it shouldnt
+2025-08-15 15:45:15,PLAYER,online-boutique-5403,maybe
+2025-08-15 15:45:18,Shay,online-boutique-5403,thats my change to email service i will check it
+2025-08-15 15:45:23,PLAYER,online-boutique-5403,please do
+2025-08-15 15:45:39,Shay,online-boutique-5403,no errors in the logs and change seems to be working fine
+2025-08-15 15:45:43,Bez,business-comms-5403,How close are we to a solution?!
+2025-08-15 15:45:56,PLAYER,online-boutique-5403,also check this then CHG89769
+2025-08-15 15:46:11,PLAYER,business-comms-5403,we are checking all the changes before rolling back the payment one
+2025-08-15 15:46:12,Daniel,online-boutique-5403,"if you are worried about the change causing issues, we should check for dependencies on this change, it would make sure when the rollback is done there are no other issues"
+2025-08-15 15:46:13,PLAYER,business-comms-5403,2 min
+2025-08-15 15:46:32,PLAYER,online-boutique-5403,good point go ahead
+2025-08-15 15:46:56,Daniel,online-boutique-5403,"as service changes are non customer-impacting I double this is the issue, I will look into the dependencies for payment first"
+2025-08-15 15:47:26,PLAYER,online-boutique-5403,ok then lets go with that check dependencies for CHG89778
+2025-08-15 15:47:34,PLAYER,online-boutique-5403,make sure it doesnt affect something else when rolling back
+2025-08-15 15:47:39,Daniel,online-boutique-5403,"Ok i see there are 2 changes dependant on this, the cart service and redis, we will need to rollback all 3 changes or else the site will be down for all users"
+2025-08-15 15:47:54,Daniel,online-boutique-5403,i beleve this is the best action to take atm
+2025-08-15 15:47:56,PLAYER,online-boutique-5403,cart and redis make sense too
+2025-08-15 15:48:00,PLAYER,online-boutique-5403,roll them all back
+2025-08-15 15:48:05,PLAYER,online-boutique-5403,is everyone else ok with this?
+2025-08-15 15:48:11,UptimeLabs,online-boutique-5403,:star: Restoration over root cause analysis
+2025-08-15 15:48:11,Daniel,online-boutique-5403,ok on it now @tanya help please
+2025-08-15 15:48:15,PLAYER,business-comms-5403,we are rolling back 3 changes
+2025-08-15 15:48:22,PLAYER,business-comms-5403,ill update in 2 min the result
+2025-08-15 15:48:26,Tanya,online-boutique-5403,on it
+2025-08-15 15:48:37,PLAYER,online-boutique-5403,go ahead guys thanks
+2025-08-15 15:48:49,Tanya,online-boutique-5403,Rollbacks are completed
+2025-08-15 15:48:53,Daniel,online-boutique-5403,"Great, i've also restarted the frontend so the website should be working now"
+2025-08-15 15:49:22,PLAYER,online-boutique-5403,im still seeing the rror when clicking on a product
+2025-08-15 15:49:25,PLAYER,online-boutique-5403,can you all check the same
+2025-08-15 15:49:25,Tinus,online-boutique-5403,@Jose Luis Roiz can you confirm?
+2025-08-15 15:49:33,UptimeLabs,online-boutique-5403,:star: Cross checking resolution with team
+2025-08-15 15:49:40,PLAYER,online-boutique-5403,we are trying to confirm now
+2025-08-15 15:49:50,PLAYER,online-boutique-5403,i need someone to also check clicking on products
+2025-08-15 15:49:52,Tanya,online-boutique-5403,i will test the sight aswell
+2025-08-15 15:50:04,Tanya,online-boutique-5403,i will test the site now
+2025-08-15 15:50:29,PLAYER,online-boutique-5403,"do we depend on a third party or vendor for this bitcoin payment? something like AWS, Azure or Google for anything?"
+2025-08-15 15:50:50,Bez,business-comms-5403,What's the result?
+2025-08-15 15:50:50,Daniel,online-boutique-5403,its taking its time to come back up
+2025-08-15 15:50:57,Daniel,online-boutique-5403,should be good now
+2025-08-15 15:51:04,Tanya,online-boutique-5403,took a while but it works for me
+2025-08-15 15:51:36,PLAYER,online-boutique-5403,i tested is fine now too
+2025-08-15 15:51:42,PLAYER,online-boutique-5403,Bob can we check with clients?
+2025-08-15 15:51:46,UptimeLabs,online-boutique-5403,:star: Validate the fix
+2025-08-15 15:51:49,UptimeLabs,online-boutique-5403,:star: Cross check resolution with stakeholders
+2025-08-15 15:51:49,Bob,online-boutique-5403,checking now
+2025-08-15 15:51:50,PLAYER,online-boutique-5403,tell them to try and test or purchase something
+2025-08-15 15:51:58,Bob,online-boutique-5403,"they are happy, sales are coming in from the EU"
+2025-08-15 15:52:02,PLAYER,business-comms-5403,boutique and purchasing services are up now
+2025-08-15 15:52:06,Daniel,online-boutique-5403,It appears that everything has returned to its normal state
+2025-08-15 15:52:07,PLAYER,business-comms-5403,Bob is testing with the clients
+2025-08-15 15:52:08,Shay,online-boutique-5403,I was worried for a bit but everything looks good now.
+2025-08-15 15:52:11,Bob,online-boutique-5403,"Great work, everyone! The payments issue has been resolved and customers can now check out smoothly"
+2025-08-15 15:52:12,UptimeLabs,online-boutique-5403,:star: Confirm resolution with the business
+2025-08-15 15:52:16,Tanya,online-boutique-5403,Phew! Glad we got that sorted. Fantastic teamwork!
+2025-08-15 15:52:17,Tinus,online-boutique-5403,Absolutely! Proud to be a part of this team
+2025-08-15 15:52:18,Tinus,online-boutique-5403,Thank you @Jose Luis Roiz for coordinating the rollback effectively
+2025-08-15 15:52:21,PLAYER,online-boutique-5403,good job
+2025-08-15 15:52:22,Bez,online-boutique-5403,"Brilliant job, team and @Jose Luis Roiz!"
+2025-08-15 15:52:23,Bez,online-boutique-5403,"I've been monitoring the financial metrics, and they're already improving"
+2025-08-15 15:52:34,PLAYER,online-boutique-5403,lets make sure to fix those 3 changes
+2025-08-15 15:52:39,PLAYER,online-boutique-5403,perform post mortem RCA
+2025-08-15 15:52:56,PLAYER,online-boutique-5403,to see if we can set them into prod again in the future
+2025-08-15 15:53:01,UptimeLabs,online-boutique-5403,Start level 8 retro and feedback
+2025-08-15 15:53:05,PLAYER,business-comms-5403,Everything is working now
+2025-08-15 15:53:19,PLAYER,business-comms-5403,according to Bob sales are coming and EU clients are happy now
+2025-08-15 15:53:39,PLAYER,online-boutique-5403,Clicked Start_feedback button
+2025-08-15 15:54:15,Bez,business-comms-5403,So everything is fixed?
+2025-08-15 15:54:20,Bez,business-comms-5403,Are sales recovering?
+2025-08-15 15:55:49,UptimeLabs,online-boutique-5403,Submission successful

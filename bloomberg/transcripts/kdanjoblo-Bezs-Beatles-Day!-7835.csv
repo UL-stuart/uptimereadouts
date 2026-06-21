@@ -1,0 +1,139 @@
+datetime,player,channel,message
+2026-02-27 08:38:34,tinus,online-boutique-7835,Hey everyone. I'm pumped today about our flash sale
+2026-02-27 08:38:40,tinus,online-boutique-7835,You know it's been 56 years since the Beatles released Abbey Road right? My favourite album
+2026-02-27 08:38:45,tanya,online-boutique-7835,56 years already?? Wow that makes me feel old...
+2026-02-27 08:38:50,tinus,online-boutique-7835,Indeed! We're celebrating today by promoting a flash sale on retro items from 1969
+2026-02-27 08:38:58,uptimelabs,online-boutique-7835,"Welcome to Bezs Beatles Day, remember communication is key to diagnose the problem.
+
+ *Access game links by pressing the Uptime Labs Logo in the top right of the screen*
+ *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin"
+2026-02-27 08:40:54,tinus,online-boutique-7835,We're a step closer to allowing folks to pay for items from the 1960s with Bitcoin thanks to Daniel!
+2026-02-27 08:40:57,daniel,online-boutique-7835,Think of it like time travelling!
+2026-02-27 08:41:02,hamed,online-boutique-7835,Wow good work Daniel! Looking forward to seeing it in action in prod
+2026-02-27 08:41:08,hamed,online-boutique-7835,How's the test-driven development going?
+2026-02-27 08:41:13,daniel,online-boutique-7835,TDDs going well. We are as solid as a rock! Though don't ask me what the Liskov Substitution Principle is...
+2026-02-27 08:41:20,shay,online-boutique-7835,"erm - funny you should say that Daniel, I'm just testing my checkout service change in prod and I can't complete the payment - something's up"
+2026-02-27 08:41:27,shay,online-boutique-7835,"I hope my checkout service change is all good. Can someone check its not just me? And before you ask, yes I've cleared my cookies"
+2026-02-27 08:41:34,tanya,online-boutique-7835,Sorry Daniel it's not looking good on my end either
+2026-02-27 08:41:36,tinus,online-boutique-7835,Uh oh...here we go again
+2026-02-27 08:41:41,tinus,online-boutique-7835,"@kdanjo-bloomberg.net can you ""Size up the Issue"" please and keep us informed"
+2026-02-27 08:41:43,bob,online-boutique-7835,From what I can see it looks like we are still getting orders through
+2026-02-27 08:41:48,tinus,online-boutique-7835,Get this sorted ASAP!!!
+2026-02-27 08:42:50,PLAYER,online-boutique-7835,"hi all, do we know if orders are still coming in?"
+2026-02-27 08:42:53,uptimelabs,online-boutique-7835,:star: Asking questions to validate impact of the problem
+2026-02-27 08:42:54,bob,online-boutique-7835,"We're still seeing some successful orders, but about 40% of payment transactions are currently failing during checkout."
+2026-02-27 08:43:14,PLAYER,online-boutique-7835,Also @shay is there a recent change that could have caused this issue?
+2026-02-27 08:43:15,uptimelabs,online-boutique-7835,:star: Check changes done to the platform
+2026-02-27 08:43:17,tanya,online-boutique-7835,"Just got a message from my cousin in London, she can't buy any of the new Beatles merch either. Says her payment failed."
+2026-02-27 08:43:32,bob,online-boutique-7835,I'm noticing the failures seem concentrated in Europe. Looks like the UK is particularly affected.
+2026-02-27 08:43:47,shay,online-boutique-7835,"Give me a second, I'll get the detailed info on each of the changes made today"
+2026-02-27 08:43:56,shay,online-boutique-7835,Hope this helps: https://uptime-labs.atlassian.net/wiki/external/OGU1YjE2MmE4ZmI4NGFkMjgzNzEwZGVkYjlmNzgwNWY
+2026-02-27 08:43:57,PLAYER,online-boutique-7835,http://localhost:3000/goto/ffehn532t34sgb?orgId=1 indicates a drop in orders as well
+2026-02-27 08:44:01,uptimelabs,online-boutique-7835,:star: Qualify the problem
+2026-02-27 08:44:01,uptimelabs,online-boutique-7835,:star: Use metrics as evidence
+2026-02-27 08:44:08,tinus,online-boutique-7835,Any updates on the investigation?
+2026-02-27 08:44:17,bob,online-boutique-7835,"Confirmed, the dashboard shows a significant drop in successful orders starting about an hour ago, with payment failures spiking at the same time."
+2026-02-27 08:44:57,PLAYER,online-boutique-7835,"@tinus we are still investigating, look like the issue is limited to the Europe market as of now "
+2026-02-27 08:45:03,tinus,online-boutique-7835,Thanks for the update—let me know if you need any infrastructure support or region-specific diagnostics.
+2026-02-27 08:45:53,PLAYER,online-boutique-7835,Change ID: CHG89358 and Change ID: CHG89362 looks to be related to payment services
+2026-02-27 08:46:02,shay,online-boutique-7835,"CHG89358 was a PaymentService update in UAT 4 hours ago, but my most recent prod change was to CheckoutService (CHG89360) about an hour ago, which updated the payment flow logic—let me know if you want more details or logs."
+2026-02-27 08:46:02,daniel,online-boutique-7835,"My PaymentService change (CHG89362) was deployed just 5 minutes ago, but the new Bitcoin code isn't being called yet and all tests passed, so I don't think it's the cause—have you checked Shay's recent CheckoutService change?"
+2026-02-27 08:46:13,PLAYER,online-boutique-7835,is there any risk with rolling back these changes
+2026-02-27 08:46:18,shay,online-boutique-7835,It's safe to rollback my CheckoutService change (CHG89360); there are no new dependencies introduced.
+2026-02-27 08:46:18,daniel,online-boutique-7835,Rolling back my PaymentService change (CHG89362) is also safe since the new code isn't being invoked yet.
+2026-02-27 08:46:59,PLAYER,online-boutique-7835,this change is on PROD - Change ID: CHG89362 most possibly causing this issue 
+2026-02-27 08:47:02,uptimelabs,online-boutique-7835,:star: Facts over opinion
+2026-02-27 08:47:04,daniel,online-boutique-7835,"I strongly disagree—my PaymentService change isn't being called by the frontend yet, and all tests passed, so the issue is more likely related to Shay's recent CheckoutService deployment."
+2026-02-27 08:47:08,PLAYER,online-boutique-7835,Declaring this a Major Incident
+2026-02-27 08:47:14,bob,online-boutique-7835,Acknowledged—I've escalated the incident and will continue to monitor order and payment failure metrics closely.
+2026-02-27 08:47:25,PLAYER,online-boutique-7835,Thanks @bob 
+2026-02-27 08:47:30,bob,online-boutique-7835,You're welcome—let me know if you need any specific metrics or error breakdowns as the investigation continues.
+2026-02-27 08:47:51,PLAYER,online-boutique-7835,"@daniel in that case, Change ID: CHG89362 is to the checkout service on PROD"
+2026-02-27 08:47:55,PLAYER,online-boutique-7835,probably causing this issue 
+2026-02-27 08:47:55,shay,online-boutique-7835,"To clarify, my CheckoutService change (CHG89360) was deployed to PROD about an hour ago and updated the payment flow logic, so let me know if you want to review the code or logs."
+2026-02-27 08:47:55,daniel,online-boutique-7835,"Actually, CHG89362 is a PaymentService change on PROD, not CheckoutService, and the new Bitcoin code isn't being called yet—can we focus on recent CheckoutService changes like Shay's CHG89360?"
+2026-02-27 08:48:02,daniel,online-boutique-7835,"With respect, I don't see any errors in my PaymentService logs and the new code path isn't active, so I really think we should investigate Shay's CheckoutService change further."
+2026-02-27 08:48:18,PLAYER,online-boutique-7835,"Sorry, i copied it incorrectly"
+2026-02-27 08:48:19,PLAYER,online-boutique-7835,Change ID: CHG89360
+2026-02-27 08:48:23,shay,online-boutique-7835,No worries—let me know if you need more details about my CheckoutService change or want to see specific logs.
+2026-02-27 08:48:27,shay,online-boutique-7835,"CHG89360 is my CheckoutService change deployed to PROD about an hour ago, which updated the payment flow logic—I'm happy to provide logs or details if needed."
+2026-02-27 08:48:51,PLAYER,online-boutique-7835,"thanks, that will be helpful"
+2026-02-27 08:49:00,shay,online-boutique-7835,I'll pull the latest CheckoutService logs and summarize any payment-related errors for you shortly.
+2026-02-27 08:49:40,PLAYER,online-boutique-7835,@bob can we have the error breakdown on both the Payment and the checkout service please
+2026-02-27 08:49:45,shay,online-boutique-7835,I will start checking the logs now
+2026-02-27 08:49:49,daniel,online-boutique-7835,Could it be your checkout change again @Shay? It broke the platform last week!
+2026-02-27 08:49:54,shay,online-boutique-7835,The checkout service logs are healthy and the service is working as intended
+2026-02-27 08:50:05,shay,online-boutique-7835,"I see 504 HTTP errors in the payment service, which means the application is failing to serve the requests"
+2026-02-27 08:50:11,PLAYER,online-boutique-7835,"Thanks, in the mean time has there been any changes to the client experience at checkout"
+2026-02-27 08:50:23,shay,online-boutique-7835,"Yes, my recent CheckoutService change (CHG89360) updated the payment flow UI and validation logic at checkout about an hour ago."
+2026-02-27 08:50:47,PLAYER,online-boutique-7835,@shay can we have this change rolled back as well please
+2026-02-27 08:50:50,uptimelabs,online-boutique-7835,:star: Restoration over root cause analysis
+2026-02-27 08:50:50,shay,online-boutique-7835,I will rollback my checkout change right away
+2026-02-27 08:51:05,shay,online-boutique-7835,Rollback complete!
+2026-02-27 08:51:10,bob,online-boutique-7835,"Hmm, customer reports are still coming in at the same rate"
+2026-02-27 08:51:15,bob,online-boutique-7835,The failure pattern hasn't changed - still 100% failure in the UK
+2026-02-27 08:51:20,tanya,online-boutique-7835,Something else must be causing this
+2026-02-27 08:51:24,tinus,online-boutique-7835,We need this fixed!
+2026-02-27 08:52:10,PLAYER,online-boutique-7835,@shay to confirm have we rolled back both Change ID: CHG89362 and Change ID: CHG89360
+2026-02-27 08:52:13,uptimelabs,online-boutique-7835,:star: Manage actions and timings
+2026-02-27 08:52:13,shay,online-boutique-7835,I've only rolled back my CheckoutService change (CHG89360); Daniel's PaymentService change (CHG89362) is still active.
+2026-02-27 08:52:30,PLAYER,online-boutique-7835,@tinus we understand and are working to get this fixed ASAP
+2026-02-27 08:52:33,tinus,online-boutique-7835,Thank you—please keep me updated on any breakthroughs or if you need executive support.
+2026-02-27 08:52:50,PLAYER,online-boutique-7835,can we have Change ID: CHG89360 rolled back as well please
+2026-02-27 08:52:54,shay,online-boutique-7835,My CheckoutService change (CHG89360) has already been rolled back and confirmed earlier.
+2026-02-27 08:53:16,PLAYER,online-boutique-7835,Sorry was referring to Change ID: CHG89362
+2026-02-27 08:53:18,daniel,online-boutique-7835,"The new code isn't being invoked yet, can I investigate a bit more."
+2026-02-27 08:53:40,PLAYER,online-boutique-7835,Thanks @daniel does this mean the changes we are looking at is not causing this issue?
+2026-02-27 08:53:42,uptimelabs,online-boutique-7835,:star: Ask team members to provide evidence of their assertions
+2026-02-27 08:53:44,daniel,online-boutique-7835,"Based on my tests and logs, I don't see my changes being responsible, but I'm open to further investigation if needed."
+2026-02-27 08:54:19,PLAYER,online-boutique-7835,"If you are happy with the tests, please continue to look into why the codes are not being invoked"
+2026-02-27 08:54:22,daniel,online-boutique-7835,I'll dig deeper into the logs and trace execution to confirm if and where my code is being called.
+2026-02-27 08:55:31,PLAYER,online-boutique-7835,Is there a alternate service or server we can redirect client payment request processing to? as a workaround?
+2026-02-27 08:55:34,tanya,online-boutique-7835,"Currently, all UK payment requests are routed through the same shared libraries and infrastructure, so we don't have an alternate path available as a workaround."
+2026-02-27 08:56:15,PLAYER,online-boutique-7835,"Understood, thanks"
+2026-02-27 08:56:19,bob,online-boutique-7835,"Customer complaints are still coming in steadily, so the issue remains unresolved from their perspective."
+2026-02-27 08:57:24,PLAYER,online-boutique-7835,"To summaries, we have reverted all recent changes to both the checkout and payment services and the UK customers still have issues with completing payment on the website.
+
+We are currenting looking into a new code that isn't being invoked"
+2026-02-27 08:57:27,uptimelabs,online-boutique-7835,:star: Reviewed changes
+2026-02-27 08:57:27,tanya,online-boutique-7835,"I've reviewed Daniel's recent changes and noticed he modified some shared libraries that are used specifically in the UK payment flows, which could be impacting the payment process."
+2026-02-27 08:57:27,bob,online-boutique-7835,"Metrics still show a 100% payment failure rate for UK customers, so the rollback hasn't improved the situation."
+2026-02-27 08:59:22,PLAYER,online-boutique-7835,@daniel can you check on these changes that Tanya is referring to and roll them back if it is safe to do 
+2026-02-27 08:59:26,daniel,online-boutique-7835,"Fine if you insist, I'll rollback"
+2026-02-27 08:59:30,daniel,online-boutique-7835,Rolling back my Bitcoin payment service change now
+2026-02-27 08:59:50,daniel,online-boutique-7835,Rollback complete. Might take a few minutes to stabilise
+2026-02-27 08:59:55,shay,online-boutique-7835,Did that fix it?
+2026-02-27 09:00:24,PLAYER,online-boutique-7835,"Dosent look like, i checked on the website and the payments are still failing"
+2026-02-27 09:00:29,tanya,online-boutique-7835,Would you like me to try placing a test order to see if the rollback resolved the payment issue?
+2026-02-27 09:00:44,PLAYER,online-boutique-7835,"Ah, the payments are processing now"
+2026-02-27 09:00:48,shay,online-boutique-7835,Should I run a verification transaction to double-check everything is working as expected?
+2026-02-27 09:01:00,uptimelabs,online-boutique-7835,"Drill Wrap-Up
+
+Thanks for playing! This session is now closed.
+
+Please return to your Uptime Labs tab to review your performance and complete the Retrospective & Feedback form.
+
+If you've already closed the tab, you can reopen the form using the button below."
+2026-02-27 09:01:09,PLAYER,online-boutique-7835,I tried and was able to successfully place an order
+2026-02-27 09:01:11,uptimelabs,online-boutique-7835,:star: Validate the fix
+2026-02-27 09:01:12,uptimelabs,online-boutique-7835,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/5/7835/feedback"
+2026-02-27 09:01:13,daniel,online-boutique-7835,Great to hear the order went through—let me know if you need any further checks or logs from my side.
+2026-02-27 09:01:15,uptimelabs,online-boutique-7835,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/5/7835/feedback"
+2026-02-27 09:01:38,PLAYER,online-boutique-7835,Thanks @shay that will be helpful
+2026-02-27 09:01:40,daniel,online-boutique-7835,I'll check the payment service logs now.
+2026-02-27 09:01:45,shay,online-boutique-7835,I'll try a test transaction from my side.
+2026-02-27 09:01:50,daniel,online-boutique-7835,"Logs are looking clean, no more 504 errors."
+2026-02-27 09:01:57,shay,online-boutique-7835,My test payment went through successfully! Looks like we're back in business.
+2026-02-27 09:02:25,PLAYER,online-boutique-7835,"Perfect, can we validate this on the client/customer side as well please"
+2026-02-27 09:02:27,bob,online-boutique-7835,Looking into it now... Metrics seem to be improving!
+2026-02-27 09:02:28,uptimelabs,online-boutique-7835,:star: Cross check resolution with stakeholders
+2026-02-27 09:02:34,bob,online-boutique-7835,Customer payments appear to be back up and processing normally
+2026-02-27 09:02:42,tinus,online-boutique-7835,Excellent! Get me a full incident report by end of day
+2026-02-27 09:02:49,tanya,online-boutique-7835,Great work everyone - crisis averted!
+2026-02-27 09:02:53,PLAYER,online-boutique-7835,http://localhost:3000/goto/cfehoupke3itce?orgId=1 indicates the same as well
+2026-02-27 09:02:59,PLAYER,online-boutique-7835,will mark the incident as fixed now
+2026-02-27 09:03:07,PLAYER,online-boutique-7835,thanks all for the help getting this issue fixed

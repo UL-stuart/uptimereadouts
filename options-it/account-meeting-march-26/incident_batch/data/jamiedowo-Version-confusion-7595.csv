@@ -1,0 +1,148 @@
+datetime,player,channel,message
+2026-02-03 10:02:13,uptimelabs,online-boutique-7595,"Welcome to Version Confusion, the responsibility is on you to size up the problem.
+
+? *Use `/help` at any time for a list of useful links and commands*
+ ? *Use `/incident` to create an incident record*
+
+Once youre ready just click start to begin"
+2026-02-03 10:03:46,tanya,online-boutique-7595,Hey guys im seeing an issue with the website loading slowly
+2026-02-03 10:03:47,tanya,online-boutique-7595,Anyone else experaning this?
+2026-02-03 10:03:49,shay,online-boutique-7595,No all ok for me
+2026-02-03 10:03:50,daniel,online-boutique-7595,No issue for me
+2026-02-03 10:03:51,daniel,online-boutique-7595,What browser and version of it are you using Tanya?
+2026-02-03 10:03:53,tanya,online-boutique-7595,Im using chrome and let me check the version
+2026-02-03 10:03:55,daniel,online-boutique-7595,Ok if it is V105.0 this is a recorded bug with a ticket in the backlog
+2026-02-03 10:03:56,tanya,online-boutique-7595,Yeah it is V105.0
+2026-02-03 10:03:57,tanya,online-boutique-7595,Should we not raise an incident for this? I know I can update the version and it will stop effecting me.
+2026-02-03 10:03:59,tanya,online-boutique-7595,But could this not be effecting customers?
+2026-02-03 10:04:01,daniel,online-boutique-7595,Had a look at the market share of people using this version it is only at 0.09%
+2026-02-03 10:04:04,tanya,online-boutique-7595,Still not sure if it should not be an incidnt. @jamie.dow-options-it.com What do you think? 
+2026-02-03 10:04:46,PLAYER,online-boutique-7595,"Hi everyone - I'll start looking into this now. I think as it's only affecting a small number of users, we should open a SEV-3 case on this."
+2026-02-03 10:05:28,PLAYER,business-comms-7595,
+2026-02-03 10:05:28,uptimelabs,business-comms-7595,*Incident Number INC100092:* Opening a SEV-3 case following reports of slow web browser performance when using a legacy version of Chrome.
+2026-02-03 10:05:28,uptimelabs,online-boutique-7595,:star: Incident record created
+2026-02-03 10:05:33,daniel,online-boutique-7595,Really dont think we need an incident. As I said we have a bug already and really need to focus on delivery of new features.
+2026-02-03 10:05:57,bez,business-comms-7595,how long has this been going on for?
+2026-02-03 10:06:29,PLAYER,online-boutique-7595,"Hi @bob - As customer services lead, what do you think of this issue? "
+2026-02-03 10:06:35,uptimelabs,online-boutique-7595,:star: Asking questions to validate impact of the problem
+2026-02-03 10:07:14,PLAYER,online-boutique-7595,"@daniel - How long have we been aware of the bug? Do we have the option to upgrade our Boutique to resolve the bug from our side? The onus is on us to resolve this, not the customer "
+2026-02-03 10:07:17,uptimelabs,online-boutique-7595,:star: Manage actions and timings
+2026-02-03 10:07:31,PLAYER,business-comms-7595,"Asking internally now Bez, i'll follow up shortlly. "
+2026-02-03 10:07:32,bob,online-boutique-7595,"From my view this is worth looking into, we dont know the % of our own customers who are on this version of chrome, even if the market is 0.09% this doesnt allways apply to us"
+2026-02-03 10:07:57,daniel,online-boutique-7595,I believe this was reported around a week ago
+2026-02-03 10:08:01,daniel,online-boutique-7595,let me check
+2026-02-03 10:08:17,PLAYER,online-boutique-7595,"I think that's fair - We can't control the source browser that our client base is using, so this could impact sales. I think we should look at resolving the bug from our side "
+2026-02-03 10:08:35,PLAYER,online-boutique-7595,@daniel - Please get back to me in a minute
+2026-02-03 10:09:00,daniel,online-boutique-7595,"My bad it was 2 weeks ago, here is the ticket made for it:
+
+
+Title; Slow load times for users using V105.0 of chrome
+Description; User have reported the frontend as loading slowly and with quick look at there set up appears to be an issue with frontend for users using V105.0 of chrome. 
+Reporter; User
+Components; OB-Frontend"
+2026-02-03 10:09:24,PLAYER,business-comms-7595,"@bez  - We have been aware of the bug for a week, according to @daniel our metrics suggest this impacts 0.09% of our customer base, but we can't control the browser customers use, so this number could change on a day to day basis "
+2026-02-03 10:09:29,uptimelabs,online-boutique-7595,:star: Qualify the problem
+2026-02-03 10:09:29,uptimelabs,online-boutique-7595,:star: Use metrics as evidence
+2026-02-03 10:09:38,PLAYER,business-comms-7595,"I think it's important we resolve the bug from our side, i'm working with Daniel on this now"
+2026-02-03 10:09:58,bob,online-boutique-7595,Do you want me to gather customer reports for you?
+2026-02-03 10:10:07,PLAYER,business-comms-7595,"Update @bez  - It turns out we have been aware of this for 2 weeks. See detail below:
+
+ it was 2 weeks ago, here is the ticket made for it:
+
+Title; Slow load times for users using V105.0 of chrome
+Description; User have reported the frontend as loading slowly and with quick look at there set up appears to be an issue with frontend for users using V105.0 of chrome. 
+Reporter; User
+Components; OB-Frontend"
+2026-02-03 10:10:33,PLAYER,online-boutique-7595,"@bob Yes please, i would like to get a sense of the customer impact "
+2026-02-03 10:10:50,bob,online-boutique-7595,ok i will take a look at the past 2 weeks of reports as this will give us a good idea of the impact on our product
+2026-02-03 10:11:02,PLAYER,online-boutique-7595,@daniel - What will it take to resolve the bug from our side? 
+2026-02-03 10:11:08,bez,business-comms-7595,"thanks for the update, how do you plan on resolving this issue?"
+2026-02-03 10:11:25,PLAYER,business-comms-7595,"Checking now, i'll follow up "
+2026-02-03 10:11:28,daniel,online-boutique-7595,"it may be hard, if it was change related this was caused 2 weeks ago"
+2026-02-03 10:11:58,PLAYER,online-boutique-7595,Can you please send me the recent changes logs please
+2026-02-03 10:12:01,uptimelabs,online-boutique-7595,:star: Check changes done to the platform
+2026-02-03 10:12:07,daniel,online-boutique-7595,"A rollback won't be realistic as we have a lot of features added from then, and we have a sale on soon"
+2026-02-03 10:12:18,PLAYER,online-boutique-7595,Please send me the recent change log 
+2026-02-03 10:12:28,bob,online-boutique-7595,Reports are indicating the issue is impacting us more than first anticipated
+2026-02-03 10:12:44,shay,online-boutique-7595,here are the changes
+2026-02-03 10:12:45,shay,online-boutique-7595,https://uptime-labs.atlassian.net/wiki/external/ZDQ1MTE3NWU5ZDYxNDA4MTkxZmM3ZGJmMGJhNmE1OTE
+2026-02-03 10:12:47,PLAYER,online-boutique-7595,@bob - How do you mean? Can you provide examples.
+2026-02-03 10:13:01,daniel,online-boutique-7595,"they are todays changes, we need to look at the changes 2 weeks ago"
+2026-02-03 10:13:30,PLAYER,online-boutique-7595,"@daniel - The recent changes logs is just showing changes in the previous 24 hours, do you have a record of what changed from our side 2 weeks ago when the reports started/"
+2026-02-03 10:13:45,bob,online-boutique-7595,The reports are looking to be 5-8% of our total customers
+2026-02-03 10:13:53,PLAYER,online-boutique-7595,@shay - Please follow up in 30 seconds with the change log.
+2026-02-03 10:13:55,uptimelabs,online-boutique-7595,:star: Track actions and time box them
+2026-02-03 10:13:57,bob,online-boutique-7595,thats from the stats from the past 2 weeks
+2026-02-03 10:14:12,daniel,online-boutique-7595,but the market share is only 0.09%?
+2026-02-03 10:14:26,PLAYER,business-comms-7595,
+2026-02-03 10:14:26,uptimelabs,business-comms-7595,*Incident Number INC100071:* - Upgrading to SEV-2 due to Bob confirming that the issue is worse than first though. The reports are looking to be 5-8% of our total customers
+2026-02-03 10:14:26,uptimelabs,online-boutique-7595,:star: Incident record created
+2026-02-03 10:14:31,daniel,online-boutique-7595,Really dont think we need an incident. As I said we have a bug already and really need to focus on delivery of new features.
+2026-02-03 10:14:35,bob,online-boutique-7595,"as i said earlier, this is the total market of google, this doesnt allways apply to us"
+2026-02-03 10:15:09,PLAYER,online-boutique-7595,"I agree with @bob - User experience is more important than new features in my opinion, but this will need approval from Bez on what he thinks is best. "
+2026-02-03 10:15:17,shay,online-boutique-7595,there  was 2 changes made when the incident started 2 weeks ago
+2026-02-03 10:15:18,shay,online-boutique-7595,"Change to frontend in Prod 
+
+Change to ad service in Prod"
+2026-02-03 10:15:45,PLAYER,online-boutique-7595,@shay - Do you have details on the change? I would like full information per the regular change info
+2026-02-03 10:15:47,uptimelabs,online-boutique-7595,:star: Reviewed changes
+2026-02-03 10:16:24,daniel,online-boutique-7595,"I still dont think it will be possible with the changes we have made to the systems and DB the past 2 weeks, we will need to look at a fix other than a rollback"
+2026-02-03 10:16:25,PLAYER,online-boutique-7595,"So we have two options at this point
+1) We try to resolve the bug from our side
+2) We roll back the changes made 2 weeks ago
+
+We need to understand what 1) would take, and how long. "
+2026-02-03 10:16:27,uptimelabs,online-boutique-7595,:star: Restoration over root cause analysis
+2026-02-03 10:17:12,shay,online-boutique-7595,it seems the frontend change was updates to frontend services
+2026-02-03 10:17:23,PLAYER,online-boutique-7595,"@daniel - I need you to clearly explain what it will take to resolve the bug from our side, if this isn't a simple fix, then we should roll back the change from 2 weeks ago.  5-8% of our total customers is a serious impact"
+2026-02-03 10:18:01,daniel,online-boutique-7595,"Shay has mentiond it was updates to the services, the platform teams perspective on this would help"
+2026-02-03 10:18:49,PLAYER,business-comms-7595,"@bez - We suspect a change made 2 weeks ago to the Front-end system could have introduced the bug, as this is impacting 5-8% of our total customers, this is a serious impact to our users. 
+
+Daniel has concerns that the roll back will impact our future sales event, and we have introduced new features to support that. "
+2026-02-03 10:19:01,daniel,online-boutique-7595,they regularly run these updates and will be able to understand if there is a possible fix or if we need to temporarily put the website under maintenance (this will mean complete outage for however long the rollbacks and changes will take)
+2026-02-03 10:19:33,PLAYER,business-comms-7595,"Can you please let us know what you prefer to do, roll back the changes, or attempt to fix the bug? The bug fix element is currently unclear how that would work, or time it would take, or it's potential success rate. 
+
+I personal think we should roll back the change "
+2026-02-03 10:19:33,bez,business-comms-7595,2 weeks this went on for??? how was this missed in the first report
+2026-02-03 10:20:00,PLAYER,online-boutique-7595,"@hamed - Escalating this issue to you, can you please give your thoughts on this urgently"
+2026-02-03 10:20:03,uptimelabs,online-boutique-7595,:star: Escalating when required
+2026-02-03 10:20:25,hamed,online-boutique-7595,"I will help, taking a look into the updates made first to see if there could be anything"
+2026-02-03 10:20:33,PLAYER,business-comms-7595,"We'll focus on resolving the issue right now, and we'll include that in the root cause analysis document once resolved "
+2026-02-03 10:20:46,hamed,online-boutique-7595,after my initial investigation i will let you know whats the best move
+2026-02-03 10:20:58,PLAYER,online-boutique-7595,Please. Please follow up in the next 1 minute with your findings 
+2026-02-03 10:21:13,PLAYER,online-boutique-7595,In the meantime i have asked Bez what he thinks about rolling back the change which could impact the future sales event planned 
+2026-02-03 10:21:57,PLAYER,online-boutique-7595,@shay  - Who prepared and pushed the changes from 2 weeks ago? 
+2026-02-03 10:22:24,hamed,online-boutique-7595,Takeing a look at the logs from 2 weeks ago to see if they point at any updates in this
+2026-02-03 10:22:39,shay,online-boutique-7595,Hamed pushed it
+2026-02-03 10:23:11,hamed,online-boutique-7595,Seems to be pointing at  NGINX web service
+2026-02-03 10:23:25,PLAYER,online-boutique-7595,@hamed - Who manages that service? 
+2026-02-03 10:23:26,hamed,online-boutique-7595,there was an update to this
+2026-02-03 10:23:42,hamed,online-boutique-7595,That update caused problems for users on Chrome 105.0 and older because the new NGINX version didn’t fully support a feature or header those browsers relied on
+2026-02-03 10:23:46,hamed,online-boutique-7595,this seems to be the issue
+2026-02-03 10:23:57,uptimelabs,online-boutique-7595,"Thank you for playing Version Confusion, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit start when you are ready."
+2026-02-03 10:24:01,hamed,online-boutique-7595,Im looking into the possibility of rolling back this one update now
+2026-02-03 10:24:14,PLAYER,online-boutique-7595,"@hamed - Understood, let's roll back the change right now"
+2026-02-03 10:24:20,hamed,online-boutique-7595,its possible to rollback
+2026-02-03 10:24:26,hamed,online-boutique-7595,this should restore the platform
+2026-02-03 10:24:33,hamed,online-boutique-7595,working on it now
+2026-02-03 10:24:47,hamed,online-boutique-7595,Rollback is complete
+2026-02-03 10:24:59,PLAYER,online-boutique-7595,"Ok @bob - Please stand by to check the customer reports 
+@tanya please test from your browser version 
+"
+2026-02-03 10:25:02,uptimelabs,online-boutique-7595,:star: Form an effective investigation team
+2026-02-03 10:25:03,tanya,online-boutique-7595,testing now
+2026-02-03 10:25:10,bob,online-boutique-7595,checking reports
+2026-02-03 10:25:19,tanya,online-boutique-7595,"site works fine for me now, well done"
+2026-02-03 10:25:20,PLAYER,business-comms-7595,@bez - We rolled back the change. Checking services now
+2026-02-03 10:25:35,bob,online-boutique-7595,"no more reports, customers are able to use the site now with that version"
+2026-02-03 10:25:38,PLAYER,business-comms-7595,"@bez - Since the roll back, it has been confirmed as working again now"
+2026-02-03 10:25:45,PLAYER,online-boutique-7595,Thanks for the help all 
+2026-02-03 10:26:04,uptimelabs,online-boutique-7595,:star: Cross check resolution with stakeholders
+2026-02-03 10:26:05,uptimelabs,online-boutique-7595,:star: Send regular business comms
+2026-02-03 10:26:07,uptimelabs,online-boutique-7595,:star: Confirm resolution with the business
+2026-02-03 10:26:17,uptimelabs,online-boutique-7595,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/17/7595/feedback"
+2026-02-03 10:26:26,uptimelabs,online-boutique-7595,:star: Qualify the problem
+2026-02-03 10:26:36,uptimelabs,online-boutique-7595,:star: Communicating clearly and frequently
+2026-02-03 10:26:40,uptimelabs,online-boutique-7595,:star: Restoration over root cause analysis

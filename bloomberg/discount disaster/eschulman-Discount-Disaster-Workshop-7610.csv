@@ -1,0 +1,180 @@
+datetime,player,channel,message
+03/02/2026 20:04,bez,online-boutique-7610,Can you believe it? That influencer photoshoot is blowing up! We're making waves all over social media.
+03/02/2026 20:05,bob,online-boutique-7610,
+03/02/2026 20:05,bez,online-boutique-7610,Our watches and loafers are all over everyone's feeds 
+03/02/2026 20:05,bob,online-boutique-7610,You're telling me? My inbox is packed with customer queries 
+03/02/2026 20:05,uptimelabs,online-boutique-7610,"Welcome to Discount Disaster, the responsibility is on you to size up the problem.
+
+? *Use `/help` at any time for a list of useful links and commands*
+ ? *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin"
+03/02/2026 20:06,daniel,online-boutique-7610,"Yeah, I'm seeing it, traffic's surging. But nothing we didn't anticipate for"
+03/02/2026 20:06,hamed,online-boutique-7610,Good. We've optimised the backend for this kind of spike
+03/02/2026 20:06,maya,online-boutique-7610,Let's just make sure that's all it is - legit traffic. Influencer campaigns can attract more than just customers
+03/02/2026 20:06,shay,online-boutique-7610,I'll keep eyes on the dashboard. We're running at nearly 80% capacity right now for all the user actvity our platform can handle
+03/02/2026 20:06,bez,online-boutique-7610,It's all good. People are scrambling to get their hands on our products. That viral post is gold
+03/02/2026 20:06,daniel,online-boutique-7610,We're inching closer to max capacity. We're at 95% load now
+03/02/2026 20:06,shay,online-boutique-7610,I just refreshed the website and it's now taking ages to load
+03/02/2026 20:06,shay,online-boutique-7610,Is the website down? Or maybe it's just my machine
+03/02/2026 20:06,PLAYER,online-boutique-7610,"Sounds like we're slow, please confirm?"
+03/02/2026 20:06,uptimelabs,online-boutique-7610,:star: Asking questions to validate impact of the problem
+03/02/2026 20:07,PLAYER,online-boutique-7610,HTTP responses on the dashboard show high load times
+03/02/2026 20:07,uptimelabs,online-boutique-7610,:star: Qualify the problem
+03/02/2026 20:07,PLAYER,online-boutique-7610,User activity is up beyond 5000 users
+03/02/2026 20:07,uptimelabs,online-boutique-7610,:star: Use metrics as evidence
+03/02/2026 20:07,daniel,online-boutique-7610,"checking, brb"
+03/02/2026 20:07,PLAYER,online-boutique-7610,...beyond 6000
+03/02/2026 20:07,PLAYER,online-boutique-7610,We're getting HTTP 503 and 504 responses.
+03/02/2026 20:07,uptimelabs,online-boutique-7610,:star: Reproduces the incident
+03/02/2026 20:08,PLAYER,online-boutique-7610,Are we struggling? @shay 
+03/02/2026 20:08,PLAYER,online-boutique-7610,"and @tanya, are we struggling?"
+03/02/2026 20:08,shay,online-boutique-7610,Im seeing a lot of errors in the logs 
+03/02/2026 20:08,PLAYER,online-boutique-7610,Will this normalize?
+03/02/2026 20:08,shay,online-boutique-7610,Not sure what the root cause is but we are seeing high load on our Frontend Pods - this may be due to the ongoing discount or if it could be related to any tests we were running.
+03/02/2026 20:08,shay,online-boutique-7610,"I see high number of rest-call errors like  http429, http503 and 504s "
+03/02/2026 20:08,tanya,online-boutique-7610,Investigating
+03/02/2026 20:08,shay,online-boutique-7610,"```
+ERROR: GET /api/GetInfo HTTP/1.1 429 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/91.0.4472.124 Safari/537.36 FrontEndApp
+``` ```
+ERROR: GET /api/GetInfo HTTP/1.1 429 200 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/91.0.4472.124 Safari/537.36 FrontEndApp
+```"
+03/02/2026 20:08,PLAYER,online-boutique-7610,
+03/02/2026 20:08,uptimelabs,business-comms-7610,*Incident Number INC100044:* sev-2
+03/02/2026 20:08,shay,online-boutique-7610,Im also seeing this
+03/02/2026 20:08,shay,online-boutique-7610,"```
+[error]: Service unavailable, cannot process request for /api/GetInfo (503).
+``` ```
+[error]: Service unavailable, cannot process request for /api/GetInfo (503).
+```"
+03/02/2026 20:09,daniel,online-boutique-7610,Seeing frontend errors as well
+03/02/2026 20:09,PLAYER,business-comms-7610,Hi team - looks like we have a performance incident with the website.
+03/02/2026 20:09,daniel,online-boutique-7610,"```
+[error] 12345#12345: *98765 limiting requests, exceeded 10 requests per second for client 149.34.52.176, request: GET /api/GetInfo HTTP/1.1, FrontEndApp
+``` 
+```[error] 12345#12345: *98766 limiting requests, exceeded 10 requests per second for client 149.34.52.176, request: GET /api/GetInfo HTTP/1.1, FrontEndApp
+``` ```
+[error] 12345#12345: *98767 limiting requests, exceeded 10 requests per second for client 149.34.52.176, request: GET /api/GetInfo HTTP/1.1, FrontEndApp
+```"
+03/02/2026 20:09,PLAYER,business-comms-7610,Engineers are looking in.  No ETA on normalization yet.
+03/02/2026 20:09,daniel,online-boutique-7610,"```
+[ERROR] 12345#12345: *98765 gateway timed out (504) while receiving response from upstream, client: 149.34.52.176, request: GET /api/GetInfo HTTP/1.1, host: FrontEndApp
+``` ```
+[ERROR] 12345#12345: *98766 gateway timed out (504) while receiving response from upstream, client: 149.34.52.176, request: GET /api/GetInfo HTTP/1.1, host: FrontEndApp
+``` ```
+[ERROR] 12345#12345: *98767 gateway timed out (504) while receiving response from upstream, client: 149.34.52.176, request: GET /api/GetInfo HTTP/1.1, host: FrontEndApp
+``` "
+03/02/2026 20:09,bob,online-boutique-7610,We are getting a lot of calls from customers that they are unable to access the website
+03/02/2026 20:09,bob,online-boutique-7610,Few are reporting long loading times 
+03/02/2026 20:09,daniel,online-boutique-7610,Do we know what the expected amount of traffic should be due to the on-going discount? 
+03/02/2026 20:09,bob,online-boutique-7610,and few are able to load platforms but unable to order
+03/02/2026 20:09,bob,online-boutique-7610,Here are the latest reports
+03/02/2026 20:09,bob,online-boutique-7610,
+03/02/2026 20:09,PLAYER,online-boutique-7610,@hamed might want to look in
+03/02/2026 20:09,bob,online-boutique-7610,Looks like a global issue
+03/02/2026 20:09,PLAYER,online-boutique-7610,Was there a recent change ?
+03/02/2026 20:09,uptimelabs,online-boutique-7610,:star: Check changes done to the platform
+03/02/2026 20:10,bob,online-boutique-7610,Is this Legitimate traffic from the marketing campaign?
+03/02/2026 20:10,PLAYER,online-boutique-7610,We continue to see HTTP 503 and 504
+03/02/2026 20:10,shay,online-boutique-7610,checking changes....
+03/02/2026 20:10,PLAYER,online-boutique-7610,"@bob who can assess that, whether from marketing campaign?"
+03/02/2026 20:11,PLAYER,online-boutique-7610,@bob  is this related to a change on your side?
+03/02/2026 20:11,uptimelabs,online-boutique-7610,:star: Reviewed changes
+03/02/2026 20:11,PLAYER,online-boutique-7610,@hamed  are you there?  Is this related to changes on your side?
+03/02/2026 20:11,hamed,online-boutique-7610,I was looking at Network traffic - But the dashboard took ages to load. 
+03/02/2026 20:11,hamed,online-boutique-7610,Here's a screenshot of Network traffic across each region. 
+03/02/2026 20:11,PLAYER,online-boutique-7610,Stats say we're still having trouble.
+03/02/2026 20:11,PLAYER,online-boutique-7610,
+03/02/2026 20:11,hamed,online-boutique-7610,
+03/02/2026 20:11,shay,online-boutique-7610,"Wow, Spain must really like our products"
+03/02/2026 20:12,shay,online-boutique-7610,Joe sent the changes
+03/02/2026 20:12,PLAYER,online-boutique-7610,Can we discontinue CHG85387 testing?
+03/02/2026 20:12,PLAYER,online-boutique-7610,@shay ?
+03/02/2026 20:13,hamed,online-boutique-7610,"there's load test running in UAT, is it related?"
+03/02/2026 20:13,shay,online-boutique-7610,let me kill it
+03/02/2026 20:13,shay,online-boutique-7610,its UAT but i can check
+03/02/2026 20:13,PLAYER,online-boutique-7610,Please kill that test
+03/02/2026 20:13,shay,online-boutique-7610,Performance test stopped
+03/02/2026 20:13,PLAYER,online-boutique-7610,Thank you - checking stats.
+03/02/2026 20:13,daniel,online-boutique-7610,Traffic is still coming in...
+03/02/2026 20:14,PLAYER,business-comms-7610,A change was identified for a stress test that might have been impacting.  That test has been discontinued just a moment ago.
+03/02/2026 20:14,tanya,online-boutique-7610,"Ok, the traffic is external, so its not load related?"
+03/02/2026 20:14,PLAYER,online-boutique-7610,HTTP 503 and 504 rates are still too high
+03/02/2026 20:14,hamed,online-boutique-7610,"Agree, i think this one is all coming from spain - https://comms.prod.uptimelabs.io/bloomberg-net/pl/r9j9f7tmiprs8jogohydangh9a"
+03/02/2026 20:15,bez,business-comms-7610,Do we have our best folks on this?
+03/02/2026 20:15,PLAYER,online-boutique-7610,Could the payment CHG85389 be related?
+03/02/2026 20:15,PLAYER,online-boutique-7610,... @daniel ?
+03/02/2026 20:15,daniel,online-boutique-7610,"I dont think so, as it shouldn't be triggering the load..."
+03/02/2026 20:15,daniel,online-boutique-7610,however we can rollback if you like
+03/02/2026 20:15,PLAYER,online-boutique-7610,Yes please.
+03/02/2026 20:15,PLAYER,online-boutique-7610,Could the CHG85385 be related ?
+03/02/2026 20:16,PLAYER,online-boutique-7610,Please provide status in the next 5 minutes with rollback of CHG85389 and CHG85385
+03/02/2026 20:16,daniel,online-boutique-7610,agree with the error codes... but this looks liek its externally driven
+03/02/2026 20:16,uptimelabs,online-boutique-7610,:star: Track actions and time box them
+03/02/2026 20:16,uptimelabs,online-boutique-7610,:star: Restoration over root cause analysis
+03/02/2026 20:16,PLAYER,business-comms-7610,All engaged
+03/02/2026 20:16,hamed,online-boutique-7610,"agree, why just Spain?"
+03/02/2026 20:16,PLAYER,business-comms-7610,The stress test was cancelled but stats did not improve.  We are looking at other changes.
+03/02/2026 20:16,daniel,online-boutique-7610,CHG85385 rollback complete
+03/02/2026 20:16,daniel,online-boutique-7610,Shay is rolling back the other 2 changes
+03/02/2026 20:16,PLAYER,business-comms-7610,Impact appears to be heavily related to customers in Spain.
+03/02/2026 20:17,PLAYER,online-boutique-7610,Which 2 changes is Shay rolling back  @daniel?
+03/02/2026 20:17,hamed,online-boutique-7610,Can we get security roped in?
+03/02/2026 20:17,shay,online-boutique-7610,CHG85389 rollback complete
+03/02/2026 20:17,PLAYER,online-boutique-7610,@maya can you join
+03/02/2026 20:18,shay,online-boutique-7610,Doing the last rollback
+03/02/2026 20:18,PLAYER,online-boutique-7610,How long would it take to normalize after the last change is reverted?
+03/02/2026 20:18,maya,online-boutique-7610,"Hey @eschulman6-bloomberg.net, after reviewing the logs, I strongly suspect that this is a security-related issue."
+03/02/2026 20:18,maya,online-boutique-7610,"The abnormally high traffic with http 429, 503 and 504 errors may be due to a possible DDoS/DoS attack "
+03/02/2026 20:18,maya,online-boutique-7610,"I'll need to continue investigating further, but it definitely looks like something is targeting our system"
+03/02/2026 20:18,shay,online-boutique-7610,should be immediate
+03/02/2026 20:18,PLAYER,online-boutique-7610,"User loads are still high, and HTTP 503/504 are still high."
+03/02/2026 20:18,tinus,business-comms-7610,Looks like we have a security threat - We should be extra careful with this incident
+03/02/2026 20:18,bez,business-comms-7610,Do we know what's the financial impact of the issue? How much are we losing every minute?
+03/02/2026 20:18,bez,business-comms-7610,@eschulman6-bloomberg.net Should we inform the 'Compliance Team' about this issue?
+03/02/2026 20:18,bez,business-comms-7610,"The Compliance Team makes sure we follow laws and rules, like reporting the incident to the right people and keeping proper records. It helps us avoid legal trouble and protects our reputation."
+03/02/2026 20:18,PLAYER,online-boutique-7610,"Hey @maya, what would be the recommended course of action?"
+03/02/2026 20:18,shay,online-boutique-7610,CHG85389 and CHG85385 both now rolled back
+03/02/2026 20:19,maya,online-boutique-7610,checking
+03/02/2026 20:19,PLAYER,business-comms-7610,Will pull in the Compliance team
+03/02/2026 20:19,PLAYER,online-boutique-7610,@bob what would be the financial impact of this?
+03/02/2026 20:19,PLAYER,online-boutique-7610,
+03/02/2026 20:19,uptimelabs,business-comms-7610,*Incident Number INC100013:* sev-1
+03/02/2026 20:19,PLAYER,online-boutique-7610,@maya please return with status in 5 minutes.
+03/02/2026 20:20,maya,online-boutique-7610,I recommend reading this document to undergo the mitigation step
+03/02/2026 20:20,maya,online-boutique-7610,Since this is from a single IP - we can block the IP address right now.
+03/02/2026 20:20,PLAYER,online-boutique-7610,@bob could you reach out to Compliance - may be a legal issue here
+03/02/2026 20:20,bob,online-boutique-7610,On it
+03/02/2026 20:20,PLAYER,online-boutique-7610,"@Maya, who can block the address?"
+03/02/2026 20:20,tinus,business-comms-7610,Leave Compliance with me - I will talk to them
+03/02/2026 20:21,maya,online-boutique-7610,The IP address has now been blocked
+03/02/2026 20:21,PLAYER,business-comms-7610,Security suspects a DoS attack from the Spain region.  Engineers are attempting to block..  Will return with an ETA shortly.
+03/02/2026 20:21,tinus,online-boutique-7610,Can you confirm @eschulman6-bloomberg.net?
+03/02/2026 20:21,hamed,online-boutique-7610,Lucky this was DoS (Denial of Service ) from a single IP - What if this attack happens from multiple IP addresses (DDoS)?
+03/02/2026 20:21,hamed,online-boutique-7610,We should start working on the pending WAF rule updates for the frontend
+03/02/2026 20:21,bob,online-boutique-7610,@eschulman6-bloomberg.net Should we let the customers know about the attack?
+03/02/2026 20:21,PLAYER,online-boutique-7610,Dashboards do not yet indicate a change in users 
+03/02/2026 20:21,PLAYER,online-boutique-7610,or http events
+03/02/2026 20:22,PLAYER,online-boutique-7610,Now I see - user load is dropping slowly.
+03/02/2026 20:22,PLAYER,online-boutique-7610,"User load is dropping,  HTTP 503/504 events are dropping."
+03/02/2026 20:22,PLAYER,business-comms-7610,Engineers' work to block the DoS appears successful.  System is normalizing.
+03/02/2026 20:22,uptimelabs,online-boutique-7610,:star: Confirm resolution with the business
+03/02/2026 20:22,daniel,online-boutique-7610,looking better on the app side
+03/02/2026 20:22,PLAYER,online-boutique-7610,
+03/02/2026 20:22,uptimelabs,business-comms-7610,*Incident Number INC10000:* resolve
+03/02/2026 20:23,tanya,online-boutique-7610,"Great work, we managed to save the sale"
+03/02/2026 20:23,tinus,online-boutique-7610,I knew we had it in us
+03/02/2026 20:23,shay,online-boutique-7610,Now i can continue shopping and get some nice discounts 
+03/02/2026 20:23,daniel,online-boutique-7610,"Absolutely, Shay! But i hope not during work hours "
+03/02/2026 20:23,shay,online-boutique-7610,Of course Daniel...... Sorry team i got to go close a unrelated tab now
+03/02/2026 20:23,bez,online-boutique-7610,Anyways well done team
+03/02/2026 20:23,bez,online-boutique-7610,You all did an amazing job 
+03/02/2026 20:23,uptimelabs,online-boutique-7610,"Thank you for playing 'Discount Disaster', We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit start when you are ready."
+03/02/2026 20:24,PLAYER,online-boutique-7610,Final time of incident 15:21
+03/02/2026 20:24,uptimelabs,online-boutique-7610,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/26/7610/feedback"
+03/02/2026 20:26,uptimelabs,online-boutique-7610,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/26/7610/feedback"
+03/02/2026 20:26,uptimelabs,online-boutique-7610,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/26/7610/feedback"

@@ -1,0 +1,94 @@
+datetime,player,channel,message
+2025-07-23 12:48:25,tinus,online-boutique-5120,"Hi team, let's have a mood check send an emoji to describe your mood [n/a - 0]"
+2025-07-23 12:48:29,tinus,online-boutique-5120,"I'll go first, :thumbsup: [n/a - 0]"
+2025-07-23 12:48:35,tanya,online-boutique-5120,:thumbsup: [n/a - 0]
+2025-07-23 12:48:37,tinus,online-boutique-5120,I'm excited about showing off all your hard work at todays stakeholder meeting [n/a - 0]
+2025-07-23 12:48:40,daniel,online-boutique-5120,":skull: knackered, had a few too many late nights this week [n/a - 0]"
+2025-07-23 12:48:43,shay,online-boutique-5120,:rainbow: [n/a - 0]
+2025-07-23 12:48:46,hamed,online-boutique-5120,living the dream :smile: [n/a - 0]
+2025-07-23 12:48:50,bez,online-boutique-5120,:smirk: im excited to see the show too [n/a - 0]
+2025-07-23 12:48:52,tinus,online-boutique-5120,shouldn't you be prepping for the meeting  [n/a - 0]
+2025-07-23 12:48:55,bez,online-boutique-5120,:sweat_smile: i am indeed I'll leave you lot to it [n/a - 0]
+2025-07-23 12:48:57,shay,online-boutique-5120,hang in there @daniel its gonne be the weekend sooner or later :joy: [n/a - 0]
+2025-07-23 12:49:00,tinus,online-boutique-5120,I should get on with my prep too have a good day team [n/a - 0]
+2025-07-23 12:49:01,daniel,online-boutique-5120,@shay strict diet of energy drink for me today lol [n/a - 0]
+2025-07-23 12:49:04,daniel,online-boutique-5120,hope the presentation goes well @tinus [n/a - 0]
+2025-07-23 12:49:06,tanya,online-boutique-5120,:raised_hands: [n/a - 0]
+2025-07-23 12:49:07,PLAYER,online-boutique-5120,Clicked org button
+2025-07-23 12:49:21,UptimeLabs,online-boutique-5120,Level 7 start button [n/a - 0]
+2025-07-23 12:49:45,PLAYER,online-boutique-5120,Clicked Start button
+2025-07-23 12:49:46,UptimeLabs,online-boutique-5120,":alarm_clock: - You have 20 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders. [n/a - 0]"
+2025-07-23 12:49:49,tinus,online-boutique-5120,"Hey team, I'm texting from the board room - kinda embarrassing but in my demo to the board, I tried to add a pair of Aviator sunglasses to the shopping cart and I got a ?http 500? [n/a - 0]"
+2025-07-23 12:49:51,tinus,online-boutique-5120,"I've bought some time but need this be able to do this demo if we can lets get this sorted in the next 20 minutes.
+ [n/a - 0]"
+2025-07-23 12:49:53,tinus,online-boutique-5120,500 screenshot [n/a - 0]
+2025-07-23 12:49:56,tanya,online-boutique-5120,"uh oh, those Aviators are top sellers due to the new Top Gun movie...It's size up the issue time Samantha Wright [n/a - 0]"
+2025-07-23 12:49:59,shay,online-boutique-5120,Come on this can't be happening! [n/a - 0]
+2025-07-23 12:50:01,tinus,online-boutique-5120,"I'm in this meeting so, wont be able to help but I trust that you all can get this fixed asap, just @ me if you need anything [n/a - 0]"
+2025-07-23 12:50:04,shay,online-boutique-5120,ok looking into this now [n/a - 0]
+2025-07-23 12:50:22,Shay,online-boutique-5120,I will try to replicate the issue [n/a - 0]
+2025-07-23 12:50:42,PLAYER,online-boutique-5120,Seems to be working for me [n/a - 0]
+2025-07-23 12:50:44,Shay,online-boutique-5120,"No luck, anyone else? [n/a - 0]"
+2025-07-23 12:50:47,UptimeLabs,online-boutique-5120,:star: Attempt to replicate the issue [n/a - 0]
+2025-07-23 12:50:53,Daniel,online-boutique-5120,Same here [n/a - 0]
+2025-07-23 12:51:07,Daniel,online-boutique-5120,It could be a regional issue [n/a - 0]
+2025-07-23 12:51:18,UptimeLabs,online-boutique-5120,":bulb: Asking questions to validate impact of the problem"" [n/a - 0]"
+2025-07-23 12:51:31,PLAYER,online-boutique-5120,Where's the board room located? [n/a - 0]
+2025-07-23 12:51:43,Daniel,online-boutique-5120,Same building as ours [n/a - 0]
+2025-07-23 12:52:21,Shay,online-boutique-5120,I know changes were pushed this morning [n/a - 0]
+2025-07-23 12:52:27,Shay,online-boutique-5120,could be a change related issue [n/a - 0]
+2025-07-23 12:52:47,PLAYER,online-boutique-5120,Shay Can you take a look? [n/a - 0]
+2025-07-23 12:52:51,Shay,online-boutique-5120,on it [n/a - 0]
+2025-07-23 12:53:01,UptimeLabs,online-boutique-5120,:bulb: Hint: how many users are affected? does this rule out possible causes? [n/a - 0]
+2025-07-23 12:53:37,PLAYER,online-boutique-5120,Hamed Is the board room pointing to live or a test instance? [n/a - 0]
+2025-07-23 12:53:42,Daniel,online-boutique-5120,He is OOO today [n/a - 0]
+2025-07-23 12:54:06,Daniel,online-boutique-5120,I would assume Demo is on live (Prod) [n/a - 0]
+2025-07-23 12:54:11,PLAYER,online-boutique-5120,Bob Are we getting any customer reports? [n/a - 0]
+2025-07-23 12:54:19,Bob,online-boutique-5120,Checking reports now [n/a - 0]
+2025-07-23 12:54:22,PLAYER,online-boutique-5120,Ta [n/a - 0]
+2025-07-23 12:54:23,UptimeLabs,online-boutique-5120,:star: Asking questions to validate impact of the problem [n/a - 0]
+2025-07-23 12:54:55,Bob,online-boutique-5120,No issues of any sorts [n/a - 0]
+2025-07-23 12:55:04,Bob,online-boutique-5120,Looks like we are good [n/a - 0]
+2025-07-23 12:55:08,Shay,online-boutique-5120,"I can't see any errors in the logs, and all services look healthy [n/a - 0]"
+2025-07-23 12:55:27,UptimeLabs,online-boutique-5120,:bulb: Hint: Declare an incident. [n/a - 0]
+2025-07-23 12:55:29,PLAYER,online-boutique-5120,"Ok, so this looks to be an internal issue, with the board room? [n/a - 0]"
+2025-07-23 12:55:59,Bez,business-comms-5120,Any updates on the aviator issue? [n/a - 0]
+2025-07-23 12:56:05,PLAYER,business-comms-5120,*Incident Number INC100045:* Connection issue from the board room sev 3 [n/a - 0]
+2025-07-23 12:56:06,UptimeLabs,online-boutique-5120,:star: Incident record created [n/a - 0]
+2025-07-23 12:56:06,Daniel,online-boutique-5120,I double-checked the deployments. i didn't see any [n/a - 0]
+2025-07-23 12:56:08,UptimeLabs,online-boutique-5120,:star: Send first comms in first 5 minutes [n/a - 0]
+2025-07-23 12:56:31,Daniel,online-boutique-5120,Most likely. Everything is pointing towards the isolated issue [n/a - 0]
+2025-07-23 12:56:33,PLAYER,business-comms-5120,Looks like we have an issue connecting to live from the board room. No current customer reports [n/a - 0]
+2025-07-23 12:56:41,Shay,online-boutique-5120,So this is not a change related issue? [n/a - 0]
+2025-07-23 12:56:49,UptimeLabs,online-boutique-5120,:star: Incident record created [n/a - 0]
+2025-07-23 12:56:53,UptimeLabs,online-boutique-5120,:star: Formally assign criticality level to the incident [n/a - 0]
+2025-07-23 12:57:14,PLAYER,online-boutique-5120,Tanya Can we take a look at the connections from the board room? [n/a - 0]
+2025-07-23 12:57:33,Tanya,online-boutique-5120,I will check this out now [n/a - 0]
+2025-07-23 12:57:38,UptimeLabs,online-boutique-5120,:star: Form an effective investigation team [n/a - 0]
+2025-07-23 12:57:40,PLAYER,online-boutique-5120,thanks [n/a - 0]
+2025-07-23 12:57:45,UptimeLabs,online-boutique-5120,:star: Form a working theory [n/a - 0]
+2025-07-23 12:58:05,PLAYER,business-comms-5120,Confirmed no customer reports. This is localized [n/a - 0]
+2025-07-23 12:58:17,Daniel,online-boutique-5120,This could also be a local issue with the laptop or browser [n/a - 0]
+2025-07-23 12:59:02,Tanya,online-boutique-5120,"I have checked the network. No errors, no rejects or drops. Everything looks fine on my end [n/a - 0]"
+2025-07-23 12:59:03,PLAYER,online-boutique-5120,Good shout Daniel. Can you try clearing your cache Tinus? [n/a - 0]
+2025-07-23 12:59:14,PLAYER,online-boutique-5120,Thanks Tanya [n/a - 0]
+2025-07-23 12:59:32,Tinus,online-boutique-5120,"I will try this now, also open for any other suggestions [n/a - 0]"
+2025-07-23 12:59:41,Bez,online-boutique-5120,Keep me posted [n/a - 0]
+2025-07-23 13:00:02,PLAYER,online-boutique-5120,Tinus Do you have another machine in there you can try from? [n/a - 0]
+2025-07-23 13:00:04,Tinus,online-boutique-5120,Clearing cache now! [n/a - 0]
+2025-07-23 13:00:22,Tinus,online-boutique-5120,Only my work laptop [n/a - 0]
+2025-07-23 13:00:35,tinus,online-boutique-5120,Damn! thats it [n/a - 0]
+2025-07-23 13:00:36,PLAYER,business-comms-5120,Possibly hardware is being run from [n/a - 0]
+2025-07-23 13:00:37,tinus,online-boutique-5120,"Great Ive got to do my presentation now, thanks for figuring this out so quickly. @daniel @shay can you look in to a cache busting solution? [n/a - 0]"
+2025-07-23 13:00:39,shay,online-boutique-5120,it was the cache! sure we can do that [n/a - 0]
+2025-07-23 13:00:41,daniel,online-boutique-5120,"no worries boss, at least its not a significat issue [n/a - 0]"
+2025-07-23 13:00:42,daniel,online-boutique-5120,good luck with the presentation! [n/a - 0]
+2025-07-23 13:00:43,tanya,online-boutique-5120,yes good luck @tinus [n/a - 0]
+2025-07-23 13:00:45,shay,online-boutique-5120,good luck @tinus! [n/a - 0]
+2025-07-23 13:00:51,PLAYER,online-boutique-5120,Nice [n/a - 0]
+2025-07-23 13:00:57,UptimeLabs,online-boutique-5120,Start retro and feedback [n/a - 0]
+2025-07-23 13:01:10,PLAYER,business-comms-5120,Confirmed. Clearing the cache fixed it [n/a - 0]
+2025-07-23 13:01:16,PLAYER,online-boutique-5120,Clicked Start_feedback button
+2025-07-23 13:01:18,UptimeLabs,online-boutique-5120,:star: Confirm resolution with the business [n/a - 0]
+2025-07-23 13:01:20,UptimeLabs,online-boutique-5120,:star: Validate the fix [n/a - 0]
+2025-07-23 13:04:00,UptimeLabs,online-boutique-5120,Submission successful [n/a - 0]

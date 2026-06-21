@@ -1,0 +1,150 @@
+datetime,player,channel,message
+2025-11-12 13:48:57,Bez,online-boutique-6749,"Morning, team! Anyone else need a triple espresso today?"
+2025-11-12 13:49:06,Tinus,online-boutique-6749,"You're not the only one, Bez! The reports from last week are still giving me nightmares."
+2025-11-12 13:49:16,Bob,online-boutique-6749,"Tell me about it, Tinus."
+2025-11-12 13:49:19,Bob,online-boutique-6749,"But hey, at least it's sunny outside today. :sunrise:"
+2025-11-12 13:49:21,Bez,online-boutique-6749,"True, a little sunshine makes everything better."
+2025-11-12 13:49:23,Bez,online-boutique-6749,"Also, I'm having my usual green smoothie. That's my secret energy booster."
+2025-11-12 13:49:25,Daniel,online-boutique-6749,"Nice, Bez! I'll stick with my coffee though."
+2025-11-12 13:49:26,Daniel,online-boutique-6749,Anyone else excited for the launch of the new BitCoin :coin: payment feature this week?
+2025-11-12 13:49:28,Tinus,online-boutique-6749,"Absolutely, Daniel! Been looking forward to it."
+2025-11-12 13:49:30,Tinus,online-boutique-6749,"By the way, no spoilers, but did anyone catch the football game? Epic comeback!"
+2025-11-12 13:49:33,Shay,online-boutique-6749,I missed it! I was knee deep in a sci-fi novel. Anyone else into that?
+2025-11-12 13:49:41,Tanya,online-boutique-6749,"Oh, I love sci-fi! Can you share the name of the book, Shay?"
+2025-11-12 13:49:49,Daniel,online-boutique-6749,I've been reading a bit of sci-fi myself.
+2025-11-12 13:49:51,Daniel,online-boutique-6749,"Looking forward to sharing recommendations, Shay!"
+2025-11-12 13:49:55,Bez,online-boutique-6749,"There's always so much happening outside of work! Keep the energy :battery: going, team."
+2025-11-12 13:49:58,Bez,online-boutique-6749,It's going to be another productive day. :raised_hands:
+2025-11-12 13:50:00,PLAYER,online-boutique-6749,Clicked undefined button
+2025-11-12 13:50:02,UptimeLabs,online-boutique-6749,"Welcome to The Chain, the responsibility is on you to size up the problem.
+
+? *Use `/help` at any time for a list of useful links and commands*
+ ? *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin Start button"
+2025-11-12 13:50:04,PLAYER,online-boutique-6749,Clicked org button
+2025-11-12 13:51:11,PLAYER,online-boutique-6749,Clicked Start button
+2025-11-12 13:51:12,UptimeLabs,online-boutique-6749,":alarm_clock: - You have 25 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-11-12 13:51:13,Bob,online-boutique-6749,"Hey, we're getting reports of customers struggling to make purchases"
+2025-11-12 13:51:15,Bob,online-boutique-6749,@here Anyone else seeing this?
+2025-11-12 13:51:18,Tinus,online-boutique-6749,"Yes, I've noticed the same, @Bob . It seems like an error in the system"
+2025-11-12 13:51:21,Bez,online-boutique-6749,"Whatever it is, we need to sort it out quickly."
+2025-11-12 13:51:23,Bez,online-boutique-6749,we need to step on it! before the social media backlash is turning into a storm.
+2025-11-12 13:51:27,Tinus,online-boutique-6749,"Who is handling incidents today? Please size up the issue, this is urgent"
+2025-11-12 13:51:42,PLAYER,online-boutique-6749,"Yep, seeing ""*HTTP Status:* 500 Internal Server Error"" on the site"
+2025-11-12 13:51:49,UptimeLabs,online-boutique-6749,:star: Reproduces the incident
+2025-11-12 13:52:13,PLAYER,online-boutique-6749,Shay Tanya Have we had abty deployments?
+2025-11-12 13:52:18,UptimeLabs,online-boutique-6749,:star: Check changes done to the platform
+2025-11-12 13:52:32,Shay,online-boutique-6749,"Here is the recent deployments
+<https://uptime-labs.atlassian.net/wiki/external/MjMxNGU0ZjU1ZTVhNDA0NWJmY2M1NjU1OGFiMGY2YjA>"
+2025-11-12 13:52:43,PLAYER,online-boutique-6749,Website showing 500 error sev:1
+2025-11-12 13:52:43,PLAYER,business-comms-6749,*Incident Number INC100020:* Website showing 500 error sev:1
+2025-11-12 13:52:43,UptimeLabs,online-boutique-6749,:star: Incident record created
+2025-11-12 13:52:45,UptimeLabs,online-boutique-6749,:star: Send first comms in first 5 minutes
+2025-11-12 13:52:48,UptimeLabs,online-boutique-6749,:star: Qualify the problem
+2025-11-12 13:52:58,Shay,online-boutique-6749,Let me know what you would like me to look into
+2025-11-12 13:53:11,PLAYER,online-boutique-6749,Anything in the logs that looks out of the ordibary?
+2025-11-12 13:53:20,Bez,business-comms-6749,What % of people is this affecting?
+2025-11-12 13:53:36,Shay,online-boutique-6749,I can take a look now...
+2025-11-12 13:54:01,PLAYER,online-boutique-6749,Bob What number of reports are we getting?
+2025-11-12 13:54:05,UptimeLabs,online-boutique-6749,:star: Asking questions to validate impact of the problem
+2025-11-12 13:54:15,Bob,online-boutique-6749,"Getting over 120+ reports, looks like customers unable to make payments"
+2025-11-12 13:54:32,PLAYER,online-boutique-6749,Are these region specific?
+2025-11-12 13:54:46,PLAYER,business-comms-6749,120 reports so far
+2025-11-12 13:54:55,Bob,online-boutique-6749,Seems to be coming from Europe direction
+2025-11-12 13:55:12,PLAYER,business-comms-6749,Seems to be mainly Europe
+2025-11-12 13:55:18,Bob,online-boutique-6749,Looks like a European issue
+2025-11-12 13:55:45,Shay,online-boutique-6749,Seeing errors from payment service
+2025-11-12 13:56:06,Bez,business-comms-6749,Any update on ETA?
+2025-11-12 13:56:30,PLAYER,online-boutique-6749,What errors are we seeing Shay?
+2025-11-12 13:57:01,PLAYER,online-boutique-6749,Tanya Anything from our European hosting that could be causing this?
+2025-11-12 13:57:02,Shay,online-boutique-6749,[WARN] [cart-service] Request to payment endpoint timed out after 3000ms. Retrying (attempt 3/5)...
+2025-11-12 13:57:25,PLAYER,online-boutique-6749,"Ok, can we roll the last change back?"
+2025-11-12 13:57:26,Shay,online-boutique-6749,[WARN] [cart-service] Transaction failed - unknown error returned from upstream service. TraceID=7fdc91a2
+2025-11-12 13:57:29,UptimeLabs,online-boutique-6749,:star: Restoration over root cause analysis
+2025-11-12 13:57:44,Shay,online-boutique-6749,Which change shall we rollback?
+2025-11-12 13:58:12,PLAYER,online-boutique-6749,Do we think this is related to the Bitcoin work?
+2025-11-12 13:58:19,Tanya,online-boutique-6749,No i dont see anything from network side that could be causing this
+2025-11-12 13:58:28,Tanya,online-boutique-6749,I'll keep you updated
+2025-11-12 13:58:38,PLAYER,online-boutique-6749,Thanks Tanya
+2025-11-12 13:58:47,Shay,online-boutique-6749,Could be
+2025-11-12 13:59:12,Shay,online-boutique-6749,Bitcoin hasn't been enabled yet on production
+2025-11-12 13:59:27,PLAYER,online-boutique-6749,Daniel Anything on the code side you can see?
+2025-11-12 13:59:59,Bez,business-comms-6749,Is this a global or regional issue?
+2025-11-12 14:00:21,PLAYER,business-comms-6749,Appears to be EU only so far
+2025-11-12 14:00:40,Daniel,online-boutique-6749,Sorry what's going on @Samantha.wright?
+2025-11-12 14:01:01,PLAYER,online-boutique-6749,Seeing lots of errors from the cart service
+2025-11-12 14:01:39,Daniel,online-boutique-6749,Are customers having issues with adding items to the cart?
+2025-11-12 14:01:55,PLAYER,online-boutique-6749,"Getting over 120+ reports, looks like customers unable to make payments"
+2025-11-12 14:02:16,Daniel,online-boutique-6749,"Oh payments, let me have a look now..."
+2025-11-12 14:02:22,PLAYER,online-boutique-6749,Thanks
+2025-11-12 14:02:51,Daniel,online-boutique-6749,im seeing errors from my change CHG89779
+2025-11-12 14:02:58,Daniel,online-boutique-6749,i think we should rollback
+2025-11-12 14:03:02,PLAYER,online-boutique-6749,"Ok, can we safely roll it back?"
+2025-11-12 14:03:26,PLAYER,business-comms-6749,Attempting a rollback
+2025-11-12 14:03:37,PLAYER,online-boutique-6749,Daniel?
+2025-11-12 14:03:48,Daniel,online-boutique-6749,Well i can rollback now or shall i take time and check if its safe to do so?
+2025-11-12 14:03:59,PLAYER,online-boutique-6749,Roll it back
+2025-11-12 14:04:02,Daniel,online-boutique-6749,Depends how quickly you want this platform up
+2025-11-12 14:04:20,Daniel,online-boutique-6749,Right rolling back now...
+2025-11-12 14:04:38,Daniel,online-boutique-6749,"Understood, I'll proceed with rolling back the payment service"
+2025-11-12 14:04:58,Daniel,online-boutique-6749,payment service rollback is complete
+2025-11-12 14:05:08,PLAYER,online-boutique-6749,Ok
+2025-11-12 14:05:13,Hamed,online-boutique-6749,This is not good. Something is broken after the payment rollback
+2025-11-12 14:05:33,PLAYER,online-boutique-6749,Shay Anything in the logging?
+2025-11-12 14:05:53,PLAYER,online-boutique-6749,I still can't get to the site at all
+2025-11-12 14:05:54,Shay,online-boutique-6749,looks like payment service pod is down
+2025-11-12 14:06:21,PLAYER,online-boutique-6749,Tanya Anything you can see on the platform side?
+2025-11-12 14:06:35,Tanya,online-boutique-6749,Checking now...
+2025-11-12 14:06:36,PLAYER,online-boutique-6749,And do we need to roll all the bitcoin changes back?
+2025-11-12 14:06:49,Tanya,online-boutique-6749,i think we should
+2025-11-12 14:07:04,Tanya,online-boutique-6749,What changes were involved?
+2025-11-12 14:08:24,PLAYER,online-boutique-6749,"Ok, changes are:
+CHG89778
+CHG89777
+CHG89759"
+2025-11-12 14:08:33,PLAYER,online-boutique-6749,CHG89772
+2025-11-12 14:09:03,PLAYER,online-boutique-6749,Can we get all these rolled back Daniel Shay Tanya
+2025-11-12 14:09:24,PLAYER,business-comms-6749,Rolling back all the bitcoin changes
+2025-11-12 14:09:25,Daniel,online-boutique-6749,"Rolling back 
+CHG89778
+CHG89777
+CHG89772"
+2025-11-12 14:09:46,PLAYER,online-boutique-6749,Don't forget CHG89759
+2025-11-12 14:09:47,Shay,online-boutique-6749,CHG89759 has already been rolled back
+2025-11-12 14:09:54,PLAYER,online-boutique-6749,"Cool, cheers"
+2025-11-12 14:10:17,Tanya,online-boutique-6749,Rollbacks are completed
+2025-11-12 14:10:21,Daniel,online-boutique-6749,"Great, i've also restarted the frontend so the website should be working now"
+2025-11-12 14:10:43,PLAYER,online-boutique-6749,Can anyone confirm?
+2025-11-12 14:10:49,UptimeLabs,online-boutique-6749,:star: Cross checking resolution with team
+2025-11-12 14:10:53,Tinus,online-boutique-6749,@samantha.wright can you confirm?
+2025-11-12 14:10:55,Daniel,online-boutique-6749,Logs are looking better
+2025-11-12 14:11:08,PLAYER,online-boutique-6749,I'm still having issues with the website
+2025-11-12 14:11:08,Shay,online-boutique-6749,Payment service pod is back up
+2025-11-12 14:11:28,PLAYER,online-boutique-6749,Bob Any word from the field?
+2025-11-12 14:11:33,UptimeLabs,online-boutique-6749,:star: Cross check resolution with stakeholders
+2025-11-12 14:11:46,Bob,online-boutique-6749,Reports are going down!!
+2025-11-12 14:11:54,PLAYER,online-boutique-6749,Shay Can you connect to the site?
+2025-11-12 14:11:57,Daniel,online-boutique-6749,Website is back up for me
+2025-11-12 14:12:06,PLAYER,online-boutique-6749,And me
+2025-11-12 14:12:13,UptimeLabs,online-boutique-6749,:alarm_clock: - You have less than 4 minutes. You can type `/help` if you need any reminders.
+2025-11-12 14:12:16,Daniel,online-boutique-6749,Keep trying to refresh perhaps
+2025-11-12 14:12:39,PLAYER,online-boutique-6749,All looking good now
+2025-11-12 14:12:44,PLAYER,online-boutique-6749,Able to checkout
+2025-11-12 14:12:45,Tinus,online-boutique-6749,Great please let @Bez know
+2025-11-12 14:12:52,UptimeLabs,online-boutique-6749,:star: Validate the fix
+2025-11-12 14:13:00,PLAYER,business-comms-6749,Site back up and able to make payments
+2025-11-12 14:13:03,Daniel,online-boutique-6749,It appears that everything has returned to its normal state
+2025-11-12 14:13:05,Shay,online-boutique-6749,I was worried for a bit but everything looks good now.
+2025-11-12 14:13:07,UptimeLabs,online-boutique-6749,:star: Confirm resolution with the business
+2025-11-12 14:13:08,Bob,online-boutique-6749,"Great work, everyone! The payments issue has been resolved and customers can now check out smoothly"
+2025-11-12 14:13:13,Tanya,online-boutique-6749,Phew! Glad we got that sorted. Fantastic teamwork!
+2025-11-12 14:13:14,Tinus,online-boutique-6749,Absolutely! Proud to be a part of this team
+2025-11-12 14:13:15,Tinus,online-boutique-6749,Thank you @samantha.wright for coordinating the rollback effectively
+2025-11-12 14:13:19,Bez,online-boutique-6749,"Brilliant job, team and @samantha.wright!"
+2025-11-12 14:13:20,Bez,online-boutique-6749,"I've been monitoring the financial metrics, and they're already improving"
+2025-11-12 14:13:28,PLAYER,online-boutique-6749,Well done team
+2025-11-12 14:13:58,UptimeLabs,online-boutique-6749,"Thank you for playing The Chain, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit start when you are ready. I am ready button"
+2025-11-12 14:14:13,PLAYER,online-boutique-6749,Clicked Start_feedback button
+2025-11-12 14:15:47,UptimeLabs,online-boutique-6749,Submission successful

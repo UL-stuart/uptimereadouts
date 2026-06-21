@@ -1,0 +1,204 @@
+datetime,player,channel,message
+2024-04-18 10:33:15,Shay,incident-1862,Morning team! Feeling pumped for the big ?Hipster Haul? event this week? [n/a - 0]
+2024-04-18 10:33:18,Bez,incident-1862,Absolutely! Can't wait to see all our hard work pay off.  [n/a - 0]
+2024-04-18 10:33:22,Tanya,incident-1862,"Agreed, it's going to be a game-changer for us [n/a - 0]"
+2024-04-18 10:33:27,Bob,incident-1862,Customer support team standing by to handle any queries. Let's do this! [n/a - 0]
+2024-04-18 10:33:33,Bez,incident-1862,"Team, the excitement is palpable! I have full confidence in each of you to make this event a roaring success. [n/a - 0]"
+2024-04-18 10:33:37,Bez,incident-1862,"Let's showcase our best and leave our customers thrilled with what we have to offer. Together, we'll make it happen! [n/a - 0]"
+2024-04-18 10:33:40,Tinus,incident-1862,"Absolutely, Bez! And let's not forget the potential revenue boost this event could bring. Our projections are looking promising. [n/a - 0]"
+2024-04-18 10:33:43,Tanya,incident-1862,:moneybag: :moneybag: :moneybag: [n/a - 0]
+2024-04-18 10:33:46,Daniel,incident-1862,Fingers crossed everything goes smoothly this time! :crossed_fingers: :joy: [n/a - 0]
+2024-04-18 10:33:53,UptimeLabs,incident-1862,Start lvl [n/a - 0]
+2024-04-18 10:33:59,PLAYER,incident-1862,Clicked Start button
+2024-04-18 10:34:00,UptimeLabs,incident-1862,":alarm_clock: - You have 25 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders. [n/a - 0]"
+2024-04-18 10:34:06,PLAYER,incident-1862,Clicked Start button
+2024-04-18 10:34:07,Tinus,incident-1862,"Speaking of celebrations, any recommendations for a post-event holiday destination? I could use some time off after this! [n/a - 0]"
+2024-04-18 10:34:12,Maya,incident-1862,How about a tropical paradise with no Wi-Fi? :desert_island:  [n/a - 0]
+2024-04-18 10:34:15,Bob,incident-1862,"Hey folks, hate to rain on the parade, but I've got some new reports coming in about customers encountering issues with the products on the website. [n/a - 0]"
+2024-04-18 10:34:20,Daniel,incident-1862,"Yeah, Bob, anything specific you're noticing? Error messages, affected payment methods? [n/a - 0]"
+2024-04-18 10:34:25,Bob,incident-1862,Customers are not able to place orders [n/a - 0]
+2024-04-18 10:34:28,Tanya,incident-1862,"Alright team, let's get to work. Tinus, you can start planning that holiday once we've got this sorted!. [n/a - 0]"
+2024-04-18 10:34:29,PLAYER,incident-1862,Any specific error bob [n/a - 0]
+2024-04-18 10:34:33,Tinus,incident-1862,"Deal! But first, let's get to the bottom of this issue [n/a - 0]"
+2024-04-18 10:34:35,Bez,incident-1862,"Hey team, just dropping in to emphasise the urgency of resolving this issue swiftly. We've got a major event on the horizon - the launch of our exclusive ""Hipster Haul Weekend"" next week. [n/a - 0]"
+2024-04-18 10:34:41,Bez,incident-1862,"It's poised to be our biggest sale yet, and any delays caused by this payment glitch could seriously impact our preparations. [n/a - 0]"
+2024-04-18 10:34:44,Bez,incident-1862,Let's prioritise frequent updates and keep the communication channels wide open. [n/a - 0]
+2024-04-18 10:34:44,PLAYER,incident-1862,And also any location specific users are reporting the issue Bob [n/a - 0]
+2024-04-18 10:34:48,Shay,incident-1862,We have a lot of recent changes made to the platform so im going to compile a list with the changes and the descriptions. [n/a - 0]
+2024-04-18 10:34:53,Shay,incident-1862,Will send it over soon [n/a - 0]
+2024-04-18 10:34:55,Bob,incident-1862,Yeah one sec [n/a - 0]
+2024-04-18 10:35:02,Bob,incident-1862,will get the info now [n/a - 0]
+2024-04-18 10:35:16,PLAYER,incident-1862,"Sure, I just tried and I was able to place an order for a product [n/a - 0]"
+2024-04-18 10:35:26,PLAYER,incident-1862,Any complaints regarding any specific product. [n/a - 0]
+2024-04-18 10:35:48,PLAYER,incident-1862,Bob Any luck [n/a - 0]
+2024-04-18 10:36:12,Bob,incident-1862,Yeah ok reports coming in off issues are from Turkey and Japan [n/a - 0]
+2024-04-18 10:36:42,Bob,incident-1862,from what i can tell most of the reports seems to be coming from the two regions [n/a - 0]
+2024-04-18 10:36:46,Bob,incident-1862,My team has gathered the customer reports as of the last 24 hours to make it easier to understand [n/a - 0]
+2024-04-18 10:36:48,PLAYER,incident-1862,Any specific product user complained or the issue is for all products not being placed [n/a - 0]
+2024-04-18 10:36:50,Bob,incident-1862,[n/a - 0]
+2024-04-18 10:37:02,Bob,incident-1862,Perhaps its similar to our incident in Frankfurt with the network being down for that region? [n/a - 0]
+2024-04-18 10:37:15,PLAYER,incident-1862,Thanks.. [n/a - 0]
+2024-04-18 10:37:23,Bob,incident-1862,They are saying it is for all products [n/a - 0]
+2024-04-18 10:37:25,PLAYER,incident-1862,Shay Can we check into the platforms health checks [n/a - 0]
+2024-04-18 10:37:38,PLAYER,incident-1862,Tanya Can we check on the network part.. [n/a - 0]
+2024-04-18 10:37:41,PLAYER,incident-1862,Also on the ISP [n/a - 0]
+2024-04-18 10:37:55,Shay,incident-1862,Yeah i do health checks now [n/a - 0]
+2024-04-18 10:38:05,Tanya,incident-1862,Yeah ok will look at network now [n/a - 0]
+2024-04-18 10:38:12,PLAYER,business-comms-1862,*Incident Number INC100049:* Sev1 Users unable to place order [n/a - 0]
+2024-04-18 10:38:13,Tanya,incident-1862,and isp [n/a - 0]
+2024-04-18 10:38:41,Daniel,incident-1862,Want me to look at any recent changes ? [n/a - 0]
+2024-04-18 10:39:25,PLAYER,business-comms-1862,"IG Incident Notification: Japan and Turkey Users unable to place orders
+
+ Incident Reference: *INC100049*
+Current Status: We have been reported from users from Japan and Turkey on their in-ability to place orders on the website.
+Relevant teams have been engaged and are investigating this issue.
+Next Update: 11:50 AM UK Time
+
+ Regards,
+Incident Management [n/a - 0]"
+2024-04-18 10:39:41,PLAYER,incident-1862,Yes Daniel [n/a - 0]
+2024-04-18 10:39:49,Bez,business-comms-1862,Do we have a clear timeline for when we expect to have the problem fixed? [n/a - 0]
+2024-04-18 10:40:09,Tanya,incident-1862,Not seeing any issues with ISP in these regions [n/a - 0]
+2024-04-18 10:40:23,PLAYER,incident-1862,"Looks like multiple changes went in platform.
+CHG89873 - Maya
+CHG89675 and CHG95882 - Tanya [n/a - 0]"
+2024-04-18 10:40:27,Daniel,incident-1862,Any in particular ? [n/a - 0]
+2024-04-18 10:40:32,PLAYER,incident-1862,Can Maya &amp; Tanya look into this changes [n/a - 0]
+2024-04-18 10:40:41,Daniel,incident-1862,Sorry yeah ok will look at them first [n/a - 0]
+2024-04-18 10:40:48,PLAYER,incident-1862,Bob Are we sure just 2 regions are impacted at this stage. Can you please re-confirm ? [n/a - 0]
+2024-04-18 10:40:59,Bob,incident-1862,Yeah will check again [n/a - 0]
+2024-04-18 10:41:14,Maya,incident-1862,Yeah will jump on and look now [n/a - 0]
+2024-04-18 10:41:15,PLAYER,incident-1862,Daniel I noticed your CHG# CHG89624. Can we please take a look into this as well. [n/a - 0]
+2024-04-18 10:41:30,Tanya,incident-1862,Yeah want me to look at my change rather than network ? [n/a - 0]
+2024-04-18 10:41:37,Daniel,incident-1862,Yeah no worries [n/a - 0]
+2024-04-18 10:42:01,Shay,incident-1862,Here is some detail on the changes <https://uptime-labs.atlassian.net/wiki/spaces/ULPUBLIC/pages/323485700/Detail+s+Matter+Change+Request+logs> [n/a - 0]
+2024-04-18 10:42:02,PLAYER,incident-1862,Hamed S - Posting an issue that we are currently dealing with Turkey and Japan users are unable to place orders on our website.. We might need your advise while we are investigating. [n/a - 0]
+2024-04-18 10:42:31,PLAYER,incident-1862,Tanya I would suggest to do both. [n/a - 0]
+2024-04-18 10:42:34,Hamed,incident-1862,Yeah sure I can jump on [n/a - 0]
+2024-04-18 10:42:44,Tanya,incident-1862,Ok no worries [n/a - 0]
+2024-04-18 10:42:57,PLAYER,incident-1862,First we can check on the network health status and then the possibility of the change affecting any of the systems. [n/a - 0]
+2024-04-18 10:43:08,PLAYER,incident-1862,Maya Any luck on your CHG part [n/a - 0]
+2024-04-18 10:43:19,PLAYER,incident-1862,Daniel How about the your CHG [n/a - 0]
+2024-04-18 10:43:32,PLAYER,incident-1862,Bob Any reports from other locale ? [n/a - 0]
+2024-04-18 10:43:32,Maya,incident-1862,"OK yeah had a look at my change again, it worked after i deployed and not seeing any issues with the code [n/a - 0]"
+2024-04-18 10:44:14,Bob,incident-1862,Yeah just Turkey and Japan so far reporting the issue [n/a - 0]
+2024-04-18 10:44:20,PLAYER,business-comms-1862,Hey Bez we are currently checking with the resolver teams on the changes that have went in the system to see any potential change causing this outage [n/a - 0]
+2024-04-18 10:44:33,PLAYER,business-comms-1862,I will keep you posted once I hear the stats from the teams [n/a - 0]
+2024-04-18 10:44:54,Daniel,incident-1862,Yeah CheckoutService looks heathy to me [n/a - 0]
+2024-04-18 10:45:12,PLAYER,incident-1862,Maya Can we have the evidence validated if the change has not caused any disruption [n/a - 0]
+2024-04-18 10:45:30,Shay,incident-1862,Ohh guys found an error ERROR: Authentication failed for currency exchange rate service. ERROR CODE: 401 Unauthorized [n/a - 0]
+2024-04-18 10:45:47,PLAYER,incident-1862,Hamed S I have a doubt on one of your CHG# *CHG89692* [n/a - 0]
+2024-04-18 10:45:51,PLAYER,incident-1862,Can you please check [n/a - 0]
+2024-04-18 10:46:03,Maya,incident-1862,It would be safe to roll back if you think it would be best to rule it out [n/a - 0]
+2024-04-18 10:46:31,UptimeLabs,incident-1862,":alarm_clock: - Half your time is up, stay focused. You can type `/help` if you need any reminders. [n/a - 0]"
+2024-04-18 10:46:34,Hamed,incident-1862,Hey yeah ill have a look [n/a - 0]
+2024-04-18 10:46:48,PLAYER,incident-1862,Maya I would suggest a roll back [n/a - 0]
+2024-04-18 10:46:54,PLAYER,incident-1862,Tanya any luck on your end ? [n/a - 0]
+2024-04-18 10:46:58,Maya,incident-1862,OK will do [n/a - 0]
+2024-04-18 10:47:16,Bez,business-comms-1862,Not saying your wrong but I'm just looking clarity as to why that severity? [n/a - 0]
+2024-04-18 10:47:17,PLAYER,incident-1862,"Daniel Also, can we check if any load test's or chaos conductor running in production [n/a - 0]"
+2024-04-18 10:47:23,PLAYER,incident-1862,Tanya Any luck ? [n/a - 0]
+2024-04-18 10:47:52,Daniel,incident-1862,As far as im aware there are no chaos test but will have a look [n/a - 0]
+2024-04-18 10:48:13,Tanya,incident-1862,Not seeing any issues with my change [n/a - 0]
+2024-04-18 10:48:13,PLAYER,business-comms-1862,"IG Incident Update: Japan and Turkey Users unable to place orders
+
+ Incident Reference: *INC100049*
+Current Status: It was verified that this issue is only impacting Japan and Turkey users currently.
+We are currently checking on the changes that have went in the platform to see if anything caused disruption.
+More updates to follow
+Next Update: 12:00 PM UK Time
+
+ Regards,
+Incident Management [n/a - 0]"
+2024-04-18 10:48:24,Daniel,incident-1862,Change CHG89873 has been sucessfully rolledback [n/a - 0]
+2024-04-18 10:48:33,Shay,incident-1862,Hopefully that solved the issue [n/a - 0]
+2024-04-18 10:48:36,Maya,incident-1862,"I made the most recent change to the currency service which is basically a security patch, I don't see how it would be causing this issue. [n/a - 0]"
+2024-04-18 10:48:39,Daniel,incident-1862,ill check the platform just incase it hasn't made anything worse [n/a - 0]
+2024-04-18 10:48:42,Tinus,incident-1862,Can we confirm if everythings back working? [n/a - 0]
+2024-04-18 10:48:44,PLAYER,incident-1862,Bob any complaints [n/a - 0]
+2024-04-18 10:49:01,Bob,incident-1862,Still getting complaints from the customers [n/a - 0]
+2024-04-18 10:49:21,PLAYER,incident-1862,Hamed S Any luck with your CHG [n/a - 0]
+2024-04-18 10:49:33,Hamed,incident-1862,Ohh guys think its my change [n/a - 0]
+2024-04-18 10:49:59,Hamed,incident-1862,It looks like the API keys were misconfigured [n/a - 0]
+2024-04-18 10:50:13,Shay,incident-1862,I was just able to reproduce as well. [n/a - 0]
+2024-04-18 10:50:26,PLAYER,business-comms-1862,Bez This outage is currently limited to 2 regions and hence we are keeping the criticality high to get the issue fixed before it wide-spreads to other region. [n/a - 0]
+2024-04-18 10:50:41,PLAYER,incident-1862,Are we rolling back the CHG Hamed S [n/a - 0]
+2024-04-18 10:50:48,Shay,incident-1862,If you are on the home page and switch to Japanese Yen ¥ and Turkish Lira ₺ you get the error [n/a - 0]
+2024-04-18 10:50:56,Hamed,incident-1862,Roll back wont work [n/a - 0]
+2024-04-18 10:51:18,Hamed,incident-1862,i changed the keys as the ones before were going out of date [n/a - 0]
+2024-04-18 10:51:26,PLAYER,business-comms-1862,"IG Incident Update: Japan and Turkey Users unable to place orders
+
+ Incident Reference: *INC100049*
+Current Status: We have identified a possible change that went in platform caused this disruption.
+We are in progress to roll back to mitigate the issue.More updates to follow
+Next Update: 12:00 PM UK Time
+
+ Regards,
+Incident Management [n/a - 0]"
+2024-04-18 10:51:35,Hamed,incident-1862,will need to do a roll forward [n/a - 0]
+2024-04-18 10:51:45,PLAYER,incident-1862,Alright. What is the ETA? [n/a - 0]
+2024-04-18 10:52:12,Shay,incident-1862,we're gonna need a plan in order to do this Fix for the API keys [n/a - 0]
+2024-04-18 10:52:23,Tanya,incident-1862,We need to contact the third-party currency exchange rate service provider to request a new API key. [n/a - 0]
+2024-04-18 10:52:31,Hamed,incident-1862,"Also will need to secure the secrets manager to store the new API key, just to make sure its not hard-coded into source code and prevent unauthorised access. [n/a - 0]"
+2024-04-18 10:52:37,Daniel,incident-1862,someone needs to update the configuration of the currency service to use the new API key for accessing the third-party service [n/a - 0]
+2024-04-18 10:52:39,PLAYER,incident-1862,What is the TAT in that case. [n/a - 0]
+2024-04-18 10:52:41,Daniel,incident-1862,What do you think @Sanjay Venkataswamy? [n/a - 0]
+2024-04-18 10:52:59,Hamed,incident-1862,I would say 5 mins if we work on it together [n/a - 0]
+2024-04-18 10:53:09,PLAYER,incident-1862,"Sure, let's get it fixed. [n/a - 0]"
+2024-04-18 10:53:30,Tanya,incident-1862,I will contact the third-party currency exchange rate service provider to request a new API key. [n/a - 0]
+2024-04-18 10:53:35,PLAYER,incident-1862,Let me know once we have fixed [n/a - 0]
+2024-04-18 10:53:50,Hamed,incident-1862,Ok i will secure the secrets manager to store the new API key [n/a - 0]
+2024-04-18 10:54:21,Daniel,incident-1862,Once you guys get that done i will update the configuration of the currency service to use the new API key [n/a - 0]
+2024-04-18 10:54:45,Tanya,incident-1862,Ok have the new key sending it over to you two now [n/a - 0]
+2024-04-18 10:55:33,Hamed,incident-1862,OK sorted the secrets manager [n/a - 0]
+2024-04-18 10:55:40,PLAYER,business-comms-1862,"IG Incident Update: Japan and Turkey Users unable to place orders
+
+ Incident Reference: *INC100049*
+Current Status: Issue was identified on one of the API keys causing this issue.
+To mitigate the issue, team have worked with the third party vendor to procure the new API keys.
+Teams are further working on the fix. More updates to follow
+Next Update: 12:00 PM UK Time
+
+ Regards,
+Incident Management [n/a - 0]"
+2024-04-18 10:55:56,PLAYER,incident-1862,Have we fixed the API key's [n/a - 0]
+2024-04-18 10:56:11,Hamed,incident-1862,Fix is now Implemented [n/a - 0]
+2024-04-18 10:56:12,PLAYER,incident-1862,Did we validate if the new keys are working as expected ? [n/a - 0]
+2024-04-18 10:56:14,Hamed,incident-1862,API keys have now been sucessfully updated  [n/a - 0]
+2024-04-18 10:56:18,Tinus,incident-1862,"Good job, can we confirm @Sanjay Venkataswamy? [n/a - 0]"
+2024-04-18 10:56:30,Tanya,incident-1862,Yeah i checked them [n/a - 0]
+2024-04-18 10:56:31,PLAYER,incident-1862,Bob can we connect back to users and confirm on the issue again? [n/a - 0]
+2024-04-18 10:56:43,Bob,incident-1862,Yeah will check now [n/a - 0]
+2024-04-18 10:57:05,Shay,incident-1862,Will i try and reproduce as well ? [n/a - 0]
+2024-04-18 10:57:09,PLAYER,incident-1862,Hamed S We will have to investigate and understand how to prevent this from future.. Looks like we have multiple dependicies. [n/a - 0]
+2024-04-18 10:57:24,PLAYER,incident-1862,Shay Please go ahead and try [n/a - 0]
+2024-04-18 10:57:28,PLAYER,incident-1862,Any luck Bob? [n/a - 0]
+2024-04-18 10:57:32,Hamed,incident-1862,Yeah good call should be a good discussion in the PIR [n/a - 0]
+2024-04-18 10:57:44,Shay,incident-1862,Seems to be working for me now [n/a - 0]
+2024-04-18 10:57:55,PLAYER,incident-1862,Thanks for confirming Shay [n/a - 0]
+2024-04-18 10:57:59,Bob,incident-1862,Customers are reporting the issue has been fixed [n/a - 0]
+2024-04-18 10:58:00,PLAYER,incident-1862,Bob Any luck ? [n/a - 0]
+2024-04-18 10:58:05,Bob,incident-1862,Good work guys [n/a - 0]
+2024-04-18 10:58:16,PLAYER,incident-1862,"Thanks, We can monitor the situation and proceed to resolve the case. [n/a - 0]"
+2024-04-18 10:58:20,Tanya,incident-1862,"Great work. FYI team, I'll be looking into the licences for our other API keys later to make sure everything's shipshape. [n/a - 0]"
+2024-04-18 10:58:22,PLAYER,incident-1862,I am rolling out comms [n/a - 0]
+2024-04-18 10:58:22,Shay,incident-1862,What a ride! Massive thanks to each of you for your quick thinking and teamwork.  [n/a - 0]
+2024-04-18 10:58:25,Daniel,incident-1862,"Absolutely, Shay! Getting more confident with any incidents that come our way. Good Job everyone!! [n/a - 0]"
+2024-04-18 10:58:30,Tinus,incident-1862,Crisis averted! Now we can focus on maximising the success of the upcoming event without any distractions. [n/a - 0]
+2024-04-18 10:58:34,Hamed,incident-1862,"Phew, what a rollercoaster! Glad we managed to fix it before things got out of hand. [n/a - 0]"
+2024-04-18 10:58:38,Maya,incident-1862,"Excellent news! With the fix in place, we've ensured that the system operates smoothly, and we're now ready once again for the big event next week. [n/a - 0]"
+2024-04-18 10:58:41,Bez,incident-1862,"Fantastic work, everyone! Your quick and effective response has saved the day. Now, let's channel this momentum into making our Hipster Haul Weekend a smashing success.  [n/a - 0]"
+2024-04-18 10:58:43,Bez,incident-1862,Thank you all for your dedication and hard work. [n/a - 0]
+2024-04-18 10:59:06,UptimeLabs,incident-1862,Start drill retro and feedback [n/a - 0]
+2024-04-18 10:59:31,PLAYER,business-comms-1862,"IG Incident Resolution: Japan and Turkey Users unable to place orders
+
+ Incident Reference: *INC100049*
+Current Status: Teams have mitigated this issue.
+And users have also confirmed that the reported issue has been mitigated.
+We will continue to monitor the situation and the root cause of this issue will be carried over a PIR
+Next Update: This is the final communication.
+
+ Regards,
+Incident Management [n/a - 0]"
+2024-04-18 10:59:38,PLAYER,incident-1862,Clicked Start_feedback button
+2024-04-18 11:00:50,UptimeLabs,incident-1862,Submission successful [n/a - 0]

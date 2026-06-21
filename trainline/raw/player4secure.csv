@@ -1,0 +1,152 @@
+datetime,player,channel,message
+29/09/2025 14:37,Maya,secure-channel,@Reza Imany let's build the core response team here. I've already added myself. Who else should we pull in to keep it tight and efficient?
+29/09/2025 14:37,Maya,secure-channel,@Reza Imany let's build the core response team here. I've already added myself. Who else should we pull in to keep it tight and efficient?
+29/09/2025 14:37,Maya,secure-channel,"I'd say one senior person each from security, platform, and engineering. Also add Tanya, tasks could be platform intensive"
+29/09/2025 14:37,Maya,secure-channel,"I'd say one senior person each from security, platform, and engineering. Also add Tanya, tasks could be platform intensive"
+29/09/2025 14:38,Reza Imany,secure-channel,"I thinks its gooz to have <@U047N6LHU0K>, <@U047N6LUYJX> and <@U0480TP9ZA5> here as well"
+29/09/2025 14:38,Reza Imany,secure-channel,also its good to have <@U047KAE5JLV> here
+29/09/2025 14:38,Hamed,secure-channel,Things are going out of hands. @Maya do we have any external support for these situations ?
+29/09/2025 14:38,Hamed,secure-channel,Things are going out of hands. @Maya do we have any external support for these situations ?
+29/09/2025 14:39,Reza Imany,secure-channel,"<@U06CA3MRAJF> As all seniors are added here ,what is going to be our next steps?"
+29/09/2025 14:40,Maya,secure-channel,"Yes, we've got an IR(incident response) retainer with Cyvantics Security"
+29/09/2025 14:40,Maya,secure-channel,"Yes, we've got an IR(incident response) retainer with Cyvantics Security"
+29/09/2025 14:40,Maya,secure-channel,"Looped in Cyvantics Security - they're on their way now to take snapshots of the infected server and storage, followed by forensics on it"
+29/09/2025 14:40,Maya,secure-channel,"Looped in Cyvantics Security - they're on their way now to take snapshots of the infected server and storage, followed by forensics on it"
+29/09/2025 14:40,Maya,secure-channel,"Meanwhile, I've got this from Cyvantics. @Reza Imany, can you help track the steps and coordinate?"
+29/09/2025 14:40,Maya,secure-channel,"Meanwhile, I've got this from Cyvantics. @Reza Imany, can you help track the steps and coordinate?"
+29/09/2025 14:40,Maya,secure-channel,<https://uptime-labs.atlassian.net/wiki/external/MThjMTk4ZDU5ODU0NGZmMWE1NzhmNGY0MDQwNWI1NTA>
+29/09/2025 14:40,Maya,secure-channel,"We've got isolation steps in the playbook, but before we dive in, can you paste that list here? I'll help team run through it"
+29/09/2025 14:40,Maya,secure-channel,"We've got isolation steps in the playbook, but before we dive in, can you paste that list here? I'll help team run through it"
+29/09/2025 14:42,Reza Imany,secure-channel,awesome thank
+29/09/2025 14:42,Reza Imany,secure-channel,"Steps for Isolation:
+s
+Steps to be done, mentioned along with the *owning* team
+1. Disconnect the infected server -&gt; Platforms 
+2. Cut off infrastructure traffic -&gt; Platforms
+3. Disconnect DB &amp; freeze backup -&gt; Application
+4. Detach from Shared Resource -&gt; Platforms
+5. Take snapshots (Disk &amp; Memory) -&gt; Ask team
+6. Kill suspicious process or activity -&gt; Platforms"
+29/09/2025 14:42,Reza Imany,secure-channel,<@U047N6LUYJX> could you please start the first two step of process?
+29/09/2025 14:42,Maya,secure-channel,"I've given write access to Tanya, Hamed, Daniel, and myself"
+29/09/2025 14:42,Maya,secure-channel,"I've given write access to Tanya, Hamed, Daniel, and myself"
+29/09/2025 14:42,Tanya,secure-channel,Disconnecting the checkout servers from the infra now
+29/09/2025 14:42,Daniel,secure-channel,I'm on it. Disconnecting DB access for checkout and checking if scheduled backups exist
+29/09/2025 14:42,Daniel,secure-channel,I'm on it. Disconnecting DB access for checkout and checking if scheduled backups exist
+29/09/2025 14:42,Hamed,secure-channel,I'll verify if any shared storage is still attached to the checkout DB
+29/09/2025 14:42,Hamed,secure-channel,I'll verify if any shared storage is still attached to the checkout DB
+29/09/2025 14:43,Daniel,secure-channel,"Step 3 done, DB connection to checkout is now cut"
+29/09/2025 14:43,Daniel,secure-channel,"Step 3 done, DB connection to checkout is now cut"
+29/09/2025 14:43,Tanya,secure-channel,"Step 1 done, Checkout servers are now fully disconnected. Moving to isolate the infra from all external traffic"
+29/09/2025 14:43,Tanya,secure-channel,"Step 1 done, Checkout servers are now fully disconnected. Moving to isolate the infra from all external traffic"
+29/09/2025 14:43,Hamed,secure-channel,"Step 4 confirmed, No shared storage attached to checkout, which makes sense since checkout has its standalone storage"
+29/09/2025 14:43,Hamed,secure-channel,"Step 4 confirmed, No shared storage attached to checkout, which makes sense since checkout has its standalone storage"
+29/09/2025 14:43,Tanya,secure-channel,"Step 2 completed, Infra is now fully cut off from the outside world. That means the website will remain completely down until we recover"
+29/09/2025 14:43,Tanya,secure-channel,"Step 2 completed, Infra is now fully cut off from the outside world. That means the website will remain completely down until we recover"
+29/09/2025 14:43,Maya,secure-channel,"Step 5 done, Cyvantics has completed taking snapshots of the checkout servers and database. They've now moved on to forensics. @Hamed, we're good to kill the script now"
+29/09/2025 14:43,Maya,secure-channel,"Step 5 done, Cyvantics has completed taking snapshots of the checkout servers and database. They've now moved on to forensics. @Hamed, we're good to kill the script now"
+29/09/2025 14:43,Hamed,secure-channel,"Step 6 done, The Script has been killed. @Reza Imany let us know and double-check if anything else is pending on our side"
+29/09/2025 14:43,Hamed,secure-channel,"Step 6 done, The Script has been killed. @Reza Imany let us know and double-check if anything else is pending on our side"
+29/09/2025 14:43,Reza Imany,secure-channel,Awesome lets start second stage
+29/09/2025 14:43,Reza Imany,secure-channel,"Steps for Restoration:
+
+
+Steps to be done, mentioned along with the *owning* team
+1. Validate backups → Security
+2. Wipe infected systems → Platforms
+3. Rebuild from clean backup → Platforms
+4. Re-enable security agent on the servers → Security
+5. Reconnect traffic to services and monitor → Platforms
+6. 
+"
+29/09/2025 14:44,Reza Imany,secure-channel,Can you start it <@U06CA3MRAJF>?
+29/09/2025 14:45,Maya,secure-channel,we have all 6 steps done
+29/09/2025 14:45,Reza Imany,secure-channel,We are going to restoration now
+29/09/2025 14:45,Reza Imany,secure-channel,"*RESTORATION:*  
+1. *Validate backups* – Check all saved copies of your data to make sure they’re not infected by the attack. Only use backups from before the attack started.
+2. *Wipe infected systems* – Completely erase (format) any computers or servers that were hit by the attack so no harmful files remain.
+3. *Rebuild from clean backup* – Use the safe backup you found earlier to put the system back the way it was before the attack.
+4. *Re-enable security tools on servers* – Before putting the systems back on the network, reinstall antivirus, firewalls, and other security software so they’re protected.
+5. *Reconnect traffic to services and monitor* – Turn the systems back on, let users connect again, and keep a close eye for anything suspicious.
+"
+29/09/2025 14:45,Maya,secure-channel,we now need to check for a backup
+29/09/2025 14:45,Maya,secure-channel,"Yes, we must have a backup. Platform team can confirm us"
+29/09/2025 14:45,Maya,secure-channel,"Yes, we must have a backup. Platform team can confirm us"
+29/09/2025 14:45,Reza Imany,secure-channel,"exactly , go for first step <@U06CA3MRAJF>"
+29/09/2025 14:45,Hamed,secure-channel,"Correct, we do have backup which only runs at 2AM. Latest is yesterday's. We'll lose today's orders"
+29/09/2025 14:45,Hamed,secure-channel,"Correct, we do have backup which only runs at 2AM. Latest is yesterday's. We'll lose today's orders"
+29/09/2025 14:45,Reza Imany,secure-channel,<@U047N6LUYJX> Can you confirm this?
+29/09/2025 14:45,Maya,secure-channel,Isolation is complete. We're good to move toward restoration using the backup storage now
+29/09/2025 14:45,Maya,secure-channel,Isolation is complete. We're good to move toward restoration using the backup storage now
+29/09/2025 14:45,Maya,secure-channel,@Reza Imany could you please confirm with business before moving forward on this
+29/09/2025 14:45,Maya,secure-channel,@Reza Imany could you please confirm with business before moving forward on this
+29/09/2025 14:46,Maya,secure-channel,I've called in @Bob to the channel
+29/09/2025 14:46,Bob,secure-channel,"@Reza Imany, I hear you need my help, what exactly should I look into?"
+29/09/2025 14:46,Bob,secure-channel,"@Reza Imany, I hear you need my help, what exactly should I look into?"
+29/09/2025 14:46,Bob,secure-channel,"With the sale starting today, the potential loss is significant - around $180k"
+29/09/2025 14:46,Bob,secure-channel,"With the sale starting today, the potential loss is significant - around $180k"
+29/09/2025 14:46,Tanya,secure-channel,yes the last backup is yesterday 2am
+29/09/2025 14:47,Reza Imany,secure-channel,waiting for business to confirm restoration
+29/09/2025 14:47,Reza Imany,secure-channel,<@U047N91SRH8> is 180k loss after restoration ? is it all going to lose for todays sell?
+29/09/2025 14:48,Bob,secure-channel,Yes if we do this backup swap we will lose 180k
+29/09/2025 14:48,Bob,secure-channel,Yes if we do this backup swap we will lose 180k
+29/09/2025 14:48,Bob,secure-channel,all sales up to this point will be lost
+29/09/2025 14:49,Reza Imany,secure-channel,I've got confirmation
+29/09/2025 14:49,Reza Imany,secure-channel,you can start process of restoration
+29/09/2025 14:49,Reza Imany,secure-channel,"*RESTORATION:*  
+1. *Validate backups* – Check all saved copies of your data to make sure they’re not infected by the attack. Only use backups from before the attack started.
+2. *Wipe infected systems* – Completely erase (format) any computers or servers that were hit by the attack so no harmful files remain.
+3. *Rebuild from clean backup* – Use the safe backup you found earlier to put the system back the way it was before the attack.
+4. *Re-enable security tools on servers* – Before putting the systems back on the network, reinstall antivirus, firewalls, and other security software so they’re protected.
+5. *Reconnect traffic to services and monitor* – Turn the systems back on, let users connect again, and keep a close eye for anything suspicious.
+"
+29/09/2025 14:49,Reza Imany,secure-channel,"1. Validate backups → Security
+2. Wipe infected systems → Platforms
+3. Rebuild from clean backup → Platforms
+4. Re-enable security agent on the servers → Security
+5. Reconnect traffic to services and monitor → Platforms
+6. 
+"
+29/09/2025 14:49,Maya,secure-channel,"Thanks for the go-ahead. @Reza Imany, please track all restoration steps"
+29/09/2025 14:49,Maya,secure-channel,"Thanks for the go-ahead. @Reza Imany, please track all restoration steps"
+29/09/2025 14:49,Maya,secure-channel,I'm now validating the backup storage to ensure it's safe
+29/09/2025 14:49,Maya,secure-channel,I'm now validating the backup storage to ensure it's safe
+29/09/2025 14:49,Reza Imany,secure-channel,"As first two is already done, <@U047N6LUYJX> go with step 3"
+29/09/2025 14:49,Hamed,secure-channel,"I'm provisioning new checkout servers, will update once ready"
+29/09/2025 14:50,Maya,secure-channel,"Backup is clean and safe. @Hamed, you can start rebuilding checkout from backup storage"
+29/09/2025 14:50,Maya,secure-channel,"Backup is clean and safe. @Hamed, you can start rebuilding checkout from backup storage"
+29/09/2025 14:50,Hamed,secure-channel,"Thanks, Maya. New servers are ready. I'll start rebuilding now using backup storage"
+29/09/2025 14:50,Hamed,secure-channel,"Thanks, Maya. New servers are ready. I'll start rebuilding now using backup storage"
+29/09/2025 14:50,Hamed,secure-channel,Rebuild completed
+29/09/2025 14:50,Maya,secure-channel,I've enabled the security agents (EDR) on checkout servers
+29/09/2025 14:50,Daniel,secure-channel,I'll monitor application health once services are restored
+29/09/2025 14:50,Maya,secure-channel," @Reza Imany , can you confirm all tasks are wrapped up and we are good to bring the traffic back? Just want to be sure, as this is the final restoration step before we move"
+29/09/2025 14:50,Maya,secure-channel," @Reza Imany , can you confirm all tasks are wrapped up and we are good to bring the traffic back? Just want to be sure, as this is the final restoration step before we move"
+29/09/2025 14:50,Reza Imany,secure-channel,"is step 1 , 2 validated by you <@U06CA3MRAJF>?"
+29/09/2025 14:51,Reza Imany,secure-channel,"<@U047N6LUYJX> and <@U0480TP9ZA5>, Is step 2 and 3 done?"
+29/09/2025 14:51,Tanya,secure-channel,Thanks for the go ahead. Bringing up network traffic in progress...
+29/09/2025 14:51,Tanya,secure-channel,Thanks for the go ahead. Bringing up network traffic in progress...
+29/09/2025 14:51,Tanya,secure-channel,Restoration completed
+01/10/2025 00:08,Reza Imany,secure-channel,I can confirm website is working
+29/09/2025 14:52,Reza Imany,secure-channel,I can confirm website is working
+29/09/2025 14:52,Bob,secure-channel,Wait!! getting a bunch of new complaints now. Users are neither able to see their return requests nor able to place new returns on the site
+29/09/2025 14:52,Bob,secure-channel,Wait!! getting a bunch of new complaints now. Users are neither able to see their return requests nor able to place new returns on the site
+29/09/2025 14:52,Maya,secure-channel,"Yeah, that's probably the missing today's checkout data. Anyone who ordered or returned something during that time won't see it - makes sense since we restored from the yesterday's backup"
+29/09/2025 14:52,Maya,secure-channel,"Yeah, that's probably the missing today's checkout data. Anyone who ordered or returned something during that time won't see it - makes sense since we restored from the yesterday's backup"
+29/09/2025 14:52,Tanya,secure-channel,"Tough, but expected :)"
+29/09/2025 14:52,Bob,secure-channel,What should I tell them? They are asking for refunds
+29/09/2025 14:52,Bob,secure-channel,What should I tell them? They are asking for refunds
+29/09/2025 14:53,Reza Imany,secure-channel,<@U047KAE5JLV> What do you think about this here?
+29/09/2025 14:53,Tinus,secure-channel,i think we need to ask bez this
+29/09/2025 14:54,Reza Imany,secure-channel,"Keeping it high-level, just say website restored, but there's an issue with few orders. We'll refund them, and customers will get a $10 gift voucher as an apology"
+29/09/2025 14:54,Maya,secure-channel,@Reza Imany I've received the forensics report from Cyvantics Security
+29/09/2025 14:54,Maya,secure-channel,@Reza Imany I've received the forensics report from Cyvantics Security
+29/09/2025 14:54,Maya,secure-channel,forensics
+29/09/2025 14:54,Reza Imany,secure-channel,Thats what <@U047N90R8KU> said
+29/09/2025 14:54,Maya,secure-channel,"Also, I just finished combing through Shay's mailbox. There's something important here, I found two emails from what looks like our monitoring vendor - ClearTech"
+29/09/2025 14:54,Maya,secure-channel,"Also, I just finished combing through Shay's mailbox. There's something important here, I found two emails from what looks like our monitoring vendor - ClearTech"
+29/09/2025 14:54,Maya,secure-channel,phished_email
+29/09/2025 14:55,Maya,secure-channel,"We will take this forward in PIR , for now website is restored"
+29/09/2025 14:55,Maya,secure-channel,"We will take this forward in PIR , for now website is restored"
+29/09/2025 14:55,Maya,secure-channel,"Alright, since everything's back up and stable, we can now move back to the main #online-boutique channel. No further actions left here"
+29/09/2025 14:55,Maya,secure-channel,"Alright, since everything's back up and stable, we can now move back to the main #online-boutique channel. No further actions left here"

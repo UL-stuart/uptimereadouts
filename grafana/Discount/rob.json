@@ -1,0 +1,34 @@
+{
+  "output": {
+    "learning_outcomes_achieved": [
+      [
+        "Size Up",
+        "Strengthening",
+        "You identified the incident was customer-impacting by asking about customer complaints, requesting updates from customer-facing colleagues, and noticing widespread frontend errors. You actively sought clarifications about the global aspect and communicated these details both to technical and business channels, although assignment of scope and severity could have been clearer before delving deeper into remediation."
+      ],
+      [
+        "Differentiate Legitimate Load vs Security Threat",
+        "Fluent",
+        "You explicitly considered malicious activity as a possible cause early by asking about the legitimacy of the traffic, requesting expected metrics, and discussing the possibility of bots, DoS, or abnormal patterns. You reviewed error messages and traffic surge data to support your developing theory, and communicated this reasoning to the team."
+      ],
+      [
+        "Diagnose",
+        "Fluent",
+        "You requested relevant diagnostics such as logs, errors, change history, and IP/source details from the team. You engaged with the output, recognised the single-IP and abnormal access patterns, and concluded it was a security-related (DoS) incident. You also followed up to confirm mitigation actions and sought further checks to ensure the diagnosis was validated."
+      ],
+      [
+        "Mitigation",
+        "Fluent",
+        "You reviewed and discussed mitigation actions, including options for blocking the offending IP and asking for status updates post-mitigation. You confirmed the service's status after the action, checked with multiple team members about system stability, and acknowledged the platform’s recovery."
+      ],
+      [
+        "Security Protocol and Stakeholder Constraints",
+        "Strengthening",
+        "You involved compliance after recognising the incident’s security nature, communicated directly with business representatives, and discussed appropriate external communications and internal plans. You showed awareness of sensitive disclosure, took care in messaging about the nature of the attack, and coordinated with appropriate roles, though occasionally steps were reactive rather than initiated."
+      ]
+    ],
+    "feedback": "Your spelling and grammar throughout the chat were generally clear and accurate. Communication was mostly concise and targeted at the intended audience. There are areas where you could refine your requests for clarity, such as specifying details in cross-team asks. Occasionally, responses to stakeholders could be structurally clearer for tracking updates. In terms of engagement, you maintained active interaction with both technical and business teams, asking questions and following up, which kept everyone involved and made the process dynamic. For delivery, you adapted your tone appropriately for technical and non-technical channels, adjusting the message for business versus engineering concerns, which enhanced understanding across audiences. Consider previewing complex updates before sending to clarify context.",
+    "did_well": "You demonstrated strong situational awareness and were proactive in engaging both technical and business colleagues. You actively sought diagnostic information, collaborated well across multiple teams, and maintained a focus on both immediate technical issues and broader organisational needs. The way you weighed multiple potential causes—legitimate versus malicious load—showed a balanced approach. Your engagement showed adaptability, and you were diligent in confirming both actions taken and service restoration. Your willingness to ask for system status and keep stakeholders updated is valuable in fast-evolving scenarios.",
+    "room_for_improvement": "You can increase the clarity and impact of your communication by more explicitly summarising the scope and effect of the incident at key moments, especially before deep-diving into solutions. Asking for explicit severity assessments and confirming global impact earlier could improve shared situational awareness. When relaying resolutions or updates to business stakeholders, consider structuring responses so critical details are surfaced upfront. Occasionally, communications were a bit reactive; proactively flagging action steps (for compliance or mitigation) as soon as suspicion is confirmed might streamline response further. Emphasising open, shared context and recaps after key investigation steps will help in complex, multi-team incidents."
+  }
+}

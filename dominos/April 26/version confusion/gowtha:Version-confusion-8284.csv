@@ -1,0 +1,157 @@
+datetime,player,channel,diff,message
+01/04/2026 12:09,uptimelabs,online-boutique-8284,,"Welcome to Version Confusion, the responsibility is on you to size up the problem.
+
+? *Use `/help` at any time for a list of useful links and commands*
+ ? *Use `/incident` to create an incident record*
+
+Once youre ready just click start to begin"
+01/04/2026 12:12,tanya,online-boutique-8284,3.17,Hey guys im seeing an issue with the website loading slowly
+01/04/2026 12:12,tanya,online-boutique-8284,3.18,Anyone else experaning this?
+01/04/2026 12:12,shay,online-boutique-8284,3.22,No all ok for me
+01/04/2026 12:12,daniel,online-boutique-8284,3.23,No issue for me
+01/04/2026 12:12,daniel,online-boutique-8284,3.25,What browser and version of it are you using Tanya?
+01/04/2026 12:12,tanya,online-boutique-8284,3.28,Im using chrome and let me check the version
+01/04/2026 12:12,daniel,online-boutique-8284,3.32,Ok if it is V105.0 this is a recorded bug with a ticket in the backlog
+01/04/2026 12:12,tanya,online-boutique-8284,3.33,Yeah it is V105.0
+01/04/2026 12:12,tanya,online-boutique-8284,3.35,Should we not raise an incident for this? I know I can update the version and it will stop effecting me.
+01/04/2026 12:12,tanya,online-boutique-8284,3.38,But could this not be effecting customers?
+01/04/2026 12:12,daniel,online-boutique-8284,3.42,Had a look at the market share of people using this version it is only at 0.09%
+01/04/2026 12:12,tanya,online-boutique-8284,3.47,Still not sure if it should not be an incidnt. @gowthamkumar.b-dominos.co.uk What do you think? 
+01/04/2026 12:13,PLAYER,online-boutique-8284,3.87,"@tanya, let see whehter all ar efacing same issue"
+01/04/2026 12:13,uptimelabs,online-boutique-8284,3.90,:star: Asking questions to validate impact of the problem
+01/04/2026 12:13,PLAYER,online-boutique-8284,4.20,if user affecting it is will be incident
+01/04/2026 12:14,PLAYER,online-boutique-8284,4.67,is it with local issue with client?
+01/04/2026 12:14,bob,online-boutique-8284,4.73,We’ve had a couple of customers mention slow loading on Chrome
+01/04/2026 12:14,bob,online-boutique-8284,4.77,"I don’t have numbers yet, but I can check reports"
+01/04/2026 12:14,shay,online-boutique-8284,5.07,Could be just an intermittent issue
+01/04/2026 12:14,PLAYER,online-boutique-8284,5.43,it is affecting the individual user we have check the client version
+01/04/2026 12:14,bob,online-boutique-8284,5.47,I’ve pulled some numbers — this is bigger than expected
+01/04/2026 12:14,bob,online-boutique-8284,5.53,About 20% of sessions are showing elevated load times
+01/04/2026 12:14,bob,online-boutique-8284,5.63,Seeing some timeouts as well
+01/04/2026 12:15,tanya,online-boutique-8284,5.77,That’s much larger than Chrome 105’s share
+01/04/2026 12:15,PLAYER,online-boutique-8284,6.02,@bob  pls confirm users are affecting
+01/04/2026 12:15,shay,online-boutique-8284,6.08,"Could be tied to one of our deployments, perhaps"
+01/04/2026 12:15,shay,online-boutique-8284,6.58,"We made a few changes to the platform recently
+https://uptime-labs.atlassian.net/wiki/external/ZDQ1MTE3NWU5ZDYxNDA4MTkxZmM3ZGJmMGJhNmE1OTE
+Here's detailed information"
+01/04/2026 12:16,bob,online-boutique-8284,6.85,It's seems this is indeed global
+01/04/2026 12:16,PLAYER,online-boutique-8284,7.08,@tanya you deployed version related deployment is that causing issue
+01/04/2026 12:16,uptimelabs,online-boutique-8284,7.13,:star: Reviewed changes
+01/04/2026 12:16,shay,online-boutique-8284,7.28,Maybe detection is mislabeling browser versions?
+01/04/2026 12:16,tanya,online-boutique-8284,7.57,I will double-check the recent deployment
+01/04/2026 12:17,PLAYER,online-boutique-8284,7.80,"ok, what will the impact if user are using older version than it required?"
+01/04/2026 12:17,PLAYER,online-boutique-8284,8.03,"CR
+Description
+Environment
+Owner
+Time
+CHG89462
+CHG89462:RecommendationService:version 0.9.0-7.0.1 deployed:PROD:Tanya
+PROD
+Tanya
+2026-03-31 17:29:06
+CHG89374
+CHG89374:AdService:version 0.8.1-14.0.0 deployed:PROD:Tanya
+PROD
+Tanya
+2026-03-31 17:39:06
+CHG89553
+CHG89553:FrontEndService:version 0.5.0-14.2.1 deployed:PROD:Daniel B
+PROD
+Daniel
+2026-03-31 20:12:26
+CHG89356"
+01/04/2026 12:17,uptimelabs,online-boutique-8284,8.08,:star: Check changes done to the platform
+01/04/2026 12:17,PLAYER,online-boutique-8284,8.22,above is the changes done
+01/04/2026 12:17,shay,online-boutique-8284,8.35,Most likely face similar issue as I do
+01/04/2026 12:18,PLAYER,online-boutique-8284,8.82,"CHG89462 , CHG89374 these two changes done related version "
+01/04/2026 12:18,daniel,online-boutique-8284,8.82,We have this in the backlog
+01/04/2026 12:18,daniel,online-boutique-8284,8.83,"Title 
+Slow load times for users using V105.0 of chrome
+Description
+
+User have reported the frontend as loading slowly and with quick look at there set up appears to be an issue with frontend for users using V105.0 of chrome. 
+Reporter
+User
+Components
+OB-Frontend"
+01/04/2026 12:18,daniel,online-boutique-8284,9.27,"Really don't think it's that serious, we know about this"
+01/04/2026 12:18,daniel,online-boutique-8284,9.42,This was raised 2 weeks ago
+01/04/2026 12:18,PLAYER,online-boutique-8284,9.50,"@daniel, CHG89553 these the deployment done on front end"
+01/04/2026 12:19,PLAYER,online-boutique-8284,9.88,@tanya @daniel replicate the issue 
+01/04/2026 12:19,uptimelabs,online-boutique-8284,9.95,:star: Form an effective investigation team
+01/04/2026 12:19,uptimelabs,online-boutique-8284,9.95,:star: Reproduces the incident
+01/04/2026 12:19,tanya,online-boutique-8284,10.03,"If what Daniels says is true , none of today's deployments would be the cause"
+01/04/2026 12:19,daniel,online-boutique-8284,10.23,Unable to replicate this
+01/04/2026 12:19,shay,online-boutique-8284,10.27,Same
+01/04/2026 12:20,PLAYER,online-boutique-8284,10.72,"ok, check the logs which has latency and which service is taking more time to respond"
+01/04/2026 12:20,uptimelabs,online-boutique-8284,10.77,:star: Facts over opinion
+01/04/2026 12:20,tanya,online-boutique-8284,10.83,On it
+01/04/2026 12:20,shay,online-boutique-8284,11.07,"If this is browser-specific and global, we should check proxy behavior"
+01/04/2026 12:20,PLAYER,online-boutique-8284,11.32,what will be the cause for slow down the web site
+01/04/2026 12:20,daniel,online-boutique-8284,11.37,We made a change to Frontend around 2 weeks ago when the issue started
+01/04/2026 12:20,daniel,online-boutique-8284,11.40,Could be a frontend performance regression
+01/04/2026 12:20,daniel,online-boutique-8284,11.50,"If rendering is slower for older Chrome, that would explain it"
+01/04/2026 12:20,daniel,online-boutique-8284,11.57,Maybe bundle size changes impacted legacy parsing
+01/04/2026 12:21,tanya,online-boutique-8284,11.83,Investigating
+01/04/2026 12:21,shay,online-boutique-8284,12.03,"If checkout forms are timing out, maybe retry logic is triggering delays."
+01/04/2026 12:21,shay,online-boutique-8284,12.27,or payment authorisation could be introducing wait states
+01/04/2026 12:21,PLAYER,online-boutique-8284,12.42,change request CHG89462 is that causing issue
+01/04/2026 12:21,daniel,online-boutique-8284,12.63,The delay appears before JS execution
+01/04/2026 12:22,daniel,online-boutique-8284,12.72,That makes frontend less likely as root cause
+01/04/2026 12:22,daniel,online-boutique-8284,12.93,Might be something happening at request handling stage
+01/04/2026 12:22,PLAYER,online-boutique-8284,13.20,I am able to accessing website without latency
+01/04/2026 12:22,daniel,online-boutique-8284,13.23,Todays changes don't line up with incident timeline
+01/04/2026 12:22,uptimelabs,online-boutique-8284,13.23,:star: Attempt to replicate the issue
+01/04/2026 12:22,shay,online-boutique-8284,13.52,Are you using chrome version 105?
+01/04/2026 12:22,PLAYER,online-boutique-8284,13.58,i am creating incident 
+01/04/2026 12:23,tanya,online-boutique-8284,13.75,I’m checking NGINX logs for latency spikes by User-Agent
+01/04/2026 12:23,PLAYER,online-boutique-8284,14.02,
+01/04/2026 12:23,uptimelabs,business-comms-8284,14.02,*Incident Number INC1015:* p2 latency accesing web site
+01/04/2026 12:23,uptimelabs,online-boutique-8284,14.02,:star: Incident record created
+01/04/2026 12:23,daniel,online-boutique-8284,14.10,Really dont think we need an incident. As I said we have a bug already and really need to focus on delivery of new features.
+01/04/2026 12:23,PLAYER,online-boutique-8284,14.53,@hamed can you pls check the network logs
+01/04/2026 12:24,tinus,business-comms-8284,14.80,"Saw a ticket pop up, can we have more clarity of what seems to be an issue and impact?"
+01/04/2026 12:24,hamed,online-boutique-8284,15.02,Joining investigation
+01/04/2026 12:24,hamed,online-boutique-8284,15.62,Seeing variation in response negotiation for older Chrome
+01/04/2026 12:25,PLAYER,online-boutique-8284,15.68,"yes, we create incident we have to quick to identify the issue before it affects the larger audience"
+01/04/2026 12:25,hamed,online-boutique-8284,15.73,Reviewing NGINX version history now
+01/04/2026 12:25,PLAYER,online-boutique-8284,15.98,what will be the fix for the issue
+01/04/2026 12:25,PLAYER,online-boutique-8284,16.38,@tanya @daniel what is the fix for it
+01/04/2026 12:25,tanya,online-boutique-8284,16.45,Me and hamed are trying to pinpoint what is causing the delay time
+01/04/2026 12:25,daniel,online-boutique-8284,16.65,Don't think this is application layer issue
+01/04/2026 12:26,hamed,online-boutique-8284,16.78,There was a version upgrade around two weeks ago
+01/04/2026 12:26,PLAYER,online-boutique-8284,16.85,ok then what will be the issue
+01/04/2026 12:26,hamed,online-boutique-8284,16.88,That aligns more closely with impact timeline
+01/04/2026 12:26,tanya,online-boutique-8284,17.27,"We are investigating the possible causes, few minutes please"
+01/04/2026 12:26,PLAYER,online-boutique-8284,17.33,is the rollback of the CHG89462 will solve the issue
+01/04/2026 12:26,uptimelabs,online-boutique-8284,17.38,:star: Form a working theory
+01/04/2026 12:27,daniel,online-boutique-8284,17.92,"We can, but it most likeley will do nothing"
+01/04/2026 12:27,hamed,online-boutique-8284,17.95,Confirmed — NGINX version update introduced compatibility issue
+01/04/2026 12:27,hamed,online-boutique-8284,18.13,Older Chrome versions are experiencing delayed request handling
+01/04/2026 12:27,hamed,online-boutique-8284,18.27,Some headers/feature negotiation aren’t fully supported
+01/04/2026 12:27,PLAYER,online-boutique-8284,18.27,"ok, what we have to do in these case"
+01/04/2026 12:27,PLAYER,online-boutique-8284,18.45,roll back to previous version 
+01/04/2026 12:27,uptimelabs,online-boutique-8284,18.52,:star: Restoration over root cause analysis
+01/04/2026 12:27,hamed,online-boutique-8284,18.53,We can either roll back NGINX or patch config
+01/04/2026 12:27,hamed,online-boutique-8284,18.65,Rollback it is
+01/04/2026 12:28,PLAYER,online-boutique-8284,18.87,"ok, go ahade with patch"
+01/04/2026 12:28,tanya,online-boutique-8284,18.93,Working on it
+01/04/2026 12:28,PLAYER,online-boutique-8284,19.17,ok please go for rollback it asap
+01/04/2026 12:28,hamed,online-boutique-8284,19.18,This could have been caught earlier with better segmentation
+01/04/2026 12:28,uptimelabs,online-boutique-8284,19.23,:star: Take command
+01/04/2026 12:28,daniel,online-boutique-8284,19.28,We need better early detection for edge-layer regressions
+01/04/2026 12:28,tanya,online-boutique-8284,19.48,Hey @gowthamkumar.b-dominos.co.uk I have just retried the website with V105.0 of chrome and it seems the fix worked
+01/04/2026 12:28,tinus,online-boutique-8284,19.52,Glad we created an incident for this. Need to review our training on when to create an incident or a bug but great work team.
+01/04/2026 12:28,daniel,online-boutique-8284,19.53,Sorry guys should have raised an incident when first discovered.
+01/04/2026 12:29,tinus,online-boutique-8284,19.70,We are all learning Daniel. We can carry the learnings foward
+01/04/2026 12:29,bob,online-boutique-8284,19.75,Just checked and it looks all good now team
+01/04/2026 12:29,tinus,online-boutique-8284,19.78,Lets continue monitoring this and we can have a great conversation during the PIR
+01/04/2026 12:29,PLAYER,online-boutique-8284,19.80,@bob any request coming 
+01/04/2026 12:29,PLAYER,online-boutique-8284,20.03,thank you team 
+01/04/2026 12:29,bob,online-boutique-8284,20.03,No more requests from customers as of now
+01/04/2026 12:29,uptimelabs,online-boutique-8284,20.17,"Thank you for playing Version Confusion, We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit start when you are ready."
+01/04/2026 12:29,PLAYER,online-boutique-8284,20.30,closing the incident
+01/04/2026 12:29,uptimelabs,online-boutique-8284,20.37,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/17/8284/feedback"

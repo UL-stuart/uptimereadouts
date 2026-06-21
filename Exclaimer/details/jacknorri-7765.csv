@@ -1,0 +1,183 @@
+datetime,player,channel,message
+2026-02-18 11:03:33,shay,online-boutique-7765,Morning team! Feeling pumped for the big ?Hipster Haul? event this week?
+2026-02-18 11:03:36,bez,online-boutique-7765,Absolutely! Can't wait to see all our hard work pay off. 
+2026-02-18 11:03:40,tanya,online-boutique-7765,"Agreed, it's going to be a game-changer for us"
+2026-02-18 11:03:46,bob,online-boutique-7765,Customer support team standing by to handle any queries. Let's do this!
+2026-02-18 11:03:51,bez,online-boutique-7765,"Team, the excitement is palpable! I have full confidence in each of you to make this event a roaring success."
+2026-02-18 11:03:55,bez,online-boutique-7765,"Let's showcase our best and leave our customers thrilled with what we have to offer. Together, we'll make it happen!"
+2026-02-18 11:03:58,tinus,online-boutique-7765,"Absolutely, Bez! And let's not forget the potential revenue boost this event could bring. Our projections are looking promising."
+2026-02-18 11:04:01,tanya,online-boutique-7765,:moneybag: :moneybag: :moneybag:
+2026-02-18 11:04:04,daniel,online-boutique-7765,Fingers crossed everything goes smoothly this time! :crossed_fingers: :joy:
+2026-02-18 11:04:11,uptimelabs,online-boutique-7765,"Welcome to Details Matter, the responsibility is on you to size up the problem.
+
+? *Use `/help` at any time for a list of useful links and commands*
+ ? *Use `/incident` to create an incident record*
+
+Once you're ready just click start to begin"
+2026-02-18 11:08:18,tinus,online-boutique-7765,"Speaking of celebrations, any recommendations for a post-event holiday destination? I could use some time off after this!"
+2026-02-18 11:08:23,maya,online-boutique-7765,How about a tropical paradise with no Wi-Fi? :desert_island: 
+2026-02-18 11:08:27,bob,online-boutique-7765,"Hey folks, hate to rain on the parade, but I've got some new reports coming in about customers encountering issues with the products on the website."
+2026-02-18 11:08:32,daniel,online-boutique-7765,"Yeah, Bob, anything specific you're noticing? Error messages, affected payment methods?"
+2026-02-18 11:08:36,bob,online-boutique-7765,Customers are not able to place orders
+2026-02-18 11:08:40,tanya,online-boutique-7765,"Alright team, let's get to work. Tinus, you can start planning that holiday once we've got this sorted!."
+2026-02-18 11:08:44,tinus,online-boutique-7765,"Deal! But first, let's get to the bottom of this issue"
+2026-02-18 11:08:44,PLAYER,online-boutique-7765,@bob Are the reports coming in from any particular region?
+2026-02-18 11:08:47,bez,online-boutique-7765,"Hey team, just dropping in to emphasise the urgency of resolving this issue swiftly. We've got a major event on the horizon - the launch of our exclusive ""Hipster Haul Weekend"" next week."
+2026-02-18 11:08:49,uptimelabs,online-boutique-7765,:star: Asking questions to validate impact of the problem
+2026-02-18 11:08:52,bez,online-boutique-7765,"It's poised to be our biggest sale yet, and any delays caused by this payment glitch could seriously impact our preparations."
+2026-02-18 11:08:55,bez,online-boutique-7765,Let's prioritise frequent updates and keep the communication channels wide open.
+2026-02-18 11:08:59,shay,online-boutique-7765,We have a lot of recent changes made to the platform so im going to compile a list with the changes and the descriptions.
+2026-02-18 11:09:04,shay,online-boutique-7765,Will send it over soon
+2026-02-18 11:09:15,PLAYER,online-boutique-7765,"@shay Thanks, can you get that over in the next two minutes please?"
+2026-02-18 11:09:15,bob,online-boutique-7765,I'll take a look now
+2026-02-18 11:09:23,uptimelabs,online-boutique-7765,:star: Track actions and time box them
+2026-02-18 11:09:25,shay,online-boutique-7765,Of course
+2026-02-18 11:09:40,bob,online-boutique-7765,from what i can tell most of the reports seems to be coming from the two regions
+2026-02-18 11:09:43,bob,online-boutique-7765,My team has gathered the customer reports as of the last 3 hours to make it easier to understand
+2026-02-18 11:09:47,bob,online-boutique-7765,
+2026-02-18 11:09:59,bob,online-boutique-7765,Perhaps its similar to our incident in Frankfurt with the network being down for that region?
+2026-02-18 11:10:07,PLAYER,online-boutique-7765,
+2026-02-18 11:10:07,uptimelabs,business-comms-7765,*Incident Number INC100066:* SEV-3 We are aware of reports of customers encountering issues when accessing certain products on the website at this time. We are beginning to investigate.
+2026-02-18 11:10:17,shay,online-boutique-7765,Here you go! https://uptime-labs.atlassian.net/wiki/external/YjZjNWFhYjFlZmQ0NDBmOWFlZDNlY2VjNDUxNzc4NjA
+2026-02-18 11:10:33,PLAYER,online-boutique-7765,"It could be, esp with that high number in JP and Turkey. @tanya can you rule out any issues with services in those regions?"
+2026-02-18 11:10:59,tanya,online-boutique-7765,I'll start investigating now
+2026-02-18 11:11:18,daniel,online-boutique-7765,I haven't been able to reproduce the issue
+2026-02-18 11:11:23,PLAYER,online-boutique-7765,"I can see there was a currenty deployment two hours ago, do we know if there's an issue with purchaces using those currencies on the site?"
+2026-02-18 11:11:26,daniel,online-boutique-7765,Anyone else?
+2026-02-18 11:11:28,uptimelabs,online-boutique-7765,:star: Check changes done to the platform
+2026-02-18 11:12:02,daniel,online-boutique-7765,I'll try changing the currency
+2026-02-18 11:12:02,PLAYER,online-boutique-7765,"I'm getting an error when I try and view products whilst set the currency to JPY @daniel can you have a look at this error please?
+Uh, oh!
+Something has failed. Below are some details for debugging:
+
+HTTP Status: 500 Internal Server Error
+
+Error Message: rpc error: code = Unavailable desc = connection error: desc = ""transport: Error while dialing: dial tcp 172.20.164.247:7000: connect: connection refused"" failed to fetch necessary data for processing
+
+Function: main.(*dataProcessor).fetchData
+
+File: /src/data_processor.go:124
+
+We apologize for the inconvenience. Our system encountered an unexpected issue while attempting to retrieve essential data. Our team is actively investigating the problem. Please try your request again later.
+
+If you need immediate assistance, please contact support."
+2026-02-18 11:12:06,uptimelabs,online-boutique-7765,:star: Reproduces the incident
+2026-02-18 11:12:51,PLAYER,online-boutique-7765,@maya Can you give more information on the change you made under CHG89873? It looks like we're having an issue accessing products when set to TRY or JPY
+2026-02-18 11:12:53,uptimelabs,online-boutique-7765,:star: Reviewed changes
+2026-02-18 11:13:02,tanya,online-boutique-7765,I'm not getting any network related reports from internal checks and third parties in the region
+2026-02-18 11:13:16,maya,online-boutique-7765,I'll take a look now
+2026-02-18 11:13:31,PLAYER,online-boutique-7765,Thanks for confirming. We know the issues started about 3 hours ago so there's two changes that fall into that window
+2026-02-18 11:13:59,PLAYER,online-boutique-7765,"@tanya Can you advise on what optimizations were within CHG89675 here? This looks like it had some bug fixes in, would these impact Japan and Turkey?"
+2026-02-18 11:14:10,maya,online-boutique-7765,"The change I made impacts all currencies, so if there was an error it wouldn't be specific"
+2026-02-18 11:14:30,tanya,online-boutique-7765,I'll have to remind myself of the deployment once sec
+2026-02-18 11:14:55,PLAYER,business-comms-7765,SEV-3 We have identified the issue only looks to impact customers attempting to purchase in JPY and TRY at this time and are looking into the cause
+2026-02-18 11:14:59,uptimelabs,online-boutique-7765,:star: Qualify the problem
+2026-02-18 11:14:59,uptimelabs,online-boutique-7765,:star: Formally assign criticality level to the incident
+2026-02-18 11:15:04,PLAYER,online-boutique-7765,Let me know in the next few minutes please
+2026-02-18 11:15:27,tanya,online-boutique-7765,"Oh yes I remember now, I was just optimizing the flow with a specific focus on bug fixes for the UK, so nothing related to the impacted currencies"
+2026-02-18 11:15:29,PLAYER,online-boutique-7765,@bob Can you let impacted customers know that they can try and complet orders using USD or GBP at this time
+2026-02-18 11:16:05,bob,online-boutique-7765,I'll pass the message along
+2026-02-18 11:16:15,PLAYER,online-boutique-7765,@daniel Were you able to reproduce?
+2026-02-18 11:16:17,uptimelabs,online-boutique-7765,:star: Manage actions and timings
+2026-02-18 11:16:34,daniel,online-boutique-7765,"Yes, once I changed the currencies"
+2026-02-18 11:16:45,maya,online-boutique-7765,My change is safe to rollback
+2026-02-18 11:17:02,maya,online-boutique-7765,If you want to rule it out
+2026-02-18 11:17:42,PLAYER,online-boutique-7765,Agreed. We need to stabilize the site
+2026-02-18 11:17:57,daniel,online-boutique-7765,I'm seeing these log errors: ERROR: Authentication failed for currency exchange rate service. ERROR CODE: 401 Unauthorized.
+2026-02-18 11:17:59,PLAYER,online-boutique-7765,@maya Can you work with whoever is neede to roll back change CHG89873 please? 
+2026-02-18 11:18:02,uptimelabs,online-boutique-7765,:star: Restoration over root cause analysis
+2026-02-18 11:18:15,maya,online-boutique-7765,Sure thing
+2026-02-18 11:18:30,daniel,online-boutique-7765,Change CHG89873 has been sucessfully rolledback
+2026-02-18 11:18:36,PLAYER,online-boutique-7765,Good spot Daniel @hamed can you advise on CHG89692? This was a few hours ago but it did update the API key. could this be related? Do let me know asap
+2026-02-18 11:18:39,shay,online-boutique-7765,Hopefully that solved the issue
+2026-02-18 11:18:42,maya,online-boutique-7765,"I made the most recent change to the currency service which is basically a security patch, I don't see how it would be causing this issue."
+2026-02-18 11:18:45,daniel,online-boutique-7765,ill check the platform just incase it hasn't made anything worse
+2026-02-18 11:18:48,tinus,online-boutique-7765,Can we confirm if everythings back working?
+2026-02-18 11:18:55,PLAYER,online-boutique-7765,No change on the site yet. We'll need to continue to investigate
+2026-02-18 11:19:18,bez,business-comms-7765,What's the impact on revenue?
+2026-02-18 11:19:35,PLAYER,online-boutique-7765,"@tanya Is Hamed in this week? I can see they made a change earlier today to the CurrencyService API, can we confirm that key is correct?"
+2026-02-18 11:20:05,PLAYER,business-comms-7765,About 9% of revenue comes through from the impacted regions combined on a monthly basis
+2026-02-18 11:20:06,tanya,online-boutique-7765,He is online
+2026-02-18 11:20:34,PLAYER,online-boutique-7765,Great. Can you and @hamed look into CHG89692 in the next few minutes please and let me know if that Key is okay?
+2026-02-18 11:20:35,tanya,online-boutique-7765,"He might be supporting another call, give him another nudge though"
+2026-02-18 11:20:59,hamed,online-boutique-7765,Apologies I'm here now
+2026-02-18 11:21:04,hamed,online-boutique-7765,I'm not questioning your judgement but why do you think this issue is related to the change I made?
+2026-02-18 11:21:18,PLAYER,business-comms-7765,"Sev-2 Whilst an attempted solution has been made, the issue continues and revenue remains impacted in these regions. Customers can look to purchase in GBP or USD whilst we investigate the issue"
+2026-02-18 11:21:58,PLAYER,online-boutique-7765,We're seeing an unauthorized error in the logs when attempting to view the products whilst set to JPY to TRY at this time. It might not be the key itself but it does suggest the conversion here may be causing an issue
+2026-02-18 11:22:03,uptimelabs,online-boutique-7765,:star: Form a working theory
+2026-02-18 11:22:21,hamed,online-boutique-7765,Have we definitely ruled out other options?
+2026-02-18 11:22:22,PLAYER,online-boutique-7765,"I can't replicate the issue on a specific product either at this time, unless someone has been able to"
+2026-02-18 11:22:25,uptimelabs,online-boutique-7765,:star: Attempt to replicate the issue
+2026-02-18 11:22:47,daniel,online-boutique-7765,"For me, I get issues when switching to the yen and lira"
+2026-02-18 11:23:00,daniel,online-boutique-7765,Which aligns with Bob's report
+2026-02-18 11:23:01,PLAYER,online-boutique-7765,Same. Happy to hear any ideas you may have Hamed
+2026-02-18 11:23:42,hamed,online-boutique-7765,"My change passed all the regression test, I just wanted to make sure all other avenues had been explored before escalating to me"
+2026-02-18 11:24:07,PLAYER,online-boutique-7765,"Previous changes to the CurrencyService have been rolled back but the issue continues, hence the escalation for review"
+2026-02-18 11:24:10,uptimelabs,online-boutique-7765,:star: Escalating when required
+2026-02-18 11:25:09,hamed,online-boutique-7765,I just want to confirm that we've definitely tracked the issue to being related to the currency service and perhaps not payments like Tanya's change
+2026-02-18 11:25:47,PLAYER,online-boutique-7765,"It could be the payments service, but the products page as a whole is impacted, not just attempting to purchase products. Would that be impacted to that level?"
+2026-02-18 11:25:58,PLAYER,online-boutique-7765,Happy to get Tanya to rolle that back whilst we investigate other avenues
+2026-02-18 11:26:26,hamed,online-boutique-7765,It's up to you what direction we go in
+2026-02-18 11:26:27,PLAYER,online-boutique-7765,@tanya Are you able to start rolling back CHG89675 whilst Hamed looks into the other changes? Just to rule anything out that's been done since the reports began
+2026-02-18 11:26:32,uptimelabs,online-boutique-7765,:star: Form an effective investigation team
+2026-02-18 11:27:02,PLAYER,online-boutique-7765,@bob Did the reports start 3 hours ago or longer?
+2026-02-18 11:27:08,tanya,online-boutique-7765,"Due to the bug fixes it's unwise to rollback my change, also didn't Daniel find an error pointing to this being currency service related"
+2026-02-18 11:27:26,bob,online-boutique-7765,The reports have only started coming in within the last 10 minutes
+2026-02-18 11:28:01,PLAYER,online-boutique-7765,"Okay. I still feel it may be the currency service at this time causing the issue, or a missed dependency not having been restarted"
+2026-02-18 11:28:09,hamed,online-boutique-7765,"Apologies guys, it's oversight on my end, it looks like the API keys I implemented have been misconfigured"
+2026-02-18 11:28:26,PLAYER,online-boutique-7765,Least you spotted it
+2026-02-18 11:28:36,PLAYER,online-boutique-7765,Can we get that updated ASAP please @hamed?
+2026-02-18 11:28:45,PLAYER,online-boutique-7765,Get Tanya to help if needed
+2026-02-18 11:29:05,shay,online-boutique-7765,we're gonna need a plan in order to do this Fix for the API keys
+2026-02-18 11:29:07,PLAYER,business-comms-7765,Update: We believe we have identified the cause of the issue and are implementing a fix now
+2026-02-18 11:29:16,tanya,online-boutique-7765,We need to contact the third-party currency exchange rate service provider to request a new API key.
+2026-02-18 11:29:24,hamed,online-boutique-7765,"Also will need to secure the secrets manager to store the new API key, just to make sure its not hard-coded into source code and prevent unauthorised access."
+2026-02-18 11:29:30,daniel,online-boutique-7765,someone needs to update the configuration of the currency service to use the new API key for accessing the third-party service
+2026-02-18 11:29:33,daniel,online-boutique-7765,What do you think @PLAYER?
+2026-02-18 11:29:43,PLAYER,online-boutique-7765,Thanks for the info. Let's split into teams here
+2026-02-18 11:29:53,PLAYER,online-boutique-7765,@tanya Can you pur a request in with the company at the highest priority for a new API key.
+2026-02-18 11:30:06,tanya,online-boutique-7765,"Got it, I'll get in touch with the third party"
+2026-02-18 11:30:17,PLAYER,online-boutique-7765,@maya and @hamed can one of you two work on securing the secrets manager for the new key once Tanya has this please?
+2026-02-18 11:30:22,uptimelabs,online-boutique-7765,:star: Know your team and their roles
+2026-02-18 11:30:33,hamed,online-boutique-7765,Once we get the keys from Tanya we will be on it!
+2026-02-18 11:30:41,tanya,online-boutique-7765,I've just got in contact with the 3rd party service and I'm sending over the keys to you now @hamed @daniel
+2026-02-18 11:31:02,PLAYER,online-boutique-7765,@daniel can you look to compile the change that would ensure the new API key goes out correctly?
+2026-02-18 11:31:07,hamed,online-boutique-7765,"Sweet, I have received them"
+2026-02-18 11:31:27,daniel,online-boutique-7765,I'll begin modifying the configuration now...
+2026-02-18 11:31:39,daniel,online-boutique-7765,Done
+2026-02-18 11:31:48,PLAYER,online-boutique-7765,"Soon as we get the Green light from Hamed that the key is in place, and the change correctly pulls the correct secret configuration we can deploy ASAP"
+2026-02-18 11:31:54,hamed,online-boutique-7765,Fix is now Implemented
+2026-02-18 11:31:57,hamed,online-boutique-7765,API keys have now been sucessfully updated 
+2026-02-18 11:32:02,tinus,online-boutique-7765,"Good job, can we confirm @PLAYER?"
+2026-02-18 11:32:04,PLAYER,online-boutique-7765,@bob Can we reach out to customers to see if they're still seeing an issue?
+2026-02-18 11:32:08,uptimelabs,online-boutique-7765,:star: Cross check resolution with stakeholders
+2026-02-18 11:32:09,PLAYER,online-boutique-7765,@daniel are you able to replicate still at this time?
+2026-02-18 11:32:12,uptimelabs,online-boutique-7765,:star: Cross checking resolution with team
+2026-02-18 11:32:28,PLAYER,online-boutique-7765,@shay Can you cross check with daniel please? remember it's Lira and Yen that were impacted
+2026-02-18 11:32:29,daniel,online-boutique-7765,Trying now...
+2026-02-18 11:32:37,shay,online-boutique-7765,Sure thing Boss
+2026-02-18 11:32:44,daniel,online-boutique-7765,Works for me!
+2026-02-18 11:32:47,shay,online-boutique-7765,Same here
+2026-02-18 11:32:57,PLAYER,online-boutique-7765,Wonderful stufff! Sounds like we got it sorted
+2026-02-18 11:33:02,tanya,online-boutique-7765,"Great work. FYI team, I'll be looking into the licences for our other API keys later to make sure everything's shipshape."
+2026-02-18 11:33:04,shay,online-boutique-7765,What a ride! Massive thanks to each of you for your quick thinking and teamwork. 
+2026-02-18 11:33:07,daniel,online-boutique-7765,"Absolutely, Shay! Getting more confident with any incidents that come our way. Good Job everyone!!"
+2026-02-18 11:33:09,PLAYER,online-boutique-7765,@hamed thanks for ensuring we double check things here
+2026-02-18 11:33:12,hamed,online-boutique-7765,"Phew, what a rollercoaster! Glad we managed to fix it before things got out of hand."
+2026-02-18 11:33:17,PLAYER,online-boutique-7765,Agreed
+2026-02-18 11:33:17,tinus,online-boutique-7765,"Good job everyone, but im confused how did those currencies fail recently if the change was made hours ago?"
+2026-02-18 11:33:22,hamed,online-boutique-7765,Good question @Tinus. The currency_service was using 'cache data' instead of getting the data from 3rd party service as i messed up the configuration of the APIs.
+2026-02-18 11:33:27,tanya,online-boutique-7765,The cache data expires every 12 hours as well which must have been around the time Bob was getting the new reports.
+2026-02-18 11:33:30,tinus,online-boutique-7765,"Understood, thanks for clearing that up for me @Hamed."
+2026-02-18 11:33:33,maya,online-boutique-7765,"Anyways with the fix in place, we've ensured that the system operates smoothly, and we're now ready once again for the big event next week."
+2026-02-18 11:33:37,bez,online-boutique-7765,"Fantastic work, everyone! Your quick and effective response has saved the day. Now, let's channel this momentum into making our Hipster Haul Weekend a smashing success. "
+2026-02-18 11:33:37,PLAYER,business-comms-7765,Update: The fix has been implemented and we are no longer seeing an issue
+2026-02-18 11:33:39,uptimelabs,online-boutique-7765,:star: Confirm resolution with the business
+2026-02-18 11:33:40,bez,online-boutique-7765,Thank you all for your dedication and hard work.
+2026-02-18 11:33:54,uptimelabs,online-boutique-7765,"Thank you for playing 'Details Matter', We recommend that you take 5 minutes to go and get a drink or stretch your legs.
+Once you are back we ask that you complete this retrospective and feedback form, just hit start when you are ready."
+2026-02-18 11:33:55,PLAYER,online-boutique-7765,"Let's have the PIR later today about this one, glad we know the cause but we need ot ensure this doesn't happen again"
+2026-02-18 11:34:02,PLAYER,online-boutique-7765,@bob customers all happy?
+2026-02-18 11:34:19,uptimelabs,online-boutique-7765,"Thanks for playing! Please complete your feedback here:
+https://learn.uptimelabs.io/scenario/online-boutique/levels/19/7765/feedback"
+2026-02-18 11:34:20,bob,online-boutique-7765,No more reports or complaints!

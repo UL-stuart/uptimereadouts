@@ -1,0 +1,81 @@
+datetime,player,channel,message
+2025-08-20 13:03:29,tinus,online-boutique-5456,"Hi team, let's have a mood check send an emoji to describe your mood"
+2025-08-20 13:03:33,tinus,online-boutique-5456,"I'll go first, :thumbsup:"
+2025-08-20 13:03:39,tanya,online-boutique-5456,:thumbsup:
+2025-08-20 13:03:41,tinus,online-boutique-5456,I'm excited about showing off all your hard work at todays stakeholder meeting
+2025-08-20 13:03:44,daniel,online-boutique-5456,":skull: knackered, had a few too many late nights this week"
+2025-08-20 13:03:47,shay,online-boutique-5456,:rainbow:
+2025-08-20 13:03:50,hamed,online-boutique-5456,living the dream :smile:
+2025-08-20 13:03:54,bez,online-boutique-5456,:smirk: im excited to see the show too
+2025-08-20 13:03:56,tinus,online-boutique-5456,shouldn't you be prepping for the meeting 
+2025-08-20 13:03:59,bez,online-boutique-5456,:sweat_smile: i am indeed I'll leave you lot to it
+2025-08-20 13:04:01,shay,online-boutique-5456,hang in there @daniel its gonne be the weekend sooner or later :joy:
+2025-08-20 13:04:04,tinus,online-boutique-5456,I should get on with my prep too have a good day team
+2025-08-20 13:04:05,daniel,online-boutique-5456,@shay strict diet of energy drink for me today lol
+2025-08-20 13:04:08,daniel,online-boutique-5456,hope the presentation goes well @tinus
+2025-08-20 13:04:10,tanya,online-boutique-5456,:raised_hands:
+2025-08-20 13:04:25,UptimeLabs,online-boutique-5456,Level 7 start button
+2025-08-20 13:05:19,PLAYER,online-boutique-5456,Clicked undefined button
+2025-08-20 13:05:36,PLAYER,online-boutique-5456,Clicked org button
+2025-08-20 13:07:17,PLAYER,online-boutique-5456,Clicked undefined button
+2025-08-20 13:11:04,PLAYER,online-boutique-5456,Clicked Start button
+2025-08-20 13:11:05,UptimeLabs,online-boutique-5456,":alarm_clock: - You have 20 minutes to resolve the outage, good luck! You can type `/help` if you need any reminders."
+2025-08-20 13:11:08,tinus,online-boutique-5456,"Hey team, I'm texting from the board room - kinda embarrassing but in my demo to the board, I tried to add a pair of Aviator sunglasses to the shopping cart and I got a ?http 500?"
+2025-08-20 13:11:10,tinus,online-boutique-5456,"I've bought some time but need this be able to do this demo if we can lets get this sorted in the next 20 minutes.
+"
+2025-08-20 13:11:13,tinus,online-boutique-5456,500 screenshot
+2025-08-20 13:11:15,tanya,online-boutique-5456,"uh oh, those Aviators are top sellers due to the new Top Gun movie...It's size up the issue time Ramesh Matta"
+2025-08-20 13:11:18,shay,online-boutique-5456,Come on this can't be happening!
+2025-08-20 13:11:20,tinus,online-boutique-5456,"I'm in this meeting so, wont be able to help but I trust that you all can get this fixed asap, just @ me if you need anything"
+2025-08-20 13:11:23,shay,online-boutique-5456,ok looking into this now
+2025-08-20 13:12:24,PLAYER,online-boutique-5456,Bob May I know the impact of this issue on customers?
+2025-08-20 13:12:27,Shay,online-boutique-5456,"I am unable to replicate the issue. For me, orders are going in. How's it for you @Ramesh ?"
+2025-08-20 13:12:31,UptimeLabs,online-boutique-5456,:star: Asking questions to validate impact of the problem
+2025-08-20 13:12:36,Bob,online-boutique-5456,Let me check  into my reports
+2025-08-20 13:13:19,Bez,business-comms-5456,I heard TInus is having issues before his demo meeting with investors in the conference hall. Can you get it sorted
+2025-08-20 13:13:43,Bob,online-boutique-5456,There are no complaints similar to what TInus is facing
+2025-08-20 13:13:58,Bob,online-boutique-5456,Not even a single report
+2025-08-20 13:14:06,PLAYER,online-boutique-5456,Daniel can u please replicate the issue and analyze what is the root cause?
+2025-08-20 13:14:15,UptimeLabs,online-boutique-5456,:star: Reproduces the incident
+2025-08-20 13:14:24,Tinus,online-boutique-5456,It's not good. I was preparing for this demo for a long time
+2025-08-20 13:14:43,Tinus,online-boutique-5456,"@Ramesh, get it sorted. It's a high-stakes scenario"
+2025-08-20 13:14:49,Daniel,online-boutique-5456,Let me check
+2025-08-20 13:15:22,PLAYER,business-comms-5456,It is impacting few important demo customers /p2
+2025-08-20 13:15:22,PLAYER,business-comms-5456,*Incident Number INC100081:* It is impacting few important demo customers /p2
+2025-08-20 13:15:22,Daniel,online-boutique-5456,For me orders are going well
+2025-08-20 13:15:22,UptimeLabs,online-boutique-5456,:star: Incident record created
+2025-08-20 13:15:24,UptimeLabs,online-boutique-5456,:star: Send first comms in first 5 minutes
+2025-08-20 13:15:29,UptimeLabs,online-boutique-5456,:star: Formally assign criticality level to the incident
+2025-08-20 13:15:39,Daniel,online-boutique-5456,Tinus should be trying to access the site from the browser on his computer. Perhaps it’s a local issue?
+2025-08-20 13:15:59,Daniel,online-boutique-5456,Also one observation
+2025-08-20 13:16:35,PLAYER,online-boutique-5456,"Daniel, Can we clear the cache for that browser and try once again?"
+2025-08-20 13:16:45,Daniel,online-boutique-5456,"@Ramesh, see the product ID of sunglasses in TInus's screenshot. Its OLJCESPC7D, whereas in prod its OLJCESPC7Z"
+2025-08-20 13:17:06,Daniel,online-boutique-5456,"@Ramesh, you're right, TInus should try this once"
+2025-08-20 13:17:24,PLAYER,online-boutique-5456,Tinus Can u please try another PC or different browser whether it is working ?
+2025-08-20 13:17:25,Bez,business-comms-5456,Have we got any solution ?
+2025-08-20 13:17:34,Tinus,online-boutique-5456,Let me try this
+2025-08-20 13:18:04,UptimeLabs,online-boutique-5456,:bulb: keep the business informed regularly
+2025-08-20 13:18:28,tinus,online-boutique-5456,Damn! thats it
+2025-08-20 13:18:29,PLAYER,online-boutique-5456,Tinus can u please point to OLJCESPC7Z instead of OLJCESPC7D ?
+2025-08-20 13:18:30,tinus,online-boutique-5456,"Great Ive got to do my presentation now, thanks for figuring this out so quickly. @daniel @shay can you look in to a cache busting solution?"
+2025-08-20 13:18:32,shay,online-boutique-5456,it was the cache! sure we can do that
+2025-08-20 13:18:34,daniel,online-boutique-5456,"no worries boss, at least its not a significat issue"
+2025-08-20 13:18:35,daniel,online-boutique-5456,good luck with the presentation!
+2025-08-20 13:18:36,tanya,online-boutique-5456,yes good luck @tinus
+2025-08-20 13:18:38,shay,online-boutique-5456,good luck @tinus!
+2025-08-20 13:18:49,UptimeLabs,online-boutique-5456,Start retro and feedback
+2025-08-20 13:18:56,PLAYER,online-boutique-5456,Bob we are trying to resolve this and doing analysis..
+2025-08-20 13:18:57,Daniel,online-boutique-5456,Tinus was testing something this morning. It'd have got stuck in his Cache
+2025-08-20 13:19:18,Bob,online-boutique-5456,I think it was just Tinus
+2025-08-20 13:19:25,PLAYER,online-boutique-5456,Daniel request you to clear the cache and restart the browser?
+2025-08-20 13:19:43,Daniel,online-boutique-5456,Yes that's what Tinus did and it solved his problem
+2025-08-20 13:19:44,PLAYER,online-boutique-5456,Bob Thanks Bob..
+2025-08-20 13:20:05,PLAYER,online-boutique-5456,Gr8.. Thank you Daniel
+2025-08-20 13:20:06,Tinus,online-boutique-5456,"Thanks for saving my day @Ramesh, cache issue got me stuck here"
+2025-08-20 13:20:19,PLAYER,online-boutique-5456,great work..
+2025-08-20 13:20:36,Tinus,online-boutique-5456,It's your expertise that saved me from embarrassment in front of demo users
+2025-08-20 13:20:47,PLAYER,online-boutique-5456,Bob Issue is resolved by clearing cache..
+2025-08-20 13:21:00,Bez,online-boutique-5456,Thanks @Ramesh
+2025-08-20 13:21:12,PLAYER,online-boutique-5456,we can close the incident
+2025-08-20 13:21:40,PLAYER,online-boutique-5456,Clicked Start_feedback button
+2025-08-20 13:22:58,UptimeLabs,online-boutique-5456,Submission successful
