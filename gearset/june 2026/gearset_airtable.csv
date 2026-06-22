@@ -1,0 +1,276 @@
+﻿Date,Time,Name,Company,Sessions Done,Session Plan,AI,Lead,Star Guru,Session Notes,GUOT,Score Notes,Session ID,Feedback Quality Score,Feedback Notes,Attendance,Attendance Reason,Drill Included,INC #,Technical Issues,Technical Issue Reason,Notes for Mildred
+28/1/2026,4:30 PM,"Julian,Sam W.,Gwen,Adam,Jason,Andy,Eamonn,Matt",Gearset,"4, 5, 4, 4, 4, 4, 3, 4","Onboarding,Demo",,Karan,Joe,,,,,,,Attended,,checked,,,,
+2/2/2026,2:00 PM,Gwen,Gearset,4,"Too Good To Be True,Demo",,Karan,,First solo session,,,,,,Attended,,checked,,,,
+3/2/2026,10:00 AM,Adam,Gearset,4,"Too Good To Be True,Demo",,Karan,,First solo session,9,,7598,,,Attended,,checked,,,,
+3/2/2026,11:00 AM,Sam W.,Gearset,5,"Too Good To Be True,Demo",,Karan,,First solo session,9,,7600,,,Attended,,checked,,,,
+3/2/2026,2:00 PM,Jason,Gearset,4,"Too Good To Be True,Demo",,Karan,,First solo session,7,,,,,Attended,,checked,,,,
+4/2/2026,10:00 AM,Matt,Gearset,4,"Too Good To Be True,Demo",,Karan,,First solo session,8,,,,,Attended,,checked,,,,
+4/2/2026,2:00 PM,Gwen,Gearset,4,"Discount Disaster,Demo",,Karan,,Second solo session,6,,,,,Attended,,checked,,,,
+10/2/2026,10:00 AM,Adam,Gearset,4,"Discount Disaster,Demo",,Joe,Matthew,Second solo session,9,,,,,Attended,,checked,INC-401 Discount Disaster starting in slack,checked,"when you click on discount disaster, start the drill, click on the green call to action button -> it opens the new tab of slack instead of MM",
+10/2/2026,10:30 AM,Sam W.,Gearset,5,"Discount Disaster,Demo",,Karan,,Second solo session,8,,7767,,,Attended,,checked,,checked,"Discount disaster opened in Slack Saml
+
+Looks like the stats arent matching - Graffana failed to show the logins to 6k",
+10/2/2026,2:00 PM,Jason,Gearset,4,"Discount Disaster,Demo",,Rishi,,Second solo session,7,,7685,,,Attended,,checked,,checked,"Discount disaster opened in Slack Saml
+
+Looks like the stats arent matching - Graffana failed to show the logins to 6k",
+10/2/2026,2:00 PM,Gwen,Gearset,4,"Unknown Unknown,Demo",,Karan,,Third solo session,5,,,,,Attended,,checked,,,,
+10/2/2026,3:00 PM,Julian,Gearset,4,"Memory Lane,Demo",,Karan,,First solo session,7,,,,,Attended,,checked,,,,
+16/2/2026,2:00 PM,Matt,Gearset,4,"Discount Disaster,Demo",,Karan,,Second solo session,No Score,,,,,Attended,,checked,,checked,AI was selected due to bug in system,
+17/2/2026,10:00 AM,Adam,Gearset,4,"Defcon1,Demo",,Karan,,Third solo session,10,,,,,Attended,,checked,,,,
+17/2/2026,2:00 PM,Jason,Gearset,4,"Unknown Unknown,Demo",,Karan,,Third solo session,7,,,,,Attended,,checked,,,,
+18/2/2026,10:00 AM,Matt,Gearset,4,"Unknown Unknown,Demo",,Stuart,Rishi,Third solo session,8,,,,,Attended,,checked,,,,
+19/2/2026,10:00 AM,Sam W.,Gearset,5,"Unknown Unknown,Demo",,Karan,,Third solo session,8,,,,,Attended,,checked,,,,
+20/2/2026,3:00 PM,Andy,Gearset,4,"Too Good To Be True,Demo",,Karan,,First solo session,9,"Its an organised Chaos .
+Good intro to the platform - REalistic drill .
+
+Seemed pausible enough as a scenario ",7789,,,Attended,,checked,,,,
+24/2/2026,11:00 AM,Andy,Gearset,4,"Discount Disaster,Demo",,Karan,,Second solo session,8,,,,,Attended,,checked,,,,
+24/2/2026,3:00 PM,"Julian,Jason",Gearset,"4, 4","Team Drill,Defcon1,Demo",,Karan,Rishi,First pair session,8,,7812,,,Attended,,checked,,,,
+26/2/2026,10:00 AM,Eamonn,Gearset,3,"Discount Disaster,Demo",,Joe,Karan,First solo session,8,,,,,Attended,,checked,,,,
+3/3/2026,10:00 AM,"Sam W.,Gwen",Gearset,"5, 4","Team Drill,Defcon1,Demo",,Karan,"Joe,Rishi",First pair session,8,,,,,Attended,,checked,,,,
+4/3/2026,2:00 PM,"Andy,Eamonn",Gearset,"4, 3","Team Drill,Defcon1,Demo",,Karan,Rishi,First pair session,7,,,,,Attended,,checked,,,,
+10/3/2026,11:00 AM,"Matt,Adam",Gearset,"4, 4","Team Drill,Disappearing Act,Demo",,Karan,Rishi,First pair session,No Score,,7945,,,Attended,,checked,,,,
+12/3/2026,1:00 PM,Account Meeting,Gearset,,Readout,,,,,,,,,,,,,,,,
+29/4/2026,3:00 PM,Joshua,Gearset,4,"Intro,Onboarding,Too Good To Be True V2",checked,Rishi,,Incident Essential,10,"it was good, but that it would take some time to get used to the platform.",8645,,,Attended,,checked,,,,
+29/4/2026,3:00 PM,Harsh,Gearset,5,"Intro,Onboarding,Too Good To Be True V2",checked,Naz,,Incident Essential,8,,,,,Attended,,checked,,,,
+30/4/2026,1:00 PM,David,Gearset,5,"Intro,Onboarding,Too Good To Be True V2",checked,Naz,,Needs to finish 5 mins before 2pm,9,"-   He said “it was good.”
+-   He liked that the setup felt realistic:
+    -   Grafana matched what Gearset already uses.
+    -   The fake website and chat system mirrored real-life incident work.
+-   @stuart rimell He also gave one product feedback point during the exercise: 
+    -   It would help if the **browser tabs had titles**, because he couldn’t easily tell which Uptime Labs tabs were which.",,,,Attended,,checked,,,,
+30/4/2026,1:00 PM,Rosie,Gearset,6,"Intro,Onboarding,Too Good To Be True V2",checked,Karan,,Incident Essential,8,Too real,8664,,,Attended,,checked,,,,
+30/4/2026,1:00 PM,Gabriel,Gearset,4,"Intro,Onboarding,Too Good To Be True V2",checked,Ed,,"Too pack for Ed, @Mildred Ranque can you ask to move to 2 exceptional for today
+ ",10,real and stressful,8662,,,Attended,,checked,,,,
+1/5/2026,3:00 PM,Paddy,Gearset,4,"Intro,Onboarding,Too Good To Be True V2",checked,Naz,,He liked the drill and looking forward to play more,8,,,,,Attended,,checked,,,,
+5/5/2026,1:00 PM,Jaime,Gearset,4,"Intro,Onboarding,Too Good To Be True V2",checked,Naz,,,8,"He liked the drill, Said it is easy and he is learning ",,,,Attended,,checked,,,,
+7/5/2026,1:00 PM,David,Gearset,5,Missing Delivery V2,checked,Rishi,,@Rishikesh Kumar either Big Investor or Missing Delivery,9,"David said it felt surprisingly intense and realistic, especially because he had to balance managing the business side with figuring out the incident. He felt he approached it more from an incident manager perspective than his usual technical troubleshooting mode, which meant he missed some checks he would normally do, especially looking at the error logs earlier. He said he could have reduced the resolution time by checking logs at the start and delegating tasks in parallel while continuing to manage communication. He also reflected that escalating to the CTO and pushing AWS was the right call given the reported $10,000-per-minute impact. 
+
+His main product feedback was that the drill ended too abruptly after resolution, without leaving space for natural closure steps like updating leadership, summarizing impact, or discussing prevention actions.",8763,,,Attended,,checked,,,,
+7/5/2026,1:00 PM,Gabriel,Gearset,4,Missing Delivery V2,checked,Ed,,@Eduards Stalmaconoks either Big Investor or Missing Delivery,9,Good drill than makes yu think not only about temp solutionsbut also about things to do now e.g. push for escalation and resolution earlier,8764,,,Attended,,checked,INC-439 tinus hallucinations in missing delivery,checked,"Upon escalating to tinus, he was not able to move the queue, thus preventing the user from getting into the recovered state",
+7/5/2026,3:00 PM,Michael,Gearset,4,"Intro,Onboarding,Too Good To Be True V2",checked,Naz,,Incident Essential,7,,,,,Attended,,checked,,,,
+8/5/2026,3:00 PM,Paddy,Gearset,4,The Big Investor,,Rishi,,,10,"Surprisingly life like. good one. Got to learn on doing impact assessment in the early stages
+",8790,,,Attended,,checked,,,,
+11/5/2026,1:30 PM,Catherine,Gearset,4,"Intro,Onboarding,Too Good To Be True V2",checked,Ed,,,8,"Simulated a very realistic drill, a lot of presure and things were happening",8826,,,Attended,,checked,,,,
+11/5/2026,2:00 PM,Oli,Gearset,3,Bez Beatles Day V2,checked,Rishi,,,8,"Oli’s reaction was positive overall. He said the drill was good, interesting, and enjoyable. He found Daniel’s behavior annoying, but realistic for the scenario. He also said the platform felt impressively close to a real incident environment, especially given that it was simulated with bots.",8828,,,Attended,,checked,,,,
+12/5/2026,1:00 PM,Jaime,Gearset,4,The Big Investor,,Ed,,,8,"Enjoyed the session, said it was fun and stressful",8853,,,Attended,,checked,,,,
+14/5/2026,10:00 AM,Davide,Gearset,3,"Intro,Onboarding,Too Good To Be True V2",checked,Karan,,,8,Simulation was accelerated - Great to see clear incident response ,8904,,,Attended,,checked,,,,
+14/5/2026,10:00 AM,Sam W.,Gearset,5,Snipe Hunt,checked,Rishi,,Will only do challenge drill,7,"- **Overall reaction:** He said he **enjoyed the challenge** and thought it was a **good drill**.
+- **Main friction:** He felt some **specific trigger phrases were required** to progress, especially to uncover the **SSL handshake issue in checkout logs**. That slowed him down.
+- **Approval flow feedback:** He suggested allowing **approval from Bess as a workaround** when Hamed or Titus are unavailable, since that mirrors what people might do in real incidents.
+- **AI behavior:** He felt the characters sounded **more AI-like than in previous drills** — more similar to each other, with noticeable “LLM-isms” and less natural dialogue.
+- **Positive scenario design:** He liked having to **pull Tanya out of a vendor meeting** to focus on the incident, saying that felt realistic.
+- **Red herring:** He thought the **email maintenance distraction worked well** as a red herring.
+- **Change request list:** He wondered whether the **7-day-old SSL expiry/rotation item** should be more clearly usable as a clue, rather than feeling like just another red herring.
+- **UI/timing issue:** He noticed the **banner took a while to appear** after the bot said it was up, which felt slightly off compared with real-life expectations, though he understood it was due to background deployment timing.
+- **Root-cause structure:** He understood and appreciated that it was a **two-factor problem** — certificate rotation plus missing redeployment.
+- **Learning value:** He agreed the drill did a good job reinforcing:
+  - **correlation vs causation**
+  - **taking ownership during incidents**
+  - **prioritizing the outage over lower-priority work**
+- **Final takeaway:** He said the drill was **really good at pushing those learning outcomes** and said he’d think more about **how to use those skills** going forward.",8902,,,Attended,,checked,,,,
+14/5/2026,12:00 PM,Rosie,Gearset,6,The Big Investor,,Naz,,Incident Essential,5,"Asked why **5/10 for She said ** because she still felt she was in the **early acclimatisation stage**, not yet getting the full learning benefit.
+-   She’d improved a lot since the first session — she said she felt **less stressed** and **more comfortable** this time.
+
+-   She **didn’t feel she had a clear runbook** or know what was expected of her.
+    
+-   She was unsure **how stakeholder communication should look**, so parts of the exercise felt like guessing.
+    
+-   She found the **role boundaries awkward** — her instinct was to investigate directly, but the exercise expected her to coordinate.
+    
+-   She said she **was getting something out of it**, but mostly in terms of **becoming familiar with the environment**, rather than deeper learning at this point.
+",8910,,,Attended,,checked,,,,
+14/5/2026,1:00 PM,David,Gearset,5,The Big Investor,,Karan,,Challenge Drill,8,"Looks like i seem to have improved compared to previous drill.
+
+Good learning in forming working theories",8913,,,Attended,,checked,,,,
+14/5/2026,1:00 PM,Gabriel,Gearset,4,The Big Investor,,Ed,,Happy to proceed with Snipe hunt as next drill @Naz Mostoufi ,9,Good drill to make you think outside of the box and practice probing questions,8914,,,Attended,,checked,,,,
+14/5/2026,1:00 PM,Account Meeting,Gearset,,Account Meeting,,,,Progress report,,,,,,,,,,,,
+14/5/2026,3:00 PM,Michael,Gearset,4,The Big Investor,,Karan,,"Incident Essential
+Session plan? ",7,Realistic scenario - That was certainly more complex- Tricky to figure out root cause - Spreading investigation ,8919,,,Attended,,checked,,,,
+15/5/2026,9:00 AM,Julian,Gearset,4,Snipe Hunt,,Rishi,,SH,9,"Julian reacted positively to the drill and said it was very good, though also tricky and full of noise. He felt parts of the scenario were realistic, especially the way a junior engineer can fixate on the wrong cause, and he was thoughtful about his own decisions, admitting the checkout rollback was more of a gamble than a confident call. He also said the hidden payment-service clue genuinely caught him out, which showed the challenge demanded close observation. Beyond the drill itself, his main product feedback was that the architecture and navigation tabs should be labeled more clearly so users can immediately understand what each section contains.",8930,,,Attended,,checked,,,,
+15/5/2026,3:00 PM,Paddy,Gearset,4,Missing Delivery V2,checked,Naz,,"Invite to Oops, Maybe SH",10,"He enjoyed it and looking forward to Challenge Drill next week
+",,,,Attended,,checked,,,,
+15/5/2026,4:00 PM,Antoine,Gearset,4,"Intro,Onboarding,Too Good To Be True V2",checked,Naz,,,8,"'- Completed first drill “Too Good to Be True” in 8 minutes (20-minute drill)
+- Key observations from Antoine’s approach:
+  - Instinctively went to Grafana first vs delegating
+  - Different from typical incident manager role (more hands-on troubleshooting)
+  - Correctly identified and reverted problematic production deployment
+  - Good communication - verified resolution with customers through Bob
+- Feedback score: 8/10
+  - Wanted better understanding of remediation procedures upfront
+  - Noted lack of familiarity with available tools/levers
+- Learning adaptation: Moving from hands-on troubleshooter to delegating incident manager",,,,Attended,,checked,,,,
+18/5/2026,1:00 PM,Matt,Gearset,4,,,,,"LO is it ok?
+Will only play challenge drill",,,,,,Cancelled,Have some work meeting that need to take priority,,,,,
+18/5/2026,2:00 PM,Catherine,Gearset,4,The Big Investor,,Charlene,,,8,"She seemed to enjoy the session overall and said the second drill felt less panicked than the first. She said finishing the incident felt satisfying “in the best… post positive way,” similar to a real incident being resolved, and agreed that the drill felt realistic. She also said she was interested to see what the other drills are like and left the session on a positive note.",8987,,,Attended,,checked,,,,
+18/5/2026,2:00 PM,John,Gearset,4,"Intro,Onboarding,Too Good To Be True V2",checked,Ed,,Assuming this is incidents essentials @Naz Mostoufi ,9,"No questions so far, seemed like he liked the session",8991,,,Attended,,checked,,,,
+18/5/2026,2:00 PM,Oli,Gearset,3,Snipe Hunt,checked,Rishi,,Rocommend to play another drill (Big Investor) and paly SH next week or 2 weeks,8,"Enjoyed playing this , it was very fast paced. Still recalling what happened. Took the command wherever it demanded me ",8986,,,Attended,,checked,,,,
+19/5/2026,12:00 PM,Sam B.,Gearset,2,,,,,,,,,,,Cancelled,Declined the invite and did not provide any reason,,,,,
+19/5/2026,1:00 PM,Jaime,Gearset,4,,,Matthew,,Tell him SH next week,,,,,,No Show,Been off sick,,,,,
+20/5/2026,4:00 PM,Andy,Gearset,4,Snipe Hunt,checked,Matthew,,,9,Drill was a lot more complicated than expected,9063,,,Attended,,checked,,,,
+21/5/2026,10:00 AM,Barry,Gearset,4,"Intro,Onboarding,Too Good To Be True V2",checked,Ed,,,8,"Thinks the product is great
+",9076,,,Attended,,checked,,,,
+21/5/2026,10:00 AM,Davide,Gearset,3,The Big Investor,,Matthew,,,8,"Felt good about this drill, he knows how he can do better for SH now ",9072,,,Attended,,checked,,,,
+21/5/2026,1:00 PM,David,Gearset,5,Snipe Hunt,checked,Drew,,,9,,9084,,,Attended,,checked,,,,
+22/5/2026,3:00 PM,Paddy,Gearset,4,Snipe Hunt,checked,Rishi,,,10,"He said the drill was good overall, but frustrating because he had to work with incomplete information and had to keep pushing people to get useful answers.
+
+He felt that uncertainty made it hard to know what to ask, especially when he was operating without much familiarity or visibility.
+
+He also explained that he kept probing possible causes, even when others suggested they were unrelated, because past incidents had taught him that seemingly separate systems can still have unexpected downstream effects.
+
+",9109,,,Attended,,checked,,,,
+22/5/2026,4:00 PM,Antoine,Gearset,4,The Big Investor,,Matthew,,,8,found the drill realistic  and is working on skills he doesn't use too often in incidents as he isnt an IM,9110,,,Attended,,checked,,,,
+26/5/2026,12:00 PM,Sam B.,Gearset,2,"Intro,Onboarding,Too Good To Be True V2",checked,Ed,,@Mildred Ranque Would preffer  2PM on a Monday or Tuesday,7,Mentioned that he would like more information on how to engage the bots better and also looking forward to see how things work in future,9133,,,Attended,,checked,,,,
+26/5/2026,1:00 PM,Jaime,Gearset,4,Missing Delivery V2,checked,Rishi,,Tell him SH next week,No Score,"- Jaime felt the drill went reasonably well and thought the team identified the email-related issue fairly quickly.
+- His main reflection was that he could have found the root cause sooner and escalated faster, but it was not obvious to him in the moment how to do that.
+- He was receptive to the feedback about checking logs earlier and agreed with the takeaway to gather data first before forming hypotheses.
+- He also seemed cautiously interested in the upcoming challenge drill.",9135,,,Attended,,checked,,,,
+27/5/2026,3:00 PM,Harsh,Gearset,5,The Big Investor,,Ed,,Incident Essential,No Score,skipped the core but he said it twas good score when i asked about the number,9164,,,Attended,,checked,,,,
+27/5/2026,3:00 PM,Joshua,Gearset,4,,,Matthew,,Incident Essential,,,,,,No Show,,,,,,
+27/5/2026,4:00 PM,Kenneth,Gearset,5,"Intro,Onboarding",,Rishi,,Didnt play TGTBT - he had a headache,8,"He got fully clear with expecatiton and how drill happens. There happened an issue where at a point onboarding drill didnt recovered , rather it repeated things again and again ",9166,,,Attended,,,Bots repeated messages - possibly due to openai issue ,,,
+28/5/2026,10:00 AM,Barry,Gearset,4,The Big Investor,,Ed,,,8,mentioned the platform is very interesting,9172,,,Attended,,checked,,,,
+28/5/2026,10:00 AM,Davide,Gearset,3,,,,,,,,,,,Cancelled,He is sick today,,,,,
+28/5/2026,10:00 AM,Dave,Gearset,4,"Intro,Onboarding,Too Good To Be True V2",checked,Naz,,,8,,,,,Attended,,checked,,,,
+28/5/2026,12:00 PM,Rosie,Gearset,6,Missing Delivery V2,checked,Matthew,,Incident Essential. Ask if she'd like to join challenge drill,8,"Normal drill for next session (no SH)
+She liked the drill today, found changing the severity to be confusing ",9178,,,Attended,,checked,,,,
+28/5/2026,1:00 PM,David,Gearset,5,Memory Lane V2,checked,Rishi,,Move to every 2 weeks,10,Liked the drill where a fixed worked for just a while and appeared again after some time. ,9182,,,Attended,,checked,,,,
+28/5/2026,1:00 PM,Gabriel,Gearset,4,Snipe Hunt,checked,Ed,,Ask him if he wants to be anonymous in leaderboard,9,Mentioned that he liked the drill. He is looking forward to see updated leaderboard,9183,,,Attended,,checked,,,,
+28/5/2026,1:00 PM,Account Meeting,Gearset,,Account Meeting,,,,Progress Report,,,,,,,,,,,,
+28/5/2026,3:00 PM,Michael,Gearset,4,Missing Delivery V2,checked,Rishi,,"Incident Essential
+He might be interested for SH",7,"Michael’s reaction was **positive**.
+
+-   He said it “**went pretty well**.”
+    
+-   He called out **two oddities**:
+    
+    -   some messages were posted twice
+        
+    -   tagging a senior person didn’t work cleanly the first time
+        
+-   He said those issues **didn’t stop him** from completing the scenario.
+    
+-   He seemed to like the scenario’s realism around **third-party dependencies** and said exploring the context was “**quite good**” and “**quite easy**.”
+    
+-   At the end, he said he was **all good** and was **looking forward to the next one**.",9187,,,Attended,,checked,,,,
+29/5/2026,4:00 PM,Antoine,Gearset,4,Missing Delivery V2,checked,Matthew,,,10,"Was a good drill, ",9206,,,Attended,,checked,,,,
+29/5/2026,4:00 PM,Matt,Gearset,4,,,Rishi,,Ask him if he wants to be anonymous in leaderboard,,"Asked him to play snipe hunt in his free time 
+",,,,Late Cancellation,In the middle of an actual outage.,,,,,
+1/6/2026,2:00 PM,Catherine,Gearset,4,Missing Delivery V2,checked,Naz,,"A useful reflection you raised yourself was to ask “dumb questions” earlier. That instinct is exactly right — surfacing simple questions sooner can help uncover the real issue faster.
+
+Overall, a strong session with good progress. For next time, the biggest opportunity is to consider external dependencies and alternative causes earlier in the investigation.",8,"When asked whether she wanted anything to be different or had any comments to help improve it, she said:
+
+> “Not that I can think of right now no.”",9232,,,Attended,,checked,,,,
+1/6/2026,2:00 PM,John,Gearset,4,The Big Investor,,Ed,,,9,Mentioned it was fun,9233,,,Attended,,checked,,,,
+2/6/2026,1:00 PM,Jaime,Gearset,4,Snipe Hunt,checked,Rishi,,,No Score,"Skipped the feedback form. Jaime’s reaction was **positive and reflective**.
+
+-   He said the drill “**went okay**” and was “**interesting**.”
+    
+-   He recognized the scenario as realistic: people being busy, managers unavailable, and needing to ask someone to retry actions.
+    
+-   He agreed with the learning points around:
+    
+    -   not assuming obvious correlations are the root cause
+        
+    -   the risk of getting distracted by lots of deployments
+        
+    -   missing important details when under incident pressure
+        
+-   He admitted he **didn’t properly read Tanya’s rotation document** because there was too much going on, but said he could see how that mattered afterward.
+    
+-   He seemed especially interested in the hidden-path insight and said it was **good to know** that only **2–3%** of participants catch it.
+    
+-   By the end, he said he **enjoyed it** and that it “**wasn’t as bad as it could have been**.”",9268,,,Attended,,checked,,,,
+2/6/2026,2:00 PM,Sam B.,Gearset,2,The Big Investor,,Charlene,,He's a platform engineer and was told he had to do uptime labs sessions. it's going to take a lot of work convincing him why he needs to use our platform,4,"He felt the drills were **not great** and often **unrealistic**. He said the Uptime Labs platform didn’t give him enough evidence to investigate properly because key signals like CPU, memory, RAM, and disk issues were hidden, which made the exercise feel artificial rather than true to his real platform-engineering work. He also felt the role expectations were misaligned: he sees himself as a technical responder, not someone who should be handling CEO/investor communication or customer banners. He was frustrated that severity wasn’t enforced in the incident flow and thought the system should prompt for it or auto-assign a high severity in obvious cases. Overall, he wanted more technical depth and clearer alignment on what he was supposed to be getting out of the drills.",9272,,,Attended,,checked,,,,
+3/6/2026,3:00 PM,Harsh,Gearset,5,Missing Delivery V2,checked,Ed,,,No Score,"Drill hallucinated, had to abort the drill",9321,,,Attended,,checked,,checked,Hallucinated during sessions,
+3/6/2026,3:00 PM,Joshua,Gearset,4,,,Charlene,,,,,,,,No Show,,,,,,
+3/6/2026,4:00 PM,Kenneth,Gearset,5,The Big Investor,,Karan,,,8,"-   -   Kenneth leads Gearset’s DevOps/infra team and moved into that role about 6 months ago after being a product team lead.
+        
+    -   Gearset sees relatively few incidents; they rely on strong telemetry/alerting and use blue-green style rollback to switch back fast when needed.
+        
+    -   Biggest challenge called out: a few experienced people still show up on every incident, and they want to scale that knowledge across more engineers.
+        
+    -   Kenneth said Gearset already pushes ownership after incidents: the responsible engineer helps run the rollback retro, document what happened, and share follow-ups.
+        
+    -   Kenneth prefers doing Uptime Labs drills solo each week, with a check-in every 2–3 weeks for feedback.
+        
+    -   He completed a guided drill, liked that it was unexpected, and found the hints/bot prompts useful for reinforcing good incident habits.
+        
+    -   Feedback discussed in the drill: check whether impact is global vs regional, think about customer comms like maintenance banners, and keep business/customer-facing teams informed.
+        
+-   Likely next steps:
+    
+    -   Kenneth to continue doing drills weekly on his own
+        
+    -   Reconnect in about 2–3 weeks
+        
+    -   Future drills should be taken from the **Guided** section, not **Play Anytime**",9331,,,Attended,,checked,,,,
+4/6/2026,10:00 AM,Barry,Gearset,4,Missing Delivery V2,checked,Ed,,,9,Mentioned it was fun and very realistic,9338,,,Attended,,checked,,,,
+4/6/2026,10:00 AM,Dave,Gearset,4,The Big Investor,,Charlene,,He gives really good constructive criticism and valuable insight into our product. ,8,"He seemed engaged and positive about the session, saying the drills were “fun” and that practicing them was effective for thinking about things he wouldn’t normally do, like escalation and time-boxing. He gave thoughtful product feedback during and after the drill, especially on dashboard clarity and the performance checklist, and said he was looking forward to later drills as they get more complex .",9341,,,Attended,,checked,,,,
+4/6/2026,12:00 PM,Rosie,Gearset,6,Discount Disaster V2,checked,Matthew,,,No Score,"Drill didnt feel natural, felt she had to ask the exact right quesions to the bots in this one ",9343,,,Attended,,checked,,,,
+4/6/2026,3:00 PM,Michael,Gearset,4,Discount Disaster V2,checked,Karan,,he wanted something challenging,7,"-   Michael said the drill was useful, especially the part about ruling out red herrings and challenging early assumptions.
+    
+-   He noted one confusing part: execs asked about revenue loss, but the dashboard and roles didn’t clearly show who could answer that.
+    
+-   He agreed the drill was a step up in complexity and said he’s curious whether future drills will get harder.
+    
+-   He didn’t suggest major changes; he said some delays and ambiguity felt realistic.
+-   He did **not** give a direct answer on how to get a GUOT of 9 or 10.
+    
+-   When asked what could be improved, he said there was **nothing specific** he could think of right then, and that some parts felt hard in a way that was realistic.
+    
+-   He mentioned one example: he had to **double check when Bob didn’t answer quickly**, but said that was indicative of real life.",9352,,,Attended,,checked,,,,
+5/6/2026,4:00 PM,Antoine,Gearset,4,Snipe Hunt,checked,Matthew,,,10,"found the drill to be revealing in his weaknesses, this was good for him as this perspective we provided to him is helping him see where he can improve in his work ",9371,,,Attended,,checked,,,,
+8/6/2026,2:00 PM,John,Gearset,4,Missing Delivery V2,checked,Rishi,,We can offer to play SH within his own time or book a session play with coatch or save his time ,8,"Overall good, but frustrated with Bez asking same questions over and over again despite of providing scope impact ",9384,,,Attended,,checked,,,,
+8/6/2026,2:00 PM,Catherine,Gearset,4,,,,,,,,,,,Rescheduled,Got some family stuff going on,,,,,
+10/6/2026,1:00 PM,Rosie,Gearset,6,Memory Lane V2,checked,Rishi,,,No Score,"“significantly easier than the previous one”** and that it **felt easier**, though she also added some uncertainty: she said she wasn’t sure if that was partly because she “didn’t do half the things.”
+
+She also said it felt more manageable because the issue was closer to the kind of problems Gearset sees in real life, like storage allocation issues and log-related growth.",9408,,,Attended,,checked,,,,
+10/6/2026,3:00 PM,Harsh,Gearset,5,Discount Disaster V2,checked,Ed,,,No Score,Mentioned it was entertaining,9411,,,Attended,,checked,,,,
+10/6/2026,3:00 PM,Joshua,Gearset,4,,,Matthew,,,,,,,,No Show,,,,,,
+11/6/2026,10:00 AM,Barry,Gearset,4,Snipe Hunt,checked,Ed,,,8,mentioned that drill was very good and realistic,9423,,,Attended,,checked,,,,
+11/6/2026,10:00 AM,Dave,Gearset,4,Missing Delivery V2,checked,Rishi,,,9,"Dave’s reaction was **mostly positive**, with a few concrete product issues and one strong improvement idea.
+
+-   He said the drill was **“fine”** and that the main learning was around:
+    
+    -   **mitigation / interim actions to reduce customer harm**
+        
+    -   **follow-up actions to improve monitoring**
+        
+-   On realism:
+    
+    -   He said he has seen **similar incidents**, like **hitting rate limits** and needing to **communicate issues to customers**
+        
+    -   But he said he has **not** had situations where they needed **exec-to-exec escalation**
+        
+-   Platform feedback:
+    
+    -   The **Slack replacement / Mattermost-style messaging** felt **buggy**
+        
+    -   He said **@mention autocomplete sometimes didn’t work**
+        
+    -   He also said it **locked up / froze**, which **threw him off** during the drill
+        
+-   Dashboard feedback:
+    
+    -   He said it was **surprising / unusual** to see a production-style dashboard with **no preconfigured filters**
+        
+    -   He explicitly said that was **quite unusual for a production dashboard**
+        
+-   Feature suggestion:
+    
+    -   He suggested letting users **save custom drill customizations** for a virtual company, especially things like **Grafana filters**
+        
+    -   His reasoning: if something doesn’t work well in one drill, you should be able to improve it and have that setup **persist for the next drill**, like in real life",9420,,,Attended,,checked,,,,
+11/6/2026,10:00 AM,Davide,Gearset,3,Missing Delivery V2,checked,Matthew,,,9,,9419,,,Attended,,checked,,,,
+11/6/2026,11:00 AM,Catherine,Gearset,4,Snipe Hunt,checked,Matthew,,She dosent want to be on leader board,9,"The drill was tough, and she didn't think she had done as well as she could have in it. i think she did well for only having 3 drills before this ",9424,,,Attended,,checked,,,,
+11/6/2026,2:30 PM,Account Meeting,Gearset,,Account Meeting,,,,Progress Report,,,,,,,,,,,,
+11/6/2026,3:00 PM,Michael,Gearset,4,,,,,,,,,,,Cancelled,Something's come up at the office,,,,,
+17/6/2026,1:00 PM,Rosie,Gearset,6,Snipe Hunt,checked,Rishi,,Ask for NPS https://airtable.com/appJet5tqWwEGnHOx/pagd9mrNCDD60WPus/form,No Score,"it was quite fun. Felt bit less stressful compared to previous ones, described it as a **learning curve**, especially around being **more assertive** and pushing Tanya to stop what she was doing when needed",9497,,,Attended,,checked,,,,
+17/6/2026,3:00 PM,Harsh,Gearset,5,Snipe Hunt,checked,Ed,,,No Score,Said drill was challenging and fun,9500,,,Attended,,checked,,,,
+17/6/2026,4:00 PM,Kenneth,Gearset,5,Snipe Hunt,checked,Rishi,,,9,Very impressed to have played this and he practised his leadership skills here by articulating the reasonings with team was something which he feels could have done more . he did it but few times only. ,9503,,,Attended,,checked,,,,
+18/6/2026,10:00 AM,Dave,Gearset,4,Snipe Hunt,checked,Rishi,,,9,"Nice one, enjoyed it. Especially around the moment where i usually take the ownership calls. Has full autonomy in real incidents, has never needed to escalate for approval",9514,,,Attended,,checked,,,,
+18/6/2026,3:00 PM,Joshua,Gearset,4,The Big Investor V2,checked,Ed,,,8,"Main objective now is to get used to the drill system, character capabilities and who is there to help them",9523,,,Attended,,checked,,,,
+24/6/2026,1:00 PM,Rosie,Gearset,6,PIR on Snipe Hunt,,Rishi,,No PIR session this should be canceled,,,,,,,,,,,,
+24/6/2026,3:00 PM,Harsh,Gearset,5,PIR on Snipe Hunt,,Karan,,,,,,,,,,,,,,
+24/6/2026,3:00 PM,Joshua,Gearset,4,Missing Delivery V2,checked,,,Saas,,,,,,,,,,,,
+24/6/2026,4:00 PM,Account Meeting,Gearset,,Account Meeting,,,,,,,,,,,,,,,,
