@@ -1,0 +1,33 @@
+session_start,id,player,name,SaaS,last_state,session_id,GUOT,surprises,learnedToday
+02/04/2026 15:17,8299,alyssa.afaese,Too Good To Be True,1,retro,,,,
+09/04/2026 15:18,8375,alyssa.afaese,Bezs Beatles Day!,1,retro,8375,7,"The pushback from colleagues forced me to ask more clarifying questions.
+
+I need to adjust to using the organization chart since I'm not always aware of who I can contact in a specific department.","There can be multiple changes made by various departments in one day, and it's important to know where in the architecture those changes have an effect.
+
+Confirming what each chat is for - business vs. online boutique."
+13/02/2026 16:08,7726,leigh.burton,The Chain Workshop,1,retro,7726,9,"multi-layered code updates a welcome surprise, the chain of custody/information also an interesting challenge.",to improve information succinctness when handing over information. to also think about *what * information is important and what is not.
+10/02/2026 16:12,7688,joe.muller,The Chain Workshop,1,retro,7688,8,"It was interesting that there was no pressure to maintain the new feature. That is good, since once I knew restoration was more important than trying to 'fix-in-prod' a complex issue, the solution was just a matter of engaging the platform team.",Don't be afraid to rollback if a new feature doesn't work. It's better to have a working product than a partially broken one.
+26/01/2026 13:08,7524,seth.lohr,The Chain Workshop,1,retro,7524,7,"Using the common ground ""thing"" was new and interesting",We suck at incident comms.  We're looking into getting better at it.  Establishing common ground would be a really good thing to do.
+14/04/2026 15:08,8428,joe.muller,Version confusion,1,retro,8428,8,"It was surprising to have a drill that didn't begin with urgency, but rather I had to 'tease' the problem out.",This drill helped train me to be more assertive and investigate problems.
+19/03/2026 16:04,8095,joe.muller,The Switch,1,retro,8095,9,"It was surprising to have a network device be the cause of problems for a change - this is familiar territory to me from my current job, where we have had misbehaving routers and switches cause real-world performance issues. (Though thankfully not compromised by a botnet!)",Lean on the Security and Platform teams when the issue is outside of Software - they can have valuable insight from metrics and engineering angles.
+18/03/2026 16:06,8078,leigh.burton,The Switch,1,retro,8078,9,"nothing to unexpected with this drill, it was a good balance of having enough open 'space' to flex the skills we have been learning without a large amount of noise' from the c-suite folks.","better at timeboxing and making sure we gain an understanding of impact - folks outside the business network (WFH) were less impacted than folks in the office leaned to an issue within the network, taking those clues helped identify it as something anomalous within the environment itself."
+23/02/2026 13:18,7797,seth.lohr,The Switch,1,retro,7797,8,"OB has an on-prem infrastructure.  Yet even more stuff they didn't document.
+
+Bez had a good idea.  What a surprise!  Asking for an alternative surfaced this whole diagram I didn't know existed.",Trust from teams to understand their infrastructure and letting them know how to troubleshoot/mitigate an incident that is within their domain.
+28/04/2026 15:09,8621,joe.muller,Memory Lane Workshop,1,retro,8621,8,n/a,Be ready to escalate early and try to get more than one person to look at a problem so you don't miss a key factor.
+22/04/2026 15:03,8551,leigh.burton,Memory Lane Workshop,1,retro,8551,9,"non-code changes causing issues, something that without the interactions in chat would not have been brought up looking at the usual dashboards.","not all related changes that can affect an environment are in the change logs, server migrations introduce changes that are not part of any codebase change logs. getting a better scope of ongoing projects like a server migration could help reduce time to resolution.
+
+also, making sure server migration run-plans include all needed service setup steps - those docs should be a living document, not make once and forget."
+03/06/2026 15:03,9330,leigh.burton,Snipe Hunt,0,retro,9330,9,"Cert bundle out of order. 
+bob not being able to put up a banner (is this new? previous drills always had Bob handling customer interactions and notification).","handling the incident with no specific escalation path available due to the vacations/conferences.
+
+accepting that you might need to bring in folks from other activities that might delay said activities but needed for the greater good of the company."
+27/05/2026 12:09,9159,seth.lohr,Snipe Hunt,1,retro,9159,10,"The number of complications.  This was a bit different from prev. drills in that:
+- multiple people were out (Hamed/Tinus)
+- the issue wasn't the first 4 fixes (changelogs -> email maintenance -> SSL cert rollback -> payment restart).  It was the 3rd, 4th, and 5th fix: the cert chain ordering.
+- There were 2-4 really strong theories as to what the issue was
+- Bez was being a lot more pushy.","Be careful to always inflate the ETA for Bez (played it close on direct quotes from Engineers for ETA).
+
+Tips from UL on how to manage multiple competing theories during an incident."
+26/05/2026 15:09,9142,joe.muller,Snipe Hunt,1,retro,9142,7,It was very challenging to navigate the incident with half the team (and generally the senior half) unavailable. I didn't expect to see a much more process-based failure in the fact that there were undocumented aspects of the certificate update process that caused issues.,n/a
+20/05/2026 15:04,9062,leigh.burton,Snipe Hunt,1,retro,,,,

@@ -1,0 +1,66 @@
+﻿Date,Time,Name,Company,Sessions Done,Session Plan,AI,Lead,Star Guru,Session Notes,GUOT,Score Notes,Session ID,Feedback Quality Score,Feedback Notes,Attendance,Attendance Reason,Drill Included,INC #,Technical Issues,Technical Issue Reason,Notes for Mildred
+26/1/2026,1:00 PM,Seth,Sonic,15,"The Chain,Grounding Workshop",,Rishi,,,7,"Feels good to steal ideas from uptimelabs session to improve in sonic. Their team lags in incident comms. So learning CAN - to do grounding definitely makes difference. 
+
+Also, the grafana dashboard looks cool here but yet to have something like this in sonic. 
+
+What it'd take to get 10 ? 
+Narrative was too generic not something new. Felt like same rollback and Daniel always making mistakes with deployments. So as per him, this experience was not upto mark. Mentioned that he loves these sessions to learn new things. ",7524,,,Attended,,checked,,,,
+9/2/2026,1:00 PM,Seth,Sonic,15,PIR on Chain,,Rishi,,Karan is this ready? G2?,10,Very insightful. The PIR provided by UL looks much fancier than what I filled out. People at sonic are more reactive than proactive . He's proposing this to his team on the learnings what he has got from discussions with UL,,,,Attended,,,,,,
+10/2/2026,4:00 PM,Joe,Sonic,19,"The Chain,Grounding Workshop",,Rishi,,PIR on chain next session ,8,"Enjoyed it. Learnt - Don't be afraid to rollback if a new feature doesn't work. It's better to have a working product than a partially broken one.
+What it would take to get 10 ? 
+Probably could be sort of push from bots when player feels stuck or needs suggestion",7688,,,Attended,,checked,,,,
+13/2/2026,4:00 PM,Leigh,Sonic,15,"The Chain,Grounding Workshop",,Matthew,,,9,"Really liked the drill, found it to be challenging (in a good way)",7726,,,Attended,,checked,,,,
+23/2/2026,1:00 PM,Seth,Sonic,15,The Switch,,Ed,,Make sure Switch works well,8,He is looking forward to PIR and pushing for incident response within the sonic,7797,,,Attended,,checked,,,,
+25/2/2026,4:00 PM,Leigh,Sonic,15,Profile Report,,Matthew,,"would be good if we could ask we could add his quote to our reference library- from Miranda
+@Matthew Rooney or playing Switch",10,,,,,Attended,,,,,,
+3/3/2026,4:00 PM,Joe,Sonic,19,Profile Report,,Karan,,,No Score,,,,,Attended,,,,,,
+16/3/2026,5:00 PM,Alyssa,Sonic,3,Intro,,Ed,,,No Score,She is looking forward to try the platform,,,,Attended,,,,,,
+18/3/2026,4:00 PM,Leigh,Sonic,15,The Switch,,Karan,,,9,"Great drill to time box and impact analysis.
+
+One of few drill i am confident on my skills ",8078,,,Attended,,checked,,,,
+19/3/2026,4:00 PM,Joe,Sonic,19,The Switch,,Ed,,,9,Mentioned it was nice introduction to Security drills as he is familiar with this type of incidents ,8095,,,Attended,,checked,,,,
+31/3/2026,4:00 PM,Joe,Sonic,19,PIR on Switch,,Rishi,,,No Score,It was very useful for him. He joined even though he was off for the day. Took a page full of notes. He has built up muscle memory - mentions why he asked Maya to isolate the system - coz of DEFCON1 drill's memory ,,,,Attended,,,,,,
+2/4/2026,4:00 PM,Alyssa,Sonic,3,"Onboarding,Too Good To Be True V2",checked,Charlene,,,7,She enjoyed the drill and said it was a good use of her time.  she felt the struggle between moving from a hand on technical role vs a commander and is looking forward to playing more sessions,8299,accurate,,Attended,,checked,,,,
+9/4/2026,4:00 PM,Alyssa,Sonic,3,Bez Beatles Day V2,checked,Charlene,,"She mentioned a colleague who's keen to join but is struggling with scheduling conflicts, I encouraged her to send them Mildred's email to reach out directly.",7,"Alyssa enjoyed the drill. She appreciated the independence of playing without active guidance, though she felt slower than usual and was surprised she finished within the time limit. The main challenge was Daniel's repeated pushback, which she found draining but relatable — she's the only woman on her team and has faced similar dynamics in real life. Overall, she's enjoyed all her sessions so far. she's really keen on the idea of doing a team drill in the future hopefully with her colleague",8375,,,Attended,,checked,,,,
+14/4/2026,4:00 PM,Joe,Sonic,19,Version Confusion,,Karan,,,8,"Helped me to be assertive.
+It was good",8428,,,Attended,,checked,,,,
+22/4/2026,4:00 PM,Leigh,Sonic,15,Memory Lane,,Rishi,,Check session plan,9,"-   Leigh said the drill was **pretty good**, **fun**, and a **fantastic** return session.
+    
+-   He said it was a useful reminder that **not all changes appear in the change log**.
+    
+-   He said **team communication mattered** because it surfaced critical context, like someone having moved the log server.
+    
+-   He recognized the scenario as **realistic**, especially the twist from what looked like a change issue into a broader operational problem.
+    
+-   He connected it to **real-world experience**, saying they’ve seen similar logging/log-rotation issues before.
+    
+-   He said he is trying to build a more **proactive mindset**, not just restore service but prevent the issue from recurring.
+    
+-   He seemed especially positive about the drill’s realism and said he was **happy with it as a return session**.",8551,,,Attended,,checked,,,,
+28/4/2026,4:00 PM,Joe,Sonic,19,Memory Lane,,Karan,,,8,"Be ready to escalate .
+Great learning from the drill - Good exercise",8621,,,Attended,,checked,,,,
+6/5/2026,4:00 PM,Leigh,Sonic,15,PIR on Memory Lane,,Matthew,,,No Score,"He really liked running the PIR, he hasn't had many opportunities to carry one out himself. This session was a great help to him as he mentioned.",,,,Attended,,,,,,
+12/5/2026,4:00 PM,Joe,Sonic,19,PIR on Memory Lane,,Matthew,,,No Score,Liked the pir and is comparing his to the example one,,,,Attended,,,,,,
+26/5/2026,4:00 PM,Joe,Sonic,19,Snipe Hunt,checked,Karan,,,7,"There were multiple hallucinations during drill;, with Tanya",9142,,,Attended,,checked,https://github.com/uptime-labs/Incidents/issues/11,,,
+27/5/2026,1:00 PM,Seth,Sonic,15,Snipe Hunt,checked,Rishi,,Maybe Joe,10,"Seth’s reaction after the drill:
+
+-   He said **“it was a very good, I really liked it.”**
+    
+-   He seemed engaged in the debrief and asked thoughtful follow-ups, especially about:
+    
+    -   handling **multiple parallel theories**
+        
+    -   showing **critical service paths** in the architecture visually
+        
+    -   using the drills to teach more advanced incident-response concepts
+        
+-   He said he was **learning from Uptimelabs as he goes**, calling the guidance “really good stuff.”
+    
+-   He also reflected that the drill felt demanding but useful, especially seeing pushback from simulated stakeholders and having to make decisions without being “held by the hand.”
+    
+
+**Overall:** positive reaction, thoughtful engagement, and genuine interest in improving Sonic’s incident practices ",9159,,,Attended,,checked,,,,
+3/6/2026,4:00 PM,Leigh,Sonic,15,Snipe Hunt,checked,Charlene,,,9,"He said the drill was **frustrating but enjoyable overall**, and that he was glad he got to run it again. He was surprised by the outcome and the simple root cause, and felt he **didn’t do that good of a job**, especially on communication, but still described it as **always fun**.",9330,,,Attended,,checked,,,,
+9/6/2026,4:00 PM,Joe,Sonic,19,PIR on Snipe Hunt,,Rishi,,Ask for NPS https://airtable.com/appJet5tqWwEGnHOx/pagd9mrNCDD60WPus/form,No Score,"-   feedback **“makes sense”** after the first learning point.
+    
+-   Near the end, he said it was **“all very clear”** and that he got **“some good pointers”** on how to work more effectively next time.",,,,Attended,,,,,,
