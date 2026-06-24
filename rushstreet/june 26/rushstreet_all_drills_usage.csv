@@ -1,0 +1,15 @@
+session_start,id,player,name,SaaS,last_state,session_id,GUOT,surprises,learnedToday
+13/01/2026 10:03,7382,milisavljevic,The Chain Workshop,1,retro,7382,7,I don't see visible problem,Issue could lay anywhere and deeper investigation is needed
+20/01/2026 15:04,7472,armin400,The Chain Workshop,1,retro,7472,10,"Multiple changes, 1 rollback didnt help, we had to rollback all Bitcoin related changes.",To take command and fix the issue ASAP
+17/02/2026 15:06,7757,armin400,The Switch,1,retro,7757,10,"First it started off slowly, intermittent issues and then increased to higher severity issue.",HBow to navigate and gather as much info as possible. Make sure who is responsible of what role.
+24/02/2026 10:02,7807,milisavljevic,The Switch,1,retro,7807,8,"That issue is so long ongoing, no one noticed till now, it was not clear is it critical or not",To not restart without checking risk and to observe wider picture of issue and timeframe
+19/03/2026 15:03,8094,armin400,Version confusion,1,retro,8094,10,"Everything was going as planned, nothing really surprising this time.",Included all the teams that might have any insights. THe incidents may escalate to higher priorities if the impect is more clear. It was fun to investigate this and finally to get to root cause.
+24/03/2026 10:06,8127,milisavljevic,Version confusion,1,retro,8127,10,That people didn't want incident,Sometimes best course of action it to ask people to check twice and focus
+01/04/2026 14:08,8287,armin400,Cart-astrophe,1,retro,8287,10,Multiple changes caused issues,"Maybe include Maya before we rollback, she should be able to advise regarding side effects of rollback."
+07/04/2026 09:07,8315,milisavljevic,Cart-astrophe,1,retro,8315,10,Not surprised at all,To include all engineers if relevant one is not available
+10/04/2026 15:24,8392,nezhadian,Too Good To Be True,1,retro,8392,8,n/a,n/a
+13/04/2026 20:37,8413,nezhadian,Bezs Beatles Day!,1,retro,8413,6,I thinki there should be a walk- through regarding the different aspects and pieces of the platform we have access and we can do. the visibility is not enough.,n/a
+14/04/2026 14:05,8427,armin400,Details Matter,1,retro,8427,10,"Issue wasnt straightforward, further investigation was required to find the correct root cause.",DO not rush and gather all info possible.
+19/05/2026 09:07,9021,milisavljevic,Snipe Hunt,1,retro,9021,10,"That everyone is OOO, it was hard to get people",That taking responsibility is sometimes best course of action
+19/05/2026 14:01,9032,armin400,Snipe Hunt,1,retro,9032,10,"Multiple necessary people were Out, I pushed the teams with restarts but they did not respond. had to word directly ""I approve the restarts"" so then they understood that we can proceed with restarts.","Stay calm, dont let metircis and panic scare you and keep moving steadily towards resolution."
+02/06/2026 09:08,9253,milisavljevic,Details Matter,0,retro,9253,10,Third party including,Sometimes you need root cause over resolution in order to fix it
